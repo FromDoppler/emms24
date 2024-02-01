@@ -1,0 +1,293 @@
+/* Hero */
+
+.emms__ecommerce .emms__hero-registration {
+    background: #000 url("../../../img/back-hero-ecommerce.png") no-repeat;
+    background-size: 110%;
+    background-position-y: top;
+    background-position-x: 100%;
+    animation: hero-back-ecommerce 1s;
+}
+
+@keyframes hero-back-ecommerce {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+
+/* Date Counter */
+
+.emms__ecommerce .emms__counter {
+    margin: 40px 0 0 0;
+    height: 110px;
+}
+
+
+/* Calendar */
+
+.emms__ecommerce .emms__calendar{
+    position: relative;
+}
+
+.emms__ecommerce .emms__calendar .emms__background-b{
+    width: 627px;
+    height: 445px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(52%, 5%);
+    z-index: -1;
+}
+
+.emms__ecommerce .emms__calendar .emms__background-c{
+    width: 250px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(0%, 124%);
+    z-index: -1;
+}
+
+
+/* Central Video */
+
+.emms__ecommerce .emms__centralvideo .emms__background-b {
+    width: 905px;
+    height: 642px;
+    position: absolute;
+    transform: translate(-58%, 34%);
+    z-index: -1;
+}
+
+.emms__ecommerce .emms__centralvideo .emms__background-a {
+    width: 893px;
+    height: 819px;
+    position: absolute;
+    right: 0;
+    transform: translate(70%, 5%) rotate(180deg);
+    z-index: -1;
+}
+
+
+/* Users comments */
+
+.emms__ecommerce .emms__userscomments .emms__background-b:nth-child(1) {
+    width: 205px;
+    height: 146px;
+    position: absolute;
+    right: 0;
+    transform: translate(62%, -109%);
+}
+
+.emms__ecommerce .emms__userscomments .emms__background-b:nth-child(2) {
+    width: 293px;
+    height: 208px;
+    position: absolute;
+    transform: translate(-50%, 172%);
+}
+
+
+
+/* Logueado */
+
+.emms__ecommerce-logueado .emms__calendar__title{
+    max-width: 560px;
+    animation-delay: .6s;
+}
+
+.emms__ecommerce-logueado .emms__calendar__list{
+    animation-delay: .7s;
+}
+
+.emms__ecommerce-logueado .emms__calendar__bottom{
+    max-width: 460px;
+}
+
+
+/* ---------------------------------------------- Responsive ---------------------------------------------- */
+
+
+@media(max-width:1480px){
+    .emms__ecommerce .emms__calendar .emms__background-c{
+       display: none;
+    }
+}
+
+
+@media(max-width:1100px) {
+    .emms__ecommerce .emms__centralvideo .emms__background-b,
+    .emms__ecommerce .emms__centralvideo .emms__background-a {
+        display: none;
+    }
+}
+
+@media(max-width:992px) {
+    .emms__ecommerce .emms__counter {
+        margin: 0;
+    }
+
+    .emms__ecommerce .emms__calendar .emms__background-b{
+        display: none;
+    }
+}
+
+@media(max-width:400px){
+    .emms__ecommerce .emms__userscomments .emms__background-b:nth-child(2) {
+        transform: translate(-60%, 188%);
+    }
+}
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* ---------------------------------------- DURING ------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+/* No Logueado */
+
+.emms__ecommerce--during .emms__header__live{
+    transform: translateX(-78%);
+}
+
+.emms__ecommerce--during .emms__hero-registration .emms__hero-registration__columns{
+    align-items: center;
+}
+
+.emms__ecommerce--during .emms__hero-registration__text p.emms__hero-registration__text__live{
+    font-size: 16px;
+    font-weight: 700;
+    color: #ED1E79;
+    position: relative;
+    padding: 0 0 0 28px;
+    margin: 0 0 30px 0;
+    display: none;
+}
+
+.emms__ecommerce--during .emms__hero-registration__text p.emms__hero-registration__text__live::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 24px;
+    height: 13px;
+    background: url("../../../img/icons/icon-live.svg") no-repeat;
+    background-size: contain;
+}
+
+.emms__ecommerce--during .emms__hero-registration.emms__hero-registration--noform{
+    padding: 220px 0 158px 0;
+}
+
+@media(max-width:992px){
+    .emms__ecommerce--during .emms__hero-registration__text p.emms__hero-registration__text__live{
+        display: inline-block;
+    }
+}
+
+
+/* Logueado */
+
+.emms__ecommerce-logueado--during .emms__premium-content .emms__background-a{
+    width: 893px;
+    height: 819px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-65%,0%) rotate(180deg);
+}
+
+@media(max-width:1280px){
+    .emms__ecommerce-logueado--during .emms__premium-content .emms__background-a{
+        display: none;
+    }
+}
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* ---------------------------------------- POST ------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+/* No Logueado */
+
+.emms__ecommerce--post .emms__hero-registration .emms__hero-registration__columns{
+    align-items: center;
+}
+
+.emms__ecommerce--post .emms__hero-registration__text p.emms__hero-registration__text__live{
+    font-size: 16px;
+    font-weight: 700;
+    color: #ED1E79;
+    position: relative;
+    padding: 0 0 0 28px;
+    margin: 0 0 30px 0;
+    display: none;
+}
+
+.emms__ecommerce--post .emms__hero-registration__text p.emms__hero-registration__text__live::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 24px;
+    height: 13px;
+    background: url("../../../img/icons/icon-live.svg") no-repeat;
+    background-size: contain;
+}
+
+.emms__ecommerce--post .emms__hero-registration.emms__hero-registration--noform{
+    padding: 220px 0 158px 0;
+}
+
+.emms__ecommerce--post .emms__hero-registration.emms__hero-registration--noform .emms__hero-registration__text{
+    max-width: 460px;
+    width: 90%;
+}
+
+@media(max-width:992px){
+    .emms__ecommerce--post .emms__hero-registration__text p.emms__hero-registration__text__live{
+        display: inline-block;
+    }
+}
+
+
+/* Logueado */
+
+.emms__ecommerce-logueado--post .emms__premium-content .emms__background-a{
+    width: 893px;
+    height: 819px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-65%,-18%) rotate(180deg);
+}
+
+.emms__ecommerce-logueado--post .emms__hero-registration--registered .emms__container--md {
+    max-width: 730px;
+}
+
+.emms__ecommerce-logueado--post .emms__hero-registration--registered p{
+    margin: 0;
+    line-height: 1;
+}
+
+.emms__ecommerce-logueado--post .emms__hero-registration--registered .emms__container--md h1{
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.emms__ecommerce-logueado--post .emms__hero-registration--registered .emms__container--md p{
+    margin: 30px auto 0 auto;
+    line-height: 24px;
+    max-width: 590px;
+}
+
+@media(max-width:1280px){
+    .emms__ecommerce-logueado--post .emms__premium-content .emms__background-a{
+        display: none;
+    }
+}
