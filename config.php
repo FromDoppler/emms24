@@ -95,7 +95,7 @@ if (!defined('SUBJECT_DURING_DIGITALT')) define('SUBJECT_DURING_DIGITALT', 'Te d
 if (!defined('SUBJECT_POST_DIGITALT')) define('SUBJECT_POST_DIGITALT', 'Ya puedes ver lo que fue el EMMSDT 2023');
 
 #GOOGLE SPREADSHEET
-//https://docs.google.com/spreadsheets/d/1HpSLWrz5lLcUKFyVGGF7PQ2FJvsydTV0IMahZogbQt0/edit#gid=0
+//https://docs.google.com/spreadsheets/d/1irsIKBdRzGlmeGpUlJjFcSJFaYZLN9ujvY-cTYpyeM8/edit#gid=0
 
 if (!defined('GOOGLE_CLIENT_ID')) define('GOOGLE_CLIENT_ID', $GOOGLE_CLIENT_ID);
 if (!defined('GOOGLE_CLIENT_SECRET')) define('GOOGLE_CLIENT_SECRET', $GOOGLE_CLIENT_SECRET);
