@@ -49,6 +49,7 @@ require_once('./utils/DB.php');
             <nav class="emms__header__nav emms__header__nav--hidden" id="nav-mb">
                 <ul class="emms__header__nav__menu">
                     <li><a href="/">home</a></li>
+                    <li><a href="/ecommerce">e-commerce</a></li>
                     <li><a href="/sponsors">biblioteca de recursos</a></li>
                     <li><a href="#" class="active">ediciones anteriores</a></li>
                 </ul>
