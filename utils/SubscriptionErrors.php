@@ -19,7 +19,7 @@ class SubscriptionErrors
             $errorCode = $errorCode !== '' ? $errorCode : null;
             $this->db->insertSubscriptionErrors($email, $list, $reason, $errorCode);
         } catch (Exception $e) {
-            throw new Exception("saveSubscriptionErrorsTable: ". json_encode($e).' email '. $email);
+            throw new Exception("saveSubscriptionErrorsTable: " . json_encode($e) . ' email ' . $email);
         }
     }
 
@@ -44,9 +44,8 @@ class SubscriptionErrors
         }
 
         return array(
-            'reason' => ($reason)?$reason:$errorMessage,
-            'errorCode' =>  ($errorCode)?$errorCode:0
+            'reason' => ($reason) ? $reason : $errorMessage,
+            'errorCode' => ($errorCode) ? $errorCode : 0
         );
-
     }
 }
