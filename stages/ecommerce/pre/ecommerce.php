@@ -90,7 +90,7 @@ require_once('././src/components/cacheSettings.php');
     <main>
 
         <!-- Hero -->
-        <section class="emms__hero-registration emms__hero-registration--with-counter" id="registro">
+        <section class="emms__hero-registration" id="registro">
             <div class="emms__hero-registration__columns">
                 <div class="emms__hero-registration__text emms__fade-in">
                     <h1><em>EVENTO ONLINE Y GRATUITO - 16 Y 17 DE MAYO</em> EMMS E-commerce 2023</h1>
@@ -196,6 +196,7 @@ require_once('././src/components/cacheSettings.php');
                     <!-- End date counter -->
                 </div>
             </div>
+            <!-- Marquee -->
             <div class="emms__hero-registration__bottom images emms__fade-in">
                 <p>
                     <img src="src/img/marquee/google.png" alt="Google">
@@ -526,6 +527,16 @@ require_once('././src/components/cacheSettings.php');
             </div>
         </section>
 
+
+        <!-- Basic section -->
+        <section class="emms__basic-section emms__bg-section-1">
+            <div class="emms__container--sm">
+                <h3 class="emms__fade-in">Conoce todos los beneficios del evento</h3>
+                <p class="emms__fade-in">Cras mattis nunc nec sagittis molestie. Sed scelerisque est euismod, condimentum dui in, dictum diam. Phasellus non diam lacinia, efficitur sem faucibus, vestibulum sem. In elit dolor, posuere vitae finibus venenatis, porta tempus libero.</p>
+                <a href="#registro" class="emms__cta emms__fade-in">REGÍSTRATE AHORA</a>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -533,10 +544,10 @@ require_once('././src/components/cacheSettings.php');
 
 
     <script src="src/<?= VERSION ?>/js/collapsibles.js"></script>
-    <script src="src/<?= VERSION ?>/js/dateCounter.js"></script>
     <script src="src/<?= VERSION ?>/js/calendarBio.js"></script>
     <script src="src/<?= VERSION ?>/js/mediaPartners.js"></script>
     <script src="src/<?= VERSION ?>/js/homeEcommerce.js" type="module"></script>
+    <script src="src/<?= VERSION ?>/js/dateCounter.js"></script>
     <script src="src/<?= VERSION ?>/js/date.js"></script>
     <script src="src/<?= VERSION ?>/js/vendors/intlTelInput.min.js"></script>
     <?php include_once('././src/components/intellInput.php'); ?>

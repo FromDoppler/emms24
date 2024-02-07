@@ -61,6 +61,12 @@ p {
     width: 90%;
 }
 
+.emms__container--sm {
+    max-width: 680px;
+    margin: 0 auto;
+    width: 90%;
+}
+
 /* General CTA */
 
 .emms__cta {
@@ -327,10 +333,16 @@ p {
     height: 100%;
 }
 
-/* Bg white */
+/* Backgrounds */
 
 .emms__bg-w {
     background: #fff;
+}
+
+.emms__bg-section-1 {
+    background: url("../../../img/bg-section-1.png") #320e45 no-repeat;
+    background-size: contain;
+    background-position: top;
 }
 
 

@@ -121,7 +121,7 @@
     animation-delay: .4s;
 }
 
-.emms__hero-registration .emms__hero-registration__bottom {
+.emms__hero-registration__bottom {
     position: absolute;
     bottom: 30px;
     left: 0;
@@ -130,7 +130,7 @@
     animation-delay: .4s;
 }
 
-.emms__hero-registration .emms__hero-registration__bottom p {
+.emms__hero-registration__bottom p {
     font-size: 22px;
     line-height: 20px;
     font-weight: 700;
@@ -152,17 +152,17 @@
     }
 }
 
- .emms__hero-registration .emms__hero-registration__bottom.images p{
+ .emms__hero-registration__bottom.images p{
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-.emms__hero-registration .emms__hero-registration__bottom.images p img{
+.emms__hero-registration__bottom.images p img{
     height: 30px;
 }
 
-.emms__hero-registration .emms__hero-registration__bottom.images p img.sm{
+.emms__hero-registration__bottom.images p img.sm{
     height: 20px;
 }
 
@@ -170,9 +170,10 @@
 /* Registered */
 
 .emms__hero-registration--registered{
-    background: #310E44;
-    padding: 177px 0 57px 0;
     text-align: center;
+    background: #310E44;
+    padding: 190px 0 160px 0;
+    position: relative;
 }
 
 .emms__hero-registration--registered .emms__container--md{
@@ -202,6 +203,42 @@
 
 .emms__hero-registration--registered p a:hover{
     text-decoration: underline;
+}
+
+.emms__hero-registration--registered .emms__hero-registration__add-event{
+    font-size: 16px;
+    line-height: 20px;
+    color: #FF4FB6;
+    background: #000;
+    position: relative;
+    width: 300px;
+    padding: 4px 10px 2px 50px;
+    margin: 30px auto 0 auto;
+    font-weight: 700;
+    display: block;
+    cursor: pointer;
+    transition-duration: .2s;
+    animation-delay: .7s;
+}
+
+.emms__hero-registration--registered .emms__hero-registration__add-event:hover{
+    color: #BD7AFF;
+    transition-duration: .2s;
+}
+
+.emms__hero-registration--registered .emms__hero-registration__add-event::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 44px;
+    height: 55px;
+    background: url("../../../img/icons/icon-calendar.svg") no-repeat;
+    background-size: contain;
+}
+
+.emms__hero-registration--registered #emmsCounter{
+    animation-delay: .8s;
 }
 
 
@@ -253,13 +290,6 @@
         width: 100%;
     }
 
-    #emmsCounter {
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-    }
-
 }
 
 @media(max-width:620px){
@@ -270,12 +300,17 @@
     }
 
     .emms__hero-registration--registered{
-        padding: 140px 0 57px 0;
+        padding: 140px 0 90px 0;
     }
 
     .emms__hero-registration--registered h1{
         font-size: 22px;
         line-height: 24px;
+    }
+
+    .emms__hero-registration--registered .emms__hero-registration__add-event{
+        font-size: 12px;
+        width: 230px;
     }
 
 }
