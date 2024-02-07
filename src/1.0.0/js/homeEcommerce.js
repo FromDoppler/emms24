@@ -10,45 +10,57 @@ import {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+
     const ecommerceForm = document.getElementById('ecommerceForm');
     const ecommerceBtns = document.querySelectorAll('.ecommerceBtn');
 
-    if (ecommerceForm) {
-        const submitForm = async (e) => {
+    const redirectToRegisteredPage = () => {
+        window.location.href = getUrlWithParams('/ecommerce-registrado');
+        if (window.location.pathname === '/sponsors') {
+            window.location.href = getUrlWithParams('/sponsors-registrado');
+        }
+    }
 
-            e.preventDefault();
-
-            await submitFormFetch(ecommerceForm, 'ecommerce').then(({ fetchResp: resp }) => {
-                if (!resp.ok) throw new Error('Server error on eccomerce fetch', resp?.status);
-
-                window.location.href = getUrlWithParams('/ecommerce-registrado');
-                if (window.location.pathname === '/sponsors') {
-                    window.location.href = getUrlWithParams('/sponsors-registrado');
-                }
-            })
-                .catch((error) => {
-                    customError('Eccomerce post error', error);
-                });
+    const handleSubmissionError = (error) => {
+        customError('Error en la solicitud', error);
+    }
 
 
+    const submitForm = async (e) => {
+
+        e.preventDefault();
+
+        try {
+            const { fetchResp: resp } = await submitFormFetch(ecommerceForm, 'ecommerce');
+            if (!resp.ok) throw new Error('Error en el servidor', resp?.status);
+
+            redirectToRegisteredPage();
+        } catch (error) {
+            handleSubmissionError(error);
         }
 
+
+    }
+
+    if (ecommerceForm) {
         ecommerceForm.querySelector('button').addEventListener('click', submitForm);
     }
-    if (ecommerceBtns.length > 0) {
-        const submitEvent = async (btn) => {
-            btn.classList.add('button--loading');
-            await submitWithoutForm('ecommerce').then(({ fetchResp: resp }) => {
-                if (!resp.ok) throw new Error('Server error on digital fetch', resp?.status);
-                btn.classList.remove('button--loading');
 
-                window.location.href = getUrlWithParams('/ecommerce-registrado');
-                if (window.location.pathname === '/sponsors') {
-                    window.location.href = getUrlWithParams('/sponsors-registrado');
-                }
-            });
+    const submitEvent = async (btn) => {
+        btn.classList.add('button--loading');
+        try {
+            const { fetchResp: resp } = await submitWithoutForm('ecommerce');
+            if (!resp.ok) throw new Error('Error en el servidor', resp?.status);
+
+            btn.classList.remove('button--loading');
+            redirectToRegisteredPage();
+        } catch (error) {
+            handleSubmissionError(error);
         }
-        ecommerceBtns.forEach( btn => btn.addEventListener('click', () => {submitEvent(btn)}));
+    }
+
+    if (ecommerceBtns.length > 0) {
+        ecommerceBtns.forEach(btn => btn.addEventListener('click', () => { submitEvent(btn) }));
     }
 
 });
