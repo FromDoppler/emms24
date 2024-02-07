@@ -13,13 +13,6 @@ require_once('././config.php');
 <body class="emms__ecommerce emms__ecommerce-logueado">
     <?php include_once('././src/components/gtm.php'); ?>
 
-    <!-- Hellobar -->
-    <div class="emms__hellobar">
-        <div class="emms__hellobar__container emms__fade-in">
-            <p><strong>EMMS E-commerce:</strong> ¡disfruta de un día más de aprendizaje! <strong>16 y 17 de mayo</strong></p>
-        </div>
-    </div>
-
     <!-- Header -->
     <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
@@ -36,7 +29,8 @@ require_once('././config.php');
                             <li><a href="#aprende-con-doppler">APRENDE CON DOPPLER</a></li>
                         </ul>
                     </li>
-                    <li><a href="/sponsors-registrado">contenido exclusivo</a></li>
+                    <li><a href="/sponsors">biblioteca de recursos</a></li>
+                    <li><a href="/ediciones-anteriores">sobre el emms</a></li>
                 </ul>
             </nav>
         </div>
@@ -71,39 +65,173 @@ require_once('././config.php');
             <div class="emms__container--md">
                 <h1 class="emms__fade-top">¡Ya eres parte del EMMS E-commerce!</h1>
                 <p class="emms__fade-in">Te damos la bienvenida a este gran evento. <a href="#agenda">Revisa la Agenda</a> que hemos planeado para ti y prepárate para vivir el primer EMMS para Tiendas Online. ¡Gracias por sumarte! :)</p>
-            </div>
-        </section>
-
-        <!-- Calendar -->
-        <section class="emms__calendar" id="agenda">
-            <div class="emms__container--lg">
-                <div class="emms__calendar__title emms__fade-in">
-                    <h2>Conoce a los Speakers del EMMS E-commerce 2023</h2>
-                    <p>Estos son los <strong>ponentes</strong> que nos acompañarán en esta edición y las <strong>temáticas</strong> de sus charlas. </p>
+                <a class="emms__hero-registration__add-event emms__fade-in">AGREGA EL EVENTO A TU CALENDARIO</a>
+                <!-- Date counter -->
+                <div id="emmsCounter" class="emms__fade-in">
+                    <?php include('././src/components/date-counter.php'); ?>
                 </div>
-                <!-- Speakers -->
-                <?php include('./src/components/speakers.php') ?>
-                <!-- End list -->
+                <!-- End date counter -->
             </div>
-            <div class="emms__background-c"></div>
+            <!-- Marquee -->
+            <div class="emms__hero-registration__bottom images emms__fade-in">
+                <p>
+                    <img src="src/img/marquee/google.png" alt="Google">
+                    <img class="sm" src="src/img/marquee/meta.png" alt="Meta">
+                    <img src="src/img/marquee/youtube.png" alt="Youtube">
+                    <img src="src/img/marquee/amazon.png" alt="Amazon">
+                    <img src="src/img/marquee/metricool.png" alt="Metricool">
+                    <img src="src/img/marquee/microsoft.png" alt="Microsoft">
+                    <img class="sm" src="src/img/marquee/tiktok.png" alt="TikTok">
+                    <img src="src/img/marquee/linkedin.png" alt="LinkedIn">
+                    <img src="src/img/marquee/spotify.png" alt="Spotify">
+                    <img src="src/img/marquee/vtex.png" alt="Vtex">
+
+                    <!--  Repeated marquee items -->
+                    <img src="src/img/marquee/google.png" alt="Google">
+                    <img class="sm" src="src/img/marquee/meta.png" alt="Meta">
+                    <img src="src/img/marquee/youtube.png" alt="Youtube">
+                    <img src="src/img/marquee/amazon.png" alt="Amazon">
+                    <img src="src/img/marquee/metricool.png" alt="Metricool">
+                    <img src="src/img/marquee/microsoft.png" alt="Microsoft">
+                    <img class="sm" src="src/img/marquee/tiktok.png" alt="TikTok">
+                    <img src="src/img/marquee/linkedin.png" alt="LinkedIn">
+                    <img src="src/img/marquee/spotify.png" alt="Spotify">
+                    <img src="src/img/marquee/vtex.png" alt="Vtex">
+
+                    <!--  Repeated marquee items -->
+                    <img src="src/img/marquee/google.png" alt="Google">
+                    <img class="sm" src="src/img/marquee/meta.png" alt="Meta">
+                    <img src="src/img/marquee/youtube.png" alt="Youtube">
+                    <img src="src/img/marquee/amazon.png" alt="Amazon">
+                    <img src="src/img/marquee/metricool.png" alt="Metricool">
+                    <img src="src/img/marquee/microsoft.png" alt="Microsoft">
+                    <img class="sm" src="src/img/marquee/tiktok.png" alt="TikTok">
+                    <img src="src/img/marquee/linkedin.png" alt="LinkedIn">
+                    <img src="src/img/marquee/spotify.png" alt="Spotify">
+                    <img src="src/img/marquee/vtex.png" alt="Vtex">
+
+                    <!--  Repeated marquee items -->
+                    <img src="src/img/marquee/google.png" alt="Google">
+                    <img class="sm" src="src/img/marquee/meta.png" alt="Meta">
+                    <img src="src/img/marquee/youtube.png" alt="Youtube">
+                    <img src="src/img/marquee/amazon.png" alt="Amazon">
+                    <img src="src/img/marquee/metricool.png" alt="Metricool">
+                    <img src="src/img/marquee/microsoft.png" alt="Microsoft">
+                    <img class="sm" src="src/img/marquee/tiktok.png" alt="TikTok">
+                    <img src="src/img/marquee/linkedin.png" alt="LinkedIn">
+                    <img src="src/img/marquee/spotify.png" alt="Spotify">
+                    <img src="src/img/marquee/vtex.png" alt="Vtex">
+                </p>
+            </div>
         </section>
 
 
-        <!-- Separator -->
-        <div class="emms__separator"></div>
+        <!-- Grid -->
+        <section class="emms__grid emms__grid--3">
+            <div class="emms__container--md">
+                <div class="emms__grid__title">
+                    <h2>Vive la experiencia completa en EMMS Digital Trends</h2>
+                </div>
+                <ul class="emms__grid__content">
+                    <li class="emms__grid__item">
+                        <div class="emms__grid__item__image">
+                            <img src="src/img/conferencias.png" alt="Image">
+                        </div>
+                        <div class="emms__grid__item__text">
+                            <h3>Conferencias</h3>
+                            <p>Encuentra a tus máximos referentes internacionales compartiendo ideas y experiencias en un mismo lugar para descubrir las últimas tendencias en Marketing Digital.</p>
+                        </div>
+                    </li>
+                    <li class="emms__grid__item">
+                        <div class="emms__grid__item__image">
+                            <img src="src/img/entrevistas.png" alt="Image">
+                        </div>
+                        <div class="emms__grid__item__text">
+                            <h3>Entrevistas</h3>
+                            <p>Asiste a conversaciones con directivos y profesionales que marcan tendencia con sus negocios para escuchar sus mejores consejos, experiencias y proyecciones del mercado. </p>
+                        </div>
+                    </li>
+                    <li class="emms__grid__item">
+                        <div class="emms__grid__item__image">
+                            <img src="src/img/exito.png" alt="Image">
+                        </div>
+                        <div class="emms__grid__item__text">
+                            <h3>Casos de Éxito</h3>
+                            <p>Escucha directamente de los representantes de compañías líderes cuáles fueron las estrategias que impulsaron el éxito de sus negocios y conoce sus mejores tácticas para vender más.</p>
+                        </div>
+                    </li>
+                    <li class="emms__grid__item">
+                        <div class="emms__grid__item__image">
+                            <img src="src/img/networking.png" alt="Image">
+                        </div>
+                        <div class="emms__grid__item__text">
+                            <h3>Networking</h3>
+                            <p>Únete a valiosas conversaciones con los exponentes del sector, conoce nuevos colegas y expande las redes de tu negocio para impulsar su crecimiento.</p>
+                        </div>
+                    </li>
+                    <li class="emms__grid__item">
+                        <div class="emms__grid__item__image">
+                            <img src="src/img/workshop.png" alt="Image">
+                        </div>
+                        <div class="emms__grid__item__text">
+                            <h3>Workshops</h3>
+                            <p>Capacítate en talleres prácticos de asistencia reducida con especialistas destacados en la industria. Interactúa y pon en práctica tus conocimientos.</p>
+                        </div>
+                    </li>
+                    <li class="emms__grid__item">
+                        <div class="emms__grid__item__image">
+                            <img src="src/img/recursos.png" alt="Image">
+                        </div>
+                        <div class="emms__grid__item__text">
+                            <h3>Biblioteca de Recursos</h3>
+                            <p>Encuentra E-books, infografías, cápsulas audiovisuales, guías, plantillas y muchos más contenidos descargables y gratuitos en la sección Biblioteca de Recursos.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="emms__grid__bottom">
+                    <a href="#entradas" class="emms__cta">OBTÉN TU ENTRADA VIP</a>
+                </div>
+            </div>
+        </section>
 
 
         <!-- Premium content -->
-        <section class="emms__premium-content">
+        <section class="emms__premium-content emms__premium-content--dark">
             <div class="emms__container--lg">
                 <div class="emms__premium-content__text emms__fade-in">
-                    <h2>Desbloquea Contenido Premium ¡gratis! </h2>
-                    <p>Descubre <strong>recursos descargables, herramientas y conferencias on-demand</strong> que te traen nuestros aliados para que puedas ponerlos en práctica y potenciar tu Tienda Online.</p>
-                    <a href="./sponsors-registrado" class="emms__cta emms__fade-in">DESCÚBRELO AQUÍ</a>
+                    <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
+                    <p>Descubre <strong>contenidos descargables, herramientas y conferencias on-demand</strong> que te traen nuestros aliados para que puedas potenciar al máximo tu negocio.</p>
+                    <a href="./sponsors" class="emms__cta emms__fade-in">ACCEDE AQUÍ</a>
                 </div>
                 <div class="emms__premium-content__picture emms__fade-in">
-                    <img src="src/img/download--locked.png" alt="Contenido Premium">
+                    <img src="src/img/download--locked-24.png" alt="Contenido Premium">
                 </div>
+            </div>
+        </section>
+
+
+        <!-- Companies list -->
+        <section class="emms__companies ">
+            <div class="emms__container--lg">
+                <h2 class="emms__fade-in">Nos han acompañado en ediciones anteriores</h2>
+                <ul class="emms__companies__list emms__fade-in">
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-metricool.png" alt="Metricool"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-wayra.png" alt="Wayra"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-asociacion-marketing-espana.png" alt="Asociación de Marketing de España"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-camece.png" alt="Camece"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-capece.png" alt="Capece"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-amvo.png" alt="AMVO"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-linkedin.png" alt="LinkedIn"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-bigbox.png" alt="Bigbox"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-semrush.png" alt="Semrush"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-crehana.png" alt="Crehana"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-marketing-4ecommerce.png" alt="Marketing 4 Ecommerce"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-vtex.png" alt="VTEX"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-banco-frances.png" alt="BBVA Francés"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-airbnb.png" alt="Airbnb"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-woocomerce.png" alt="Woocommerce"></li>
+                </ul>
+                <small class="emms__fade-in">¿Quieres ser Partner del EMMS? Escríbenos a <a href="mailto:partners@fromdoppler.com">partners@fromdoppler.com</a></small>
             </div>
         </section>
 
@@ -119,6 +247,7 @@ require_once('././config.php');
 
     <script src="src/<?= VERSION ?>/js/calendarBio.js"></script>
     <script src="src/<?= VERSION ?>/js/date.js"></script>
+    <script src="src/<?= VERSION ?>/js/dateCounter.js"></script>
 
 </body>
 

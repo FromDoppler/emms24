@@ -30,6 +30,7 @@
 @import 'components/grid.css';
 @import 'components/features.css';
 @import 'components/prices-plans.css';
+@import 'components/basic-section.css';
 
 /* Pages */
 @import 'pages/ecommerce.css';
