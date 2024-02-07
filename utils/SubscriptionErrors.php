@@ -15,7 +15,7 @@ class SubscriptionErrors
     public function saveSubscriptionErrorsTable($email, $list, $reason, $errorCode)
     {
         try {
-            //Convertir cadena vacía a null
+            // Convertir cadena vacía a null
             $errorCode = $errorCode !== '' ? $errorCode : null;
             $this->db->insertSubscriptionErrors($email, $list, $reason, $errorCode);
         } catch (Exception $e) {
