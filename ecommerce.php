@@ -21,7 +21,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/services/functions.php');
         checkEncodeUrl
     } from './src/<?= VERSION ?>/js/user.js';
     checkEncodeUrl();
-    if (userRegisteredInEvent('ecommerce')) {
+    if (userRegisteredInEvent('ecommerce24')) {
         window.location.href = getUrlWithParams('/ecommerce-registrado');
     }
 </script>

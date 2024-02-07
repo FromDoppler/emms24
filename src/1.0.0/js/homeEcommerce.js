@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
 
         try {
-            const { fetchResp: resp } = await submitFormFetch(ecommerceForm, 'ecommerce');
+            const { fetchResp: resp } = await submitFormFetch(ecommerceForm, 'ecommerce24');
             if (!resp.ok) throw new Error('Error en el servidor', resp?.status);
 
             redirectToRegisteredPage();
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitEvent = async (btn) => {
         btn.classList.add('button--loading');
         try {
-            const { fetchResp: resp } = await submitWithoutForm('ecommerce');
+            const { fetchResp: resp } = await submitWithoutForm('ecommerce24');
             if (!resp.ok) throw new Error('Error en el servidor', resp?.status);
 
             btn.classList.remove('button--loading');

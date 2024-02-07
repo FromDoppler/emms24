@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const speakerForm = document.getElementById('speakerForm');
 
     const checkUserUI = () => {
-        if (userRegisteredInEvent('ecommerce') || userRegisteredInEvent('digital-trends')) {
+        if (userRegisteredInEvent('ecommerce24') || userRegisteredInEvent('digital-trends24')) {
             speakerVideo.classList.remove('dp--none');
             speakerFormContainer.classList.add('dp--none');
         } else {
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             e.preventDefault();
 
-            await submitFormFetch(speakerForm, 'ecommerce').then(({ fetchResp: resp }) => {
+            await submitFormFetch(speakerForm, 'ecommerce24').then(({ fetchResp: resp }) => {
                 if (!resp.ok) throw new Error('Server error on speaker fetch', resp?.status);
                 checkUserUI();
             })

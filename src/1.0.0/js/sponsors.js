@@ -10,8 +10,8 @@ document.addEventListener('click', (e) => {
     const target = e.target || e.srcElement;
     const slug = target.getAttribute('slug');
 
-if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'emms__register-modal') {
-    if (target.hasAttribute('data-target')) {
+    if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'emms__register-modal') {
+        if (target.hasAttribute('data-target')) {
             sessionStorage.setItem('currentSlug', slug);
             const m_ID = target.getAttribute('data-target');
             document.getElementById(m_ID).classList.add('open');
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitForm = async (e) => {
         const slug = sessionStorage.getItem('currentSlug')
 
-        await submitFormFetch(sponsorsForm, 'digital-trends').then(({ fetchResp: resp, encodeEmail }) => {
+        await submitFormFetch(sponsorsForm, 'ecommerce24').then(({ fetchResp: resp, encodeEmail }) => {
             if (!resp.ok) throw new Error('Server error on Sponsor fetch', resp?.status);
             localStorage.setItem('dplrid', encodeEmail);
             localStorage.setItem('lastEventsUpdateTime', new Date());
