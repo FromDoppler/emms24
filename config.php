@@ -32,30 +32,9 @@ if (!defined('SECURITYHELPER_ENABLE')) define('SECURITYHELPER_ENABLE', false);
 if (!defined('SITE_URL')) define('SITE_URL', 'http://localhost/');
 if (!defined('ENABLE_DIGITALTRENDS_SPONSORS')) define('ENABLE_DIGITALTRENDS_SPONSORS', true);
 
-#TWITTER
-
-$CONSUMER_KEY = getenv('CONSUMER_KEY');
-$CONSUMER_SECRET = getenv('CONSUMER_SECRET');
-$OATH_TOKEN = getenv('OATH_TOKEN');
-$OATH_TOKEN_SECRET = getenv('OATH_TOKEN_SECRET');
-$BEARER_TOKEN = getenv('BEARER_TOKEN');
-
-if (!defined('CONSUMER_KEY')) define('CONSUMER_KEY', $CONSUMER_KEY);
-if (!defined('CONSUMER_SECRET')) define('CONSUMER_SECRET', $CONSUMER_SECRET);
-if (!defined('OATH_TOKEN')) define('OATH_TOKEN', $OATH_TOKEN);
-if (!defined('OATH_TOKEN_SECRET')) define('OATH_TOKEN_SECRET', $OATH_TOKEN_SECRET);
-if (!defined('BEARER_TOKEN')) define('BEARER_TOKEN', $BEARER_TOKEN);
-if (!defined('OAUTH_CALLBACK')) define('OAUTH_CALLBACK', SITE_URL . 'callback.php');
-if (!defined('TWITTER_API_OK')) define('TWITTER_API_OK', true);
-if (!defined('TWEETS_AMOUNT')) define('TWEETS_AMOUNT', 15);
-
-// Caution with the next line!
-if (!defined('CHANGE_TWITTER_API')) define('CHANGE_TWITTER_API', false);
-
 if (!defined('CACHE_TIME')) define('CACHE_TIME', 60); // En segundos(60) (1 minuto)
 if (!defined('CACHE_TIME_ID')) define('CACHE_TIME_ID', 1800); // En segundos(1800) (30 minutos)
 if (!defined('CACHE_BACKUP_TIME')) define('CACHE_BACKUP_TIME', 3600); // En segundos (1 Hora)
-
 
 #IPS WHITE LIST
 

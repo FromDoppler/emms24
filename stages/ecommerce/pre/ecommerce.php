@@ -103,7 +103,7 @@ require_once('././src/components/cacheSettings.php');
                 </div>
                 <div class="emms__hero-registration__form emms__fade-in">
                     <!-- Form -->
-                    <form class="emms__form" novalidate autocomplete="off">
+                    <form class="emms__form" novalidate autocomplete="off" id="ecommerceForm">
                         <ul class="emms__form__field-group">
                             <li class="emms__form__field-item">
                                 <div class="holder">
@@ -538,6 +538,8 @@ require_once('././src/components/cacheSettings.php');
     <script src="src/<?= VERSION ?>/js/mediaPartners.js"></script>
     <script src="src/<?= VERSION ?>/js/homeEcommerce.js" type="module"></script>
     <script src="src/<?= VERSION ?>/js/date.js"></script>
+    <script src="src/<?= VERSION ?>/js/vendors/intlTelInput.min.js"></script>
+    <?php include_once('././src/components/intellInput.php'); ?>
 
 </body>
 
