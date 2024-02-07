@@ -21,12 +21,12 @@ class Relay
             'Plan Empresa Basic' => 'getWixEmpresaTemplate',
             'Plan VIP' => 'getWixVipTemplate',
             'Plan Invitado' => 'getWixInvitadoTemplate',
-            'ecommerce' => [
+            'ecommerce24' => [
                 'pre' => 'getEcommerceEmailTemplate',
                 'during' => 'getEcommerceEmailTemplateDuring',
                 'post' => 'getEcommerceEmailTemplatePost',
             ],
-            'digital-trends' => [
+            'digital-trends24' => [
                 'pre' => 'getDigitalTEmailTemplatePRE',
                 'during' => 'getDigitalTEmailTemplateDuring',
                 'post' => 'getDigitalTEmailTemplatePost',
