@@ -7,7 +7,7 @@ class Relay
     private static $account;
 
     private const urlBase = 'https://api.dopplerrelay.com/accounts/';
-    private const fromName = 'EMMS 2023';
+    private const fromName = 'EMMS 2024';
     private const fromEmail = 'info@goemms.com';
     private const TEMPLATE_DIR = __DIR__ . '/relay-templates/';
 
