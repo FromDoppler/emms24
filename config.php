@@ -63,15 +63,15 @@ if (!defined('WIX_SITE_ID')) define('WIX_SITE_ID', $WIX_SITE_ID);
 if (!defined('ACCOUNT_RELAY')) define('ACCOUNT_RELAY', $ACCOUNT_RELAY);
 if (!defined('API_KEY_RELAY')) define('API_KEY_RELAY', $API_KEY_RELAY);
 
-if (!defined('SUBJECT_PRE_ECOMMERCE')) define('SUBJECT_PRE_ECOMMERCE', 'Agrega #EMMSECOMMERCE2023 a tu calendario');
-if (!defined('SUBJECT_DURING_ECOMMERCE')) define('SUBJECT_DURING_ECOMMERCE', 'Te damos la bienvenida al #EMMSECOMMERCE2023!');
-if (!defined('SUBJECT_POST_ECOMMERCE')) define('SUBJECT_POST_ECOMMERCE', 'Ya puedes ver lo que fue el EMMSECOMMERCE2023');
-
-
+#EMAIL SUBJECT
+## ECOMMERCE
+if (!defined('SUBJECT_PRE_ECOMMERCE')) define('SUBJECT_PRE_ECOMMERCE', '¡Ya eres parte del #EMMSECOMMERCE!');
+if (!defined('SUBJECT_DURING_ECOMMERCE')) define('SUBJECT_DURING_ECOMMERCE', 'Te damos la bienvenida al #EMMSECOMMERCE2024!');
+if (!defined('SUBJECT_POST_ECOMMERCE')) define('SUBJECT_POST_ECOMMERCE', 'Ya puedes ver lo que fue el EMMSECOMMERCE2024');
+## DT
 if (!defined('SUBJECT_PRE_DIGITALT')) define('SUBJECT_PRE_DIGITALT', '¡Ya eres parte del #EMMSDT!');
-//TODO: Chequear subject DURING Y POST
-if (!defined('SUBJECT_DURING_DIGITALT')) define('SUBJECT_DURING_DIGITALT', 'Te damos la bienvenida al #EMMSDT 2023!');
-if (!defined('SUBJECT_POST_DIGITALT')) define('SUBJECT_POST_DIGITALT', 'Ya puedes ver lo que fue el EMMSDT 2023');
+if (!defined('SUBJECT_DURING_DIGITALT')) define('SUBJECT_DURING_DIGITALT', 'Te damos la bienvenida al #EMMSDT 2024!');
+if (!defined('SUBJECT_POST_DIGITALT')) define('SUBJECT_POST_DIGITALT', 'Ya puedes ver lo que fue el EMMSDT 2024');
 
 #GOOGLE SPREADSHEET
 //https://docs.google.com/spreadsheets/d/1irsIKBdRzGlmeGpUlJjFcSJFaYZLN9ujvY-cTYpyeM8/edit#gid=0
