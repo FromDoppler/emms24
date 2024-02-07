@@ -14,12 +14,30 @@ require_once('././src/components/cacheSettings.php');
 <body class="emms__ecommerce">
     <?php include_once('././src/components/gtm.php'); ?>
 
-    <?php if ($ecommerceStates['isDuring']) : ?>
+    <?php if ($ecommerceStates['isPre']) : ?>
         <!-- Hellobar -->
-        <div class="emms__hellobar">
+        <div class="emms__hellobar emms__hellobar--counter">
             <div class="emms__hellobar__container emms__fade-in">
-                <p><strong>EMMS E-commerce:</strong> ¡disfruta de un día más de aprendizaje! <strong>16 y 17 de mayo</strong></p>
-                <a href="./ecommerce">ASEGURA TU CUPO GRATIS</a>
+                <p><strong>¡FALTA MUY POCO PARA EL EVENTO MAS ESPERADO!</strong></p>
+                <ul class="emms__counter">
+                    <li class="emms__counter__number">
+                        <div><span class="d"></span></div>
+                        <span class="emms__counter__number--data">días</span>
+                    </li>
+                    <li class="emms__counter__number">
+                        <div><span class="h"></span></div>
+                        <span class="emms__counter__number--data">horas</span>
+                    </li>
+                    <li class="emms__counter__number">
+                        <div><span class="m"></span></div>
+                        <span class="emms__counter__number--data">minutos</span>
+                    </li>
+                    <li class="emms__counter__number">
+                        <div><span class="s"></span></div>
+                        <span class="emms__counter__number--data">segundos</span>
+                    </li>
+                </ul>
+
             </div>
         </div>
     <?php endif; ?>
@@ -40,7 +58,8 @@ require_once('././src/components/cacheSettings.php');
                             <li><a href="#aliados">ALIADOS</a></li>
                         </ul>
                     </li>
-                    <li><a href="/sponsors">contenido exclusivo</a></li>
+                    <li><a href="/sponsors">biblioteca de recursos</a></li>
+                    <li><a href="/ediciones-anteriores">sobre el emms</a></li>
                 </ul>
             </nav>
         </div>
@@ -81,11 +100,6 @@ require_once('././src/components/cacheSettings.php');
                         <li>TENDENCIAS E INNOVACIÓN</li>
                         <li>HERRAMIENTAS Y RECURSOS</li>
                     </ul>
-                    <!-- Date counter -->
-                    <div id="emmsCounter" class="mb--tablet ">
-                        <?php include('././src/components/date-counter.php'); ?>
-                    </div>
-                    <!-- End date counter -->
                 </div>
                 <div class="emms__hero-registration__form emms__fade-in">
                     <!-- Form -->
@@ -236,20 +250,186 @@ require_once('././src/components/cacheSettings.php');
 
 
         <!-- Calendar -->
-        <section class="emms__calendar" id="agenda">
-            <div class="emms__container--lg">
-                <div class="emms__calendar__title emms__fade-in">
-                    <h2>Conoce a los Speakers del EMMS E-commerce 2023</h2>
-                    <p>Estos son los <strong>ponentes</strong> que nos acompañarán en esta edición y las <strong>temáticas</strong> de sus charlas. </p>
+        <div class="hide">
+            <?php include('./src/components/speakers.php') ?>
+        </div>
+
+        <!-- Grid -->
+        <section class="emms__grid emms__grid--3">
+            <div class="emms__container--md">
+                <div class="emms__grid__title">
+                    <h2>Vive la experiencia completa en EMMS Digital Trends</h2>
+                </div>
+                <ul class="emms__grid__content">
+                    <li class="emms__grid__item">
+                        <div class="emms__grid__item__image">
+                            <img src="src/img/conferencias.png" alt="Image">
+                        </div>
+                        <div class="emms__grid__item__text">
+                            <h3>Conferencias</h3>
+                            <p>Encuentra a tus máximos referentes internacionales compartiendo ideas y experiencias en un mismo lugar para descubrir las últimas tendencias en Marketing Digital.</p>
+                        </div>
+                    </li>
+                    <li class="emms__grid__item">
+                        <div class="emms__grid__item__image">
+                            <img src="src/img/entrevistas.png" alt="Image">
+                        </div>
+                        <div class="emms__grid__item__text">
+                            <h3>Entrevistas</h3>
+                            <p>Asiste a conversaciones con directivos y profesionales que marcan tendencia con sus negocios para escuchar sus mejores consejos, experiencias y proyecciones del mercado. </p>
+                        </div>
+                    </li>
+                    <li class="emms__grid__item">
+                        <div class="emms__grid__item__image">
+                            <img src="src/img/exito.png" alt="Image">
+                        </div>
+                        <div class="emms__grid__item__text">
+                            <h3>Casos de Éxito</h3>
+                            <p>Escucha directamente de los representantes de compañías líderes cuáles fueron las estrategias que impulsaron el éxito de sus negocios y conoce sus mejores tácticas para vender más.</p>
+                        </div>
+                    </li>
+                    <li class="emms__grid__item">
+                        <div class="emms__grid__item__image">
+                            <img src="src/img/networking.png" alt="Image">
+                        </div>
+                        <div class="emms__grid__item__text">
+                            <h3>Networking</h3>
+                            <p>Únete a valiosas conversaciones con los exponentes del sector, conoce nuevos colegas y expande las redes de tu negocio para impulsar su crecimiento.</p>
+                        </div>
+                    </li>
+                    <li class="emms__grid__item">
+                        <div class="emms__grid__item__image">
+                            <img src="src/img/workshop.png" alt="Image">
+                        </div>
+                        <div class="emms__grid__item__text">
+                            <h3>Workshops</h3>
+                            <p>Capacítate en talleres prácticos de asistencia reducida con especialistas destacados en la industria. Interactúa y pon en práctica tus conocimientos.</p>
+                        </div>
+                    </li>
+                    <li class="emms__grid__item">
+                        <div class="emms__grid__item__image">
+                            <img src="src/img/recursos.png" alt="Image">
+                        </div>
+                        <div class="emms__grid__item__text">
+                            <h3>Biblioteca de Recursos</h3>
+                            <p>Encuentra E-books, infografías, cápsulas audiovisuales, guías, plantillas y muchos más contenidos descargables y gratuitos en la sección Biblioteca de Recursos.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="emms__grid__bottom">
+                    <a href="#entradas" class="emms__cta">OBTÉN TU ENTRADA VIP</a>
                 </div>
             </div>
-            <!-- Speakers -->
-            <?php include('./src/components/speakers.php') ?>
-            <!-- End list -->
+        </section>
+
+        <!-- Separator -->
+        <div class="emms__separator"></div>
+
+
+        <!-- Event numbers -->
+        <section class="emms__eventnumbers emms__eventnumbers--large" id="boxNumberLarge">
             <div class="emms__container--lg">
-                <div class="emms__calendar__bottom emms__fade-in">
-                    <a href="#registro" class="emms__cta">INSCRÍBETE GRATIS AHORA</a>
+                <h2 class="emms__fade-in">EMMS a lo largo del tiempo</h2>
+                <ul class="emms__fade-in">
+                    <li>
+                        <img src="src/img/icons/icon-eventnumber-1.svg" alt="Icon">
+                        <p class="number" id="count1L">265</p>
+                        <span>REGISTRADOS</span>
+                    </li>
+                    <li>
+                        <img src="src/img/icons/icon-eventnumber-2.svg" alt="Icon">
+                        <p class="number" id="count4L">190</p>
+                        <span>Speakers</span>
+                    </li>
+                    <li>
+                        <img src="src/img/icons/icon-eventnumber-3.svg" alt="Icon">
+                        <p class="number" id="count3L">10</p>
+                        <span>Países</span>
+                    </li>
+                    <li>
+                        <img src="src/img/icons/icon-eventnumber-4.svg" alt="Icon">
+                        <p class="number" id="count2L">15</p>
+                        <span>Años</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- Separator -->
+        <div class="emms__separator"></div>
+
+
+        <!-- Speakers -->
+        <section class="emms__home__speakers">
+            <div class="emms__container--lg">
+                <h2 class="emms__fade-in">Algunos de los conferencistas que nos han acompañado en las últimas ediciones:</h2>
+                <div class="emms__speakerslist emms__fade-in">
+                    <ul>
+                        <li class="emms__speakerslist__item">
+                            <img src="src/img/people/speaker-neil-patel.png" alt="Neil Patel" class="emms__speakerslist__item__photo">
+                            <p>Neil Patel</p>
+                            <img src="src/img/logos/logo-np-digital.png" alt="NP Digital" class="emms__speakerslist__item__logo">
+                        </li>
+                        <li class="emms__speakerslist__item">
+                            <img src="src/img/people/speaker-vero-ruiz-del-vizo.png" alt="Vero Ruiz del Vizo" class="emms__speakerslist__item__photo">
+                            <p>Vero Ruiz del Vizo</p>
+                            <img src="src/img/logos/logo-vero.png" alt="Veró" class="emms__speakerslist__item__logo">
+                        </li>
+                        <li class="emms__speakerslist__item">
+                            <img src="src/img/people/speaker-tim-ash.png" alt="Tim Ash" class="emms__speakerslist__item__photo">
+                            <p>Tim Ash</p>
+                            <img src="src/img/logos/logo-timash.png" alt="TimAsh.com" class="emms__speakerslist__item__logo">
+                        </li>
+                        <li class="emms__speakerslist__item">
+                            <img src="src/img/people/speaker-vedant-misra.png" alt="Vedant Misra" class="emms__speakerslist__item__photo">
+                            <p>Vedant Misra</p>
+                            <img src="src/img/logos/logo-google.png" alt="Google" class="emms__speakerslist__item__logo">
+                        </li>
+                        <li class="emms__speakerslist__item">
+                            <img src="src/img/people/speaker-guillermo-pujadas.png" alt="Guillermo Pujadas" class="emms__speakerslist__item__photo">
+                            <p>Guillermo Pujadas</p>
+                            <img src="src/img/logos/logo-meta.png" alt="Meta" class="emms__speakerslist__item__logo">
+                        </li>
+                        <li class="emms__speakerslist__item">
+                            <img src="src/img/people/speaker-julia-rayeb.png" alt="Julia Rayeb" class="emms__speakerslist__item__photo">
+                            <p>Julia Rayeb</p>
+                            <img src="src/img/logos/logo-facebook.png" alt="Facebook" class="emms__speakerslist__item__logo">
+                        </li>
+                        <li class="emms__speakerslist__item">
+                            <img src="src/img/people/speaker-pablo-laucirica.png" alt="Pablo Laucirica" class="emms__speakerslist__item__photo">
+                            <p>Pablo Laucirica</p>
+                            <img src="src/img/logos/logo-microsoft.png" alt="Microsoft" class="emms__speakerslist__item__logo">
+                        </li>
+                        <li class="emms__speakerslist__item">
+                            <img src="src/img/people/speaker-vilma-nunez.png" alt="Vilma Nuñez" class="emms__speakerslist__item__photo">
+                            <p>Vilma Nuñez</p>
+                            <img src="src/img/logos/logo-vilma.png" alt="Vilma" class="emms__speakerslist__item__logo">
+                        </li>
+                        <li class="emms__speakerslist__item">
+                            <img src="src/img/people/speaker-marcos-pueyrredon.png" alt="Marcos Pueyrredón " class="emms__speakerslist__item__photo">
+                            <p>Marcos Pueyrredón </p>
+                            <img src="src/img/logos/logo-vtex.png" alt="Vtex" class="emms__speakerslist__item__logo">
+                        </li>
+                        <li class="emms__speakerslist__item">
+                            <img src="src/img/people/speaker-diana-ramirez.png" alt="Diana Ramirez" class="emms__speakerslist__item__photo">
+                            <p>Diana Ramirez</p>
+                            <img src="src/img/logos/logo-spotify.png" alt="Spotify" class="emms__speakerslist__item__logo">
+                        </li>
+                        <li class="emms__speakerslist__item">
+                            <img src="src/img/people/speaker-angela-blones.png" alt="Ángela Blones" class="emms__speakerslist__item__photo">
+                            <p>Ángela Blones</p>
+                            <img src="src/img/logos/logo-angela-blones.png" alt="Ángela Blones" class="emms__speakerslist__item__logo">
+                        </li>
+                        <li class="emms__speakerslist__item">
+                            <img src="src/img/people/speaker-albert-esplugas.png" alt="Albert Esplugas" class="emms__speakerslist__item__photo">
+                            <p>Albert Esplugas</p>
+                            <img src="src/img/logos/logo-amazon.png" alt="Amazon" class="emms__speakerslist__item__logo">
+                        </li>
+                    </ul>
                 </div>
+                <small class="emms__fade-in">Regístrate gratis para ver las conferencias de este año y recibir todas las novedades sobre la edición 2024.</small>
+                <a href="#registro" class="emms__cta emms__fade-in">REVIVE EL EMMS</a>
             </div>
         </section>
 
@@ -258,12 +438,12 @@ require_once('././src/components/cacheSettings.php');
         <section class="emms__premium-content emms__premium-content--dark">
             <div class="emms__container--lg">
                 <div class="emms__premium-content__text emms__fade-in">
-                    <h2>Desbloquea Contenido Premium ¡gratis! </h2>
-                    <p>Descubre <strong>recursos descargables, herramientas y conferencias on-demand</strong> que te traen nuestros aliados para que puedas ponerlos en práctica y potenciar tu Tienda Online.</p>
-                    <a href="./sponsors" class="emms__cta emms__fade-in">DESCÚBRELO AQUÍ</a>
+                    <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
+                    <p>Descubre <strong>contenidos descargables, herramientas y conferencias on-demand</strong> que te traen nuestros aliados para que puedas potenciar al máximo tu negocio.</p>
+                    <a href="./sponsors" class="emms__cta emms__fade-in">ACCEDE AQUÍ</a>
                 </div>
                 <div class="emms__premium-content__picture emms__fade-in">
-                    <img src="src/img/download--locked.png" alt="Contenido Premium">
+                    <img src="src/img/download--locked-24.png" alt="Contenido Premium">
                 </div>
             </div>
         </section>
@@ -322,47 +502,27 @@ require_once('././src/components/cacheSettings.php');
 
 
         <!-- Companies list -->
-        <section class="emms__companies emms__companies--categories" id="aliados">
+        <section class="emms__companies ">
             <div class="emms__container--lg">
-                <h2 class="emms__fade-in">Nos acompañan en esta edición:</h2>
-                <h3>SPONSORS</h3>
-                <ul class="emms__companies__list emms__companies__list--lg  emms__fade-in">
-                    <?php $sponsors = $db->getSponsorsByType('SPONSOR');
-                    foreach ($sponsors as $sponsor) : ?>
-                        <li class="emms__companies__list__item">
-                            <?php if ($sponsor['link_site']) : ?>
-                                <a href="<?= $sponsor['link_site'] ?>" target="_blank">
-                                <?php endif ?>
-                                <img src="./adm23/server/modules/sponsors/uploads/<?= $sponsor['logo_company'] ?>" alt="<?= $sponsor['alt_logo_company'] ?>">
-                                <?php if ($sponsor['link_site']) : ?>
-                                </a>
-                            <?php endif ?>
-                        </li>
-
-                    <?php endforeach; ?>
+                <h2 class="emms__fade-in">Nos han acompañado en ediciones anteriores</h2>
+                <ul class="emms__companies__list emms__fade-in">
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-metricool.png" alt="Metricool"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-wayra.png" alt="Wayra"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-asociacion-marketing-espana.png" alt="Asociación de Marketing de España"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-camece.png" alt="Camece"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-capece.png" alt="Capece"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-amvo.png" alt="AMVO"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-linkedin.png" alt="LinkedIn"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-bigbox.png" alt="Bigbox"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-semrush.png" alt="Semrush"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-crehana.png" alt="Crehana"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-marketing-4ecommerce.png" alt="Marketing 4 Ecommerce"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-vtex.png" alt="VTEX"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-banco-frances.png" alt="BBVA Francés"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-airbnb.png" alt="Airbnb"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-woocomerce.png" alt="Woocommerce"></li>
                 </ul>
-                <div class="emms__companies__divisor"></div>
-                <h3>MEDIA PARTNERS EXCLUSIVE</h3>
-                <ul class="emms__companies__list emms__companies__list  emms__fade-in">
-                    <?php $sponsors = $db->getSponsorsByType('PREMIUM');
-                    foreach ($sponsors as $sponsor) : ?>
-                        <li class="emms__companies__list__item">
-                            <?php if ($sponsor['link_site']) : ?>
-                                <a href="<?= $sponsor['link_site'] ?>" target="_blank">
-                                <?php endif ?>
-                                <img src="./adm23/server/modules/sponsors/uploads/<?= $sponsor['logo_company'] ?>" alt="<?= $sponsor['alt_logo_company'] ?>">
-                                <?php if ($sponsor['link_site']) : ?>
-                                </a>
-                            <?php endif ?>
-                        </li>
-
-                    <?php endforeach; ?>
-                </ul>
-                <div class="emms__companies__divisor"></div>
-                <h3>MEDIA PARTNERS STARTERS</h3>
-                <ul class="emms__companies__list emms__companies__list  emms__fade-in" id="mediaPartenersStarters">
-                </ul>
-                <small class="emms__fade-in"><strong>¿Quieres ser aliado del EMMS E-commerce 2023?</strong> ¡Hablemos! Escríbenos a <a href="mailto:partners@fromdoppler.com">partners@fromdoppler.com</a></small>
+                <small class="emms__fade-in">¿Quieres ser Partner del EMMS? Escríbenos a <a href="mailto:partners@fromdoppler.com">partners@fromdoppler.com</a></small>
             </div>
         </section>
 

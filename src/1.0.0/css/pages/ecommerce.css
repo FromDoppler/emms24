@@ -26,6 +26,17 @@
     height: 110px;
 }
 
+.emms__ecommerce .emms__hellobar--counter .emms__counter {
+    margin: 0;
+    height: 40px;
+}
+
+@media(max-width: 620px){
+    .emms__ecommerce .emms__hellobar--counter .emms__counter {
+        margin: 10px 0 0 0;
+    }
+}
+
 
 /* Calendar */
 
