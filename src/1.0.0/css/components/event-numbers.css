@@ -18,8 +18,8 @@
 }
 
 .emms__eventnumbers h2 {
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 30px;
+    line-height: 32px;
     text-align: center;
     color: #333333;
     margin: 0 0 40px 0;
@@ -38,6 +38,7 @@
 .emms__eventnumbers ul {
     display: flex;
     justify-content: center;
+    align-items: end;
 }
 
 .emms__eventnumbers ul li {
@@ -140,8 +141,8 @@
 }
 
 .emms__eventnumbers--large ul li p{
-    font-size: 96px;
-    color: #FF4FB6;
+    font-size: 60px;
+    color: #6A36DF;
 }
 
 .emms__eventnumbers--large ul li span{
@@ -149,15 +150,12 @@
     font-weight: 600;
     text-transform: uppercase;
     color: #212121;
-    text-align: right;
+    text-align: center;
 }
 
 @media(max-width:1350px){
     .emms__eventnumbers--large ul li{
         padding: 5px 40px;
-    }
-    .emms__eventnumbers--large ul li p{
-        font-size: 80px;
     }
 }
 
@@ -168,11 +166,15 @@
     .emms__eventnumbers ul li span{
         text-align: center;
     }
+    .emms__eventnumbers--large ul li img{
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 @media(max-width:620px){
     .emms__eventnumbers--large ul li p{
-        font-size: 60px;
+        font-size: 40px;
     }
     .emms__eventnumbers--large ul li span{
         font-size: 16px;

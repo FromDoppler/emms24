@@ -1,9 +1,9 @@
 /* Hero */
 
 .emms__home__hero {
-    background: #000 url("../../../img/back-hero--dk.png") no-repeat;
+    background: #000 url("../../../img/back-hero--dk-24.png") no-repeat;
     background-size: 100%;
-    background-position: center;
+    background-position: bottom;
     padding: 178px 0 108px 0;
     animation: hero-back 3s;
 }
@@ -187,9 +187,6 @@
 
 @media(max-width:620px) {
     .emms__home__hero {
-        background: #000 url("../../img/back-hero--mb.png") no-repeat;
-        background-size: 100%;
-        background-position: center;
         padding: 100px 0 165px 0;
     }
 
