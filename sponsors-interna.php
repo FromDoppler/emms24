@@ -41,41 +41,54 @@ if (isset($_GET['slug'])) {
 
     <main>
 
-        <!-- Hero -->
-        <section class="emms__internal-sponsors__hero">
-            <div class="emms__background-a"></div>
-            <div class="emms__container--lg emms__fade-top">
-                <div class="emms__internal-sponsors__hero__content">
-                    <h1><?= $sponsor['title'] ?></h1>
-                    <p><?= $sponsor['description'] ?></p>
-                </div>
-                <div class="emms__internal-sponsors__hero__video">
-                    <?php if (!empty($sponsor['youtube'])) :  ?>
+        <?php if (!empty($sponsor['youtube'])) :  ?>
+            <!-- Hero -->
+            <section class="emms__internal-sponsors__hero emms__bg-section-2">
+                <div class="emms__container--lg emms__fade-top">
+                    <div class="emms__internal-sponsors__hero__content">
+                        <h1><?= $sponsor['title'] ?></h1>
+                        <p><?= $sponsor['description'] ?></p>
+                    </div>
+                    <div class="emms__internal-sponsors__hero__video">
                         <iframe src="https://www.youtube.com/embed/<?= $sponsor['youtube'] ?>"></iframe>
-                    <?php else : ?>
-                        <img src="./adm23/server/modules/sponsors/uploads/<?= $sponsor['image_youtube'] ?>" alt="<?= $sponsor['alt_image_youtube'] ?>" />
-                    <?php endif; ?>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Resource -->
-        <section class="emms__internal-sponsors__resource">
-            <div class="emms__container--md emms__fade-in">
-                <div class="emms__internal-sponsors__resource__picture">
-                    <img src="src/img/download.png" alt="download">
+            <!-- Resource -->
+            <section class="emms__internal-sponsors__resource">
+                <div class="emms__container--md emms__fade-in">
+                    <div class="emms__internal-sponsors__resource__picture">
+                        <img src="src/img/download--locked-24.png" alt="download">
+                    </div>
+                    <div class="emms__internal-sponsors__resource__text">
+                        <h2><?= $sponsor['title_magnet'] ?></h2>
+                        <p><?= $sponsor['description_magnet'] ?></p>
+                        <a href="<?= $sponsor['link_magnet'] ?>" class="emms__cta">ACCEDE</a>
+                    </div>
                 </div>
-                <div class="emms__internal-sponsors__resource__text">
-                    <h2><?= $sponsor['title_magnet'] ?></h2>
-                    <p><?= $sponsor['description_magnet'] ?></p>
-                    <a href="<?= $sponsor['link_magnet'] ?>" class="emms__cta">ACCEDE</a>
+            </section>
+
+        <?php else : ?>
+
+            <!-- Resource -->
+            <section class="emms__internal-sponsors__resource mt">
+                <div class="emms__container--md emms__fade-in">
+                    <div class="emms__internal-sponsors__resource__picture">
+                        <img src="src/img/download--locked-24.png" alt="download">
+                    </div>
+                    <div class="emms__internal-sponsors__resource__text">
+                        <h2><?= $sponsor['title_magnet'] ?></h2>
+                        <p><?= $sponsor['description_magnet'] ?></p>
+                        <a href="<?= $sponsor['link_magnet'] ?>" class="emms__cta">ACCEDE</a>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+        <?php endif; ?>
 
         <!-- Description -->
         <section class="emms__internal-sponsors__description">
-            <div class="emms__background-a"></div>
             <div class="emms__container--md emms__fade-in">
                 <h2><?= $sponsor['title_promo_company'] ?></h2>
                 <p><?= $sponsor['description_promo_company'] ?></p>

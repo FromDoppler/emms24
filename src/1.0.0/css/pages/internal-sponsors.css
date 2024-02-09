@@ -47,17 +47,7 @@
 /* Hero */
 
 .emms__internal-sponsors__hero {
-    background: #310E44;
     position: relative;
-}
-
-.emms__internal-sponsors__hero .emms__background-a {
-    width: 707px;
-    height: 648px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: translate(60%, -69%);
 }
 
 .emms__internal-sponsors__hero .emms__container--lg {
@@ -133,9 +123,14 @@
 /* Resource */
 
 .emms__internal-sponsors__resource {
+    background: #310e44;
     padding: 70px 0 80px 0;
     position: relative;
     z-index: 1;
+}
+
+.emms__internal-sponsors__resource.mt{
+    padding: 285px 0 80px 0;
 }
 
 .emms__internal-sponsors__resource .emms__container--md {
@@ -162,14 +157,14 @@
     font-size: 27px;
     line-height: 29px;
     font-weight: 700;
-    color: #333;
+    color: #fff;
     margin: 0 0 30px 0;
 }
 
 .emms__internal-sponsors__resource__text p {
     font-size: 16px;
     line-height: 24px;
-    color: #333333;
+    color: #fff;
 }
 
 .emms__internal-sponsors__resource__text .emms__cta {
@@ -180,6 +175,11 @@
     .emms__internal-sponsors__resource {
         padding: 65px 0;
     }
+
+    .emms__internal-sponsors__resource.mt{
+        padding: 187px 0 65px 0;
+    }
+
     .emms__internal-sponsors__resource__picture {
         max-width: 225px;
         width: 100%;
@@ -187,8 +187,9 @@
     }
 
     .emms__internal-sponsors__resource__text {
-        width: 100%;
         text-align: center;
+        width: 100%;
+        margin: 30px 0 0 0;
     }
 
     .emms__internal-sponsors__resource__text h2 {
@@ -203,18 +204,9 @@
 
 .emms__internal-sponsors__description {
     text-align: center;
-    background: #310E44;
+    background: #fff;
     padding: 90px 0 107px 0;
     position: relative;
-}
-
-.emms__internal-sponsors__description .emms__background-a {
-    width: 707px;
-    height: 648px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translate(-56%, -56%);
 }
 
 .emms__internal-sponsors__description .emms__container--md {
@@ -227,14 +219,14 @@
     font-size: 27px;
     line-height: 29px;
     font-weight: 700;
-    color: #F2F2F2;
+    color: #333;
     margin: 0 0 22px 0;
 }
 
 .emms__internal-sponsors__description p {
     font-size: 16px;
     line-height: 24px;
-    color: #F2F2F2;
+    color: #333;
 }
 
 .emms__internal-sponsors__description .emms__cta {

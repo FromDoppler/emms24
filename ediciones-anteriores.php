@@ -51,7 +51,7 @@ require_once('./utils/DB.php');
                     <li><a href="/">home</a></li>
                     <li><a href="/ecommerce">e-commerce</a></li>
                     <li><a href="/sponsors">biblioteca de recursos</a></li>
-                    <li><a href="#" class="active">ediciones anteriores</a></li>
+                    <li><a href="#" class="active">sobre emms</a></li>
                 </ul>
             </nav>
         </div>
@@ -83,15 +83,27 @@ require_once('./utils/DB.php');
 
         <!-- Hero -->
         <section class="emms__previous-editions__hero">
-            <div class="emms__container--md">
-                <h1 class="emms__fade-top">¡Revive las ediciones anteriores!</h1>
-                <p class="emms__fade-in">¿Te has perdido algún EMMS o quieres revivirlo? Disfruta gratis de todas las conferencias y potencia tu negocio junto a los líderes del Marketing Digital.</p>
+            <div class="emms__container--lg emms__previous-editions__hero__row">
+                <div class="emms__previous-editions__hero__column-text">
+                    <h1 class="emms__fade-top">Acerca de EMMS by Doppler</h1>
+                    <p class="emms__fade-in">Suspendisse ornare tellus sed elit sagittis fringilla. Suspendisse sagittis neque vel fermentum tincidunt. Integer sagittis ipsum dapibus, molestie dolor sed, ullamcorper quam. Nullam dignissim tincidunt elit vel porta. Proin gravida hendrerit posuere. </p>
+                </div>
+                <div class="emms__previous-editions__hero__column-img">
+                    <img src="src/img/team-doppler.png" alt="Equipo de Doppler" class="emms__fade-in">
+                </div>
+            </div>
+            <div class="emms__previous-editions__hero__bottom emms__fade-in">
+                <div class="emms__previous-editions__hero__bottom__container">
+                    <p>INTELIGENCIA ARTIFICIAL >> MARKETING AUTOMATION >> SOCIAL MEDIA >> EMAIL MARKETING >> CRO >> SEO >> SOCIAL ADS >> CONTENT MARKETING >> GOOGLE ADS >> RETARGETING >></p>
+                    <p>INTELIGENCIA ARTIFICIAL >> MARKETING AUTOMATION >> SOCIAL MEDIA >> EMAIL MARKETING >> CRO >> SEO >> SOCIAL ADS >> CONTENT MARKETING >> GOOGLE ADS >> RETARGETING >></p>
+                </div>
             </div>
         </section>
 
         <!-- Editions list -->
         <section class="emms__previous-editions__list">
             <div class="emms__container--md">
+                <h2>Revive las ediciones anteriores</h2>
                 <ul class="emms__previous-editions__list__container">
                     <li class="emms__previous-editions__list__item emms__fade-in">
                         <a data-target="modalRegister2" data-toggle="emms__register-modal">
@@ -372,30 +384,6 @@ require_once('./utils/DB.php');
                 <button class="emms__register-modal__window__close" data-dismiss="emms__register-modal"></button>
             </div>
         </div>
-
-
-        <!-- Central Video -->
-        <section class="emms__centralvideo emms__centralvideo--dark">
-            <div class="emms__container--md">
-                <div class="emms__centralvideo__title emms__fade-in">
-                    <h2>Se acerca una nueva edición del EMMS…</h2>
-                    <p>¡Vuelve el <strong>EMMS Digital Trends</strong>! Se vienen nuevas Conferencias, Entrevistas, Casos de Éxito, Workshops prácticos, Networking ¡y muchas nuevas sorpresas!</p>
-                </div>
-                <div class="emms__centralvideo__video emms__fade-in">
-                    <video src="src/img/EmmsDigitalTrends.mp4" controls></video>
-                </div>
-                <div class="emms__centralvideo__cta emms__fade-in">
-                    <a href="./digital-trends" class="emms__cta">REGÍSTRATE GRATIS</a>
-                    <small><i>¿Tienes dudas sobre el EMMS 2023?</i> Haz <a href="./registrado#preguntas-frecuentes" target="_blank">clic aquí</a> y encuentra las preguntas más frecuentes sobre el evento.</small>
-                </div>
-            </div>
-            <div class="emms__centralvideo__bottom emms__fade-in">
-                <div class="emms__centralvideo__bottom__container">
-                    <p>INTELIGENCIA ARTIFICIAL >> MARKETING AUTOMATION >> SOCIAL MEDIA >> EMAIL MARKETING >> CRO >> SEO >> SOCIAL ADS >> CONTENT MARKETING >> GOOGLE ADS >> RETARGETING >></p>
-                    <p>INTELIGENCIA ARTIFICIAL >> MARKETING AUTOMATION >> SOCIAL MEDIA >> EMAIL MARKETING >> CRO >> SEO >> SOCIAL ADS >> CONTENT MARKETING >> GOOGLE ADS >> RETARGETING >></p>
-                </div>
-            </div>
-        </section>
 
     </main>
 

@@ -74,7 +74,7 @@ window.addEventListener('scroll', function () {
 })();
 
 
-// Flickity Carousel
+// Flickity Carousel Home
 
 if (flkty != undefined) {
     var elem = document.querySelector('.main-carousel');
@@ -87,6 +87,21 @@ if (flkty != undefined) {
         wrapAround: true
     });
 }
+
+
+// Flickity Carousel Academy Banner
+
+var elem = document.querySelector('.academy-carousel');
+var flkty = new Flickity(elem, {
+    // options
+    groupCells: 1,
+    cellAlign: 'left',
+    contain: true,
+    prevNextButtons: true,
+    fade: true,
+    wrapAround: true,
+    pageDots: false,
+});
 
 
 // Mobile nav
