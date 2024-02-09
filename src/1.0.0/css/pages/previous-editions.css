@@ -5,7 +5,7 @@
 /* ---- Hero ---- */
 
 .emms__previous-editions__hero {
-    background: #000000;
+    background: #310E44;
     padding: 177px 0 88px 0;
     text-align: center;
 }
@@ -30,8 +30,77 @@
     animation-delay: .5s;
 }
 
+.emms__previous-editions__hero__bottom{
+    margin: 90px 0 -85px 0;
+    border-top: solid 1px #EF2AAC;
+    border-bottom: solid 1px #EF2AAC;
+    height: 80px;
+    position: relative;
+}
+
+.emms__previous-editions__hero__bottom__container{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    animation-delay: .4s;
+}
+
+.emms__previous-editions__hero__bottom__container p{
+    font-size: 22px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #ef2aac;
+    white-space: nowrap;
+    margin: 0 5px 0 0;
+    animation: text-bottom 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes text-bottom{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+/* Hero with columns */
+
+.emms__previous-editions__hero .emms__previous-editions__hero__row{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.emms__previous-editions__hero .emms__previous-editions__hero__row .emms__previous-editions__hero__column-text{
+    text-align: left;
+    width: 40%;
+}
+
+.emms__previous-editions__hero .emms__previous-editions__hero__row .emms__previous-editions__hero__column-img{
+    width: 60%;
+}
+
+.emms__previous-editions__hero .emms__previous-editions__hero__row .emms__previous-editions__hero__column-img img{
+    width: 100%;
+    animation-delay: .3s;
+}
+
 
 /* ---- Editions list ----  */
+
+.emms__previous-editions__list h2{
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    color: #000;
+    margin: 0 0 70px 0;
+}
 
 .emms__previous-editions__list {
     padding: 120px 0 40px 0;
@@ -140,11 +209,32 @@
     .emms__previous-editions__list .emms__previous-editions__list__item--lg {
         width: 100%;
     }
+
+    /* Hero width columns */
+
+    .emms__previous-editions__hero .emms__previous-editions__hero__row{
+        display: block;
+    }
+    .emms__previous-editions__hero .emms__previous-editions__hero__row .emms__previous-editions__hero__column-text{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto 50px auto;
+        max-width: 600px;
+    }
+    .emms__previous-editions__hero .emms__previous-editions__hero__row .emms__previous-editions__hero__column-img {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
 }
 
 @media(max-width:620px) {
     .emms__previous-editions__hero {
         padding: 130px 0 60px 0;
+    }
+
+    .emms__previous-editions__hero__bottom{
+        margin: 90px 0 -58px 0;
     }
 
     .emms__previous-editions__list {

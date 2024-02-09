@@ -39,7 +39,7 @@ require_once('././src/components/cacheSettings.php');
 
     <?php if ($ecommerceStates['isPre']) : ?>
         <!-- Hellobar -->
-        <div class="emms__hellobar">
+        <div class="emms__hellobar hide">
             <div class="emms__hellobar__container emms__fade-in">
                 <p><strong>EMMS E-commerce:</strong> ¡disfruta de un día más de aprendizaje! <strong>16 y 17 de mayo</strong></p>
             </div>

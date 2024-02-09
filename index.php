@@ -58,7 +58,7 @@ require_once('././src/components/cacheSettings.php');
             <nav class="emms__header__nav emms__header__nav--hidden" id="nav-mb">
                 <ul class="emms__header__nav__menu">
                     <li><a href="#" class="active">home</a></li>
-                    <li><a href="./ecommerce.php">e-commerce</a></li>
+                    <li><a href="./ecommerce">e-commerce</a></li>
                     <li><a href="/sponsors">biblioteca de recursos</a></li>
                     <li><a href="/ediciones-anteriores">sobre el emms</a></li>
                 </ul>

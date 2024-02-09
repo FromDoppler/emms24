@@ -83,15 +83,27 @@ require_once('./utils/DB.php');
 
         <!-- Hero -->
         <section class="emms__previous-editions__hero">
-            <div class="emms__container--md">
-                <h1 class="emms__fade-top">Revive las ediciones anteriores</h1>
-                <p class="emms__fade-in">¿Te has perdido alguno de nuestros eventos o quieres revivirlo? Disfruta gratis todas las conferencias y potencia tu negocio junto a los líderes del Marketing Digital.</p>
+            <div class="emms__container--lg emms__previous-editions__hero__row">
+                <div class="emms__previous-editions__hero__column-text">
+                    <h1 class="emms__fade-top">Acerca de EMMS by Doppler</h1>
+                    <p class="emms__fade-in">Suspendisse ornare tellus sed elit sagittis fringilla. Suspendisse sagittis neque vel fermentum tincidunt. Integer sagittis ipsum dapibus, molestie dolor sed, ullamcorper quam. Nullam dignissim tincidunt elit vel porta. Proin gravida hendrerit posuere. </p>
+                </div>
+                <div class="emms__previous-editions__hero__column-img">
+                    <img src="src/img/team-doppler.png" alt="Equipo de Doppler" class="emms__fade-in">
+                </div>
+            </div>
+            <div class="emms__previous-editions__hero__bottom emms__fade-in">
+                <div class="emms__previous-editions__hero__bottom__container">
+                    <p>INTELIGENCIA ARTIFICIAL >> MARKETING AUTOMATION >> SOCIAL MEDIA >> EMAIL MARKETING >> CRO >> SEO >> SOCIAL ADS >> CONTENT MARKETING >> GOOGLE ADS >> RETARGETING >></p>
+                    <p>INTELIGENCIA ARTIFICIAL >> MARKETING AUTOMATION >> SOCIAL MEDIA >> EMAIL MARKETING >> CRO >> SEO >> SOCIAL ADS >> CONTENT MARKETING >> GOOGLE ADS >> RETARGETING >></p>
+                </div>
             </div>
         </section>
 
         <!-- Editions list -->
         <section class="emms__previous-editions__list">
             <div class="emms__container--md">
+                <h2>Revive las ediciones anteriores</h2>
                 <ul class="emms__previous-editions__list__container">
                     <li class="emms__previous-editions__list__item emms__fade-in">
                         <a href="https://youtube.com/playlist?list=PLHE_SVtQOB8rm4R9Dn55TfQSABmWQoaRK" target="_blank">
@@ -278,10 +290,6 @@ require_once('./utils/DB.php');
                 </ul>
             </div>
         </section>
-
-
-        <!-- Doppler Academy Banner -->
-        <?php include_once('././src/components/doppler-academy-banner.php'); ?>
 
     </main>
 

@@ -345,6 +345,12 @@ p {
     background-position: top;
 }
 
+.emms__bg-section-2 {
+    background: url("../../../img/bg-section-2.png") no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
 
 /* Collapse list */
 
