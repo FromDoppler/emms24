@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     li.classList.add('emms__fade-in-animation');
                     li.classList.add('emms__companies__list__item');
                     const img = document.createElement('img');
-                    img.src = `./adm23/server/modules/sponsors/uploads/${mediaPartner.logo_company}`;
+                    img.src = `./adm24/server/modules/sponsors/uploads/${mediaPartner.logo_company}`;
                     img.alt = `${mediaPartner.alt_logo_company}`;
                     li.appendChild(img);
                     partnersStartersUl.appendChild(li);

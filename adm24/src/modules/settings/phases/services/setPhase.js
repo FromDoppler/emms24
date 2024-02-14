@@ -1,8 +1,8 @@
 export const setPhase = async (currentEvent, selectedPhase, transition) => {
     try {
-        const setPhaseUrl = '/adm23/server/modules/settings/setPhase.php';
+        const setPhaseUrl = '/adm24/server/modules/settings/setPhase.php';
         const formData = new FormData();
-        formData.append("event", currentEvent);
+        formData.append("event", currentEvent+'24');
         formData.append("phase", selectedPhase);
         formData.append("transition", transition);
 
@@ -17,9 +17,9 @@ export const setPhase = async (currentEvent, selectedPhase, transition) => {
 
 export const setTransmission = async (currentEvent, transmission) => {
     try {
-        const setPhaseUrl = '/adm23/server/modules/settings/setTransmission.php';
+        const setPhaseUrl = '/adm24/server/modules/settings/setTransmission.php';
         const formData = new FormData();
-        formData.append("event", currentEvent);
+        formData.append("event", currentEvent+'24');
         formData.append("transmission", transmission);
 
         await fetch(setPhaseUrl, {

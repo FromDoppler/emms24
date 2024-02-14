@@ -2,7 +2,7 @@ import { getSponsors } from "./getSponsors.js";
 import { showSponsorsPage } from "./../sponsors-list/sponsorsList.js";
 import { showSponsorForm } from "./../sponsor-form/sponsorForm.js";
 const removeSponsor = async (sponsorId, currentSponsorType) => {
-    const removeSponsorUrl = "/adm23/server/modules/sponsors/removeSponsor.php";
+    const removeSponsorUrl = "/adm24/server/modules/sponsors/removeSponsor.php";
     const formData = new FormData();
     formData.append("sponsorId", sponsorId);
 
