@@ -1,5 +1,5 @@
 export const getSponsors = async (currentSponsorType) => {
-    const getSponsorsUrl = "/adm23/server/modules/sponsors/getSponsors.php?";
+    const getSponsorsUrl = "/adm24/server/modules/sponsors/getSponsors.php?";
     const response = await fetch(
         getSponsorsUrl +
             new URLSearchParams({

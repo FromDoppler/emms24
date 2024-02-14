@@ -70,7 +70,7 @@ const addSponsor = async (currentSponsorType, sponsorId) => {
         const str = JSON.stringify(sponsorObj);
         formData.append('str', str);
 
-        const addSponsorUrl = '/adm23/server/modules/sponsors/addSponsor.php';
+        const addSponsorUrl = '/adm24/server/modules/sponsors/addSponsor.php';
 
 
         await fetch(addSponsorUrl, {

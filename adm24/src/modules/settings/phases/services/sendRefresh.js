@@ -1,4 +1,4 @@
-const sendRefreshUrl = '/adm23/server/modules/settings/sendRefresh.php';
+const sendRefreshUrl = '/adm24/server/modules/settings/sendRefresh.php';
 
 export const sendRefresh = async () => {
     try {
