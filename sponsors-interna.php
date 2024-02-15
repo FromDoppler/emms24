@@ -34,7 +34,7 @@ if (isset($_GET['slug'])) {
                 <a href="./"><img src="src/img/logos/logo-emms.png" alt="Emms 2023"></a>
             </div>
             <div class="emms__header__logo">
-                <a href="<?= $sponsor['link_site'] ?>"><img src="./adm23/server/modules/sponsors/uploads/<?= $sponsor['image_landing'] ?>" alt="<?= $sponsor['alt_image_landing'] ?>"></a>
+                <a href="<?= $sponsor['link_site'] ?>"><img src="./adm24/server/modules/sponsors/uploads/<?= $sponsor['image_landing'] ?>" alt="<?= $sponsor['alt_image_landing'] ?>"></a>
             </div>
         </div>
     </header>
