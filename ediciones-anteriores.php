@@ -48,10 +48,16 @@ require_once('./utils/DB.php');
             <a class="emms__header__nav--mb" id="btn-burger"></a>
             <nav class="emms__header__nav emms__header__nav--hidden" id="nav-mb">
                 <ul class="emms__header__nav__menu">
-                    <li><a href="/">home</a></li>
-                    <li><a href="/ecommerce">e-commerce</a></li>
-                    <li><a href="/sponsors">biblioteca de recursos</a></li>
-                    <li><a href="#" class="active">sobre emms</a></li>
+                <li><a href="/">home</a></li>
+                    <li><a href="./ecommerce">e-commerce</a>
+                    </li>
+                    <li><a href="./sponsors">biblioteca de recursos</a></li>
+                    <li class="emms__header__nav__menu__dropdown"><a href="#" class="active">Qué es el EMMS</a>
+                        <ul class="emms__header__nav__submenu">
+                            <li><a href="#sobre-emms">Sobre el EMMS</a></li>
+                            <li><a href="#ediciones-anteriores">Revive ediciones anteriores</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -82,11 +88,12 @@ require_once('./utils/DB.php');
     <main>
 
         <!-- Hero -->
-        <section class="emms__previous-editions__hero">
+        <section class="emms__previous-editions__hero" id="sobre-emms">
             <div class="emms__container--lg emms__previous-editions__hero__row">
                 <div class="emms__previous-editions__hero__column-text">
-                    <h1 class="emms__fade-top">Acerca de EMMS by Doppler</h1>
-                    <p class="emms__fade-in">Suspendisse ornare tellus sed elit sagittis fringilla. Suspendisse sagittis neque vel fermentum tincidunt. Integer sagittis ipsum dapibus, molestie dolor sed, ullamcorper quam. Nullam dignissim tincidunt elit vel porta. Proin gravida hendrerit posuere. </p>
+                    <h1 class="emms__fade-top">Acerca del EMMS</h1>
+                    <p class="emms__fade-in">El EMMS es el <strong>evento online de Marketing Digital más convocante en Latinoamérica y España</strong>. Se desarrolla de forma <strong>100% virtual</strong> y es organizado por <a href="https://www.fromdoppler.com/es/" target="_blank">Doppler</a>, la <strong>herramienta de Marketing Automation</strong> líder entre el público hispanohablante, hace <strong>más de 16 años</strong>. <br><br>Cuenta con los <strong>referentes y marcas más destacados en la industria</strong>, abordando las temáticas más resonantes de los últimos meses ante más de 50 mil registrados. Además, actualmente el EMMS ofrece dos ediciones: una exclusiva para la industria e-commerce y de tendencias globales de marketing digital.
+</p>
                 </div>
                 <div class="emms__previous-editions__hero__column-img">
                     <img src="src/img/team-doppler.png" alt="Equipo de Doppler" class="emms__fade-in">
@@ -101,18 +108,18 @@ require_once('./utils/DB.php');
         </section>
 
         <!-- Editions list -->
-        <section class="emms__previous-editions__list">
+        <section class="emms__previous-editions__list" id="ediciones-anteriores">
             <div class="emms__container--md">
                 <h2>Revive las ediciones anteriores</h2>
                 <ul class="emms__previous-editions__list__container">
                     <li class="emms__previous-editions__list__item emms__fade-in">
                         <a data-target="modalRegister2" data-toggle="emms__register-modal">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2023.png" alt="EMMS 2023">
+                                <img src="src/img/editions/emms2022.png" alt="EMMS 2023">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
-                                <h3>EMMS 2023</h3>
-                                <p>Falta texto e imagen</p>
+                                <h3>EMMS E-COMMERCE 2023</h3>
+                                <p>Más de 13 mil personas se unieron a la primera edición especializada en la industria del Retail e E-commerce del EMMS. Contamos con entrevistas exclusivas con especialistas, casos de éxitos y conferencias, así como también los mejores insights en Inteligencia Artificial aplicada a este mercado. </p>
                                 <span>Revive esta edición</span>
                             </div>
                         </a>
@@ -300,7 +307,7 @@ require_once('./utils/DB.php');
                 <!-- Form -->
                 <form class="emms__form" id="editionsForm" novalidate autocomplete="off">
                     <h3>Revive las ediciones anteriores 🙂</h3>
-                    <h4>Regístrate gratis. Accederás a todas las ediciones anteriores ¡y serás parte de la próxima!</h4>
+                    <h4>Regístrate aquí de forma gratuita para volver a ver las charlas de todas tus ediciones preferidas del EMMS, desbloquear la Biblioteca de Recursos y ¡ser parte de la próxima edición!</h4>
                     <ul class="emms__form__field-group">
                         <li class="emms__form__field-item">
                             <div class="holder">
@@ -364,7 +371,7 @@ require_once('./utils/DB.php');
                         </li>
                     </ul>
                     <div class="emms__form__btn">
-                        <button class="emms__cta" id="register-button" type="button"><span class="button__text">ACCEDE AHORA</span></button>
+                        <button class="emms__cta" id="register-button" type="button"><span class="button__text"> INSCRÍBETE GRATIS</span></button>
                     </div>
                     <div class="emms__form__legal close">
                         <a class="emms__form__legal__btn" id="legalBtn">Información básica sobre privacidad </a>

@@ -1,5 +1,6 @@
 <?php
 require_once('././config.php');
+require_once('././src/components/cacheSettings.php');
 ?>
 
 <!DOCTYPE html>
@@ -13,6 +14,34 @@ require_once('././config.php');
 <body class="emms__ecommerce emms__ecommerce-logueado">
     <?php include_once('././src/components/gtm.php'); ?>
 
+    <?php if ($ecommerceStates['isPre']) : ?>
+        <!-- Hellobar -->
+        <div class="emms__hellobar emms__hellobar--counter">
+            <div class="emms__hellobar__container emms__fade-in">
+                <p><strong>¡Está llegando el EMMS E-commerce!</strong>No te pierdas de nada.</p>
+                <ul class="emms__counter">
+                    <li class="emms__counter__number">
+                        <div><span class="d"></span></div>
+                        <span class="emms__counter__number--data">días</span>
+                    </li>
+                    <li class="emms__counter__number">
+                        <div><span class="h"></span></div>
+                        <span class="emms__counter__number--data">horas</span>
+                    </li>
+                    <li class="emms__counter__number">
+                        <div><span class="m"></span></div>
+                        <span class="emms__counter__number--data">minutos</span>
+                    </li>
+                    <li class="emms__counter__number">
+                        <div><span class="s"></span></div>
+                        <span class="emms__counter__number--data">segundos</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    <?php endif; ?>
+
     <!-- Header -->
     <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
@@ -22,15 +51,16 @@ require_once('././config.php');
             <a class="emms__header__nav--mb" id="btn-burger"></a>
             <nav class="emms__header__nav emms__header__nav--hidden" id="nav-mb">
                 <ul class="emms__header__nav__menu">
-                    <li><a href="/registrado">home</a></li>
-                    <li class="emms__header__nav__menu__dropdown"><a href="#" class="active">e-commerce</a>
-                        <ul class="emms__header__nav__submenu">
-                            <li><a href="#agenda">AGENDA</a></li>
-                            <li><a href="#aprende-con-doppler">APRENDE CON DOPPLER</a></li>
-                        </ul>
+                    <li><a href="/">home</a></li>
+                    <li><a href="#" class="active">e-commerce</a>
                     </li>
                     <li><a href="/sponsors">biblioteca de recursos</a></li>
-                    <li><a href="/ediciones-anteriores">sobre el emms</a></li>
+                    <li class="emms__header__nav__menu__dropdown"><a href="./ediciones-anteriores-registrado">Qué es el EMMS</a>
+                        <ul class="emms__header__nav__submenu">
+                            <li><a href="./ediciones-anteriores-registrado#sobre-emms">Sobre el EMMS</a></li>
+                            <li><a href="./ediciones-anteriores-registrado#ediciones-anteriores">Revive ediciones anteriores</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -63,14 +93,9 @@ require_once('././config.php');
         <!-- Hero -->
         <section class="emms__hero-registration--registered">
             <div class="emms__container--md">
-                <h1 class="emms__fade-top">¡Ya eres parte del EMMS E-commerce!</h1>
-                <p class="emms__fade-in">Te damos la bienvenida a este gran evento. <a href="#agenda">Revisa la Agenda</a> que hemos planeado para ti y prepárate para vivir el primer EMMS para Tiendas Online. ¡Gracias por sumarte! :)</p>
-                <a class="emms__hero-registration__add-event emms__fade-in">AGREGA EL EVENTO A TU CALENDARIO</a>
-                <!-- Date counter -->
-                <div id="emmsCounter" class="emms__fade-in">
-                    <?php include('././src/components/date-counter.php'); ?>
-                </div>
-                <!-- End date counter -->
+                <h1 class="emms__fade-top"><em>ONLINE Y GRATUITO - 18 y 19 DE ABRIL</em>¡Ya eres parte del EMMS E-commerce 2024!</h1>
+                <p class="emms__fade-in">Te damos la bienvenida al evento exclusivo pensado para tu Tienda Online con el que podrás inspirarte y aprender junto a especialistas. Guarda la fecha y mantente pendiente.</p>
+                <a href="https://www.addevent.com/event/fz20154258" target="_blank" class="emms__hero-registration__add-event emms__fade-in">AGÉNDALO EN TU CALENDARIO</a>
             </div>
             <!-- Marquee -->
             <div class="emms__hero-registration__bottom images emms__fade-in">
@@ -130,7 +155,7 @@ require_once('././config.php');
         <section class="emms__grid emms__grid--3">
             <div class="emms__container--md">
                 <div class="emms__grid__title">
-                    <h2>Vive la experiencia completa en EMMS Digital Trends</h2>
+                    <h2>Vive la experiencia completa en EMMS E-commerce</h2>
                 </div>
                 <ul class="emms__grid__content">
                     <li class="emms__grid__item">
@@ -189,7 +214,7 @@ require_once('././config.php');
                     </li>
                 </ul>
                 <div class="emms__grid__bottom">
-                    <a href="#entradas" class="emms__cta">OBTÉN TU ENTRADA VIP</a>
+                    <small>Pronto podrás comprar tus entradas VIP para acceder a los Workshops y el Networking, ¡mantente pendiente a tu casilla de Email!</small>
                 </div>
             </div>
         </section>
@@ -201,7 +226,7 @@ require_once('././config.php');
                 <div class="emms__premium-content__text emms__fade-in">
                     <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
                     <p>Descubre <strong>contenidos descargables, herramientas y conferencias on-demand</strong> que te traen nuestros aliados para que puedas potenciar al máximo tu negocio.</p>
-                    <a href="./sponsors" class="emms__cta emms__fade-in">ACCEDE AQUÍ</a>
+                    <a href="./sponsors-registrado" class="emms__cta emms__fade-in">ACCEDE AHORA</a>
                 </div>
                 <div class="emms__premium-content__picture emms__fade-in">
                     <img src="src/img/download--locked-24.png" alt="Contenido Premium">
@@ -216,9 +241,7 @@ require_once('././config.php');
                 <h2 class="emms__fade-in">Nos han acompañado en ediciones anteriores</h2>
                 <ul class="emms__companies__list emms__fade-in">
                     <li class="emms__companies__list__item"><img src="src/img/logos/logo-metricool.png" alt="Metricool"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-wayra.png" alt="Wayra"></li>
                     <li class="emms__companies__list__item"><img src="src/img/logos/logo-asociacion-marketing-espana.png" alt="Asociación de Marketing de España"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-camece.png" alt="Camece"></li>
                     <li class="emms__companies__list__item"><img src="src/img/logos/logo-capece.png" alt="Capece"></li>
                     <li class="emms__companies__list__item"><img src="src/img/logos/logo-amvo.png" alt="AMVO"></li>
                     <li class="emms__companies__list__item"><img src="src/img/logos/logo-linkedin.png" alt="LinkedIn"></li>
@@ -230,8 +253,10 @@ require_once('././config.php');
                     <li class="emms__companies__list__item"><img src="src/img/logos/logo-banco-frances.png" alt="BBVA Francés"></li>
                     <li class="emms__companies__list__item"><img src="src/img/logos/logo-airbnb.png" alt="Airbnb"></li>
                     <li class="emms__companies__list__item"><img src="src/img/logos/logo-woocomerce.png" alt="Woocommerce"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-doofinder.png" alt="Doofinder"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-easycommerce.png" alt="Easycommerce"></li>
                 </ul>
-                <small class="emms__fade-in">¿Quieres ser Partner del EMMS? Escríbenos a <a href="mailto:partners@fromdoppler.com">partners@fromdoppler.com</a></small>
+                <!-- <small class="emms__fade-in">¿Quieres ser Partner del EMMS? Escríbenos a <a href="mailto:partners@fromdoppler.com">partners@fromdoppler.com</a></small> -->
             </div>
         </section>
 

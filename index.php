@@ -37,8 +37,8 @@ require_once('././src/components/cacheSettings.php');
         <!-- Hellobar -->
         <div class="emms__hellobar">
             <div class="emms__hellobar__container emms__fade-in">
-                <p><strong>Las inscripciones para EMMS E-commerce ya están abiertas, sumate para enterarte de las novedades. Pronto confirmaremos la agenda.</strong></p>
-                <a href="./ecommerce">ASEGURA TU CUPO GRATIS</a>
+                <p><strong>¡Vuelve el EMMS E-commerce!</strong> 18 y 19 de abril. Apúntate y descubre todas las novedades.</p>
+                <a href="./ecommerce">REGÍSTRATE GRATIS</a>
             </div>
         </div>
     <?php endif; ?>
@@ -59,8 +59,13 @@ require_once('././src/components/cacheSettings.php');
                 <ul class="emms__header__nav__menu">
                     <li><a href="#" class="active">home</a></li>
                     <li><a href="./ecommerce">e-commerce</a></li>
-                    <li><a href="/sponsors">biblioteca de recursos</a></li>
-                    <li><a href="/ediciones-anteriores">sobre el emms</a></li>
+                    <li><a href="./sponsors">biblioteca de recursos</a></li>
+                    <li class="emms__header__nav__menu__dropdown"><a href="./ediciones-anteriores">Qué es el EMMS</a>
+                        <ul class="emms__header__nav__submenu">
+                            <li><a href="./ediciones-anteriores#sobre-emms">Sobre el EMMS</a></li>
+                            <li><a href="./ediciones-anteriores#ediciones-anteriores">Revive ediciones anteriores</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -92,30 +97,31 @@ require_once('././src/components/cacheSettings.php');
 
         <!-- Hero -->
         <section class="emms__home__hero">
-            <?php if ($digitalTrendsStates['isPre']) : ?>
+            <?php if ($ecommerceStates['isPre']) : ?>
                 <div class="emms__home__hero__title emms__fade-top">
-                    <h1><em>TODAS LAS TENDENCIAS DE MARKETING DIGITAL EN UN SOLO LUGAR</em> Vuelve el EMMS, ¡recargado!</h1>
+                    <h1><em>TODAS LAS TENDENCIAS DE MARKETING DIGITAL EN UN SOLO LUGAR</em> EMMS 2024, ¡está llegando!</h1>
                     <h2>ONLINE Y GRATUITO</h2>
-                    <p>Tras <strong>15 años</strong> como el evento líder en Latam y España, <strong>el EMMS evoluciona</strong>. En 2023 tendrás <strong>2 eventos exclusivos</strong> para capacitarte e inspirarte con los referentes de tu industria.</p>
+                    <p>Revoluciona tu forma de hacer negocios y potencia tus resultados con el mayor evento de Latam y España. Disfruta de <strong>2 ediciones exclusivas</strong> para capacitarte e inspirarte con los líderes de tu industria.</p>
                 </div>
             <?php endif ?>
-            <?php if ($digitalTrendsStates['isDuring']) : ?>
+            <?php if ($ecommerceStates['isDuring']) : ?>
                 <div class="emms__home__hero__title emms__fade-top">
                     <h1><em>LLEGÓ EL EVENTO DE MARKETING DIGITAL MÁS ESPERADO</em> Vuelve el EMMS, ¡recargado!</h1>
                     <h2>ONLINE Y GRATUITO</h2>
                     <p>Tras <strong>15 años</strong> como el evento líder en Latam y España, <strong>el EMMS evolucionó</strong>. Accede ahora a la <strong>última edición del año</strong> con 4 jornadas a puro aprendizaje, <strong>¡ya comenzó!</strong></p>
                 </div>
             <?php endif ?>
-            <?php if ($digitalTrendsStates['isPost']) : ?>
+            <?php if ($ecommerceStates['isPost']) : ?>
                 <div class="emms__home__hero__title emms__fade-top">
                     <h1><em>TODAS LAS TENDENCIAS EN MARKETING DIGITAL, EN UN SOLO LUGAR</em> Revive el EMMS 2023</h1>
                     <h2>ONLINE Y GRATUITO</h2>
                     <p id="registro"><span>Tras <strong>15 años</strong> como el evento líder en Marketing Digital de Latam y España, <strong>el EMMS evolucionó</strong>. </span>Accede a las <strong>ediciones E-commerce y Digital Trends</strong> para aprender e inspirarte con referentes en la industria.</p>
                 </div>
             <?php endif ?>
+            <div id="eventos"></div>
 
             <!-- Event cards -->
-            <div class="emms__eventCards" id="eventos">
+            <div class="emms__eventCards">
                 <div class="emms__container--lg">
                     <ul class="emms__eventCards__list emms__eventCards__list--dk emms__fade-in">
                         <li class="emms__eventCards__list__item">
@@ -177,7 +183,7 @@ require_once('././src/components/cacheSettings.php');
                                 <?php else : ?>
                                     <h3>EMMS Digital Trends </h3>
                                 <?php endif ?>
-                                <p>Como cada año, descubre cuáles son las tendencias que aplican tus mayores <strong>referentes internacionales</strong> y nútrete de nuevas <strong>ideas para implementar en tu negocio</strong>.</p>
+                                <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                 <p class="emms__eventCards__list__item__text--feature"><img src="src/img/icons/icon-ticket-fill.svg" alt="Icon">Online y gratuito</p>
                                 <div class="emms__eventCards__list__item__text--bottom">
                                     <?php if ($digitalTrendsStates['isPre']) : ?>
@@ -253,7 +259,7 @@ require_once('././src/components/cacheSettings.php');
                                 <?php else : ?>
                                     <h3>EMMS Digital Trends </h3>
                                 <?php endif ?>
-                                <p>Como cada año, descubre cuáles son las tendencias que aplican tus mayores <strong>referentes internacionales</strong> y nútrete de nuevas <strong>ideas para implementar en tu negocio</strong>.</p>
+                                <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                 <p class="emms__eventCards__list__item__text--feature"><img src="src/img/icons/icon-ticket-fill.svg" alt="Icon">Online y gratuito</p>
                                 <div class="emms__eventCards__list__item__text--bottom">
                                     <?php if ($digitalTrendsStates['isPre']) : ?>
@@ -278,15 +284,14 @@ require_once('././src/components/cacheSettings.php');
         <section class="emms__centralvideo">
             <div class="emms__container--md">
                 <div class="emms__centralvideo__title emms__fade-in">
-                    <h2>Se acerca una nueva edición del EMMS…</h2>
-                    <p>¡Vuelve el <strong>EMMS Digital Trends</strong>! Se vienen nuevas Conferencias, Entrevistas, Casos de Éxito, Workshops prácticos, Networking ¡y muchas nuevas sorpresas!</p>
+                    <h2>Súmate al EMMS E-commerce y aprende con los mayores especialistas en venta electrónica</h2>
+                    <p>Descubre en este video todo lo que pasó en la última edición y por qué miles de profesionales y referentes en la industria eligen este evento para capacitarse.</p>
                 </div>
                 <div class="emms__centralvideo__video emms__fade-in">
                     <video src="src/img/EmmsDigitalTrends.mp4" controls></video>
                 </div>
                 <div class="emms__centralvideo__cta emms__fade-in">
-                    <a href="./digital-trends" class="emms__cta">REGÍSTRATE GRATIS</a>
-                    <small><i>¿Tienes dudas sobre el EMMS 2023?</i> Haz <a href="./registrado#preguntas-frecuentes" target="_blank">clic aquí</a> y encuentra las preguntas más frecuentes sobre el evento.</small>
+                    <a href="./ecommerce" class="emms__cta">RESERVA TU CUPO GRATIS</a>
                 </div>
             </div>
         </section>
@@ -298,16 +303,16 @@ require_once('././src/components/cacheSettings.php');
         <!-- Event numbers -->
         <section class="emms__eventnumbers emms__eventnumbers--large" id="boxNumberLarge">
             <div class="emms__container--lg">
-                <h2 class="emms__fade-in">EMMS a lo largo del tiempo</h2>
+                <h2 class="emms__fade-in">El EMMS en números</h2>
                 <ul class="emms__fade-in">
                     <li>
                         <img src="src/img/icons/icon-eventnumber-1.svg" alt="Icon">
-                        <p class="number" id="count1L">265</p>
+                        <p class="number" id="count1L">315</p>
                         <span>REGISTRADOS</span>
                     </li>
                     <li>
                         <img src="src/img/icons/icon-eventnumber-2.svg" alt="Icon">
-                        <p class="number" id="count4L">190</p>
+                        <p class="number" id="count4L">210</p>
                         <span>Speakers</span>
                     </li>
                     <li>
@@ -317,7 +322,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li>
                         <img src="src/img/icons/icon-eventnumber-4.svg" alt="Icon">
-                        <p class="number" id="count2L">15</p>
+                        <p class="number" id="count2L">16</p>
                         <span>Años</span>
                     </li>
                 </ul>
@@ -339,9 +344,9 @@ require_once('././src/components/cacheSettings.php');
                             <img src="src/img/logos/logo-np-digital.png" alt="NP Digital" class="emms__speakerslist__item__logo">
                         </li>
                         <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-vero-ruiz-del-vizo.png" alt="Vero Ruiz del Vizo" class="emms__speakerslist__item__photo">
-                            <p>Vero Ruiz del Vizo</p>
-                            <img src="src/img/logos/logo-vero.png" alt="Veró" class="emms__speakerslist__item__logo">
+                            <img src="src/img/people/speaker-fernando-dacunto.png" alt="Fernando D’Acunto" class="emms__speakerslist__item__photo">
+                            <p>Fernando D’Acunto</p>
+                            <img src="src/img/logos/logo-youtube.png" alt="Youtube" class="emms__speakerslist__item__logo">
                         </li>
                         <li class="emms__speakerslist__item">
                             <img src="src/img/people/speaker-tim-ash.png" alt="Tim Ash" class="emms__speakerslist__item__photo">
@@ -349,24 +354,14 @@ require_once('././src/components/cacheSettings.php');
                             <img src="src/img/logos/logo-timash.png" alt="TimAsh.com" class="emms__speakerslist__item__logo">
                         </li>
                         <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-vedant-misra.png" alt="Vedant Misra" class="emms__speakerslist__item__photo">
-                            <p>Vedant Misra</p>
-                            <img src="src/img/logos/logo-google.png" alt="Google" class="emms__speakerslist__item__logo">
-                        </li>
-                        <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-guillermo-pujadas.png" alt="Guillermo Pujadas" class="emms__speakerslist__item__photo">
-                            <p>Guillermo Pujadas</p>
-                            <img src="src/img/logos/logo-meta.png" alt="Meta" class="emms__speakerslist__item__logo">
-                        </li>
-                        <li class="emms__speakerslist__item">
                             <img src="src/img/people/speaker-julia-rayeb.png" alt="Julia Rayeb" class="emms__speakerslist__item__photo">
                             <p>Julia Rayeb</p>
                             <img src="src/img/logos/logo-facebook.png" alt="Facebook" class="emms__speakerslist__item__logo">
                         </li>
                         <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-pablo-laucirica.png" alt="Pablo Laucirica" class="emms__speakerslist__item__photo">
-                            <p>Pablo Laucirica</p>
-                            <img src="src/img/logos/logo-microsoft.png" alt="Microsoft" class="emms__speakerslist__item__logo">
+                            <img src="src/img/people/speaker-vedant-misra.png" alt="Vedant Misra" class="emms__speakerslist__item__photo">
+                            <p>Vedant Misra</p>
+                            <img src="src/img/logos/logo-google.png" alt="Google" class="emms__speakerslist__item__logo">
                         </li>
                         <li class="emms__speakerslist__item">
                             <img src="src/img/people/speaker-vilma-nunez.png" alt="Vilma Nuñez" class="emms__speakerslist__item__photo">
@@ -379,24 +374,24 @@ require_once('././src/components/cacheSettings.php');
                             <img src="src/img/logos/logo-vtex.png" alt="Vtex" class="emms__speakerslist__item__logo">
                         </li>
                         <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-diana-ramirez.png" alt="Diana Ramirez" class="emms__speakerslist__item__photo">
+                            <img src="src/img/people/speaker-diego-dagnino.png" alt="Diego Dagnino" class="emms__speakerslist__item__photo">
+                            <p>Diego Dagnino</p>
+                            <img src="src/img/logos/logo-canva.png" alt="Canva" class="emms__speakerslist__item__logo">
+                        </li>
+                        <li class="emms__speakerslist__item">
+                            <img src="src/img/people/speaker-diana-ramirez-2.png" alt="Diana Ramirez" class="emms__speakerslist__item__photo">
                             <p>Diana Ramirez</p>
                             <img src="src/img/logos/logo-spotify.png" alt="Spotify" class="emms__speakerslist__item__logo">
                         </li>
                         <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-angela-blones.png" alt="Ángela Blones" class="emms__speakerslist__item__photo">
-                            <p>Ángela Blones</p>
-                            <img src="src/img/logos/logo-angela-blones.png" alt="Ángela Blones" class="emms__speakerslist__item__logo">
-                        </li>
-                        <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-albert-esplugas.png" alt="Albert Esplugas" class="emms__speakerslist__item__photo">
-                            <p>Albert Esplugas</p>
-                            <img src="src/img/logos/logo-amazon.png" alt="Amazon" class="emms__speakerslist__item__logo">
+                            <img src="src/img/people/speaker-juan-lombana.png" alt="Juan Lombana" class="emms__speakerslist__item__photo">
+                            <p>Juan Lombana</p>
+                            <img src="src/img/logos/logo-mercatitlan.png" alt="Mercatitlan" class="emms__speakerslist__item__logo">
                         </li>
                     </ul>
                 </div>
-                <small class="emms__fade-in">Regístrate gratis para ver las conferencias de este año y recibir todas las novedades sobre la edición 2024.</small>
-                <a href="#registro" class="emms__cta emms__fade-in">REVIVE EL EMMS</a>
+                <small class="emms__fade-in"><strong>¡No te duermas! Pronto llega el EMMS E-commerce 2024</strong><br>Regístrate gratis ahora y descubre muy pronto la agenda de speakers, workshops y todas las novedades.</small>
+                <a href="./ecommerce" class="emms__cta emms__fade-in">APÚNTATE</a>
             </div>
         </section>
 
@@ -405,8 +400,8 @@ require_once('././src/components/cacheSettings.php');
             <div class="emms__container--lg">
                 <div class="emms__premium-content__text emms__fade-in">
                     <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
-                    <p>Descubre <strong>contenidos descargables, herramientas y conferencias on-demand</strong> que te traen nuestros aliados para que puedas potenciar al máximo tu negocio.</p>
-                    <a href="./sponsors" class="emms__cta emms__fade-in">ACCEDE AQUÍ</a>
+                    <p>Descubre <strong>contenidos descargables, herramientas y conferencias on-demand</strong> que te traen nuestros aliados para potenciar al máximo tu negocio.</p>
+                    <a href="./sponsors" class="emms__cta emms__fade-in">ACCEDE AHORA</a>
                 </div>
                 <div class="emms__premium-content__picture emms__fade-in">
                     <img src="src/img/download--locked-24.png" alt="Contenido Premium">
@@ -421,7 +416,7 @@ require_once('././src/components/cacheSettings.php');
                 <h2 class="emms__fade-in">Nuestros asistentes dicen...</h2>
                 <ul class="emms__userscomments__list emms__userscomments__list--dk emms__fade-in">
                     <li class="emms__userscomments__list__item">
-                        <p>“Lo que más valoro del EMMS es poder ver en qué están las empresas más importantes del sector, ¡y gratis!”<em>Yolanda<img src="src/img/flag-mexico.png" alt="México"></em></p>
+                        <p>“Recomiendo este evento porque ofrece contenido de un valor excepcional que supera incluso a los eventos pagos más destacados, ¡y gratis!”<em>Yolanda<img src="src/img/flag-mexico.png" alt="México"></em></p>
                     </li>
                     <li class="emms__userscomments__list__item">
                         <p>“Ver las conferencias online es increíble. Pude disfrutar de la última edición en el trabajo y verlo con mis compañeros”<em>Pedro<img src="src/img/flag-espana.png" alt="España"></em></p>
@@ -432,7 +427,7 @@ require_once('././src/components/cacheSettings.php');
                 </ul>
                 <ul class="emms__userscomments__list emms__userscomments__list--mb main-carousel" data-flickity>
                     <li class="emms__userscomments__list__item">
-                        <p>“Lo que más valoro del EMMS es poder ver en qué están las empresas más importantes del sector, ¡y gratis!”<em>Yolanda<img src="src/img/flag-mexico.png" alt="México"></em></p>
+                        <p>“Recomiendo este evento porque ofrece contenido de un valor excepcional que supera incluso a los eventos pagos más destacados, ¡y gratis!”<em>Yolanda<img src="src/img/flag-mexico.png" alt="México"></em></p>
                     </li>
                     <li class="emms__userscomments__list__item">
                         <p>“Ver las conferencias online es increíble. Pude disfrutar de la última edición en el trabajo y verlo con mis compañeros”<em>Pedro<img src="src/img/flag-espana.png" alt="España"></em></p>
@@ -456,34 +451,34 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">🎁 ¿Qué obtengo al registrarme al evento?</button>
-                        <p class="emms__frequentquestions__list__item__content">Con tu registro podrás acceder a todas las conferencias de esta y todas las ediciones anteriores para siempre. Además, desbloquearás <strong>una biblioteca repleta de recursos como E-books, Plantillas, descuentos y material audiovisual</strong> para que puedas hacer crecer tu negocio aún más. ¿Lo mejor de todo? Podrás obtener un certificado de asistencia para compartir tus nuevos conocimientos en Redes Sociales ;)</p>
+                        <p class="emms__frequentquestions__list__item__content">Con tu registro podrás acceder a todas las conferencias de esta y todas las ediciones anteriores para siempre. Además, desbloquearás <strong>una biblioteca repleta de recursos como E-books, Plantillas, descuentos y material audiovisual</strong> para que puedas hacer crecer tu negocio aún más.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
-                        <button class="emms__frequentquestions__list__item__head">📅 ¿Cuándo tuvo lugar el EMMS 2023?</button>
-                        <p class="emms__frequentquestions__list__item__content">El EMMS 2023 tuvo 2 ediciones: <strong>E-commerce y Digital Trends</strong>, en <strong>mayo y noviembre</strong> respectivamente.</p>
+                        <button class="emms__frequentquestions__list__item__head">📅 ¿Cuándo se realizará el EMMS 2024?</button>
+                        <p class="emms__frequentquestions__list__item__content">El EMMS 2024 constará de 2 ediciones: <strong>E-commerce y Digital Trends</strong>, a realizarse en <strong>abril y noviembre</strong>, respectivamente. Registrándote al evento recibirás por Email todos las novedades.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
-                        <button class="emms__frequentquestions__list__item__head">📍 ¿Dónde puedo ver los eventos?</button>
-                        <p class="emms__frequentquestions__list__item__content">El EMMS es un evento <strong>online</strong>. Es decir, podrás revivirlo desde cualquier dispositivo, accediendo a cada evento en esta misma Web.</p>
+                        <button class="emms__frequentquestions__list__item__head">📍 ¿Dónde serán los eventos?</button>
+                        <p class="emms__frequentquestions__list__item__content">El EMMS es un evento online. Es decir, podrás verlo desde cualquier dispositivo, estés donde estés e incluso volver a ver las <strong><a href="./ediciones-anteriores">ediciones anteriores</a></strong>.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">💵 ¿Tengo que pagar inscripción?</button>
-                        <p class="emms__frequentquestions__list__item__content">El EMMS tiene un registro <strong>totalmente gratuito</strong>, válido para acceder a las Conferencias y para acceder a la Biblioteca de Recursos. Si además quieres capacitarte con más de 15 Workshops prácticos y tenerlos de por vida, puedes comprar una <a href="https://goemms.com/digital-trends#entradas">entrada VIP</a></p>
+                        <p class="emms__frequentquestions__list__item__content">El EMMS tiene un <strong>registro totalmente gratuito</strong>, válido para acceder a las Conferencias y a la Biblioteca de Recursos. Si además quieres capacitarte con Workshops prácticos, a los que puedes acceder de por vida, y sesiones de networking pronto podrás <strong>comprar tu entrada VIP</strong>.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
-                        <button class="emms__frequentquestions__list__item__head">✍ ¿Cómo me registro?</button>
-                        <p class="emms__frequentquestions__list__item__content">Elige en esta URL la edición a la que te interese asistir y desde allí podrás registrarte de forma gratuita. Para acceder además a los contenidos VIP del EMMS Digital Trends deberás comprar tu <a href="https://goemms.com/digital-trends#entradas">entrada VIP</a></p>
+                        <button class="emms__frequentquestions__list__item__head">✍ ¿Puedo apuntarme a más de una edición?</button>
+                        <p class="emms__frequentquestions__list__item__content">¡Sí! Cuando la fecha del evento esté confirmada, podrás elegir <a href="#eventos">aquí</a> la edición a la que te interese para inscribirte gratis. Completa tus datos y ¡listo! Tu lugar ya quedará reservado.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
-                        <button class="emms__frequentquestions__list__item__head">💻 ¿Cómo accedo a la transmisión del EMMS una vez que me registré?</button>
-                        <p class="emms__frequentquestions__list__item__content">Las conferencias de las ediciones pasadas están grabadas y puedes acceder desde esta misma Web. Elige Digital Trends, EMMS E-commerce o dirígete en la navigation bar a Ediciones Anteriores para ver otras.</p>
+                        <button class="emms__frequentquestions__list__item__head">💻 ¿Cómo accedo a la transmisión del EMMS si ya me registré?</button>
+                        <p class="emms__frequentquestions__list__item__content">Podrás seguir la transmisión del EMMS directamente desde el Sitio Web en la fecha del evento, accediendo según corresponda a Digital Trends o <a href="./ecommerce">E-commerce</a></p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">🎥 ¿Están disponibles las grabaciones después del evento?</button>
-                        <p class="emms__frequentquestions__list__item__content">Sí, cada vez que termina una edición del EMMS las conferencias quedan subidas al sitio web del evento. Puedes revivirlas las veces que desees.</p>
+                        <p class="emms__frequentquestions__list__item__content">Las conferencias de las ediciones pasadas están grabadas y puedes acceder a ellas desde esta misma Web. Elige Digital Trends, E-commerce o dirígete en la navigation bar a la sección Qué es el EMMS para ver ediciones anteriores.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
-                        <button class="emms__frequentquestions__list__item__head">🤔 Me anoté al evento y aún no recibí el Email de confirmación, ¿qué hago?</button>
+                        <button class="emms__frequentquestions__list__item__head">🤔 Me apunté al evento y aún no recibí el Email de confirmación, ¿qué hago?</button>
                         <p class="emms__frequentquestions__list__item__content">Comunícate con el equipo de Atención al Cliente de Doppler enviando un Email a <a href="mailto:soporte@fromdoppler.com">soporte@fromdoppler.com</a> para ayudarte a resolverlo.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
@@ -496,11 +491,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">📝 ¿Obtengo un certificado de participación por asistir al evento?</button>
-                        <p class="emms__frequentquestions__list__item__content">¡Sí! Podrás descargar tu certificado de asistencia a la edición E-commerce 2023 y Digital Trends 2023. Al entrar a la conferencia que deseas ver, tendrás un link de descarga debajo del cuadro de reproducción.</p>
-                    </li>
-                    <li class="emms__frequentquestions__list__item close">
-                        <button class="emms__frequentquestions__list__item__head">🛠 Si asisto a los Workshops, ¿podré descargar un certificado que corrobore que me he capacitado?</button>
-                        <p class="emms__frequentquestions__list__item__content">¡Por supuesto! Si accedes en vivo a los Workshops prácticos, luego de haber finalizado cada jornada del evento te llegará un email que te permitirá obtener tu certificado de asistencia a la capacitación. Ten en cuenta que solamente podrás obtenerlo si has asistido en vivo, no así viéndolos on demand una vez finalizado el evento. ¿No te ha llegado el correo o no pudiste obtener el tuyo? Contáctanos a <a href="mailto:soporte@fromdoppler.com">soporte@fromdoppler.com</a> y te contactaremos para asistirte en breve.</p>
+                        <p class="emms__frequentquestions__list__item__content">¡Sí! Podrás descargar tu certificado de asistencia a cada una de las ediciones del EMMS.</p>
                     </li>
                 </ul>
             </div>
@@ -527,7 +518,7 @@ require_once('././src/components/cacheSettings.php');
                     <li class="emms__companies__list__item"><img src="src/img/logos/logo-doofinder.png" alt="Doofinder"></li>
                     <li class="emms__companies__list__item"><img src="src/img/logos/logo-easycommerce.png" alt="Easycommerce"></li>
                 </ul>
-                <small class="emms__fade-in">¿Quieres ser aliado del EMMS? ¡Hablemos! Escríbenos a <a href="mailto:partners@fromdoppler.com">partners@fromdoppler.com</a></small>
+                <small class="emms__fade-in">¿Quieres ser aliado del EMMS 2024? ¡Hablemos! Escríbenos a <a href="mailto:partners@fromdoppler.com">partners@fromdoppler.com</a></small>
             </div>
         </section>
 

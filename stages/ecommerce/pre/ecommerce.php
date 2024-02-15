@@ -18,7 +18,7 @@ require_once('././src/components/cacheSettings.php');
         <!-- Hellobar -->
         <div class="emms__hellobar emms__hellobar--counter">
             <div class="emms__hellobar__container emms__fade-in">
-                <p><strong>¡FALTA MUY POCO PARA EL EVENTO MAS ESPERADO!</strong></p>
+                <p>¡Llega el <strong>EMMS E-Commerce 2024</strong>! Reserva tu lugar.!</p>
                 <ul class="emms__counter">
                     <li class="emms__counter__number">
                         <div><span class="d"></span></div>
@@ -52,14 +52,15 @@ require_once('././src/components/cacheSettings.php');
             <nav class="emms__header__nav emms__header__nav--hidden" id="nav-mb">
                 <ul class="emms__header__nav__menu">
                     <li><a href="/">home</a></li>
-                    <li class="emms__header__nav__menu__dropdown"><a href="#" class="active">e-commerce</a>
-                        <ul class="emms__header__nav__submenu">
-                            <li><a href="#agenda">AGENDA</a></li>
-                            <li><a href="#aliados">ALIADOS</a></li>
-                        </ul>
+                    <li><a href="#" class="active">e-commerce</a>
                     </li>
                     <li><a href="/sponsors">biblioteca de recursos</a></li>
-                    <li><a href="/ediciones-anteriores">sobre el emms</a></li>
+                    <li class="emms__header__nav__menu__dropdown"><a href="./ediciones-anteriores">Qué es el EMMS</a>
+                        <ul class="emms__header__nav__submenu">
+                            <li><a href="./ediciones-anteriores#sobre-emms">Sobre el EMMS</a></li>
+                            <li><a href="./ediciones-anteriores#ediciones-anteriores">Revive ediciones anteriores</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -93,12 +94,12 @@ require_once('././src/components/cacheSettings.php');
         <section class="emms__hero-registration" id="registro">
             <div class="emms__hero-registration__columns">
                 <div class="emms__hero-registration__text emms__fade-in">
-                    <h1><em>EVENTO ONLINE Y GRATUITO - 16 Y 17 DE MAYO</em> EMMS E-commerce 2023</h1>
-                    <p>¡El EMMS evoluciona! Inspírate y aprende con un evento exclusivo pensado para tu Tienda Online.</p>
+                    <h1><em>EVENTO ONLINE Y GRATUITO - 18 y 19 DE ABRIL</em> EMMS E-commerce 2024</h1>
+                    <p>Inspírate y aprende con un evento exclusivo pensado para tu Tienda Online.</p>
                     <ul class="emms__hero-registration__text__checklist">
                         <li>SPEAKERS INTERNACIONALES</li>
-                        <li>TENDENCIAS E INNOVACIÓN</li>
                         <li>HERRAMIENTAS Y RECURSOS</li>
+                        <li>WORKSHOPS Y NETWORKING</li>
                     </ul>
                 </div>
                 <div class="emms__hero-registration__form emms__fade-in">
@@ -167,7 +168,7 @@ require_once('././src/components/cacheSettings.php');
                             </li>
                         </ul>
                         <div class="emms__form__btn">
-                            <button class="emms__cta" id="register-button" type="button"><span class="button__text">ACCEDE GRATIS</span></button>
+                            <button class="emms__cta" id="register-button" type="button"><span class="button__text">REGÍSTRATE GRATIS</span></button>
                         </div>
                         <div class="emms__form__legal close">
                             <a class="emms__form__legal__btn" id="legalBtn">Información básica sobre privacidad </a>
@@ -187,15 +188,8 @@ require_once('././src/components/cacheSettings.php');
                 </div>
 
             </div>
-            <div class="emms_mobile-counter mb--tablet__on">
-                <div class="emms__hero-registration__text emms__fade-in">
-                    <!-- Date counter -->
-                    <div id="emmsCounter" class="mb--tablet__on">
-                        <?php include('././src/components/date-counter.php'); ?>
-                    </div>
-                    <!-- End date counter -->
-                </div>
-            </div>
+
+
             <!-- Marquee -->
             <div class="emms__hero-registration__bottom images emms__fade-in">
                 <p>
@@ -259,7 +253,7 @@ require_once('././src/components/cacheSettings.php');
         <section class="emms__grid emms__grid--3">
             <div class="emms__container--md">
                 <div class="emms__grid__title">
-                    <h2>Vive la experiencia completa en EMMS Digital Trends</h2>
+                    <h2>Vive la experiencia completa en EMMS E-commerce</h2>
                 </div>
                 <ul class="emms__grid__content">
                     <li class="emms__grid__item">
@@ -318,7 +312,8 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                 </ul>
                 <div class="emms__grid__bottom">
-                    <a href="#entradas" class="emms__cta">OBTÉN TU ENTRADA VIP</a>
+                    <small>Pronto podrás comprar tus entradas VIP para acceder a los Workshops y el Networking, ¡mantente pendiente a tu casilla de Email!</small>
+                    <a href="#registro" class="emms__cta">REGÍSTRATE GRATIS</a>
                 </div>
             </div>
         </section>
@@ -330,16 +325,16 @@ require_once('././src/components/cacheSettings.php');
         <!-- Event numbers -->
         <section class="emms__eventnumbers emms__eventnumbers--large" id="boxNumberLarge">
             <div class="emms__container--lg">
-                <h2 class="emms__fade-in">EMMS a lo largo del tiempo</h2>
+                <h2 class="emms__fade-in">El EMMS en números</h2>
                 <ul class="emms__fade-in">
                     <li>
                         <img src="src/img/icons/icon-eventnumber-1.svg" alt="Icon">
-                        <p class="number" id="count1L">265</p>
+                        <p class="number" id="count1L">315</p>
                         <span>REGISTRADOS</span>
                     </li>
                     <li>
                         <img src="src/img/icons/icon-eventnumber-2.svg" alt="Icon">
-                        <p class="number" id="count4L">190</p>
+                        <p class="number" id="count4L">210</p>
                         <span>Speakers</span>
                     </li>
                     <li>
@@ -349,7 +344,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li>
                         <img src="src/img/icons/icon-eventnumber-4.svg" alt="Icon">
-                        <p class="number" id="count2L">15</p>
+                        <p class="number" id="count2L">16</p>
                         <span>Años</span>
                     </li>
                 </ul>
@@ -368,69 +363,59 @@ require_once('././src/components/cacheSettings.php');
                 <div class="emms__speakerslist emms__fade-in">
                     <ul>
                         <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-neil-patel.png" alt="Neil Patel" class="emms__speakerslist__item__photo">
-                            <p>Neil Patel</p>
-                            <img src="src/img/logos/logo-np-digital.png" alt="NP Digital" class="emms__speakerslist__item__logo">
+                            <img src="src/img/people/speaker-ana-ivars.png" alt="Ana Ivars" class="emms__speakerslist__item__photo">
+                            <p>Ana Ivars</p>
+                            <img src="src/img/logos/logo-ana-ivars.png" alt="Ana Ivars" class="emms__speakerslist__item__logo">
                         </li>
                         <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-vero-ruiz-del-vizo.png" alt="Vero Ruiz del Vizo" class="emms__speakerslist__item__photo">
-                            <p>Vero Ruiz del Vizo</p>
-                            <img src="src/img/logos/logo-vero.png" alt="Veró" class="emms__speakerslist__item__logo">
+                            <img src="src/img/people/speaker-alvaro-pena-luna.png" alt="Álvaro Peña de Luna" class="emms__speakerslist__item__photo">
+                            <p>Álvaro Peña de Luna</p>
+                            <img src="src/img/logos/logo-isocial.png" alt="Isocial Web" class="emms__speakerslist__item__logo">
                         </li>
                         <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-tim-ash.png" alt="Tim Ash" class="emms__speakerslist__item__photo">
-                            <p>Tim Ash</p>
-                            <img src="src/img/logos/logo-timash.png" alt="TimAsh.com" class="emms__speakerslist__item__logo">
+                            <img src="src/img/people/speaker-ana-laura-fleba.png" alt="Ana Laura Fleba" class="emms__speakerslist__item__photo">
+                            <p>Ana Laura Fleba</p>
+                            <img src="src/img/logos/logo-unilever.png" alt="Unilever" class="emms__speakerslist__item__logo">
                         </li>
                         <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-vedant-misra.png" alt="Vedant Misra" class="emms__speakerslist__item__photo">
-                            <p>Vedant Misra</p>
-                            <img src="src/img/logos/logo-google.png" alt="Google" class="emms__speakerslist__item__logo">
+                            <img src="src/img/people/speaker-alicia-macias-hernandez.png" alt="Alicia Macías Hernández" class="emms__speakerslist__item__photo">
+                            <p>Alicia Macías Hernández</p>
+                            <img src="src/img/logos/logo-ecommerce-efectivo.png" alt="Ecommerce Efectivo" class="emms__speakerslist__item__logo">
                         </li>
                         <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-guillermo-pujadas.png" alt="Guillermo Pujadas" class="emms__speakerslist__item__photo">
-                            <p>Guillermo Pujadas</p>
+                            <img src="src/img/people/speaker-ricardo-tayar.png" alt="Ricardo Tayar" class="emms__speakerslist__item__photo">
+                            <p>Ricardo Tayar</p>
+                            <img src="src/img/logos/logo-flat.png" alt="Flat 101" class="emms__speakerslist__item__logo">
+                        </li>
+                        <li class="emms__speakerslist__item">
+                            <img src="src/img/people/speaker-federico-munoz-villavicencio.png" alt="Federico Muñoz Villavicencio" class="emms__speakerslist__item__photo">
+                            <p>Federico Muñoz Villavicencio</p>
                             <img src="src/img/logos/logo-meta.png" alt="Meta" class="emms__speakerslist__item__logo">
                         </li>
                         <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-julia-rayeb.png" alt="Julia Rayeb" class="emms__speakerslist__item__photo">
-                            <p>Julia Rayeb</p>
-                            <img src="src/img/logos/logo-facebook.png" alt="Facebook" class="emms__speakerslist__item__logo">
-                        </li>
-                        <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-pablo-laucirica.png" alt="Pablo Laucirica" class="emms__speakerslist__item__photo">
-                            <p>Pablo Laucirica</p>
-                            <img src="src/img/logos/logo-microsoft.png" alt="Microsoft" class="emms__speakerslist__item__logo">
-                        </li>
-                        <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-vilma-nunez.png" alt="Vilma Nuñez" class="emms__speakerslist__item__photo">
-                            <p>Vilma Nuñez</p>
-                            <img src="src/img/logos/logo-vilma.png" alt="Vilma" class="emms__speakerslist__item__logo">
-                        </li>
-                        <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-marcos-pueyrredon.png" alt="Marcos Pueyrredón " class="emms__speakerslist__item__photo">
-                            <p>Marcos Pueyrredón </p>
+                            <img src="src/img/people/speaker-manuel-garcia-cuerva.png" alt="Manuel García Cuerva" class="emms__speakerslist__item__photo">
+                            <p>Manuel García Cuerva</p>
                             <img src="src/img/logos/logo-vtex.png" alt="Vtex" class="emms__speakerslist__item__logo">
                         </li>
                         <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-diana-ramirez.png" alt="Diana Ramirez" class="emms__speakerslist__item__photo">
-                            <p>Diana Ramirez</p>
-                            <img src="src/img/logos/logo-spotify.png" alt="Spotify" class="emms__speakerslist__item__logo">
+                            <img src="src/img/people/speaker-federico-osorio.png" alt="Federico Osorio" class="emms__speakerslist__item__photo">
+                            <p>Federico Osorio</p>
+                            <img src="src/img/logos/logo-tiipe.png" alt="Tiipe" class="emms__speakerslist__item__logo">
                         </li>
                         <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-angela-blones.png" alt="Ángela Blones" class="emms__speakerslist__item__photo">
-                            <p>Ángela Blones</p>
-                            <img src="src/img/logos/logo-angela-blones.png" alt="Ángela Blones" class="emms__speakerslist__item__logo">
+                            <img src="src/img/people/speaker-emiliano-canova.png" alt="Emiliano Canova" class="emms__speakerslist__item__photo">
+                            <p>Emiliano Canova</p>
+                            <img src="src/img/logos/logo-go-cuotas.png" alt="Go Cuotas" class="emms__speakerslist__item__logo">
                         </li>
                         <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-albert-esplugas.png" alt="Albert Esplugas" class="emms__speakerslist__item__photo">
-                            <p>Albert Esplugas</p>
-                            <img src="src/img/logos/logo-amazon.png" alt="Amazon" class="emms__speakerslist__item__logo">
+                            <img src="src/img/people/speaker-ana-victoria-odonel.png" alt="Ana Victoria Odonel" class="emms__speakerslist__item__photo">
+                            <p>Ana Victoria Odonel</p>
+                            <img src="src/img/logos/logo-tramontina.png" alt="Tramontina" class="emms__speakerslist__item__logo">
                         </li>
                     </ul>
                 </div>
-                <small class="emms__fade-in">Regístrate gratis para ver las conferencias de este año y recibir todas las novedades sobre la edición 2024.</small>
-                <a href="#registro" class="emms__cta emms__fade-in">REVIVE EL EMMS</a>
+                <small class="emms__fade-in"><strong>¡Muy pronto revelaremos los speakers de la edición 2024!</strong><br>Regístrate y mantente atento a tu casilla de correo para conocerlos ;)</small>
+                <a href="#registro" class="emms__cta emms__fade-in">REGÍSTRATE GRATIS</a>
             </div>
         </section>
 
@@ -441,7 +426,7 @@ require_once('././src/components/cacheSettings.php');
                 <div class="emms__premium-content__text emms__fade-in">
                     <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
                     <p>Descubre <strong>contenidos descargables, herramientas y conferencias on-demand</strong> que te traen nuestros aliados para que puedas potenciar al máximo tu negocio.</p>
-                    <a href="./sponsors" class="emms__cta emms__fade-in">ACCEDE AQUÍ</a>
+                    <a href="./sponsors" class="emms__cta emms__fade-in">ACCEDE AHORA</a>
                 </div>
                 <div class="emms__premium-content__picture emms__fade-in">
                     <img src="src/img/download--locked-24.png" alt="Contenido Premium">
@@ -456,15 +441,15 @@ require_once('././src/components/cacheSettings.php');
             <div class="emms__background-a"></div>
             <div class="emms__container--md">
                 <div class="emms__centralvideo__title emms__fade-in">
-                    <h2>Llega una nueva versión del EMMS. Ahora, con una edición exclusiva para E-commerce</h2>
-                    <p>Conoce en este video por qué este evento es el lugar ideal para capacitarte y aprender cómo escalar tu Tienda</p>
+                    <h2>Volvió el EMMS, ahora para E-commerce</h2>
+                    <p>Conoce en este video por qué es el lugar ideal para capacitarte y aprender cómo escalar tu tienda.</p>
                 </div>
                 <div class="emms__centralvideo__video emms__fade-in">
                     <video src="src/img/EmmsEcommerce.mp4" controls></video>
                 </div>
                 <div class="emms__centralvideo__cta emms__fade-in">
                     <a href="#registro" class="emms__cta">REGÍSTRATE AHORA</a>
-                    <small><i>¿Tienes dudas sobre el EMMS 2023?</i> Haz <a href="./#preguntas-frecuentes" target="_blank">click aquí</a> y encuentra las preguntas más frecuentes sobre el evento.</small>
+                    <small><i>¿Tienes dudas sobre el EMMS?</i> Haz <a href="./#preguntas-frecuentes" target="_blank">click aquí</a> y encuentra las preguntas más frecuentes sobre el evento.</small>
                 </div>
             </div>
         </section>
@@ -478,24 +463,24 @@ require_once('././src/components/cacheSettings.php');
                 <h2 class="emms__fade-in">Nuestros asistentes dicen:</h2>
                 <ul class="emms__userscomments__list emms__userscomments__list--dk emms__fade-in">
                     <li class="emms__userscomments__list__item">
-                        <p>“Con el EMMS siempre me llevo muchos tips para mi tienda. Y ahora, la edición para E-commerce ¡no me lo pierdo!”.<em>María Alejandra<img src="src/img/flag-colombia.png" alt="Colombia"></em></p>
+                        <p>“Asistí al EMMS E-commerce y me deslumbraron los tips que compartieron los speakers. ¡Este año no me lo pierdo por nada!”.<em>Adriana<img src="src/img/flag-colombia.png" alt="Colombia"></em></p>
                     </li>
                     <li class="emms__userscomments__list__item">
                         <p>“Me sirve mucho escuchar cada año a los mayores referentes del mundo para saber qué le conviene sumar a mi negocio.”<em>Sergio<img src="src/img/flag-espana.png" alt="España"></em></p>
                     </li>
                     <li class="emms__userscomments__list__item">
-                        <p>“Encontrar un evento internacional y gratis es invaluable. ¡Cuenten con mi participación para seguir aprendiendo!”.<em>Ricardo<img src="src/img/flag-mexico.png" alt="México"></em></p>
+                        <p>“No puedo recomendar este evento lo suficiente. Su contenido gratuito es de una calidad excepcional, superando a muchos eventos de pago en términos de valor y relevancia”.<em>Ricardo<img src="src/img/flag-mexico.png" alt="México"></em></p>
                     </li>
                 </ul>
                 <ul class="emms__userscomments__list emms__userscomments__list--mb main-carousel" data-flickity>
                     <li class="emms__userscomments__list__item">
-                        <p>“Con el EMMS siempre me llevo muchos tips para mi tienda. Y ahora, la edición para E-commerce ¡no me lo pierdo!”.<em>María Alejandra<img src="src/img/flag-colombia.png" alt="Colombia"></em></p>
+                        <p>“Asistí al EMMS E-commerce y me deslumbraron los tips que compartieron los speakers. ¡Este año no me lo pierdo por nada!”.<em>Adriana<img src="src/img/flag-colombia.png" alt="Colombia"></em></p>
                     </li>
                     <li class="emms__userscomments__list__item">
                         <p>“Me sirve mucho escuchar cada año a los mayores referentes del mundo para saber qué le conviene sumar a mi negocio.”<em>Sergio<img src="src/img/flag-espana.png" alt="España"></em></p>
                     </li>
                     <li class="emms__userscomments__list__item">
-                        <p>“Encontrar un evento internacional y gratis es invaluable. ¡Cuenten con mi participación para seguir aprendiendo!”.<em>Ricardo<img src="src/img/flag-mexico.png" alt="México"></em></p>
+                        <p>“No puedo recomendar este evento lo suficiente. Su contenido gratuito es de una calidad excepcional, superando a muchos eventos de pago en términos de valor y relevancia”.<em>Ricardo<img src="src/img/flag-mexico.png" alt="México"></em></p>
                     </li>
                 </ul>
             </div>
@@ -508,9 +493,7 @@ require_once('././src/components/cacheSettings.php');
                 <h2 class="emms__fade-in">Nos han acompañado en ediciones anteriores</h2>
                 <ul class="emms__companies__list emms__fade-in">
                     <li class="emms__companies__list__item"><img src="src/img/logos/logo-metricool.png" alt="Metricool"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-wayra.png" alt="Wayra"></li>
                     <li class="emms__companies__list__item"><img src="src/img/logos/logo-asociacion-marketing-espana.png" alt="Asociación de Marketing de España"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-camece.png" alt="Camece"></li>
                     <li class="emms__companies__list__item"><img src="src/img/logos/logo-capece.png" alt="Capece"></li>
                     <li class="emms__companies__list__item"><img src="src/img/logos/logo-amvo.png" alt="AMVO"></li>
                     <li class="emms__companies__list__item"><img src="src/img/logos/logo-linkedin.png" alt="LinkedIn"></li>
@@ -522,8 +505,10 @@ require_once('././src/components/cacheSettings.php');
                     <li class="emms__companies__list__item"><img src="src/img/logos/logo-banco-frances.png" alt="BBVA Francés"></li>
                     <li class="emms__companies__list__item"><img src="src/img/logos/logo-airbnb.png" alt="Airbnb"></li>
                     <li class="emms__companies__list__item"><img src="src/img/logos/logo-woocomerce.png" alt="Woocommerce"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-doofinder.png" alt="Doofinder"></li>
+                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-easycommerce.png" alt="Easycommerce"></li>
                 </ul>
-                <small class="emms__fade-in">¿Quieres ser Partner del EMMS? Escríbenos a <a href="mailto:partners@fromdoppler.com">partners@fromdoppler.com</a></small>
+                <!-- <small class="emms__fade-in">¿Quieres ser Partner del EMMS? Escríbenos a <a href="mailto:partners@fromdoppler.com">partners@fromdoppler.com</a></small> -->
             </div>
         </section>
 

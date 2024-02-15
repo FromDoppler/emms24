@@ -75,6 +75,11 @@
     color: #525845;
 }
 
+.emms__eventCards__list__item__text p a{
+    color: #008046;
+    text-decoration: underline;
+}
+
 .emms__eventCards__list__item__text--corner {
     position: absolute;
     top: 30px;
@@ -195,7 +200,7 @@
     }
 
     .emms__eventCards__list--mb .flickity-viewport {
-        height: 490px !important;
+        height: 530px !important;
     }
 
     .emms__eventCards__list__item {
