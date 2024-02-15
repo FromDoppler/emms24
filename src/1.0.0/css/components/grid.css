@@ -58,6 +58,19 @@
     text-align: center;
 }
 
+.emms__grid__bottom small{
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+    display: block;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.emms__grid__bottom .emms__cta{
+    margin: 36px 0 0 0;
+}
+
 @media(max-width:992px) {
     .emms__grid.emms__grid--3 .emms__grid__content {
         grid-template-columns: repeat(2, 1fr);

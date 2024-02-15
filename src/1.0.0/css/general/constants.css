@@ -15,7 +15,7 @@ body {
 }
 
 body {
-    background: #f6f6f6;
+    background: #fff;
     overflow-x: hidden;
 }
 
@@ -346,7 +346,7 @@ p {
 }
 
 .emms__bg-section-2 {
-    background: url("../../../img/bg-section-2.png") no-repeat;
+    background: url("../../../img/bg-section-2.png") #320e45 no-repeat;
     background-size: cover;
     background-position: top;
 }

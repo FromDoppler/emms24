@@ -39,9 +39,15 @@ require_once('././src/components/cacheSettings.php');
             <nav class="emms__header__nav emms__header__nav--hidden" id="nav-mb">
                 <ul class="emms__header__nav__menu">
                     <li><a href="/">home</a></li>
-                    <li><a href="/ecommerce">e-commerce</a></li>
+                    <li><a href="./ecommerce">e-commerce</a>
+                    </li>
                     <li><a href="#" class="active">biblioteca de recursos</a></li>
-                    <li><a href="ediciones-anteriores">sobre emms</a></li>
+                    <li class="emms__header__nav__menu__dropdown"><a href="./ediciones-anteriores">Qué es el EMMS</a>
+                        <ul class="emms__header__nav__submenu">
+                            <li><a href="./ediciones-anteriores#sobre-emms">Sobre el EMMS</a></li>
+                            <li><a href="./ediciones-anteriores#ediciones-anteriores">Revive ediciones anteriores</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -52,9 +58,9 @@ require_once('././src/components/cacheSettings.php');
         <!-- Hero -->
         <section class="emms__sponsors__hero">
             <div class="emms__sponsors__hero__title emms__fade-top">
-                <h1><em>Herramientas gratis para potenciar tu estrategia digital</em> Biblioteca de Recursos exclusiva para registrados al EMMS 2023</h1>
-                <p>🔒 Desbloquea beneficios, recursos descargables y material audiovisual preparados especialmente para ti</p>
-                <a class="emms__cta emms__fade-in" data-target="modalRegister" data-toggle="emms__register-modal">REGÍSTRATE GRATIS AHORA</a>
+                <h1><em>Herramientas gratis para optimizar tu tienda online</em> Biblioteca de Recursos exclusiva para registrados al EMMS</h1>
+                <p>🔒 Desbloquea todos los beneficios, recursos descargables y el material audiovisual que nuestros aliados han preparado para ti</p>
+                <a class="emms__cta emms__fade-in" data-target="modalRegister" data-toggle="emms__register-modal">REGÍSTRATE GRATIS</a>
             </div>
         </section>
 
@@ -86,7 +92,7 @@ require_once('././src/components/cacheSettings.php');
                             <?php if ($sponsor['slug'] === '') : ?>
                                 <a class="inactive">Accede →</a>
                             <?php else : ?>
-                                <a data-target="modalRegister" data-toggle="emms__register-modal" slug=<?= $sponsor['slug'] ?>>Accede →</a>
+                                <a data-target="modalRegister" data-toggle="emms__register-modal" slug=<?= $sponsor['slug'] ?>>Accede ahora</a>
                             <?php endif ?>
                         </li>
                     <?php endforeach; ?>
@@ -99,9 +105,9 @@ require_once('././src/components/cacheSettings.php');
             <div class="emms__conferences__container">
                 <div class="emms__conferences__wrapper">
                     <div class="emms__conferences__title emms__fade-in">
-                        <h2>Más conferencias exclusivas</h2>
-                        <p>Te traemos breves videos en los que podrás descubrir las últimas tendencias y ver interesantes análisis de la mano de especialistas.</p>
-                        <p>¡Capacítate e inspírate con el EMMS 2023!</p>
+                        <h2>Conferencias exclusivas</h2>
+                        <p>Tus mayores referentes comparten las mejores estrategias para hacer crecer tu negocio en breves videos.</p>
+                        <p>¡Capacítate e inspírate con el EMMS!</p>
                     </div>
                     <div class="emms__conferences__cards__container">
                         <div class="emms__conferences__cards emms__fade-in">
@@ -109,7 +115,7 @@ require_once('././src/components/cacheSettings.php');
                                 <img src="src/img/conferences/portada-youtube-mujeresqueemprenden.png" alt="Conferencias exclusivas">
                                 <h4>Trucos para vender más en tu E-commerce</h4>
                                 <p>Duración: 00:19:45</p>
-                                <span>¡No te lo pierdas!</span>
+                                <span>Ver ahora</span>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
@@ -117,7 +123,7 @@ require_once('././src/components/cacheSettings.php');
                                 <img src="src/img/conferences/portada-youtube-chinarodriguez.png" alt="Conferencias exclusivas">
                                 <h4>Campañas de remarketing de alto impacto</h4>
                                 <p>Duración: 00:20:48</p>
-                                <span>¡No te lo pierdas!</span>
+                                <span>Ver ahora</span>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
@@ -125,7 +131,7 @@ require_once('././src/components/cacheSettings.php');
                                 <img src="src/img/conferences/portada-youtube-realtrends.png" alt="Conferencias exclusivas">
                                 <h4>Cómo profesionalizar y optimizar la comunicación con mis compradores</h4>
                                 <p>Duración: 00:11:27</p>
-                                <span>¡No te lo pierdas!</span>
+                                <span>Ver ahora</span>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
@@ -133,7 +139,7 @@ require_once('././src/components/cacheSettings.php');
                                 <img src="src/img/conferences/portada-youtube-martin-gelpi.png" alt="Conferencias exclusivas">
                                 <h4>Marketing de escasez: la clave del furor en ventas</h4>
                                 <p>Duración: 00:08:22</p>
-                                <span>¡No te lo pierdas!</span>
+                                <span>Ver ahora</span>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
@@ -141,7 +147,7 @@ require_once('././src/components/cacheSettings.php');
                                 <img src="src/img/conferences/portada-youtube-christian-canizales.png" alt="Conferencias exclusivas">
                                 <h4>5 Técnicas SEO para eCommerce</h4>
                                 <p>Duración: 00:09:20</p>
-                                <span>¡No te lo pierdas!</span>
+                                <span>Ver ahora</span>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
@@ -149,7 +155,7 @@ require_once('././src/components/cacheSettings.php');
                                 <img src="src/img/conferences/portada-youtube-dario-conti.png" alt="Conferencias exclusivas">
                                 <h4>Matriz de Impacto Digital para lograr aumento de ventas</h4>
                                 <p>Duración: 00:22:11</p>
-                                <span>¡No te lo pierdas!</span>
+                                <span>Ver ahora</span>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
@@ -157,7 +163,7 @@ require_once('././src/components/cacheSettings.php');
                                 <img src="src/img/conferences/portada-youtube-mundobrandes-min.png" alt="Conferencias exclusivas">
                                 <h4>5 Errores Comunes al Iniciar en el Ecommerce</h4>
                                 <p>Duración: 00:14:11</p>
-                                <span>¡No te lo pierdas!</span>
+                                <span>Ver ahora</span>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
@@ -165,7 +171,7 @@ require_once('././src/components/cacheSettings.php');
                                 <img src="src/img/conferences/portada-youtube-cyberclick.png" alt="Conferencias exclusivas">
                                 <h4>5 tendencias de marketing digital para 2024</h4>
                                 <p>Duración: 00:13:53</p>
-                                <span>¡No te lo pierdas!</span>
+                                <span>Ver ahora</span>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
@@ -173,7 +179,7 @@ require_once('././src/components/cacheSettings.php');
                                 <img src="src/img/conferences/portada-youtube-veronicasequeira-min.png" alt="Conferencias exclusivas">
                                 <h4>El arte de la persuasión para vender más y mejor</h4>
                                 <p>Duración: 00:18:08</p>
-                                <span>¡No te lo pierdas!</span>
+                                <span>Ver ahora</span>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
@@ -181,7 +187,7 @@ require_once('././src/components/cacheSettings.php');
                                 <img src="src/img/conferences/portada-youtube-lujanalonso-min.png" alt="Conferencias exclusivas">
                                 <h4>Soft Skills 2.0: habilidades blandas clave para entornos digitales</h4>
                                 <p>Duración: 00:06:09</p>
-                                <span>¡No te lo pierdas!</span>
+                                <span>Ver ahora</span>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
@@ -189,7 +195,7 @@ require_once('././src/components/cacheSettings.php');
                                 <img src="src/img/conferences/portada-natalia-tabares-min.png" alt="Conferencias exclusivas">
                                 <h4>Saca el máximo provecho de las novedades en Meta con tu tienda online en Jumpseller</h4>
                                 <p>Duración: 00:09:21</p>
-                                <span>¡No te lo pierdas!</span>
+                                <span>Ver ahora</span>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
@@ -197,7 +203,7 @@ require_once('././src/components/cacheSettings.php');
                                 <img src="src/img/conferences/portada-mariafernanda-rangel-castillo-min.png" alt="Conferencias exclusivas">
                                 <h4>Vender es otra cosa</h4>
                                 <p>Duración: 00:07:29</p>
-                                <span>¡No te lo pierdas!</span>
+                                <span>Ver ahora</span>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
@@ -205,7 +211,7 @@ require_once('././src/components/cacheSettings.php');
                                 <img src="src/img/conferences/portada-denborg-min.png" alt="Conferencias exclusivas">
                                 <h4>4 pilares para la comunicación de tu marca personal</h4>
                                 <p>Duración: 00:10:22</p>
-                                <span>¡No te lo pierdas!</span>
+                                <span>Ver ahora</span>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
@@ -213,7 +219,7 @@ require_once('././src/components/cacheSettings.php');
                                 <img src="src/img/conferences/portada-juancruz-arocena.png" alt="Conferencias exclusivas">
                                 <h4>Hacks para impulsar tu marca personal</h4>
                                 <p>Duración: 00:17:40</p>
-                                <span>¡No te lo pierdas!</span>
+                                <span>Ver ahora</span>
                             </a>
                         </div>
                     </div>
@@ -227,7 +233,7 @@ require_once('././src/components/cacheSettings.php');
                 <!-- Form -->
                 <form class="emms__form" id="sponsorsForm" novalidate autocomplete="off">
                     <h3>Regístrate aquí para acceder 🙂</h3>
-                    <h4>Regístrate gratis. Accederás a la Biblioteca de Recursos, a las ediciones anteriores ¡y serás parte de la próxima!</h4>
+                    <h4>Regístrate aquí para desbloquear la Biblioteca de Recursos gratuitos para asistentes del EMMS. Además, al hacerlo podrás acceder a todas las charlas de tus ediciones preferidas, enterarte de los próximos eventos, acceder a ellos y ¡mucho más!</h4>
                     <ul class="emms__form__field-group">
                         <li class="emms__form__field-item">
                             <div class="holder">
