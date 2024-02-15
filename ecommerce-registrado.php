@@ -26,6 +26,6 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/services/functions.php');
     }
 </script>
 <?php
-$response = processPhaseToShow('ecommerce');
+$response = processPhaseToShow('ecommerce24');
 require_once($_SERVER['DOCUMENT_ROOT'] . "/stages/ecommerce/$response[phaseToShow]/ecommerce-registrado.php");
 ?>
