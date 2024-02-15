@@ -83,7 +83,7 @@ require_once('././src/components/cacheSettings.php');
                     foreach ($sponsors as $sponsor) : ?>
                         <li class="emms__sponsors__list__item">
                             <div class="emms__sponsors__list__item__logo">
-                                <img src="./adm23/server/modules/sponsors/uploads/<?= $sponsor['logo_company'] ?>" alt="<?= $sponsor['alt_logo_company'] ?>">
+                                <img src="./adm24/server/modules/sponsors/uploads/<?= $sponsor['logo_company'] ?>" alt="<?= $sponsor['alt_logo_company'] ?>">
                             </div>
                             <h3><?= $sponsor['title'] ?></h3>
                             <p><?= $sponsor['description_card'] ?></p>

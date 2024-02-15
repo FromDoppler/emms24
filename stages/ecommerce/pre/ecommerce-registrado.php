@@ -18,7 +18,7 @@ require_once('././src/components/cacheSettings.php');
         <!-- Hellobar -->
         <div class="emms__hellobar emms__hellobar--counter">
             <div class="emms__hellobar__container emms__fade-in">
-                <p><strong>¡Está llegando el EMMS E-commerce!</strong>No te pierdas de nada.</p>
+                <p><strong>¡Está llegando el EMMS E-commerce!</strong> No te pierdas de nada.</p>
                 <ul class="emms__counter">
                     <li class="emms__counter__number">
                         <div><span class="d"></span></div>
