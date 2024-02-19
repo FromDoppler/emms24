@@ -123,6 +123,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    justify-content: center;
+    column-gap: 30px;
 }
 
 .emms__previous-editions__list .emms__previous-editions__list__item {
@@ -207,6 +209,10 @@
 
     .emms__previous-editions__list .emms__container--md {
         max-width: 500px;
+    }
+
+    .emms__previous-editions__list .emms__previous-editions__list__container{
+        column-gap: 0;
     }
 
     .emms__previous-editions__list .emms__previous-editions__list__item {
