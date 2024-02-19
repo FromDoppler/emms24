@@ -112,10 +112,22 @@ require_once('./utils/DB.php');
             <div class="emms__container--md">
                 <h2>Revive las ediciones anteriores</h2>
                 <ul class="emms__previous-editions__list__container">
-                    <li class="emms__previous-editions__list__item emms__fade-in">
+                    <li class="emms__previous-editions__list__item emms__previous-editions__list__item--lg emms__fade-in">
                         <a data-target="modalRegister2" data-toggle="emms__register-modal">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2022.png" alt="EMMS 2023">
+                                <img src="src/img/editions/emms2023-dt.png" alt="EMMS 2023 Digital Trends">
+                            </div>
+                            <div class="emms__previous-editions__list__item__description">
+                            <h3>EMMS DIGITAL TRENDS 2023</h3>
+                                <p>Falta texto y link</p>
+                                <span>Revive esta edición</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="emms__previous-editions__list__item emms__previous-editions__list__item--lg emms__fade-in">
+                        <a data-target="modalRegister2" data-toggle="emms__register-modal">
+                            <div class="emms__previous-editions__list__item__image">
+                                <img src="src/img/editions/emms2023-ecommerce.png" alt="EMMS 2023 E-commerce">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
                                 <h3>EMMS E-COMMERCE 2023</h3>
