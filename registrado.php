@@ -262,7 +262,7 @@ require_once('././src/components/cacheSettings.php');
                                             <p><span>13 <em>-</em> 16</span>NOVIEMBRE</p>
                                         </div>
                                         <h3>EMMS Digital Trends <span>EN VIVO</span></h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <p class="emms__eventCards__list__item__text--feature"><img src="src/img/icons/icon-ticket-fill.svg" alt="Icon">Online y gratuito</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends" class="emms__cta">ACCEDE AL VIVO</a>
@@ -277,7 +277,7 @@ require_once('././src/components/cacheSettings.php');
                                             <p><span>13 <em>-</em> 16</span>NOVIEMBRE</p>
                                         </div>
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <p class="emms__eventCards__list__item__text--feature"><img src="src/img/icons/icon-ticket-fill.svg" alt="Icon">Online y gratuito</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends" class="emms__cta">SÚMATE AHORA</a>
@@ -290,7 +290,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <p class="emms__eventCards__list__item__text--feature"><img src="src/img/icons/icon-ticket-fill.svg" alt="Icon">Online y gratuito</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends" class="emms__cta">REVIVE EL EVENTO</a>
@@ -305,7 +305,7 @@ require_once('././src/components/cacheSettings.php');
                                             <p><span>13 <em>-</em> 16</span>NOVIEMBRE</p>
                                         </div>
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <p class="emms__eventCards__list__item__text--feature"><img src="src/img/icons/icon-ticket-fill.svg" alt="Icon">Online y gratuito</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a class="emms__cta inactive">PRÓXIMAMENTE</a>
@@ -324,7 +324,7 @@ require_once('././src/components/cacheSettings.php');
                                             <p><span>13 <em>-</em> 16</span>NOVIEMBRE</p>
                                         </div>
                                         <h3>EMMS Digital Trends <span>EN VIVO</span></h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <p class="emms__eventCards__list__item__text--feature"><img src="src/img/icons/icon-ticket-fill.svg" alt="Icon">Online y gratuito</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends-registrado" class="emms__cta">ACCEDE AL VIVO</a>
@@ -340,7 +340,7 @@ require_once('././src/components/cacheSettings.php');
                                             <p><span>13 <em>-</em> 16</span>NOVIEMBRE</p>
                                         </div>
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <p class="emms__eventCards__list__item__text--feature"><img src="src/img/icons/icon-ticket-fill.svg" alt="Icon">Online y gratuito</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends-registrado" class="emms__cta">SÚMATE AHORA</a>
@@ -354,7 +354,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <p class="emms__eventCards__list__item__text--feature"><img src="src/img/icons/icon-ticket-fill.svg" alt="Icon">Online y gratuito</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends-registrado" class="emms__cta">REVIVE EL EVENTO</a>
@@ -370,7 +370,7 @@ require_once('././src/components/cacheSettings.php');
                                             <p><span>13 <em>-</em> 16</span>NOVIEMBRE</p>
                                         </div>
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <p class="emms__eventCards__list__item__text--feature"><img src="src/img/icons/icon-ticket-fill.svg" alt="Icon">Online y gratuito</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a class="emms__cta inactive">PRÓXIMAMENTE</a>
@@ -514,7 +514,7 @@ require_once('././src/components/cacheSettings.php');
                                             <p><span>13 <em>-</em> 16</span>NOVIEMBRE</p>
                                         </div>
                                         <h3>EMMS Digital Trends <span>EN VIVO</span></h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <p class="emms__eventCards__list__item__text--feature"><img src="src/img/icons/icon-ticket-fill.svg" alt="Icon">Online y gratuito</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends" class="emms__cta">ACCEDE AL VIVO</a>
@@ -529,7 +529,7 @@ require_once('././src/components/cacheSettings.php');
                                             <p><span>13 <em>-</em> 16</span>NOVIEMBRE</p>
                                         </div>
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <p class="emms__eventCards__list__item__text--feature"><img src="src/img/icons/icon-ticket-fill.svg" alt="Icon">Online y gratuito</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends" class="emms__cta">SÚMATE AHORA</a>
@@ -542,7 +542,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <p class="emms__eventCards__list__item__text--feature"><img src="src/img/icons/icon-ticket-fill.svg" alt="Icon">Online y gratuito</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends" class="emms__cta">REVIVE EL EVENTO</a>
@@ -557,7 +557,7 @@ require_once('././src/components/cacheSettings.php');
                                             <p><span>13 <em>-</em> 16</span>NOVIEMBRE</p>
                                         </div>
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <p class="emms__eventCards__list__item__text--feature"><img src="src/img/icons/icon-ticket-fill.svg" alt="Icon">Online y gratuito</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a class="emms__cta inactive">PRÓXIMAMENTE</a>
@@ -576,7 +576,7 @@ require_once('././src/components/cacheSettings.php');
                                             <p><span>13 <em>-</em> 16</span>NOVIEMBRE</p>
                                         </div>
                                         <h3>EMMS Digital Trends <span>EN VIVO</span></h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <p class="emms__eventCards__list__item__text--feature"><img src="src/img/icons/icon-ticket-fill.svg" alt="Icon">Online y gratuito</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends-registrado" class="emms__cta">ACCEDE AL VIVO</a>
@@ -592,7 +592,7 @@ require_once('././src/components/cacheSettings.php');
                                             <p><span>13 <em>-</em> 16</span>NOVIEMBRE</p>
                                         </div>
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <p class="emms__eventCards__list__item__text--feature"><img src="src/img/icons/icon-ticket-fill.svg" alt="Icon">Online y gratuito</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends-registrado" class="emms__cta">SÚMATE AHORA</a>
@@ -606,7 +606,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <p class="emms__eventCards__list__item__text--feature"><img src="src/img/icons/icon-ticket-fill.svg" alt="Icon">Online y gratuito</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends-registrado" class="emms__cta">REVIVE EL EVENTO</a>
@@ -622,7 +622,7 @@ require_once('././src/components/cacheSettings.php');
                                             <p><span>13 <em>-</em> 16</span>NOVIEMBRE</p>
                                         </div>
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <p class="emms__eventCards__list__item__text--feature"><img src="src/img/icons/icon-ticket-fill.svg" alt="Icon">Online y gratuito</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a class="emms__cta inactive">PRÓXIMAMENTE</a>
