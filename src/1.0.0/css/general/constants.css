@@ -93,6 +93,19 @@ p {
     transition-duration: 0.2s;
 }
 
+.emms__cta.emms__cta--nd{
+    font-size: 13px;
+    color: #008046;
+    background: rgba(0, 128, 70, 0.2);
+    box-shadow: 0px 0px 0 1px #008046;
+    transition-duration: 0.2s;
+}
+
+.emms__cta.emms__cta--nd:hover{
+    background: rgba(0, 128, 70, 0.1);
+    transition-duration: 0.2s;
+}
+
 @media (max-width: 620px) {
     .emms__cta {
         text-align: center;
@@ -339,6 +352,10 @@ p {
     background: #fff;
 }
 
+.emms__bg-dark-gradient {
+    background: linear-gradient(#0C0E25, #1B245B);
+}
+
 .emms__bg-section-1 {
     background: url("../../../img/bg-section-1.png") #320e45 no-repeat;
     background-size: contain;
@@ -349,6 +366,12 @@ p {
     background: url("../../../img/bg-section-2.png") #320e45 no-repeat;
     background-size: cover;
     background-position: top;
+}
+
+.emms__bg-section-3 {
+    background: url("../../../img/bg-section-3.png") #1B245B no-repeat;
+    background-size: 100%;
+    background-position: bottom;
 }
 
 

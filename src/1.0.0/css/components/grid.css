@@ -8,7 +8,7 @@
     line-height: 44px;
     letter-spacing: -1px;
     text-align: center;
-    color: #212121;
+    color: #fff;
     margin: 0 0 66px 0;
 }
 
@@ -18,7 +18,7 @@
 
 .emms__grid.emms__grid--3 .emms__grid__content {
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
 
 .emms__grid.emms__grid--2 .emms__grid__content {
@@ -27,7 +27,7 @@
 }
 
 .emms__grid__item .emms__grid__item__image {
-    margin: 0 0 24px 0;
+    margin: 0 0 16px 0;
 }
 
 .emms__grid__item .emms__grid__item__image img {
@@ -42,14 +42,15 @@
     font-size: 17px;
     line-height: 22px;
     font-weight: 700;
-    color: #333;
+    color: #fff;
+    display: none;
 }
 
 .emms__grid__item .emms__grid__item__text p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 22px;
-    font-weight: 400;
-    color: #333;
+    font-weight: 600;
+    color: #fff;
     margin: 12px 0 0 0;
 }
 
@@ -61,7 +62,7 @@
 .emms__grid__bottom small{
     font-size: 16px;
     line-height: 22px;
-    color: #333333;
+    color: #fff;
     display: block;
     max-width: 620px;
     margin: 0 auto;

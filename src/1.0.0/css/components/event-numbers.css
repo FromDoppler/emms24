@@ -18,10 +18,10 @@
 }
 
 .emms__eventnumbers h2 {
-    font-size: 30px;
-    line-height: 32px;
+    font-size: 66px;
+    line-height: 70px;
     text-align: center;
-    color: #333333;
+    color: #fff;
     margin: 0 0 40px 0;
 }
 
@@ -36,9 +36,14 @@
 }
 
 .emms__eventnumbers ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: end;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 50px 0;
+    border-radius: 20px;
+    box-shadow: 0px 6px rgba(0, 0, 0, 0.1);
 }
 
 .emms__eventnumbers ul li {
@@ -55,11 +60,11 @@
 .emms__eventnumbers ul li::after {
     content: "";
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
-    width: 3px;
-    height: 100%;
-    background: #BD7AFF;
+    width: 2px;
+    height: 60%;
+    background: #fff;
     border-radius: 100px;
 }
 
@@ -95,22 +100,28 @@
 
 @media(max-width:992px) {
 
-    .emms__eventnumbers {
-        padding: 70px 0 0 0;
-    }
-
     .emms__eventnumbers h2{
-        margin: 0 0 70px 0;
+        font-size: 46px;
+        line-height: 50px;
     }
 
     .emms__eventnumbers ul {
-        display: block;
-        max-width: 320px;
-        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width:620px) and (max-width:992px) {
+    .emms__eventnumbers ul li:nth-child(2):after{
+        display: none;
+    }
+}
+
+@media(max-width:620px){
+    .emms__eventnumbers ul {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .emms__eventnumbers ul li {
-        width: 100%;
         margin: 0 auto 40px;
         padding: 0 0 50px 0;
     }
@@ -122,7 +133,6 @@
         height: 1px;
     }
 }
-
 
 
 /* Large version */
@@ -141,16 +151,22 @@
 }
 
 .emms__eventnumbers--large ul li p{
-    font-size: 60px;
-    color: #6A36DF;
+    font-size: 50px;
+    color: #fff;
+    margin: 25px 0 5px 0;
 }
 
 .emms__eventnumbers--large ul li span{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
-    color: #212121;
+    color: #fff;
     text-align: center;
+}
+
+.emms__eventnumbers--large ul li img{
+    display: block;
+    margin: 0 auto;
 }
 
 @media(max-width:1350px){

@@ -3,24 +3,24 @@
     position: relative;
 }
 
-.emms__centralvideo .emms__container--md {
-    max-width: 690px;
+.emms__centralvideo .emms__container--lg {
+    display: flex;
+    align-items: center;
+    gap: 60px;
 }
 
 .emms__centralvideo__title {
-    max-width: 620px;
-    margin: 0 auto 36px;
-    text-align: center;
+    width: 50%;
     animation-delay: .1s;
 }
 
 .emms__centralvideo__title h2 {
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 32px;
+    line-height: 34px;
     font-weight: 700;
     color: #333333;
     max-width: 480px;
-    margin: 0 auto;
+    margin: 0 0 18px 0;
 }
 
 .emms__centralvideo__title p {
@@ -28,10 +28,14 @@
     line-height: 24px;
     font-weight: 400;
     color: #333333;
-    margin: 25px 0 0 0;
+}
+
+.emms__centralvideo__title .emms__cta{
+    margin: 30px 0 0 0;
 }
 
 .emms__centralvideo__video {
+    width: 50%;
     position: relative;
     animation-delay: .2s;
 }
@@ -50,31 +54,6 @@
     height: 100%;
     background: #310E44;
     z-index: -1;
-}
-
-.emms__centralvideo__cta {
-    text-align: center;
-    margin: 60px 0 0 0;
-    animation-delay: .3s;
-}
-
-.emms__centralvideo__cta small{
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #333333;
-    display: block;
-    max-width: 480px;
-    margin: 40px auto 0;
-}
-
-.emms__centralvideo__cta small a{
-    font-weight: 700;
-    color: #33AD73;
-}
-
-.emms__centralvideo__cta small a:hover{
-    text-decoration: underline;
 }
 
 .emms__centralvideo__bottom{
@@ -134,15 +113,38 @@
     color: #ffffff;
 }
 
-.emms__centralvideo--dark .emms__centralvideo__cta small{
-    color: #ffffff;
-}
-
 
 
 /* ---------------------------------------------- Responsive ---------------------------------------------- */
 
+@media(max-width:992px){
+    .emms__centralvideo .emms__container--lg {
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    .emms__centralvideo__title{
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .emms__centralvideo__title h2{
+        margin: 0 auto 18px auto;
+    }
+
+    .emms__centralvideo__video{
+        width: 100%;
+    }
+}
+
 @media(max-width:620px) {
+
+    .emms__centralvideo__title h2{
+        font-size: 28px;
+        line-height: 30px;
+    }
     .emms__centralvideo__video span {
         left: -12px;
         bottom: -8px;

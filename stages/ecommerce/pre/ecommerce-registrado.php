@@ -14,34 +14,6 @@ require_once('././src/components/cacheSettings.php');
 <body class="emms__ecommerce emms__ecommerce-logueado">
     <?php include_once('././src/components/gtm.php'); ?>
 
-    <?php if ($ecommerceStates['isPre']) : ?>
-        <!-- Hellobar -->
-        <div class="emms__hellobar emms__hellobar--counter">
-            <div class="emms__hellobar__container emms__fade-in">
-                <p><strong>¡Está llegando el EMMS E-commerce!</strong> No te pierdas de nada.</p>
-                <ul class="emms__counter">
-                    <li class="emms__counter__number">
-                        <div><span class="d"></span></div>
-                        <span class="emms__counter__number--data">días</span>
-                    </li>
-                    <li class="emms__counter__number">
-                        <div><span class="h"></span></div>
-                        <span class="emms__counter__number--data">horas</span>
-                    </li>
-                    <li class="emms__counter__number">
-                        <div><span class="m"></span></div>
-                        <span class="emms__counter__number--data">minutos</span>
-                    </li>
-                    <li class="emms__counter__number">
-                        <div><span class="s"></span></div>
-                        <span class="emms__counter__number--data">segundos</span>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    <?php endif; ?>
-
     <!-- Header -->
     <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
@@ -93,9 +65,9 @@ require_once('././src/components/cacheSettings.php');
         <!-- Hero -->
         <section class="emms__hero-registration--registered">
             <div class="emms__container--md">
-                <h1 class="emms__fade-top"><em>ONLINE Y GRATUITO - 18 y 19 DE ABRIL</em>¡Ya eres parte del EMMS E-commerce 2024!</h1>
-                <p class="emms__fade-in">Te damos la bienvenida al evento exclusivo pensado para tu Tienda Online con el que podrás inspirarte y aprender junto a especialistas. Guarda la fecha y mantente pendiente.</p>
-                <a href="https://www.addevent.com/event/fz20154258" target="_blank" class="emms__hero-registration__add-event emms__fade-in">AGÉNDALO EN TU CALENDARIO</a>
+                <h1 class="emms__fade-top"><em>ONLINE Y GRATUITO - 02 Y 03 DE MAYO</em>¡Ya eres parte del EMMS E-commerce 2024!</h1>
+                <p class="emms__fade-in">Te damos la bienvenida al evento pensado para tu Tienda Online con el que podrás inspirarte y aprender junto a especialistas. Guarda la fecha y mantente pendiente.</p>
+                <a href="https://www.addevent.com/event/fz20154258" target="_blank" class="emms__hero-registration__add-event emms__fade-in"><span>AGÉNDALO EN TU CALENDARIO</span></a>
             </div>
             <!-- Marquee -->
             <div class="emms__hero-registration__bottom images emms__fade-in">
@@ -151,13 +123,28 @@ require_once('././src/components/cacheSettings.php');
         </section>
 
 
+        <!-- Premium content -->
+        <section class="emms__premium-content">
+            <div class="emms__container--lg">
+                <div class="emms__premium-content__picture emms__fade-in">
+                    <img src="src/img/biblioteca-recursos.png" alt="Biblioteca de recursos">
+                </div>
+                <div class="emms__premium-content__text emms__fade-in">
+                    <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
+                    <p><strong>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen nuestros aliados para que puedas potenciar al máximo tu negocio.</strong></p>
+                    <a href="./sponsors-registrado" class="emms__cta sm emms__cta--nd emms__fade-in">ACCEDE AHORA</a>
+                </div>
+            </div>
+        </section>
+
+
         <!-- Grid -->
         <section class="emms__grid emms__grid--3">
             <div class="emms__container--md">
-                <div class="emms__grid__title">
+                <div class="emms__grid__title emms__fade-in">
                     <h2>Vive la experiencia completa en EMMS E-commerce</h2>
                 </div>
-                <ul class="emms__grid__content">
+                <ul class="emms__grid__content emms__fade-in">
                     <li class="emms__grid__item">
                         <div class="emms__grid__item__image">
                             <img src="src/img/conferencias.png" alt="Image">
@@ -178,11 +165,11 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__grid__item">
                         <div class="emms__grid__item__image">
-                            <img src="src/img/exito.png" alt="Image">
+                            <img src="src/img/casos-de-exito.png" alt="Image">
                         </div>
                         <div class="emms__grid__item__text">
                             <h3>Casos de Éxito</h3>
-                            <p>Escucha directamente de los representantes de compañías líderes cuáles fueron las estrategias que impulsaron el éxito de sus negocios y conoce sus mejores tácticas para vender más.</p>
+                            <p>Representantes de compañías líderes te cuentan las estrategias que impulsaron el éxito de sus negocios y conoce sus mejores tácticas para vender más.</p>
                         </div>
                     </li>
                     <li class="emms__grid__item">
@@ -214,22 +201,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                 </ul>
                 <div class="emms__grid__bottom">
-                    <small>Pronto podrás comprar tus entradas VIP para acceder a los Workshops y el Networking, ¡mantente pendiente a tu casilla de Email!</small>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Premium content -->
-        <section class="emms__premium-content emms__premium-content--dark">
-            <div class="emms__container--lg">
-                <div class="emms__premium-content__text emms__fade-in">
-                    <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
-                    <p>Descubre <strong>contenidos descargables, herramientas y conferencias on-demand</strong> que te traen nuestros aliados para que puedas potenciar al máximo tu negocio.</p>
-                    <a href="./sponsors-registrado" class="emms__cta emms__fade-in">ACCEDE AHORA</a>
-                </div>
-                <div class="emms__premium-content__picture emms__fade-in">
-                    <img src="src/img/download--locked-24.png" alt="Contenido Premium">
+                    <small><strong>Pronto podrás comprar tus entradas VIP para acceder a los Workshops y el Networking, ¡mantente pendiente a tu casilla de Email!</strong></small>
                 </div>
             </div>
         </section>

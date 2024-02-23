@@ -4,6 +4,10 @@
     background: #f6f6f6;
 }
 
+.emms__companies .emms__container--lg{
+    max-width: 1260px;
+}
+
 .emms__companies h2 {
     font-size: 20px;
     line-height: 23px;
