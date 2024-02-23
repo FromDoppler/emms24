@@ -70,13 +70,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-        const getLocalDate = (newEventHour = eventHour, newEventMinutes = eventMinute, eventDateTime) => {
+        const getLocalDate = (newEventHour = eventHour, newEventMinutes = eventMinute, eventDateTime, countryCode) => {
             const zonaHorariaUsuario = Intl.DateTimeFormat().resolvedOptions().timeZone;
             const { eventYear, eventMonth, eventDay, eventHour, eventMinute } = eventDateTime;
 
             let localDate;
             // Verificar si el desplazamiento de tiempo del usuario es -3 horas (Correspondiente al evento en Argentina)
-            if (moment.tz.zone(zonaHorariaUsuario).utcOffset(Date.now()) === 180) {
+            if (moment.tz.zone(zonaHorariaUsuario).utcOffset(Date.now()) === 180 || countryCode === 'AR') {
                 // Si el usuario ya esta en un desplazamiento de -3 horas, no se aplica el desplazamiento adicional
                 localDate = moment.utc(`${eventYear}-${eventMonth}-${eventDay}T${newEventHour}:${newEventMinutes}:00`);
             } else {
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const hours = parseInt(hourMatch[1], 10);
                 const minutes = hourMatch[2].padStart(2, '0');
                 //Transformamos esa hora al GTM del usuario
-                const newLocalDate = getLocalDate(hours, minutes, eventDateTime);
+                const newLocalDate = getLocalDate(hours, minutes, eventDateTime, countryCode);
                 const newHours = newLocalDate.hour();
                 const newMinutes = newLocalDate.minute().toString().padStart(2, '0');
                 container.innerHTML = '';
