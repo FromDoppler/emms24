@@ -48,7 +48,7 @@ require_once('./utils/DB.php');
             <a class="emms__header__nav--mb" id="btn-burger"></a>
             <nav class="emms__header__nav emms__header__nav--hidden" id="nav-mb">
                 <ul class="emms__header__nav__menu">
-                <li><a href="/">home</a></li>
+                    <li><a href="/">home</a></li>
                     <li><a href="./ecommerce">e-commerce</a>
                     </li>
                     <li><a href="./sponsors">biblioteca de recursos</a></li>
@@ -93,7 +93,7 @@ require_once('./utils/DB.php');
                 <div class="emms__previous-editions__hero__column-text">
                     <h1 class="emms__fade-top">Acerca del EMMS</h1>
                     <p class="emms__fade-in">El EMMS es el <strong>evento online de Marketing Digital más convocante en Latinoamérica y España</strong>. Se desarrolla de forma <strong>100% virtual</strong> y es organizado por <a href="https://www.fromdoppler.com/es/" target="_blank">Doppler</a>, la <strong>herramienta de Marketing Automation</strong> líder entre el público hispanohablante, hace <strong>más de 16 años</strong>. <br><br>Cuenta con los <strong>referentes y marcas más destacados en la industria</strong>, abordando las temáticas más resonantes de los últimos meses ante más de 50 mil registrados. Además, actualmente el EMMS ofrece dos ediciones: una exclusiva para la industria e-commerce y de tendencias globales de marketing digital.
-</p>
+                    </p>
                 </div>
                 <div class="emms__previous-editions__hero__column-img">
                     <img src="src/img/team-doppler.png" alt="Equipo de Doppler" class="emms__fade-in">
@@ -115,11 +115,11 @@ require_once('./utils/DB.php');
                     <li class="emms__previous-editions__list__item emms__previous-editions__list__item--lg emms__fade-in">
                         <a data-target="modalRegister2" data-toggle="emms__register-modal">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2023-dt.png" alt="EMMS 2023 Digital Trends">
+                                <img src="src/img/editions/emms2023-ecommerce.png" alt="EMMS 2023 E-commerce">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
-                            <h3>EMMS DIGITAL TRENDS 2023</h3>
-                                <p>Falta texto y link</p>
+                                <h3>EMMS E-COMMERCE 2023</h3>
+                                <p>Más de 13 mil personas se unieron a la primera edición especializada en la industria del Retail e E-commerce del EMMS. Contamos con entrevistas exclusivas con especialistas, casos de éxitos y conferencias, así como también los mejores insights en Inteligencia Artificial aplicada a este mercado. </p>
                                 <span>Revive esta edición</span>
                             </div>
                         </a>
@@ -127,11 +127,12 @@ require_once('./utils/DB.php');
                     <li class="emms__previous-editions__list__item emms__previous-editions__list__item--lg emms__fade-in">
                         <a data-target="modalRegister2" data-toggle="emms__register-modal">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2023-ecommerce.png" alt="EMMS 2023 E-commerce">
+                                <img src="src/img/editions/emms2023-dt.png" alt="EMMS 2023 Digital Trends">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
-                                <h3>EMMS E-COMMERCE 2023</h3>
-                                <p>Más de 13 mil personas se unieron a la primera edición especializada en la industria del Retail e E-commerce del EMMS. Contamos con entrevistas exclusivas con especialistas, casos de éxitos y conferencias, así como también los mejores insights en Inteligencia Artificial aplicada a este mercado. </p>
+                                <h3>EMMS DIGITAL TRENDS 2023</h3>
+                                <p>Líderes en el ámbito del marketing digital y referentes de las compañías más competitivas del mercado exploraron las últimas tendencias y estrategias en
+                                    el mundo digital. Conferencias, sesiones de networking y talleres interactivos fueron algunos de los destacados de esta edición, que abordó desde la experiencia del usuario hasta innovaciones en inteligencia artificial.</p>
                                 <span>Revive esta edición</span>
                             </div>
                         </a>

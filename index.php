@@ -282,23 +282,18 @@ require_once('././src/components/cacheSettings.php');
 
         <!-- Central Video -->
         <section class="emms__centralvideo">
-            <div class="emms__container--md">
+            <div class="emms__container--lg">
                 <div class="emms__centralvideo__title emms__fade-in">
-                    <h2>Súmate al EMMS E-commerce y aprende con los mayores especialistas en venta electrónica</h2>
-                    <p>Descubre en este video todo lo que pasó en la última edición y por qué miles de profesionales y referentes en la industria eligen este evento para capacitarse.</p>
+                    <h2>Inspírate con el mayor evento hispano de E-commerce</h2>
+                    <p>Conoce en este video qué hace al EMMS E-commerce el lugar ideal para capacitarte y aprender cómo escalar tu tienda junto a los líderes del sector.</p>
+                    <a href="#registro" class="emms__cta">REGÍSTRATE AHORA</a>
                 </div>
                 <div class="emms__centralvideo__video emms__fade-in">
-                    <video src="src/img/EmmsDigitalTrends.mp4" controls></video>
-                </div>
-                <div class="emms__centralvideo__cta emms__fade-in">
-                    <a href="./ecommerce" class="emms__cta">RESERVA TU CUPO GRATIS</a>
+                    <video src="src/img/EmmsEcommerce.mp4" controls></video>
                 </div>
             </div>
         </section>
 
-
-        <!-- Separator -->
-        <div class="emms__separator"></div>
 
         <!-- Event numbers -->
         <section class="emms__eventnumbers emms__eventnumbers--large" id="boxNumberLarge">
@@ -306,22 +301,22 @@ require_once('././src/components/cacheSettings.php');
                 <h2 class="emms__fade-in">El EMMS en números</h2>
                 <ul class="emms__fade-in">
                     <li>
-                        <img src="src/img/icons/icon-eventnumber-1.svg" alt="Icon">
-                        <p class="number" id="count1L">315</p>
-                        <span>REGISTRADOS</span>
-                    </li>
-                    <li>
-                        <img src="src/img/icons/icon-eventnumber-2.svg" alt="Icon">
+                        <img src="src/img/icons/icon-eventnumber-speakers.svg" alt="Icon">
                         <p class="number" id="count4L">210</p>
                         <span>Speakers</span>
                     </li>
                     <li>
-                        <img src="src/img/icons/icon-eventnumber-3.svg" alt="Icon">
+                        <img src="src/img/icons/icon-eventnumber-registered.svg" alt="Icon">
+                        <p class="number" id="count1L">315</p>
+                        <span>REGISTRADOS</span>
+                    </li>
+                    <li>
+                        <img src="src/img/icons/icon-eventnumber-countries.svg" alt="Icon">
                         <p class="number" id="count3L">10</p>
                         <span>Países</span>
                     </li>
                     <li>
-                        <img src="src/img/icons/icon-eventnumber-4.svg" alt="Icon">
+                        <img src="src/img/icons/icon-eventnumber-years.svg" alt="Icon">
                         <p class="number" id="count2L">16</p>
                         <span>Años</span>
                     </li>
@@ -329,82 +324,55 @@ require_once('././src/components/cacheSettings.php');
             </div>
         </section>
 
-        <!-- Separator -->
-        <div class="emms__separator"></div>
 
         <!-- Speakers -->
-        <section class="emms__home__speakers">
+        <section class="emms__speakers emms__bg-section-3">
             <div class="emms__container--lg">
                 <h2 class="emms__fade-in">Algunos de los conferencistas que nos han acompañado en las últimas ediciones:</h2>
                 <div class="emms__speakerslist emms__fade-in">
                     <ul>
                         <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-neil-patel.png" alt="Neil Patel" class="emms__speakerslist__item__photo">
-                            <p>Neil Patel</p>
-                            <img src="src/img/logos/logo-np-digital.png" alt="NP Digital" class="emms__speakerslist__item__logo">
+                            <img src="src/img/people--gradient/ricardo-tayer.png" alt="Ricardo Tayer" class="emms__speakerslist__item__photo">
+                            <p>Ricardo Tayer</p>
+                            <img src="src/img/logos--white/logo-flat-101.png" alt="Flat 101" class="emms__speakerslist__item__logo">
                         </li>
                         <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-fernando-dacunto.png" alt="Fernando D’Acunto" class="emms__speakerslist__item__photo">
-                            <p>Fernando D’Acunto</p>
-                            <img src="src/img/logos/logo-youtube.png" alt="Youtube" class="emms__speakerslist__item__logo">
+                            <img src="src/img/people--gradient/ana-ivars.png" alt="Ana Ivars" class="emms__speakerslist__item__photo">
+                            <p>Ana Ivars</p>
+                            <img src="src/img/logos--white/logo-ana-ivars.png" alt="Ana Ivars" class="emms__speakerslist__item__logo">
                         </li>
                         <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-tim-ash.png" alt="Tim Ash" class="emms__speakerslist__item__photo">
-                            <p>Tim Ash</p>
-                            <img src="src/img/logos/logo-timash.png" alt="TimAsh.com" class="emms__speakerslist__item__logo">
+                            <img src="src/img/people--gradient/federico-munoz-villavicencio.png" alt="Federico Muñoz Villavicencio" class="emms__speakerslist__item__photo">
+                            <p>Federico Muñoz Villavicencio</p>
+                            <img src="src/img/logos--white/logo-meta.png" alt="Meta" class="emms__speakerslist__item__logo">
                         </li>
                         <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-julia-rayeb.png" alt="Julia Rayeb" class="emms__speakerslist__item__photo">
-                            <p>Julia Rayeb</p>
-                            <img src="src/img/logos/logo-facebook.png" alt="Facebook" class="emms__speakerslist__item__logo">
+                            <img src="src/img/people--gradient/ana-laura-fleba.png" alt="Ana Laura Fleba" class="emms__speakerslist__item__photo">
+                            <p>Ana Laura Fleba</p>
+                            <img src="src/img/logos--white/logo-unilever.png" alt="Unilever" class="emms__speakerslist__item__logo">
                         </li>
                         <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-vedant-misra.png" alt="Vedant Misra" class="emms__speakerslist__item__photo">
-                            <p>Vedant Misra</p>
-                            <img src="src/img/logos/logo-google.png" alt="Google" class="emms__speakerslist__item__logo">
-                        </li>
-                        <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-vilma-nunez.png" alt="Vilma Nuñez" class="emms__speakerslist__item__photo">
-                            <p>Vilma Nuñez</p>
-                            <img src="src/img/logos/logo-vilma.png" alt="Vilma" class="emms__speakerslist__item__logo">
-                        </li>
-                        <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-marcos-pueyrredon.png" alt="Marcos Pueyrredón " class="emms__speakerslist__item__photo">
-                            <p>Marcos Pueyrredón </p>
-                            <img src="src/img/logos/logo-vtex.png" alt="Vtex" class="emms__speakerslist__item__logo">
-                        </li>
-                        <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-diego-dagnino.png" alt="Diego Dagnino" class="emms__speakerslist__item__photo">
-                            <p>Diego Dagnino</p>
-                            <img src="src/img/logos/logo-canva.png" alt="Canva" class="emms__speakerslist__item__logo">
-                        </li>
-                        <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-diana-ramirez-2.png" alt="Diana Ramirez" class="emms__speakerslist__item__photo">
-                            <p>Diana Ramirez</p>
-                            <img src="src/img/logos/logo-spotify.png" alt="Spotify" class="emms__speakerslist__item__logo">
-                        </li>
-                        <li class="emms__speakerslist__item">
-                            <img src="src/img/people/speaker-juan-lombana.png" alt="Juan Lombana" class="emms__speakerslist__item__photo">
-                            <p>Juan Lombana</p>
-                            <img src="src/img/logos/logo-mercatitlan.png" alt="Mercatitlan" class="emms__speakerslist__item__logo">
+                            <img src="src/img/people--gradient/manuel-garcia-cuerva.png" alt="Manuel García Cuerva" class="emms__speakerslist__item__photo">
+                            <p>Manuel García Cuerva</p>
+                            <img src="src/img/logos--white/logo-vtex.png" alt="Vtex" class="emms__speakerslist__item__logo">
                         </li>
                     </ul>
                 </div>
-                <small class="emms__fade-in"><strong>¡No te duermas! Pronto llega el EMMS E-commerce 2024</strong><br>Regístrate gratis ahora y descubre muy pronto la agenda de speakers, workshops y todas las novedades.</small>
-                <a href="./ecommerce" class="emms__cta emms__fade-in">APÚNTATE</a>
+                <small class="emms__fade-in"><strong>¡Muy pronto revelaremos los speakers de la edición 2024!</strong><br>Regístrate y mantente pendiente a tu casilla de correo para conocerlos</small>
+                <a href="#registro" class="emms__cta emms__fade-in">APÚNTATE GRATIS</a>
             </div>
         </section>
 
         <!-- Premium content -->
-        <section class="emms__premium-content emms__premium-content--dark">
+        <section class="emms__premium-content">
             <div class="emms__container--lg">
+                <div class="emms__premium-content__picture emms__fade-in">
+                    <img src="src/img/biblioteca-recursos.png" alt="Biblioteca de recursos">
+                </div>
                 <div class="emms__premium-content__text emms__fade-in">
                     <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
-                    <p>Descubre <strong>contenidos descargables, herramientas y conferencias on-demand</strong> que te traen nuestros aliados para potenciar al máximo tu negocio.</p>
-                    <a href="./sponsors" class="emms__cta emms__fade-in">ACCEDE AHORA</a>
-                </div>
-                <div class="emms__premium-content__picture emms__fade-in">
-                    <img src="src/img/download--locked-24.png" alt="Contenido Premium">
+                    <p><strong>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen nuestros aliados para que puedas potenciar al máximo tu negocio.</strong></p>
+                    <a href="./sponsors" class="emms__cta sm emms__cta--nd emms__fade-in">ACCEDE AHORA</a>
                 </div>
             </div>
         </section>
