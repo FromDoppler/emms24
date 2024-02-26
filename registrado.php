@@ -41,7 +41,7 @@ require_once('././src/components/cacheSettings.php');
         <!-- Hellobar -->
         <div class="emms__hellobar">
             <div class="emms__hellobar__container emms__fade-in">
-                <p><strong>¡Vuelve el EMMS E-commerce!</strong> 18 y 19 de abril. Apúntate y descubre todas las novedades.</p>
+                <p><strong>¡Vuelve el EMMS E-commerce!</strong> 02 y 03 de mayo. Apúntate y descubre todas las novedades.</p>
             </div>
         </div>
     <?php endif ?>
@@ -141,7 +141,7 @@ require_once('././src/components/cacheSettings.php');
                                 <?php if ($ecommerceStates['isLive']) : ?>
                                     <div class="emms__eventCards__list__item__text">
                                         <div class="emms__eventCards__list__item__text--corner">
-                                            <p>18 Y 19 DE ABRIL</p>
+                                            <p>02 Y 03 DE MAYO</p>
                                         </div>
                                         <h3>EMMS E-commerce <span>EN VIVO</span></h3>
                                         <p>Súmate ahora y conoce <strong>qué tendencias y estrategias emplean los referentes de la industria en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
@@ -153,7 +153,7 @@ require_once('././src/components/cacheSettings.php');
                                 <?php elseif ($ecommerceStates['isDuring']) : ?>
                                     <div class="emms__eventCards__list__item__text">
                                         <div class="emms__eventCards__list__item__text--corner">
-                                            <p>18 Y 19 DE ABRIL</p>
+                                            <p>02 Y 03 DE MAYO</p>
                                         </div>
                                         <h3>EMMS E-commerce</h3>
                                         <p>Súmate ahora y conoce <strong>qué tendencias y estrategias emplean los referentes de la industria en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
@@ -174,7 +174,7 @@ require_once('././src/components/cacheSettings.php');
                                 <?php else : ?>
                                     <div class="emms__eventCards__list__item__text">
                                         <div class="emms__eventCards__list__item__text--corner">
-                                            <p>18 Y 19 DE ABRIL</p>
+                                            <p>02 Y 03 DE MAYO</p>
                                         </div>
                                         <h3>EMMS E-commerce</h3>
                                         <p>Referentes internacionales de la industria te contarán qué <strong>tendencias y estrategias emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
@@ -193,7 +193,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <div class="emms__eventCards__list__item__text--corner">
-                                            <p>18 Y 19 DE ABRIL</p>
+                                            <p>02 Y 03 DE MAYO</p>
                                         </div>
                                         <h3>EMMS E-commerce <span>EN VIVO</span></h3>
                                         <p>Súmate ahora y conoce <strong>qué tendencias y estrategias emplean los referentes de la industria en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
@@ -209,7 +209,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <div class="emms__eventCards__list__item__text--corner">
-                                            <p>18 Y 19 DE ABRIL</p>
+                                            <p>02 Y 03 DE MAYO</p>
                                         </div>
                                         <h3>EMMS E-commerce</h3>
                                         <p>Súmate ahora y conoce <strong>qué tendencias y estrategias emplean los referentes de la industria en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
@@ -239,7 +239,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <div class="emms__eventCards__list__item__text--corner">
-                                            <p>18 Y 19 DE ABRIL</p>
+                                            <p>02 Y 03 DE MAYO</p>
                                         </div>
                                         <h3>EMMS E-commerce</h3>
                                         <p>Referentes internacionales de la industria te contarán qué <strong>tendencias y estrategias emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
@@ -393,7 +393,7 @@ require_once('././src/components/cacheSettings.php');
                                 <?php if ($ecommerceStates['isLive']) : ?>
                                     <div class="emms__eventCards__list__item__text">
                                         <div class="emms__eventCards__list__item__text--corner">
-                                            <p>18 Y 19 DE ABRIL</p>
+                                            <p>02 Y 03 DE MAYO</p>
                                         </div>
                                         <h3>EMMS E-commerce <span>EN VIVO</span></h3>
                                         <p>Súmate ahora y conoce <strong>qué tendencias y estrategias emplean los referentes de la industria en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
@@ -405,7 +405,7 @@ require_once('././src/components/cacheSettings.php');
                                 <?php elseif ($ecommerceStates['isDuring']) : ?>
                                     <div class="emms__eventCards__list__item__text">
                                         <div class="emms__eventCards__list__item__text--corner">
-                                            <p>18 Y 19 DE ABRIL</p>
+                                            <p>02 Y 03 DE MAYO</p>
                                         </div>
                                         <h3>EMMS E-commerce</h3>
                                         <p>Súmate ahora y conoce <strong>qué tendencias y estrategias emplean los referentes de la industria en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
@@ -426,7 +426,7 @@ require_once('././src/components/cacheSettings.php');
                                 <?php else : ?>
                                     <div class="emms__eventCards__list__item__text">
                                         <div class="emms__eventCards__list__item__text--corner">
-                                            <p>18 Y 19 DE ABRIL</p>
+                                            <p>02 Y 03 DE MAYO</p>
                                         </div>
                                         <h3>EMMS E-commerce</h3>
                                         <p>Referentes internacionales de la industria te contarán qué <strong>tendencias y estrategias emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
@@ -445,7 +445,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <div class="emms__eventCards__list__item__text--corner">
-                                            <p>18 Y 19 DE ABRIL</p>
+                                            <p>02 Y 03 DE MAYO</p>
                                         </div>
                                         <h3>EMMS E-commerce <span>EN VIVO</span></h3>
                                         <p>Súmate ahora y conoce <strong>qué tendencias y estrategias emplean los referentes de la industria en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
@@ -461,7 +461,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <div class="emms__eventCards__list__item__text--corner">
-                                            <p>18 Y 19 DE ABRIL</p>
+                                            <p>02 Y 03 DE MAYO</p>
                                         </div>
                                         <h3>EMMS E-commerce</h3>
                                         <p>Súmate ahora y conoce <strong>qué tendencias y estrategias emplean los referentes de la industria en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
@@ -491,7 +491,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <div class="emms__eventCards__list__item__text--corner">
-                                            <p>18 Y 19 DE ABRIL</p>
+                                            <p>02 Y 03 DE MAYO</p>
                                         </div>
                                         <h3>EMMS E-commerce</h3>
                                         <p>Referentes internacionales de la industria te contarán qué <strong>tendencias y estrategias emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
@@ -733,7 +733,7 @@ require_once('././src/components/cacheSettings.php');
                     <img src="src/img/biblioteca-recursos.png" alt="Biblioteca de recursos">
                 </div>
                 <div class="emms__premium-content__text emms__fade-in">
-                    <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
+                    <h2>Capacítate con la Biblioteca de Recursos gratuita</h2>
                     <p><strong>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen nuestros aliados para que puedas potenciar al máximo tu negocio.</strong></p>
                     <a href="./sponsors-registrado" class="emms__cta sm emms__cta--nd emms__fade-in">ACCEDE AHORA</a>
                 </div>

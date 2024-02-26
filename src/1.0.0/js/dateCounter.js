@@ -1,6 +1,6 @@
 // Date Counter
 
-const utcDate = '2024-04-18T15:00:00.000Z';
+const utcDate = '2024-05-02T15:00:00.000Z';
 const targetDate = new Date(utcDate).getTime();
 
 let days, hours, minutes, seconds;

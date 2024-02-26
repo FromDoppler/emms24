@@ -1,4 +1,4 @@
-<title>EMMS 2023: Conferencias online y gratuitas sobre Marketing Digital</title>
+<title>EMMS 2024: Conferencias online y gratuitas sobre Marketing Digital</title>
 
 <meta name="title" content="EMMS 2023: Conferencias online y gratuitas sobre Marketing Digital">
 <meta name="description" content="Súmate gratis y en un mismo lugar a 2 ediciones del evento de Marketing más esperado del año: E-commerce y Digital Trends.">

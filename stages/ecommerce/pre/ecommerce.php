@@ -283,7 +283,7 @@ require_once('././src/components/cacheSettings.php');
                             </div>
                             <div class="emms__grid__item__text">
                                 <h3>Casos de Éxito</h3>
-                                <p>Representantes de compañías líderes te cuentan las estrategias que impulsaron el éxito de sus negocios y conoce sus mejores tácticas para vender más.</p>
+                                <p>Descubre las estrategia que impulsaron el éxito de las compañías líderes del mundo, de la voz de sus representantes más destacados.</p>
                             </div>
                         </li>
                         <li class="emms__grid__item">
@@ -399,7 +399,7 @@ require_once('././src/components/cacheSettings.php');
                     <img src="src/img/biblioteca-recursos.png" alt="Biblioteca de recursos">
                 </div>
                 <div class="emms__premium-content__text emms__fade-in">
-                    <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
+                    <h2>Capacítate con la Biblioteca de Recursos gratuita</h2>
                     <p><strong>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen nuestros aliados para que puedas potenciar al máximo tu negocio.</strong></p>
                     <a href="./sponsors" class="emms__cta sm emms__cta--nd emms__fade-in">ACCEDE AHORA</a>
                 </div>

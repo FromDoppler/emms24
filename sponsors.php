@@ -232,8 +232,8 @@ require_once('././src/components/cacheSettings.php');
             <div class="emms__register-modal__window">
                 <!-- Form -->
                 <form class="emms__form" id="sponsorsForm" novalidate autocomplete="off">
-                    <h3>Regístrate aquí para acceder 🙂</h3>
-                    <h4>Regístrate aquí para desbloquear la Biblioteca de Recursos gratuitos para asistentes del EMMS. Además, al hacerlo podrás acceder a todas las charlas de tus ediciones preferidas, enterarte de los próximos eventos, acceder a ellos y ¡mucho más!</h4>
+                    <h3>Regístrate aquí</h3>
+                    <h4>Desbloquea la Biblioteca de Recursos, accede a conferencias de años anteriores y súmate gratis a la edición 2024</h4>
                     <ul class="emms__form__field-group">
                         <li class="emms__form__field-item">
                             <div class="holder">
