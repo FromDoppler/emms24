@@ -146,7 +146,7 @@
     width: auto;
 }
 
-.emms__eventnumbers--large ul li:first-child p::after{
+.emms__eventnumbers--large ul li:nth-child(2) p::after{
     content: "K";
 }
 
