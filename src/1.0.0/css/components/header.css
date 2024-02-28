@@ -213,7 +213,7 @@
     }
 
     .emms__header.emms__header-scroll {
-        animation: none;
+        /* animation: none; */
     }
 
     .emms__header__nav--hidden {

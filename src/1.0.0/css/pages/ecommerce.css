@@ -7,6 +7,12 @@
     background-position-x: center;
 }
 
+@media(max-width: 620px){
+    .emms__ecommerce .emms__hero-registration {
+        background-size: cover;
+    }
+}
+
 /* Date Counter */
 
 .emms__ecommerce .emms__counter {
@@ -98,6 +104,12 @@
 @media(max-width:992px) {
     .emms__ecommerce .emms__calendar .emms__background-b{
         display: none;
+    }
+}
+
+@media(max-width:620px){
+    .emms__ecommerce .emms__hero-registration--registered{
+        background-position-x: right;
     }
 }
 
