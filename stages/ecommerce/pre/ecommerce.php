@@ -584,7 +584,6 @@ require_once('././src/components/cacheSettings.php');
 
     <script src="src/<?= VERSION ?>/js/collapsibles.js"></script>
     <script src="src/<?= VERSION ?>/js/calendarBio.js"></script>
-    <script src="src/<?= VERSION ?>/js/mediaPartners.js"></script>
     <script src="src/<?= VERSION ?>/js/homeEcommerce.js" type="module"></script>
     <script src="src/<?= VERSION ?>/js/dateCounter.js"></script>
     <script src="src/<?= VERSION ?>/js/date.js"></script>

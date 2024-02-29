@@ -40,10 +40,10 @@ function processEvents($events)
     $digital_trends = 0;
 
     if (is_array($events)) {
-        if (in_array('ecommerce', $events)) {
+        if (in_array('ecommerce24', $events)) {
             $ecommerce = 1;
         }
-        if (in_array('digital-trends', $events)) {
+        if (in_array('digital-trends24', $events)) {
             $digital_trends = 1;
         }
     }
@@ -124,7 +124,7 @@ function setDataRequest($ip, $countryGeo)
 function getSubjectEmail($type, $phase)
 {
     $subject = "";
-    if ($type === "ecommerce") {
+    if ($type === "ecommerce24") {
         if ($phase === 'pre') {
             $subject = SUBJECT_PRE_ECOMMERCE;
         } elseif ($phase === 'during') {
