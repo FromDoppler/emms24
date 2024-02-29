@@ -86,10 +86,21 @@ class Relay
 
     private static function getTemplate($templateType, $templateName, $encodeEmail, $userData = [])
     {
+
+        $isLocalhost = ($_SERVER['HTTP_HOST'] === 'localhost' || substr($_SERVER['HTTP_HOST'], 0, 9) === '127.0.0.1');
+        $domain = $_SERVER['HTTP_HOST'];
+        $protocol = $isLocalhost ? 'http://' : 'https://';
+        // Definimos el dominio de retorno
+        $url = $protocol . $domain;
+
         $templatePath = self::TEMPLATE_DIR . $templateType . '/' . $templateName;
 
         if (file_exists($templatePath)) {
+
             $html = file_get_contents($templatePath);
+            // Remplazamos el dominio de retorno
+            $html = str_replace(['http://goemms.com', 'https://goemms.com'], $url, $html);
+
             // Se hace un array merge dado que userData es opcional, pero en
             // caso de que venga lo mergamos para iterar sus valores en la maqueta respectiva
             foreach (array_merge(['$encodeEmail' => $encodeEmail], $userData) as $key => $value) {
