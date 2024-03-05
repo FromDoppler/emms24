@@ -83,7 +83,7 @@ function setDataRequest($ip, $countryGeo)
     $origin = getFieldValue('origin');
     $type = getFieldValue('type');
     $phase = getCurrentPhase($type);
-    $list = ($type === 'ecommerce') ? LIST_LANDING_ECOMMERCE : LIST_LANDING_DIGITALT;
+    $list = ($type === 'ecommerce24') ? LIST_LANDING_ECOMMERCE : LIST_LANDING_DIGITALT;
     $subject = getSubjectEmail($type, $phase);
     $user = array(
         'register' => date("Y-m-d h:i:s A"),
