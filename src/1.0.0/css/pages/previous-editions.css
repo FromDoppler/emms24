@@ -1,13 +1,33 @@
 .emms__previous-editions {
-    background: #ffffff;
+    background: #0B0627;
 }
 
 /* ---- Hero ---- */
 
 .emms__previous-editions__hero {
-    background: #310E44;
-    padding: 177px 0 88px 0;
+    padding: 177px 0 300px 0;
     text-align: center;
+    position: relative;
+}
+
+.emms__previous-editions__hero::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(#000, transparent);
+}
+
+.emms__previous-editions__hero::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(transparent, #0B0627);
 }
 
 .emms__previous-editions__hero .emms__container--md {
@@ -88,6 +108,8 @@
     display: flex;
     align-items: center;
     gap: 50px;
+    position: relative;
+    z-index: 1;
 }
 
 .emms__previous-editions__hero .emms__previous-editions__hero__row .emms__previous-editions__hero__column-text{
@@ -107,16 +129,19 @@
 
 /* ---- Editions list ----  */
 
-.emms__previous-editions__list h2{
-    font-size: 24px;
-    line-height: 26px;
-    text-align: center;
-    color: #000;
-    margin: 0 0 70px 0;
-}
-
 .emms__previous-editions__list {
     padding: 120px 0 40px 0;
+    margin: -250px 0 0 0;
+    position: relative;
+}
+
+.emms__previous-editions__list h2{
+    font-size: 32px;
+    line-height: 34px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin: 0 0 70px 0;
 }
 
 .emms__previous-editions__list .emms__previous-editions__list__container {
@@ -134,7 +159,10 @@
 }
 
 .emms__previous-editions__list .emms__previous-editions__list__item a {
-    color: #333333;
+    color: #fff;
+    position: relative;
+    height: 100%;
+    display: block;
     cursor: pointer;
 }
 
@@ -148,7 +176,7 @@
 }
 
 .emms__previous-editions__list .emms__previous-editions__list__item__description {
-    padding: 30px 0 0 0;
+    padding: 30px 0 40px 0;
     pointer-events: none;
 }
 
@@ -163,16 +191,18 @@
     font-size: 15px;
     line-height: 22px;
     font-weight: 400;
-    min-height: 110px;
 }
 
 .emms__previous-editions__list .emms__previous-editions__list__item__description span {
     font-size: 17px;
     line-height: 22px;
     font-weight: 700;
+    text-transform: uppercase;
     color: #33AD73;
     margin: 15px 0 0 0;
     display: block;
+    position: absolute;
+    bottom: 0;
     animation-duration: .2s;
 }
 
@@ -183,11 +213,38 @@
 
 /* Item lg */
 
+.emms__previous-editions__list__container.emms__previous-editions__list__container--lg{
+    justify-content: space-between;
+    margin: 0 10px
+}
+
 .emms__previous-editions__list .emms__previous-editions__list__item--lg {
-    width: 48%;
-    background: #F6F6F6;
-    border-radius: 4px;
+    width: 47%;
+    position: relative;
+}
+
+.emms__previous-editions__list .emms__previous-editions__list__item--lg::before{
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background: linear-gradient(220deg,#7D04F6,#DF24C1,#79F66E);
+    border-radius: 22px;
+    z-index: -1;
+}
+
+.emms__previous-editions__list .emms__previous-editions__list__item--lg a{
+    background: #302B47;
+    display: block;
+    height: 100%;
+    border-radius: 20px;
     overflow: hidden;
+    padding: 0 0 80px 0;
+    box-sizing: border-box;
 }
 
 .emms__previous-editions__list .emms__previous-editions__list__item--lg .emms__previous-editions__list__item__description {
@@ -200,6 +257,7 @@
 
 .emms__previous-editions__list .emms__previous-editions__list__item--lg .emms__previous-editions__list__item__description span {
     margin: 25px 0 0 0;
+    bottom: 50px;
 }
 
 
@@ -252,12 +310,17 @@
         padding: 130px 0 60px 0;
     }
 
+    .emms__previous-editions__hero.emms__bg-section-4{
+        background-size: cover;
+    }
+
     .emms__previous-editions__hero__bottom{
         margin: 90px 0 -58px 0;
     }
 
     .emms__previous-editions__list {
         padding: 70px 0 30px 0;
+        margin: -50px 0 0 0;
     }
 
     .emms__previous-editions__list .emms__previous-editions__list__item {

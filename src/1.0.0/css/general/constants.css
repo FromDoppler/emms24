@@ -374,6 +374,12 @@ p {
     background-position: bottom;
 }
 
+.emms__bg-section-4 {
+    background: url("../../../img/bg-section-4.png") #0B0627 no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
 
 /* Collapse list */
 
