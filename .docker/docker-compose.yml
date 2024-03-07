@@ -38,6 +38,8 @@ services:
     restart: always
     depends_on:
       - db
+    networks:
+      - emmsnetwork
 
   db:
     container_name: db_${COMPOSE_PROJECT_NAME}
@@ -52,6 +54,8 @@ services:
     ports:
         - ${MYSQL_PORT}:3306
     restart: always
+    networks:
+      - emmsnetwork
 
   phpmyadmin:
     container_name: phpmyadmin_${COMPOSE_PROJECT_NAME}
@@ -63,6 +67,8 @@ services:
     restart: always
     depends_on:
       - db
+    networks:
+      - emmsnetwork
 
   nginx:
     build:
@@ -79,9 +85,18 @@ services:
       - ${NGINX_LOG_DIR}:/var/log/nginx
       - ${CERTS_DIR}:/etc/letsencrypt
     restart: always
+    networks:
+      - emmsnetwork
+
   memcached:
     container_name: memcached
     image: memcached:latest
     ports:
         - "11211:11211"
     restart: always
+    networks:
+      - emmsnetwork
+
+networks:
+  emmsnetwork:
+    external: true
