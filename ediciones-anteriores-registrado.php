@@ -88,7 +88,7 @@ require_once('./utils/DB.php');
     <main>
 
         <!-- Hero -->
-        <section class="emms__previous-editions__hero" id="sobre-emms">
+        <section class="emms__previous-editions__hero emms__bg-section-4" id="sobre-emms">
             <div class="emms__container--lg emms__previous-editions__hero__row">
                 <div class="emms__previous-editions__hero__column-text">
                     <h1 class="emms__fade-top">Acerca del EMMS</h1>
@@ -99,19 +99,13 @@ require_once('./utils/DB.php');
                     <img src="src/img/team-doppler.png" alt="Equipo de Doppler" class="emms__fade-in">
                 </div>
             </div>
-            <div class="emms__previous-editions__hero__bottom emms__fade-in">
-                <div class="emms__previous-editions__hero__bottom__container">
-                    <p>INTELIGENCIA ARTIFICIAL >> MARKETING AUTOMATION >> SOCIAL MEDIA >> EMAIL MARKETING >> CRO >> SEO >> SOCIAL ADS >> CONTENT MARKETING >> GOOGLE ADS >> RETARGETING >></p>
-                    <p>INTELIGENCIA ARTIFICIAL >> MARKETING AUTOMATION >> SOCIAL MEDIA >> EMAIL MARKETING >> CRO >> SEO >> SOCIAL ADS >> CONTENT MARKETING >> GOOGLE ADS >> RETARGETING >></p>
-                </div>
-            </div>
         </section>
 
         <!-- Editions list -->
         <section class="emms__previous-editions__list" id="ediciones-anteriores">
             <div class="emms__container--md">
                 <h2>Revive las ediciones anteriores</h2>
-                <ul class="emms__previous-editions__list__container">
+                <ul class="emms__previous-editions__list__container emms__previous-editions__list__container--lg">
                     <li class="emms__previous-editions__list__item emms__previous-editions__list__item--lg emms__fade-in">
                         <a href="https://www.youtube.com/playlist?list=PLHE_SVtQOB8qMW0FxjjOYdNpLyX0x3_4z" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
@@ -137,6 +131,8 @@ require_once('./utils/DB.php');
                             </div>
                         </a>
                     </li>
+                </ul>
+                <ul class="emms__previous-editions__list__container">
                     <li class="emms__previous-editions__list__item emms__fade-in">
                         <a href="https://youtube.com/playlist?list=PLHE_SVtQOB8rm4R9Dn55TfQSABmWQoaRK" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
