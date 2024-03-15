@@ -12,10 +12,22 @@
     width: 30%;
     position: relative;
     background: #fff;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
-    border-radius: 3px;
-    overflow: hidden;
+    border-radius: 20px;
     margin: 0 20px;
+}
+
+.emms__eventCards__list__item::before{
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background: linear-gradient(220deg, #7D04F6, #DF24C1, #79F66E);
+    border-radius: 22px;
+    z-index: -1;
 }
 
 .emms__eventCards__list__item__picture {
@@ -66,7 +78,7 @@
 }
 
 .emms__eventCards__list__item__text {
-    padding: 29px 29px 110px 29px;
+    padding: 29px 29px 120px 29px;
 }
 
 .emms__eventCards__list__item__text p {
@@ -80,26 +92,9 @@
     text-decoration: underline;
 }
 
-.emms__eventCards__list__item__text--corner {
-    position: absolute;
-    top: 30px;
-    right: 0;
-    background: #FF4FB6;
-    padding: 14px 20px;
-    border-radius: 3px 0px 0px 3px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-}
-
-.emms__eventCards__list__item__text--corner p {
-    font-size: 22px;
-    font-weight: 700;
-    text-align: right;
-    color: #212121;
-}
-
 .emms__eventCards__list__item__text h3 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 30px;
+    line-height: 30px;
     font-weight: 700;
     color: #333333;
     margin: 0 0 13px 0;
@@ -173,6 +168,13 @@
     }
 }
 
+@media(max-width:1280px){
+    .emms__eventCards__list__item__text h3{
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
 @media(max-width:1100px){
     .emms__eventCards__list__item__text h3 span {
         font-size: 12px;
@@ -190,8 +192,6 @@
         display: block;
         max-width: 262px;
         margin: 0 auto;
-        background: #fff;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
         border-radius: 3px;
     }
 
@@ -200,7 +200,9 @@
     }
 
     .emms__eventCards__list--mb .flickity-viewport {
-        height: 530px !important;
+        height: 500px !important;
+        background: #fff;
+        border-radius: 20px;
     }
 
     .emms__eventCards__list__item {
@@ -208,9 +210,29 @@
         box-shadow: none;
     }
 
+    .emms__eventCards__list::before{
+        content: "";
+        position: absolute;
+        left: -5px;
+        top: -5px;
+        right: -5px;
+        bottom: -5px;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        background: linear-gradient(220deg, #7D04F6, #DF24C1, #79F66E);
+        border-radius: 22px;
+        z-index: -1;
+    }
+
+
+    .emms__eventCards__list__item::before{
+        display: none;
+    }
+
     .emms__eventCards__list__item__text {
         padding: 19px 19px 95px 19px;
         min-height: 180px;
+        background: #fff;
     }
 
     .emms__eventCards__list__item__text h3 {
@@ -223,14 +245,6 @@
 
     .emms__eventCards__list__item__text--feature {
         margin: 10px 0 0 0;
-    }
-
-    .emms__eventCards__list__item__text--corner{
-        padding: 10px 16px;
-    }
-
-    .emms__eventCards__list__item__text--corner p{
-        font-size: 18px;
     }
 
     .emms__eventCards__list__item__text--bottom {
