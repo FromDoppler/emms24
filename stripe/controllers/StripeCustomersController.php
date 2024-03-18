@@ -1,10 +1,8 @@
 <?php
-
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/utils/DB.php';
 require_once 'models/StripeCustomersDatabase.php';
-
-//creo la conexion a la db
+require_once 'models/RegisteredDatabase.php';
 
 class StripeCustomersController
 {
@@ -38,20 +36,29 @@ class StripeCustomersController
             http_response_code(400); // Solicitud incorrecta
             throw new Exception('JSON incorrecto' . $jsonData);
         } else {
-            //$logger = new Logger();
-            //$logger->registrarLog("success_raw", "objRaw", $jsonData);
+            $response = ['message' => "success_raw", "objRaw" => $jsonData];
         }
         return $jsonData;
     }
 
+    private function updateRegisteredUser($db, $UserData)
+    {
+        $RegisteredModel = new RegisteredDatabase($db);
+        if ($RegisteredModel->getRegisteredByEmail($UserData['customer_email'])) {
+            $RegisteredModel->updateEcommerceVIPByEmail($UserData['customer_email']);
+        } else {
+            return $RegisteredModel->insertAutomatedRegistered($UserData);
+        }
+    }
+
     private function processAndSaveSubscription($UserData)
     {
-        //creo la conexion a la db
         $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-        // Procesar las suscripciones
+        // insert stirpe customer
         $StripeCustomersModel = new StripeCustomersDatabase($db);
-
         $StripeCustomersModel->insertCustomer($UserData);
+        //upadate or create registered user
+        $this->updateRegisteredUser($db, $UserData);
         return true;
     }
 }

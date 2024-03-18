@@ -8,7 +8,7 @@ require_once 'controllers/StripeCustomersController.php';
 try {
     $StripeCustomersController = new StripeCustomersController();
     $response = $StripeCustomersController->handleRequest();
-    print_r($response);
+    echo json_encode(["mensaje" => $response]);
 } catch (Exception $e) {
     http_response_code(500); // Error interno del servidor
     print_r($e);

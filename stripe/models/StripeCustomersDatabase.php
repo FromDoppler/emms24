@@ -1,7 +1,6 @@
 <?php
-
 class StripeCustomersDatabase {
-    private $db; // Objeto de conexión a la base de datos
+    private $db;
 
     public function __construct($db) {
         $this->db = $db;
@@ -9,11 +8,9 @@ class StripeCustomersDatabase {
 
     public function insertCustomer($customerData) {
         try {
-            // Crear la consulta SQL sin escapar valores
-            $query = "INSERT INTO stripe_customers (payment_intent, payment_method_configuration_id, price, discount, final_price, customer_name, customer_email, customer_country, customer_tax, payment_status)
+            $query = "INSERT INTO stripe_customers (session_id, price, discount, final_price, customer_name, customer_email, customer_country, customer_tax, payment_status, coupon_id, coupon_name, event_name, event_phase, ticket_name, ticket_price_id)
                 VALUES (
-                    '{$customerData['payment_intent']}',
-                    '{$customerData['payment_method_configuration_id']}',
+                    '{$customerData['session_id']}',
                     '{$customerData['price']}',
                     '{$customerData['discount']}',
                     '{$customerData['final_price']}',
@@ -21,17 +18,23 @@ class StripeCustomersDatabase {
                     '{$customerData['customer_email']}',
                     '{$customerData['customer_country']}',
                     '{$customerData['tax_id']}',
-                    '{$customerData['payment_status']}'
+                    '{$customerData['payment_status']}',
+                    '{$customerData['coupon_id']}',
+                    '{$customerData['coupon_name']}',
+                    '{$customerData['event_name']}',
+                    '{$customerData['event_phase']}',
+                    '{$customerData['ticket_name']}',
+                    '{$customerData['ticket_price_id']}'
                 )";
 
             if ($this->db->query($query)) {
-                return true; // Insercion exitosa
+                return true;
             } else {
-                return false; // Error en la inserción
+                return false;
             }
         } catch (Exception $e) {
             $errorMessage = json_encode(["insertCustomer", $e->getMessage()]);
-            http_response_code(500); // Error interno del servidor
+            http_response_code(500);
             throw new Exception($errorMessage);
         }
     }
