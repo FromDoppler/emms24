@@ -3,6 +3,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/utils/DB.php';
 require_once 'models/StripeCustomersDatabase.php';
 require_once 'models/RegisteredDatabase.php';
+require_once 'utils/sendEmail.php';
+require_once 'utils/toHex.php';
 
 class StripeCustomersController
 {
@@ -59,6 +61,49 @@ class StripeCustomersController
         $StripeCustomersModel->insertCustomer($UserData);
         //upadate or create registered user
         $this->updateRegisteredUser($db, $UserData);
+
+        $user = $this->CreateUserObj($UserData, 28868432);
+
+        $user['final_price'] = $UserData['final_price'];
+        $user['payment_status'] = $UserData['payment_status'];
+        sendEmail($user, $user['subject']);
+
         return true;
     }
+
+
+    private function CreateUserObj($UserData, $listId = 28868432)
+    {
+        $encode_email = toHex(json_encode([
+            'userEmail' => $UserData['customer_email'],
+            'userEvents' => ['ecommerce24']
+        ]));
+        return [
+            'register' => date("Y-m-d h:i:s A"),
+            'firstname' => $UserData['customer_name'],
+            'email' => $UserData['customer_email'],
+            'company' =>  '',
+            'jobPosition' =>  '',
+            'phone' =>  '',
+            'ecommerce' => 0,
+            'digital_trends' => 1,
+            'encode_email' => $encode_email,
+            'privacy' => true,
+            'promotions' => false,
+            'ip' => '',
+            'country_ip' => '',
+            'source_utm' => "stripe",
+            'medium_utm' => "stripe",
+            'campaign_utm' => 'stripe',
+            'content_utm' => 'stripe',
+            'term_utm' => "stripe",
+            'origin' => "stripe",
+            'type' => "ecommerce24",
+            'tiketType' => 'ecommerceVip',
+            'form_id' => "pre",
+            'list' => $listId,
+            'subject' => "Compraste!"
+        ];
+    }
+
 }
