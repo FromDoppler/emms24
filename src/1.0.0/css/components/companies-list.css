@@ -65,6 +65,10 @@
     text-decoration: underline;
 }
 
+.emms__companies .emms__cta.emms__cta--nd.sm{
+    margin: 50px 0 0 0;
+}
+
 /* ------ With CATEGORIES ------ */
 
 .emms__companies.emms__companies--categories {

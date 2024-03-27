@@ -38,24 +38,8 @@
     position: relative;
 }
 
-.emms__ecommerce .emms__calendar .emms__background-b{
-    width: 627px;
-    height: 445px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: translate(52%, 5%);
-    z-index: -1;
-}
-
-.emms__ecommerce .emms__calendar .emms__background-c{
-    width: 250px;
-    height: 500px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translate(0%, 124%);
-    z-index: -1;
+.emms__ecommerce .emms__bg-dark-gradient {
+    padding: 60px 0;
 }
 
 
@@ -65,6 +49,10 @@
     background: #000 url("../../../img/back-hero-ecommerce-registered.png") no-repeat;
     background-size: cover;
     animation: hero-back-ecommerce 1s;
+}
+
+.emms__ecommerce-logueado .emms__calendar{
+    background: none;
 }
 
 .emms__ecommerce-logueado .emms__calendar__title{

@@ -272,6 +272,11 @@
     background-size: contain;
 }
 
+.emms__hero-registration--registered .emms__cta{
+    margin: 40px 0 0 0;
+    animation-delay: .6s;
+}
+
 .emms__hero-registration--registered #emmsCounter{
     animation-delay: .8s;
 }

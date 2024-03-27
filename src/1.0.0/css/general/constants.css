@@ -84,10 +84,6 @@ p {
     position: relative;
 }
 
-.emms__cta.sm{
-    padding: 12px 30px;
-}
-
 .emms__cta:hover {
     background: #026c3c;
     transition-duration: 0.2s;
@@ -104,6 +100,10 @@ p {
 .emms__cta.emms__cta--nd:hover{
     background: rgba(0, 128, 70, 0.1);
     transition-duration: 0.2s;
+}
+
+.emms__cta.sm{
+    padding: 12px 30px;
 }
 
 @media (max-width: 620px) {
@@ -354,6 +354,10 @@ p {
 
 .emms__bg-dark-gradient {
     background: linear-gradient(#0C0E25, #1B245B);
+}
+
+.emms__bg-dark-gradient--2 {
+    background: linear-gradient(#0C0E25, #1B245B, #0C0E25);
 }
 
 .emms__bg-section-1 {

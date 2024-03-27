@@ -31,6 +31,8 @@
 @import 'components/features.css';
 @import 'components/prices-plans.css';
 @import 'components/basic-section.css';
+@import 'components/benefits-icons.css';
+@import 'components/benefits-carousel.css';
 
 /* Pages */
 @import 'pages/ecommerce.css';
@@ -40,6 +42,7 @@
 @import 'pages/internal-sponsors.css';
 @import 'pages/previous-editions.css';
 @import 'pages/certificate-download.css';
+@import 'pages/checkout.css';
 
 /* Styles used in scripts (.js) */
 @import 'scripts/cards.css';
