@@ -1,5 +1,6 @@
 'use strict';
 import { toHex, getEncodeURLEmail } from "./common/index.js";
+import { eventsType } from "./enums/eventsType.enum.js";
 
 const encodeUser = getEncodeURLEmail();
 
@@ -32,7 +33,7 @@ const checkEncodeUrl = () => {
     } else {
         //FIXME: Este es un hotfix puesto para los usuarios que fueron guardados erroneamente sin eventos
         // Si se reutiliza este codigo en el futuro se debe borrar el else
-        const hardCodeEvents = ['ecommerce24', 'digital-trends24'];
+        const hardCodeEvents = [eventsType.ECOMMERCE, eventsType.DIGITALTRENDS];
         const user = {
             'userEmail': encodeUser,
             'userEvents': hardCodeEvents
@@ -99,8 +100,8 @@ const registerEventsCardsCheck = () => {
 
     const ecommerceCards = document.querySelectorAll('.ecommerceCard');
     const digitalTCards = document.querySelectorAll('.digitalTCard');
-    processEventCards(ecommerceCards, 'ecommerce24');
-    processEventCards(digitalTCards, 'digital-trends24');
+    processEventCards(ecommerceCards, eventsType.ECOMMERCE);
+    processEventCards(digitalTCards, eventsType.DIGITALTRENDS);
 }
 
 export {

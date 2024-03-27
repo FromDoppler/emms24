@@ -130,5 +130,6 @@ const setEventInLocalStorage = (fetchType, encodeEmail) => {
 
 export {
     submitFormFetch,
-    submitWithoutForm
+    submitWithoutForm,
+    setEventInLocalStorage
 };

@@ -8,7 +8,8 @@ const setErrorField = (elem, typeMsg) => {
         email_es: '¡Ouch! Ingresa un Email válido.',
         URL_es: '¡Ouch! Ingresa una URL válida.',
         number_es: '¡Ouch! Ingresa un número válido.',
-        policy_es: '¡Ouch! No has aceptado la Política de Privacidad.'
+        policy_es: '¡Ouch! No has aceptado la Política de Privacidad.',
+        dontExist_es: '¡Ouch! Parece que este Email no esta registrado.',
     }
 
     parent = elem.closest('.holder');
@@ -105,6 +106,18 @@ const validateForm = (form) => {
     }
 }
 
+const setUserNotExistError = (form) => {
+    const emailInput = form.querySelector('input[type="email"]');
+    setErrorField(emailInput, 'dontExist_es');
+}
+
+const validateSimpleForm = (form) => {
+    const requiredFields = form.querySelectorAll('input.required,select.required');
+    const emailField = form.querySelector('input[name="email"]');
+    const hasRequiredsValidate = validateEmptyFields(form, requiredFields);
+
+    return (emailField && hasRequiredsValidate);
+}
 
 export {
     validateEmailField,
@@ -112,5 +125,7 @@ export {
     validateEmptyFields,
     validatePolicyCheckbox,
     resetErrorField,
-    validateForm
+    validateForm,
+    validateSimpleForm,
+    setUserNotExistError
 };

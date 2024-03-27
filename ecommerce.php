@@ -17,15 +17,18 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/services/functions.php');
         getUrlWithParams
     } from './src/<?= VERSION ?>/js/common/index.js';
     import {
+        eventsType
+    } from './src/<?= VERSION ?>/js/enums/eventsType.enum.js';
+    import {
         userRegisteredInEvent,
         checkEncodeUrl
     } from './src/<?= VERSION ?>/js/user.js';
     checkEncodeUrl();
-    if (userRegisteredInEvent('ecommerce24')) {
+    if (userRegisteredInEvent(eventsType.ECOMMERCE)) {
         window.location.href = getUrlWithParams('/ecommerce-registrado');
     }
 </script>
 <?php
-$response = processPhaseToShow('ecommerce24');
+$response = processPhaseToShow(ECOMMERCE);
 require_once($_SERVER['DOCUMENT_ROOT'] . "/stages/ecommerce/$response[phaseToShow]/ecommerce.php");
 ?>

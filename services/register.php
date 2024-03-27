@@ -40,10 +40,10 @@ function processEvents($events)
     $digital_trends = 0;
 
     if (is_array($events)) {
-        if (in_array('ecommerce24', $events)) {
+        if (in_array(ECOMMERCE, $events)) {
             $ecommerce = 1;
         }
-        if (in_array('digital-trends24', $events)) {
+        if (in_array(DIGITALTRENDS, $events)) {
             $digital_trends = 1;
         }
     }
@@ -83,7 +83,7 @@ function setDataRequest($ip, $countryGeo)
     $origin = getFieldValue('origin');
     $type = getFieldValue('type');
     $phase = getCurrentPhase($type);
-    $list = ($type === 'ecommerce24') ? LIST_LANDING_ECOMMERCE : LIST_LANDING_DIGITALT;
+    $list = ($type === ECOMMERCE) ? LIST_LANDING_ECOMMERCE : LIST_LANDING_DIGITALT;
     $subject = getSubjectEmail($type, $phase);
     $user = array(
         'register' => date("Y-m-d h:i:s A"),
@@ -124,7 +124,7 @@ function setDataRequest($ip, $countryGeo)
 function getSubjectEmail($type, $phase)
 {
     $subject = "";
-    if ($type === "ecommerce24") {
+    if ($type === ECOMMERCE) {
         if ($phase === 'pre') {
             $subject = SUBJECT_PRE_ECOMMERCE;
         } elseif ($phase === 'during') {

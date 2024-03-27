@@ -4,6 +4,7 @@ import {
     customError,
     submitFormFetch,
 } from './common/index.js';
+import { eventsType } from './enums/eventsType.enum.js';
 
 document.addEventListener('click', (e) => {
     e = e || window.event;
@@ -36,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         e.preventDefault();
 
-        await submitFormFetch(editionsForm, 'ecommerce24').then(({ fetchResp: resp, encodeEmail }) => {
+        await submitFormFetch(editionsForm, eventsType.ECOMMERCE).then(({ fetchResp: resp, encodeEmail }) => {
             if (!resp.ok) throw new Error('Server error on Editions fetch', resp?.status);
             localStorage.setItem('dplrid', encodeEmail);
             localStorage.setItem('lastEventsUpdateTime', new Date());
