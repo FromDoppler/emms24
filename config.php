@@ -36,6 +36,14 @@ if (!defined('CACHE_TIME')) define('CACHE_TIME', 60); // En segundos(60) (1 minu
 if (!defined('CACHE_TIME_ID')) define('CACHE_TIME_ID', 1800); // En segundos(1800) (30 minutos)
 if (!defined('CACHE_BACKUP_TIME')) define('CACHE_BACKUP_TIME', 3600); // En segundos (1 Hora)
 
+#EVENTS NAMES
+
+$ecommerce = 'ecommerce24';
+$digitalTrends = 'digital-trends24';
+
+if (!defined('ECOMMERCE')) define('ECOMMERCE', $ecommerce);
+if (!defined('DIGITALTRENDS')) define('DIGITALTRENDS', $digitalTrends);
+
 #IPS WHITE LIST
 
 if (!defined('ALLOW_IPS')) define('ALLOW_IPS', $ALLOW_IPS);
