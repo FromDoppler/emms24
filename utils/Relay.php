@@ -31,6 +31,7 @@ class Relay
                 'during' => 'getDigitalTEmailTemplateDuring',
                 'post' => 'getDigitalTEmailTemplatePost',
             ],
+            'ecommerceVip' => 'getEcommerceVipTemplate',
         ];
 
         if (isset($user['tiketType']) && isset($templateMappings[$user['tiketType']])) {
@@ -192,5 +193,19 @@ class Relay
     {
         $templateName = 'wix-invitado-template.html';
         return self::getTemplate('wix', $templateName, $encodeEmail);
+    }
+
+
+    public static function getEcommerceVipTemplate($encodeEmail, $user)
+    {
+        $templateName = 'ecommerce-vip-template.html';
+        $userData = [
+            '$encodeEmail' => $encodeEmail,
+            'type' => $user['tiketType'],
+            'paymentMethod' =>  $user['payment_status'],
+            'date' => $user['register'],
+            'amount' => $user['final_price'],
+        ];
+        return self::getTemplate('ecommerce', $templateName, $encodeEmail, $userData);
     }
 }
