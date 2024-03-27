@@ -6,6 +6,7 @@ import {
     submitFormFetch,
     submitWithoutForm,
 } from './common/index.js';
+import { eventsType } from './enums/eventsType.enum.js';
 
 
 
@@ -18,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             e.preventDefault();
 
-            await submitFormFetch(digitalForm, 'digital-trends24').then(({ fetchResp: resp }) => {
+            await submitFormFetch(digitalForm, eventsType.DIGITALTRENDS).then(({ fetchResp: resp }) => {
                 if (!resp.ok) throw new Error('Server error on digital fetch', resp?.status);
 
                 window.location.href = getUrlWithParams('/digital-trends-registrado');
@@ -38,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (digitalTrendsBtns.length > 0) {
         const submitEvent = async (btn) => {
             btn.classList.add('button--loading');
-            await submitWithoutForm('digital-trends24').then(({ fetchResp: resp }) => {
+            await submitWithoutForm(eventsType.DIGITALTRENDS).then(({ fetchResp: resp }) => {
                 btn.classList.remove('button--loading');
                 if (!resp.ok) throw new Error('Server error on digital fetch', resp?.status);
 

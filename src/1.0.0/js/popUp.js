@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const submitEvent = async (btn) => {
                 activeButtonsSpinners();
-                await submitWithoutForm('digital-trends24').then(({ fetchResp: resp }) => {
+                await submitWithoutForm(eventsType.DIGITALTRENDS).then(({ fetchResp: resp }) => {
                     btn.classList.remove('button--loading');
                     if (!resp.ok) throw new Error('Server error on digital fetch', resp?.status);
 
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const submitForm = async (form) => {
 
-                await submitFormFetch(form, 'digital-trends24').then(({ fetchResp: resp, encodeEmail }) => {
+                await submitFormFetch(form, eventsType.DIGITALTRENDS).then(({ fetchResp: resp, encodeEmail }) => {
                     const button = form.querySelector('button');
                     button.classList.add('button--loading');
                     button.disabled = true;

@@ -4,6 +4,7 @@ import {
     customError,
     submitFormFetch,
 } from './common/index.js';
+import { eventsType } from './enums/eventsType.enum.js';
 
 import {
     userRegisteredInEvent
@@ -17,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const speakerForm = document.getElementById('speakerForm');
 
     const checkUserUI = () => {
-        if (userRegisteredInEvent('ecommerce24') || userRegisteredInEvent('digital-trends24')) {
+        if (userRegisteredInEvent(eventsType.ECOMMERCE) || userRegisteredInEvent(eventsType.DIGITALTRENDS)) {
             speakerVideo.classList.remove('dp--none');
             speakerFormContainer.classList.add('dp--none');
         } else {
@@ -32,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             e.preventDefault();
 
-            await submitFormFetch(speakerForm, 'ecommerce24').then(({ fetchResp: resp }) => {
+            await submitFormFetch(speakerForm, eventsType.ECOMMERCE).then(({ fetchResp: resp }) => {
                 if (!resp.ok) throw new Error('Server error on speaker fetch', resp?.status);
                 checkUserUI();
             })
