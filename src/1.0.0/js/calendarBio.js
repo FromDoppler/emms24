@@ -1,6 +1,5 @@
 // Tabs
 
-console.log("hola")
 const tab = document.querySelector('.emms__calendar__tabs');
 const tabButtons = tab.querySelectorAll('[role="tab"]');
 const tabPanels = Array.from(tab.querySelectorAll('[role="tabpanel"]'));
