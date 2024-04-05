@@ -5,6 +5,7 @@ require_once 'models/StripeCustomersDatabase.php';
 require_once 'models/RegisteredDatabase.php';
 require_once 'utils/sendEmail.php';
 require_once 'utils/toHex.php';
+require_once 'models/SubscriberDopplerList.php';
 
 class StripeCustomersController
 {
@@ -62,7 +63,10 @@ class StripeCustomersController
         //upadate or create registered user
         $this->updateRegisteredUser($db, $UserData);
 
-        $user = $this->CreateUserObj($UserData, 28868432);
+        $user = $this->CreateUserObj($UserData, LIST_LANDING_ECOMMERCE_VIP);
+
+        $dopplerHandler = new SubscriberDopplerList();
+        $dopplerHandler->saveSubscription($user);
 
         $user['final_price'] = $UserData['final_price'];
         $user['payment_status'] = $UserData['payment_status'];
@@ -72,7 +76,7 @@ class StripeCustomersController
     }
 
 
-    private function CreateUserObj($UserData, $listId = 28868432)
+    private function CreateUserObj($UserData, $listId = LIST_LANDING_ECOMMERCE_VIP)
     {
         $encode_email = toHex(json_encode([
             'userEmail' => $UserData['customer_email'],
@@ -85,8 +89,8 @@ class StripeCustomersController
             'company' =>  '',
             'jobPosition' =>  '',
             'phone' =>  '',
-            'ecommerce' => 0,
-            'digital_trends' => 1,
+            'ecommerce' => 1,
+            'digital_trends' => 0,
             'encode_email' => $encode_email,
             'privacy' => true,
             'promotions' => false,
