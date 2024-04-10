@@ -6,6 +6,7 @@ require_once 'models/RegisteredDatabase.php';
 require_once 'utils/sendEmail.php';
 require_once 'utils/toHex.php';
 require_once 'models/SubscriberDopplerList.php';
+require_once 'utils/SpreadSheetGoogle.php';
 
 class StripeCustomersController
 {
@@ -57,17 +58,23 @@ class StripeCustomersController
     private function processAndSaveSubscription($UserData)
     {
         $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-        // insert stirpe customer
+
+        // registra usuario VIP en tabla STRIPE
         $StripeCustomersModel = new StripeCustomersDatabase($db);
         $StripeCustomersModel->insertCustomer($UserData);
-        //upadate or create registered user
+
+        // crea o actualiza usuario en tabla registered
         $this->updateRegisteredUser($db, $UserData);
 
+        // carga el usuario en lista de doppler de usuarios vip
         $user = $this->CreateUserObj($UserData, LIST_LANDING_ECOMMERCE_VIP);
-
         $dopplerHandler = new SubscriberDopplerList();
         $dopplerHandler->saveSubscription($user);
 
+        // Guardar la suscripcion en SpreadSheet de usuarios VIP
+        saveSubscriptionSpreadSheet(ID_SPREADSHEET_VIP, $user);
+
+        // Enviar email de compra exitosa
         $user['final_price'] = $UserData['final_price'];
         $user['payment_status'] = $UserData['payment_status'];
         sendEmail($user, $user['subject']);
