@@ -15,12 +15,10 @@ class SubscriberDopplerList
             if (stripos($errorMessage, "Unsubscribed") !== false) {
                 return $this->dobleOptin($user);
             } else {
-            $logger = new Logger();
             $errorMessage = json_encode(["saveSubscriptionDoppler", $e->getMessage(), ['user' => $user]]);
             echo $errorMessage;
             $subscriptionErrors = new SubscriptionErrors();
             $subscriptionErrors->saveSubscriptionErrors($user['email'], $user['list'], $errorMessage);
-            $logger->registrarLog("error", "DOPPLER API", $errorMessage);
             return 'fail';
             }
         }
