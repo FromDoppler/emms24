@@ -4,6 +4,7 @@ import {
     customError,
     submitFormFetch,
 } from './common/index.js';
+import { swichFormListener } from './common/switchForm.js';
 import { eventsType } from './enums/eventsType.enum.js';
 
 document.addEventListener('click', (e) => {
@@ -32,8 +33,8 @@ document.addEventListener('click', (e) => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-
     const sponsorsForm = document.getElementById('sponsorsForm');
+    swichFormListener(sponsorsForm);
 
     const submitForm = async (e) => {
         const slug = sessionStorage.getItem('currentSlug')

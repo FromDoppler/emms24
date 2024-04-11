@@ -10,6 +10,7 @@ import {
     toHex,
     validateSimpleForm,
 } from './common/index.js';
+import { swichFormListener } from './common/switchForm.js';
 import { eventsType } from './enums/eventsType.enum.js';
 
 
@@ -17,7 +18,7 @@ import { eventsType } from './enums/eventsType.enum.js';
 
 
 const ecommerceForm = document.getElementById('ecommerceForm');
-const ecommerceAlreadyAccountForm = document.getElementById('ecommerceAlreadyAccountForm');
+const ecommerceAlreadyAccountForm = document.getElementById('alreadyAccountForm');
 const ecommerceBtns = document.querySelectorAll('.ecommerceBtn');
 
 const redirectToRegisteredPage = () => {
@@ -97,31 +98,50 @@ const getUserByEmail = async () => {
 }
 
 
+const filterEvents = (events) => {
+    return Object.entries(events)
+        .filter(([eventName, eventValue]) => eventValue === 1)
+        .map(([eventName, _]) => eventName);
+}
+
+const setMultipleEvents = (events) => {
+    events.forEach(event => {
+        setEventInLocalStorage(event, toHex(email));
+    })
+}
+
 const activeFormListeners = () => {
 
+
+    swichFormListener(ecommerceForm);
+
     document.addEventListener('DOMContentLoaded', () => {
+
         if (ecommerceForm) {
             ecommerceForm.querySelector('button').addEventListener('click', submitForm);
         }
         if (ecommerceBtns.length > 0) {
             ecommerceBtns.forEach(btn => btn.addEventListener('click', () => { submitEvent(btn) }));
         }
+
         ecommerceAlreadyAccountForm.addEventListener('submit', async (e) => {
             e.preventDefault();
 
             if (!validateSimpleForm(ecommerceAlreadyAccountForm)) return;
+            ecommerceAlreadyAccountForm.querySelector('button').classList.add('button--loading');
 
-            const { email } = await getUserByEmail();
+            const resp = await getUserByEmail();
+            const events = filterEvents(resp);
 
-            if (email) {
-                setEventInLocalStorage(eventsType.ECOMMERCE, toHex(email));
+            if (resp.email) {
+                setMultipleEvents(events);
                 redirectToRegisteredPage();
             } else {
                 setUserNotExistError(ecommerceAlreadyAccountForm);
             }
-
-
+            ecommerceAlreadyAccountForm.querySelector('button').classList.remove('button--loading');
         })
+
     });
 
 }

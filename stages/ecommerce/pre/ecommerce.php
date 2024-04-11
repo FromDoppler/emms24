@@ -18,7 +18,7 @@ require_once('././src/components/cacheSettings.php');
         <!-- Hellobar -->
         <div class="emms__hellobar emms__hellobar--counter">
             <div class="emms__hellobar__container emms__fade-in">
-                <p>¡Vuelve el <strong>EMMS E-Commerce 2024</strong>! 02 y 03 de Mayo. Apúntate y descubre todas las novedades.  <a href="#registro">REGÍSTRATE GRATIS</a></p>
+                <p>¡Vuelve el <strong>EMMS E-Commerce 2024</strong>! 02 y 03 de Mayo. Apúntate y descubre todas las novedades. <a href="#registro">REGÍSTRATE GRATIS</a></p>
             </div>
         </div>
     <?php endif; ?>
@@ -85,7 +85,13 @@ require_once('././src/components/cacheSettings.php');
                 </div>
                 <div class="emms__hero-registration__form emms__fade-in" id="registro">
                     <!-- Form -->
-                    <form class="emms__form" novalidate autocomplete="off" id="ecommerceForm">
+                    <div class="emms_switch__container">
+                        <span class="emms_switch__container__switch">
+                            <input type="checkbox" name="swith" id="swith" checked>
+                            <label for="switch"></label>
+                        </span>
+                    </div>
+                    <form class="emms__form emms__fade-in" novalidate autocomplete="off" id="ecommerceForm">
                         <ul class="emms__form__field-group">
                             <li class="emms__form__field-item">
                                 <div class="holder">
@@ -163,6 +169,20 @@ require_once('././src/components/cacheSettings.php');
                                 transferencias
                                 transfronterizas y otros temas. <br>
                             </p>
+                        </div>
+                    </form>
+                    <form class="emms__form  emms__fade-in dp--none alreadyAccountForm" novalidate autocomplete="off" id="alreadyAccountForm">
+                        <h2>Ingresa tu email</h2>
+                        <ul class="emms__form__field-group">
+                            <li class="emms__form__field-item">
+                                <div class="holder">
+                                    <label class="required-label" for="email">Email *</label>
+                                    <input type="email" name="email" id="email" placeholder="&iexcl;No olvides usar @!" class="email required" autocomplete="off">
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="emms__form__btn">
+                            <button class="emms__cta" id="register-button" type="submit"><span class="button__text">INGRESAR</span></button>
                         </div>
                     </form>
                     <!-- End form -->

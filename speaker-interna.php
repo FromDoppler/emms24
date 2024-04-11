@@ -72,9 +72,15 @@ $event = $_GET['event'];
 
                     <div id="formContainer" class="dp--none">
                         <!-- Registro con Form -->
+                        <div class="emms_switch__container">
+                            <span class="emms_switch__container__switch">
+                                <input type="checkbox" name="swith" id="swith" checked>
+                                <label for="switch"></label>
+                            </span>
+                        </div>
                         <form class="emms__form emms__fade-in eventHiddenElements" novalidate autocomplete="off" id="speakerForm">
-                        <h2>Regístrate gratis ahora y accede a todas las conferencias del EMMS</h2><br>
-                        <ul class="emms__form__field-group">
+                            <h2>Regístrate gratis ahora y accede a todas las conferencias del EMMS</h2><br>
+                            <ul class="emms__form__field-group">
                                 <li class="emms__form__field-item">
                                     <div class="holder">
                                         <label class="required-label" for="name">Nombre *</label>
@@ -150,6 +156,20 @@ $event = $_GET['event'];
                                     transferencias
                                     transfronterizas y otros temas. <br>
                                 </p>
+                            </div>
+                        </form>
+                        <form class="emms__form  emms__fade-in dp--none alreadyAccountForm" novalidate autocomplete="off" id="alreadyAccountForm">
+                            <h2>Ingresa tu email</h2>
+                            <ul class="emms__form__field-group">
+                                <li class="emms__form__field-item">
+                                    <div class="holder">
+                                        <label class="required-label" for="email">Email *</label>
+                                        <input type="email" name="email" id="email" placeholder="&iexcl;No olvides usar @!" class="email required" autocomplete="off">
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="emms__form__btn">
+                                <button class="emms__cta" id="register-button" type="submit"><span class="button__text">INGRESAR</span></button>
                             </div>
                         </form>
                         <!-- FIN Registro con Form -->

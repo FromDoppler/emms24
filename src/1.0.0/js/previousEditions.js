@@ -4,6 +4,7 @@ import {
     customError,
     submitFormFetch,
 } from './common/index.js';
+import { swichFormListener } from './common/switchForm.js';
 import { eventsType } from './enums/eventsType.enum.js';
 
 document.addEventListener('click', (e) => {
@@ -32,6 +33,7 @@ document.addEventListener('click', (e) => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const editionsForm = document.getElementById('editionsForm');
+    swichFormListener(editionsForm);
 
     const submitForm = async (e) => {
 

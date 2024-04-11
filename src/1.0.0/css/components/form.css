@@ -1,7 +1,124 @@
+.emms_switch__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emms_switch__container__switch {
+    position: relative;
+    height: 56px;
+    background: white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.emms_switch__container__switch input {
+    position: relative;
+    width: 280px;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    appearance: none;
+    font-weight: bold;
+    transition: 0.2s - 0.1s;
+}
+
+.emms_switch__container__switch input:before,
+.emms_switch__container__switch input:after {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #111;
+}
+
+.emms_switch__container__switch input::before {
+    content: "Registrarme";
+    left: 19px;
+}
+
+.emms_switch__container__switch input::after {
+    content: "Ya tengo cuenta";
+    right: 40px;
+}
+
+.emms_switch__container__switch label {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    border-radius: 20px;
+}
+
+
+.emms_switch__container__switch input:checked {
+    background: #fff;
+}
+
+.emms_switch__container__switch input:checked::before {
+    color: white;
+    transition: color 0.5s 0.2s;
+}
+
+.emms_switch__container__switch input:checked::after {
+    color: #111;
+    transition: color 0.5s;
+}
+
+.emms_switch__container__switch input:checked+label {
+    left: 10px;
+    right: 172px;
+    color: white;
+    background: #008046;
+    transition: left 0.5s, right 0.4s 0.2s;
+}
+
+.emms_switch__container__switch input:not(:checked) {
+    background: #BD7AFF;
+    transition: background 0.5s -0.1s;
+}
+
+.emms_switch__container__switch input:not(:checked)::before {
+    color: #111;
+    transition: color 0.5s;
+}
+
+.emms_switch__container__switch input:not(:checked)::after {
+    color: #1e1e1e;
+    transition: color 0.5s 0.2s;
+}
+
+.emms_switch__container__switch input:not(:checked)+label {
+    left: 115px;
+    right: 10px;
+    background: #fff;
+    transition: left 0.4s 0.2s, right 0.5s, background 0.35s -0.1s;
+}
+
+.alreadyAccountForm h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 45px;
+}
+
+.alreadyAccountForm .emms__form__btn{
+ margin-top: 4rem;
+}
+
 .emms__form {
     background: #fff;
     padding: 37px;
     border-radius: 14px;
+    min-height: 562px;
+    align-content: center;
+}
+
+.emms__form.dp--none {
+    display: none;
+}
+
+.emms__form.dp--block {
+    display: block;
 }
 
 .emms__form__field-item {
