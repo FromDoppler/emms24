@@ -98,10 +98,10 @@ const getUserByEmail = async () => {
 }
 
 
-const filterEvents = (resp) => {
-    return Object.entries(resp)
-        .filter(([key, value]) => value === 1)
-        .map(([key, _]) => key);
+const filterEvents = (events) => {
+    return Object.entries(events)
+        .filter(([eventName, eventValue]) => eventValue === 1)
+        .map(([eventName, _]) => eventName);
 }
 
 const setMultipleEvents = (events) => {
