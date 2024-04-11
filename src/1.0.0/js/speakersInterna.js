@@ -4,6 +4,7 @@ import {
     customError,
     submitFormFetch,
 } from './common/index.js';
+import { swichFormListener } from './common/switchForm.js';
 import { eventsType } from './enums/eventsType.enum.js';
 
 import {
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const speakerVideo = document.getElementById('speakerVideo');
     const speakerFormContainer = document.getElementById('formContainer');
     const speakerForm = document.getElementById('speakerForm');
+    swichFormListener(speakerForm);
 
     const checkUserUI = () => {
         if (userRegisteredInEvent(eventsType.ECOMMERCE) || userRegisteredInEvent(eventsType.DIGITALTRENDS)) {

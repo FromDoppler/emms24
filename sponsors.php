@@ -231,6 +231,12 @@ require_once('././src/components/cacheSettings.php');
         <div id="modalRegister" class="emms__register-modal">
             <div class="emms__register-modal__window">
                 <!-- Form -->
+                <div class="emms_switch__container">
+                    <span class="emms_switch__container__switch">
+                        <input type="checkbox" name="swith" id="swith" checked>
+                        <label for="switch"></label>
+                    </span>
+                </div>
                 <form class="emms__form" id="sponsorsForm" novalidate autocomplete="off">
                     <h3>Regístrate aquí</h3>
                     <h4>Desbloquea la Biblioteca de Recursos, accede a conferencias de años anteriores y súmate gratis a la edición 2024</h4>
@@ -311,6 +317,20 @@ require_once('././src/components/cacheSettings.php');
                             transferencias
                             transfronterizas y otros temas. <br>
                         </p>
+                    </div>
+                </form>
+                <form class="emms__form  emms__fade-in dp--none alreadyAccountForm" novalidate autocomplete="off" id="alreadyAccountForm">
+                    <h2>Ingresa tu email</h2>
+                    <ul class="emms__form__field-group">
+                        <li class="emms__form__field-item">
+                            <div class="holder">
+                                <label class="required-label" for="email">Email *</label>
+                                <input type="email" name="email" id="email" placeholder="&iexcl;No olvides usar @!" class="email required" autocomplete="off">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="emms__form__btn">
+                        <button class="emms__cta" id="register-button" type="submit"><span class="button__text">INGRESAR</span></button>
                     </div>
                 </form>
                 <!-- End form -->
