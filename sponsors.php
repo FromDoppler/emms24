@@ -60,7 +60,10 @@ require_once('././src/components/cacheSettings.php');
             <div class="emms__sponsors__hero__title emms__fade-top">
                 <h1><em>Herramientas gratis para optimizar tu tienda online</em> Biblioteca de Recursos exclusiva para registrados al EMMS</h1>
                 <p>🔒 Desbloquea todos los beneficios, recursos descargables y el material audiovisual que nuestros aliados han preparado para ti</p>
-                <a class="emms__cta emms__fade-in" data-target="modalRegister" data-toggle="emms__register-modal">REGÍSTRATE GRATIS</a>
+                <a class="emms__cta emms__fade-in" data-target="modalRegister" data-toggle="emms__register-modal">RESERVA TU CUPO GRATIS</a>
+            </div>
+            <div class="emms__sponsors__hero__image__container">
+                <img src="src/img/sponsors-promo.svg" alt="">
             </div>
         </section>
 
@@ -70,12 +73,6 @@ require_once('././src/components/cacheSettings.php');
             <div class="emms__container--lg">
                 <div class="emms__sponsors__list__title">
                     <h2 class="emms__fade-in">Aquí encontrarás...</h2>
-                    <ul class="emms__fade-in">
-                        <li>E-books</li>
-                        <li>Conferencias</li>
-                        <li>Plantillas y guías</li>
-                        <li>Beneficios exclusivos</li>
-                    </ul>
                 </div>
                 <ul class="emms__sponsors__list__content emms__fade-in">
                     <?php
@@ -84,9 +81,11 @@ require_once('././src/components/cacheSettings.php');
                     foreach ($sponsors as $sponsor) :
                     ?>
                         <li class="emms__sponsors__list__item">
-                            <div class="emms__sponsors__list__item__logo">
-                                <img src="./adm24/server/modules/sponsors/uploads/<?= $sponsor['logo_company'] ?>" alt="<?= $sponsor['alt_logo_company'] ?>">
+                            <div class="emms__sponsors__list__item__ribon">
+                                <img src="src/img/emoji-book.svg" alt="Book emoji">
+                                REGALO EXCLUSIVO
                             </div>
+
                             <h3><?= $sponsor['title'] ?></h3>
                             <p><?= $sponsor['description_card'] ?></p>
                             <?php if ($sponsor['slug'] === '') : ?>
@@ -94,6 +93,9 @@ require_once('././src/components/cacheSettings.php');
                             <?php else : ?>
                                 <a data-target="modalRegister" data-toggle="emms__register-modal" slug=<?= $sponsor['slug'] ?>>Accede ahora</a>
                             <?php endif ?>
+                            <div class="emms__sponsors__list__item__logo">
+                                <img src="./adm24/server/modules/sponsors/uploads/<?= $sponsor['logo_company'] ?>" alt="<?= $sponsor['alt_logo_company'] ?>">
+                            </div>
                         </li>
                     <?php endforeach; ?>
                 </ul>
@@ -105,121 +107,178 @@ require_once('././src/components/cacheSettings.php');
             <div class="emms__conferences__container">
                 <div class="emms__conferences__wrapper">
                     <div class="emms__conferences__title emms__fade-in">
-                        <h2>Conferencias exclusivas</h2>
-                        <p>Tus mayores referentes comparten las mejores estrategias para hacer crecer tu negocio en breves videos.</p>
-                        <p>¡Capacítate e inspírate con el EMMS!</p>
+                        <h2>Conferencias exclusivas de nuestros Media Partners</h2>
+                        <p>Tus mayores referentes comparten las mejores estrategias para hacer crecer tu negocio en breves videos. ¡Capacítate e inspírate con el EMMS!</p>
                     </div>
                     <div class="emms__conferences__cards__container">
                         <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal">
                                 <img src="src/img/conferences/portada-youtube-mujeresqueemprenden.png" alt="Conferencias exclusivas">
-                                <h4>Trucos para vender más en tu E-commerce</h4>
-                                <p>Duración: 00:19:45</p>
-                                <span>Ver ahora</span>
+                                <div class="emms__conferences__cards__info">
+                                    <h4>Trucos para vender más en tu E-commerce</h4>
+                                    <span>Ver ahora →</span>
+                                    <div class="emms__conferences__cards__info__image-container">
+                                        <img src="src/img/imagetest.png" alt="">
+                                    </div>
+                                </div>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal">
                                 <img src="src/img/conferences/portada-youtube-chinarodriguez.png" alt="Conferencias exclusivas">
-                                <h4>Campañas de remarketing de alto impacto</h4>
-                                <p>Duración: 00:20:48</p>
-                                <span>Ver ahora</span>
+                                <div class="emms__conferences__cards__info">
+                                    <h4>Campañas de remarketing de alto impacto</h4>
+                                    <span>Ver ahora →</span>
+                                    <div class="emms__conferences__cards__info__image-container">
+                                        <img src="src/img/imagetest.png" alt="">
+                                    </div>
+                                </div>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal">
                                 <img src="src/img/conferences/portada-youtube-realtrends.png" alt="Conferencias exclusivas">
-                                <h4>Cómo profesionalizar y optimizar la comunicación con mis compradores</h4>
-                                <p>Duración: 00:11:27</p>
-                                <span>Ver ahora</span>
+                                <div class="emms__conferences__cards__info">
+                                    <h4>Cómo profesionalizar y optimizar la comunicación con mis compradores</h4>
+                                    <span>Ver ahora →</span>
+                                    <div class="emms__conferences__cards__info__image-container">
+                                        <img src="src/img/imagetest.png" alt="">
+                                    </div>
+                                </div>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal">
                                 <img src="src/img/conferences/portada-youtube-martin-gelpi.png" alt="Conferencias exclusivas">
-                                <h4>Marketing de escasez: la clave del furor en ventas</h4>
-                                <p>Duración: 00:08:22</p>
-                                <span>Ver ahora</span>
+                                <div class="emms__conferences__cards__info">
+                                    <h4>Marketing de escasez: la clave del furor en ventas</h4>
+                                    <span>Ver ahora →</span>
+                                    <div class="emms__conferences__cards__info__image-container">
+                                        <img src="src/img/imagetest.png" alt="">
+                                    </div>
+                                </div>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal">
                                 <img src="src/img/conferences/portada-youtube-christian-canizales.png" alt="Conferencias exclusivas">
-                                <h4>5 Técnicas SEO para eCommerce</h4>
-                                <p>Duración: 00:09:20</p>
-                                <span>Ver ahora</span>
+                                <div class="emms__conferences__cards__info">
+                                    <h4>5 Técnicas SEO para eCommerce</h4>
+
+                                    <span>Ver ahora →</span>
+                                    <div class="emms__conferences__cards__info__image-container">
+                                        <img src="src/img/imagetest.png" alt="">
+                                    </div>
+                                </div>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal">
                                 <img src="src/img/conferences/portada-youtube-dario-conti.png" alt="Conferencias exclusivas">
-                                <h4>Matriz de Impacto Digital para lograr aumento de ventas</h4>
-                                <p>Duración: 00:22:11</p>
-                                <span>Ver ahora</span>
+                                <div class="emms__conferences__cards__info">
+                                    <h4>Matriz de Impacto Digital para lograr aumento de ventas</h4>
+                                    <span>Ver ahora →</span>
+                                    <div class="emms__conferences__cards__info__image-container">
+                                        <img src="src/img/imagetest.png" alt="">
+                                    </div>
+                                </div>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal">
                                 <img src="src/img/conferences/portada-youtube-mundobrandes-min.png" alt="Conferencias exclusivas">
-                                <h4>5 Errores Comunes al Iniciar en el Ecommerce</h4>
-                                <p>Duración: 00:14:11</p>
-                                <span>Ver ahora</span>
+                                <div class="emms__conferences__cards__info">
+                                    <h4>5 Errores Comunes al Iniciar en el Ecommerce</h4>
+                                    <span>Ver ahora →</span>
+                                    <div class="emms__conferences__cards__info__image-container">
+                                        <img src="src/img/imagetest.png" alt="">
+                                    </div>
+                                </div>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal">
                                 <img src="src/img/conferences/portada-youtube-cyberclick.png" alt="Conferencias exclusivas">
-                                <h4>5 tendencias de marketing digital para 2024</h4>
-                                <p>Duración: 00:13:53</p>
-                                <span>Ver ahora</span>
+                                <div class="emms__conferences__cards__info">
+                                    <h4>5 tendencias de marketing digital para 2024</h4>
+                                    <span>Ver ahora →</span>
+                                    <div class="emms__conferences__cards__info__image-container">
+                                        <img src="src/img/imagetest.png" alt="">
+                                    </div>
+                                </div>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal">
                                 <img src="src/img/conferences/portada-youtube-veronicasequeira-min.png" alt="Conferencias exclusivas">
-                                <h4>El arte de la persuasión para vender más y mejor</h4>
-                                <p>Duración: 00:18:08</p>
-                                <span>Ver ahora</span>
+                                <div class="emms__conferences__cards__info">
+                                    <h4>El arte de la persuasión para vender más y mejor</h4>
+                                    <span>Ver ahora →</span>
+                                    <div class="emms__conferences__cards__info__image-container">
+                                        <img src="src/img/imagetest.png" alt="">
+                                    </div>
+                                </div>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal">
                                 <img src="src/img/conferences/portada-youtube-lujanalonso-min.png" alt="Conferencias exclusivas">
-                                <h4>Soft Skills 2.0: habilidades blandas clave para entornos digitales</h4>
-                                <p>Duración: 00:06:09</p>
-                                <span>Ver ahora</span>
+                                <div class="emms__conferences__cards__info">
+                                    <h4>Soft Skills 2.0: habilidades blandas clave para entornos digitales</h4>
+                                    <span>Ver ahora →</span>
+                                    <div class="emms__conferences__cards__info__image-container">
+                                        <img src="src/img/imagetest.png" alt="">
+                                    </div>
+                                </div>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal">
                                 <img src="src/img/conferences/portada-natalia-tabares-min.png" alt="Conferencias exclusivas">
-                                <h4>Saca el máximo provecho de las novedades en Meta con tu tienda online en Jumpseller</h4>
-                                <p>Duración: 00:09:21</p>
-                                <span>Ver ahora</span>
+                                <div class="emms__conferences__cards__info">
+                                    <h4>Saca el máximo provecho de las novedades en Meta con tu tienda online en Jumpseller</h4>
+
+                                    <span>Ver ahora →</span>
+                                    <div class="emms__conferences__cards__info__image-container">
+                                        <img src="src/img/imagetest.png" alt="">
+                                    </div>
+                                </div>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal">
                                 <img src="src/img/conferences/portada-mariafernanda-rangel-castillo-min.png" alt="Conferencias exclusivas">
-                                <h4>Vender es otra cosa</h4>
-                                <p>Duración: 00:07:29</p>
-                                <span>Ver ahora</span>
+                                <div class="emms__conferences__cards__info">
+                                    <h4>Vender es otra cosa</h4>
+                                    <span>Ver ahora →</span>
+                                    <div class="emms__conferences__cards__info__image-container">
+                                        <img src="src/img/imagetest.png" alt="">
+                                    </div>
+                                </div>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal">
                                 <img src="src/img/conferences/portada-denborg-min.png" alt="Conferencias exclusivas">
-                                <h4>4 pilares para la comunicación de tu marca personal</h4>
-                                <p>Duración: 00:10:22</p>
-                                <span>Ver ahora</span>
+                                <div class="emms__conferences__cards__info">
+                                    <h4>4 pilares para la comunicación de tu marca personal</h4>
+                                    <span>Ver ahora →</span>
+                                    <div class="emms__conferences__cards__info__image-container">
+                                        <img src="src/img/imagetest.png" alt="">
+                                    </div>
+                                </div>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal">
                                 <img src="src/img/conferences/portada-juancruz-arocena.png" alt="Conferencias exclusivas">
-                                <h4>Hacks para impulsar tu marca personal</h4>
-                                <p>Duración: 00:17:40</p>
-                                <span>Ver ahora</span>
+                                <div class="emms__conferences__cards__info">
+                                    <h4>Hacks para impulsar tu marca personal</h4>
+                                    <span>Ver ahora →</span>
+                                    <div class="emms__conferences__cards__info__image-container">
+                                        <img src="src/img/imagetest.png" alt="">
+                                    </div>
+                                </div>
                             </a>
                         </div>
                     </div>

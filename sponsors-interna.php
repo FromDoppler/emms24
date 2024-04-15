@@ -59,10 +59,9 @@ if (isset($_GET['slug'])) {
             <section class="emms__internal-sponsors__resource">
                 <div class="emms__container--md emms__fade-in">
                     <div class="emms__internal-sponsors__resource__picture">
-                        <img src="src/img/download--locked-24.png" alt="download">
+                        <img src="src/img/sponsor-asset.png" alt="download">
                     </div>
                     <div class="emms__internal-sponsors__resource__text">
-                        <h2><?= $sponsor['title_magnet'] ?></h2>
                         <p><?= $sponsor['description_magnet'] ?></p>
                         <a href="<?= $sponsor['link_magnet'] ?>" class="emms__cta">ACCEDE</a>
                     </div>
@@ -90,7 +89,7 @@ if (isset($_GET['slug'])) {
         <!-- Description -->
         <section class="emms__internal-sponsors__description">
             <div class="emms__container--md emms__fade-in">
-                <h2><?= $sponsor['title_promo_company'] ?></h2>
+                <h2>Conoce más sobre <?= $sponsor['title_promo_company'] ?></h2>
                 <p><?= $sponsor['description_promo_company'] ?></p>
                 <a href="<?= $sponsor['link_promo_company'] ?>" class="emms__cta">CONOCE MÁS</a>
             </div>

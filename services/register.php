@@ -51,6 +51,58 @@ function processEvents($events)
     return ['ecommerce' => $ecommerce, 'digital_trends' => $digital_trends];
 }
 
+
+function setSponsorDataRequest($ip, $countryGeo)
+{
+    //TODO: Terminar la funcion para usar en registerSponsor
+    $firstname = getFieldValue('name');
+    $email = getFieldValue('email');
+    $company     =  getFieldValue('company');
+    $jobPosition     = getFieldValue('jobPosition');
+    $phone     = getFieldValue('phone');
+    $privacy = getFieldValue('acceptPolicies', false);
+    $promotions = getFieldValue('acceptPromotions', false);
+    $source_utm = getFieldValue('utm_source');
+    $medium_utm = getFieldValue('utm_medium');
+    $campaign_utm = getFieldValue('utm_campaign');
+    $content_utm = getFieldValue('utm_content');
+    $term_utm = getFieldValue('utm_term');
+    $origin = getFieldValue('origin');
+    $type = getFieldValue('type');
+    $phase = getCurrentPhase($type);
+    $list = ($type === ECOMMERCE) ? LIST_LANDING_ECOMMERCE : LIST_LANDING_DIGITALT;
+    $user = array(
+        'register' => date("Y-m-d h:i:s A"),
+        'firstname' => $firstname,
+        'email' => $email,
+        'company' =>  $company,
+        'jobPosition' =>  $jobPosition,
+        'phone' =>  $phone,
+        'privacy' => $privacy,
+        'promotions' => $promotions,
+        'ip' => $ip,
+        'country_ip' => $countryGeo,
+        'source_utm' => $source_utm,
+        'medium_utm' => $medium_utm,
+        'campaign_utm' => $campaign_utm,
+        'content_utm' => $content_utm,
+        'term_utm' => $term_utm,
+        'origin' => $origin,
+        'type' => $type,
+        'form_id' => $phase,
+        'list' => $list,
+    );
+    try {
+        Validator::validateEmail($email);
+        Validator::validateBool('privacy', $privacy);
+        Validator::validateBool('promotions', $promotions);
+        return $user;
+    } catch (Exception $e) {
+        processError("setDataRequest (Captura datos)", $e->getMessage(), ['user' => $user]);
+        die();
+    }
+}
+
 function setDataRequest($ip, $countryGeo)
 {
 

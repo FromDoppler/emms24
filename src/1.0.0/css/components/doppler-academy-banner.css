@@ -126,6 +126,11 @@
     margin: 0 0 50px 0;
 }
 
+.emms__doppleracademybanner__description--button{
+    margin: 60px 0px 25px  0px;
+text-align: center;
+}
+
 .emms__doppleracademybanner__description h2{
     font-size: 27px;
     line-height: 30px;
