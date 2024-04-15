@@ -54,6 +54,16 @@
     max-width: 300px;
     margin: 0 auto 20px auto;
 }
+.emms__register-modal__window.emms__register-modal--sponsor-promo h4 {
+ font-weight: bold;
+margin: unset;
+    max-width: unset;
+    text-align: left;
+  line-height: 20px;
+    font-size: 14px;
+margin: 15px 0px;
+}
+
 
 .emms__register-modal__window .emms__form .emms__cta {
     width: 100%;

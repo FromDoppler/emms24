@@ -1,10 +1,9 @@
         <!-- Doppler Academy Banner -->
-        <section class="emms__doppleracademybanner emms__bg-section-2" id="aprende-con-doppler">
+        <section class="emms__doppleracademybanner emms__bg-section-3 emms__sponsors__hero--blue-bg" id="aprende-con-doppler">
             <div class="emms__container--sm">
                 <div class="emms__doppleracademybanner__description">
                     <h2>Lleva tu conocimiento a otro nivel con Doppler Academy</h2>
                     <p>En Doppler, además de ayudar al crecimiento de tu negocio, formamos profesionales de Marketing a lo largo de todo el mundo de forma online y 100% gratuita. Descubre certificaciones, webinars, podcasts y mucho más para cursar a tu ritmo y desde donde quieras.</p>
-                    <a href="https://academy.fromdoppler.com/" target="_blank" class="emms__cta emms__fade-in">COMIENZA AHORA</a>
                 </div>
             </div>
             <div class="emms__container--md">
@@ -61,6 +60,11 @@
                             <img src="src/img/academy-doppler-demo.png" alt="Doppler Demo">
                         </div>
                     </a>
+                </div>
+            </div>
+            <div class="emms__container--sm">
+                <div class="emms__doppleracademybanner__description--button">
+                    <a href="https://academy.fromdoppler.com/" target="_blank" class="emms__cta emms__fade-in">COMIENZA AHORA</a>
                 </div>
             </div>
         </section>
