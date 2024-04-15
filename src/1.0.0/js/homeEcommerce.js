@@ -3,22 +3,15 @@
 import {
     customError,
     getUrlWithParams,
-    setEventInLocalStorage,
-    setUserNotExistError,
     submitFormFetch,
     submitWithoutForm,
-    toHex,
-    validateSimpleForm,
 } from './common/index.js';
-import { swichFormListener } from './common/switchForm.js';
+import { alreadyAccountListener, swichFormListener } from './common/switchForm.js';
 import { eventsType } from './enums/eventsType.enum.js';
 
 
 
-
-
 const ecommerceForm = document.getElementById('ecommerceForm');
-const ecommerceAlreadyAccountForm = document.getElementById('alreadyAccountForm');
 const ecommerceBtns = document.querySelectorAll('.ecommerceBtn');
 
 const redirectToRegisteredPage = () => {
@@ -66,49 +59,7 @@ const submitEvent = async (btn) => {
 
 
 
-const getUserByEmail = async () => {
 
-
-    const url = './services/getRegisteredByEmail.php';
-    const formData = new FormData(ecommerceAlreadyAccountForm);
-    const userEmail = formData.get('email');
-
-
-    try {
-
-        const resp = await fetch(url, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ email: userEmail })
-        });
-
-        if (!resp.ok) {
-            throw new Error(`Error try getUserByEmail: ${resp.status}`);
-        }
-
-        const userResponse = await resp.json();
-        return userResponse;
-
-    } catch (error) {
-        console.error('Error in getUserByEmail:', error);
-
-    }
-}
-
-
-const filterEvents = (events) => {
-    return Object.entries(events)
-        .filter(([eventName, eventValue]) => eventValue === 1)
-        .map(([eventName, _]) => eventName);
-}
-
-const setMultipleEvents = (events) => {
-    events.forEach(event => {
-        setEventInLocalStorage(event, toHex(email));
-    })
-}
 
 const activeFormListeners = () => {
 
@@ -124,23 +75,7 @@ const activeFormListeners = () => {
             ecommerceBtns.forEach(btn => btn.addEventListener('click', () => { submitEvent(btn) }));
         }
 
-        ecommerceAlreadyAccountForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
-
-            if (!validateSimpleForm(ecommerceAlreadyAccountForm)) return;
-            ecommerceAlreadyAccountForm.querySelector('button').classList.add('button--loading');
-
-            const resp = await getUserByEmail();
-            const events = filterEvents(resp);
-
-            if (resp.email) {
-                setMultipleEvents(events);
-                redirectToRegisteredPage();
-            } else {
-                setUserNotExistError(ecommerceAlreadyAccountForm);
-            }
-            ecommerceAlreadyAccountForm.querySelector('button').classList.remove('button--loading');
-        })
+        alreadyAccountListener();
 
     });
 
