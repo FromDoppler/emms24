@@ -12,7 +12,8 @@
     <div class="emms__container--lg" role="tabpanel" aria-labelledby="day1">
         <div class="emms__calendar__date emms__fade-in">
             <div class="emms__calendar__date__country">
-                <span><img src="src/img/flag-argentina.png" alt="Argentina">(ARG) 02:00 p.m </span>
+                <p>La transmisión en vivo dará inicio</p>
+                <span><img src="src/img/flag-argentina.png" alt="Argentina">(ARG) 14:00</span>
                 <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+Digital+Trends%3A+d%C3%ADa+1&iso=20231113T11&p1=51&ah=6" target="_blank">Mira el horario de tu país</a>
             </div>
         </div>
@@ -252,7 +253,7 @@
     <div class="emms__container--lg" role="tabpanel" aria-labelledby="day2" hidden>
         <div class="emms__calendar__date emms__fade-in">
             <div class="emms__calendar__date__country">
-                <span><img src="src/img/flag-argentina.png" alt="Argentina">La transmisión en viv dará inicio (ARG) 02:00 p.m </span>
+                <span><img src="src/img/flag-argentina.png" alt="Argentina">(ARG) 14:00</span>
                 <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+Digital+Trends%3A+d%C3%ADa+2&iso=20231114T11&p1=51&ah=6" target="_blank">Mira el horario de tu país</a>
             </div>
         </div>

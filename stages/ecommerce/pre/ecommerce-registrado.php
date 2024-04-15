@@ -9,6 +9,13 @@ require_once('././src/components/cacheSettings.php');
 <head>
     <?php include_once('././src/components/head-ecommerce.php'); ?>
     <?php include_once('././src/components/head.php'); ?>
+    <script type="module">
+        import {
+            toggleVipEcommerceElements
+        } from './src/<?= VERSION ?>/js/toggleVipElements.js';
+
+        toggleVipEcommerceElements();
+    </script>
 </head>
 
 <body class="emms__ecommerce emms__ecommerce-logueado">
@@ -16,9 +23,9 @@ require_once('././src/components/cacheSettings.php');
 
     <?php if ($ecommerceStates['isPre']) : ?>
         <!-- Hellobar -->
-        <div class="emms__hellobar emms__hellobar--counter">
+        <div class="emms__hellobar emms__hellobar--counter hidden--vip">
             <div class="emms__hellobar__container emms__fade-in">
-                <p>¡Aprovecha <strong>25% OFF</strong> en la compra de entradas VIP por tiempo limitado! <a href="#entradas">ADQUIERE TU ENTRADA VIP</a></p>
+                <p><strong>¡Últimos días! ¿Aún no tienes tu pase VIP? Adquiérelo y accede a los mejores Workshops y Networking.</strong> <a href="#entradas">COMPRA TU ENTRADA</a></p>
             </div>
         </div>
     <?php endif; ?>
@@ -42,6 +49,7 @@ require_once('././src/components/cacheSettings.php');
                             <li><a href="./ediciones-anteriores-registrado#ediciones-anteriores">Revive ediciones anteriores</a></li>
                         </ul>
                     </li>
+                    <li><a href="/sponsors-promo">sponsors</a></li>
                 </ul>
             </nav>
         </div>
@@ -73,10 +81,14 @@ require_once('././src/components/cacheSettings.php');
 
         <!-- Hero -->
         <section class="emms__hero-registration--registered">
-            <div class="emms__container--md">
-                <h1 class="emms__fade-top"><em>¡YA ERES PARTE DEL EMMS E-COMMERCE 2024!</em>Vive la experiencia completa, hazte VIP</h1>
-                <p class="emms__fade-in">Accede a contenido exclusivo: networking, workshops y recursos para asistentes VIP. Quisque laoreet, nunc nec ornare maximus, nunc neque hendrerit erat, sollicitudin volutpat mi tellus vitae velit.</p>
-                <a href="#entradas" class="emms__cta emms__fade-in"><span>ADQUIERE TU ENTRADA VIP</span></a>
+            <div class="emms__container--md hidden--vip">
+                <h1 class="emms__fade-top"><em>¡YA ERES PARTE DEL EMMS E-COMMERCE 2024!</em>Y eso no es todo… ¡Vive la experiencia completa con tu Entrada VIP!</h1>
+                <p class="emms__fade-in">Si te has cansado de las estrategias que no funcionan, eleva tus conocimientos sumándote también a Workshops y sesiones de Networking para llevarte contactos e ideas prácticas a implementar en tu Tienda Online ahora mismo.</p>
+                <a href="#entradas" class="emms__cta emms__fade-in"><span>COMPRA TU ENTRADA VIP</span></a>
+            </div>
+            <div class="emms__container--md show--vip">
+                <h1 class="emms__fade-top"><em>¡YA ERES PARTE DEL EMMS E-COMMERCE 2024!</em>Falta poco para tu evento favorito, ¡comienza a prepararte!</h1>
+                <p class="emms__fade-in">Revisa la agenda y descubre todos los contenidos que tenemos para que <br> vayas capacitándote.</p>
             </div>
             <!-- Marquee -->
             <div class="emms__hero-registration__bottom images emms__fade-in">
@@ -133,18 +145,22 @@ require_once('././src/components/cacheSettings.php');
 
 
         <!-- Central Video -->
-        <section class="emms__centralvideo">
+        <section class="emms__centralvideo hidden--vip">
             <div class="emms__centralvideo__head">
-                <h2>Adquiere ahora tu entrada VIP a un precio especial</h2>
+                <h2>¡Quedan pocas! Corre a reservar
+                    tu entrada VIP</h2>
             </div>
             <div class="emms__container--lg reverse-mb">
                 <ul class="emms__centralvideo__list emms__fade-in">
                     <p class="emms__centralvideo__tag-play">Dale play al video</p>
-                    <li>In sollicitudin justo elit, sed <em>sagittis mauris</em> vestibulum in.</li>
-                    <li>In sollicitudin justo elit, sed <em>sagittis mauris</em> vestibulum in.</li>
-                    <li>In sollicitudin justo elit, sed <em>sagittis mauris</em> vestibulum in.</li>
-                    <li>In sollicitudin justo elit, sed <em>sagittis mauris</em> vestibulum in.</li>
-                    <a href="#entradas" class="emms__cta">ADQUIERE TU PASE VIP</a>
+                    <li>Te has quedado <em>sin ideas para crear contenido</em> </li>
+                    <li>Sientes que el crecimiento de tu E-commerce <em> se ha estancado</em> </li>
+                    <li>Crees que solo con <em>hablar de tu producto alcanza</em></li>
+                    <li>No logras hacer que los visitantes de tu tienda <em>terminen el checkout</em> </li>
+                    <li>Tus clientes <em>no vuelven a comprarte</em> </li>
+                    <li>O tienes <em>muchos carritos abandonado </em> </li>
+
+                    <a href="#entradas" class="emms__cta">HAZTE VIP AHORA</a>
                 </ul>
                 <div class="emms__centralvideo__video lg emms__fade-in">
                     <video src="src/img/EmmsEcommerce.mp4" controls></video>
@@ -154,84 +170,47 @@ require_once('././src/components/cacheSettings.php');
 
 
         <!-- Features -->
-        <div class="emms__features">
+        <div class="emms__features hidden--vip">
             <div class="emms__features__item emms__fade-in emms__features__item--reverse">
                 <div class="emms__container--md">
                     <div class="emms__features__item__image">
                         <img src="src/img/pasevip.png" alt="Image">
                     </div>
                     <div class="emms__features__item__text">
-                        <h3>Conoce todos los beneficios del pase VIP</h3>
+                        <h3>Con tu pase VIP te llevarás</h3>
                         <ul class="emms__features__item__text__list">
-                            <li>Quisque laoreet, nunc nec ornare maximus, nunc neque hendrerit erat</li>
-                            <li>Quisque laoreet, nunc nec ornare maximus</li>
-                            <li>Quisque laoreet, nunc nec ornare maximus, nunc neque hendrerit erat</li>
+                            <li>Nuevos contactos y potenciales aliados de las sesiones de networking</li>
+                            <li>Acceso de por vida a talleres súper prácticos con los
+                                que más saben de Marketing Digital aplicado a
+                                E-commerce y Retail</li>
+                            <li>Certificados por los Workshops tomados en vivo</li>
+                            <li>Guías y más herramientas para aplicar y multiplicar tus ventas</li>
                         </ul>
-                        <p class="emms__features__item__text__price"><em>ACCEDE A 25% OFF</em>USD 7.50 <span> Antes US$10,00* </span></p>
-                        <a href="#entradas" class="emms__cta">QUIERO MI PASE VIP</a>
+                        <p class="emms__features__item__text__price"><em>SOLO POR </em>USD 10</p>
+                        <a href="#entradas" class="emms__cta"> COMPRA TU ENTRADA AHORA
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="emms__bg-dark-gradient--2">
-
-            <!-- Calendar -->
-            <section class="emms__calendar" id="agenda">
-                <div class="emms__container--lg">
-                    <div class="emms__calendar__title emms__fade-in">
-                        <h2>Agenda EMMS 2024</h2>
-                        <p>Estos son los <strong>ponentes</strong> que nos acompañarán en esta edición y las <strong>temáticas</strong> de sus charlas. </p>
-                    </div>
-                    <!-- Speakers -->
-                    <?php include('./src/components/speakers.php') ?>
-                    <!-- End list -->
-                    <div class="emms__calendar__bottom emms__fade-in">
-                        <a href="#entradas" class="emms__cta">ADQUIERE TU ENTRADA VIP</a>
-                    </div>
-                </div>
-            </section>
-
-
+        <div class="emms__bg-dark-gradient--2 ">
             <!-- Prices plans -->
-            <div class="emms__plans" id="entradas">
+            <div class="emms__plans  hidden--vip" id="entradas">
                 <div class="emms__container--lg">
                     <div class="emms__plans__title">
-                        <h2>Precio de Entradas VIP</h2>
-                        <p>Nunc ut turpis arcu. Phasellus ac gravida ex, consectetur sodales turpis. Cras accumsan, mi vel eleifend maximus, felis leo feugiat lacus, a rutrum orci tortor sit amet risus.</p>
+                        <h2>Hazte VIP y lleva tu Tienda al siguiente nivel</h2>
+                        <p>Compra tu pase y accede a conferencias, Workshops con certificado, sesiones
+                            de Networking, docenas de recursos exclusivos ¡y mucho más!</p>
                     </div>
                     <div class="emms__plans__cards">
-                        <div class="emms__plans__card emms__plans__card--free">
-                            <div class="emms__plans__card__head">
-                                <h3 class="emms__plans__card__head__top">ASISTENTE FREE</h3>
-                                <div class="emms__plans__card__head__price">
-                                    <div class="emms__plans__card__head__price__content">
-                                        <h4>GRATIS</h4>
-                                        <p>Pellentesque id risus accumsan elit imperdiet condimentum at a lectus.</p>
-                                    </div>
-                                </div>
-                                <a class="emms__cta inactive">ACCEDE AHORA</a>
-                            </div>
-                            <div class="emms__plans__card__main">
-                                <h5>Beneficios</h5>
-                                <ul>
-                                    <li>Acceso a todas las <a href="">conferencias</a></li>
-                                    <li>Volver a ver las conferencias todas las veces que quieras </li>
-                                    <li>Participación en los sorteos </li>
-                                    <li>Descuentos en herramientas y cursos </li>
-                                    <li>Certificado de participación a las conferencias </li>
-                                    <li>Acceso ilimitado a todos los Workshops prácticos </li>
-                                </ul>
-                            </div>
-                        </div>
                         <div class="emms__plans__card emms__plans__card--vip">
                             <div class="emms__plans__card__head">
                                 <h3 class="emms__plans__card__head__top">ASISTENTE VIP</h3>
                                 <div class="emms__plans__card__head__price">
                                     <div class="emms__plans__card__head__price__content">
-                                        <p class="emms__plans__card__head__price__discount">ACCEDE A 25% OFF* <span>*Precio promocional hasta el 00/00/00 inclusive</span></p>
-                                        <h4>U$S 7,50 <span> Antes <span>US$10,00*</span></span></h4>
-                                        <p>Pellentesque id risus accumsan elit imperdiet condimentum at a lectus.</p>
+                                        <p class="emms__plans__card__head__price__sub-title">Precio entrada VIP</p>
+                                        <h4>US$10,00</h4>
                                     </div>
                                 </div>
                                 <a href="./checkout.php" class="emms__cta">ACCEDE AHORA</a>
@@ -239,45 +218,78 @@ require_once('././src/components/cacheSettings.php');
                             <div class="emms__plans__card__main">
                                 <h5>Beneficios</h5>
                                 <ul>
-                                    <li>Acceso a todas las <a href="">conferencias</a></li>
-                                    <li>Volver a ver las conferencias todas las veces que quieras </li>
-                                    <li>Participación en los sorteos </li>
-                                    <li>Descuentos en herramientas y cursos </li>
-                                    <li>Certificado de participación a las conferencias </li>
-                                    <li>Acceso ilimitado a todos los Workshops prácticos </li>
+                                    <li><a href="http://goemms.com/ecommerce-registrado#agenda"> Workshops prácticos </a></li>
+                                    <li>Sesiones de <a href="http://goemms.com/ecommerce-registrado#agenda">Networking</a></li>
+                                    <li>Acceso de por vida a los <a href="http://goemms.com/ecommerce-registrado#agenda"> Workshops</a></li>
+                                    <li>Certificado de asistencia a <a href="http://goemms.com/ecommerce-registrado#agenda"> Workshops</a></li>
+                                    <li>Más guías con herramientas
+                                        y tips exclusivos</li>
+                                    <li>Sesiones de preguntas y respuestas
+                                        con tus referentes del Marketing</li>
                                 </ul>
                             </div>
                         </div>
+                        <div class="emms__plans__card emms__plans__card--free">
+                            <div class="emms__plans__card__head">
+                                <h3 class="emms__plans__card__head__top">ASISTENTE FREE</h3>
+                                <div class="emms__plans__card__head__price">
+                                    <div class="emms__plans__card__head__price__content">
+                                        <p class="emms__plans__card__head__price__sub-title">Precio entrada FREE</p>
+                                        <h4>GRATIS</h4>
+                                    </div>
+                                </div>
+                                <a class="emms__cta inactive">ACCEDE AHORA</a>
+                            </div>
+                            <div class="emms__plans__card__main">
+                                <h5>Beneficios</h5>
+                                <ul>
+                                    <li>Acceso a todas las <a href="http://goemms.com/ecommerce-registrado#agenda">conferencias</a> con speakers internacionales </li>
+                                    <li>Volver a ver las conferencias todas las veces que quieras </li>
+                                    <li>Ingreso a la <a href="http://goemms.com/sponsors-registrado">Biblioteca de Recursos</a>
+                                        con E-books, plantillas, material
+                                        audiovisual y más</li>
+                                    <li>Participación en sorteos</li>
+                                    <li>Descuentos en herramientas
+                                        y capacitaciones</li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+            </div>
+            <div class="emms__border-separator  hidden--vip">
+                <div class="emms__separator emms__separator--white">
+                </div>
+            </div>
+            <!-- Calendar -->
+            <section class="emms__calendar" id="agenda">
+                <div class="emms__container--lg">
+                    <div class="emms__calendar__title emms__fade-in">
+                        <h2>Agenda EMMS E-commerce 2024</h2>
+                        <p><strong>Descubre aquí los speakers internacionales y las actividades exclusivas que te esperarán en esta edición. <br>
+                                Ya falta poco pero, si no quieres olvidarte del evento, <a href="">guarda un recordatorio en tu calendario.</a> </strong></p>
+                    </div>
+                    <!-- Speakers -->
+                    <?php include('./src/components/speakers.php') ?>
+                    <!-- End list -->
+                    <div class="emms__calendar__bottom emms__fade-in  hidden--vip">
+                        <a href="#entradas" class="emms__cta">COMPRA TU ENTRADA VIP</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="emms__separator emms__separator--white  hidden--vip">
             </div>
 
 
         </div>
-
-
-
-        <!-- Features -->
-        <div class="emms__features">
-            <div class="emms__features__item emms__fade-in emms__features__item--reverse">
-                <div class="emms__container--md">
-                    <div class="emms__features__item__image">
-                        <img src="src/img/entradas.png" alt="Image">
-                    </div>
-                    <div class="emms__features__item__text">
-                        <h3>Accede a 25% OFF por tiempo limitado ¡Plazas reducidas, no te lo pierdas!</h3>
-                        <p>In sollicitudin justo elit, sed sagittis mauris vestibulum in. Sed hendrerit aliquet posuere. Donec elit metus, sodales quis libero sed, luctus commodo nisi. <br><br>Donec nec ipsum volutpat, tempus orci sed, posuere turpis. Proin nulla justo, varius vitae aliquet vel, laoreet non tortor. Duis at ornare ligula. Nullam vel tortor massa.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
         <!-- Benefits Icons -->
-        <section class="emms__benefits-icons">
+        <section class="emms__benefits-icons show--vip">
             <div class="emms__container--lg">
                 <div class="emms__benefits-icons__title emms__fade-in">
-                    <h2>Conoce los beneficios que encontrarás en el EMMS</h2>
+                    <h2>Más allá de la Agenda: encuentra también en el EMMS E-commerce</h2>
                 </div>
                 <ul class="emms__benefits-icons__list">
                     <li class="emms__benefits-icons__list__item emms__fade-in">
@@ -310,25 +322,24 @@ require_once('././src/components/cacheSettings.php');
 
 
         <!-- Premium content -->
-        <section class="emms__premium-content">
+        <section class="emms__premium-content show--vip">
             <div class="emms__container--lg">
                 <div class="emms__premium-content__picture emms__fade-in">
                     <img src="src/img/biblioteca-recursos.png" alt="Biblioteca de recursos">
                 </div>
                 <div class="emms__premium-content__text emms__fade-in">
-                    <h2>Capacítate con la Biblioteca de Recursos gratuita</h2>
-                    <p><strong>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen nuestros aliados para que puedas potenciar al máximo tu negocio.</strong></p>
-                    <a href="./sponsors-registrado" class="emms__cta sm emms__cta--nd emms__fade-in">ACCEDE AHORA</a>
+                    <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
+                    <p><strong>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen nuestros aliados para potenciar al máximo tu tienda online.</strong></p>
+                    <a href="./sponsors-registrado" class="emms__cta sm emms__cta--nd emms__fade-in">INGRESA AHORA</a>
                 </div>
             </div>
         </section>
-
 
         <!-- Grid -->
         <section class="emms__grid emms__grid--3">
             <div class="emms__container--md">
                 <div class="emms__grid__title emms__fade-in">
-                    <h2>Vive la experiencia completa en EMMS E-commerce</h2>
+                    <h2>Descubre la experiencia completa con tu entrada VIP</h2>
                 </div>
                 <ul class="emms__grid__content emms__fade-in">
                     <li class="emms__grid__item">
@@ -381,47 +392,80 @@ require_once('././src/components/cacheSettings.php');
                             <img src="src/img/recursos.png" alt="Image">
                         </div>
                         <div class="emms__grid__item__text">
-                            <h3>Biblioteca de Recursos</h3>
+                            <h3>Recursos</h3>
                             <p>Encuentra E-books, infografías, cápsulas audiovisuales, guías, plantillas y muchos más contenidos descargables y gratuitos en la sección Biblioteca de Recursos.</p>
                         </div>
                     </li>
                 </ul>
-                <div class="emms__grid__bottom">
-                    <small><strong>Pronto podrás comprar tus entradas VIP para acceder a los Workshops y el Networking, ¡mantente pendiente a tu casilla de Email!</strong></small>
+                <div class="emms__grid__bottom  hidden--vip">
+                    <p>Reserva tu pase VIP para acceder a los Workshops y el Networking.
+                        ¡Solamente quedan unas pocas plazas! ⏰
+                    </p>
+                    <a href="./sponsors-registrado" class="emms__cta emms__fade-in">COMPRA TU ENTRADA</a>
                 </div>
             </div>
         </section>
 
 
-        <!-- Companies list -->
-        <section class="emms__companies ">
+
+        <!-- Benefits Icons -->
+        <section class="emms__benefits-icons hidden--vip">
             <div class="emms__container--lg">
-                <h2 class="emms__fade-in">Nos han acompañado en ediciones anteriores</h2>
-                <ul class="emms__companies__list emms__fade-in">
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-metricool.png" alt="Metricool"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-asociacion-marketing-espana.png" alt="Asociación de Marketing de España"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-capece.png" alt="Capece"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-amvo.png" alt="AMVO"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-linkedin.png" alt="LinkedIn"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-bigbox.png" alt="Bigbox"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-semrush.png" alt="Semrush"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-crehana.png" alt="Crehana"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-marketing-4ecommerce.png" alt="Marketing 4 Ecommerce"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-vtex.png" alt="VTEX"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-banco-frances.png" alt="BBVA Francés"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-airbnb.png" alt="Airbnb"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-woocomerce.png" alt="Woocommerce"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-doofinder.png" alt="Doofinder"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-easycommerce.png" alt="Easycommerce"></li>
+                <div class="emms__benefits-icons__title emms__fade-in">
+                    <h2>Más allá de la Agenda: encuentra también en el EMMS E-commerce</h2>
+                </div>
+                <ul class="emms__benefits-icons__list">
+                    <li class="emms__benefits-icons__list__item emms__fade-in">
+                        <img src="src/img/icons/iconocapsulas.png" alt="Cápsulas">
+                        <p>Cápsulas</p>
+                    </li>
+                    <li class="emms__benefits-icons__list__item">
+                        <img src="src/img/icons/iconocursos.png" alt="Cursos">
+                        <p>Cursos</p>
+                    </li>
+                    <li class="emms__benefits-icons__list__item">
+                        <img src="src/img/icons/iconopromos.png" alt="Promociones">
+                        <p>Promociones</p>
+                    </li>
+                    <li class="emms__benefits-icons__list__item">
+                        <img src="src/img/icons/iconoinfografia.png" alt="Infografías">
+                        <p>Infografías</p>
+                    </li>
+                    <li class="emms__benefits-icons__list__item">
+                        <img src="src/img/icons/iconoguia.png" alt="Guías">
+                        <p>Guías</p>
+                    </li>
+                    <li class="emms__benefits-icons__list__item">
+                        <img src="src/img/icons/iconoebook.png" alt="E-Books">
+                        <p>E-Books</p>
+                    </li>
                 </ul>
-                <small class="emms__fade-in"><strong>¿Tienes dudas sobre el EMMS? <a href="/#preguntas-frecuentes">Haz clic aquí</a> y encuentra las preguntas más frecuentes sobre el evento.</strong></small>
-                <a href="" class="emms__cta emms__cta--nd sm">CONVIÉRTETE EN SPONSOR</a>
             </div>
         </section>
 
 
-        <!-- Doppler Banner -->
-        <?php include_once('././src/components/doppler-academy-banner.php'); ?>
+        <!-- Premium content -->
+        <section class="emms__premium-content hidden--vip">
+            <div class="emms__container--lg">
+                <div class="emms__premium-content__picture emms__fade-in">
+                    <img src="src/img/biblioteca-recursos.png" alt="Biblioteca de recursos">
+                </div>
+                <div class="emms__premium-content__text emms__fade-in">
+                    <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
+                    <p><strong>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen nuestros aliados para potenciar al máximo tu tienda online.</strong></p>
+                    <a href="./sponsors-registrado" class="emms__cta sm emms__cta--nd emms__fade-in">INGRESA AHORA</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="hidden--vip">
+            <!-- Companies list -->
+            <?php include('./src/components/companiesList.php') ?>
+        </div>
+        <div class="show--vip show--vip--hidden" id="speacial-flikity">
+            <!-- Doppler Banner -->
+            <?php include_once('././src/components/doppler-academy-banner.php'); ?>
+        </div>
 
     </main>
 
@@ -429,8 +473,10 @@ require_once('././src/components/cacheSettings.php');
     <!-- Footer -->
     <?php include_once('././src/components/footer.php'); ?>
 
+
+
     <script src="src/<?= VERSION ?>/js/calendarBio.js"></script>
-    <script src="src/<?= VERSION ?>/js/date.js"></script>
+    <script src="src/<?= VERSION ?>/js/newDate.js" type="module"></script>
     <script src="src/<?= VERSION ?>/js/dateCounter.js"></script>
 
 </body>

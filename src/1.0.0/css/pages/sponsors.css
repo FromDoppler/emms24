@@ -10,12 +10,15 @@
     justify-content: center;
 
 }
+
 .emms__sponsors__hero.emms__sponsors__hero--new-bg {
     background: #000 url("../../../img/blue-section-5.png") no-repeat;
 }
+
 .emms__sponsors__hero>div {
     flex: 1;
     max-width: 560px;
+    min-height: 355px;
 }
 
 .emms__sponsors__hero .emms__sponsors__hero__image__container {
@@ -196,7 +199,7 @@
 .emms__sponsors__list .emms__sponsors__list__content .emms__sponsors__list__item .emms__sponsors__list__item__logo {
     border-top: solid 2px #B4B4B4;
     margin: 0 0 20px 0;
-text-align: center;
+    text-align: center;
     padding-top: 32px;
 }
 
@@ -289,7 +292,7 @@ text-align: center;
 /* Conferences section */
 
 .emms__conferences {
- background: linear-gradient(180deg, #1B245B 0%, #0C0E25 94.04%);
+    background: linear-gradient(180deg, #1B245B 0%, #0C0E25 94.04%);
 
     padding: 114px 0;
 }
@@ -334,27 +337,30 @@ text-align: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-.emms__conferences__cards__container .emms__conferences__cards__info{
-background-color: white;
-padding: 20px 40px;
+
+.emms__conferences__cards__container .emms__conferences__cards__info {
+    background-color: white;
+    padding: 32px 40px;
 }
 
-.emms__conferences__cards__container .emms__conferences__cards__info .emms__conferences__cards__info__image-container{
-width: 100%;
-border-top: 1px solid #999999;
-text-align: center;
+.emms__conferences__cards__container .emms__conferences__cards__info .emms__conferences__cards__info__image-container {
+    width: 100%;
+    border-top: 1px solid #999999;
+    text-align: center;
+max-height: 60px;
 }
 
-.emms__conferences__cards__container .emms__conferences__cards__info__image-container img{
-width: 94px;
-height: 60px;
-margin-top: 20px;
+.emms__conferences__cards__container .emms__conferences__cards__info__image-container img {
+    width: auto;
+ height: 100%;
+  width: auto;
+    margin-top: 20px;
 }
 
 .emms__conferences__cards img {
     width: 100%;
     transition-duration: .3s;
-height: 246px;
+    height: 246px;
 }
 
 .emms__conferences__cards {
@@ -368,16 +374,16 @@ height: 246px;
 
 .emms__conferences__cards a {
     cursor: pointer;
-border: 1px solid #999999;
-min-height: 510px;
+    border: 1px solid #999999;
+    min-height: 510px;
     max-height: 510px;
 }
 
 .emms__conferences__cards h4 {
     color: #333333;
     min-height: 40px;
-font-size: 26px;
-line-height: 34px;
+    font-size: 26px;
+    line-height: 34px;
 }
 
 .emms__conferences__cards p {
@@ -393,7 +399,7 @@ line-height: 34px;
     margin: 35px 0 10px 0;
     display: block;
     transition-duration: .3s;
-text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .emms__conferences__cards a:hover img {

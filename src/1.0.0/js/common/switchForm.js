@@ -1,3 +1,4 @@
+import { eventsType } from "../enums/eventsType.enum.js";
 import { toHex } from "./decodeEmail.js";
 import { setUserNotExistError, validateSimpleForm } from "./formsValidators.js";
 import { setEventInLocalStorage } from "./submitForm.js";
@@ -43,10 +44,19 @@ const redirectToRegisteredPage = () => {
     }
 }
 
+const localEventsMap = {
+    'ecommerce': eventsType.ECOMMERCE,
+    'ecommerce-vip': eventsType.ECOMMERCEVIP,
+    'digital-trends': eventsType.DIGITALTRENDS,
+    'digital-trends-vip': eventsType.DIGITALTRENDSVIP
+}
+
+
 const filterEvents = (events) => {
+    console.log(events);
     return Object.entries(events)
         .filter(([eventName, eventValue]) => eventValue === 1)
-        .map(([eventName, _]) => eventName);
+        .map(([eventName, _]) => localEventsMap[eventName]);
 }
 
 const setMultipleEvents = (events, userEmail) => {

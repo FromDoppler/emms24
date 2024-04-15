@@ -14,12 +14,25 @@
     animation-delay: .1s;
 }
 
+.emms__speakers h4 {
+    margin-bottom: 40px;
+    line-height: 22px;
+    font-size: 18px;
+}
+
+.emms__speakers {
+    line-height: 22px;
+    font-size: 18px;
+    color: #fff;
+}
+
 .emms__speakers small {
     font-size: 16px;
     line-height: 22px;
     color: #fff;
     display: block;
-    margin: 50px 0 0 0;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .emms__speakers small a {

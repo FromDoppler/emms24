@@ -33,7 +33,7 @@
 }
 
 .emms__hellobar__container p {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 16px;
     font-weight: 400;
     color: #212121;
@@ -48,7 +48,7 @@
     white-space: nowrap;
     border: solid 1px #212121;
     border-radius: 100px;
-    margin: 0 0 0 50px;
+    margin: 0 0 0 20px;
     padding: 8px 20px;
     transition-duration: .2s;
 }
@@ -63,7 +63,7 @@
         max-width: 500px;
     }
     .emms__hellobar__container a{
-        margin: 0 0 0 20px;
+        margin: 0 0 0 10px;
     }
     .emms__hellobar {
         height: auto;
