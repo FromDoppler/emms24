@@ -68,7 +68,7 @@ if (isset($_POST['btn-update'])) {
     // variables for input data
 
     // sql query for update data into database
-    $sql_query = "UPDATE speakers SET `name`='$name',`image`='$image',`alt_image`='$alt_image',`job`='$job',`sm_twitter`='$sm_twitter',`sm_linkedin`='$sm_linkedin',`sm_instagram`='$sm_instagram',`sm_facebook`='$sm_facebook',`title`='$title',`description`='$description',`bio`='$bio',`image_company`='$image_company',`alt_image_company`='$alt_image_company',`time`='$time',`link_time`='$link_time',`orden`='$orden',`day`='$day',`event`='$event',`exposes`='$exposes', `slug`='$slug' , `youtube`='$youtube', `meta_title`='$meta_title', `meta_description`='$meta_description', `meta_twitter`='$meta_twitter', `meta_image`='$meta_image' WHERE id=" . $_GET['edit_id'];
+    $sql_query = "UPDATE speakers SET `name`='$name', `image`='$image', `alt_image`='$alt_image', `job`='$job', `sm_twitter`='$sm_twitter', `sm_linkedin`='$sm_linkedin', `sm_instagram`='$sm_instagram', `sm_facebook`='$sm_facebook', `title`='$title', `description`='$description', `bio`='$bio', `image_company`='$image_company', `alt_image_company`='$alt_image_company', `time`='$time', `link_time`='$link_time', `orden`='$orden', `day`='$day', `event`='$event', `exposes`='$exposes', `slug`='$slug', `youtube`='$youtube', `meta_title`='$meta_title', `meta_description`='$meta_description', `meta_twitter`='$meta_twitter', `meta_image`='$meta_image' WHERE id=" . $_GET['edit_id'];
     // sql query for update data into database
     // sql query execution function
     if (mysqli_query($con, $sql_query)) {
