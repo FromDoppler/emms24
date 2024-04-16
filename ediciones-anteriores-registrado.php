@@ -58,6 +58,7 @@ require_once('./utils/DB.php');
                             <li><a href="#ediciones-anteriores">Revive ediciones anteriores</a></li>
                         </ul>
                     </li>
+                    <li><a href="/sponsors-promo">sponsors</a></li>
                 </ul>
             </nav>
         </div>
