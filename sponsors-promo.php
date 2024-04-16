@@ -45,8 +45,8 @@ require_once('./utils/DB.php');
             <div class="emms__register-modal__window emms__register-modal--sponsor-promo">
                 <!-- Form -->
                 <form class="emms__form" id="sponsorsPromoForm" novalidate autocomplete="off">
-                    <h3>Déjanos tus datos de contacto para ser <span id="sponsorType"></span> del EMMS :)</h3>
-                    <h4>En breve nuestro equipo te escribirá para conversar sobre la mejor forma de sumarte como Aliado al EMMS</h4>
+                    <h3>Déjanos tus datos de contacto para ser parte del EMMS 2024 :)</h3>
+                    <h4>En breve nuestro equipo te escribirá para conversar sobre la mejor forma de sumarte como <span id="sponsorType"></span> al EMMS</h4>
                     <ul class="emms__form__field-group">
                         <li class="emms__form__field-item">
                             <div class="holder">
@@ -110,7 +110,7 @@ require_once('./utils/DB.php');
                         </li>
                     </ul>
                     <div class="emms__form__btn">
-                        <button class="emms__cta" id="register-button" type="submit"><span class="button__text">RESERVA TU LUGAR</span></button>
+                        <button class="emms__cta" id="register-button" type="submit"><span class="button__text"> HABLEMOS</span></button>
                     </div>
                     <div class="emms__form__legal close">
                         <a class="emms__form__legal__btn" id="legalBtn">Información básica sobre privacidad </a>
@@ -127,6 +127,12 @@ require_once('./utils/DB.php');
                     </div>
                 </form>
                 <!-- End form -->
+                <button class="emms__register-modal__window__close" data-dismiss="emms__register-modal"></button>
+            </div>
+            <div class="emms__register-modal__window emms__register-modal__window--success-message">
+                <h5>¡Gracias por tu interés en ser parte del EMMS!</h5>
+                <p>Pronto te estaremos contactando vía Email para enviarte
+                    más información.</p>
                 <button class="emms__register-modal__window__close" data-dismiss="emms__register-modal"></button>
             </div>
         </div>
@@ -287,7 +293,7 @@ require_once('./utils/DB.php');
 
     <!-- Footer -->
     <?php include_once('././src/components/footer.php'); ?>
-    <script src="src/<?= VERSION ?>/js/sponsorPromo.js" type="module"></script>
+    <script src="src/<?= VERSION ?>/js/sponsorsPromo.js" type="module"></script>
     <script src="src/<?= VERSION ?>/js/vendors/intlTelInput.min.js"></script>
     <?php include_once('././src/components/intellInput.php'); ?>
 

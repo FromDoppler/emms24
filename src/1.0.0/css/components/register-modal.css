@@ -23,14 +23,70 @@
     animation: show-modal-form .4s;
 }
 
-@keyframes show-modal-form{
-    0%{
+.emms__register-modal__window.emms__register-modal__window--success-message {
+    max-width: 576px;
+    width: 90%;
+    height: 20%;
+    margin: 50px auto 80px auto;
+    position: relative;
+    animation: show-modal-form2 .4s;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(25vh);
+    text-align: center;
+    justify-content: center;
+    min-height: 240px;
+    display: none;
+}
+
+.emms__register-modal__window.emms__register-modal__window--success-message.dp--modal{
+    display: flex;
+}
+
+.emms__register-modal__window.emms__register-modal--sponsor-promo.dp--modal{
+    display: none;
+}
+
+.emms__register-modal__window.emms__register-modal__window--success-message h5 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    align-items: center;
+    color: #212121;
+    max-width: 504px;
+}
+
+.emms__register-modal__window.emms__register-modal__window--success-message p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    max-width: 504px;
+}
+
+
+@keyframes show-modal-form {
+    0% {
         opacity: 0;
         transform: translateY(-40px);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+@keyframes show-modal-form2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(25vh);
     }
 }
 
@@ -38,7 +94,7 @@
     padding: 60px 37px 37px 37px;
 }
 
-.emms__register-modal__window .emms__form h3{
+.emms__register-modal__window .emms__form h3 {
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
@@ -54,14 +110,15 @@
     max-width: 300px;
     margin: 0 auto 20px auto;
 }
+
 .emms__register-modal__window.emms__register-modal--sponsor-promo h4 {
- font-weight: bold;
-margin: unset;
+    font-weight: bold;
+    margin: unset;
     max-width: unset;
     text-align: left;
-  line-height: 20px;
-    font-size: 14px;
-margin: 15px 0px;
+    line-height: 20px;
+    font-size: 13px;
+    margin: 15px 0px;
 }
 
 

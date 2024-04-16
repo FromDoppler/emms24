@@ -54,7 +54,6 @@ function processEvents($events)
 
 function setSponsorDataRequest($ip, $countryGeo)
 {
-    //TODO: Terminar la funcion para usar en registerSponsor
     $firstname = getFieldValue('name');
     $email = getFieldValue('email');
     $company     =  getFieldValue('company');
@@ -68,9 +67,8 @@ function setSponsorDataRequest($ip, $countryGeo)
     $content_utm = getFieldValue('utm_content');
     $term_utm = getFieldValue('utm_term');
     $origin = getFieldValue('origin');
-    $type = getFieldValue('type');
-    $phase = getCurrentPhase($type);
-    $list = ($type === ECOMMERCE) ? LIST_LANDING_ECOMMERCE : LIST_LANDING_DIGITALT;
+    $dataType = getFieldValue('dataType');
+    $list = ($dataType === 'sponsor') ? LIST_SPONSORS : LIST_MEDIA_PARTNERS;
     $user = array(
         'register' => date("Y-m-d h:i:s A"),
         'firstname' => $firstname,
@@ -88,8 +86,7 @@ function setSponsorDataRequest($ip, $countryGeo)
         'content_utm' => $content_utm,
         'term_utm' => $term_utm,
         'origin' => $origin,
-        'type' => $type,
-        'form_id' => $phase,
+        'dataType' => $dataType,
         'list' => $list,
     );
     try {
