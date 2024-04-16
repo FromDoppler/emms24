@@ -9,7 +9,7 @@ const setErrorField = (elem, typeMsg) => {
         URL_es: '¡Ouch! Ingresa una URL válida.',
         number_es: '¡Ouch! Ingresa un número válido.',
         policy_es: '¡Ouch! No has aceptado la Política de Privacidad.',
-        dontExist_es: '¡Ouch! Parece que este Email no esta registrado.',
+        dontExist_es: 'Ouch, parece que no te has registrado con ese correo… Asegúrate de que esté bien redactado.',
     }
 
     parent = elem.closest('.holder');

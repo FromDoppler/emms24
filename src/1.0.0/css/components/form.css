@@ -52,11 +52,11 @@
 
 
 .emms_switch__container__switch input:checked {
-    background: #fff;
+    background: #BD7AFF;
 }
 
 .emms_switch__container__switch input:checked::before {
-    color: white;
+    color: black;
     transition: color 0.5s 0.2s;
 }
 
@@ -68,8 +68,8 @@
 .emms_switch__container__switch input:checked+label {
     left: 10px;
     right: 172px;
-    color: white;
-    background: #008046;
+    color: black;
+    background: white;
     transition: left 0.5s, right 0.4s 0.2s;
 }
 
