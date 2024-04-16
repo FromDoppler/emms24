@@ -48,6 +48,7 @@ require_once('././src/components/cacheSettings.php');
                             <li><a href="./ediciones-anteriores-registrado#ediciones-anteriores">Revive ediciones anteriores</a></li>
                         </ul>
                     </li>
+                    <li><a href="/sponsors-promo">sponsors</a></li>
                 </ul>
             </nav>
         </div>
@@ -89,7 +90,7 @@ require_once('././src/components/cacheSettings.php');
                             <?php if ($sponsor['slug'] === '') : ?>
                                 <a class="inactive">Accede →</a>
                             <?php else : ?>
-                                <a data-target="modalRegister" data-toggle="emms__register-modal" slug=<?= $sponsor['slug'] ?>>Accede ahora</a>
+                                <a data-target="modalRegister" data-toggle="emms__register-modal" href="/sponsors-interna?slug=<?= $sponsor['slug'] ?>">Accede ahora</a>
                             <?php endif ?>
                             <div class="emms__sponsors__list__item__logo">
                                 <img src="./adm24/server/modules/sponsors/uploads/<?= $sponsor['logo_company'] ?>" alt="<?= $sponsor['alt_logo_company'] ?>">
@@ -293,6 +294,7 @@ require_once('././src/components/cacheSettings.php');
     <?php include_once('././src/components/footer.php'); ?>
 
     <script src="src/<?= VERSION ?>/js/collapsibles.js"></script>
+
 
 </body>
 

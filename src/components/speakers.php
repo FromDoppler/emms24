@@ -119,6 +119,10 @@
                                 <div class="emms__calendar__list__item__card__business">
                                     <img src="./admin/speakers/uploads/<?= $speaker['image_company'] ?>" alt="<?= $speaker['alt_image_company'] ?>">
                                 </div>
+                            <?php elseif ($speaker['exposes'] === "networking") : ?>
+                                <div class="emms__calendar__list__item__card__business vip">
+                                    &nbsp;
+                                </div>
                             <?php elseif ($speaker['exposes'] === "workshop") : ?>
                                 <div class="emms__calendar__list__item__card__business vip">
                                     <img src="./admin/speakers/uploads/<?= $speaker['image_company'] ?>" alt="<?= $speaker['alt_image_company'] ?>">
@@ -230,6 +234,10 @@
                             <?php if ($speaker['exposes'] === "conference") : ?>
                                 <div class="emms__calendar__list__item__card__business">
                                     <img src="./admin/speakers/uploads/<?= $speaker['image_company'] ?>" alt="<?= $speaker['alt_image_company'] ?>">
+                                </div>
+                            <?php elseif ($speaker['exposes'] === "networking") : ?>
+                                <div class="emms__calendar__list__item__card__business vip">
+                                    &nbsp;
                                 </div>
                             <?php elseif ($speaker['exposes'] === "workshop") : ?>
                                 <div class="emms__calendar__list__item__card__business vip">
@@ -359,6 +367,10 @@
                                 <div class="emms__calendar__list__item__card__business">
                                     <img src="./admin/speakers/uploads/<?= $speaker['image_company'] ?>" alt="<?= $speaker['alt_image_company'] ?>">
                                 </div>
+                            <?php elseif ($speaker['exposes'] === "networking") : ?>
+                                <div class="emms__calendar__list__item__card__business vip">
+                                    &nbsp;
+                                </div>
                             <?php elseif ($speaker['exposes'] === "workshop") : ?>
                                 <div class="emms__calendar__list__item__card__business vip">
                                     <img src="./admin/speakers/uploads/<?= $speaker['image_company'] ?>" alt="<?= $speaker['alt_image_company'] ?>">
@@ -470,6 +482,10 @@
                             <?php if ($speaker['exposes'] === "conference") : ?>
                                 <div class="emms__calendar__list__item__card__business">
                                     <img src="./admin/speakers/uploads/<?= $speaker['image_company'] ?>" alt="<?= $speaker['alt_image_company'] ?>">
+                                </div>
+                            <?php elseif ($speaker['exposes'] === "networking") : ?>
+                                <div class="emms__calendar__list__item__card__business vip">
+                                    &nbsp;
                                 </div>
                             <?php elseif ($speaker['exposes'] === "workshop") : ?>
                                 <div class="emms__calendar__list__item__card__business vip">

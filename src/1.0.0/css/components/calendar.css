@@ -331,8 +331,12 @@
     font-size: 22px;
     line-height: 32px;
     margin: 0 0 16px 0;
-    padding: 0 0 0 32px;
+    padding: 0 0 6px 32px;
     position: relative;
+}
+
+.emms__calendar__list__item__card__description h3.title-networking {
+    border-bottom: solid 1px #b5b5b5;
 }
 
 .emms__calendar__list__item__card__description h3::before {
