@@ -18,7 +18,7 @@
 .emms__benefits-carousel__title p{
     font-size: 16px;
     line-height: 24px;
-    max-width: 500px;
+    max-width: 565px;
     width: 100%;
     margin: 20px auto 0;
 }
@@ -54,7 +54,7 @@
 }
 
 .emms__benefits-carousel__item__text h3{
-    font-size: 22px;
+    font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
     color: #333;

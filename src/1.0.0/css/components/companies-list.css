@@ -4,7 +4,7 @@
     background: #f6f6f6;
 }
 
-.emms__companies .emms__container--lg{
+.emms__companies .emms__container--lg {
     max-width: 1260px;
 }
 
@@ -65,7 +65,7 @@
     text-decoration: underline;
 }
 
-.emms__companies .emms__cta.emms__cta--nd.sm{
+.emms__companies .emms__cta.emms__cta--nd.sm {
     margin: 50px 0 0 0;
 }
 
@@ -86,11 +86,23 @@
 
 .emms__companies.emms__companies--categories small {
     margin: 50px auto 0;
-    max-width: 500px;
 }
 
+.emms__companies.emms__companies--categories .emms__cta {
+    background: rgba(51, 173, 115, 0.2);
+    border: 1px solid #33AD73;
+    border-radius: 100px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #33AD73;
+    font-weight: bold;
+    margin-top: 40px;
+}
 
-
+.emms__companies.emms__companies--categories .emms__cta:hover {
+    background: rgba(0, 128, 70, 0.1);
+    transition-duration: 0.2s;
+}
 /* ---------------------------------------------- Responsive ---------------------------------------------- */
 
 

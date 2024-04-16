@@ -37,7 +37,8 @@ require_once('././src/components/cacheSettings.php');
         <!-- Hellobar -->
         <div class="emms__hellobar">
             <div class="emms__hellobar__container emms__fade-in">
-                <p><strong>¡Vuelve el EMMS E-commerce!</strong> 02 y 03 de mayo. Apúntate y descubre todas las novedades.</p>
+                <p><strong>⏳ ¡Últimos días para registrarte al EMMS E-commerce! 2 y 3 de mayo: conferencias, workshops y networking.
+                    </strong></p>
                 <a href="./ecommerce">REGÍSTRATE GRATIS</a>
             </div>
         </div>
@@ -66,6 +67,7 @@ require_once('././src/components/cacheSettings.php');
                             <li><a href="./ediciones-anteriores#ediciones-anteriores">Revive ediciones anteriores</a></li>
                         </ul>
                     </li>
+                    <li><a href="./sponsors-promo">Sponsors</a></li>
                 </ul>
             </nav>
         </div>
@@ -99,7 +101,7 @@ require_once('././src/components/cacheSettings.php');
         <section class="emms__home__hero">
             <?php if ($ecommerceStates['isPre']) : ?>
                 <div class="emms__home__hero__title emms__fade-top">
-                    <h1><em>TODAS LAS TENDENCIAS DE MARKETING DIGITAL EN UN SOLO LUGAR</em> EMMS 2024, ¡está llegando!</h1>
+                    <h1><em>TODAS LAS TENDENCIAS DE MARKETING DIGITAL EN UN SOLO LUGAR</em> ¡Llega el EMMS E-commerce 2024!</h1>
                     <h2>ONLINE Y GRATUITO</h2>
                     <p>Revoluciona tu forma de hacer negocios y potencia tus resultados con el mayor evento de Latam y España. Disfruta de <strong>2 ediciones exclusivas</strong> para capacitarte e inspirarte con los líderes de tu industria.</p>
                 </div>
@@ -172,7 +174,7 @@ require_once('././src/components/cacheSettings.php');
                                 <?php else : ?>
                                     <h3>EMMS Digital Trends </h3>
                                 <?php endif ?>
-                                <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                 <div class="emms__eventCards__list__item__text--bottom">
                                     <?php if ($digitalTrendsStates['isPre']) : ?>
                                         <a class="emms__cta inactive">PRÓXIMAMENTE</a>
@@ -202,7 +204,7 @@ require_once('././src/components/cacheSettings.php');
                                     <h3>EMMS E-commerce </h3>
                                 <?php endif ?>
                                 <?php if ($ecommerceStates['isPre']) : ?>
-                                    <p>Referentes internacionales de la industria te contarán qué <strong>tendencias y estrategias emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
+                                    <p>Referentes internacionales de la industria te contarán qué <strong>tendencias y estrategias emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos. Descubre la agenda y reserva tu plaza</p>
                                 <?php endif ?>
                                 <?php if ($ecommerceStates['isDuring']) : ?>
                                     <p>Súmate ahora y conoce <strong>qué tendencias y estrategias emplean los referentes de la industria en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
@@ -241,7 +243,7 @@ require_once('././src/components/cacheSettings.php');
                                 <?php else : ?>
                                     <h3>EMMS Digital Trends </h3>
                                 <?php endif ?>
-                                <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                 <div class="emms__eventCards__list__item__text--bottom">
                                     <?php if ($digitalTrendsStates['isPre']) : ?>
                                         <a class="emms__cta inactive">PRÓXIMAMENTE</a>
@@ -262,16 +264,20 @@ require_once('././src/components/cacheSettings.php');
         </section>
 
         <!-- Central Video -->
+
         <section class="emms__centralvideo">
-            <div class="emms__container--lg">
+            <div class="emms__container--lg emms__container--lg--column">
                 <div class="emms__centralvideo__title emms__fade-in">
-                    <h2>Inspírate con el mayor evento hispano de E-commerce</h2>
-                    <p>Conoce en este video qué hace al EMMS E-commerce el lugar ideal para capacitarte y aprender cómo escalar tu tienda junto a los líderes del sector.</p>
-                    <a href="./ecommerce" class="emms__cta">REGÍSTRATE AHORA</a>
+                    <h2>Súmate al EMMS E-commerce y aprende con los
+                        mayores especialistas en venta electrónica
+                    </h2>
+                    <p>Descubre en este video todo lo que pasó en la última edición y por qué miles de profesionales <br>
+                        y referentes en la industria eligen este evento para capacitarse.</p>
                 </div>
                 <div class="emms__centralvideo__video emms__fade-in">
                     <video src="src/img/EmmsEcommerce.mp4" controls></video>
                 </div>
+                <a href="./ecommerce" class="emms__cta  emms__fade-in">RESERA TU CUPO GRATIS</a>
             </div>
         </section>
 
@@ -384,7 +390,10 @@ require_once('././src/components/cacheSettings.php');
                         </li>
                     </ul>
                 </div>
-                <small class="emms__fade-in"><strong>¡Muy pronto revelaremos los speakers de la edición 2024!</strong><br>Regístrate y mantente pendiente a tu casilla de correo para conocerlos</small>
+                <small class="emms__fade-in"><strong>¡Ya llegó EMMS E-commerce 2024! Conoce la agenda <br>
+                        Seguimos confirmando más speakers, workshops y novedades para esta edición. <br>
+                        Quedan pocos días, regístrate gratis ahora y no te lo pierdas.</strong>
+                </small>
                 <a href="./ecommerce" class="emms__cta emms__fade-in">APÚNTATE GRATIS</a>
             </div>
         </section>
@@ -396,9 +405,9 @@ require_once('././src/components/cacheSettings.php');
                     <img src="src/img/biblioteca-recursos.png" alt="Biblioteca de recursos">
                 </div>
                 <div class="emms__premium-content__text emms__fade-in">
-                    <h2>Capacítate con la Biblioteca de Recursos gratuita</h2>
-                    <p><strong>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen nuestros aliados para que puedas potenciar al máximo tu negocio.</strong></p>
-                    <a href="./sponsors" class="emms__cta sm emms__cta--nd emms__fade-in">ACCEDE AHORA</a>
+                    <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
+                    <p><strong>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen para que puedas potenciar al máximo tu tienda online.</strong></p>
+                    <a href="./sponsors" class="emms__cta sm emms__cta--nd emms__fade-in">INGRESA AHORA</a>
                 </div>
             </div>
         </section>
@@ -410,7 +419,7 @@ require_once('././src/components/cacheSettings.php');
                 <ul class="emms__userscomments__list emms__userscomments__list--dk emms__fade-in">
                     <li class="emms__userscomments__list__item">
                         <div class="emms__userscomments__list__item__content">
-                            <p class="emms__userscomments__list__item__text">“Asistí al EMMS E-commerce y me deslumbraron los tips que compartieron los speakers. ¡Este año no me lo pierdo por nada!”.</p>
+                            <p class="emms__userscomments__list__item__text">“Asístí al EMMS y la magnitud de los speakers y de todo el evento me sorprendió muchísimo. Lo que más destaco es el hecho de poder interactuar y hacer preguntas a estos referentes.”</p>
                             <div class="emms__userscomments__list__item__author">
                                 <img class="emms__userscomments__list__item__author--photo" src="src/img/quotes/quote-adriana.png" alt="Adriana">
                                 <div class="emms__userscomments__list__item__author--name">
@@ -422,7 +431,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__userscomments__list__item">
                         <div class="emms__userscomments__list__item__content">
-                            <p class="emms__userscomments__list__item__text">“Me sirve mucho escuchar cada año a los mayores referentes del mundo para saber qué le conviene sumar a mi negocio.”</p>
+                            <p class="emms__userscomments__list__item__text">“¡Ver las conferencias de expertos de todo el mundo y poder hacerlo online es increíble! Cada año me apunto para saber qué conviene aplicar en mi negocio.”</p>
                             <div class="emms__userscomments__list__item__author">
                                 <img class="emms__userscomments__list__item__author--photo" src="src/img/quotes/quote-sergio.png" alt="Sergio">
                                 <div class="emms__userscomments__list__item__author--name">
@@ -434,7 +443,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__userscomments__list__item">
                         <div class="emms__userscomments__list__item__content">
-                            <p class="emms__userscomments__list__item__text">“No puedo recomendar este evento lo suficiente. Su contenido gratuito es de una calidad excepcional, superando a muchos eventos de pago en términos de valor y relevancia”.</p>
+                            <p class="emms__userscomments__list__item__text">“¡No puedo recomendar este evento lo suficiente! Su contenido gratuito es de una calidad excepcional, superando a muchos eventos pagos.”</p>
                             <div class="emms__userscomments__list__item__author">
                                 <img class="emms__userscomments__list__item__author--photo" src="src/img/quotes/quote-ricardo.png" alt="Ricardo">
                                 <div class="emms__userscomments__list__item__author--name">
@@ -448,7 +457,7 @@ require_once('././src/components/cacheSettings.php');
                 <ul class="emms__userscomments__list emms__userscomments__list--mb main-carousel" data-flickity>
                     <li class="emms__userscomments__list__item">
                         <div class="emms__userscomments__list__item__content">
-                            <p class="emms__userscomments__list__item__text">“Asistí al EMMS E-commerce y me deslumbraron los tips que compartieron los speakers. ¡Este año no me lo pierdo por nada!”.</p>
+                            <p class="emms__userscomments__list__item__text">“Asístí al EMMS y la magnitud de los speakers y de todo el evento me sorprendió muchísimo. Lo que más destaco es el hecho de poder interactuar y hacer preguntas a estos referentes.”</p>
                             <div class="emms__userscomments__list__item__author">
                                 <img class="emms__userscomments__list__item__author--photo" src="src/img/quotes/quote-adriana.png" alt="Adriana">
                                 <div class="emms__userscomments__list__item__author--name">
@@ -460,7 +469,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__userscomments__list__item">
                         <div class="emms__userscomments__list__item__content">
-                            <p class="emms__userscomments__list__item__text">“Me sirve mucho escuchar cada año a los mayores referentes del mundo para saber qué le conviene sumar a mi negocio.”</p>
+                            <p class="emms__userscomments__list__item__text">“¡Ver las conferencias de expertos de todo el mundo y poder hacerlo online es increíble! Cada año me apunto para saber qué conviene aplicar en mi negocio.”</p>
                             <div class="emms__userscomments__list__item__author">
                                 <img class="emms__userscomments__list__item__author--photo" src="src/img/quotes/quote-sergio.png" alt="Sergio">
                                 <div class="emms__userscomments__list__item__author--name">
@@ -472,7 +481,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__userscomments__list__item">
                         <div class="emms__userscomments__list__item__content">
-                            <p class="emms__userscomments__list__item__text">“No puedo recomendar este evento lo suficiente. Su contenido gratuito es de una calidad excepcional, superando a muchos eventos de pago en términos de valor y relevancia”.</p>
+                            <p class="emms__userscomments__list__item__text">“¡No puedo recomendar este evento lo suficiente! Su contenido gratuito es de una calidad excepcional, superando a muchos eventos pagos”.</p>
                             <div class="emms__userscomments__list__item__author">
                                 <img class="emms__userscomments__list__item__author--photo" src="src/img/quotes/quote-ricardo.png" alt="Ricardo">
                                 <div class="emms__userscomments__list__item__author--name">

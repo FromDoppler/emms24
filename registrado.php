@@ -41,7 +41,9 @@ require_once('././src/components/cacheSettings.php');
         <!-- Hellobar -->
         <div class="emms__hellobar">
             <div class="emms__hellobar__container emms__fade-in">
-                <p><strong>¡Vuelve el EMMS E-commerce!</strong> 02 y 03 de mayo. Apúntate y descubre todas las novedades.</p>
+                <p><strong>¡Últimos días para el EMMS E-commerce!</strong>🎫 ¿Ya compraste tu entrada VIP? Las plazas son limitadas.
+                </p>
+                <a href="./ecommerce-registrado#entradas">ACCEDE AQUÍ</a>
             </div>
         </div>
     <?php endif ?>
@@ -70,6 +72,7 @@ require_once('././src/components/cacheSettings.php');
                             <li><a href="./ediciones-anteriores-registrado#ediciones-anteriores">Revive ediciones anteriores</a></li>
                         </ul>
                     </li>
+                    <li><a href="./sponsors-promo">Sponsors</a></li>
                 </ul>
             </nav>
         </div>
@@ -103,7 +106,7 @@ require_once('././src/components/cacheSettings.php');
         <section class="emms__home__hero">
             <?php if ($ecommerceStates['isPre']) : ?>
                 <div class="emms__home__hero__title emms__fade-top">
-                    <h1><em>TODAS LAS TENDENCIAS DE MARKETING DIGITAL EN UN SOLO LUGAR</em> EMMS 2024, ¡está llegando!</h1>
+                    <h1><em>TODAS LAS TENDENCIAS DE MARKETING DIGITAL EN UN SOLO LUGAR</em>¡Llega el EMMS E-commerce 2024!</h1>
                     <h2>ONLINE Y GRATUITO</h2>
                     <p>Revoluciona tu forma de hacer negocios y potencia tus resultados con el mayor evento de Latam y España. Disfruta de <strong>2 ediciones exclusivas</strong> para capacitarte e inspirarte con los líderes de tu industria.</p>
                     <div id="EMMS2024-ediciones"></div>
@@ -165,7 +168,7 @@ require_once('././src/components/cacheSettings.php');
                                 <?php else : ?>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS E-commerce</h3>
-                                        <p>Referentes internacionales de la industria te contarán qué <strong>tendencias y estrategias emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
+                                        <p>Referentes internacionales de la industria te contarán qué <strong>tendencias y estrategias emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos. Descubre la agenda y reserva tu plaza</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="ecommerce" class="emms__cta">REGÍSTRATE GRATIS</a>
                                         </div>
@@ -233,7 +236,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS Digital Trends <span>EN VIVO</span></h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends" class="emms__cta">ACCEDE AL VIVO</a>
                                         </div>
@@ -244,7 +247,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends" class="emms__cta">SÚMATE AHORA</a>
                                         </div>
@@ -256,7 +259,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria.¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends" class="emms__cta">REVIVE EL EVENTO</a>
                                         </div>
@@ -267,7 +270,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a class="emms__cta inactive">PRÓXIMAMENTE</a>
                                         </div>
@@ -282,7 +285,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS Digital Trends <span>EN VIVO</span></h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends-registrado" class="emms__cta">ACCEDE AL VIVO</a>
                                         </div>
@@ -294,7 +297,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends-registrado" class="emms__cta">SÚMATE AHORA</a>
                                         </div>
@@ -307,7 +310,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends-registrado" class="emms__cta">REVIVE EL EVENTO</a>
                                         </div>
@@ -319,7 +322,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a class="emms__cta inactive">PRÓXIMAMENTE</a>
                                         </div>
@@ -433,7 +436,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS Digital Trends <span>EN VIVO</span></h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends" class="emms__cta">ACCEDE AL VIVO</a>
                                         </div>
@@ -444,7 +447,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends" class="emms__cta">SÚMATE AHORA</a>
                                         </div>
@@ -456,7 +459,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends" class="emms__cta">REVIVE EL EVENTO</a>
                                         </div>
@@ -467,7 +470,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a class="emms__cta inactive">PRÓXIMAMENTE</a>
                                         </div>
@@ -482,7 +485,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS Digital Trends <span>EN VIVO</span></h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends-registrado" class="emms__cta">ACCEDE AL VIVO</a>
                                         </div>
@@ -494,7 +497,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends-registrado" class="emms__cta">SÚMATE AHORA</a>
                                         </div>
@@ -507,7 +510,7 @@ require_once('././src/components/cacheSettings.php');
                                     </div>
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/digital-trends-registrado" class="emms__cta">REVIVE EL EVENTO</a>
                                         </div>
@@ -522,7 +525,7 @@ require_once('././src/components/cacheSettings.php');
                                             <p><span>13 <em>-</em> 16</span>NOVIEMBRE</p>
                                         </div>
                                         <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                         <p class="emms__eventCards__list__item__text--feature"><img src="src/img/icons/icon-ticket-fill.svg" alt="Icon">Online y gratuito</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a class="emms__cta inactive">PRÓXIMAMENTE</a>
@@ -537,12 +540,15 @@ require_once('././src/components/cacheSettings.php');
         </section>
 
         <!-- Central Video -->
+
         <section class="emms__centralvideo">
-            <div class="emms__container--lg">
+            <div class="emms__container--lg emms__container--lg--column">
                 <div class="emms__centralvideo__title emms__fade-in">
                     <?php if ($ecommerceStates['isPre']) : ?>
-                        <h2>Súmate al EMMS E-commerce y aprende con los mayores especialistas en venta electrónica</h2>
-                    <p>Descubre en este video todo lo que pasó en la última edición y por qué miles de profesionales y referentes en la industria eligen este evento para capacitarse.</p>
+                        <h2>Súmate al EMMS E-commerce y aprende con los
+                            mayores especialistas en venta electrónica</h2>
+                        <p>Descubre en este video todo lo que pasó en la última edición y por qué miles de profesionales <br>
+                            y referentes en la industria eligen este evento para capacitarse.</p>
                     <?php endif ?>
                     <?php if ($ecommerceStates['isDuring']) : ?>
                         <h2>¡Llega un EMMS renovado! Ahora, disfruta de dos ediciones imperdibles</h2>
@@ -554,7 +560,7 @@ require_once('././src/components/cacheSettings.php');
                     <?php endif ?>
                 </div>
                 <div class="emms__centralvideo__video emms__fade-in">
-                    <video src="src/img/20230313-EMMS-General.mp4" controls></video>
+                    <video src="src/img/EmmsEcommerce.mp4" controls></video>
                 </div>
             </div>
         </section>
@@ -668,6 +674,9 @@ require_once('././src/components/cacheSettings.php');
                         </li>
                     </ul>
                 </div>
+                <h4>Seguimos confirmando más speakers, workshops y novedades <br>
+                    Mantente pendiente de tu casilla de correo electrónico para no perderte de nada.
+                </h4>
             </div>
         </section>
 
@@ -679,7 +688,7 @@ require_once('././src/components/cacheSettings.php');
                 </div>
                 <div class="emms__premium-content__text emms__fade-in">
                     <h2>Capacítate con la Biblioteca de Recursos gratuita</h2>
-                    <p><strong>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen nuestros aliados para que puedas potenciar al máximo tu negocio.</strong></p>
+                    <p><strong>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen nuestros aliados para que puedas potenciar al máximo tu tienda online.</strong></p>
                     <a href="./sponsors-registrado" class="emms__cta sm emms__cta--nd emms__fade-in">ACCEDE AHORA</a>
                 </div>
             </div>
@@ -692,7 +701,7 @@ require_once('././src/components/cacheSettings.php');
                 <ul class="emms__userscomments__list emms__userscomments__list--dk emms__fade-in">
                     <li class="emms__userscomments__list__item">
                         <div class="emms__userscomments__list__item__content">
-                            <p class="emms__userscomments__list__item__text">“Asistí al EMMS E-commerce y me deslumbraron los tips que compartieron los speakers. ¡Este año no me lo pierdo por nada!”.</p>
+                            <p class="emms__userscomments__list__item__text">“Asístí al EMMS y la magnitud de los speakers y de todo el evento me sorprendió muchísimo. Lo que más destaco es el hecho de poder interactuar y hacer preguntas a estos referentes.”</p>
                             <div class="emms__userscomments__list__item__author">
                                 <img class="emms__userscomments__list__item__author--photo" src="src/img/quotes/quote-adriana.png" alt="Adriana">
                                 <div class="emms__userscomments__list__item__author--name">
@@ -704,7 +713,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__userscomments__list__item">
                         <div class="emms__userscomments__list__item__content">
-                            <p class="emms__userscomments__list__item__text">“Me sirve mucho escuchar cada año a los mayores referentes del mundo para saber qué le conviene sumar a mi negocio.”</p>
+                            <p class="emms__userscomments__list__item__text">“¡Ver las conferencias de expertos de todo el mundo y poder hacerlo online es increíble! Cada año me apunto para saber qué conviene aplicar en mi negocio.”</p>
                             <div class="emms__userscomments__list__item__author">
                                 <img class="emms__userscomments__list__item__author--photo" src="src/img/quotes/quote-sergio.png" alt="Sergio">
                                 <div class="emms__userscomments__list__item__author--name">
@@ -716,7 +725,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__userscomments__list__item">
                         <div class="emms__userscomments__list__item__content">
-                            <p class="emms__userscomments__list__item__text">“No puedo recomendar este evento lo suficiente. Su contenido gratuito es de una calidad excepcional, superando a muchos eventos de pago en términos de valor y relevancia”.</p>
+                            <p class="emms__userscomments__list__item__text">“¡No puedo recomendar este evento lo suficiente! Su contenido gratuito es de una calidad excepcional, superando a muchos eventos pagos.”</p>
                             <div class="emms__userscomments__list__item__author">
                                 <img class="emms__userscomments__list__item__author--photo" src="src/img/quotes/quote-ricardo.png" alt="Ricardo">
                                 <div class="emms__userscomments__list__item__author--name">
@@ -728,9 +737,9 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                 </ul>
                 <ul class="emms__userscomments__list emms__userscomments__list--mb main-carousel" data-flickity>
-                <li class="emms__userscomments__list__item">
+                    <li class="emms__userscomments__list__item">
                         <div class="emms__userscomments__list__item__content">
-                            <p class="emms__userscomments__list__item__text">“Asistí al EMMS E-commerce y me deslumbraron los tips que compartieron los speakers. ¡Este año no me lo pierdo por nada!”.</p>
+                            <p class="emms__userscomments__list__item__text">“Asístí al EMMS y la magnitud de los speakers y de todo el evento me sorprendió muchísimo. Lo que más destaco es el hecho de poder interactuar y hacer preguntas a estos referentes.”</p>
                             <div class="emms__userscomments__list__item__author">
                                 <img class="emms__userscomments__list__item__author--photo" src="src/img/quotes/quote-adriana.png" alt="Adriana">
                                 <div class="emms__userscomments__list__item__author--name">
@@ -742,7 +751,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__userscomments__list__item">
                         <div class="emms__userscomments__list__item__content">
-                            <p class="emms__userscomments__list__item__text">“Me sirve mucho escuchar cada año a los mayores referentes del mundo para saber qué le conviene sumar a mi negocio.”</p>
+                            <p class="emms__userscomments__list__item__text">“¡Ver las conferencias de expertos de todo el mundo y poder hacerlo online es increíble! Cada año me apunto para saber qué conviene aplicar en mi negocio.”</p>
                             <div class="emms__userscomments__list__item__author">
                                 <img class="emms__userscomments__list__item__author--photo" src="src/img/quotes/quote-sergio.png" alt="Sergio">
                                 <div class="emms__userscomments__list__item__author--name">
@@ -754,7 +763,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__userscomments__list__item">
                         <div class="emms__userscomments__list__item__content">
-                            <p class="emms__userscomments__list__item__text">“No puedo recomendar este evento lo suficiente. Su contenido gratuito es de una calidad excepcional, superando a muchos eventos de pago en términos de valor y relevancia”.</p>
+                            <p class="emms__userscomments__list__item__text">“¡No puedo recomendar este evento lo suficiente! Su contenido gratuito es de una calidad excepcional, superando a muchos eventos pagos”.</p>
                             <div class="emms__userscomments__list__item__author">
                                 <img class="emms__userscomments__list__item__author--photo" src="src/img/quotes/quote-ricardo.png" alt="Ricardo">
                                 <div class="emms__userscomments__list__item__author--name">

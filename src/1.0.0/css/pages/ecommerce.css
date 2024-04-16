@@ -51,12 +51,22 @@
     animation: hero-back-ecommerce 1s;
 }
 
+.emms__hero-registration--registered .emms__container--md {
+    max-width: 990px;
+}
+.emms__hero-registration--registered .emms__container--md p{
+    max-width: 592px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+
 .emms__ecommerce-logueado .emms__calendar{
     background: none;
 }
 
 .emms__ecommerce-logueado .emms__calendar__title{
-    max-width: 560px;
+    max-width: 770px;
     animation-delay: .6s;
 }
 

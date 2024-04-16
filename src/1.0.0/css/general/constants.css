@@ -19,7 +19,7 @@ body {
     overflow-x: hidden;
 }
 
-body.hidden{
+body.hidden {
     overflow: hidden;
 }
 
@@ -89,7 +89,7 @@ p {
     transition-duration: 0.2s;
 }
 
-.emms__cta.emms__cta--nd{
+.emms__cta.emms__cta--nd {
     font-size: 13px;
     color: #008046;
     background: rgba(0, 128, 70, 0.2);
@@ -97,12 +97,12 @@ p {
     transition-duration: 0.2s;
 }
 
-.emms__cta.emms__cta--nd:hover{
+.emms__cta.emms__cta--nd:hover {
     background: rgba(0, 128, 70, 0.1);
     transition-duration: 0.2s;
 }
 
-.emms__cta.sm{
+.emms__cta.sm {
     padding: 12px 30px;
 }
 
@@ -190,14 +190,49 @@ p {
     margin: 0 auto;
 }
 
+.emms__separator.emms__separator--white {
+    background: url("../../../img/icons/separator-white.png") no-repeat;
+}
+
+.emms__border-separator {
+    width: 100%;
+    border-top: 2px solid white;
+}
+
+.emms__border-separator .emms__separator.emms__separator--white {
+    background-position: center;
+    transform: translateY(-7px);
+}
+
+
 /* Hide */
-.hide{
+.hide {
     display: none;
+}
+
+.show--vip {
+    display: none;
+}
+
+.show--vip.show--vip--hidden{
+    display: block;
+    visibility: hidden;
+}
+
+
+.hidden--vip.toogle {
+    display: none;
+}
+
+.show--vip.toogle {
+    display: block;
+    visibility: visible;
 }
 
 /* Hide in responsive */
 
-.mb, .mb--tablet__on {
+.mb,
+.mb--tablet__on {
     display: none;
 }
 
@@ -217,7 +252,8 @@ p {
     .mb--tablet {
         display: none;
     }
-    .mb--tablet__on{
+
+    .mb--tablet__on {
         display: block;
     }
 }
@@ -387,10 +423,10 @@ p {
 
 /* Collapse list */
 
-.emms__collapse__list.close .emms__collapse__item{
+.emms__collapse__list.close .emms__collapse__item {
     display: none;
 }
 
-.emms__collapse__list.open .emms__collapse__item{
+.emms__collapse__list.open .emms__collapse__item {
     display: block;
 }

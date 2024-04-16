@@ -18,7 +18,7 @@ require_once('././src/components/cacheSettings.php');
         <!-- Hellobar -->
         <div class="emms__hellobar emms__hellobar--counter">
             <div class="emms__hellobar__container emms__fade-in">
-                <p>¡Vuelve el <strong>EMMS E-Commerce 2024</strong>! 02 y 03 de Mayo. Apúntate y descubre todas las novedades. <a href="#registro">REGÍSTRATE GRATIS</a></p>
+                <p><strong>⏳ ¡Últimos días para registrarte al EMMS E-commerce! 2 y 3 de mayo: conferencias, workshops y networking.</strong><a href="#registro">REGÍSTRATE GRATIS</a></p>
             </div>
         </div>
     <?php endif; ?>
@@ -42,6 +42,7 @@ require_once('././src/components/cacheSettings.php');
                             <li><a href="./ediciones-anteriores#ediciones-anteriores">Revive ediciones anteriores</a></li>
                         </ul>
                     </li>
+                    <li><a href="/sponsors-promo">sponsors</a></li>
                 </ul>
             </nav>
         </div>
@@ -79,8 +80,8 @@ require_once('././src/components/cacheSettings.php');
                     <p>Inspírate y aprende con un evento exclusivo pensado para tu Tienda Online.</p>
                     <ul class="emms__hero-registration__text__checklist">
                         <li>SPEAKERS INTERNACIONALES</li>
-                        <li>HERRAMIENTAS Y RECURSOS</li>
                         <li>WORKSHOPS Y NETWORKING</li>
+                        <li>HERRAMIENTAS Y RECURSOS</li>
                     </ul>
                 </div>
                 <div class="emms__hero-registration__form emms__fade-in" id="registro">
@@ -250,13 +251,13 @@ require_once('././src/components/cacheSettings.php');
             <div class="emms__container--lg">
                 <div class="emms__calendar__title emms__fade-in">
                     <h2>Agenda EMMS 2024</h2>
-                    <p>Estos son los <strong>ponentes</strong> que nos acompañarán en esta edición y las <strong>temáticas</strong> de sus charlas. </p>
+                    <p>La transmisión comienza a las 10:30hs a.m. (ARG). Si no eres de allí o estarás en otro lado, <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240402T1030&p1=51&ah=6"> mira el horario local</a></p>
                 </div>
                 <!-- Speakers -->
                 <?php include('./src/components/speakers.php') ?>
                 <!-- End list -->
                 <div class="emms__calendar__bottom emms__fade-in">
-                    <a href="#registro" class="emms__cta">RESERVA TU CUPO GRATIS</a>
+                    <a href="#registro" class="emms__cta">REGÍSTRATE GRATIS</a>
                 </div>
             </div>
         </section>
@@ -266,7 +267,7 @@ require_once('././src/components/cacheSettings.php');
         <section class="emms__benefits-icons">
             <div class="emms__container--lg">
                 <div class="emms__benefits-icons__title emms__fade-in">
-                    <h2>Conoce los beneficios que encontrarás en el EMMS</h2>
+                    <h2>Más allá de la Agenda: encuentra también en el EMMS E-commerce</h2>
                 </div>
                 <ul class="emms__benefits-icons__list">
                     <li class="emms__benefits-icons__list__item emms__fade-in">
@@ -304,9 +305,9 @@ require_once('././src/components/cacheSettings.php');
                     <img src="src/img/biblioteca-recursos.png" alt="Biblioteca de recursos">
                 </div>
                 <div class="emms__premium-content__text emms__fade-in">
-                    <h2>Capacítate con la Biblioteca de Recursos gratuita</h2>
+                    <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
                     <p><strong>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen nuestros aliados para que puedas potenciar al máximo tu negocio.</strong></p>
-                    <a href="./sponsors" class="emms__cta sm emms__cta--nd emms__fade-in">ACCEDE AHORA</a>
+                    <a href="./sponsors" class="emms__cta sm emms__cta--nd emms__fade-in">INGRESA AHORA</a>
                 </div>
             </div>
         </section>
@@ -438,7 +439,7 @@ require_once('././src/components/cacheSettings.php');
                 <ul class="emms__userscomments__list emms__userscomments__list--dk emms__fade-in">
                     <li class="emms__userscomments__list__item">
                         <div class="emms__userscomments__list__item__content">
-                            <p class="emms__userscomments__list__item__text">“Asistí al EMMS E-commerce y me deslumbraron los tips que compartieron los speakers. ¡Este año no me lo pierdo por nada!”.</p>
+                            <p class="emms__userscomments__list__item__text">“Asístí al EMMS y la magnitud de los speakers y de todo el evento me sorprendió muchísimo. Lo que más destaco es el hecho de poder interactuar y hacer preguntas a estos referentes.”</p>
                             <div class="emms__userscomments__list__item__author">
                                 <img class="emms__userscomments__list__item__author--photo" src="src/img/quotes/quote-adriana.png" alt="Adriana">
                                 <div class="emms__userscomments__list__item__author--name">
@@ -450,7 +451,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__userscomments__list__item">
                         <div class="emms__userscomments__list__item__content">
-                            <p class="emms__userscomments__list__item__text">“Me sirve mucho escuchar cada año a los mayores referentes del mundo para saber qué le conviene sumar a mi negocio.”</p>
+                            <p class="emms__userscomments__list__item__text">“¡Ver las conferencias de expertos de todo el mundo y poder hacerlo online es increíble! Cada año me apunto para saber qué conviene aplicar en mi negocio.”</p>
                             <div class="emms__userscomments__list__item__author">
                                 <img class="emms__userscomments__list__item__author--photo" src="src/img/quotes/quote-sergio.png" alt="Sergio">
                                 <div class="emms__userscomments__list__item__author--name">
@@ -462,7 +463,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__userscomments__list__item">
                         <div class="emms__userscomments__list__item__content">
-                            <p class="emms__userscomments__list__item__text">“No puedo recomendar este evento lo suficiente. Su contenido gratuito es de una calidad excepcional, superando a muchos eventos de pago en términos de valor y relevancia”.</p>
+                            <p class="emms__userscomments__list__item__text">“¡No puedo recomendar este evento lo suficiente! Su contenido gratuito es de una calidad excepcional, superando a muchos eventos pagos.”.</p>
                             <div class="emms__userscomments__list__item__author">
                                 <img class="emms__userscomments__list__item__author--photo" src="src/img/quotes/quote-ricardo.png" alt="Ricardo">
                                 <div class="emms__userscomments__list__item__author--name">
@@ -476,7 +477,8 @@ require_once('././src/components/cacheSettings.php');
                 <ul class="emms__userscomments__list emms__userscomments__list--mb main-carousel" data-flickity>
                     <li class="emms__userscomments__list__item">
                         <div class="emms__userscomments__list__item__content">
-                            <p class="emms__userscomments__list__item__text">“Asistí al EMMS E-commerce y me deslumbraron los tips que compartieron los speakers. ¡Este año no me lo pierdo por nada!”.</p>
+                            <p class="emms__userscomments__list__item__text">“Asístí al EMMS y la magnitud de los speakers y de todo el evento me sorprendió muchísimo. Lo que más destaco es el hecho de poder interactuar y hacer preguntas a estos referentes.”
+                            </p>
                             <div class="emms__userscomments__list__item__author">
                                 <img class="emms__userscomments__list__item__author--photo" src="src/img/quotes/quote-adriana.png" alt="Adriana">
                                 <div class="emms__userscomments__list__item__author--name">
@@ -488,7 +490,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__userscomments__list__item">
                         <div class="emms__userscomments__list__item__content">
-                            <p class="emms__userscomments__list__item__text">“Me sirve mucho escuchar cada año a los mayores referentes del mundo para saber qué le conviene sumar a mi negocio.”</p>
+                            <p class="emms__userscomments__list__item__text">“¡Ver las conferencias de expertos de todo el mundo y poder hacerlo online es increíble! Cada año me apunto para saber qué conviene aplicar en mi negocio.”</p>
                             <div class="emms__userscomments__list__item__author">
                                 <img class="emms__userscomments__list__item__author--photo" src="src/img/quotes/quote-sergio.png" alt="Sergio">
                                 <div class="emms__userscomments__list__item__author--name">
@@ -500,7 +502,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__userscomments__list__item">
                         <div class="emms__userscomments__list__item__content">
-                            <p class="emms__userscomments__list__item__text">“No puedo recomendar este evento lo suficiente. Su contenido gratuito es de una calidad excepcional, superando a muchos eventos de pago en términos de valor y relevancia”.</p>
+                            <p class="emms__userscomments__list__item__text">“¡No puedo recomendar este evento lo suficiente! Su contenido gratuito es de una calidad excepcional, superando a muchos eventos pagos”.</p>
                             <div class="emms__userscomments__list__item__author">
                                 <img class="emms__userscomments__list__item__author--photo" src="src/img/quotes/quote-ricardo.png" alt="Ricardo">
                                 <div class="emms__userscomments__list__item__author--name">
@@ -519,8 +521,8 @@ require_once('././src/components/cacheSettings.php');
         <section class="emms__benefits-carousel emms__bg-section-3">
             <div class="emms__container--lg">
                 <div class="emms__benefits-carousel__title emms__fade-in">
-                    <h2>Conoce todos los beneficios del evento</h2>
-                    <p>Pellentesque cursus varius arcu, sed facilisis risus sollicitudin in. Donec scelerisque tortor faucibus sagittis mollis. Aenean id ullamcorper diam, vel eleifend arcu.</p>
+                    <h2>Regístrate al EMMS y accede a +25 beneficios exclusivos</h2>
+                    <p>¿Sabías que, por ser parte del evento, podrás aprovechar descuentos en tus plataformas favoritas, becas, licencias gratuitas en herramientas y mucho más?</p>
                 </div>
                 <ul class="emms__benefits-carousel__container emms__fade-in main-carousel" data-flickity='{"wrapAround": "true"}'>
                     <li class="emms__benefits-carousel__item">
@@ -529,8 +531,17 @@ require_once('././src/components/cacheSettings.php');
                                 <img src="src/img/benefits/beneficio-coderhouse.png" alt="Beneficio">
                             </div>
                             <div class="emms__benefits-carousel__item__text">
-                                <h3>Coderhouse</h3>
-                                <p>30% OFF en cursos</p>
+                                <h3>Descuentos en asesorías personalizadas en mkt</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="emms__benefits-carousel__item">
+                        <div class="emms__benefits-carousel__item__content">
+                            <div class="emms__benefits-carousel__item__image">
+                                <img src="src/img/benefits/beneficio-coderhouse.png" alt="Beneficio">
+                            </div>
+                            <div class="emms__benefits-carousel__item__text">
+                                <h3>% descuento en plantilla para crear tu estrategia</h3>
                             </div>
                         </div>
                     </li>
@@ -540,19 +551,7 @@ require_once('././src/components/cacheSettings.php');
                                 <img src="src/img/benefits/beneficio-asesoria.png" alt="Beneficio">
                             </div>
                             <div class="emms__benefits-carousel__item__text">
-                                <h3>ASESORIA DE MARKETING</h3>
-                                <p>Gratuita</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="emms__benefits-carousel__item">
-                        <div class="emms__benefits-carousel__item__content">
-                            <div class="emms__benefits-carousel__item__image">
-                                <img src="src/img/benefits/beneficio-coderhouse.png" alt="Beneficio">
-                            </div>
-                            <div class="emms__benefits-carousel__item__text">
-                                <h3>Coderhouse</h3>
-                                <p>30% OFF en cursos</p>
+                                <h3>% descuento en cursos online/masters/diplomaturas de marketing digital</h3>
                             </div>
                         </div>
                     </li>
@@ -569,37 +568,15 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                 </ul>
                 <div class="emms__benefits-carousel__bottom">
-                    <a href="#registro" class="emms__cta">REGÍSTRATE AHORA</a>
+                    <a href="#registro" class="emms__cta">APÚNTATE GRATIS</a>
                 </div>
             </div>
         </section>
 
 
         <!-- Companies list -->
-        <section class="emms__companies ">
-            <div class="emms__container--lg">
-                <h2 class="emms__fade-in">Nos han acompañado en ediciones anteriores</h2>
-                <ul class="emms__companies__list emms__fade-in">
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-metricool.png" alt="Metricool"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-asociacion-marketing-espana.png" alt="Asociación de Marketing de España"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-capece.png" alt="Capece"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-amvo.png" alt="AMVO"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-linkedin.png" alt="LinkedIn"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-bigbox.png" alt="Bigbox"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-semrush.png" alt="Semrush"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-crehana.png" alt="Crehana"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-marketing-4ecommerce.png" alt="Marketing 4 Ecommerce"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-vtex.png" alt="VTEX"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-banco-frances.png" alt="BBVA Francés"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-airbnb.png" alt="Airbnb"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-woocomerce.png" alt="Woocommerce"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-doofinder.png" alt="Doofinder"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-easycommerce.png" alt="Easycommerce"></li>
-                </ul>
-                <small class="emms__fade-in"><strong>¿Tienes dudas sobre el EMMS? <a href="/#preguntas-frecuentes">Haz clic aquí</a> y encuentra las preguntas más frecuentes sobre el evento.</strong></small>
-                <a href="" class="emms__cta emms__cta--nd sm">CONVIÉRTETE EN SPONSOR</a>
-            </div>
-        </section>
+        <?php include('./src/components/companiesList.php') ?>
+
 
     </main>
 
