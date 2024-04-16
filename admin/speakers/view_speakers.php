@@ -86,6 +86,12 @@ if (isset($_GET['view_id'])) {
                 </tr>
                 <tr>
                     <td>
+                        <label for="title" class="form-label">title:</label>
+                    </td>
+                    <th colspan="5"> <?= $fetched_row['title'] ?></th>
+                </tr>
+                <tr>
+                    <td>
                         <label for="description" class="form-label">Description:</label>
                     </td>
                     <th colspan="5"> <?= $fetched_row['description'] ?></th>

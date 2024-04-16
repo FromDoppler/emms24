@@ -19,6 +19,7 @@ if (isset($_POST['btn-save'])) {
     $sm_linkedin = $_POST['sm_linkedin'];
     $sm_instagram = $_POST['sm_instagram'];
     $sm_facebook = $_POST['sm_facebook'];
+    $title = $_POST['title'];
     $description = $_POST['description'];
     $bio = $_POST['bio'];
     $image_company =  $_FILES["image_company"]["name"];
@@ -50,7 +51,7 @@ if (isset($_POST['btn-save'])) {
 
     // sql query for inserting data into database
 
-    $sql_query = "INSERT INTO speakers (`name`,`image`,`alt_image`,`job`,`sm_twitter`,`sm_linkedin`,`sm_instagram`,`sm_facebook`,`description`,`bio`,`image_company`,`alt_image_company`,`time`,`link_time`,`orden`,`day`,`event`,`exposes`,`slug`,`youtube`,`meta_title`,`meta_description`,`meta_twitter`,`meta_image`) VALUES('" . $name . "','" . $image . "','" . $alt_image . "','" . $job . "','" . $sm_twitter . "','" . $sm_linkedin . "','" . $sm_instagram . "','" . $sm_facebook . "','" . $description . "','" . $bio . "','" . $image_company . "','" . $alt_image_company . "','" . $time . "','" . $link_time . "','" . $orden . "','" . $day . "' ,'" . $event . "' ,'" . $exposes . "' ,'" . $slug . "','" . $youtube . "','" . $meta_title . "','" . $meta_description . "','" . $meta_twitter . "','" . $meta_image . "')";
+    $sql_query = "INSERT INTO speakers (`name`,`image`,`alt_image`,`job`,`sm_twitter`,`sm_linkedin`,`sm_instagram`,`sm_facebook`,`title`,`description`,`bio`,`image_company`,`alt_image_company`,`time`,`link_time`,`orden`,`day`,`event`,`exposes`,`slug`,`youtube`,`meta_title`,`meta_description`,`meta_twitter`,`meta_image`) VALUES('" . $name . "','" . $image . "','" . $alt_image . "','" . $job . "','" . $sm_twitter . "','" . $sm_linkedin . "','" . $sm_instagram . "','" . $sm_facebook . "','" . $title . "','" . $description . "','" . $bio . "','" . $image_company . "','" . $alt_image_company . "','" . $time . "','" . $link_time . "','" . $orden . "','" . $day . "' ,'" . $event . "' ,'" . $exposes . "' ,'" . $slug . "','" . $youtube . "','" . $meta_title . "','" . $meta_description . "','" . $meta_twitter . "','" . $meta_image . "')";
     // sql query for inserting data into database
 
     // sql query execution function
@@ -182,6 +183,14 @@ if (isset($_POST['btn-save'])) {
                             </td>
                             <td>
                                 <input type="text" class="form-control" id="sm_facebook" name="sm_facebook" placeholder="Sm_facebook">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="title" class="form-label">Title:</label>
+                            </td>
+                            <td>
+                            <input type="text" class="form-control" id="title" name="title" placeholder="Titulo" required>
                             </td>
                         </tr>
                         <tr>
