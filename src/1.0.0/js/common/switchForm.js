@@ -53,7 +53,6 @@ const localEventsMap = {
 
 
 const filterEvents = (events) => {
-    console.log(events);
     return Object.entries(events)
         .filter(([eventName, eventValue]) => eventValue === 1)
         .map(([eventName, _]) => localEventsMap[eventName]);
