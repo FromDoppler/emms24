@@ -560,7 +560,7 @@ require_once('././src/components/cacheSettings.php');
                     <?php endif ?>
                 </div>
                 <div class="emms__centralvideo__video emms__fade-in">
-                    <video src="src/img/EmmsEcommerce.mp4" controls></video>
+                    <video src="src/img/EmmsEcommerceNew.mp4" controls></video>
                 </div>
             </div>
         </section>

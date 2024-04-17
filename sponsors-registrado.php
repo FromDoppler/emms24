@@ -117,7 +117,7 @@ require_once('././src/components/cacheSettings.php');
                                     <h4>Trucos para vender más en tu E-commerce</h4>
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/imagetest.png" alt="">
+                                        <img src="src/img/imagetest2.png" alt="">
                                     </div>
                                 </div>
                             </a>
@@ -129,7 +129,7 @@ require_once('././src/components/cacheSettings.php');
                                     <h4>Campañas de remarketing de alto impacto</h4>
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/imagetest.png" alt="">
+                                        <img src="src/img/imagetest2.png" alt="">
                                     </div>
                                 </div>
                             </a>
@@ -141,7 +141,7 @@ require_once('././src/components/cacheSettings.php');
                                     <h4>Cómo profesionalizar y optimizar la comunicación con mis compradores</h4>
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/imagetest.png" alt="">
+                                        <img src="src/img/imagetest2.png" alt="">
                                     </div>
                                 </div>
                             </a>
@@ -153,7 +153,7 @@ require_once('././src/components/cacheSettings.php');
                                     <h4>Marketing de escasez: la clave del furor en ventas</h4>
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/imagetest.png" alt="">
+                                        <img src="src/img/imagetest2.png" alt="">
                                     </div>
                                 </div>
                             </a>
@@ -166,7 +166,7 @@ require_once('././src/components/cacheSettings.php');
 
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/imagetest.png" alt="">
+                                        <img src="src/img/imagetest2.png" alt="">
                                     </div>
                                 </div>
                             </a>
@@ -178,7 +178,7 @@ require_once('././src/components/cacheSettings.php');
                                     <h4>Matriz de Impacto Digital para lograr aumento de ventas</h4>
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/imagetest.png" alt="">
+                                        <img src="src/img/imagetest2.png" alt="">
                                     </div>
                                 </div>
                             </a>
@@ -190,7 +190,7 @@ require_once('././src/components/cacheSettings.php');
                                     <h4>5 Errores Comunes al Iniciar en el Ecommerce</h4>
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/imagetest.png" alt="">
+                                        <img src="src/img/imagetest2.png" alt="">
                                     </div>
                                 </div>
                             </a>
@@ -202,7 +202,7 @@ require_once('././src/components/cacheSettings.php');
                                     <h4>5 tendencias de marketing digital para 2024</h4>
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/imagetest.png" alt="">
+                                        <img src="src/img/imagetest2.png" alt="">
                                     </div>
                                 </div>
                             </a>
@@ -214,7 +214,7 @@ require_once('././src/components/cacheSettings.php');
                                     <h4>El arte de la persuasión para vender más y mejor</h4>
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/imagetest.png" alt="">
+                                        <img src="src/img/imagetest2.png" alt="">
                                     </div>
                                 </div>
                             </a>
@@ -226,7 +226,7 @@ require_once('././src/components/cacheSettings.php');
                                     <h4>Soft Skills 2.0: habilidades blandas clave para entornos digitales</h4>
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/imagetest.png" alt="">
+                                        <img src="src/img/imagetest2.png" alt="">
                                     </div>
                                 </div>
                             </a>
@@ -239,7 +239,7 @@ require_once('././src/components/cacheSettings.php');
 
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/imagetest.png" alt="">
+                                        <img src="src/img/imagetest2.png" alt="">
                                     </div>
                                 </div>
                             </a>
@@ -251,7 +251,7 @@ require_once('././src/components/cacheSettings.php');
                                     <h4>Vender es otra cosa</h4>
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/imagetest.png" alt="">
+                                        <img src="src/img/imagetest2.png" alt="">
                                     </div>
                                 </div>
                             </a>
@@ -263,7 +263,7 @@ require_once('././src/components/cacheSettings.php');
                                     <h4>4 pilares para la comunicación de tu marca personal</h4>
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/imagetest.png" alt="">
+                                        <img src="src/img/imagetest2.png" alt="">
                                     </div>
                                 </div>
                             </a>
@@ -275,7 +275,7 @@ require_once('././src/components/cacheSettings.php');
                                     <h4>Hacks para impulsar tu marca personal</h4>
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/imagetest.png" alt="">
+                                        <img src="src/img/imagetest2.png" alt="">
                                     </div>
                                 </div>
                             </a>

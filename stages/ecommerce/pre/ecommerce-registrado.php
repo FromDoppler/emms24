@@ -163,7 +163,7 @@ require_once('././src/components/cacheSettings.php');
                     <a href="#entradas" class="emms__cta">HAZTE VIP AHORA</a>
                 </ul>
                 <div class="emms__centralvideo__video lg emms__fade-in">
-                    <video src="src/img/EmmsEcommerce.mp4" controls></video>
+                    <video src="src/img/EmmsEcommerceNew.mp4" controls></video>
                 </div>
             </div>
         </section>
@@ -268,7 +268,7 @@ require_once('././src/components/cacheSettings.php');
                     <div class="emms__calendar__title emms__fade-in">
                         <h2>Agenda EMMS E-commerce 2024</h2>
                         <p><strong>Descubre aquí los speakers internacionales y las actividades exclusivas que te esperarán en esta edición. <br>
-                                Ya falta poco pero, si no quieres olvidarte del evento, <a href="">guarda un recordatorio en tu calendario.</a> </strong></p>
+                                Ya falta poco pero, si no quieres olvidarte del evento, <a href="https://www.addevent.com/event/fz20154258">guarda un recordatorio en tu calendario.</a> </strong></p>
                     </div>
                     <!-- Speakers -->
                     <?php include('./src/components/speakers.php') ?>
