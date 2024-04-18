@@ -77,15 +77,16 @@ require_once('././src/components/cacheSettings.php');
                 </div>
                 <ul class="emms__sponsors__list__content emms__fade-in">
                     <?php
-                    $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-                    $sponsors = $db->getSponsorsCards('SPONSOR');
-                    $index = 0;
-                    foreach ($sponsors as $sponsor  => $test) :
+                   $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+                   $sponsors = $db->getSponsorsCards('SPONSOR');
+                   $index = 0;
+                   $texts = array(0 => "RECURSO EXCLUSIVO", 1 => "¡NO TE LO PIERDAS!", 2 => "SOLO PARA TI", 3 => "¡HAZ CLIC AHORA!");
+                   foreach ($sponsors as $sponsor) :
                     ?>
                         <li class="emms__sponsors__list__item">
                             <div class="emms__sponsors__list__item__ribon">
                                 <img src="src/img/emoji-book.svg" alt="Book emoji">
-                                REGALO EXCLUSIVO <?= $test ?>
+                                <?= $texts[$index] ?>
                             </div>
 
                             <h3><?= $sponsor['title'] ?></h3>
