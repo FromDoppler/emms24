@@ -30,18 +30,7 @@ const checkEncodeUrl = () => {
             localStorage.setItem('dplrid', toHex(userData.userEmail));
             _setLocalStorageEvents(userEvents);
         }
-    } else {
-        //FIXME: Este es un hotfix puesto para los usuarios que fueron guardados erroneamente sin eventos
-        // Si se reutiliza este codigo en el futuro se debe borrar el else
-        const hardCodeEvents = [eventsType.ECOMMERCE, eventsType.DIGITALTRENDS];
-        const user = {
-            'userEmail': encodeUser,
-            'userEvents': hardCodeEvents
-        }
-        localStorage.setItem('dplrid', toHex(JSON.stringify(user)));
-        _setLocalStorageEvents(JSON.stringify(hardCodeEvents));
     }
-
 }
 
 

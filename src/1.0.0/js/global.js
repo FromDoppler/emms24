@@ -26,5 +26,14 @@ const convertStringEventToArray = () => {
     }
 }
 
+const fixDplridUpdateEvents = () => {
+    const currentEvents = localStorage.getItem('events');
+    const expectedEvents = '["ecommerce24","digital-trends24"]';
+    if (currentEvents === expectedEvents) {
+      localStorage.clear();
+    }
+  };
+
+fixDplridUpdateEvents();
 clearUndefinedStorage();
 convertStringEventToArray();
