@@ -21,6 +21,7 @@
     appearance: none;
     font-weight: bold;
     transition: 0.2s - 0.1s;
+    cursor: pointer;
 }
 
 .emms_switch__container__switch input:before,
