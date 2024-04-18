@@ -551,7 +551,7 @@
 
 .emms__calendar__list__item__country {
     margin: 20px 0 0 0;
-    padding: 0px 10px;
+    padding: 0px 14px;
 }
 
 .emms__calendar__list__item__country span {
@@ -664,7 +664,7 @@
 
     .emms__calendar__list--mb .emms__calendar__list__item {
         width: 100%;
-        height: 700px;
+        height: 850px;
     }
 
     .emms__calendar__list__item__card__speaker {
