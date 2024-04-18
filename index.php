@@ -277,7 +277,7 @@ require_once('././src/components/cacheSettings.php');
                 <div class="emms__centralvideo__video emms__fade-in">
                     <video src="src/img/EmmsEcommerceNew.mp4" controls></video>
                 </div>
-                <a href="./ecommerce" class="emms__cta  emms__fade-in">RESERA TU CUPO GRATIS</a>
+                <a href="./ecommerce" class="emms__cta  emms__fade-in">RESERVA TU CUPO GRATIS</a>
             </div>
         </section>
 

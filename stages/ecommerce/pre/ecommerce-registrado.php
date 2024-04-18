@@ -147,8 +147,9 @@ require_once('././src/components/cacheSettings.php');
         <!-- Central Video -->
         <section class="emms__centralvideo hidden--vip">
             <div class="emms__centralvideo__head">
-                <h2>¡Quedan pocas! Corre a reservar
-                    tu entrada VIP</h2>
+                <h2>¡Quedan pocas entradas!</h2>
+                <span> Corre a reservar
+                    tu entrada VIP si...</span>
             </div>
             <div class="emms__container--lg reverse-mb">
                 <ul class="emms__centralvideo__list emms__fade-in">
@@ -226,6 +227,14 @@ require_once('././src/components/cacheSettings.php');
                                         y tips exclusivos</li>
                                     <li>Sesiones de preguntas y respuestas
                                         con tus referentes del Marketing</li>
+                                    <li>Acceso a todas las <a href="http://goemms.com/ecommerce-registrado#agenda">conferencias</a> con speakers internacionales </li>
+                                    <li>Volver a ver las conferencias todas las veces que quieras </li>
+                                    <li>Ingreso a la <a href="http://goemms.com/sponsors-registrado">Biblioteca de Recursos</a>
+                                        con E-books, plantillas, material
+                                        audiovisual y más</li>
+                                    <li>Participación en sorteos</li>
+                                    <li>Descuentos en herramientas
+                                        y capacitaciones</li>
                                 </ul>
                             </div>
                         </div>
@@ -243,6 +252,14 @@ require_once('././src/components/cacheSettings.php');
                             <div class="emms__plans__card__main">
                                 <h5>Beneficios</h5>
                                 <ul>
+                                    <li class="exclude"><a href="http://goemms.com/ecommerce-registrado#agenda"> Workshops prácticos </a></li>
+                                    <li class="exclude">Sesiones de <a href="http://goemms.com/ecommerce-registrado#agenda">Networking</a></li>
+                                    <li class="exclude">Acceso de por vida a los <a href="http://goemms.com/ecommerce-registrado#agenda"> Workshops</a></li>
+                                    <li class="exclude">Certificado de asistencia a <a href="http://goemms.com/ecommerce-registrado#agenda"> Workshops</a></li>
+                                    <li class="exclude">Más guías con herramientas
+                                        y tips exclusivos</li>
+                                    <li class="exclude">Sesiones de preguntas y respuestas
+                                        con tus referentes del Marketing</li>
                                     <li>Acceso a todas las <a href="http://goemms.com/ecommerce-registrado#agenda">conferencias</a> con speakers internacionales </li>
                                     <li>Volver a ver las conferencias todas las veces que quieras </li>
                                     <li>Ingreso a la <a href="http://goemms.com/sponsors-registrado">Biblioteca de Recursos</a>
@@ -366,7 +383,7 @@ require_once('././src/components/cacheSettings.php');
                         </div>
                         <div class="emms__grid__item__text">
                             <h3>Casos de Éxito</h3>
-                            <p>Descubre las estrategia que impulsaron el éxito de las compañías líderes del mundo, de la voz de sus representantes más destacados.</p>
+                            <p>Descubre las estrategias que impulsaron el éxito de las compañías líderes del mundo, de la voz de sus representantes más destacados.</p>
                         </div>
                     </li>
                     <li class="emms__grid__item">
@@ -401,7 +418,7 @@ require_once('././src/components/cacheSettings.php');
                     <p>Reserva tu pase VIP para acceder a los Workshops y el Networking.
                         ¡Solamente quedan unas pocas plazas! ⏰
                     </p>
-                    <a href="./sponsors-registrado" class="emms__cta emms__fade-in">COMPRA TU ENTRADA</a>
+                    <a href="#entradas" class="emms__cta emms__fade-in">COMPRA TU ENTRADA</a>
                 </div>
             </div>
         </section>

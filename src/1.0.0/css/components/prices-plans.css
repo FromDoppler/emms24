@@ -27,6 +27,7 @@
     font-size: 35px;
     line-height: 35px;
     font-weight: 700;
+    margin-bottom: 35px;
 }
 
 .emms__plans__title p {
@@ -35,7 +36,7 @@
     color: #fff;
     max-width: 525px;
     margin: 0 auto;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
 }
 
 
@@ -185,6 +186,11 @@ margin-bottom: 10px;
     background: url("../../../img/icons/icon-check--violet.svg") no-repeat;
     background-size: contain;
 }
+
+.emms__plans__card__main ul li.exclude::before {
+    background: url("../../../img/icons/icon-exclude.svg") no-repeat;
+}
+
 
 .emms__plans__card__main ul li a {
     font-weight: 700;

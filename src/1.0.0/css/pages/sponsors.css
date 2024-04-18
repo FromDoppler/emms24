@@ -82,6 +82,9 @@
 }
 
 @media(max-width:620px) {
+    .emms__sponsors__hero>div {
+      padding: 0px 40px;
+    }
 
     .emms__sponsors__hero {
         padding: 120px 0 45px 0;
@@ -200,11 +203,13 @@
     border-top: solid 2px #B4B4B4;
     margin: 0 0 20px 0;
     text-align: center;
-    padding-top: 32px;
+    max-height: 50px;
+    min-height: 50px;
 }
 
 .emms__sponsors__list .emms__sponsors__list__content .emms__sponsors__list__item .emms__sponsors__list__item__logo img {
     height: 50px;
+    transform: translateY(50%);
 }
 
 .emms__sponsors__list .emms__sponsors__list__content .emms__sponsors__list__item h3 {

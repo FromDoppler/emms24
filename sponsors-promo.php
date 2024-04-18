@@ -1,10 +1,7 @@
 <?php
+require_once('././src/components/cacheSettings.php');
 require_once('./config.php');
 require_once('./utils/DB.php');
-
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -17,14 +14,36 @@ require_once('./utils/DB.php');
 
 <body class="emms__sponsor-promo">
 
-    <!-- Header -->
-    <header class="emms__header">
+  <!-- Header -->
+  <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
             <div class="emms__header__logo">
-                <a href="./"><img src="src/img/logos/logo-emms.png" alt="Emms 2024"></a>
+                <a href="/"><img src="src/img/logos/logo-emms.png" alt="Emms 2023"></a>
             </div>
+            <?php if ($digitalTrendsStates['isLive']) : ?>
+                <div class="emms__header__live">
+                    <p>¡ESTAMOS EN VIVO EN EMMS DIGITAL TRENDS!</p>
+                </div>
+            <?php endif ?>
+
+            <a class="emms__header__nav--mb" id="btn-burger"></a>
+            <nav class="emms__header__nav emms__header__nav--hidden" id="nav-mb">
+                <ul class="emms__header__nav__menu">
+                    <li><a href="./index">home</a></li>
+                    <li><a href="./ecommerce-registrado">e-commerce</a></li>
+                    <li><a href="./sponsors-registrado">biblioteca de recursos</a></li>
+                    <li class="emms__header__nav__menu__dropdown"><a href="./ediciones-anteriores-registrado">Qué es el EMMS</a>
+                        <ul class="emms__header__nav__submenu">
+                            <li><a href="./ediciones-anteriores-registrado#sobre-emms">Sobre el EMMS</a></li>
+                            <li><a href="./ediciones-anteriores-registrado#ediciones-anteriores">Revive ediciones anteriores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"  class="active">Sponsors</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+
 
     <main>
 
@@ -200,7 +219,7 @@ require_once('./utils/DB.php');
 
         <!-- Description -->
 
-        <section class="emms__sponsor-promo__media-partner emms__bg-section-4 ">
+        <section class="emms__sponsor-promo__media-partner emms__bg-section-5 ">
             <div class="emms__hero-registration__bottom images emms__fade-in">
                 <p>
                     <img src="src/img/marquee/google.png" alt="Google">
@@ -281,7 +300,7 @@ require_once('./utils/DB.php');
                             <span>Conferencia on-demand de 15 minutos en el sitio.</span>
                         </li>
                     </ul>
-                    <button class="emms__cta" data-target="modalRegister" data-toggle="emms__register-modal" data-type="mediaPartener">CONVIERTETE EN MEDIA PARTNER</button>
+                    <button class="emms__cta" data-target="modalRegister" data-toggle="emms__register-modal" data-type="mediaPartner">CONVIERTETE EN MEDIA PARTNER</button>
                 </div>
                 <div class="emms__sponsor-promo__media-partner__picture">
                     <img src="src/img/rompecabez-asset.png" alt="Rompecabeza emoji">
