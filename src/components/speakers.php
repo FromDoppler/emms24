@@ -14,7 +14,7 @@
             <div class="emms__calendar__date__country">
                 <p>La transmisión en vivo dará inicio</p>
                 <span><img src="src/img/flag-argentina.png" alt="Argentina">(ARG) 14:00</span>
-                <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+Digital+Trends%3A+d%C3%ADa+1&iso=20231113T11&p1=51&ah=6" target="_blank">Mira el horario de tu país</a>
+                <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240402T1030&p1=51&ah=6" target="_blank">Mira el horario de tu país</a>
             </div>
         </div>
 

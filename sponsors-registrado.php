@@ -61,6 +61,8 @@ require_once('././src/components/cacheSettings.php');
         <section class="emms__sponsors__hero">
             <div class="emms__sponsors__hero__title emms__fade-top">
                 <h1><em>Herramientas gratis para optimizar tu tienda online</em> Biblioteca de Recursos exclusiva para registrados al EMMS</h1>
+                <p>Descubre todos los beneficios, materiales descargables y el contenido audiovisual que nuestros aliados han preparado para ti.</p>
+                <p>Vive una experiencia completa antes, durante y después del evento capacitándote gratis con todos estos contenidos on-demand.</p>
             </div>
             <div class="emms__sponsors__hero__image__container">
                 <img src="src/img/sponsors-promo.svg" alt="Posibilidades para capacitarte">
@@ -77,12 +79,15 @@ require_once('././src/components/cacheSettings.php');
                     <?php
                     $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
                     $sponsors = $db->getSponsorsCards('SPONSOR');
+                    $index = 0;
+                    $texts = array(0 => "RECURSO EXCLUSIVO", 1 => "¡NO TE LO PIERDAS!", 2 => "SOLO PARA TI", 3 => "¡HAZ CLIC AHORA!");
+
                     foreach ($sponsors as $sponsor) :
                     ?>
                         <li class="emms__sponsors__list__item">
                             <div class="emms__sponsors__list__item__ribon">
                                 <img src="src/img/emoji-book.svg" alt="Book emoji">
-                                REGALO EXCLUSIVO
+                                <?= $texts[$index] ?>
                             </div>
 
                             <h3><?= $sponsor['title'] ?></h3>
@@ -96,7 +101,11 @@ require_once('././src/components/cacheSettings.php');
                                 <img src="./adm24/server/modules/sponsors/uploads/<?= $sponsor['logo_company'] ?>" alt="<?= $sponsor['alt_logo_company'] ?>">
                             </div>
                         </li>
-                    <?php endforeach; ?>
+                    <?php
+                        $index++;
+
+                    endforeach;
+                    ?>
                 </ul>
             </div>
         </section>
@@ -111,7 +120,7 @@ require_once('././src/components/cacheSettings.php');
                     </div>
                     <div class="emms__conferences__cards__container">
                         <div class="emms__conferences__cards emms__fade-in">
-                            <a data-target="modalRegister" data-toggle="emms__register-modal">
+                            <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://www.youtube.com/watch?v=QsVkJsqDEUU" target="_blank">
                                 <img src="src/img/conferences/portada-youtube-mujeresqueemprenden.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
                                     <h4>Trucos para vender más en tu E-commerce</h4>
@@ -123,7 +132,7 @@ require_once('././src/components/cacheSettings.php');
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
-                            <a data-target="modalRegister" data-toggle="emms__register-modal">
+                            <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://youtu.be/6vAI_hk37Lw" target="_blank">
                                 <img src="src/img/conferences/portada-youtube-chinarodriguez.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
                                     <h4>Campañas de remarketing de alto impacto</h4>
@@ -135,7 +144,7 @@ require_once('././src/components/cacheSettings.php');
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
-                            <a data-target="modalRegister" data-toggle="emms__register-modal">
+                            <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://www.youtube.com/watch?v=Jb_ryd3huU4" target="_blank">
                                 <img src="src/img/conferences/portada-youtube-realtrends.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
                                     <h4>Cómo profesionalizar y optimizar la comunicación con mis compradores</h4>
@@ -147,7 +156,7 @@ require_once('././src/components/cacheSettings.php');
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
-                            <a data-target="modalRegister" data-toggle="emms__register-modal">
+                            <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://www.youtube.com/watch?v=gcOgawrnBeg" target="_blank">
                                 <img src="src/img/conferences/portada-youtube-martin-gelpi.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
                                     <h4>Marketing de escasez: la clave del furor en ventas</h4>
@@ -159,7 +168,7 @@ require_once('././src/components/cacheSettings.php');
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
-                            <a data-target="modalRegister" data-toggle="emms__register-modal">
+                            <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://www.youtube.com/watch?v=oWAU4RDbJu4" target="_blank">
                                 <img src="src/img/conferences/portada-youtube-christian-canizales.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
                                     <h4>5 Técnicas SEO para eCommerce</h4>
@@ -172,7 +181,7 @@ require_once('././src/components/cacheSettings.php');
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
-                            <a data-target="modalRegister" data-toggle="emms__register-modal">
+                            <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://www.youtube.com/watch?v=RBz5KNC84YQ" target="_blank">
                                 <img src="src/img/conferences/portada-youtube-dario-conti.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
                                     <h4>Matriz de Impacto Digital para lograr aumento de ventas</h4>
@@ -184,7 +193,7 @@ require_once('././src/components/cacheSettings.php');
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
-                            <a data-target="modalRegister" data-toggle="emms__register-modal">
+                            <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://www.youtube.com/watch?v=dA214KV7oS8" target="_blank">
                                 <img src="src/img/conferences/portada-youtube-mundobrandes-min.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
                                     <h4>5 Errores Comunes al Iniciar en el Ecommerce</h4>
@@ -196,7 +205,7 @@ require_once('././src/components/cacheSettings.php');
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
-                            <a data-target="modalRegister" data-toggle="emms__register-modal">
+                            <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://youtu.be/TaA1Ea9fei4" target="_blank">
                                 <img src="src/img/conferences/portada-youtube-cyberclick.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
                                     <h4>5 tendencias de marketing digital para 2024</h4>
@@ -208,7 +217,7 @@ require_once('././src/components/cacheSettings.php');
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
-                            <a data-target="modalRegister" data-toggle="emms__register-modal">
+                            <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://youtu.be/-QlyiRGqCXY" target="_blank">
                                 <img src="src/img/conferences/portada-youtube-veronicasequeira-min.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
                                     <h4>El arte de la persuasión para vender más y mejor</h4>
@@ -220,7 +229,7 @@ require_once('././src/components/cacheSettings.php');
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
-                            <a data-target="modalRegister" data-toggle="emms__register-modal">
+                            <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://youtu.be/tERlFk6wjMk" target="_blank">
                                 <img src="src/img/conferences/portada-youtube-lujanalonso-min.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
                                     <h4>Soft Skills 2.0: habilidades blandas clave para entornos digitales</h4>
@@ -232,7 +241,7 @@ require_once('././src/components/cacheSettings.php');
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
-                            <a data-target="modalRegister" data-toggle="emms__register-modal">
+                            <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://youtu.be/ljJpXqGsAEQ" target="_blank">
                                 <img src="src/img/conferences/portada-natalia-tabares-min.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
                                     <h4>Saca el máximo provecho de las novedades en Meta con tu tienda online en Jumpseller</h4>
@@ -245,7 +254,7 @@ require_once('././src/components/cacheSettings.php');
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
-                            <a data-target="modalRegister" data-toggle="emms__register-modal">
+                            <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://youtu.be/QUc7TKIOZQY" target="_blank">
                                 <img src="src/img/conferences/portada-mariafernanda-rangel-castillo-min.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
                                     <h4>Vender es otra cosa</h4>
@@ -257,7 +266,7 @@ require_once('././src/components/cacheSettings.php');
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
-                            <a data-target="modalRegister" data-toggle="emms__register-modal">
+                            <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://www.youtube.com/watch?v=ayHNXA_irr8" target="_blank">
                                 <img src="src/img/conferences/portada-denborg-min.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
                                     <h4>4 pilares para la comunicación de tu marca personal</h4>
@@ -269,7 +278,7 @@ require_once('././src/components/cacheSettings.php');
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
-                            <a data-target="modalRegister" data-toggle="emms__register-modal">
+                            <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://www.youtube.com/watch?v=aIhHohOyrHk" target="_blank">
                                 <img src="src/img/conferences/portada-juancruz-arocena.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
                                     <h4>Hacks para impulsar tu marca personal</h4>

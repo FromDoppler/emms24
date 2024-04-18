@@ -420,6 +420,11 @@ p {
     background-position: bottom;
 }
 
+.emms__bg-section-5 {
+    background: url("../../../img/bg-section-5.png") #0B0627 no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
 
 /* Collapse list */
 

@@ -25,6 +25,14 @@ document.addEventListener('click', (e) => {
         }
     }
 
+    const mapType = (type) => {
+            const mapTypes = {
+                'sponsor': 'Sponsor',
+                'mediaPartner' : 'Media Partner'
+            }
+            return mapTypes[type];
+    }
+
 
     const submitForm = async (e, dataType) => {
         e.preventDefault();
@@ -78,7 +86,7 @@ document.addEventListener('click', (e) => {
             const m_ID = target.getAttribute('data-target');
             const dataType = target.getAttribute('data-type');
             const sponsortType = document.getElementById('sponsorType');
-            sponsortType.innerText = dataType;
+            sponsortType.innerText = mapType(dataType);
             submitEventListener = (e) => submitForm(e, dataType);
             sponsorsPromoForm.addEventListener('submit', submitEventListener);
             document.getElementById(m_ID).classList.add('open');

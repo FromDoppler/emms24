@@ -28,7 +28,7 @@ require_once('././src/components/cacheSettings.php');
     <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
             <div class="emms__header__logo">
-                <a href="/"><img src="src/img/logos/logo-emms.png" alt="Emms 2023"></a>
+                <a href="/"><img src="src/img/logos/logo-emms.png" alt="Emms 2024"></a>
             </div>
             <?php if ($digitalTrendsStates['isLive']) : ?>
                 <div class="emms__header__live">
@@ -79,12 +79,13 @@ require_once('././src/components/cacheSettings.php');
                     <?php
                     $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
                     $sponsors = $db->getSponsorsCards('SPONSOR');
-                    foreach ($sponsors as $sponsor) :
+                    $index = 0;
+                    foreach ($sponsors as $sponsor  => $test) :
                     ?>
                         <li class="emms__sponsors__list__item">
                             <div class="emms__sponsors__list__item__ribon">
                                 <img src="src/img/emoji-book.svg" alt="Book emoji">
-                                REGALO EXCLUSIVO
+                                REGALO EXCLUSIVO <?= $test ?>
                             </div>
 
                             <h3><?= $sponsor['title'] ?></h3>
@@ -98,7 +99,9 @@ require_once('././src/components/cacheSettings.php');
                                 <img src="./adm24/server/modules/sponsors/uploads/<?= $sponsor['logo_company'] ?>" alt="<?= $sponsor['alt_logo_company'] ?>">
                             </div>
                         </li>
-                    <?php endforeach; ?>
+                    <?php
+                        $index++;
+                    endforeach; ?>
                 </ul>
             </div>
         </section>
