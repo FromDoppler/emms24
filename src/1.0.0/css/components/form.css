@@ -38,6 +38,8 @@
     left: 19px;
 }
 
+/* &Eacute; = É*/
+
 .emms_switch__container__switch input::after {
     content: "YA ME REGISTRÉ";
     right: 40px;
