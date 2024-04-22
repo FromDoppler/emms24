@@ -56,7 +56,7 @@
 .emms__benefits-carousel__item__text h3{
     font-size: 18px;
     line-height: 24px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: #333;
 }
 

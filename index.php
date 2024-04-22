@@ -275,7 +275,7 @@ require_once('././src/components/cacheSettings.php');
                         y referentes en la industria eligen este evento para capacitarse.</p>
                 </div>
                 <div class="emms__centralvideo__video emms__fade-in">
-                    <video src="src/img/EmmsEcommerceNew.mp4" controls></video>
+                    <video src="src/img/EMMS-EcommerceHome.mp4" controls></video>
                 </div>
                 <a href="./ecommerce" class="emms__cta  emms__fade-in">RESERVA TU CUPO GRATIS</a>
             </div>

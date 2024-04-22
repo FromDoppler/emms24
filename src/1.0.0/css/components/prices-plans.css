@@ -195,6 +195,7 @@ margin-bottom: 10px;
 .emms__plans__card__main ul li a {
     font-weight: 700;
     color: #008046;
+    text-decoration: underline;
 }
 
 .emms__plans__card__main ul li a:hover {
