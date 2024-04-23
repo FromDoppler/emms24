@@ -72,10 +72,10 @@ const swichForm = (form) => {
 
 const swichFormListener = (form) => {
     const switchButton = document.getElementById('swith');
-    switchButton.addEventListener('click', () =>{ swichForm(form)});
+    switchButton.addEventListener('click', () => { swichForm(form) });
 }
 
-const clearErrorListener= (form,errorSpan) =>{
+const clearErrorListener = (form, errorSpan) => {
     const emailInput = form.querySelector('#email');
     emailInput.addEventListener('input', () => {
         errorSpan.classList.remove('display');
@@ -84,24 +84,32 @@ const clearErrorListener= (form,errorSpan) =>{
 
 
 const setUserNotExistError = (form) => {
-    const errorSpan = document.createElement("span");
-    errorSpan.className = "alreadyAccountForm__custom-error display";
-    errorSpan.textContent = "Ouch, parece que no te has registrado con ese correo… Asegúrate de que esté bien redactado o ";
 
-    const linkB = document.createElement("b");
-    linkB.textContent = "dirígete aquí";
+    const errorSpan = document.querySelector("#email + .alreadyAccountForm__custom-error");
 
-    linkB.addEventListener('click',() => {
-        const switchButton = document.getElementById('swith');
-        switchButton.click();
-    } );
+    if (errorSpan) {
+        errorSpan.classList.add('display');
+    } else {
+        const errorSpan = document.createElement("span");
+        errorSpan.className = "alreadyAccountForm__custom-error display";
+        errorSpan.textContent = "Ouch, parece que no te has registrado con ese correo… Asegúrate de que esté bien redactado o ";
 
-    errorSpan.appendChild(linkB);
+        const linkB = document.createElement("b");
+        linkB.textContent = "dirígete aquí";
 
-    const emailElement = document.querySelector(".alreadyAccountForm #email");
-    emailElement.parentNode.insertBefore(errorSpan, emailElement.nextSibling);
-    clearErrorListener(form, errorSpan);
-  }
+        linkB.addEventListener('click', () => {
+            const switchButton = document.getElementById('swith');
+            switchButton.click();
+        });
+
+        errorSpan.appendChild(linkB);
+
+        const emailElement = document.querySelector(".alreadyAccountForm #email");
+        emailElement.parentNode.insertBefore(errorSpan, emailElement.nextSibling);
+        clearErrorListener(form, errorSpan);
+    }
+
+}
 
 
 const alreadyAccountListener = () => {
