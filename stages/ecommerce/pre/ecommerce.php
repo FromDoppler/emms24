@@ -179,8 +179,6 @@ require_once('././src/components/cacheSettings.php');
                                 <div class="holder">
                                     <label class="required-label" for="email">Email *</label>
                                     <input type="email" name="email" id="email" placeholder="&iexcl;No olvides usar @!" class="email required" autocomplete="off">
-                                    <span class="alreadyAccountForm__custom-error">Ouch, parece que no te has registrado con ese correo… Asegúrate de que esté bien redactado o
-                                     <b  id="userSwichForm">dirígete aquí</b> para registrarte.</span>
                                 </div>
                             </li>
                         </ul>
