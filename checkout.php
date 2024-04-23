@@ -9,6 +9,22 @@ require_once('././src/components/cacheSettings.php');
 <head>
     <?php include_once('././src/components/head-ecommerce.php'); ?>
     <?php include_once('././src/components/head.php'); ?>
+    <script type="module">
+        import {
+            getUrlWithParams
+        } from './src/<?= VERSION ?>/js/common/index.js';
+        import {
+            eventsType
+        } from './src/<?= VERSION ?>/js/enums/eventsType.enum.js';
+        import {
+            userRegisteredInEvent,
+            checkEncodeUrl
+        } from './src/<?= VERSION ?>/js/user.js';
+        checkEncodeUrl();
+        if (!userRegisteredInEvent(eventsType.ECOMMERCE)) {
+            window.location.href = getUrlWithParams('/ecommerce');
+        }
+    </script>
 </head>
 
 <body class="emms__ecommerce emms__ecommerce-logueado">
@@ -94,10 +110,8 @@ require_once('././src/components/cacheSettings.php');
     <!-- Footer -->
     <?php include_once('././src/components/footer.php'); ?>
     <script src="src/<?= VERSION ?>/js/collapsibles.js"></script>
-
-
-
-
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="public/checkout.js?v=3" defer></script>
 
 </body>
 
