@@ -1,6 +1,6 @@
 import { eventsType } from "../enums/eventsType.enum.js";
 import { toHex } from "./decodeEmail.js";
-import { setUserNotExistError, validateSimpleForm } from "./formsValidators.js";
+import { validateSimpleForm } from "./formsValidators.js";
 import { setEventInLocalStorage } from "./submitForm.js";
 import { getUrlWithParams } from "./utm.js";
 
@@ -64,15 +64,45 @@ const setMultipleEvents = (events, userEmail) => {
     })
 }
 
-const swichFormListener = (form) => {
+const swichForm = (form) => {
     const alreadyAccountForm = document.getElementById('alreadyAccountForm');
-    const swichForm = () => {
-        alreadyAccountForm.classList.toggle('dp--none');
-        form.classList.toggle('dp--none');
-    }
-    const switchButton = document.getElementById('swith');
-    switchButton.addEventListener('click', swichForm);
+    alreadyAccountForm.classList.toggle('dp--none');
+    form.classList.toggle('dp--none');
 }
+
+const swichFormListener = (form) => {
+    const switchButton = document.getElementById('swith');
+    switchButton.addEventListener('click', () =>{ swichForm(form)});
+}
+
+const clearErrorListener= (form,errorSpan) =>{
+    const emailInput = form.querySelector('#email');
+    emailInput.addEventListener('input', () => {
+        errorSpan.classList.remove('display');
+    });
+}
+
+
+const setUserNotExistError = (form) => {
+    const errorSpan = document.createElement("span");
+    errorSpan.className = "alreadyAccountForm__custom-error display";
+    errorSpan.textContent = "Ouch, parece que no te has registrado con ese correo… Asegúrate de que esté bien redactado o ";
+
+    const linkB = document.createElement("b");
+    linkB.textContent = "dirígete aquí";
+
+    linkB.addEventListener('click',() => {
+        const switchButton = document.getElementById('swith');
+        switchButton.click();
+    } );
+
+    errorSpan.appendChild(linkB);
+
+    const emailElement = document.querySelector(".alreadyAccountForm #email");
+    emailElement.parentNode.insertBefore(errorSpan, emailElement.nextSibling);
+    clearErrorListener(form, errorSpan);
+  }
+
 
 const alreadyAccountListener = () => {
     ecommerceAlreadyAccountForm.addEventListener('submit', async (e) => {

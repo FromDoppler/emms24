@@ -179,6 +179,8 @@ require_once('././src/components/cacheSettings.php');
                                 <div class="holder">
                                     <label class="required-label" for="email">Email *</label>
                                     <input type="email" name="email" id="email" placeholder="&iexcl;No olvides usar @!" class="email required" autocomplete="off">
+                                    <span class="alreadyAccountForm__custom-error">Ouch, parece que no te has registrado con ese correo… Asegúrate de que esté bien redactado o
+                                     <b  id="userSwichForm">dirígete aquí</b> para registrarte.</span>
                                 </div>
                             </li>
                         </ul>
@@ -250,7 +252,7 @@ require_once('././src/components/cacheSettings.php');
         <section class="emms__calendar" id="agenda">
             <div class="emms__container--lg">
                 <div class="emms__calendar__title emms__fade-in">
-                     <h2>Agenda EMMS E-commerce 2024</h2>
+                    <h2>Agenda EMMS E-commerce 2024</h2>
                     <p>La transmisión comienza a las 10:30hs a.m. (ARG). Si no eres de allí o estarás en otro lado, <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240402T1030&p1=51&ah=6"> mira el horario local</a></p>
                 </div>
                 <!-- Speakers -->
