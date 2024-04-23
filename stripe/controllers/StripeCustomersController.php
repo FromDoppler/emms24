@@ -66,18 +66,19 @@ class StripeCustomersController
         // crea o actualiza usuario en tabla registered
         $this->updateRegisteredUser($db, $UserData);
 
-        // carga el usuario en lista de doppler de usuarios vip
         $user = $this->CreateUserObj($UserData, LIST_LANDING_ECOMMERCE_VIP);
-        $dopplerHandler = new SubscriberDopplerList();
-        $dopplerHandler->saveSubscription($user);
-
-        // Guardar la suscripcion en SpreadSheet de usuarios VIP
-        saveSubscriptionSpreadSheet(ID_SPREADSHEET_VIP, $user);
 
         // Enviar email de compra exitosa
         $user['final_price'] = $UserData['final_price'];
         $user['payment_status'] = $UserData['payment_status'];
         sendEmail($user, $user['subject']);
+
+        // Guardar la suscripcion en SpreadSheet de usuarios VIP
+        saveSubscriptionSpreadSheet(ID_SPREADSHEET_VIP, $user);
+
+        // carga el usuario en lista de doppler de usuarios vip
+        $dopplerHandler = new SubscriberDopplerList();
+        $dopplerHandler->saveSubscription($user);
 
         return true;
     }
