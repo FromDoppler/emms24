@@ -10,7 +10,7 @@
                          <?php if ($sponsor['link_site']) : ?>
                              <a href="<?= $sponsor['link_site'] ?>" target="_blank">
                              <?php endif ?>
-                             <img src="./adm23/server/modules/sponsors/uploads/<?= $sponsor['logo_company'] ?>" alt="<?= $sponsor['alt_logo_company'] ?>">
+                             <img src="./adm24/server/modules/sponsors/uploads/<?= $sponsor['logo_company'] ?>" alt="<?= $sponsor['alt_logo_company'] ?>">
                              <?php if ($sponsor['link_site']) : ?>
                              </a>
                          <?php endif ?>
@@ -27,7 +27,7 @@
                          <?php if ($sponsor['link_site']) : ?>
                              <a href="<?= $sponsor['link_site'] ?>" target="_blank">
                              <?php endif ?>
-                             <img src="./adm23/server/modules/sponsors/uploads/<?= $sponsor['logo_company'] ?>" alt="<?= $sponsor['alt_logo_company'] ?>">
+                             <img src="./adm24/server/modules/sponsors/uploads/<?= $sponsor['logo_company'] ?>" alt="<?= $sponsor['alt_logo_company'] ?>">
                              <?php if ($sponsor['link_site']) : ?>
                              </a>
                          <?php endif ?>
