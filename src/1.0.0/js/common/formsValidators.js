@@ -106,11 +106,6 @@ const validateForm = (form) => {
     }
 }
 
-const setUserNotExistError = (form) => {
-    const emailInput = form.querySelector('input[type="email"]');
-    setErrorField(emailInput, 'dontExist_es');
-}
-
 const validateSimpleForm = (form) => {
     const requiredFields = form.querySelectorAll('input.required,select.required');
     const emailField = form.querySelector('input[name="email"]');
@@ -126,6 +121,5 @@ export {
     validatePolicyCheckbox,
     resetErrorField,
     validateForm,
-    validateSimpleForm,
-    setUserNotExistError
+    validateSimpleForm
 };
