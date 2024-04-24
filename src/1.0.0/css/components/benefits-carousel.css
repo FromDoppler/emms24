@@ -46,6 +46,7 @@
     border-radius: 3px;
     overflow: hidden;
     background: #fff;
+    min-height: 450px;
 }
 
 .emms__benefits-carousel__item__text{
