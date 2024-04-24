@@ -528,10 +528,67 @@ require_once('././src/components/cacheSettings.php');
                     <li class="emms__benefits-carousel__item">
                         <div class="emms__benefits-carousel__item__content">
                             <div class="emms__benefits-carousel__item__image">
-                                <img src="src/img/benefits/beneficio-asesoria.png" alt="Beneficio Asesoría">
+                                <img src="src/img/benefits/beneficio-mochila.png" alt="Beneficio dscuento mochilas">
                             </div>
                             <div class="emms__benefits-carousel__item__text">
-                                <h3>Descuentos en asesorías personalizadas en mkt</h3>
+                                <h3>DESCUENTO DEL 15%</h3>
+                                <p>En mochilas (solamente válido para modelos Luxury y Elite)</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="emms__benefits-carousel__item">
+                        <div class="emms__benefits-carousel__item__content">
+                            <div class="emms__benefits-carousel__item__image">
+                                <img src="src/img/benefits/beneficio-cursos.png" alt="Beneficio cursos">
+                            </div>
+                            <div class="emms__benefits-carousel__item__text">
+                                <h3>MEDIA BECA</h3>
+                                <p>En curso de Community Manager</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="emms__benefits-carousel__item">
+                        <div class="emms__benefits-carousel__item__content">
+                            <div class="emms__benefits-carousel__item__image">
+                                <img src="src/img/benefits/beneficio-pack-mentoria.png" alt="Beneficio 50% pack mentoria">
+                            </div>
+                            <div class="emms__benefits-carousel__item__text">
+                                <h3>DESCUENTO DEL 50%</h3>
+                                <p>En el primer pack de mentorías</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="emms__benefits-carousel__item">
+                        <div class="emms__benefits-carousel__item__content">
+                            <div class="emms__benefits-carousel__item__image">
+                                <img src="src/img/benefits/beneficios-curso-algoritmos.png" alt="Beneficio 25% curso algoritmos">
+                            </div>
+                            <div class="emms__benefits-carousel__item__text">
+                                <h3>DESCUENTO DEL 25%</h3>
+                                <p>En el curso online "Estrategias digitales a prueba de algoritmos"</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="emms__benefits-carousel__item">
+                        <div class="emms__benefits-carousel__item__content">
+                            <div class="emms__benefits-carousel__item__image">
+                                <img src="src/img/benefits/beneficio-ebook.png" alt="Beneficio ebook gratuito">
+                            </div>
+                            <div class="emms__benefits-carousel__item__text">
+                                <h3>REGALO DEL E-BOOK</h3>
+                                <p>"Cómo aumentar tus ventas mediante Whatsapp" de Swann Marketing</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="emms__benefits-carousel__item">
+                        <div class="emms__benefits-carousel__item__content">
+                            <div class="emms__benefits-carousel__item__image">
+                                <img src="src/img/benefits/beneficio-swann.png" alt="Beneficio 10% Swann Marketing">
+                            </div>
+                            <div class="emms__benefits-carousel__item__text">
+                                <h3>DESCUENTO DEL 10%</h3>
+                                <p>En capacitaciones de la academia
+                                    de Swann Marketing</p>
                             </div>
                         </div>
                     </li>
@@ -541,28 +598,8 @@ require_once('././src/components/cacheSettings.php');
                                 <img src="src/img/benefits/beneficio-plantilla.png" alt="Beneficio % de descuento">
                             </div>
                             <div class="emms__benefits-carousel__item__text">
-                                <h3>% descuento en plantilla para crear tu estrategia</h3>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="emms__benefits-carousel__item">
-                        <div class="emms__benefits-carousel__item__content">
-                            <div class="emms__benefits-carousel__item__image">
-                                <img src="src/img/benefits/beneficio-cursos.png" alt="Beneficio Cursos">
-                            </div>
-                            <div class="emms__benefits-carousel__item__text">
-                                <h3>% descuento en cursos online/masters/diplomaturas de marketing digital</h3>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="emms__benefits-carousel__item">
-                        <div class="emms__benefits-carousel__item__content">
-                            <div class="emms__benefits-carousel__item__image">
-                                <img src="src/img/benefits/beneficio-coderhouse2.png" alt="Beneficio Coderhouse">
-                            </div>
-                            <div class="emms__benefits-carousel__item__text">
-                                <h3>Coderhouse</h3>
-                                <p>30% OFF en cursos</p>
+                                <h3>DESCUENTO DEL 30%</h3>
+                                <p>En la plantilla Acción Estratégica PASS</p>
                             </div>
                         </div>
                     </li>
