@@ -17,17 +17,22 @@
                 <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240502T1030&p1=51&ah=6" target="_blank">Mira el horario de tu país</a>
             </div>
         </div>
-
+        <?php
+        require_once('./utils/DB.php');
+        $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+        $speakers = $db->getSpeakersByDay(1); ?>
         <!-- List -->
         <ul class="emms__calendar__list emms__calendar__list--dk emms__fade-in">
             <?php
-            require_once('./utils/DB.php');
-            $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-            $speakers = $db->getSpeakersByDay(1);
-            foreach ($speakers as $speaker) : ?>
-                <?php if ((($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop") || ($speaker['exposes'] === "networking")) && ($speaker['event'] === "ecommerce")) : ?>
+            foreach ($speakers as $speaker) :
+                $isSpeakerEcommerce = $speaker['event'] === "ecommerce";
+                $isSpeakerExposeDebate = $speaker['exposes'] === "debate";
+                $isSpeakerExposesType = ($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop") || ($speaker['exposes'] === "networking") || ($isSpeakerExposeDebate);
+            ?>
+                <?php if ($isSpeakerExposesType && $isSpeakerEcommerce) : ?>
                     <li class="emms__calendar__list__item">
                         <div class="emms__calendar__list__item__card">
+
                             <?php if ($speaker['exposes'] === "conference") : ?>
                                 <div class="emms__calendar__list__item__card__label emms__calendar__list__item__card__label--free">
                                     <p>Conferencia</p>
@@ -40,7 +45,12 @@
                                 <div class="emms__calendar__list__item__card__label emms__calendar__list__item__card__label--vip">
                                     <p>Networking - exclusivo VIP</p>
                                 </div>
+                            <?php elseif ($isSpeakerExposeDebate) : ?>
+                                <div class="emms__calendar__list__item__card__label emms__calendar__list__item__card__label--free">
+                                    <p>Mesa de debate</p>
+                                </div>
                             <?php endif; ?>
+
                             <?php if (($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop")) : ?>
                                 <div class="emms__calendar__list__item__card__speaker">
                                     <div class="emms__calendar__list__item__card__speaker__image">
@@ -99,11 +109,21 @@
                                     </div>
                                 </div>
                             <?php endif; ?>
+                            <?php if ($isSpeakerExposeDebate) : ?>
+                                <div class="emms__calendar__list__item__card__speaker">
+                                    <div class="emms__calendar__list__item__card__speaker__image--debate">
+                                        <img src="./admin/speakers/uploads/<?= $speaker['image'] ?>" alt="<?= $speaker['alt_image'] ?>">
+                                    </div>
+                                </div>
+                            <?php endif; ?>
+
                             <div class="emms__calendar__list__item__card__description">
                                 <?php if ($speaker['exposes'] === "conference") : ?>
                                     <h3 class="title-conference"><?= $speaker['title'] ?></h3>
                                 <?php elseif ($speaker['exposes'] === "workshop") : ?>
                                     <h3 class="title-workshop"><?= $speaker['title'] ?></h3>
+                                <?php elseif ($isSpeakerExposeDebate) : ?>
+                                    <h3 class="title-debate"><?= $speaker['title'] ?></h3>
                                 <?php elseif ($speaker['exposes'] === "networking") : ?>
                                     <h3 class="title-networking"><?= $speaker['title'] ?></h3>
                                 <?php endif; ?>
@@ -115,8 +135,13 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
+
                             <?php if ($speaker['exposes'] === "conference") : ?>
                                 <div class="emms__calendar__list__item__card__business">
+                                    <img src="./admin/speakers/uploads/<?= $speaker['image_company'] ?>" alt="<?= $speaker['alt_image_company'] ?>">
+                                </div>
+                            <?php elseif ($isSpeakerExposeDebate) : ?>
+                                <div class="emms__calendar__list__item__card__business--debate">
                                     <img src="./admin/speakers/uploads/<?= $speaker['image_company'] ?>" alt="<?= $speaker['alt_image_company'] ?>">
                                 </div>
                             <?php elseif ($speaker['exposes'] === "networking") : ?>
@@ -128,6 +153,7 @@
                                     <img src="./admin/speakers/uploads/<?= $speaker['image_company'] ?>" alt="<?= $speaker['alt_image_company'] ?>">
                                 </div>
                             <?php endif; ?>
+
                             <!-- <a href="../../speakers-interna.php?slug=nombrespeaker" class="emms__calendar__list__item__card__btn-conference">Ver conferencia</a> -->
                         </div>
                     </li>
@@ -137,12 +163,16 @@
 
         <ul class="emms__calendar__list emms__calendar__list--mb main-carousel emms__fade-in" data-flickity>
             <?php
-            require_once('./utils/DB.php');
-            $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-            $speakers = $db->getSpeakersByDay(1);
-            foreach ($speakers as $speaker) : ?>
-                <?php if ((($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop") || ($speaker['exposes'] === "networking")) && ($speaker['event'] === "ecommerce")) : ?>
+            foreach ($speakers as $speaker) :
+                $isSpeakerEcommerce = $speaker['event'] === "ecommerce";
+                $isSpeakerExposeDebate = $speaker['exposes'] === "debate";
+                $isSpeakerExposesType = ($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop") || ($speaker['exposes'] === "networking") || ($isSpeakerExposeDebate);
+
+            ?>
+                <?php if ($isSpeakerExposesType &&  $isSpeakerEcommerce) :
+                ?>
                     <li class="emms__calendar__list__item">
+
                         <div class="emms__calendar__list__item__card">
                             <?php if ($speaker['exposes'] === "conference") : ?>
                                 <div class="emms__calendar__list__item__card__label emms__calendar__list__item__card__label--free">
@@ -156,7 +186,12 @@
                                 <div class="emms__calendar__list__item__card__label emms__calendar__list__item__card__label--vip">
                                     <p>Networking - exclusivo VIP</p>
                                 </div>
+                            <?php elseif ($isSpeakerExposeDebate) : ?>
+                                <div class="emms__calendar__list__item__card__label emms__calendar__list__item__card__label--free">
+                                    <p>Mesa de debate</p>
+                                </div>
                             <?php endif; ?>
+
                             <?php if (($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop")) : ?>
                                 <div class="emms__calendar__list__item__card__speaker">
                                     <div class="emms__calendar__list__item__card__speaker__image">
@@ -215,11 +250,21 @@
                                     </div>
                                 </div>
                             <?php endif; ?>
+                            <?php if ($isSpeakerExposeDebate) : ?>
+                                <div class="emms__calendar__list__item__card__speaker">
+                                    <div class="emms__calendar__list__item__card__speaker__image--debate">
+                                        <img src="./admin/speakers/uploads/<?= $speaker['image'] ?>" alt="<?= $speaker['alt_image'] ?>">
+                                    </div>
+                                </div>
+                            <?php endif; ?>
+
                             <div class="emms__calendar__list__item__card__description">
                                 <?php if ($speaker['exposes'] === "conference") : ?>
                                     <h3 class="title-conference"><?= $speaker['title'] ?></h3>
                                 <?php elseif ($speaker['exposes'] === "workshop") : ?>
                                     <h3 class="title-workshop"><?= $speaker['title'] ?></h3>
+                                <?php elseif ($isSpeakerExposeDebate) : ?>
+                                    <h3 class="title-debate"><?= $speaker['title'] ?></h3>
                                 <?php elseif ($speaker['exposes'] === "networking") : ?>
                                     <h3 class="title-networking"><?= $speaker['title'] ?></h3>
                                 <?php endif; ?>
@@ -231,8 +276,13 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
+
                             <?php if ($speaker['exposes'] === "conference") : ?>
                                 <div class="emms__calendar__list__item__card__business">
+                                    <img src="./admin/speakers/uploads/<?= $speaker['image_company'] ?>" alt="<?= $speaker['alt_image_company'] ?>">
+                                </div>
+                            <?php elseif ($isSpeakerExposeDebate) : ?>
+                                <div class="emms__calendar__list__item__card__business--debate">
                                     <img src="./admin/speakers/uploads/<?= $speaker['image_company'] ?>" alt="<?= $speaker['alt_image_company'] ?>">
                                 </div>
                             <?php elseif ($speaker['exposes'] === "networking") : ?>
@@ -250,7 +300,7 @@
                 <?php endif; ?>
             <?php endforeach; ?>
         </ul>
-
+        <?php ?>
     </div>
 
 
@@ -265,17 +315,23 @@
                 <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce%3A+d%C3%ADa+2&iso=20240503T1030&p1=51&ah=6" target="_blank">Mira el horario de tu país</a>
             </div>
         </div>
-
+        <?php
+        require_once('./utils/DB.php');
+        $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+        $speakers = $db->getSpeakersByDay(2);
+        ?>
         <!-- List -->
         <ul class="emms__calendar__list emms__calendar__list--dk emms__fade-in">
             <?php
-            require_once('./utils/DB.php');
-            $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-            $speakers = $db->getSpeakersByDay(2);
-            foreach ($speakers as $speaker) : ?>
-                <?php if ((($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop") || ($speaker['exposes'] === "networking")) && ($speaker['event'] === "ecommerce")) : ?>
+            foreach ($speakers as $speaker) :
+                $isSpeakerEcommerce = $speaker['event'] === "ecommerce";
+                $isSpeakerExposeDebate = $speaker['exposes'] === "debate";
+                $isSpeakerExposesType = ($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop") || ($speaker['exposes'] === "networking") || ($isSpeakerExposeDebate);
+            ?>
+                <?php if (($isSpeakerExposesType) && $isSpeakerEcommerce) : ?>
                     <li class="emms__calendar__list__item">
                         <div class="emms__calendar__list__item__card">
+
                             <?php if ($speaker['exposes'] === "conference") : ?>
                                 <div class="emms__calendar__list__item__card__label emms__calendar__list__item__card__label--free">
                                     <p>Conferencia</p>
@@ -288,7 +344,12 @@
                                 <div class="emms__calendar__list__item__card__label emms__calendar__list__item__card__label--vip">
                                     <p>Networking - exclusivo VIP</p>
                                 </div>
+                            <?php elseif ($isSpeakerExposeDebate) : ?>
+                                <div class="emms__calendar__list__item__card__label emms__calendar__list__item__card__label--free">
+                                    <p>Mesa de debate</p>
+                                </div>
                             <?php endif; ?>
+
                             <?php if (($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop")) : ?>
                                 <div class="emms__calendar__list__item__card__speaker">
                                     <div class="emms__calendar__list__item__card__speaker__image">
@@ -347,11 +408,21 @@
                                     </div>
                                 </div>
                             <?php endif; ?>
+                            <?php if ($isSpeakerExposeDebate) : ?>
+                                <div class="emms__calendar__list__item__card__speaker">
+                                    <div class="emms__calendar__list__item__card__speaker__image--debate">
+                                        <img src="./admin/speakers/uploads/<?= $speaker['image'] ?>" alt="<?= $speaker['alt_image'] ?>">
+                                    </div>
+                                </div>
+                            <?php endif; ?>
+
                             <div class="emms__calendar__list__item__card__description">
                                 <?php if ($speaker['exposes'] === "conference") : ?>
                                     <h3 class="title-conference"><?= $speaker['title'] ?></h3>
                                 <?php elseif ($speaker['exposes'] === "workshop") : ?>
                                     <h3 class="title-workshop"><?= $speaker['title'] ?></h3>
+                                <?php elseif ($isSpeakerExposeDebate) : ?>
+                                    <h3 class="title-debate"><?= $speaker['title'] ?></h3>
                                 <?php elseif ($speaker['exposes'] === "networking") : ?>
                                     <h3 class="title-networking"><?= $speaker['title'] ?></h3>
                                 <?php endif; ?>
@@ -363,8 +434,13 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
+
                             <?php if ($speaker['exposes'] === "conference") : ?>
                                 <div class="emms__calendar__list__item__card__business">
+                                    <img src="./admin/speakers/uploads/<?= $speaker['image_company'] ?>" alt="<?= $speaker['alt_image_company'] ?>">
+                                </div>
+                            <?php elseif ($isSpeakerExposeDebate) : ?>
+                                <div class="emms__calendar__list__item__card__business--debate">
                                     <img src="./admin/speakers/uploads/<?= $speaker['image_company'] ?>" alt="<?= $speaker['alt_image_company'] ?>">
                                 </div>
                             <?php elseif ($speaker['exposes'] === "networking") : ?>
@@ -385,12 +461,14 @@
 
         <ul class="emms__calendar__list emms__calendar__list--mb main-carousel emms__fade-in" data-flickity>
             <?php
-            require_once('./utils/DB.php');
-            $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-            $speakers = $db->getSpeakersByDay(2);
-            foreach ($speakers as $speaker) : ?>
-                <?php if ((($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop") || ($speaker['exposes'] === "networking")) && ($speaker['event'] === "ecommerce")) : ?>
+            foreach ($speakers as $speaker) :
+                $isSpeakerEcommerce = $speaker['event'] === "ecommerce";
+                $isSpeakerExposeDebate = $speaker['exposes'] === "debate";
+                $isSpeakerExposesType = ($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop") || ($speaker['exposes'] === "networking") || ($isSpeakerExposeDebate);
+            ?>
+                <?php if (($isSpeakerExposesType) && $isSpeakerEcommerce) : ?>
                     <li class="emms__calendar__list__item">
+
                         <div class="emms__calendar__list__item__card">
                             <?php if ($speaker['exposes'] === "conference") : ?>
                                 <div class="emms__calendar__list__item__card__label emms__calendar__list__item__card__label--free">
@@ -404,7 +482,12 @@
                                 <div class="emms__calendar__list__item__card__label emms__calendar__list__item__card__label--vip">
                                     <p>Networking - exclusivo VIP</p>
                                 </div>
+                            <?php elseif ($isSpeakerExposeDebate) : ?>
+                                <div class="emms__calendar__list__item__card__label emms__calendar__list__item__card__label--free">
+                                    <p>Mesa de debate</p>
+                                </div>
                             <?php endif; ?>
+
                             <?php if (($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop")) : ?>
                                 <div class="emms__calendar__list__item__card__speaker">
                                     <div class="emms__calendar__list__item__card__speaker__image">
@@ -463,11 +546,21 @@
                                     </div>
                                 </div>
                             <?php endif; ?>
+                            <?php if ($isSpeakerExposeDebate) : ?>
+                                <div class="emms__calendar__list__item__card__speaker">
+                                    <div class="emms__calendar__list__item__card__speaker__image--debate">
+                                        <img src="./admin/speakers/uploads/<?= $speaker['image'] ?>" alt="<?= $speaker['alt_image'] ?>">
+                                    </div>
+                                </div>
+                            <?php endif; ?>
+
                             <div class="emms__calendar__list__item__card__description">
                                 <?php if ($speaker['exposes'] === "conference") : ?>
                                     <h3 class="title-conference"><?= $speaker['title'] ?></h3>
                                 <?php elseif ($speaker['exposes'] === "workshop") : ?>
                                     <h3 class="title-workshop"><?= $speaker['title'] ?></h3>
+                                <?php elseif ($isSpeakerExposeDebate) : ?>
+                                    <h3 class="title-debate"><?= $speaker['title'] ?></h3>
                                 <?php elseif ($speaker['exposes'] === "networking") : ?>
                                     <h3 class="title-networking"><?= $speaker['title'] ?></h3>
                                 <?php endif; ?>
@@ -479,8 +572,13 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
+
                             <?php if ($speaker['exposes'] === "conference") : ?>
                                 <div class="emms__calendar__list__item__card__business">
+                                    <img src="./admin/speakers/uploads/<?= $speaker['image_company'] ?>" alt="<?= $speaker['alt_image_company'] ?>">
+                                </div>
+                            <?php elseif ($isSpeakerExposeDebate) : ?>
+                                <div class="emms__calendar__list__item__card__business--debate">
                                     <img src="./admin/speakers/uploads/<?= $speaker['image_company'] ?>" alt="<?= $speaker['alt_image_company'] ?>">
                                 </div>
                             <?php elseif ($speaker['exposes'] === "networking") : ?>
@@ -498,7 +596,8 @@
                 <?php endif; ?>
             <?php endforeach; ?>
         </ul>
-
+        <?php
+        ?>
     </div>
 
 
