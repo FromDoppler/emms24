@@ -13,7 +13,7 @@
         <div class="emms__calendar__date emms__fade-in">
             <div class="emms__calendar__date__country">
                 <p>La transmisión en vivo dará inicio</p>
-                <span><img src="src/img/flag-argentina.png" alt="Argentina">(ARG) 14:00</span>
+                <span><img src="src/img/flag-argentina.png" alt="Argentina">(ARG) 10:30</span>
                 <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240502T1030&p1=51&ah=6" target="_blank">Mira el horario de tu país</a>
             </div>
         </div>
@@ -311,7 +311,8 @@
     <div class="emms__container--lg" role="tabpanel" aria-labelledby="day2" hidden>
         <div class="emms__calendar__date emms__fade-in">
             <div class="emms__calendar__date__country">
-                <span><img src="src/img/flag-argentina.png" alt="Argentina">(ARG) 14:00</span>
+                <p>La transmisión en vivo dará inicio</p>
+                <span><img src="src/img/flag-argentina.png" alt="Argentina">(ARG) 10:30</span>
                 <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce%3A+d%C3%ADa+2&iso=20240503T1030&p1=51&ah=6" target="_blank">Mira el horario de tu país</a>
             </div>
         </div>
