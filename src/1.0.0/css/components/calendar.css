@@ -62,7 +62,9 @@
 
 .emms__calendar__tab__list {
     display: flex;
+    border-bottom: solid 2px #fff;
 }
+
 
 .emms__calendar__tab {
     font-size: 30px;
@@ -71,16 +73,29 @@
     color: #fff;
     width: 100%;
     background: transparent;
-    padding: 0 0 25px 0;
+    padding: 15px 0 15px 0;
     border: none;
-    border-bottom: solid 2px #fff;
     position: relative;
     cursor: pointer;
+    line-height: 30px;
+}
+
+.emms__calendar__tab:first-child {
+    margin-right: 12px;
 }
 
 .emms__calendar__tab[aria-selected="true"] {
-    color: #BD7AFF;
-    font-weight: 800;
+    color: #ffffff;
+    border-radius: 8px 8px 0px 0px;
+    background-color: #BD7AFF;
+}
+
+
+.emms__calendar__tab[aria-selected="false"] {
+    color: #ffffff;
+    border-radius: 8px 8px 0px 0px;
+    background-color: rgba(217, 217, 217, 0.5);
+    ;
 }
 
 .emms__calendar__tab[aria-selected="true"]::after {
@@ -97,7 +112,11 @@
 @media(max-width:620px) {
     .emms__calendar__tab {
         font-size: 18px;
-        padding: 0 0 18px 0;
+        padding: 8px 0 8px 0;
+    }
+
+    .emms__calendar__tab:first-child {
+        margin-right: 6px;
     }
 }
 
@@ -631,6 +650,7 @@
     }
 
 }
+
 /* Special Card */
 
 .emms__calendar__list__item.emms__calendar__list__item--special .emms__calendar__list__item__card__speaker__image {
