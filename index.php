@@ -390,9 +390,9 @@ require_once('././src/components/cacheSettings.php');
                         </li>
                     </ul>
                 </div>
-                <small class="emms__fade-in"><strong>¡Ya llegó EMMS E-commerce 2024! Conoce la agenda <br>
+                <small class="emms__fade-in emms__speakers__home__message"><span>¡Ya llegó EMMS E-commerce 2024! Conoce la agenda <br>
                         Seguimos confirmando más speakers, workshops y novedades para esta edición. <br>
-                        Quedan pocos días, regístrate gratis ahora y no te lo pierdas.</strong>
+                        Quedan pocos días, regístrate gratis ahora y no te lo pierdas.</span>
                 </small>
                 <a href="./ecommerce" class="emms__cta emms__fade-in">APÚNTATE GRATIS</a>
             </div>
@@ -406,7 +406,7 @@ require_once('././src/components/cacheSettings.php');
                 </div>
                 <div class="emms__premium-content__text emms__fade-in">
                     <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
-                    <p><strong>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen para que puedas potenciar al máximo tu tienda online.</strong></p>
+                    <p>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen para que puedas potenciar al máximo tu tienda online.</p>
                     <a href="./sponsors" class="emms__cta sm emms__cta--nd emms__fade-in">INGRESA AHORA</a>
                 </div>
             </div>

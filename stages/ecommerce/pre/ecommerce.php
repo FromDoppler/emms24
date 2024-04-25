@@ -306,7 +306,7 @@ require_once('././src/components/cacheSettings.php');
                 </div>
                 <div class="emms__premium-content__text emms__fade-in">
                     <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
-                    <p><strong>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen nuestros aliados para que puedas potenciar al máximo tu negocio.</strong></p>
+                    <p>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen nuestros aliados para que puedas potenciar al máximo tu negocio.</p>
                     <a href="./sponsors" class="emms__cta sm emms__cta--nd emms__fade-in">INGRESA AHORA</a>
                 </div>
             </div>

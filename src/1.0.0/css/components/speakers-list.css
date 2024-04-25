@@ -33,6 +33,7 @@
     display: block;
     max-width: 600px;
     margin: 0 auto;
+    font-weight: 700;
 }
 
 .emms__speakers small a {
