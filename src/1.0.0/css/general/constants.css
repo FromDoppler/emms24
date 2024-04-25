@@ -91,10 +91,12 @@ p {
 
 .emms__cta.emms__cta--nd {
     font-size: 13px;
-    color: #008046;
+    color: #33AD73;
     background: rgba(0, 128, 70, 0.2);
-    box-shadow: 0px 0px 0 1px #008046;
+    box-shadow: 0px 0px 0 1px #33AD73;
     transition-duration: 0.2s;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 .emms__cta.emms__cta--nd:hover {

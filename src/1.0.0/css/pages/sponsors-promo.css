@@ -248,7 +248,7 @@
     line-height: 24px;
     color: #FFFFFF;
     margin-bottom: 30px;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .emms__sponsor-promo__media-partner__text ul img {
@@ -263,7 +263,7 @@
     align-items: flex-start;
     font-size: 15px;
     color: #FFFFFF;
-    font-weight: bold;
+    font-weight: 400;
     line-height: 20px;
     margin-bottom: 20px;
 }

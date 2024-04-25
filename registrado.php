@@ -688,7 +688,7 @@ require_once('././src/components/cacheSettings.php');
                 </div>
                 <div class="emms__premium-content__text emms__fade-in">
                     <h2>Capacítate con la Biblioteca de Recursos gratuita</h2>
-                    <p><strong>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen nuestros aliados para que puedas potenciar al máximo tu tienda online.</strong></p>
+                    <p>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen nuestros aliados para que puedas potenciar al máximo tu tienda online.</p>
                     <a href="./sponsors-registrado" class="emms__cta sm emms__cta--nd emms__fade-in">ACCEDE AHORA</a>
                 </div>
             </div>
