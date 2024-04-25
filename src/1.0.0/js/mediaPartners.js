@@ -22,9 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    const printMediaPartners = (mediaPartners) => {
-        const partnersStartersUl = document.getElementById('mediaPartenersStarters');
-
+    const printMediaPartners = (mediaPartners, partnersStartersUl) => {
         // This function divides the entire group of mediaPartners into subgroups
         // to generate less load on the front when doing so many image requests
         let groupLength;
@@ -68,8 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
         })
 
     }
+    const partnersStartersUl = document.getElementById('mediaPartenersStarters');
 
-    getMediaPartners('starters').then(mediaPartnersStarters => printMediaPartners(mediaPartnersStarters));
-
+    if(partnersStartersUl){
+        getMediaPartners('starters').then(mediaPartnersStarters => printMediaPartners(mediaPartnersStarters,partnersStartersUl));
+    }
 
 });

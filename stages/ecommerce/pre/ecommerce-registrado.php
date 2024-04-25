@@ -491,7 +491,7 @@ require_once('././src/components/cacheSettings.php');
     <?php include_once('././src/components/footer.php'); ?>
 
 
-
+    <script src="src/<?= VERSION ?>/js/mediaPartners.js"></script>
     <script src="src/<?= VERSION ?>/js/calendarBio.js"></script>
     <script src="src/<?= VERSION ?>/js/newDate.js" type="module"></script>
     <script src="src/<?= VERSION ?>/js/dateCounter.js"></script>
