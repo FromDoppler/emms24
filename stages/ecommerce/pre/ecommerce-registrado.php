@@ -275,7 +275,7 @@ require_once('././src/components/cacheSettings.php');
                     </div>
                 </div>
             </div>
-            <div class="emms__border-separator  hidden--vip">
+            <div class="hidden--vip">
                 <div class="emms__separator emms__separator--white">
                 </div>
             </div>

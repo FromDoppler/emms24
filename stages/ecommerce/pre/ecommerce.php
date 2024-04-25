@@ -518,7 +518,7 @@ require_once('././src/components/cacheSettings.php');
 
 
         <!-- Benefits Carousel -->
-        <section class="emms__benefits-carousel emms__bg-section-3">
+        <!-- <section class="emms__benefits-carousel emms__bg-section-3">
             <div class="emms__container--lg">
                 <div class="emms__benefits-carousel__title emms__fade-in">
                     <h2>Regístrate al EMMS y accede a +25 beneficios exclusivos</h2>
@@ -608,7 +608,7 @@ require_once('././src/components/cacheSettings.php');
                     <a href="#registro" class="emms__cta">APÚNTATE GRATIS</a>
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
         <!-- Companies list -->
