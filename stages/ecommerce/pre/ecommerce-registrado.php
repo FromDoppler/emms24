@@ -275,7 +275,7 @@ require_once('././src/components/cacheSettings.php');
                     </div>
                 </div>
             </div>
-            <div class="emms__border-separator  hidden--vip">
+            <div class="hidden--vip">
                 <div class="emms__separator emms__separator--white">
                 </div>
             </div>
@@ -491,7 +491,7 @@ require_once('././src/components/cacheSettings.php');
     <?php include_once('././src/components/footer.php'); ?>
 
 
-
+    <script src="src/<?= VERSION ?>/js/mediaPartners.js"></script>
     <script src="src/<?= VERSION ?>/js/calendarBio.js"></script>
     <script src="src/<?= VERSION ?>/js/newDate.js" type="module"></script>
     <script src="src/<?= VERSION ?>/js/dateCounter.js"></script>
