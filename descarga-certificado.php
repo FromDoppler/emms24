@@ -3,7 +3,7 @@ require_once('././src/components/cacheSettings.php');
 require_once('././config.php');
 require_once('./utils/DB.php');
 // If the user accesses this page without the email parameter or workshop, they will automatically be redirected to the home
-if ((!isset($_GET['email']) || !isset($_GET['workshop']))) {
+if ((!isset($_GET['email']))) {
     header('Location: ' . 'index');
 }
 
@@ -35,16 +35,22 @@ if ((!isset($_GET['email']) || !isset($_GET['workshop']))) {
     <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
             <div class="emms__header__logo">
-                <a href="/"><img src="src/img/logos/logo-emms.png" alt="Emms 2023"></a>
+                <a href="/"><img src="src/img/logos/logo-emms.png" alt="Emms 2024"></a>
             </div>
             <a class="emms__header__nav--mb" id="btn-burger"></a>
             <nav class="emms__header__nav emms__header__nav--hidden" id="nav-mb">
                 <ul class="emms__header__nav__menu">
                     <li><a href="/">home</a></li>
-                    <li><a href="./ecommerce">e-commerce</a></li>
-                    <li><a href="./digital-trends">digital trends</a></li>
+                    <li><a href="/ecommerce-registrado" >e-commerce</a>
+                    </li>
                     <li><a href="/sponsors">biblioteca de recursos</a></li>
-                    <li><a href="#">ediciones anteriores</a></li>
+                    <li class="emms__header__nav__menu__dropdown"><a href="./ediciones-anteriores">Qué es el EMMS</a>
+                        <ul class="emms__header__nav__submenu">
+                            <li><a href="./ediciones-anteriores#sobre-emms">Sobre el EMMS</a></li>
+                            <li><a href="./ediciones-anteriores#ediciones-anteriores">Revive ediciones anteriores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/sponsors-promo">sponsors</a></li>
                 </ul>
             </nav>
         </div>
