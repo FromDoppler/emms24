@@ -21,20 +21,22 @@ require_once('././src/components/cacheSettings.php');
     <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
             <div class="emms__header__logo emms__header__logo--ecommerce">
-                <a href="/"><img src="src/img/logos/logo-emms-ecommerce.png" alt="Emms Ecommerce 2023"></a>
+                <a href="/"><img src="src/img/logos/logo-emms-ecommerce.png" alt="Emms Ecommerce 2024"></a>
             </div>
             <a class="emms__header__nav--mb" id="btn-burger"></a>
             <nav class="emms__header__nav emms__header__nav--hidden" id="nav-mb">
                 <ul class="emms__header__nav__menu">
-                    <li><a href="/registrado">home</a></li>
-                    <li class="emms__header__nav__menu__dropdown"><a href="#" class="active">e-commerce</a>
+                    <li><a href="/">home</a></li>
+                    <li><a href="#" class="active">e-commerce</a>
+                    </li>
+                    <li><a href="/sponsors">biblioteca de recursos</a></li>
+                    <li class="emms__header__nav__menu__dropdown"><a href="./ediciones-anteriores-registrado">Qué es el EMMS</a>
                         <ul class="emms__header__nav__submenu">
-                            <li><a href="#agenda">AGENDA</a></li>
-                            <li><a href="#aprende-con-doppler">APRENDE CON DOPPLER</a></li>
+                            <li><a href="./ediciones-anteriores-registrado#sobre-emms">Sobre el EMMS</a></li>
+                            <li><a href="./ediciones-anteriores-registrado#ediciones-anteriores">Revive ediciones anteriores</a></li>
                         </ul>
                     </li>
-                    <li><a href="/digital-trends">digital trends</a></li>
-                    <li><a href="/sponsors">contenido exclusivo</a></li>
+                    <li><a href="/sponsors-promo">sponsors</a></li>
                 </ul>
             </nav>
         </div>
@@ -127,62 +129,63 @@ require_once('././src/components/cacheSettings.php');
         </div>
 
         <!-- Premium content -->
-        <section class="emms__premium-content">
-            <div class="emms__background-a"></div>
+        <section class="emms__premium-content show--vip">
             <div class="emms__container--lg">
-                <div class="emms__premium-content__text emms__fade-in">
-                    <h2>Desbloquea Contenido Premium ¡gratis! </h2>
-                    <p>Descubre <strong>recursos descargables, herramientas y conferencias on-demand</strong> que te traen nuestros aliados para que puedas ponerlos en práctica y potenciar tu Tienda Online.</p>
-                    <a href="./sponsors-registrado" class="emms__cta emms__fade-in">ACCEDE AHORA</a>
-                </div>
                 <div class="emms__premium-content__picture emms__fade-in">
-                    <img src="src/img/download--locked.png" alt="Contenido Premium">
+                    <img src="src/img/biblioteca-recursos.png" alt="Biblioteca de recursos">
+                </div>
+                <div class="emms__premium-content__text emms__fade-in">
+                    <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
+                    <p>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen nuestros aliados para potenciar al máximo tu tienda online.</p>
+                    <a href="./sponsors-registrado" class="emms__cta sm emms__cta--nd emms__fade-in">INGRESA AHORA</a>
                 </div>
             </div>
         </section>
-
-        <!-- Separator -->
-        <div class="emms__separator"></div>
 
         <!-- Calendar -->
         <section class="emms__calendar" id="agenda">
             <div class="emms__container--lg">
                 <div class="emms__calendar__title emms__fade-in">
-                    <h2>Agenda EMMS E-commerce 2023</h2>
+                    <h2>Agenda EMMS E-commerce 2024</h2>
+                    <p>La transmisión comienza a las 10:30hs a.m. (ARG). Si no eres de allí o estarás en otro lado, <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240402T1030&p1=51&ah=6"> mira el horario local</a></p>
                 </div>
                 <!-- Speakers -->
                 <?php include('./src/components/speakers.php') ?>
                 <!-- End list -->
                 <div class="emms__calendar__bottom emms__fade-in">
-                    <p>Recuerda que al finalizar el evento podrás acceder a los videos de todas las conferencias.</p>
+                    <a href="#registro" class="emms__cta">REGÍSTRATE GRATIS</a>
                 </div>
             </div>
-            <div class="emms__background-b"></div>
-            <div class="emms__background-c"></div>
         </section>
-
         <!-- Separator -->
         <div class="emms__separator eventHiddenElements"></div>
 
 
-        <!-- Central Video - Show only if the user is not registered in DT -->
-        <section class="emms__centralvideo eventHiddenElements">
-            <div class="emms__background-b"></div>
-            <div class="emms__background-a"></div>
-            <div class="emms__container--md">
-                <div class="emms__centralvideo__title emms__fade-in">
-                    <h2>¡No dejes de aprender! Vuelve el EMMS Digital Trends</h2>
-                    <p>Si quieres descubrir aún más <strong>tendencias en Marketing Digital</strong> para potenciar tu negocio, en <strong>octubre</strong> volvemos con más conferencias, contenido exclusivo y muchas más sorpresas en el evento en español más elegido cada año por miles de profesionales.</p>
-                </div>
-                <div class="emms__centralvideo__video emms__fade-in">
-                    <video src="src/img/EmmsDigitalTrends.mp4" controls></video>
-                </div>
-                <div class="emms__centralvideo__cta emms__fade-in">
-                    <a href="./digital-trends" class="emms__cta">MÁS INFORMACIÓN</a>
-                    <small><i>¿Tienes dudas sobre el EMMS 2023?</i> <a href="./registrado#preguntas-frecuentes" target="_blank">Haz clic aquí</a> y encuentra las preguntas más frecuentes sobre el evento.</small>
+        <!-- Central Video -->
+        <section class="emms__centralvideo hidden--vip">
+            <div class="emms__centralvideo__head">
+                <h2>¡Quedan pocas entradas!</h2>
+                <span> Corre a reservar
+                    tu entrada VIP si...</span>
+            </div>
+            <div class="emms__container--lg reverse-mb">
+                <ul class="emms__centralvideo__list emms__fade-in">
+                    <p class="emms__centralvideo__tag-play">Dale play al video</p>
+                    <li>Te has quedado <em>sin ideas para crear contenido</em> </li>
+                    <li>Sientes que el crecimiento de tu E-commerce <em> se ha estancado</em> </li>
+                    <li>Crees que solo con <em>hablar de tu producto alcanza</em></li>
+                    <li>No logras hacer que los visitantes de tu tienda <em>terminen el checkout</em> </li>
+                    <li>Tus clientes <em>no vuelven a comprarte</em> </li>
+                    <li>O tienes <em>muchos carritos abandonado </em> </li>
+
+                    <a href="#entradas" class="emms__cta">HAZTE VIP AHORA</a>
+                </ul>
+                <div class="emms__centralvideo__video lg emms__fade-in">
+                    <video src="src/img/EmmsEcommerceNew.mp4" controls></video>
                 </div>
             </div>
         </section>
+
 
         <!-- Doppler Banner -->
         <?php include_once('././src/components/doppler-academy-banner.php'); ?>
@@ -194,9 +197,10 @@ require_once('././src/components/cacheSettings.php');
     <?php include_once('././src/components/footer.php'); ?>
     <script src="src/<?= VERSION ?>/js/calendarBio.js"></script>
     <script src="src/<?= VERSION ?>/js/certificateModal.js"></script>
-    <script src="src/<?= VERSION ?>/js/date.js"></script>
+    <script src="src/<?= VERSION ?>/js/newDate.js" type="module"></script>
     <script src="src/<?= VERSION ?>/js/certificate/certificateEcommerce.js" type="module"></script>
-
+    <script src="src/<?= VERSION ?>/js/dateCounter.js"></script>
+    <script src="src/<?= VERSION ?>/js/newDate.js" type="module"></script>
 
 </body>
 
