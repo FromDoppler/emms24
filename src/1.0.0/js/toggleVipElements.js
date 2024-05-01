@@ -23,7 +23,9 @@ const toggleVipEcommerceElements = () => {
         console.log('TOOGLE');
         toggleVipElements();
     } else {
-        academyBanner.style.display = 'none';
+        if (academyBanner) {
+            academyBanner.style.display = 'none';
+        }
     }
 }
 
