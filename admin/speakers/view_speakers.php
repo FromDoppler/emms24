@@ -156,7 +156,7 @@ if (isset($_GET['view_id'])) {
                 </tr>
                 <tr>
                     <td>
-                        <label for="youtube" class="form-label">Youtube:</label>
+                        <label for="youtube" class="form-label">ZOOM (DURING) / Youtube(POST):</label>
                     </td>
                     <th colspan="5">
                         <?php

@@ -299,7 +299,7 @@ if (isset($_POST['btn-cancel'])) {
                         </tr>
                         <tr>
                             <td>
-                                <label for="youtube" class="form-label">Youtube:</label>
+                                <label for="youtube" class="form-label">ZOOM (DURING) / Youtube(POST):</label>
                             </td>
                             <td>
                                 <?php
