@@ -26,6 +26,13 @@ require_once('././src/components/cacheSettings.php');
             </div>
         </div>
     <?php endif ?>
+    <?php if ($ecommerceStates['isTransition']) : ?>
+        <div class="emms__hellobar emms__hellobar--counter">
+            <div class="emms__hellobar__container emms__hellobar__container--during emms__fade-in">
+                <p><strong>¡Queda más EMMS E-commerce! ¿Aún no te has registrado? Súmate gratis para unirte al día 2.</strong><a href="#registro">ÚNETE AHORA</a></p>
+            </div>
+        </div>
+    <?php endif ?>
     <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
             <div class="emms__header__logo emms__header__logo--ecommerce">
@@ -78,7 +85,12 @@ require_once('././src/components/cacheSettings.php');
         <section class="emms__hero-registration eventHiddenElements" id="registro">
             <div class="emms__hero-registration__columns">
                 <div class="emms__hero-registration__text emms__hero-registration__text--live emms__fade-in">
-                    <h2><em><span>EN VIVO</span> - EVENTO ONLINE Y GRATUITO</em></h2>
+                    <?php if ($ecommerceStates['isLive']) : ?>
+                        <h2><em><span>EN VIVO</span> - EVENTO ONLINE Y GRATUITO</em></h2>
+                    <?php endif ?>
+                    <?php if ($ecommerceStates['isTransition']) : ?>
+                        <h2><em><span>PREPÁRATE PARA EL DÍA 2</span> - EVENTO ONLINE Y GRATUITO</em></h2>
+                    <?php endif ?>
                     <h1>
                         <span>¡Ya empezó el</span>
                         <span>EMMS</span>
@@ -250,27 +262,24 @@ require_once('././src/components/cacheSettings.php');
             </div>
         </section>
 
-        <!-- Hero without form-->
-        <!-- <section class="emms__hero-registration emms__hero-registration--noform eventHiddenElements eventShowElements" id="registro">
-            <div class="emms__hero-registration__text">
-                <h1>¡Estás a un paso de acceder al EMMS Ecommerce!</h1>
-                <p>Inspírate y aprende cómo potenciar tu Tienda Online en un evento exclusivo para tu industria, 100% gratis. Revisa en la <a href="#agenda">agenda</a> los referentes internacionales que nos acompañan.</p>
-                <button type="button" class="emms__cta ecommerceBtn"><span class="button__text">ACCEDE AL VIVO</span></button>
-            </div>
-            <div class="emms__hero-registration__bottom emms__fade-in">
-                <p>IA >> AUTOMATION MARKETING >> UX >> CRO >> MARKETPLACES >> SEO >> RETARGETING >> SOCIAL SELLING >> EMAIL MARKETING >> ESTRATEGIAS DE VENTA >></p>
-                <p>IA >> AUTOMATION MARKETING >> UX >> CRO >> MARKETPLACES >> SEO >> RETARGETING >> SOCIAL SELLING >> EMAIL MARKETING >> ESTRATEGIAS DE VENTA >></p>
-            </div>
-        </section> -->
-
 
         <!-- Calendar -->
         <section class="emms__calendar" id="agenda">
             <div class="emms__container--lg">
-                <div class="emms__calendar__title emms__fade-in">
-                    <h2>Agenda EMMS E-commerce 2024</h2>
-                    <p>La transmisión comienza a las 10:30hs a.m. (ARG). Si no eres de allí o estarás en otro lado, <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240402T1030&p1=51&ah=6"> mira el horario local</a></p>
-                </div>
+                <?php if ($ecommerceStates['isPre']) : ?>
+                    <div class="emms__calendar__title emms__fade-in">
+                        <h2>Agenda EMMS E-commerce 2024</h2>
+                        <p>La transmisión comienza a las 10:30hs a.m. (ARG). Si no eres de allí o estarás en otro lado, <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240502T1030&p1=51&ah=6"> mira el horario local</a></p>
+                    </div>
+                <?php endif ?>
+
+                <?php if ($ecommerceStates['isTransition'] || $ecommerceStates['isLive']) : ?>
+                    <div class="emms__calendar__title emms__fade-in">
+                        <h2>Agenda EMMS E-commerce 2024</h2>
+                        <p>Descubre aquí los speakers internacionales y las actividades exclusivas que te esperan en esta edición.</p>
+                    </div>
+                <?php endif ?>
+
                 <!-- Speakers -->
                 <?php include('./src/components/speakers.php') ?>
                 <!-- End list -->
@@ -439,49 +448,7 @@ require_once('././src/components/cacheSettings.php');
         </section>
 
         <!-- Companies list -->
-        <section class="emms__companies emms__companies--categories" id="aliados">
-            <div class="emms__container--lg">
-                <h2 class="emms__fade-in">Nos acompañan en esta edición:</h2>
-                <h3>SPONSORS</h3>
-                <ul class="emms__companies__list emms__companies__list--lg  emms__fade-in">
-                    <?php $sponsors = $db->getSponsorsByType('SPONSOR');
-                    foreach ($sponsors as $sponsor) : ?>
-                        <li class="emms__companies__list__item">
-                            <?php if ($sponsor['link_site']) : ?>
-                                <a href="<?= $sponsor['link_site'] ?>" target="_blank">
-                                <?php endif ?>
-                                <img src="./adm23/server/modules/sponsors/uploads/<?= $sponsor['logo_company'] ?>" alt="<?= $sponsor['alt_logo_company'] ?>">
-                                <?php if ($sponsor['link_site']) : ?>
-                                </a>
-                            <?php endif ?>
-                        </li>
-
-                    <?php endforeach; ?>
-                </ul>
-                <div class="emms__companies__divisor"></div>
-                <h3>MEDIA PARTNERS EXCLUSIVE</h3>
-                <ul class="emms__companies__list emms__companies__list  emms__fade-in">
-                    <?php $sponsors = $db->getSponsorsByType('PREMIUM');
-                    foreach ($sponsors as $sponsor) : ?>
-                        <li class="emms__companies__list__item">
-                            <?php if ($sponsor['link_site']) : ?>
-                                <a href="<?= $sponsor['link_site'] ?>" target="_blank">
-                                <?php endif ?>
-                                <img src="./adm23/server/modules/sponsors/uploads/<?= $sponsor['logo_company'] ?>" alt="<?= $sponsor['alt_logo_company'] ?>">
-                                <?php if ($sponsor['link_site']) : ?>
-                                </a>
-                            <?php endif ?>
-                        </li>
-
-                    <?php endforeach; ?>
-                </ul>
-                <div class="emms__companies__divisor"></div>
-                <h3>MEDIA PARTNERS STARTERS</h3>
-                <ul class="emms__companies__list emms__companies__list  emms__fade-in" id="mediaPartenersStarters">
-                </ul>
-                <small class="emms__fade-in"><strong>¿Quieres ser aliado del EMMS?</strong> ¡Hablemos! Escríbenos a <a href="mailto:partners@fromdoppler.com">partners@fromdoppler.com</a></small>
-            </div>
-        </section>
+        <?php include('./src/components/companiesList.php') ?>
 
     </main>
 

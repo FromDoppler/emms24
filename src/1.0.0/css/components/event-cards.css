@@ -152,6 +152,24 @@
         width: 100%;
     }
 
+    .ribbon.ribbon--registered {
+        top: 128px;
+    }
+
+    .ribbon .ribbon3 {
+        top: 23px;
+    }
+
+    .ribbon .ribbon3:after {
+        height: 0;
+        width: 0;
+        right: -12.5px;
+    }
+
+    .ribbon.ribbon--registered .ribbon3:after {
+        right: -12.5px;
+    }
+
     .ribbon:nth-child(even) {
         margin-right: 0%;
     }
@@ -195,7 +213,7 @@
 .ribbon3:after {
     height: 0;
     width: 0;
-    right: -14.5px;
+    right: -13.5px;
     border-top: 16px solid transparent;
     border-bottom: 22px solid transparent;
     border-left: 14px solid #79F66E;

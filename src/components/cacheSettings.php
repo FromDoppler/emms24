@@ -20,6 +20,7 @@ function determineState($event, $settings_phase)
     return [
         'isPre' => ($settings_phase['event'] === $event && $settings_phase['pre'] === 1),
         'isLive' => ($settings_phase['event'] === $event && $settings_phase['during'] === 1 && $settings_phase['transition'] === "live-on"),
+        'isTransition' => ($settings_phase['event'] === $event && $settings_phase['during'] === 1 && $settings_phase['transition'] === "live-off"),
         'isDuring' => ($settings_phase['event'] === $event && $settings_phase['during'] === 1),
         'isPost' => ($settings_phase['event'] === $event && $settings_phase['post'] === 1),
     ];

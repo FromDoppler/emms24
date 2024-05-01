@@ -31,6 +31,7 @@
 }
 
 .emms__frequentquestions__list.emms__frequentquestions__list--during {
+    background: unset;
     opacity: 0.5;
 }
 

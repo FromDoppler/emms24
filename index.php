@@ -208,22 +208,29 @@ require_once('././src/components/cacheSettings.php');
                     <ul class="emms__eventCards__list emms__eventCards__list--mb emms__fade-in main-carousel" data-flickity>
                         <li class="emms__eventCards__list__item">
                             <div class="emms__eventCards__list__item__picture">
-                                <img src="src/img/card-image-ecommerce.png" alt="Image Ecommerce">
+                                <?php if ($ecommerceStates['isLive']) : ?>
+                                    <div class="ribbon">
+                                        <span class="ribbon3"><img src="src/img/play.png" alt=""> EN VIVO</span>
+                                    </div>
+                                <?php endif ?>
+                                <img src="src/img/card-image-ecommerce.png" alt="Play icon">
                                 <?php if ($ecommerceStates['isPost']) : ?>
                                     <p class="top hide">EVENTO FINALIZADO</p>
                                 <?php endif ?>
                             </div>
+
                             <div class="emms__eventCards__list__item__text">
                                 <?php if ($ecommerceStates['isLive']) : ?>
-                                    <h3>EMMS E-commerce <span>EN VIVO</span></h3>
+                                    <!-- <h3>EMMS E-commerce <span>EN VIVO</span></h3> -->
                                 <?php else : ?>
                                     <h3>EMMS E-commerce </h3>
                                 <?php endif ?>
                                 <?php if ($ecommerceStates['isPre']) : ?>
-                                    <p>Referentes internacionales de la industria te contarán qué <strong>tendencias y estrategias emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos. Descubre la agenda y reserva tu plaza</p>
+                                    <p>Referentes internacionales de la industria te contarán qué <strong>tendencias y estrategias emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
                                 <?php endif ?>
                                 <?php if ($ecommerceStates['isDuring']) : ?>
-                                    <p>Súmate ahora y conoce <strong>qué tendencias y estrategias emplean los referentes de la industria en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
+                                    <p>Referentes internacionales de la industria te cuentan las <strong>tendencias y estrategias que emplean en sus Tiendas Online</strong>para captar nuevos clientes
+                                        y aumentar sus ingresos.  ¡Súmate ahora mismo!</p>
                                 <?php endif ?>
                                 <?php if ($ecommerceStates['isPost']) : ?>
                                     <p>Referentes internacionales de la industria comparten contigo las <strong>tendencias y estrategias que emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
@@ -232,9 +239,17 @@ require_once('././src/components/cacheSettings.php');
                                     <?php if ($ecommerceStates['isPre']) : ?>
                                         <a href="ecommerce" class="emms__cta">REGÍSTRATE GRATIS</a>
                                     <?php elseif ($ecommerceStates['isLive']) : ?>
-                                        <a href="ecommerce" class="emms__cta">ACCEDE AL VIVO</a>
+
+                                        <a href="ecommerce" class="emms__cta">
+                                            <img src="src/img/white-play.png" alt="Play icon">
+                                            <span> ÚNETE AL VIVO</span>
+                                        </a>
                                     <?php elseif ($ecommerceStates['isDuring']) : ?>
-                                        <a href="ecommerce" class="emms__cta">SÚMATE AHORA</a>
+                                        <a href="ecommerce" class="emms__cta">
+                                            <img src="src/img/white-play.png" alt="Play icon">
+
+                                            ÚNETE AL VIVO
+                                        </a>
                                     <?php elseif ($ecommerceStates['isPost']) : ?>
                                         <a href="ecommerce" class="emms__cta">REVIVE EL EVENTO</a>
                                     <?php endif ?>
@@ -249,17 +264,12 @@ require_once('././src/components/cacheSettings.php');
                                 <?php endif ?>
                             </div>
                             <div class="emms__eventCards__list__item__text">
-                                <?php if ($digitalTrendsStates['isPre'] || $digitalTrendsStates['isDuring']) : ?>
-                                    <div class="emms__eventCards__list__item__text--corner hide">
-                                        <p><span>13 <em>-</em> 16</span>NOVIEMBRE</p>
-                                    </div>
-                                <?php endif ?>
                                 <?php if ($digitalTrendsStates['isLive']) : ?>
                                     <h3>EMMS Digital Trends <span>EN VIVO</span></h3>
                                 <?php else : ?>
                                     <h3>EMMS Digital Trends </h3>
                                 <?php endif ?>
-                                <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores#ediciones-anteriores">reviviendo la edición 2024</a>.</strong></p>
+                                <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                 <div class="emms__eventCards__list__item__text--bottom">
                                     <?php if ($digitalTrendsStates['isPre']) : ?>
                                         <a class="emms__cta inactive">PRÓXIMAMENTE</a>

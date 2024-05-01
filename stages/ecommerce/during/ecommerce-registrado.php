@@ -116,36 +116,60 @@ require_once('././src/components/cacheSettings.php');
                 <?php elseif (($settings_phase['event'] === "ecommerce24") && ($settings_phase['during'] === 1) && ($settings_phase['transition'] === "live-on") && ($settings_phase['transmission'] === "technical-problems")) : ?>
                     <img src="src/img/banner-technical-error.png" alt="Errores técnicos" class="banner">
                 <?php elseif (($settings_phase['event'] === "ecommerce24") && ($settings_phase['during'] === 1) && ($settings_phase['transition'] === "live-off")) : ?>
+                    <h2>PREPÁRATE PARA EL DÍA 2</h2>
+                    <h1 class="emms__fade-in">¡Pronto seguimos con más EMMS E-commerce</h1>
                     <div class="emms__hero-conference__video emms__hero-conference__video--transition emms__fade-in">
-                        <h2>Prepárate, ¡se viene el día 2 del EMMS E-commerce 2023!</h2>
-                        <small>Recuerda que podrás acceder a todas las grabaciones de las Conferencias una vez finalizado el evento desde la <a href="#agenda">Agenda</a>.</small>
+                        <img src="../../../../../src/img/placa.png" alt="Preparata para el día 2!">
                     </div>
-                    <div class="emms__hero-conference__aside emms__hero-conference__aside--transition emms__fade-in">
-                        <p>Mientras te preparas para el último día, accede a todo el contenido exclusivo que hemos preparado para ti: E-books gratuitos, cápsulas audiovisuales, guías, plantillas, beneficios, descuentos ¡y mucho más!</p>
-                        <a class="emms__cta" href="/sponsors-registrado">ACCEDE AHORA</a>
+                    <div class="emms__hero-conference__aside emms__hero-conference__aside--transition emms__fade-in hidden--vip">
+                        <p>Recuerda <a href="#entradas">reserva tu Entrada VIP</a> para acceder a todos los Workshops y +
+                            a sus grabaciones una vez finalizado
+                            el evento.
+                        </p>
+                        <p> Además, mientras te alistas para otro emocionante día, en la <a href="/sponsors-registrado"> Biblioteca de Recursos</a> podrás disfrutar de E-books, material audiovisual, guías, beneficios en tus herramientas preferidas y mucho más contenido preparado por nuestros aliados especialmente para tí.</p>
+                        <a class="emms__cta" href="/sponsors-registrado"> DESCÚBRELA AHORA</a>
+                    </div>
+                    <div class="emms__hero-conference__aside emms__hero-conference__aside--transition emms__fade-in show--vip">
+                        <p>Mientras te alistas para otro emocionante día, en la<a href="/sponsors-registrado"> Biblioteca de Recursos</a> podrás disfrutar de E-books, material audiovisual, guías, beneficios en tus herramientas preferidas y mucho más contenido preparado por nuestros aliados especialmente para tí.</p>
+                        <a class="emms__cta" href="/sponsors-registrado"> DESCÚBRELA AHORA</a>
                     </div>
                 <?php endif; ?>
-                <div class="live--certificate--container">
-                    <div class="certificate--modal-info">
-                        <img src=".../../../../../src/img/certificate-ribbon.png" alt="Emoji liston">
-                        <p><a data-target="certificateModal" data-toggle="emms__certificate-modal">Descarga aquí </a> tu Certificado de Asistencia y compártelo en Redes Sociales utilizando el Hashtag #EMMS2024</p>
+                <?php if (($settings_phase['event'] === "ecommerce24") && ($settings_phase['during'] === 1) && ($settings_phase['transition'] === "live-on")) : ?>
+                    <div class="live--certificate--container">
+                        <div class="certificate--modal-info">
+                            <img src=".../../../../../src/img/certificate-ribbon.png" alt="Emoji liston">
+                            <p><a data-target="certificateModal" data-toggle="emms__certificate-modal">Descarga aquí </a> tu Certificado de Asistencia y compártelo en Redes Sociales utilizando el Hashtag #EMMS2024</p>
+                        </div>
+                        <div class="live--info-container">
+                            <h6>IMPORTANTE :</h6>
+                            <div class="bubble__live_info">
+                                <img src="../../../../../src/img/icons/volume--icon.png" alt="Icono audio">
+                                <span>Activa el audio</span>
+                            </div>
+                            <div class="bubble__live_info">
+                                <img src="../../../../../src/img/icons/share--icon.png" alt="Icono share">
+                                <span>Comparte en redes</span>
+                            </div>
+                            <div class="bubble__live_info">
+                                <img src="../../../../../src/img/icons/expand--icon.png" alt="Icono zoom video">
+                                <span>Reprodúcelo en 720px</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="live--info-container">
-                        <h6>IMPORTANTE :</h6>
-                        <div class="bubble__live_info">
-                            <img src="../../../../../src/img/icons/volume--icon.png" alt="">
-                            <span>Activa el audio</span>
-                        </div>
-                        <div class="bubble__live_info">
-                            <img src="../../../../../src/img/icons/share--icon.png" alt="">
-                            <span>Comparte en redes</span>
-                        </div>
-                        <div class="bubble__live_info">
-                            <img src="../../../../../src/img/icons/expand--icon.png" alt="">
-                            <span>Reprodúcelo en 720px</span>
+                <?php endif; ?>
+                <?php if (($settings_phase['event'] === "ecommerce24") && ($settings_phase['during'] === 1) && ($settings_phase['transition'] === "live-off")) : ?>
+                    <div class="live--certificate--container">
+                        <div class="certificate--modal-info certificate--modal-info--live-off">
+                            <img src=".../../../../../src/img/certificate-ribbon.png" alt="Emoji liston">
+                            <div>
+                                <p>DESCARGA<a data-target="certificateModal" data-toggle="emms__certificate-modal"> AQUÍ </a>TU CERTIFICADO DE ASISTENCIA</p><br>
+                                <span> Compártelo en Redes Sociales utilizando el Hashtag </span>
+                                <br>
+                                <p><b>#EMMSECOMMERCE</b> :)</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                <?php endif; ?>
             </div>
             <!-- Marquee -->
             <div class="emms__hero-registration__bottom images emms__fade-in">
@@ -226,7 +250,7 @@ require_once('././src/components/cacheSettings.php');
                 <!-- Speakers -->
                 <?php include('./src/components/speakers.php') ?>
                 <!-- End list -->
-                <div class="emms__calendar__bottom emms__fade-in">
+                <div class="emms__calendar__bottom emms__fade-in   hidden--vip">
                     <a href="#entradas" class="emms__cta">COMPRA TU ENTRADA VIP</a>
                 </div>
             </div>
@@ -410,50 +434,14 @@ require_once('././src/components/cacheSettings.php');
                 </div>
             </div>
         </section>
+        <div class="show--vip show--vip--hidden" id="speacial-flikity">
+            <?php if (($settings_phase['event'] === "ecommerce24") && ($settings_phase['during'] === 1) && ($settings_phase['transition'] === "live-off")) : ?>
+                <!-- Doppler Banner -->
+                <?php include_once('././src/components/doppler-academy-banner.php'); ?>
+            <?php endif; ?>
+        </div>
         <!-- Companies list -->
-        <section class="emms__companies emms__companies--categories" id="aliados">
-            <div class="emms__container--lg">
-                <h2 class="emms__fade-in">Nos acompañan en esta edición:</h2>
-                <h3>SPONSORS</h3>
-                <ul class="emms__companies__list emms__companies__list--lg  emms__fade-in">
-                    <?php $sponsors = $db->getSponsorsByType('SPONSOR');
-                    foreach ($sponsors as $sponsor) : ?>
-                        <li class="emms__companies__list__item">
-                            <?php if ($sponsor['link_site']) : ?>
-                                <a href="<?= $sponsor['link_site'] ?>" target="_blank">
-                                <?php endif ?>
-                                <img src="./adm23/server/modules/sponsors/uploads/<?= $sponsor['logo_company'] ?>" alt="<?= $sponsor['alt_logo_company'] ?>">
-                                <?php if ($sponsor['link_site']) : ?>
-                                </a>
-                            <?php endif ?>
-                        </li>
-
-                    <?php endforeach; ?>
-                </ul>
-                <div class="emms__companies__divisor"></div>
-                <h3>MEDIA PARTNERS EXCLUSIVE</h3>
-                <ul class="emms__companies__list emms__companies__list  emms__fade-in">
-                    <?php $sponsors = $db->getSponsorsByType('PREMIUM');
-                    foreach ($sponsors as $sponsor) : ?>
-                        <li class="emms__companies__list__item">
-                            <?php if ($sponsor['link_site']) : ?>
-                                <a href="<?= $sponsor['link_site'] ?>" target="_blank">
-                                <?php endif ?>
-                                <img src="./adm23/server/modules/sponsors/uploads/<?= $sponsor['logo_company'] ?>" alt="<?= $sponsor['alt_logo_company'] ?>">
-                                <?php if ($sponsor['link_site']) : ?>
-                                </a>
-                            <?php endif ?>
-                        </li>
-
-                    <?php endforeach; ?>
-                </ul>
-                <div class="emms__companies__divisor"></div>
-                <h3>MEDIA PARTNERS STARTERS</h3>
-                <ul class="emms__companies__list emms__companies__list  emms__fade-in" id="mediaPartenersStarters">
-                </ul>
-                <small class="emms__fade-in"><strong>¿Quieres ser aliado del EMMS?</strong> ¡Hablemos! Escríbenos a <a href="mailto:partners@fromdoppler.com">partners@fromdoppler.com</a></small>
-            </div>
-        </section>
+        <?php include('./src/components/companiesList.php') ?>
 
     </main>
 
@@ -462,6 +450,7 @@ require_once('././src/components/cacheSettings.php');
     <?php include_once('././src/components/footer.php'); ?>
     <script src="src/<?= VERSION ?>/js/calendarBio.js"></script>
     <script src="src/<?= VERSION ?>/js/certificateModal.js"></script>
+    <script src="src/<?= VERSION ?>/js/mediaPartners.js"></script>
     <script src="src/<?= VERSION ?>/js/newDate.js" type="module"></script>
     <script src="src/<?= VERSION ?>/js/certificate/certificateEcommerce.js" type="module"></script>
     <script src="src/<?= VERSION ?>/js/dateCounter.js"></script>

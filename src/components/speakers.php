@@ -1,15 +1,16 @@
 <?php
 $url_ptr = explode("/", isset($_SERVER['REQUEST_URI']));
-require_once('./utils/DB.php');
-$db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-$currentPhase = $db->getCurrentPhase(ECOMMERCE);
-$during = $currentPhase[0]["during"];
-var_dump($during);
 ?>
 
 <div class="emms__calendar__tabs">
     <div class="emms__calendar__tab__list">
-        <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day1">02 de mayo</button>
+        <?php if ($ecommerceStates['isPre'] || $ecommerceStates['isLive']) : ?>
+            <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day1">02 de mayo</button>
+        <?php endif ?>
+
+        <?php if ($ecommerceStates['isTransition']) : ?>
+            <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day1">02 de mayo - finalizado</button>
+        <?php endif ?>
         <button class="emms__calendar__tab" role="tab" aria-selected="false" id="day2">03 de mayo</button>
     </div>
 
@@ -19,9 +20,18 @@ var_dump($during);
     <div class="emms__container--lg" role="tabpanel" aria-labelledby="day1">
         <div class="emms__calendar__date emms__fade-in">
             <div class="emms__calendar__date__country">
-                <p>La transmisión en vivo dará inicio</p>
-                <span><img src="src/img/flag-argentina.png" alt="Argentina">(ARG) 10:30</span>
-                <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240502T1030&p1=51&ah=6" target="_blank">Mira el horario de tu país</a>
+
+                <?php if ($ecommerceStates['isPre']) : ?>
+                    <p>La transmisión en vivo dará inicio</p>
+                    <span><img src="src/img/flag-argentina.png" alt="Argentina">(ARG) 10:30</span>
+                    <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240502T1030&p1=51&ah=6" target="_blank">Mira el horario de tu país</a>
+                <?php endif ?>
+                <?php if ($ecommerceStates['isLive']) : ?>
+                    <p>Descubre aquí los speakers internacionales y las actividades exclusivas que te esperan en esta edición. </p>
+                <?php endif ?>
+                <?php if ($ecommerceStates['isTransition']) : ?>
+                    <p>El primer día ya ha finalizado ¡pero puedes registrarte y acceder a todas las grabaciones! </p>
+                <?php endif ?>
             </div>
         </div>
         <?php
