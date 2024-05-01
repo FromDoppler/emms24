@@ -274,7 +274,7 @@ if (isset($_POST['btn-save'])) {
                         </tr>
                         <tr>
                             <td>
-                                <label for="youtube" class="form-label">Youtube:</label>
+                                <label for="youtube" class="form-label">ZOOM (DURING) / Youtube(POST):</label>
                             </td>
                             <td>
                                 <input type="text" class="form-control" id="youtube" name="youtube" placeholder="Youtube">
