@@ -84,8 +84,9 @@ require_once('././src/components/cacheSettings.php');
                 require_once('./utils/DB.php');
                 $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
                 $speakers = $db->getAllSpeakers();
-                foreach ($speakers as $speaker) : ?>
-                    <?php if ($speaker['event'] === "ecommerce24") : ?>
+                foreach ($speakers as $speaker) :?>
+
+                    <?php if ($speaker['event'] === "ecommerce") : ?>
                         <li class="emms__calendar__list__item">
                             <div class="emms__calendar__list__item__card">
                                 <?php if ($speaker['exposes'] === "conference") : ?>
@@ -142,7 +143,7 @@ require_once('././src/components/cacheSettings.php');
                 $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
                 $speakers = $db->getAllSpeakers();
                 foreach ($speakers as $speaker) : ?>
-                    <?php if ($speaker['event'] === "ecommerce24") : ?>
+                    <?php if ($speaker['event'] === "ecommerce") : ?>
                         <li class="emms__calendar__list__item">
                             <div class="emms__calendar__list__item__card">
                                 <?php if ($speaker['exposes'] === "conference") : ?>
