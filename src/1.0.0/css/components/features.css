@@ -114,6 +114,12 @@
     margin: 0 0 10px 0;
 }
 
+.emms__features__item .emms__features__item__text .emms__features__item__text__price.emms__features__item__text__price--live{
+    color: #242424;
+    font-weight: 500;
+}
+
+
 .emms__features__item .emms__features__item__text .emms__features__item__text__price span{
     font-size: 20px;
     line-height: 1;

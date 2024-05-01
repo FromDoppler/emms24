@@ -61,10 +61,19 @@
     margin: 0 auto;
 }
 
+.emms__home__hero__title.emms__home__hero__title__during p strong a {
+    color: #79F66E;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.emms__home__hero__title.emms__home__hero__title__during p strong a:hover{
+    color: #61DB56;
+}
 
 /* Event Numbers */
 
-.emms__home .emms__eventnumbers{
+.emms__home .emms__eventnumbers {
     background: #192254;
 }
 
@@ -121,7 +130,7 @@
         transform: translate(-74%, -72%);
     }
 
-    .emms__home.emms__home-logueado .emms__home__speakers .emms__background-a{
+    .emms__home.emms__home-logueado .emms__home__speakers .emms__background-a {
         display: none;
     }
 
@@ -148,11 +157,11 @@
         font-size: 16px;
     }
 
-    .emms__home__hero__title p span{
+    .emms__home__hero__title p span {
         display: none;
     }
 
-    .emms__home .emms__userscomments{
+    .emms__home .emms__userscomments {
         padding: 75px 0 150px 0;
     }
 

@@ -27,6 +27,12 @@
     animation: show-modal-certificate .4s;
 }
 
+.emms__certificate-modal__window img {
+    width: 178px;
+    height: 166px;
+    margin: 0 auto;
+}
+
 @keyframes show-modal-certificate {
     0% {
         opacity: 0;
@@ -75,7 +81,7 @@
     color: #838370;
 }
 
-.emms__certificate-modal__window  span:not(.button__text) {
+.emms__certificate-modal__window span:not(.button__text) {
     font-size: 13px;
     color: #ff1010;
     font-style: italic;

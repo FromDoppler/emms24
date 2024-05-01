@@ -1,4 +1,11 @@
-<?php $url_ptr = explode("/", isset($_SERVER['REQUEST_URI'])); ?>
+<?php
+$url_ptr = explode("/", isset($_SERVER['REQUEST_URI']));
+require_once('./utils/DB.php');
+$db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+$currentPhase = $db->getCurrentPhase(ECOMMERCE);
+$during = $currentPhase[0]["during"];
+var_dump($during);
+?>
 
 <div class="emms__calendar__tabs">
     <div class="emms__calendar__tab__list">
@@ -133,6 +140,9 @@
                                         <span><img src="src/img/flags/arg.png" alt="">(ARG) <?= $speaker['time'] ?></span>
                                         <a href="<?= $speaker['link_time'] ?>" target="_blank">Mira el horario de tu país</a>
                                     </div>
+                                <?php endif; ?>
+                                <?php if (($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop")) : ?>
+                                    <a href="<?= $speaker['youtube'] ?>" class="emms__cta  show--vip">ACCEDE AHORA</a>
                                 <?php endif; ?>
                             </div>
 
@@ -274,6 +284,9 @@
                                         <span><img src="src/img/flags/arg.png" alt="">(ARG) <?= $speaker['time'] ?></span>
                                         <a href="<?= $speaker['link_time'] ?>" target="_blank">Mira el horario de tu país</a>
                                     </div>
+                                <?php endif; ?>
+                                <?php if (($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop")) : ?>
+                                    <a href="<?= $speaker['youtube'] ?>" class="emms__cta  show--vip">ACCEDE AHORA</a>
                                 <?php endif; ?>
                             </div>
 

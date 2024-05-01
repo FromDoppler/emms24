@@ -43,18 +43,19 @@ require_once('././src/components/cacheSettings.php');
             </div>
         </div>
     <?php endif; ?>
-
+    <?php if ($ecommerceStates['isLive']) : ?>
+        <div class="emms__hellobar emms__hellobar--counter">
+            <div class="emms__hellobar__container emms__hellobar__container--during emms__fade-in">
+                <p><strong>🚨EMMS E-commerce: ¡ya estamos en vivo! 🚨 Conferencias gratuitas, workshops, networking y mucho más.</strong><a href="#registro">SÚMATE GRATIS</a></p>
+            </div>
+        </div>
+    <?php endif ?>
     <!-- Header -->
     <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
             <div class="emms__header__logo">
                 <a href="/"><img src="src/img/logos/logo-emms.png" alt="Emms 2024"></a>
             </div>
-            <?php if ($digitalTrendsStates['isLive']) : ?>
-                <div class="emms__header__live">
-                    <p>¡ESTAMOS EN VIVO EN EMMS DIGITAL TRENDS!</p>
-                </div>
-            <?php endif ?>
             <a class="emms__header__nav--mb" id="btn-burger"></a>
             <nav class="emms__header__nav emms__header__nav--hidden" id="nav-mb">
                 <ul class="emms__header__nav__menu">
@@ -107,10 +108,10 @@ require_once('././src/components/cacheSettings.php');
                 </div>
             <?php endif ?>
             <?php if ($ecommerceStates['isDuring']) : ?>
-                <div class="emms__home__hero__title emms__fade-top">
-                    <h1><em>LLEGÓ EL EVENTO DE MARKETING DIGITAL MÁS ESPERADO</em> Vuelve el EMMS, ¡recargado!</h1>
+                <div class="emms__home__hero__title emms__home__hero__title__during emms__fade-top">
+                    <h1><em>TODAS LAS TENDENCIAS DE MARKETING DIGITAL EN UN SOLO LUGAR</em> ¡Únete al EMMS E-commerce 2024!</h1>
                     <h2>ONLINE Y GRATUITO</h2>
-                    <p>Tras <strong>15 años</strong> como el evento líder en Latam y España, <strong>el EMMS evolucionó</strong>. Accede ahora a la <strong>última edición del año</strong> con 4 jornadas a puro aprendizaje, <strong>¡ya comenzó!</strong></p>
+                    <p>Revoluciona tu forma de hacer negocios y potencia tus resultados con el mayor evento de Latam y España. ¡Ya comenzó! Disfruta ahora de la <strong><a href="http://goemms.com/ecommerce">edición exclusiva sobre Comercio Electrónico y Retail.</a></strong></p>
                 </div>
             <?php endif ?>
             <?php if ($ecommerceStates['isPost']) : ?>
@@ -128,14 +129,20 @@ require_once('././src/components/cacheSettings.php');
                     <ul class="emms__eventCards__list emms__eventCards__list--dk emms__fade-in">
                         <li class="emms__eventCards__list__item">
                             <div class="emms__eventCards__list__item__picture">
-                                <img src="src/img/card-image-ecommerce.png" alt="Image Ecommerce">
+                                <?php if ($ecommerceStates['isLive']) : ?>
+                                    <div class="ribbon">
+                                        <span class="ribbon3"><img src="src/img/play.png" alt=""> EN VIVO</span>
+                                    </div>
+                                <?php endif ?>
+                                <img src="src/img/card-image-ecommerce.png" alt="Play icon">
                                 <?php if ($ecommerceStates['isPost']) : ?>
                                     <p class="top hide">EVENTO FINALIZADO</p>
                                 <?php endif ?>
                             </div>
+
                             <div class="emms__eventCards__list__item__text">
                                 <?php if ($ecommerceStates['isLive']) : ?>
-                                    <h3>EMMS E-commerce <span>EN VIVO</span></h3>
+                                    <!-- <h3>EMMS E-commerce <span>EN VIVO</span></h3> -->
                                 <?php else : ?>
                                     <h3>EMMS E-commerce </h3>
                                 <?php endif ?>
@@ -143,7 +150,8 @@ require_once('././src/components/cacheSettings.php');
                                     <p>Referentes internacionales de la industria te contarán qué <strong>tendencias y estrategias emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
                                 <?php endif ?>
                                 <?php if ($ecommerceStates['isDuring']) : ?>
-                                    <p>Súmate ahora y conoce <strong>qué tendencias y estrategias emplean los referentes de la industria en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
+                                    <p>Referentes internacionales de la industria te cuentan las <strong>tendencias y estrategias que emplean en sus Tiendas Online</strong>para captar nuevos clientes
+                                        y aumentar sus ingresos.  ¡Súmate ahora mismo!</p>
                                 <?php endif ?>
                                 <?php if ($ecommerceStates['isPost']) : ?>
                                     <p>Referentes internacionales de la industria comparten contigo las <strong>tendencias y estrategias que emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
@@ -152,9 +160,17 @@ require_once('././src/components/cacheSettings.php');
                                     <?php if ($ecommerceStates['isPre']) : ?>
                                         <a href="ecommerce" class="emms__cta">REGÍSTRATE GRATIS</a>
                                     <?php elseif ($ecommerceStates['isLive']) : ?>
-                                        <a href="ecommerce" class="emms__cta">ACCEDE AL VIVO</a>
+
+                                        <a href="ecommerce" class="emms__cta">
+                                            <img src="src/img/white-play.png" alt="Play icon">
+                                            <span> ÚNETE AL VIVO</span>
+                                        </a>
                                     <?php elseif ($ecommerceStates['isDuring']) : ?>
-                                        <a href="ecommerce" class="emms__cta">SÚMATE AHORA</a>
+                                        <a href="ecommerce" class="emms__cta">
+                                            <img src="src/img/white-play.png" alt="Play icon">
+
+                                            ÚNETE AL VIVO
+                                        </a>
                                     <?php elseif ($ecommerceStates['isPost']) : ?>
                                         <a href="ecommerce" class="emms__cta">REVIVE EL EVENTO</a>
                                     <?php endif ?>
@@ -174,7 +190,7 @@ require_once('././src/components/cacheSettings.php');
                                 <?php else : ?>
                                     <h3>EMMS Digital Trends </h3>
                                 <?php endif ?>
-                                <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores#ediciones-anteriores">reviviendo la edición 2024</a>.</strong></p>
+                                <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
                                 <div class="emms__eventCards__list__item__text--bottom">
                                     <?php if ($digitalTrendsStates['isPre']) : ?>
                                         <a class="emms__cta inactive">PRÓXIMAMENTE</a>
@@ -268,16 +284,16 @@ require_once('././src/components/cacheSettings.php');
         <section class="emms__centralvideo">
             <div class="emms__container--lg emms__container--lg--column">
                 <div class="emms__centralvideo__title emms__fade-in">
-                    <h2>Súmate al EMMS E-commerce y aprende con los
-                        mayores especialistas en venta electrónica
+                    <h2>Súmate ahora mismo al EMMS E-commerce y aprende con los mayores
+                        especialistas en venta electrónica. ¡Ya empezó!
                     </h2>
-                    <p>Descubre en este video todo lo que pasó en la última edición y por qué miles de profesionales <br>
+                    <p>Descubre en este video todo lo que pasó en la última edición y por qué miles de profesionales
                         y referentes en la industria eligen este evento para capacitarse.</p>
                 </div>
                 <div class="emms__centralvideo__video emms__fade-in">
                     <video src="src/img/EMMS-EcommerceHome.mp4" controls></video>
                 </div>
-                <a href="./ecommerce" class="emms__cta  emms__fade-in">RESERVA TU CUPO GRATIS</a>
+                <a href="./ecommerce" class="emms__cta  emms__fade-in">ACCEDE AL VIVO</a>
             </div>
         </section>
 
@@ -313,7 +329,7 @@ require_once('././src/components/cacheSettings.php');
 
 
         <!-- Speakers -->
-        <section class="emms__speakers emms__bg-section-3">
+        <section class="emms__speakers emms__speakers--during  emms__bg-section-3">
             <div class="emms__container--lg">
                 <h2 class="emms__fade-in">Algunos de los conferencistas que nos han acompañado en las últimas ediciones:</h2>
                 <div class="emms__speakerslist emms__fade-in">
@@ -390,11 +406,11 @@ require_once('././src/components/cacheSettings.php');
                         </li>
                     </ul>
                 </div>
-                <small class="emms__fade-in emms__speakers__home__message"><span>¡Ya llegó EMMS E-commerce 2024! Conoce la agenda <br>
-                        Seguimos confirmando más speakers, workshops y novedades para esta edición. <br>
-                        Quedan pocos días, regístrate gratis ahora y no te lo pierdas.</span>
+                <small class="emms__fade-in emms__speakers__home__message">
+                    <h3 class="emms__speakers__home__message__subTitle">¡Ve a la transmisión en directo del EMMS E-commerce y no te pierdas de nada!</h3>
+                    <span>Los máximos referentes en venta online y retail están esperando por ti… <br> Regístrate gratis ahora para descubrir las mejores estrategias del año.</span>
                 </small>
-                <a href="./ecommerce" class="emms__cta emms__fade-in">APÚNTATE GRATIS</a>
+                <a href="./ecommerce" class="emms__cta emms__fade-in">SUMATE GRATIS</a>
             </div>
         </section>
 
@@ -496,11 +512,11 @@ require_once('././src/components/cacheSettings.php');
         </section>
 
         <!-- Frequent Questions -->
-        <section class="emms__frequentquestions" id="preguntas-frecuentes">
+        <section class="emms__frequentquestions emms__frequentquestions--during" id="preguntas-frecuentes">
             <div class="emms__background-a"></div>
             <div class="emms__container--md">
                 <h2 class="emms__fade-in">Preguntas frecuentes</h2>
-                <ul class="emms__frequentquestions__list emms__fade-in">
+                <ul class="emms__frequentquestions__list emms__frequentquestions__list--during emms__fade-in">
                     <li class="emms__frequentquestions__list__item open">
                         <button class="emms__frequentquestions__list__item__head">🕵️‍♀️ ¿Por qué asistir al EMMS?</button>
                         <p class="emms__frequentquestions__list__item__content">Es el <strong>evento online y gratuito de Marketing Digital</strong> más importante de <strong>España y Latinoamérica</strong>. Cada año nos eligen expertos de compañías líderes de la industria para dar a conocer las principales tendencias en su sector.</p>

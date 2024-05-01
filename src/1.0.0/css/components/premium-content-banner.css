@@ -3,6 +3,10 @@
     position: relative;
 }
 
+.emms__premium-content.emms__premium-content--live {
+    padding: 40px 0 120px 0;
+}
+
 .emms__premium-content .emms__container--lg {
     display: flex;
     flex-wrap: wrap;
@@ -72,7 +76,7 @@
 
 @media(max-width:992px) {
 
-    .emms__premium-content__text h2{
+    .emms__premium-content__text h2 {
         font-size: 28px;
         line-height: 30px;
     }

@@ -16,7 +16,7 @@
     margin: 0 20px;
 }
 
-.emms__eventCards__list__item::before{
+.emms__eventCards__list__item::before {
     content: "";
     position: absolute;
     left: -5px;
@@ -49,7 +49,7 @@
     display: block;
 }
 
-.emms__eventCards__list__item__picture p{
+.emms__eventCards__list__item__picture p {
     font-size: 14px;
     font-weight: 600;
     padding: 4px 10px 4px 26px;
@@ -61,12 +61,12 @@
     z-index: 1;
 }
 
-.emms__eventCards__list__item__picture p.top{
+.emms__eventCards__list__item__picture p.top {
     top: 14px;
     bottom: auto;
 }
 
-.emms__eventCards__list__item__picture p::before{
+.emms__eventCards__list__item__picture p::before {
     content: "";
     position: absolute;
     left: 5px;
@@ -81,13 +81,26 @@
     padding: 29px 29px 120px 29px;
 }
 
+.emms__eventCards__list__item__text.emms__eventCards__list__item__text--during .successRegister {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 20px;
+    color: #000000;
+    margin: 15px 0px;
+}
+
+.emms__eventCards__list__item__text.emms__eventCards__list__item__text--during .successRegister span {
+    color: #7D04F6;
+}
+
 .emms__eventCards__list__item__text p {
     font-size: 14px;
     line-height: 20px;
     color: #525845;
 }
 
-.emms__eventCards__list__item__text p a{
+.emms__eventCards__list__item__text p a {
     color: #008046;
     text-decoration: underline;
 }
@@ -101,16 +114,101 @@
     position: relative;
 }
 
-.emms__eventCards__list__item__text h3 span{
+/* .emms__eventCards__list__item__text h3 span{
     font-size: 16px;
     font-weight: 700;
     color: #ED1E79;
     position: absolute;
     right: -8px;
     padding: 0 0 0 31px;
+} */
+
+
+.ribbon {
+    width: 48%;
+    position: absolute;
+    float: left;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: white;
+    bottom: 52px;
+    z-index: 9;
 }
 
-.emms__eventCards__list__item__text h3 span::before{
+.ribbon.ribbon--registered {
+    top: 186px;
+}
+
+.ribbon.ribbon--registered .ribbon3:after {
+    right: -13.5px;
+}
+
+.ribbon:nth-child(even) {
+    margin-right: 4%;
+}
+
+@media (max-width: 500px) {
+    .ribbon {
+        width: 100%;
+    }
+
+    .ribbon:nth-child(even) {
+        margin-right: 0%;
+    }
+}
+
+.ribbon3 img {
+    width: 21px;
+    height: 21px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.ribbon3 {
+    width: 110px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 15px;
+    position: absolute;
+    left: -16px;
+    top: 11px;
+    background: #79F66E;
+    color: #000000;
+    font-weight: 900;
+}
+
+.ribbon3:before,
+.ribbon3:after {
+    content: "";
+    position: absolute;
+}
+
+.ribbon3:before {
+    height: 0;
+    width: 0;
+    top: -9.5px;
+    left: 0.1px;
+    border-bottom: 9px solid black;
+    border-left: 9px solid transparent;
+}
+
+.ribbon3:after {
+    height: 0;
+    width: 0;
+    right: -14.5px;
+    border-top: 16px solid transparent;
+    border-bottom: 22px solid transparent;
+    border-left: 14px solid #79F66E;
+}
+
+
+.emms__eventCards__list__item__text h3 span {
+
+    background: #79F66E;
+
+}
+
+.emms__eventCards__list__item__text h3 span::before {
     content: "";
     position: absolute;
     left: 0;
@@ -147,13 +245,13 @@
     font-weight: 600;
 }
 
-.emms__eventCards__list__item__text--bottom .emms__cta{
+.emms__eventCards__list__item__text--bottom .emms__cta {
     padding: 20px 40px;
     min-width: 150px;
     text-align: center;
 }
 
-.emms__eventCards__list__item__text--bottom .emms__cta.inactive{
+.emms__eventCards__list__item__text--bottom .emms__cta.inactive {
     background: #CCCCCC;
     pointer-events: none;
 }
@@ -168,20 +266,21 @@
     }
 }
 
-@media(max-width:1280px){
-    .emms__eventCards__list__item__text h3{
+@media(max-width:1280px) {
+    .emms__eventCards__list__item__text h3 {
         font-size: 20px;
         line-height: 20px;
     }
 }
 
-@media(max-width:1100px){
+@media(max-width:1100px) {
     .emms__eventCards__list__item__text h3 span {
         font-size: 12px;
         right: -12px;
         padding: 0 0 0 27px;
     }
-    .emms__eventCards__list__item__text--bottom .emms__cta{
+
+    .emms__eventCards__list__item__text--bottom .emms__cta {
         padding: 20px 30px;
     }
 }
@@ -210,7 +309,7 @@
         box-shadow: none;
     }
 
-    .emms__eventCards__list::before{
+    .emms__eventCards__list::before {
         content: "";
         position: absolute;
         left: -5px;
@@ -225,7 +324,7 @@
     }
 
 
-    .emms__eventCards__list__item::before{
+    .emms__eventCards__list__item::before {
         display: none;
     }
 

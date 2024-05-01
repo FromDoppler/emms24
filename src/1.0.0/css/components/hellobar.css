@@ -14,7 +14,7 @@
     }
 }
 
-.emms__hellobar.fixed{
+.emms__hellobar.fixed {
     position: fixed;
     width: 100%;
     top: 0;
@@ -53,18 +53,36 @@
     transition-duration: .2s;
 }
 
+.emms__hellobar__container.emms__hellobar__container--during {
+    width: 100%;
+    max-width: 900px;
+}
+
+.emms__hellobar--counter .emms__hellobar__container.emms__hellobar__container--during a {
+    background-color: #79F66E;
+    color: #000000;
+    padding: 10px 70px;
+    text-decoration: underline;
+}
+
+.emms__hellobar--counter .emms__hellobar__container.emms__hellobar__container--during a:hover {
+    background-color: #61DB56;
+}
+
 .emms__hellobar__container a:hover {
     box-shadow: 0px 0px 7px rgba(85, 85, 85, 0.5);
     transition-duration: .2s;
 }
 
-@media(max-width: 992px){
-    .emms__hellobar__container{
+@media(max-width: 992px) {
+    .emms__hellobar__container {
         max-width: 500px;
     }
-    .emms__hellobar__container a{
+
+    .emms__hellobar__container a {
         margin: 0 0 0 10px;
     }
+
     .emms__hellobar {
         height: auto;
         padding: 10px 0;
@@ -88,15 +106,15 @@
 
 /* Hellobar with counter */
 
-.emms__hellobar--counter{
+.emms__hellobar--counter {
     background: linear-gradient(#DF24C1, #7D04F6);
 }
 
-.emms__hellobar--counter .emms__hellobar__container{
+.emms__hellobar--counter .emms__hellobar__container {
     gap: 30px;
 }
 
-.emms__hellobar--counter .emms__hellobar__container p{
+.emms__hellobar--counter .emms__hellobar__container p {
     color: #fff;
 }
 
@@ -110,22 +128,22 @@
     transition-duration: .2s;
 }
 
-.emms__hellobar--counter .emms__counter{
+.emms__hellobar--counter .emms__counter {
     margin: 0;
     height: 40px;
 }
 
-.emms__hellobar--counter .emms__counter li{
+.emms__hellobar--counter .emms__counter li {
     margin-right: 12px;
 }
 
-.emms__hellobar--counter .emms__counter li::after{
+.emms__hellobar--counter .emms__counter li::after {
     left: calc(100% + 6px);
     width: 4px;
     height: 11px;
 }
 
-.emms__hellobar--counter .emms__counter li div{
+.emms__hellobar--counter .emms__counter li div {
     width: 38px;
     height: 28px;
     border-radius: 3px;
@@ -133,7 +151,7 @@
     box-shadow: inset 0px 0px 0 1px #fff;
 }
 
-.emms__hellobar--counter .emms__counter li div span{
+.emms__hellobar--counter .emms__counter li div span {
     font-size: 20px;
     text-align: center;
     display: block;
@@ -154,13 +172,13 @@
     transform: translateX(-50%);
 }
 
-@media(max-width: 992px){
-    .emms__hellobar--counter .emms__hellobar__container{
+@media(max-width: 992px) {
+    .emms__hellobar--counter .emms__hellobar__container {
         max-width: initial;
     }
 }
 
-@media(max-width: 620px){
+@media(max-width: 620px) {
     .emms__hellobar--counter .emms__counter li:nth-child(1) {
         display: inline-block;
         margin: 0 5px 0 0;

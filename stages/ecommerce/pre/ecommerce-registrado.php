@@ -302,6 +302,7 @@ require_once('././src/components/cacheSettings.php');
 
 
         </div>
+
         <!-- Benefits Icons -->
         <section class="emms__benefits-icons show--vip">
             <div class="emms__container--lg">

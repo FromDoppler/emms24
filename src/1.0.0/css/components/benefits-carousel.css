@@ -2,6 +2,10 @@
     padding: 100px 0;
 }
 
+.emms__benefits-carousel.emms__benefits-carousel--live {
+    padding: 60px 0;
+}
+
 .emms__benefits-carousel__title{
     color: #fff;
     text-align: center;

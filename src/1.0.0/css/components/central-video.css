@@ -3,6 +3,10 @@
     position: relative;
 }
 
+.emms__centralvideo.emms__centralvideo--live {
+    margin-bottom: 60px;
+}
+
 .emms__container--lg--column .emms__centralvideo__video {
     padding-bottom: 30px;
     position: relative;
@@ -116,6 +120,14 @@ ul.emms__centralvideo__list li::before {
     background-size: contain;
 }
 
+ul.emms__centralvideo__list.emms__centralvideo__list--live li::before {
+    background: url("../../../img/icons/icon-check--black--rounded.svg") no-repeat;
+}
+
+.emms__centralvideo__list.emms__centralvideo__list--live li em {
+    color: #242424;
+    font-weight: bold;
+}
 
 .emms__centralvideo__list li em {
     font-style: normal;
@@ -133,6 +145,15 @@ ul.emms__centralvideo__list li::before {
     padding: 0 10px 0 37px;
     display: inline-block;
     margin: 0 0 30px 0;
+}
+
+.emms__centralvideo__tag-play.emms__centralvideo__tag-play--live {
+    background: #242424;
+}
+
+.emms__centralvideo__tag-play.emms__centralvideo__tag-play--live::after {
+    border-left: 15px solid #242424;
+
 }
 
 .emms__centralvideo__tag-play::after {
