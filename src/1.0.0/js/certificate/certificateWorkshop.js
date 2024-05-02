@@ -37,10 +37,6 @@ const startCertificateWorkshop = () => {
 
             certificateWorkshopButton.addEventListener('click', async (e) => {
                 toggleSpinner();
-                const certificateForm = document.getElementById('certificateForm');
-                const formData = new FormData(certificateForm);
-                const userName = formData.get('fullname');
-                changeUserUI(userName);
                 await submitCertificate(e, 'workshop', certificateWorkshopButton);
                 toggleSpinner();
             });

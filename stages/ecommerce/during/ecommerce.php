@@ -12,7 +12,6 @@ require_once('././src/components/cacheSettings.php');
         import {
             hiddenOrShowUserUI
         } from './src/<?= VERSION ?>/js/user.js';
-        hiddenOrShowUserUI('digital-trends');
     </script>
 </head>
 
@@ -82,7 +81,7 @@ require_once('././src/components/cacheSettings.php');
     <main>
 
         <!-- Hero with form-->
-        <section class="emms__hero-registration eventHiddenElements" id="registro">
+        <section class="emms__hero-registration" id="registro">
             <div class="emms__hero-registration__columns">
                 <div class="emms__hero-registration__text emms__hero-registration__text--live emms__fade-in">
                     <?php if ($ecommerceStates['isLive']) : ?>
