@@ -46,7 +46,7 @@ require_once('././src/components/cacheSettings.php');
     <?php if ($ecommerceStates['isLive']) : ?>
         <div class="emms__hellobar emms__hellobar--counter">
             <div class="emms__hellobar__container emms__hellobar__container--during emms__fade-in">
-                <p><strong>🚨EMMS E-commerce: ¡ya estamos en vivo! 🚨 Conferencias gratuitas, workshops, networking y mucho más.</strong><a href="#registro">SÚMATE GRATIS</a></p>
+                <p><strong>🚨EMMS E-commerce: ¡ya estamos en vivo! 🚨 Conferencias gratuitas, workshops, networking y mucho más.</strong><a href="./ecommerce">SÚMATE GRATIS</a></p>
             </div>
         </div>
     <?php endif ?>

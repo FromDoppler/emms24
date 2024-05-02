@@ -245,7 +245,7 @@ require_once('././src/components/cacheSettings.php');
             <div class="emms__container--lg">
                 <div class="emms__calendar__title emms__fade-in">
                     <h2>Agenda EMMS E-commerce 2024</h2>
-                    <p>La transmisión comienza a las 10:30hs a.m. (ARG). Si no eres de allí o estarás en otro lado, <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240502T1030&p1=51&ah=6"> mira el horario local</a></p>
+                    <p>Descubre aquí los speakers internacionales y las actividades exclusivas que te esperan en esta edición. </p>
                 </div>
                 <!-- Speakers -->
                 <?php include('./src/components/speakers.php') ?>
