@@ -40,6 +40,9 @@
     font-weight: 700;
 }
 
+.emms__plans__title.emms__plans__title--live p {
+    max-width: 701px;
+}
 
 
 /* Cards */
@@ -100,7 +103,7 @@
     align-items: center;
     text-align: center;
     color: #212121;
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .emms__plans__card__head__price p.emms__plans__card__head__price__discount {
@@ -184,7 +187,7 @@ margin-bottom: 10px;
     top: -3px;
     width: 24px;
     height: 24px;
-    background: url("../../../img/icons/icon-check--violet.svg") no-repeat;
+    background: url("../../../img/icons/icon-check--green.svg") no-repeat;
     background-size: contain;
 }
 

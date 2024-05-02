@@ -3,13 +3,22 @@
     padding: 220px 0;
 }
 
+.emms__hero-conference.emms__hero-conference--live {
+    background: #000 url(../../../img/back-hero-ecommerce--live.png) no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+    background-position-x: center;
+    padding: 180px 0;
+    position: relative;
+}
+
 .emms__hero-conference .emms__container--lg {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.emms__hero-conference .emms__container--lg .banner{
+.emms__hero-conference .emms__container--lg .banner {
     width: 100%;
 }
 
@@ -23,7 +32,7 @@
     animation-delay: .2s;
 }
 
-.emms__hero-conference__video--chat{
+.emms__hero-conference__video--chat {
     height: auto;
 }
 
@@ -107,6 +116,125 @@
     background-size: contain;
 }
 
+.live--certificate--container {
+    display: flex;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.live--certificate--container .certificate--modal-info {
+    flex: 2;
+    background: rgba(125, 4, 246, 0.8);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    min-height: 80px;
+}
+
+.live--certificate--container .certificate--modal-info.certificate--modal-info--live-off {
+    padding: 26px;
+    min-height: 70px;
+    max-width: 500px;
+}
+
+@media (max-width: 767px) {
+    .live--certificate--container {
+        flex-direction: column;
+    }
+
+    .certificate--modal-info,
+    .live--info-container {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.live--certificate--container .certificate--modal-info.certificate--modal-info--live-off p {
+    max-width: unset;
+}
+
+.live--certificate--container .certificate--modal-info.certificate--modal-info--live-off div {
+    display: inline-block;
+}
+
+.live--certificate--container .certificate--modal-info.certificate--modal-info--live-off div span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.live--certificate--container .certificate--modal-info.certificate--modal-info--live-off img {
+    vertical-align: top;
+    margin-top: 7px;
+}
+
+.live--certificate--container .certificate--modal-info img,
+.live--certificate--container .certificate--modal-info p {
+    display: inline-block;
+}
+
+.live--certificate--container .certificate--modal-info img {
+    width: 44px;
+    height: 56px;
+    margin-right: 18px;
+}
+
+.live--certificate--container .certificate--modal-info p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    max-width: 310px;
+}
+
+.live--certificate--container .certificate--modal-info p a {
+    color: #79F66E;
+    cursor: pointer;
+}
+
+.live--certificate--container .live--info-container {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.live--certificate--container .live--info-container h6 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.live--certificate--container .live--info-container .bubble__live_info {
+    background: #BD7AFF;
+    border-radius: 13px;
+    max-width: 200px;
+    width: fit-content;
+    padding: 4px 12px 4px 12px;
+    margin-bottom: 5px;
+}
+
+.live--certificate--container .live--info-container .bubble__live_info span,
+.live--certificate--container .live--info-container .bubble__live_info img {
+    display: inline-block;
+}
+
+.live--certificate--container .live--info-container .bubble__live_info img {
+    width: 16px;
+    height: 13px;
+}
+
+.live--certificate--container .live--info-container .bubble__live_info span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+
 .emms__hero-conference__certificate a {
     font-weight: 700;
     color: #33AD73;
@@ -182,16 +310,23 @@
 /* ---------------- With chat ---------------- */
 
 .emms__hero-conference--chat h1 {
-    font-size: 22px;
+    font-style: normal;
     font-weight: 700;
-    color: #ED1E79;
-    position: relative;
-    padding: 0 0 0 31px;
-    margin: 0 0 20px 0;
-    width: 70%;
+    font-size: 49px;
+    line-height: 55px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
 }
 
-.emms__hero-conference--chat h1::before {
+.emms__hero-conference--chat h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+/* .emms__hero-conference--chat h1::before {
     content: "";
     position: absolute;
     left: 0;
@@ -200,7 +335,7 @@
     height: 13px;
     background: url("../../../img/icons/icon-live.svg") no-repeat;
     background-size: contain;
-}
+} */
 
 @media(max-width:992px) {
 
@@ -320,12 +455,15 @@
 
 .emms__hero-conference__video.emms__hero-conference__video--transition {
     background: #fff;
-    padding: 150px 50px 150px 120px;
     box-sizing: border-box;
     position: relative;
 }
 
-.emms__hero-conference__video.emms__hero-conference__video--transition::before {
+.emms__hero-conference__video.emms__hero-conference__video--transition img {
+    width: 100%;
+}
+
+/* .emms__hero-conference__video.emms__hero-conference__video--transition::before {
     content: "";
     position: absolute;
     left: -185px;
@@ -334,7 +472,7 @@
     height: 443px;
     background: url("../../../img/mic2.png") no-repeat;
     background-size: contain;
-}
+} */
 
 .emms__hero-conference__video.emms__hero-conference__video--transition h2 {
     font-size: 44px;
@@ -362,21 +500,25 @@
 .emms__hero-conference__aside.emms__hero-conference__aside--transition p {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 15px;
     color: #fff;
 }
 
-.emms__hero-conference__aside.emms__hero-conference__aside--transition p a{
-    color: #008046;
+.emms__hero-conference__aside.emms__hero-conference__aside--transition p a {
+    color: #79F66E;
+    text-decoration: underline;
     font-weight: 700;
 }
 
-.emms__hero-conference__aside.emms__hero-conference__aside--transition p a:hover{
+.emms__hero-conference__aside.emms__hero-conference__aside--transition p a:hover {
     text-decoration: underline;
 }
 
 .emms__hero-conference__aside.emms__hero-conference__aside--transition .emms__cta {
     margin: 34px 0 0 0;
     text-align: center;
+    /* text-decoration: underline; */
+    /* text-decoration-thickness: 0.5px; */
 }
 
 @media(max-width:1100px) {
@@ -418,14 +560,16 @@
     }
 }
 
-@media(max-width:620px){
+@media(max-width:620px) {
     .emms__hero-conference__video.emms__hero-conference__video--transition {
         padding: 70px 50px 70px 60px;
     }
+
     .emms__hero-conference__video.emms__hero-conference__video--transition h2 {
         font-size: 20px;
         line-height: 24px;
     }
+
     .emms__hero-conference__video.emms__hero-conference__video--transition small {
         font-size: 13px;
     }

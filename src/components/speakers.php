@@ -1,8 +1,16 @@
-<?php $url_ptr = explode("/", isset($_SERVER['REQUEST_URI'])); ?>
+<?php
+$url_ptr = explode("/", isset($_SERVER['REQUEST_URI']));
+?>
 
 <div class="emms__calendar__tabs">
     <div class="emms__calendar__tab__list">
-        <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day1">02 de mayo</button>
+        <?php if ($ecommerceStates['isPre'] || $ecommerceStates['isLive']) : ?>
+            <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day1">02 de mayo</button>
+        <?php endif ?>
+
+        <?php if ($ecommerceStates['isTransition']) : ?>
+            <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day1">02 de mayo - finalizado</button>
+        <?php endif ?>
         <button class="emms__calendar__tab" role="tab" aria-selected="false" id="day2">03 de mayo</button>
     </div>
 
@@ -12,9 +20,18 @@
     <div class="emms__container--lg" role="tabpanel" aria-labelledby="day1">
         <div class="emms__calendar__date emms__fade-in">
             <div class="emms__calendar__date__country">
-                <p>La transmisión en vivo dará inicio</p>
-                <span><img src="src/img/flag-argentina.png" alt="Argentina">(ARG) 10:30</span>
-                <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240502T1030&p1=51&ah=6" target="_blank">Mira el horario de tu país</a>
+
+                <?php if ($ecommerceStates['isPre']) : ?>
+                    <p>La transmisión en vivo dará inicio</p>
+                    <span><img src="src/img/flag-argentina.png" alt="Argentina">(ARG) 10:30</span>
+                    <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240502T1030&p1=51&ah=6" target="_blank">Mira el horario de tu país</a>
+                <?php endif ?>
+                <?php if ($ecommerceStates['isLive']) : ?>
+                    <span><img src="src/img/flag-argentina.png" alt="Argentina"><p>A partir de las 10:30hs a.m (PAÍS). Si no eres de allí o estarás en otro lado</p></span>
+                    <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240502T1030&p1=51&ah=6" target="_blank">Mira el horario de tu país</a> <?php endif ?>
+                <?php if ($ecommerceStates['isTransition']) : ?>
+                    <p>El primer día ya ha finalizado ¡pero puedes registrarte y acceder a todas las grabaciones! </p>
+                <?php endif ?>
             </div>
         </div>
         <?php
@@ -133,6 +150,9 @@
                                         <span><img src="src/img/flags/arg.png" alt="">(ARG) <?= $speaker['time'] ?></span>
                                         <a href="<?= $speaker['link_time'] ?>" target="_blank">Mira el horario de tu país</a>
                                     </div>
+                                <?php endif; ?>
+                                <?php if (($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop")) : ?>
+                                    <a href="<?= $speaker['youtube'] ?>" class="emms__cta  show--vip">ACCEDE AHORA</a>
                                 <?php endif; ?>
                             </div>
 
@@ -274,6 +294,9 @@
                                         <span><img src="src/img/flags/arg.png" alt="">(ARG) <?= $speaker['time'] ?></span>
                                         <a href="<?= $speaker['link_time'] ?>" target="_blank">Mira el horario de tu país</a>
                                     </div>
+                                <?php endif; ?>
+                                <?php if (($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop")) : ?>
+                                    <a href="<?= $speaker['youtube'] ?>" class="emms__cta  show--vip">ACCEDE AHORA</a>
                                 <?php endif; ?>
                             </div>
 
