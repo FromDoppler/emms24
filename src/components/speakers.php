@@ -154,7 +154,7 @@ $url_ptr = explode("/", isset($_SERVER['REQUEST_URI']));
                                     </div>
                                 <?php endif; ?>
                                 <?php if (($speaker['exposes'] === "networking") || ($speaker['exposes'] === "workshop")) : ?>
-                                    <a href="<?= $speaker['youtube'] ?>" class="emms__cta  show--vip" style="margin-top:15px">ACCEDE AHORA</a>
+                                    <a href="<?= $speaker['youtube'] ?>" class="emms__cta  show--vip">ACCEDE AHORA</a>
                                 <?php endif; ?>
                             </div>
 
@@ -298,7 +298,7 @@ $url_ptr = explode("/", isset($_SERVER['REQUEST_URI']));
                                     </div>
                                 <?php endif; ?>
                                 <?php if (($speaker['exposes'] === "networking") || ($speaker['exposes'] === "workshop")) : ?>
-                                    <a href="<?= $speaker['youtube'] ?>" class="emms__cta  show--vip" style="margin-top:15px">ACCEDE AHORA</a>
+                                    <a href="<?= $speaker['youtube'] ?>" class="emms__cta  show--vip">ACCEDE AHORA</a>
                                 <?php endif; ?>
                             </div>
 
@@ -460,7 +460,7 @@ $url_ptr = explode("/", isset($_SERVER['REQUEST_URI']));
                                     </div>
                                 <?php endif; ?>
                                 <?php if (($speaker['exposes'] === "networking") || ($speaker['exposes'] === "workshop")) : ?>
-                                    <a href="<?= $speaker['youtube'] ?>" class="emms__cta  show--vip" style="margin-top:15px">ACCEDE AHORA</a>
+                                    <a href="<?= $speaker['youtube'] ?>" class="emms__cta  show--vip">ACCEDE AHORA</a>
                                 <?php endif; ?>
                             </div>
 
@@ -601,7 +601,7 @@ $url_ptr = explode("/", isset($_SERVER['REQUEST_URI']));
                                     </div>
                                 <?php endif; ?>
                                 <?php if (($speaker['exposes'] === "networking") || ($speaker['exposes'] === "workshop")) : ?>
-                                    <a href="<?= $speaker['youtube'] ?>" class="emms__cta  show--vip" style="margin-top:15px">ACCEDE AHORA</a>
+                                    <a href="<?= $speaker['youtube'] ?>" class="emms__cta  show--vip">ACCEDE AHORA</a>
                                 <?php endif; ?>
                             </div>
 
