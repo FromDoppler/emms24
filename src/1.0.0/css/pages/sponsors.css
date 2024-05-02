@@ -83,7 +83,7 @@
 
 @media(max-width:620px) {
     .emms__sponsors__hero>div {
-      padding: 0px 40px;
+        padding: 0px 40px;
     }
 
     .emms__sponsors__hero {
@@ -390,6 +390,10 @@
     min-height: 40px;
     font-size: 26px;
     line-height: 34px;
+}
+
+.emms__conferences__cards h4.shortTitle {
+    margin-bottom: 50px;
 }
 
 .emms__conferences__cards p {
