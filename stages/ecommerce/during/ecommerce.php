@@ -348,7 +348,12 @@ require_once('././src/components/cacheSettings.php');
                         <p>Conoce en este video qué hace al EMMS E-commerce
                             el lugar ideal para capacitarte y aprender cómo escalar
                             tu tienda junto a los líderes del sector.</p>
-                        <a href="#registro" class="emms__cta">ÚNETE AL VIVO</a>
+                        <?php if ($ecommerceStates['isLive']) : ?>
+                            <a href="#registro" class="emms__cta">ÚNETE AL VIVO</a>
+                        <?php endif ?>
+                        <?php if ($ecommerceStates['isTransition']) : ?>
+                            <a href="#registro" class="emms__cta">SÚMATE AHORA</a>
+                        <?php endif ?>
                     </div>
                     <div class="emms__centralvideo__video emms__fade-in">
                         <video src="src/img/EMMS-EcommerceHome.mp4" controls></video>

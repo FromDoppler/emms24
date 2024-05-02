@@ -27,12 +27,15 @@ $url_ptr = explode("/", isset($_SERVER['REQUEST_URI']));
                     <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240502T1030&p1=51&ah=6" target="_blank">Mira el horario de tu país</a>
                 <?php endif ?>
                 <?php if ($ecommerceStates['isLive']) : ?>
+                    <p> A partir de las</p>
                     <span><img src="src/img/flag-argentina.png" alt="Argentina">
-                        <p>A partir de las 10:30hs a.m (ARG). Si no eres de allí o estarás en otro lado</p>
+                        (ARG) 10:30</p>
                     </span>
+                    <p>. Si no eres de allí o estarás en otro lado
+                    </p>
                     <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240502T1030&p1=51&ah=6" target="_blank">Mira el horario de tu país</a> <?php endif ?>
                 <?php if ($ecommerceStates['isTransition']) : ?>
-                    <p>El primer día ya ha finalizado ¡pero puedes registrarte y acceder a todas las grabaciones! </p>
+                    <p>El primer día ya ha finalizado ¡pero puedes registrarte y acceder a todas las grabaciones pronto! </p>
                 <?php endif ?>
             </div>
         </div>

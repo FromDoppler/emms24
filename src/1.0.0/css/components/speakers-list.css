@@ -40,11 +40,6 @@
     max-width: unset;
 }
 
-.emms__speakers.emms__speakers--during .emms__cta {
-    text-decoration: underline;
-    text-decoration-thickness: 0.5px;
-}
-
 .emms__speakers__home__message .emms__speakers__home__message__subTitle {
     font-style: normal;
     font-weight: 700;

@@ -107,14 +107,12 @@ p {
 }
 
 .emms__cta span {
-    text-decoration: underline;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
-    text-underline-offset: 2px;
 }
 
 .emms__cta.emms__cta--nd {
@@ -124,7 +122,6 @@ p {
     box-shadow: 0px 0px 0 1px #33AD73;
     transition-duration: 0.2s;
     font-weight: 600;
-    text-decoration: underline;
 }
 
 .emms__cta.emms__cta--nd:hover {

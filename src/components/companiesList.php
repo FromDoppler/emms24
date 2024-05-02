@@ -40,6 +40,6 @@
              <ul class="emms__companies__list emms__companies__list  emms__fade-in" id="mediaPartenersStarters">
              </ul>
              <small class="emms__fade-in"><strong>¿Tienes dudas sobre el EMMS? <a href="https://goemms.com/#preguntas-frecuentes"> Haz clic aquí </a>y encuentra las preguntas más frecuentes sobre el evento</strong></small>
-             <a href="https://goemms.com/sponsors-promo" class="emms__cta">CONVIERTETE EN SPONSOR</a>
+             <a href="https://goemms.com/sponsors-promo" class="emms__cta">CONVIÉRTETE EN ALIADO</a>
          </div>
      </section>
