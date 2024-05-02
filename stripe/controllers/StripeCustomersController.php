@@ -114,7 +114,7 @@ class StripeCustomersController
             'tiketType' => 'ecommerceVip',
             'form_id' => "pre",
             'list' => $listId,
-            'subject' => "Compraste!"
+            'subject' => "#EMMS2024 - Compraste tu entrada vip!"
         ];
     }
 

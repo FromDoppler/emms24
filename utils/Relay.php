@@ -31,7 +31,8 @@ class Relay
                 'during' => 'getDigitalTEmailTemplateDuring',
                 'post' => 'getDigitalTEmailTemplatePost',
             ],
-            'ecommerceVip' => 'getEcommerceVipTemplate',
+            'ecommerceVip' => 'getEcommerceVipEmailTemplateDuring',
+            'ecommerceVipDuring' => 'getEcommerceVipEmailTemplateDuring',
         ];
 
         if (isset($user['tiketType']) && isset($templateMappings[$user['tiketType']])) {
@@ -199,6 +200,19 @@ class Relay
     public static function getEcommerceVipTemplate($encodeEmail, $user)
     {
         $templateName = 'ecommerce-vip-template.html';
+        $userData = [
+            '$encodeEmail' => $encodeEmail,
+            'type' => $user['tiketType'],
+            'paymentMethod' =>  $user['payment_status'],
+            'date' => $user['register'],
+            'amount' => $user['final_price'],
+        ];
+        return self::getTemplate('ecommerce', $templateName, $encodeEmail, $userData);
+    }
+
+    public static function getEcommerceVipEmailTemplateDuring($encodeEmail, $user)
+    {
+        $templateName = 'ecommerce-during-vip-template.html';
         $userData = [
             '$encodeEmail' => $encodeEmail,
             'type' => $user['tiketType'],
