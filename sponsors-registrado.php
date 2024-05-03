@@ -152,7 +152,7 @@ require_once('././src/components/cacheSettings.php');
                                     <h4>Buenas prácticas de comunicación para vender online</h4>
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/imagetest.png" alt="Imagen blanca">
+                                        <img src="src/img/conferences24/logos/gobots-card.png" alt="Gobots Logo">
                                     </div>
                                 </div>
                             </a>
