@@ -50,6 +50,13 @@ require_once('././src/components/cacheSettings.php');
             </div>
         </div>
     <?php endif ?>
+    <?php if ($ecommerceStates['isTransition']) : ?>
+        <div class="emms__hellobar emms__hellobar--counter">
+            <div class="emms__hellobar__container emms__hellobar__container--during emms__fade-in">
+                <p>¡No te pierdas el EMMS E-commerce! Únete a otra jornada con más conferencias gratuitas y workshops.</strong><a href="./ecommerce">REGÍSTRATE GRATIS</a></p>
+            </div>
+        </div>
+    <?php endif ?>
     <!-- Header -->
     <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
@@ -165,11 +172,10 @@ require_once('././src/components/cacheSettings.php');
                                             <img src="src/img/white-play.png" alt="Play icon">
                                             <span> ÚNETE AL VIVO</span>
                                         </a>
-                                    <?php elseif ($ecommerceStates['isDuring']) : ?>
+                                    <?php elseif ($ecommerceStates['isTransition']) : ?>
                                         <a href="ecommerce" class="emms__cta">
                                             <img src="src/img/white-play.png" alt="Play icon">
-
-                                            ÚNETE AL VIVO
+                                            REGÍSTRATE GRATIS
                                         </a>
                                     <?php elseif ($ecommerceStates['isPost']) : ?>
                                         <a href="ecommerce" class="emms__cta">REVIVE EL EVENTO</a>
@@ -244,11 +250,10 @@ require_once('././src/components/cacheSettings.php');
                                             <img src="src/img/white-play.png" alt="Play icon">
                                             <span> ÚNETE AL VIVO</span>
                                         </a>
-                                    <?php elseif ($ecommerceStates['isDuring']) : ?>
+                                    <?php elseif ($ecommerceStates['isTransition']) : ?>
                                         <a href="ecommerce" class="emms__cta">
                                             <img src="src/img/white-play.png" alt="Play icon">
-
-                                            ÚNETE AL VIVO
+                                            REGÍSTRATE GRATIS
                                         </a>
                                     <?php elseif ($ecommerceStates['isPost']) : ?>
                                         <a href="ecommerce" class="emms__cta">REVIVE EL EVENTO</a>
@@ -303,7 +308,12 @@ require_once('././src/components/cacheSettings.php');
                 <div class="emms__centralvideo__video emms__fade-in">
                     <video src="src/img/EMMS-EcommerceHome.mp4" controls></video>
                 </div>
-                <a href="./ecommerce" class="emms__cta  emms__fade-in">ACCEDE AL VIVO</a>
+                <?php if ($ecommerceStates['isLive']) : ?>
+                    <a href="./ecommerce" class="emms__cta  emms__fade-in">ACCEDE AL VIVO</a>
+                <?php endif ?>
+                <?php if ($ecommerceStates['isTransition']) : ?>
+                    <a href="./ecommerce" class="emms__cta  emms__fade-in">REGÍSTRATE GRATIS</a>
+                <?php endif ?>
             </div>
         </section>
 
@@ -341,7 +351,12 @@ require_once('././src/components/cacheSettings.php');
         <!-- Speakers -->
         <section class="emms__speakers emms__speakers--during  emms__bg-section-3">
             <div class="emms__container--lg">
-                <h2 class="emms__fade-in">Algunos de los conferencistas que nos han acompañado en las últimas ediciones:</h2>
+                <?php if ($ecommerceStates['isLive']) : ?>
+                    <h2 class="emms__fade-in">Algunos de los conferencistas que nos han acompañado en las últimas ediciones:</h2>
+                <?php endif ?>
+                <?php if ($ecommerceStates['isTransition']) : ?>
+                    <h2 class="emms__fade-in">¡No te pierdas de nada en el EMMS E-commerce 2024!</h2>
+                <?php endif ?>
                 <div class="emms__speakerslist emms__fade-in">
                     <ul class="main-carousel" data-flickity='{ "initialIndex": ".is-initial-select", "wrapAround": "true" }'>
                         <li class="emms__speakerslist__item">
@@ -537,11 +552,11 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">📅 ¿Cuándo se realizará el EMMS 2024?</button>
-                        <p class="emms__frequentquestions__list__item__content">El EMMS 2024 constará de 2 ediciones: <strong>E-commerce y Digital Trends</strong>, a realizarse en <strong>abril y noviembre</strong>, respectivamente. Registrándote al evento recibirás por Email todos las novedades.</p>
+                        <p class="emms__frequentquestions__list__item__content">El EMMS 2024 constará de 2 ediciones: <strong>E-commerce y Digital Trends</strong>.Registrándote al evento recibirás por Email todos las novedades.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">📍 ¿Dónde serán los eventos?</button>
-                        <p class="emms__frequentquestions__list__item__content">El EMMS es un evento online. Es decir, podrás verlo desde cualquier dispositivo, estés donde estés e incluso volver a ver las <strong><a href="./ediciones-anteriores">ediciones anteriores</a></strong>.</p>
+                        <p class="emms__frequentquestions__list__item__content">El EMMS es un evento online. Es decir, podrás verlo desde cualquier dispositivo, estés donde estés e incluso volver a ver las <strong><a href="./ediciones-anteriores">ediciones anteriores</a></strong>. Ingresa ahora mismo a <a href="./ecommerce">este enlace</a> para registrarte y ver la transmisión en vivo de la edición E-commerce.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">💵 ¿Tengo que pagar inscripción?</button>
@@ -557,7 +572,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">🎥 ¿Están disponibles las grabaciones después del evento?</button>
-                        <p class="emms__frequentquestions__list__item__content">Las conferencias de las ediciones pasadas están grabadas y puedes acceder a ellas desde esta misma Web. Elige Digital Trends, E-commerce o dirígete en la navigation bar a la sección Qué es el EMMS para ver ediciones anteriores.</p>
+                        <p class="emms__frequentquestions__list__item__content">Las conferencias de las ediciones pasadas están grabadas y puedes acceder a ellas desde esta misma Web. Elige Digital Trends, E-commerce o dirígete en la navigation bar a la sección Qué es el EMMS para ver ediciones anteriores.Si te has registrado, una vez finalizada la edición E-commerce, te avisaremos por correo electrónico apenas se encuentren disponibles los contenidos on-demand.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">🤔 Me apunté al evento y aún no recibí el Email de confirmación, ¿qué hago?</button>

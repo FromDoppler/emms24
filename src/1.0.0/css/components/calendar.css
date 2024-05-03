@@ -362,6 +362,10 @@
     min-height: 220px;
 }
 
+.emms__calendar__list__item__card__description .emms__cta.show--vip {
+    margin-top: 15px
+}
+
 .emms__calendar__list__item__card__description h3 {
     font-size: 22px;
     line-height: 32px;

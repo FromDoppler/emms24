@@ -34,7 +34,22 @@ require_once('././src/components/cacheSettings.php');
             </div>
         </div>
     <?php endif ?>
+    <?php if ($ecommerceStates['isTransition']) : ?>
+        <div class="emms__hellobar emms__hellobar--counter  hidden--vip">
+            <div class="emms__hellobar__container emms__hellobar__container--during emms__fade-in">
+                <p><strong>🎫¡Quedan pocas! Consigue tu entrada VIP para sumarte a las actividades exclusivas</strong><a href="#entradas">HAZTE VIP</a></p>
+            </div>
+        </div>
+    <?php endif ?>
     <!-- Header -->
+
+    <?php if ($ecommerceStates['isTransition']) : ?>
+        <div class="emms__hellobar emms__hellobar--counter show--vip">
+            <div class="emms__hellobar__container emms__hellobar__container--during emms__fade-in">
+                <p><strong>⭐ ¡No te pierdas las actividades VIP! Encuentra los links en la agenda para unirte a los Workshops del EMMS E-commerce.</strong><a href="#agenda" class="small">MIRA LA AGENDA</a></p>
+            </div>
+        </div>
+    <?php endif ?>
     <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
             <div class="emms__header__logo emms__header__logo--ecommerce">
@@ -117,7 +132,7 @@ require_once('././src/components/cacheSettings.php');
                     <img src="src/img/banner-technical-error.png" alt="Errores técnicos" class="banner">
                 <?php elseif (($settings_phase['event'] === "ecommerce24") && ($settings_phase['during'] === 1) && ($settings_phase['transition'] === "live-off")) : ?>
                     <h2>PREPÁRATE PARA EL DÍA 2</h2>
-                    <h1 class="emms__fade-in">¡Pronto seguimos con más EMMS E-commerce</h1>
+                    <h1 class="emms__fade-in">¡Pronto seguimos con más EMMS E-commerce!</h1>
                     <div class="emms__hero-conference__video emms__hero-conference__video--transition emms__fade-in">
                         <img src="../../../../../src/img/placa.png" alt="Preparata para el día 2!">
                     </div>

@@ -54,7 +54,13 @@ require_once('././src/components/cacheSettings.php');
             </div>
         </div>
     <?php endif ?>
-
+    <?php if ($ecommerceStates['isTransition']) : ?>
+        <div class="emms__hellobar emms__hellobar--counter">
+            <div class="emms__hellobar__container emms__hellobar__container--during emms__fade-in">
+                <p><strong>EMMS E-commerce: Únete a otra jornada con más conferencias gratuitas y workshops.</strong><a href="#registro">MIRA LA TRANSMISIÓN</a></p>
+            </div>
+        </div>
+    <?php endif ?>
     <!-- Header -->
     <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
@@ -165,7 +171,7 @@ require_once('././src/components/cacheSettings.php');
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS E-commerce</h3>
                                         <p>Referentes internacionales de la industria <strong>te cuentan las tendencias y estrategias que emplean en sus Tiendas Online</strong>para captar nuevos clientes
-                                            y aumentar sus ingresos. . ¡Súmate ahora mismo!</p>
+                                            y aumentar sus ingresos. ¡Súmate ahora mismo!</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="ecommerce" class="emms__cta">SÚMATE AHORA</a>
                                         </div>
@@ -198,7 +204,7 @@ require_once('././src/components/cacheSettings.php');
                                         <p>Referentes internacionales de la industria
                                             <strong>te cuentan las tendencias y estrategias que emplean en sus Tiendas Online</strong>
                                             para captar nuevos clientes
-                                            y aumentar sus ingresos. . ¡Súmate ahora mismo!
+                                            y aumentar sus ingresos. ¡Súmate ahora mismo!
                                         </p>
                                         <p class="successRegister">
                                             <span>🗹</span>
@@ -221,7 +227,7 @@ require_once('././src/components/cacheSettings.php');
                                         <p>Referentes internacionales de la industria
                                             <strong>te cuentan las tendencias y estrategias que emplean en sus Tiendas Online</strong>
                                             para captar nuevos clientes
-                                            y aumentar sus ingresos. . ¡Súmate ahora mismo!
+                                            y aumentar sus ingresos. ¡Súmate ahora mismo!
                                         </p>
                                         <p class="successRegister">
                                             <span>🗹</span>
@@ -497,7 +503,7 @@ require_once('././src/components/cacheSettings.php');
                                     <div class="emms__eventCards__list__item__text">
                                         <h3>EMMS E-commerce</h3>
                                         <p>Referentes internacionales de la industria <strong>te cuentan las tendencias y estrategias que emplean en sus Tiendas Online</strong>para captar nuevos clientes
-                                            y aumentar sus ingresos. . ¡Súmate ahora mismo!</p>
+                                            y aumentar sus ingresos. ¡Súmate ahora mismo!</p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="ecommerce" class="emms__cta">SÚMATE AHORA</a>
                                         </div>
@@ -530,7 +536,7 @@ require_once('././src/components/cacheSettings.php');
                                         <p>Referentes internacionales de la industria
                                             <strong>te cuentan las tendencias y estrategias que emplean en sus Tiendas Online</strong>
                                             para captar nuevos clientes
-                                            y aumentar sus ingresos. . ¡Súmate ahora mismo!
+                                            y aumentar sus ingresos. ¡Súmate ahora mismo!
                                         </p>
                                         <p class="successRegister">
                                             <span>🗹</span>
@@ -553,7 +559,7 @@ require_once('././src/components/cacheSettings.php');
                                         <p>Referentes internacionales de la industria
                                             <strong>te cuentan las tendencias y estrategias que emplean en sus Tiendas Online</strong>
                                             para captar nuevos clientes
-                                            y aumentar sus ingresos. . ¡Súmate ahora mismo!
+                                            y aumentar sus ingresos. ¡Súmate ahora mismo!
                                         </p>
                                         <p class="successRegister">
                                             <span>🗹</span>
@@ -739,7 +745,7 @@ require_once('././src/components/cacheSettings.php');
                     </ul>
                 </div>
                 <h4>Los máximos referentes en venta online y retail están esperando por ti… <br> 
-                    "Descubre las mejores estrategias del año en la transmisión en directo del EMMS E-commerce.
+                    Descubre las mejores estrategias del año en la transmisión en directo del EMMS E-commerce.
                 </h4>
             </div>
         </section>
@@ -858,7 +864,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">📅 ¿Cuándo se realizará el EMMS 2024?</button>
-                        <p class="emms__frequentquestions__list__item__content">El EMMS 2024 constará de 2 ediciones: <strong>E-commerce y Digital Trends</strong>, a realizarse en <strong>abril y noviembre</strong>, respectivamente. Registrándote al evento recibirás por Email todos las novedades.</p>
+                        <p class="emms__frequentquestions__list__item__content">El EMMS 2024 constará de 2 ediciones: <strong>E-commerce y Digital Trends</strong>.Registrándote al evento recibirás por Email todos las novedades.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">📍 ¿Dónde serán los eventos?</button>
@@ -878,7 +884,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">🎥 ¿Están disponibles las grabaciones después del evento?</button>
-                        <p class="emms__frequentquestions__list__item__content">Las conferencias de las ediciones pasadas están grabadas y puedes acceder a ellas desde esta misma Web. Elige Digital Trends, E-commerce o dirígete en la navigation bar a la sección Qué es el EMMS para ver ediciones anteriores.</p>
+                        <p class="emms__frequentquestions__list__item__content">Las conferencias de las ediciones pasadas están grabadas y puedes acceder a ellas desde esta misma Web. Elige Digital Trends, E-commerce o dirígete en la navigation bar a la sección Qué es el EMMS para ver ediciones anteriores.Si te has registrado, una vez finalizada la edición E-commerce, te avisaremos por correo electrónico apenas se encuentren disponibles los contenidos on-demand.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">🤔 Me apunté al evento y aún no recibí el Email de confirmación, ¿qué hago?</button>

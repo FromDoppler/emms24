@@ -62,7 +62,10 @@
     background-color: #79F66E;
     color: #000000;
     padding: 10px 70px;
-    text-decoration: underline;
+}
+
+.emms__hellobar--counter .emms__hellobar__container.emms__hellobar__container--during a.small {
+    padding: 10px 38px;
 }
 
 .emms__hellobar--counter .emms__hellobar__container.emms__hellobar__container--during a:hover {
