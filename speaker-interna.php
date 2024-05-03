@@ -10,7 +10,7 @@ if (!isset($_GET['slug']) or (trim($_GET['slug']) === '')) {
 $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 $speaker = $db->getSpeakerBySlug($_GET['slug'])[0];
 $db->close();
-$event = $_GET['event'];
+// $event = $_GET['event'];
 ?>
 
 <!DOCTYPE html>
@@ -26,9 +26,25 @@ $event = $_GET['event'];
     <!-- Header -->
     <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
-            <div class="emms__header__logo">
-                <a href="/"><img src="src/img/logos/logo-emms.png" alt="Emms 2024"></a>
+            <div class="emms__header__logo emms__header__logo--ecommerce">
+                <a href="/"><img src="src/img/logos/logo-emms-ecommerce.png" alt="Emms Ecommerce 2024"></a>
             </div>
+            <a class="emms__header__nav--mb" id="btn-burger"></a>
+            <nav class="emms__header__nav emms__header__nav--hidden" id="nav-mb">
+                <ul class="emms__header__nav__menu">
+                    <li><a href="/">home</a></li>
+                    <li><a href="/ecommerce" class="active">e-commerce</a>
+                    </li>
+                    <li><a href="/sponsors">biblioteca de recursos</a></li>
+                    <li class="emms__header__nav__menu__dropdown"><a href="./ediciones-anteriores">Qué es el EMMS</a>
+                        <ul class="emms__header__nav__submenu">
+                            <li><a href="./ediciones-anteriores#sobre-emms">Sobre el EMMS</a></li>
+                            <li><a href="./ediciones-anteriores#ediciones-anteriores">Revive ediciones anteriores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/sponsors-promo">sponsors</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -188,7 +204,68 @@ $event = $_GET['event'];
                         <?php endif; ?>
                     </ul>
                 </div>
-                <p class="emms__hero-conference__certificate emms__fade-in">Descarga <a data-target="certificateModal" data-toggle="emms__certificate-modal">aquí</a> tu Certificado de Asistencia y compártelo en Redes Sociales usando el Hashtag #EMMS2023</p>
+                <div class="live--certificate--container">
+                    <div class="certificate--modal-info certificate--modal-info--live-off">
+                        <img src=".../../../../../src/img/certificate-ribbon.png" alt="Emoji liston">
+                        <div>
+                            <p>DESCARGA<a data-target="certificateModal" data-toggle="emms__certificate-modal"> AQUÍ </a>TU CERTIFICADO DE ASISTENCIA</p><br>
+                            <span> Compártelo en Redes Sociales utilizando el Hashtag </span>
+                            <br>
+                            <p><b>#EMMSECOMMERCE</b> :)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Marquee -->
+            <div class="emms__hero-registration__bottom images emms__fade-in">
+                <p>
+                    <img src="src/img/marquee/google.png" alt="Google">
+                    <img class="sm" src="src/img/marquee/meta.png" alt="Meta">
+                    <img src="src/img/marquee/youtube.png" alt="Youtube">
+                    <img src="src/img/marquee/amazon.png" alt="Amazon">
+                    <img src="src/img/marquee/metricool.png" alt="Metricool">
+                    <img src="src/img/marquee/microsoft.png" alt="Microsoft">
+                    <img class="sm" src="src/img/marquee/tiktok.png" alt="TikTok">
+                    <img src="src/img/marquee/linkedin.png" alt="LinkedIn">
+                    <img src="src/img/marquee/spotify.png" alt="Spotify">
+                    <img src="src/img/marquee/vtex.png" alt="Vtex">
+
+                    <!--  Repeated marquee items -->
+                    <img src="src/img/marquee/google.png" alt="Google">
+                    <img class="sm" src="src/img/marquee/meta.png" alt="Meta">
+                    <img src="src/img/marquee/youtube.png" alt="Youtube">
+                    <img src="src/img/marquee/amazon.png" alt="Amazon">
+                    <img src="src/img/marquee/metricool.png" alt="Metricool">
+                    <img src="src/img/marquee/microsoft.png" alt="Microsoft">
+                    <img class="sm" src="src/img/marquee/tiktok.png" alt="TikTok">
+                    <img src="src/img/marquee/linkedin.png" alt="LinkedIn">
+                    <img src="src/img/marquee/spotify.png" alt="Spotify">
+                    <img src="src/img/marquee/vtex.png" alt="Vtex">
+
+                    <!--  Repeated marquee items -->
+                    <img src="src/img/marquee/google.png" alt="Google">
+                    <img class="sm" src="src/img/marquee/meta.png" alt="Meta">
+                    <img src="src/img/marquee/youtube.png" alt="Youtube">
+                    <img src="src/img/marquee/amazon.png" alt="Amazon">
+                    <img src="src/img/marquee/metricool.png" alt="Metricool">
+                    <img src="src/img/marquee/microsoft.png" alt="Microsoft">
+                    <img class="sm" src="src/img/marquee/tiktok.png" alt="TikTok">
+                    <img src="src/img/marquee/linkedin.png" alt="LinkedIn">
+                    <img src="src/img/marquee/spotify.png" alt="Spotify">
+                    <img src="src/img/marquee/vtex.png" alt="Vtex">
+
+                    <!--  Repeated marquee items -->
+                    <img src="src/img/marquee/google.png" alt="Google">
+                    <img class="sm" src="src/img/marquee/meta.png" alt="Meta">
+                    <img src="src/img/marquee/youtube.png" alt="Youtube">
+                    <img src="src/img/marquee/amazon.png" alt="Amazon">
+                    <img src="src/img/marquee/metricool.png" alt="Metricool">
+                    <img src="src/img/marquee/microsoft.png" alt="Microsoft">
+                    <img class="sm" src="src/img/marquee/tiktok.png" alt="TikTok">
+                    <img src="src/img/marquee/linkedin.png" alt="LinkedIn">
+                    <img src="src/img/marquee/spotify.png" alt="Spotify">
+                    <img src="src/img/marquee/vtex.png" alt="Vtex">
+                </p>
             </div>
         </section>
 
@@ -205,21 +282,40 @@ $event = $_GET['event'];
                 </form>
             </div>
         </div>
-
+        <!-- Features -->
+        <div class="emms__features hidden--vip">
+            <div class="emms__features__item emms__fade-in emms__features__item--reverse">
+                <div class="emms__container--md">
+                    <div class="emms__features__item__image">
+                        <img src="src/img/pasevip.png" alt="Image">
+                    </div>
+                    <div class="emms__features__item__text">
+                        <h3>¿Todavía no eres VIP? Consigue tu entrada ahora para llevarte también</h3>
+                        <ul class="emms__features__item__text__list">
+                            <li>Acceso de por vida a talleres súper prácticos con los que más saben de Marketing Digital aplicado a E-commerce y Retail</li>
+                            <li>Guías y más herramientas para aplicar y multiplicar tus ventas</li>
+                        </ul>
+                        <p class="emms__features__item__text__price emms__features__item__text__price--live"><em>SOLO POR </em>USD 10</p>
+                        <a href="./ecommerce-registrado.php#entradas" class="emms__cta"> COMPRA TU ENTRADA
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Premium content -->
         <section class="emms__premium-content">
-            <div class="emms__background-a"></div>
             <div class="emms__container--lg">
+                <div class="emms__premium-content__picture emms__fade-in">
+                    <img src="src/img/biblioteca-recursos.png" alt="Biblioteca de recursos">
+                </div>
                 <div class="emms__premium-content__text emms__fade-in">
                     <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
-                    <p>Descubre <strong>contenidos descargables, herramientas y conferencias on-demand</strong> que te traen nuestros aliados para que puedas potenciar al máximo tu negocio.</p>
-                    <a href="./sponsors-registrado" class="emms__cta emms__fade-in">ACCEDE AQUÍ</a>
-                </div>
-                <div class="emms__premium-content__picture emms__fade-in">
-                    <img src="src/img/download--locked.png" alt="Contenido Premium">
+                    <p>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen para que puedas potenciar al máximo tu tienda online.</p>
+                    <a href="./sponsors" class="emms__cta sm emms__cta--nd emms__fade-in">INGRESA AHORA</a>
                 </div>
             </div>
         </section>
+
 
         <!-- Doppler Banner -->
         <?php include_once('././src/components/doppler-academy-banner.php'); ?>

@@ -9,19 +9,19 @@ $url_ptr = explode("/", isset($_SERVER['REQUEST_URI']));
             <button class="emms__calendar__tab" role="tab" aria-selected="false" id="day2">03 de mayo</button>
         <?php endif ?>
         <?php if ($ecommerceStates['isLive']) : ?>
-            <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day1">02 de mayo</button>
-            <button class="emms__calendar__tab" role="tab" aria-selected="false" id="day2">03 de mayo</button>
+            <button class="emms__calendar__tab" role="tab" aria-selected="false" id="day1">02 de mayo - finalizado</button>
+            <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day2">03 de mayo</button>
         <?php endif ?>
-        <?php if ($ecommerceStates['isPost']) : ?>
+        <?php if ($ecommerceStates['isPost'] || $ecommerceStates['isTransition']) : ?>
             <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day1">02 de mayo - finalizado</button>
-            <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day2">03 de mayo - finalizado</button>
+            <button class="emms__calendar__tab" role="tab" aria-selected="false" id="day2">03 de mayo - finalizado</button>
         <?php endif ?>
     </div>
 
 
     <!---------------------------------------------- DÍA 1 ------------------------------------------------>
 
-    <div class="emms__container--lg" role="tabpanel" aria-labelledby="day1">
+    <div class="emms__container--lg" role="tabpanel" aria-labelledby="day1" >
         <div class="emms__calendar__date emms__fade-in">
             <div class="emms__calendar__date__country">
 

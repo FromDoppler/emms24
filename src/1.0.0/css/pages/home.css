@@ -25,6 +25,12 @@
     text-align: center;
 }
 
+
+.emms__home__hero__title a{
+   color: #BD7AFF;
+}
+
+
 .emms__home__hero__title h1 {
     font-size: 50px;
     line-height: 52px;
