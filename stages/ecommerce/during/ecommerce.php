@@ -202,7 +202,12 @@ require_once('././src/components/cacheSettings.php');
                             </li>
                         </ul>
                         <div class="emms__form__btn">
-                            <button class="emms__cta emms__cta--during" id="register-button" type="submit"><span class="button__text">ACCEDE AL VIVO</span></button>
+                            <?php if ($ecommerceStates['isLive']) : ?>
+                                <button class="emms__cta emms__cta--during" id="register-button" type="submit"><span class="button__text">ACCEDE AL VIVO</span></button>
+                            <?php endif ?>
+                            <?php if ($ecommerceStates['isTransition']) : ?>
+                                <button class="emms__cta emms__cta--during" id="register-button" type="submit"><span class="button__text">ÚNETE AHORA</span></button>
+                            <?php endif ?>
                         </div>
                     </form>
                     <!-- End form -->
