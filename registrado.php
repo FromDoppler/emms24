@@ -57,7 +57,7 @@ require_once('././src/components/cacheSettings.php');
     <?php if ($ecommerceStates['isTransition']) : ?>
         <div class="emms__hellobar emms__hellobar--counter">
             <div class="emms__hellobar__container emms__hellobar__container--during emms__fade-in">
-                <p><strong>¡Queda más EMMS E-commerce! ¿Aún no te has registrado? Súmate gratis para unirte al día 2.</strong><a href="#registro">ÚNETE AHORA</a></p>
+                <p><strong>EMMS E-commerce: Únete a otra jornada con más conferencias gratuitas y workshops.</strong><a href="#registro">MIRA LA TRANSMISIÓN</a></p>
             </div>
         </div>
     <?php endif ?>
@@ -864,7 +864,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">📅 ¿Cuándo se realizará el EMMS 2024?</button>
-                        <p class="emms__frequentquestions__list__item__content">El EMMS 2024 constará de 2 ediciones: <strong>E-commerce y Digital Trends</strong>, a realizarse en <strong>mayo y noviembre</strong>, respectivamente. Registrándote al evento recibirás por Email todos las novedades.</p>
+                        <p class="emms__frequentquestions__list__item__content">El EMMS 2024 constará de 2 ediciones: <strong>E-commerce y Digital Trends</strong>.Registrándote al evento recibirás por Email todos las novedades.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">📍 ¿Dónde serán los eventos?</button>
@@ -884,7 +884,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">🎥 ¿Están disponibles las grabaciones después del evento?</button>
-                        <p class="emms__frequentquestions__list__item__content">Las conferencias de las ediciones pasadas están grabadas y puedes acceder a ellas desde esta misma Web. Elige Digital Trends, E-commerce o dirígete en la navigation bar a la sección Qué es el EMMS para ver ediciones anteriores.</p>
+                        <p class="emms__frequentquestions__list__item__content">Las conferencias de las ediciones pasadas están grabadas y puedes acceder a ellas desde esta misma Web. Elige Digital Trends, E-commerce o dirígete en la navigation bar a la sección Qué es el EMMS para ver ediciones anteriores.Si te has registrado, una vez finalizada la edición E-commerce, te avisaremos por correo electrónico apenas se encuentren disponibles los contenidos on-demand.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">🤔 Me apunté al evento y aún no recibí el Email de confirmación, ¿qué hago?</button>
