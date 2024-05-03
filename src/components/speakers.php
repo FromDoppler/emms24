@@ -4,14 +4,18 @@ $url_ptr = explode("/", isset($_SERVER['REQUEST_URI']));
 
 <div class="emms__calendar__tabs">
     <div class="emms__calendar__tab__list">
-        <?php if ($ecommerceStates['isPre'] || $ecommerceStates['isLive']) : ?>
+        <?php if ($ecommerceStates['isPre']) : ?>
             <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day1">02 de mayo</button>
+            <button class="emms__calendar__tab" role="tab" aria-selected="false" id="day2">03 de mayo</button>
         <?php endif ?>
-
-        <?php if ($ecommerceStates['isTransition']) : ?>
+        <?php if ($ecommerceStates['isLive']) : ?>
+            <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day1">02 de mayo</button>
+            <button class="emms__calendar__tab" role="tab" aria-selected="false" id="day2">03 de mayo</button>
+        <?php endif ?>
+        <?php if ($ecommerceStates['isPost']) : ?>
             <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day1">02 de mayo - finalizado</button>
+            <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day2">03 de mayo - finalizado</button>
         <?php endif ?>
-        <button class="emms__calendar__tab" role="tab" aria-selected="false" id="day2">03 de mayo</button>
     </div>
 
 
