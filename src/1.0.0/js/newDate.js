@@ -63,27 +63,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // Se carga Moment.js junto con MomentTimezone y luego se ejecuta el codigo que lo usa
         await loadMomentAndTimezoneScripts();
 
-        const eventDateTime = { eventYear: '2024', eventMonth: '04', eventDay: '18', eventHour: '10', eventMinute: '00' };
-        const { eventHour, eventMinute } = eventDateTime;
-
+        const eventDateTime = { eventYear: '2024', eventMonth: '05', eventDay: '03'};
         const moment = window.moment;
 
+        const getLocalDate = (newEventHour, newEventMinutes, eventDateTime, zonaHorariaUsuario = Intl.DateTimeFormat().resolvedOptions().timeZone) => {
+            const { eventYear, eventMonth, eventDay} = eventDateTime;
+            const fechaUTC = moment.utc(`${eventYear}-${eventMonth}-${eventDay}T${newEventHour+3}:${newEventMinutes}:00`);
+            const localDate = fechaUTC.clone().tz(zonaHorariaUsuario);
 
-
-        const getLocalDate = (newEventHour = eventHour, newEventMinutes = eventMinute, eventDateTime, countryCode) => {
-            const zonaHorariaUsuario = Intl.DateTimeFormat().resolvedOptions().timeZone;
-            const { eventYear, eventMonth, eventDay, eventHour, eventMinute } = eventDateTime;
-
-            let localDate;
-            // Verificar si el desplazamiento de tiempo del usuario es -3 horas (Correspondiente al evento en Argentina)
-            if (moment.tz.zone(zonaHorariaUsuario).utcOffset(Date.now()) === 180 || countryCode === 'AR') {
-                // Si el usuario ya esta en un desplazamiento de -3 horas, no se aplica el desplazamiento adicional
-                localDate = moment.utc(`${eventYear}-${eventMonth}-${eventDay}T${newEventHour}:${newEventMinutes}:00`);
-            } else {
-                // Si el usuario no esta en un desplazamiento de -3 horas, se aplica el desplazamiento
-                const fechaUTC = moment.utc(`${eventYear}-${eventMonth}-${eventDay}T${newEventHour}:${newEventMinutes}:00`).utcOffset(-3);
-                localDate = fechaUTC.clone().tz(zonaHorariaUsuario);
-            }
             return localDate;
         }
 
@@ -98,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const hours = parseInt(hourMatch[1], 10);
                 const minutes = hourMatch[2].padStart(2, '0');
                 //Transformamos esa hora al GTM del usuario
-                const newLocalDate = getLocalDate(hours, minutes, eventDateTime, countryCode);
+                const newLocalDate = getLocalDate(hours, minutes, eventDateTime);
                 const newHours = newLocalDate.hour();
                 const newMinutes = newLocalDate.minute().toString().padStart(2, '0');
                 container.innerHTML = '';
@@ -127,7 +114,49 @@ document.addEventListener('DOMContentLoaded', () => {
         const countryResponse = await getCountryAndCode();
         setCountryAndDate(countryResponse, eventDateTime);
 
+
+        /*  //TEST FECHAS
+            //Listado de timezones
+            //https://gist.github.com/diogocapela/12c6617fc87607d11fd62d2a4f42b02a
+
+
+        let newLocalDate = getLocalDate(10, 30, eventDateTime,'Europe/Madrid');
+        console.log("######################################################");
+        console.log("######################################################");
+        console.log("############           ESPAÑA                  #######");
+        console.log("######################################################");
+        console.log("######################################################");
+        console.log(newLocalDate);
+        console.log(newLocalDate.hour());
+        console.log(newLocalDate.minute());
+
+        newLocalDate = getLocalDate(10, 30, eventDateTime, 'America/Argentina/Buenos_Aires');
+        console.log("######################################################");
+        console.log("######################################################");
+        console.log("############           ARGENTINA               #######");
+        console.log("######################################################");
+        console.log("######################################################");
+        console.log(newLocalDate);
+        console.log(newLocalDate.hour());
+        console.log(newLocalDate.minute());
+
+
+        newLocalDate = getLocalDate(10, 30, eventDateTime, 'America/Tijuana');
+        console.log("######################################################");
+        console.log("######################################################");
+        console.log("############           MEXICO                  #######");
+        console.log("######################################################");
+        console.log("######################################################");
+
+        console.log(newLocalDate);
+        console.log(newLocalDate.hour());
+        console.log(newLocalDate.minute());
+        */
     }
 
     initDateChanges();
+
 });
+
+
+
