@@ -31,7 +31,7 @@ if (isset($_GET['slug'])) {
     <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
             <div class="emms__header__logo">
-                <a href="./"><img src="src/img/logos/logo-emms.png" alt="Emms 2023"></a>
+                <a href="./"><img src="src/img/logos/logo-emms.png" alt="Emms 2024"></a>
             </div>
             <div class="emms__header__logo">
                 <a href="<?= $sponsor['link_site'] ?>"><img src="./adm24/server/modules/sponsors/uploads/<?= $sponsor['image_landing'] ?>" alt="<?= $sponsor['alt_image_landing'] ?>"></a>

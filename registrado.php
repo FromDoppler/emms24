@@ -134,7 +134,7 @@ require_once('././src/components/cacheSettings.php');
             <?php endif ?>
             <?php if ($ecommerceStates['isPost']) : ?>
                 <div class="emms__home__hero__title emms__fade-top">
-                    <h1><em>TODAS LAS TENDENCIAS EN MARKETING DIGITAL, EN UN SOLO LUGAR</em> Revive el EMMS 2023</h1>
+                    <h1><em>TODAS LAS TENDENCIAS EN MARKETING DIGITAL, EN UN SOLO LUGAR</em> Revive el EMMS 2024</h1>
                     <h2>ONLINE Y GRATUITO</h2>
                     <p>Revoluciona tu forma de hacer negocios y potencia tus resultados con el mayor evento de Latam y España. Mientras esperas por la edición de tendencias digitales, <a href="./ecommerce-registrado">revive el EMMS E-commerce.</a>
                     </p>
