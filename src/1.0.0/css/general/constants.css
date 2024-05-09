@@ -84,17 +84,23 @@ p {
     position: relative;
 }
 
-.emms__cta.emms__cta--during{
+.emms__cta.inactive {
+    background: #CCCCCC;
+    pointer-events: none;
+}
+
+.emms__cta.emms__cta--during {
     background-color: #79F66E;
 }
 
-.emms__cta.emms__cta--during:hover{
+.emms__cta.emms__cta--during:hover {
     background-color: #61DB56;
 }
 
-.emms__cta.emms__cta--during span{
+.emms__cta.emms__cta--during span {
     color: #000;
-    text-decoration: unset;}
+    text-decoration: unset;
+}
 
 .emms__cta:hover {
     background: #026c3c;

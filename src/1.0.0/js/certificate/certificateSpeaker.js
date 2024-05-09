@@ -10,7 +10,7 @@ const startCertificate = () => {
         const certificateCta = document.getElementById('certificateCta');
         certificateCta.addEventListener('click', async (e) => {
             let submitSucceeded = false;
-            const eventType = searchUrlParam('event');
+            const eventType = 'ecommerce';
             try {
                 submitSucceeded = await submitCertificate(e, eventType, certificateCta);
             } catch (error) {

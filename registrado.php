@@ -129,14 +129,15 @@ require_once('././src/components/cacheSettings.php');
                 <div class="emms__home__hero__title emms__home__hero__title__during emms__fade-top">
                     <h1><em>TODAS LAS TENDENCIAS DE MARKETING DIGITAL EN UN SOLO LUGAR</em> ¡Únete al EMMS E-commerce 2024!</h1>
                     <h2>ONLINE Y GRATUITO</h2>
-                    <p>Revoluciona tu forma de hacer negocios y potencia tus resultados con el mayor evento de Latam y España. ¡Ya comenzó! Disfruta ahora de la <strong><a href="http://goemms.com/ecommerce">edición exclusiva sobre Comercio Electrónico y Retail.</a></strong></p>
+                    <p>Revoluciona tu forma de hacer negocios y potencia tus resultados con el mayor evento de Latam y España. ¡Ya comenzó! Disfruta ahora de la <strong><a href="./ecommerce-registrado">edición exclusiva sobre Comercio Electrónico y Retail.</a></strong></p>
                 </div>
             <?php endif ?>
             <?php if ($ecommerceStates['isPost']) : ?>
                 <div class="emms__home__hero__title emms__fade-top">
-                    <h1><em>TODAS LAS TENDENCIAS EN MARKETING DIGITAL, EN UN SOLO LUGAR</em> Revive el EMMS 2023</h1>
+                    <h1><em>TODAS LAS TENDENCIAS EN MARKETING DIGITAL, EN UN SOLO LUGAR</em> Revive el EMMS 2024</h1>
                     <h2>ONLINE Y GRATUITO</h2>
-                    <p><span>Tras <strong>15 años</strong> como el evento líder en Marketing Digital de Latam y España, <strong>el EMMS evolucionó</strong>. </span>Revive las <strong>ediciones E-commerce y Digital Trends</strong> para aprender e inspirarte con referentes en la industria.</p>
+                    <p>Revoluciona tu forma de hacer negocios y potencia tus resultados con el mayor evento de Latam y España. Mientras esperas por la edición de tendencias digitales, <a href="./ecommerce-registrado">revive el EMMS E-commerce.</a>
+                    </p>
                     <div id="EMMS2024-ediciones"></div>
                 </div>
             <?php endif ?>
@@ -151,50 +152,12 @@ require_once('././src/components/cacheSettings.php');
                                     <span class="ribbon3"><img src="src/img/play.png" alt=""> EN VIVO</span>
                                 </div>
                             <?php endif ?>
-                            <div class="not--loged">
-                                <div class="emms__eventCards__list__item__picture">
-
-                                    <img src="src/img/card-image-ecommerce.png" alt="Image Ecommerce">
-                                    <?php if ($ecommerceStates['isPost']) : ?>
-                                        <p class="top hide">EVENTO FINALIZADO</p>
-                                    <?php endif ?>
+                            <?php if ($ecommerceStates['isPost']) : ?>
+                                <div class="ribbon ribbon--registered ">
+                                    <span class="ribbon3 ribbon3--post"><img src="src/img/play.png" alt=""> EVENTO FINALIZADO</span>
                                 </div>
-                                <?php if ($ecommerceStates['isLive']) : ?>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS E-commerce</h3>
-                                        <p>Súmate ahora y conoce <strong>qué tendencias y estrategias emplean los referentes de la industria en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="ecommerce" class="emms__cta">ACCEDE AL VIVO</a>
-                                        </div>
-                                    </div>
-                                <?php elseif ($ecommerceStates['isDuring'] || $ecommerceStates['isLive']) : ?>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS E-commerce</h3>
-                                        <p>Referentes internacionales de la industria <strong>te cuentan las tendencias y estrategias que emplean en sus Tiendas Online</strong>para captar nuevos clientes
-                                            y aumentar sus ingresos. ¡Súmate ahora mismo!</p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="ecommerce" class="emms__cta">SÚMATE AHORA</a>
-                                        </div>
-                                    </div>
-                                <?php elseif ($ecommerceStates['isPost']) : ?>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS E-commerce</h3>
-                                        <p>Referentes internacionales de la industria comparten contigo las <strong>tendencias y estrategias que emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="/ecommerce" class="emms__cta">REVIVE EL EVENTO</a>
-                                        </div>
-                                    </div>
-                                <?php else : ?>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS E-commerce</h3>
-                                        <p>Referentes internacionales de la industria te contarán qué <strong>tendencias y estrategias emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos. Descubre la agenda y reserva tu plaza</p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="ecommerce" class="emms__cta">REGÍSTRATE GRATIS</a>
-                                        </div>
-                                    </div>
-                                <?php endif ?>
-                            </div>
-                            <div class="loged">
+                            <?php endif ?>
+                            <div>
                                 <?php if ($ecommerceStates['isLive']) : ?>
                                     <div class="emms__eventCards__list__item__picture">
                                         <img src="src/img/card-image-ecommerce.png" alt="Image Ecommerce">
@@ -245,11 +208,14 @@ require_once('././src/components/cacheSettings.php');
                                     <div class="emms__eventCards__list__item__picture">
                                         <img src="src/img/card-image-ecommerce.png" alt="Image Ecommerce">
                                         <p class="top hide">EVENTO FINALIZADO</p>
-                                        <p>YA TE HAS REGISTRADO</p>
                                     </div>
-                                    <div class="emms__eventCards__list__item__text">
+                                    <div class="emms__eventCards__list__item__text emms__eventCards__list__item__text--during">
                                         <h3>EMMS E-commerce</h3>
                                         <p>Referentes internacionales de la industria comparten contigo las <strong>tendencias y estrategias que emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
+                                        <p class="successRegister">
+                                            <span>🗹</span>
+                                            YA TE HAS REGISTRADO
+                                        </p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/ecommerce-registrado" class="emms__cta">REVIVE EL EVENTO</a>
                                         </div>
@@ -270,105 +236,24 @@ require_once('././src/components/cacheSettings.php');
                             </div>
                         </li>
                         <li class="emms__eventCards__list__item digitalTCard">
-                            <div class="not--loged">
-                                <?php if ($digitalTrendsStates['isLive']) : ?>
-                                    <div class="emms__eventCards__list__item__picture">
-                                        <img src="src/img/card-image-digitaltrends.png" alt="Image Digital Trends">
+                            <?php if ($ecommerceStates['isPost']) : ?>
+                                <div class="ribbon ribbon--registered ">
+                                    <span class="ribbon3 ribbon3--post"><img src="src/img/play.png" alt=""> MUY PRONTO</span>
+                                </div>
+                            <?php endif ?>
+                            <div>
+                                <div class="emms__eventCards__list__item__picture">
+                                    <img src="src/img/card-image-digitaltrends.png" alt="Image Digital Trends">
+                                    <p class="top hide">EVENTO FINALIZADO</p>
+                                </div>
+                                <div class="emms__eventCards__list__item__text">
+                                    <h3>EMMS Digital Trends</h3>
+                                    <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                    <div class="emms__eventCards__list__item__text--bottom">
+                                        <a href="" class="emms__cta inactive" disabled>PROXIMAMENTE</a>
                                     </div>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS Digital Trends <span>EN VIVO</span></h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="/digital-trends" class="emms__cta">ACCEDE AL VIVO</a>
-                                        </div>
-                                    </div>
-                                <?php elseif ($digitalTrendsStates['isDuring']) : ?>
-                                    <div class="emms__eventCards__list__item__picture">
-                                        <img src="src/img/card-image-digitaltrends.png" alt="Image Digital Trends">
-                                    </div>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="/digital-trends" class="emms__cta">SÚMATE AHORA</a>
-                                        </div>
-                                    </div>
-                                <?php elseif ($digitalTrendsStates['isPost']) : ?>
-                                    <div class="emms__eventCards__list__item__picture">
-                                        <img src="src/img/card-image-digitaltrends.png" alt="Image Digital Trends">
-                                        <p class="top hide">EVENTO FINALIZADO</p>
-                                    </div>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria.¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="/digital-trends" class="emms__cta">REVIVE EL EVENTO</a>
-                                        </div>
-                                    </div>
-                                <?php else : ?>
-                                    <div class="emms__eventCards__list__item__picture">
-                                        <img src="src/img/card-image-digitaltrends.png" alt="Image Digital Trends">
-                                    </div>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a class="emms__cta inactive">PRÓXIMAMENTE</a>
-                                        </div>
-                                    </div>
-                                <?php endif ?>
-                            </div>
-                            <div class="loged">
-                                <?php if ($digitalTrendsStates['isLive']) : ?>
-                                    <div class="emms__eventCards__list__item__picture">
-                                        <img src="src/img/card-image-digitaltrends.png" alt="Image Digital Trends">
-                                        <p>YA TE HAS REGISTRADO</p>
-                                    </div>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS Digital Trends <span>EN VIVO</span></h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="/digital-trends-registrado" class="emms__cta">ACCEDE AL VIVO</a>
-                                        </div>
-                                    </div>
-                                <?php elseif ($digitalTrendsStates['isDuring']) : ?>
-                                    <div class="emms__eventCards__list__item__picture">
-                                        <img src="src/img/card-image-digitaltrends.png" alt="Image Digital Trends">
-                                        <p>YA TE HAS REGISTRADO</p>
-                                    </div>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="/digital-trends-registrado" class="emms__cta">SÚMATE AHORA</a>
-                                        </div>
-                                    </div>
-                                <?php elseif ($digitalTrendsStates['isPost']) : ?>
-                                    <div class="emms__eventCards__list__item__picture">
-                                        <img src="src/img/card-image-digitaltrends.png" alt="Image Digital Trends">
-                                        <p class="top hide">EVENTO FINALIZADO</p>
-                                        <p>YA TE HAS REGISTRADO</p>
-                                    </div>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="/digital-trends-registrado" class="emms__cta">REVIVE EL EVENTO</a>
-                                        </div>
-                                    </div>
-                                <?php else : ?>
-                                    <div class="emms__eventCards__list__item__picture">
-                                        <img src="src/img/card-image-digitaltrends.png" alt="Image Digital Trends">
-                                        <p>YA TE HAS REGISTRADO</p>
-                                    </div>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a class="emms__cta inactive">PRÓXIMAMENTE</a>
-                                        </div>
-                                    </div>
-                                <?php endif ?>
+                                </div>
+
                             </div>
                         </li>
                     </ul>
@@ -376,105 +261,24 @@ require_once('././src/components/cacheSettings.php');
                     <ul class="emms__eventCards__list emms__eventCards__list--mb emms__fade-in main-carousel" data-flickity='{ "initialIndex": 1 }'>
 
                         <li class="emms__eventCards__list__item digitalTCard">
-                            <div class="not--loged">
-                                <?php if ($digitalTrendsStates['isLive']) : ?>
-                                    <div class="emms__eventCards__list__item__picture">
-                                        <img src="src/img/card-image-digitaltrends.png" alt="Image Digital Trends">
+                            <?php if ($ecommerceStates['isPost']) : ?>
+                                <div class="ribbon ribbon--registered ">
+                                    <span class="ribbon3 ribbon3--post"><img src="src/img/play.png" alt=""> MUY PRONTO</span>
+                                </div>
+                            <?php endif ?>
+                            <div>
+                                <div class="emms__eventCards__list__item__picture">
+                                    <img src="src/img/card-image-digitaltrends.png" alt="Image Digital Trends">
+                                    <p class="top hide">EVENTO FINALIZADO</p>
+                                </div>
+                                <div class="emms__eventCards__list__item__text">
+                                    <h3>EMMS Digital Trends</h3>
+                                    <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
+                                    <div class="emms__eventCards__list__item__text--bottom">
+                                        <a href="" class="emms__cta inactive" disabled>PROXIMAMENTE</a>
                                     </div>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS Digital Trends <span>EN VIVO</span></h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="/digital-trends" class="emms__cta">ACCEDE AL VIVO</a>
-                                        </div>
-                                    </div>
-                                <?php elseif ($digitalTrendsStates['isDuring']) : ?>
-                                    <div class="emms__eventCards__list__item__picture">
-                                        <img src="src/img/card-image-digitaltrends.png" alt="Image Digital Trends">
-                                    </div>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="/digital-trends" class="emms__cta">SÚMATE AHORA</a>
-                                        </div>
-                                    </div>
-                                <?php elseif ($digitalTrendsStates['isPost']) : ?>
-                                    <div class="emms__eventCards__list__item__picture">
-                                        <img src="src/img/card-image-digitaltrends.png" alt="Image Digital Trends">
-                                        <p class="top hide">EVENTO FINALIZADO</p>
-                                    </div>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria.¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="/digital-trends" class="emms__cta">REVIVE EL EVENTO</a>
-                                        </div>
-                                    </div>
-                                <?php else : ?>
-                                    <div class="emms__eventCards__list__item__picture">
-                                        <img src="src/img/card-image-digitaltrends.png" alt="Image Digital Trends">
-                                    </div>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a class="emms__cta inactive">PRÓXIMAMENTE</a>
-                                        </div>
-                                    </div>
-                                <?php endif ?>
-                            </div>
-                            <div class="loged">
-                                <?php if ($digitalTrendsStates['isLive']) : ?>
-                                    <div class="emms__eventCards__list__item__picture">
-                                        <img src="src/img/card-image-digitaltrends.png" alt="Image Digital Trends">
-                                        <p>YA TE HAS REGISTRADO</p>
-                                    </div>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS Digital Trends <span>EN VIVO</span></h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="/digital-trends-registrado" class="emms__cta">ACCEDE AL VIVO</a>
-                                        </div>
-                                    </div>
-                                <?php elseif ($digitalTrendsStates['isDuring']) : ?>
-                                    <div class="emms__eventCards__list__item__picture">
-                                        <img src="src/img/card-image-digitaltrends.png" alt="Image Digital Trends">
-                                        <p>YA TE HAS REGISTRADO</p>
-                                    </div>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="/digital-trends-registrado" class="emms__cta">SÚMATE AHORA</a>
-                                        </div>
-                                    </div>
-                                <?php elseif ($digitalTrendsStates['isPost']) : ?>
-                                    <div class="emms__eventCards__list__item__picture">
-                                        <img src="src/img/card-image-digitaltrends.png" alt="Image Digital Trends">
-                                        <p class="top hide">EVENTO FINALIZADO</p>
-                                        <p>YA TE HAS REGISTRADO</p>
-                                    </div>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="/digital-trends-registrado" class="emms__cta">REVIVE EL EVENTO</a>
-                                        </div>
-                                    </div>
-                                <?php else : ?>
-                                    <div class="emms__eventCards__list__item__picture">
-                                        <img src="src/img/card-image-digitaltrends.png" alt="Image Digital Trends">
-                                        <p>YA TE HAS REGISTRADO</p>
-                                    </div>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS Digital Trends</h3>
-                                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡Novedades muy pronto! Mientras esperas por la siguiente, nútrete de nuevas <strong>ideas para implementar en tu negocio <a href="./ediciones-anteriores-registrado#ediciones-anteriores">reviviendo la edición 2023</a>.</strong></p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a class="emms__cta inactive">PRÓXIMAMENTE</a>
-                                        </div>
-                                    </div>
-                                <?php endif ?>
+                                </div>
+
                             </div>
                         </li>
                         <li class="emms__eventCards__list__item ecommerceCard">
@@ -483,50 +287,12 @@ require_once('././src/components/cacheSettings.php');
                                     <span class="ribbon3"><img src="src/img/play.png" alt=""> EN VIVO</span>
                                 </div>
                             <?php endif ?>
-                            <div class="not--loged">
-                                <div class="emms__eventCards__list__item__picture">
-
-                                    <img src="src/img/card-image-ecommerce.png" alt="Image Ecommerce">
-                                    <?php if ($ecommerceStates['isPost']) : ?>
-                                        <p class="top hide">EVENTO FINALIZADO</p>
-                                    <?php endif ?>
+                            <?php if ($ecommerceStates['isPost']) : ?>
+                                <div class="ribbon ribbon--registered ">
+                                    <span class="ribbon3 ribbon3--post"><img src="src/img/play.png" alt=""> EVENTO FINALIZADO</span>
                                 </div>
-                                <?php if ($ecommerceStates['isLive']) : ?>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS E-commerce</h3>
-                                        <p>Súmate ahora y conoce <strong>qué tendencias y estrategias emplean los referentes de la industria en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="ecommerce" class="emms__cta">ACCEDE AL VIVO</a>
-                                        </div>
-                                    </div>
-                                <?php elseif ($ecommerceStates['isDuring'] || $ecommerceStates['isLive']) : ?>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS E-commerce</h3>
-                                        <p>Referentes internacionales de la industria <strong>te cuentan las tendencias y estrategias que emplean en sus Tiendas Online</strong>para captar nuevos clientes
-                                            y aumentar sus ingresos. ¡Súmate ahora mismo!</p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="ecommerce" class="emms__cta">SÚMATE AHORA</a>
-                                        </div>
-                                    </div>
-                                <?php elseif ($ecommerceStates['isPost']) : ?>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS E-commerce</h3>
-                                        <p>Referentes internacionales de la industria comparten contigo las <strong>tendencias y estrategias que emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="/ecommerce" class="emms__cta">REVIVE EL EVENTO</a>
-                                        </div>
-                                    </div>
-                                <?php else : ?>
-                                    <div class="emms__eventCards__list__item__text">
-                                        <h3>EMMS E-commerce</h3>
-                                        <p>Referentes internacionales de la industria te contarán qué <strong>tendencias y estrategias emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos. Descubre la agenda y reserva tu plaza</p>
-                                        <div class="emms__eventCards__list__item__text--bottom">
-                                            <a href="ecommerce" class="emms__cta">REGÍSTRATE GRATIS</a>
-                                        </div>
-                                    </div>
-                                <?php endif ?>
-                            </div>
-                            <div class="loged">
+                            <?php endif ?>
+                            <div>
                                 <?php if ($ecommerceStates['isLive']) : ?>
                                     <div class="emms__eventCards__list__item__picture">
                                         <img src="src/img/card-image-ecommerce.png" alt="Image Ecommerce">
@@ -577,11 +343,14 @@ require_once('././src/components/cacheSettings.php');
                                     <div class="emms__eventCards__list__item__picture">
                                         <img src="src/img/card-image-ecommerce.png" alt="Image Ecommerce">
                                         <p class="top hide">EVENTO FINALIZADO</p>
-                                        <p>YA TE HAS REGISTRADO</p>
                                     </div>
-                                    <div class="emms__eventCards__list__item__text">
+                                    <div class="emms__eventCards__list__item__text emms__eventCards__list__item__text--during">
                                         <h3>EMMS E-commerce</h3>
                                         <p>Referentes internacionales de la industria comparten contigo las <strong>tendencias y estrategias que emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
+                                        <p class="successRegister">
+                                            <span>🗹</span>
+                                            YA TE HAS REGISTRADO
+                                        </p>
                                         <div class="emms__eventCards__list__item__text--bottom">
                                             <a href="/ecommerce-registrado" class="emms__cta">REVIVE EL EVENTO</a>
                                         </div>
@@ -625,8 +394,8 @@ require_once('././src/components/cacheSettings.php');
                             y referentes en la industria eligen este evento para capacitarse.</p>
                     <?php endif ?>
                     <?php if ($ecommerceStates['isPost']) : ?>
-                        <h2>¡El EMMS se renovó! Ahora, disfruta de dos ediciones imperdibles</h2>
-                        <p>Descubre en este video todo lo que el EMMS trajo en este 2023 junto a los máximos referentes en Marketing Digital y las marcas más reconocidas de la industria.</p>
+                        <h2>El EMMS, el clásico de cada año para inspirarte y enterarte de las últimas tendencias en Marketing Digital</h2>
+                        <p>Descubre por qué miles de profesionales y los mayores referentes  de la industria esperan este evento para compartir y aprender de los más destacados speakers.</p>
                     <?php endif ?>
                 </div>
                 <div class="emms__centralvideo__video emms__fade-in">
@@ -634,7 +403,19 @@ require_once('././src/components/cacheSettings.php');
                 </div>
             </div>
         </section>
-
+        <!-- Premium content -->
+        <section class="emms__premium-content">
+            <div class="emms__container--lg">
+                <div class="emms__premium-content__picture emms__fade-in">
+                    <img src="src/img/biblioteca-recursos.png" alt="Biblioteca de recursos">
+                </div>
+                <div class="emms__premium-content__text emms__fade-in">
+                    <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
+                    <p>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen para que puedas potenciar al máximo tu tienda online.</p>
+                    <a href="./sponsors" class="emms__cta sm emms__cta--nd emms__fade-in">INGRESA AHORA</a>
+                </div>
+            </div>
+        </section>
 
         <!-- Event numbers -->
         <section class="emms__eventnumbers emms__eventnumbers--large" id="boxNumberLarge">
@@ -744,26 +525,12 @@ require_once('././src/components/cacheSettings.php');
                         </li>
                     </ul>
                 </div>
-                <h4>Los máximos referentes en venta online y retail están esperando por ti… <br> 
-                    Descubre las mejores estrategias del año en la transmisión en directo del EMMS E-commerce.
+                <h2>Pronto conocerás a los speakers del EMMS Digital Trends 2024</h2>
+                <h4>Las marcas que son tendencia en la industria y los especialistas más reconocidos están  preparándose para ser parte del mayor evento hispano de Marketing Digital.  Mantente pendiente a tu correo electrónico para descubrir quiénes nos acompañarán en esta edición
                 </h4>
             </div>
         </section>
 
-        <!-- Premium content -->
-        <section class="emms__premium-content">
-            <div class="emms__container--lg">
-                <div class="emms__premium-content__picture emms__fade-in">
-                    <img src="src/img/biblioteca-recursos.png" alt="Biblioteca de recursos">
-                </div>
-                <div class="emms__premium-content__text emms__fade-in">
-                    <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
-                    <p>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen nuestros aliados para potenciar
-                        al máximo tu tienda online.</p>
-                    <a href="./sponsors-registrado" class="emms__cta sm emms__cta--nd emms__fade-in">INGRESA AHORA</a>
-                </div>
-            </div>
-        </section>
 
         <!-- Users comments -->
         <section class="emms__userscomments">
@@ -863,8 +630,8 @@ require_once('././src/components/cacheSettings.php');
                         <p class="emms__frequentquestions__list__item__content">Con tu registro podrás acceder a todas las conferencias de esta y todas las ediciones anteriores para siempre. Además, desbloquearás <strong>una biblioteca repleta de recursos como E-books, Plantillas, descuentos y material audiovisual</strong> para que puedas hacer crecer tu negocio aún más.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
-                        <button class="emms__frequentquestions__list__item__head">📅 ¿Cuándo se realizará el EMMS 2024?</button>
-                        <p class="emms__frequentquestions__list__item__content">El EMMS 2024 constará de 2 ediciones: <strong>E-commerce y Digital Trends</strong>.Registrándote al evento recibirás por Email todos las novedades.</p>
+                        < button class="emms__frequentquestions__list__item__head">📅 ¿Cuándo se realizará el EMMS 2024?</button>
+                            <p class="emms__frequentquestions__list__item__content">El EMMS 2024 constará de 2 ediciones: <strong>E-commerce y Digital Trends</strong>.Registrándote al evento recibirás por Email todos las novedades.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">📍 ¿Dónde serán los eventos?</button>

@@ -35,7 +35,7 @@ require_once('././src/components/cacheSettings.php');
     <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
             <div class="emms__header__logo emms__header__logo--ecommerce">
-                <a href="/"><img src="src/img/logos/logo-emms-ecommerce.png" alt="Emms Ecommerce 2023"></a>
+                <a href="/"><img src="src/img/logos/logo-emms-ecommerce.png" alt="Emms Ecommerce 2024"></a>
             </div>
             <a class="emms__header__nav--mb" id="btn-burger"></a>
             <nav class="emms__header__nav emms__header__nav--hidden" id="nav-mb">

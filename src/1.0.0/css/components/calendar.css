@@ -7,6 +7,16 @@
     background: linear-gradient(1deg, #0C0E25 0%, #0D102A 54.45%, #1B245B 94.04%);
 }
 
+.emms__ecommerce-logueado--post .emms__calendar.emms__calendar--post .emms__cta {
+    margin: 40px 0px;
+}
+
+.emms__ecommerce-logueado--post .emms__calendar.emms__calendar--post,.emms__calendar.emms__calendar--post {
+    background: linear-gradient(1deg, #0C0E25 0%, #0D102A 54.45%, #1B245B 94.04%);
+    text-align: center;
+
+}
+
 @media(max-width:620px) {
     .emms__calendar {
         padding: 54px 0 100px 0;
@@ -139,6 +149,29 @@
     text-align: center;
 }
 
+.emms__calendar__date__country.emms__calendar__date__country--post h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: -1px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.emms__calendar__date__country.emms__calendar__date__country--post p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .emms__calendar__date__country p {
     font-size: 16px;
     font-weight: 700;
@@ -228,6 +261,7 @@
     margin: 0 0 20px 0;
     padding: 0 10px;
     box-sizing: border-box;
+    text-align: left;
 }
 
 .emms__calendar__list__item__card {

@@ -123,9 +123,10 @@ require_once('././src/components/cacheSettings.php');
             <?php endif ?>
             <?php if ($ecommerceStates['isPost']) : ?>
                 <div class="emms__home__hero__title emms__fade-top">
-                    <h1><em>TODAS LAS TENDENCIAS EN MARKETING DIGITAL, EN UN SOLO LUGAR</em> Revive el EMMS 2024</h1>
+                    <h1><em>TODAS LAS TENDENCIAS EN MARKETING DIGITAL, EN UN SOLO LUGAR</em> El EMMS 2024 llegó para quedarse</h1>
                     <h2>ONLINE Y GRATUITO</h2>
-                    <p id="registro"><span>Tras <strong>15 años</strong> como el evento líder en Marketing Digital de Latam y España, <strong>el EMMS evolucionó</strong>. </span>Accede a las <strong>ediciones E-commerce y Digital Trends</strong> para aprender e inspirarte con referentes en la industria.</p>
+                    <p>Revoluciona tu forma de hacer negocios y potencia tus resultados con el mayor evento de Latam y España. Mientras esperas por la edición de tendencias digitales, <a href="./ecommerce-registrado">revive el EMMS E-commerce.</a>
+                    </p>
                 </div>
             <?php endif ?>
             <div id="eventos"></div>
@@ -139,6 +140,10 @@ require_once('././src/components/cacheSettings.php');
                                 <?php if ($ecommerceStates['isLive']) : ?>
                                     <div class="ribbon">
                                         <span class="ribbon3"><img src="src/img/play.png" alt=""> EN VIVO</span>
+                                    </div>
+                                <?php elseif ($ecommerceStates['isPost']) : ?>
+                                    <div class="ribbon ribbon--registered ">
+                                        <span class="ribbon3 ribbon3--post"><img src="src/img/play.png" alt=""> EVENTO FINALIZADO</span>
                                     </div>
                                 <?php endif ?>
                                 <img src="src/img/card-image-ecommerce.png" alt="Play icon">
@@ -157,8 +162,8 @@ require_once('././src/components/cacheSettings.php');
                                     <p>Referentes internacionales de la industria te contarán qué <strong>tendencias y estrategias emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
                                 <?php endif ?>
                                 <?php if ($ecommerceStates['isDuring']) : ?>
-                                    <p>Referentes internacionales de la industria te cuentan las <strong>tendencias y estrategias que emplean en sus Tiendas Online</strong>para captar nuevos clientes
-                                        y aumentar sus ingresos.  ¡Súmate ahora mismo!</p>
+                                    <p>Referentes internacionales de la industria te cuentan las <strong>tendencias y estrategias que emplean en sus Tiendas Online</strong>para captar nuevos clientes
+                                        y aumentar sus ingresos. ¡Súmate ahora mismo!</p>
                                 <?php endif ?>
                                 <?php if ($ecommerceStates['isPost']) : ?>
                                     <p>Referentes internacionales de la industria comparten contigo las <strong>tendencias y estrategias que emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
@@ -178,12 +183,17 @@ require_once('././src/components/cacheSettings.php');
                                             REGÍSTRATE GRATIS
                                         </a>
                                     <?php elseif ($ecommerceStates['isPost']) : ?>
-                                        <a href="ecommerce" class="emms__cta">REVIVE EL EVENTO</a>
+                                        <a href="ecommerce" class="emms__cta">REVÍVELO GRATIS</a>
                                     <?php endif ?>
                                 </div>
                             </div>
                         </li>
                         <li class="emms__eventCards__list__item">
+                        <?php if ($ecommerceStates['isPost']) : ?>
+                                <div class="ribbon ribbon--registered ">
+                                    <span class="ribbon3 ribbon3--post"><img src="src/img/play.png" alt=""> MUY PRONTO</span>
+                                </div>
+                            <?php endif ?>
                             <div class="emms__eventCards__list__item__picture">
                                 <img src="src/img/card-image-digitaltrends.png" alt="Image Digital Trends">
                                 <?php if ($digitalTrendsStates['isPost']) : ?>
@@ -235,8 +245,8 @@ require_once('././src/components/cacheSettings.php');
                                     <p>Referentes internacionales de la industria te contarán qué <strong>tendencias y estrategias emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
                                 <?php endif ?>
                                 <?php if ($ecommerceStates['isDuring']) : ?>
-                                    <p>Referentes internacionales de la industria te cuentan las <strong>tendencias y estrategias que emplean en sus Tiendas Online</strong>para captar nuevos clientes
-                                        y aumentar sus ingresos.  ¡Súmate ahora mismo!</p>
+                                    <p>Referentes internacionales de la industria te cuentan las <strong>tendencias y estrategias que emplean en sus Tiendas Online</strong>para captar nuevos clientes
+                                        y aumentar sus ingresos. ¡Súmate ahora mismo!</p>
                                 <?php endif ?>
                                 <?php if ($ecommerceStates['isPost']) : ?>
                                     <p>Referentes internacionales de la industria comparten contigo las <strong>tendencias y estrategias que emplean en sus Tiendas Online</strong> para captar nuevos clientes y aumentar sus ingresos.</p>
@@ -299,15 +309,17 @@ require_once('././src/components/cacheSettings.php');
         <section class="emms__centralvideo">
             <div class="emms__container--lg emms__container--lg--column">
                 <div class="emms__centralvideo__title emms__fade-in">
-                    <h2>Súmate ahora mismo al EMMS E-commerce y aprende con los mayores
-                        especialistas en venta electrónica. ¡Ya empezó!
+                    <h2>¿Te lo perdiste? Aquí se congregaron los mayores
+                        especialistas en venta electrónica
                     </h2>
-                    <p>Descubre en este video todo lo que pasó en la última edición y por qué miles de profesionales
-                        y referentes en la industria eligen este evento para capacitarse.</p>
+                    <p>Descubre por qué miles de profesionales y referentes en la industria</p>
+                    <p> eligieron el EMMS E-commerce para capacitarse.</p>
                 </div>
                 <div class="emms__centralvideo__video emms__fade-in">
                     <video src="src/img/EMMS-EcommerceHome.mp4" controls></video>
+
                 </div>
+                <a href="./ecommerce" class="emms__cta emms__fade-in">REVÍVELO GRATIS</a>
                 <?php if ($ecommerceStates['isLive']) : ?>
                     <a href="./ecommerce" class="emms__cta  emms__fade-in">ACCEDE AL VIVO</a>
                 <?php endif ?>
@@ -317,6 +329,19 @@ require_once('././src/components/cacheSettings.php');
             </div>
         </section>
 
+        <!-- Premium content -->
+        <section class="emms__premium-content">
+            <div class="emms__container--lg">
+                <div class="emms__premium-content__picture emms__fade-in">
+                    <img src="src/img/biblioteca-recursos.png" alt="Biblioteca de recursos">
+                </div>
+                <div class="emms__premium-content__text emms__fade-in">
+                    <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
+                    <p>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen para que puedas potenciar al máximo tu tienda online.</p>
+                    <a href="./sponsors" class="emms__cta sm emms__cta--nd emms__fade-in">INGRESA AHORA</a>
+                </div>
+            </div>
+        </section>
 
         <!-- Event numbers -->
         <section class="emms__eventnumbers emms__eventnumbers--large" id="boxNumberLarge">
@@ -432,24 +457,15 @@ require_once('././src/components/cacheSettings.php');
                     </ul>
                 </div>
                 <small class="emms__fade-in emms__speakers__home__message">
-                    <h3 class="emms__speakers__home__message__subTitle">¡Ve a la transmisión en directo del EMMS E-commerce y no te pierdas de nada!</h3>
-                    <span>Los máximos referentes en venta online y retail están esperando por ti… <br> Regístrate gratis ahora para descubrir las mejores estrategias del año.</span>
+                    <h3 class="emms__speakers__home__message__subTitle">Pronto conocerás a los speakers del EMMS Digital Trends 2024</h3>
+                    <span>
+                        <p>Las marcas que son tendencia en la industria y los especialistas más reconocidos están preparándose</p>
+                        <p>para ser parte del mayor evento hispano de Marketing Digital.</p>
+                        <p>Mantente pendiente a tu correo electrónico para descubrir quiénes nos acompañarán en esta edición y,</p>
+                        <p>mientras tanto, recuerda las mejores charlas de ediciones pasadas.</p>
+                    </span>
                 </small>
-                <a href="./ecommerce" class="emms__cta emms__fade-in">SUMATE GRATIS</a>
-            </div>
-        </section>
-
-        <!-- Premium content -->
-        <section class="emms__premium-content">
-            <div class="emms__container--lg">
-                <div class="emms__premium-content__picture emms__fade-in">
-                    <img src="src/img/biblioteca-recursos.png" alt="Biblioteca de recursos">
-                </div>
-                <div class="emms__premium-content__text emms__fade-in">
-                    <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
-                    <p>Descubre contenidos descargables, herramientas y conferencias on-demand que te traen para que puedas potenciar al máximo tu tienda online.</p>
-                    <a href="./sponsors" class="emms__cta sm emms__cta--nd emms__fade-in">INGRESA AHORA</a>
-                </div>
+                <a href="./ediciones-anteriores#ediciones-anteriores" class="emms__cta emms__fade-in">REVIVE EDICIONES ANTERIORES</a>
             </div>
         </section>
 

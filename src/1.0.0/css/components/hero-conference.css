@@ -43,7 +43,7 @@
 
 .emms__hero-conference__video .emms__form__legal {
     position: absolute;
-    top: 0;
+    top: 57px;
     right: 37px;
     width: 40%;
 }
@@ -365,14 +365,19 @@
 
 
 /* ---------------- With bio ---------------- */
-
+.emms__hero-conference.emms__hero-conference--bio {
+    background: #000 url(../../../img/back-hero-ecommerce--live.png) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    padding: 180px 0;
+    position: relative;
+}
 
 .emms__hero-conference--bio h1 {
-    font-size: 34px;
-    line-height: 36px;
+    font-style: normal;
     font-weight: 700;
-    color: #FAB221;
-    margin: 0 0 30px 0;
+    font-size: 23px;
+    color: #FFFFFF;
     width: 70%;
 }
 
