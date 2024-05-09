@@ -136,7 +136,7 @@ require_once('././src/components/cacheSettings.php');
         </section>
         <section class="emms__calendar emms__calendar--post " id="agenda">
             <!-- Speakers -->
-            <?php include('./src/components/speakersPost.php') ?>
+            <?php include('./src/components/speakersPostRegistrado.php') ?>
             <a class="emms__cta hidden--vip" href="#agenda">COMPRA TU ENTRADA VIP</a>
             <div class="emms__separator emms__separator--white hidden--vip"></div>
         </section>

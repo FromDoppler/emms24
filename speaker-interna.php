@@ -19,6 +19,13 @@ $db->close();
 <head>
     <?php include_once('././src/components/head-speaker-interna.php'); ?>
     <?php include_once('././src/components/head.php'); ?>
+    <script type="module">
+        import {
+            toggleVipEcommerceElements
+        } from './src/<?= VERSION ?>/js/toggleVipElements.js';
+
+        toggleVipEcommerceElements();
+    </script>
 </head>
 
 <body class="emms__ecommerce emms__ecommerce-logueado emms__ecommerce-logueado--during">

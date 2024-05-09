@@ -131,6 +131,18 @@ $url_ptr = explode("/", isset($_SERVER['REQUEST_URI']));
                                         <a href="<?= $speaker['link_time'] ?>" target="_blank">Mira el horario de tu país</a>
                                     </div>
                                 <?php endif; ?>
+                                <?php if (($speaker['exposes'] === "conference"  || $isSpeakerExposeDebate) && ($speaker['slug'])) : ?>
+                                    <a href="./speaker-interna?slug=<?= $speaker['slug'] ?>" class="emms__cta">VER CONFERENCIA</a>
+                                <?php endif; ?>
+                                <?php if (($speaker['exposes'] === "networking") || ($speaker['exposes'] === "workshop")) : ?>
+                                    <a href="#entradas" class="emms__cta  hidden--vip">HAZTE VIP</a>
+                                <?php endif; ?>
+                                <?php if (($speaker['exposes'] === "networking")) : ?>
+                                    <a href="#" class="emms__cta inactive  show--vip" disabled>VIDEO PRONTO DISPONIBLE</a>
+                                <?php endif; ?>
+                                <?php if (($speaker['exposes'] === "workshop")) : ?>
+                                    <a href="https://www.youtube.com/watch?v=<?= $speaker['youtube'] ?>" class="emms__cta   show--vip" target="_blank">VER VIDEO</a>
+                                <?php endif; ?>
                             </div>
 
                             <?php if ($speaker['exposes'] === "conference") : ?>
@@ -272,7 +284,18 @@ $url_ptr = explode("/", isset($_SERVER['REQUEST_URI']));
                                         <a href="<?= $speaker['link_time'] ?>" target="_blank">Mira el horario de tu país</a>
                                     </div>
                                 <?php endif; ?>
-
+                                <?php if (($speaker['exposes'] === "conference"  || $isSpeakerExposeDebate) && ($speaker['slug'])) : ?>
+                                    <a href="./speaker-interna?slug=<?= $speaker['slug'] ?>" class="emms__cta">VER CONFERENCIA</a>
+                                <?php endif; ?>
+                                <?php if (($speaker['exposes'] === "networking") || ($speaker['exposes'] === "workshop")) : ?>
+                                    <a href="#entradas" class="emms__cta  hidden--vip">HAZTE VIP</a>
+                                <?php endif; ?>
+                                <?php if (($speaker['exposes'] === "networking")) : ?>
+                                    <a href="#" class="emms__cta inactive  show--vip" disabled>VIDEO PRONTO DISPONIBLE</a>
+                                <?php endif; ?>
+                                <?php if (($speaker['exposes'] === "workshop")) : ?>
+                                    <a href="https://www.youtube.com/watch?v=<?= $speaker['youtube'] ?>" class="emms__cta   show--vip" target="_blank">VER VIDEO</a>
+                                <?php endif; ?>
                             </div>
 
                             <?php if ($speaker['exposes'] === "conference") : ?>

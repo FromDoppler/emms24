@@ -261,6 +261,7 @@
     margin: 0 0 20px 0;
     padding: 0 10px;
     box-sizing: border-box;
+    text-align: left;
 }
 
 .emms__calendar__list__item__card {
