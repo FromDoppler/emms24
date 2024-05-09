@@ -125,12 +125,7 @@ $url_ptr = explode("/", isset($_SERVER['REQUEST_URI']));
                                     <h3 class="title-networking"><?= $speaker['title'] ?></h3>
                                 <?php endif; ?>
                                 <p><?= $speaker['description'] ?></p>
-                                <?php if (($speaker['time']) != '') : ?>
-                                    <div class="emms__calendar__list__item__country">
-                                        <span><img src="src/img/flags/arg.png" alt="">(ARG) <?= $speaker['time'] ?></span>
-                                        <a href="<?= $speaker['link_time'] ?>" target="_blank">Mira el horario de tu país</a>
-                                    </div>
-                                <?php endif; ?>
+
                                 <?php if (($speaker['exposes'] === "conference"  || $isSpeakerExposeDebate) && ($speaker['slug'])) : ?>
                                     <a href="./speaker-interna?slug=<?= $speaker['slug'] ?>" class="emms__cta">VER CONFERENCIA</a>
                                 <?php endif; ?>
@@ -278,12 +273,7 @@ $url_ptr = explode("/", isset($_SERVER['REQUEST_URI']));
                                     <h3 class="title-networking"><?= $speaker['title'] ?></h3>
                                 <?php endif; ?>
                                 <p><?= $speaker['description'] ?></p>
-                                <?php if (($speaker['time']) != '') : ?>
-                                    <div class="emms__calendar__list__item__country">
-                                        <span><img src="src/img/flags/arg.png" alt="">(ARG) <?= $speaker['time'] ?></span>
-                                        <a href="<?= $speaker['link_time'] ?>" target="_blank">Mira el horario de tu país</a>
-                                    </div>
-                                <?php endif; ?>
+
                                 <?php if (($speaker['exposes'] === "conference"  || $isSpeakerExposeDebate) && ($speaker['slug'])) : ?>
                                     <a href="./speaker-interna?slug=<?= $speaker['slug'] ?>" class="emms__cta">VER CONFERENCIA</a>
                                 <?php endif; ?>
