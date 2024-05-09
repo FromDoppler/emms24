@@ -79,10 +79,9 @@ require_once('././src/components/cacheSettings.php');
                 <div class="emms__hero-registration__text emms__hero-registration__text--live emms__fade-in">
                     <h2><em>REVIVE EL EVENTO GRATUITO</em></h2>
                     <h1>
-                        <span>¡Ya empezó el</span>
                         <span>EMMS</span>
                         <span>E-commerce </span>
-                        <span>2024!</span>
+                        <span>2024</span>
                     </h1>
                     <p>Vuelve a vivir el evento exclusivo pensado para tu Tienda Online. ¡Inspírate y capacítate ahora para comenzar a expandir tu negocio junto a los mayores expertos!</p>
                     <ul class="emms__hero-registration__text__checklist">
@@ -754,6 +753,8 @@ require_once('././src/components/cacheSettings.php');
     <script src="src/<?= VERSION ?>/js/collapsibles.js"></script>
     <script src="src/<?= VERSION ?>/js/dateCounter.js"></script>
     <script src="src/<?= VERSION ?>/js/calendarBio.js"></script>
+    <script src="src/<?= VERSION ?>/js/mediaPartners.js"></script>
+    <script src="src/<?= VERSION ?>/js/newDate.js" type="module"></script>
     <script src="src/<?= VERSION ?>/js/homeEcommerce.js" type="module"></script>
     <script src="src/<?= VERSION ?>/js/vendors/intlTelInput.min.js"></script>
     <?php include_once('././src/components/intellInput.php'); ?>

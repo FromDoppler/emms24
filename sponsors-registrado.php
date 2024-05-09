@@ -161,7 +161,7 @@ require_once('././src/components/cacheSettings.php');
                             <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://youtu.be/5WxC8cOJbm4" target="_blank">
                                 <img src="src/img/conferences24/portada-capsula-facturante-min.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
-                                    <h4>Omincanalidad: ¿Qué es y cómo la facturación electronica ayuda a lograrla? </h4>
+                                    <h4>Omnicanalidad: ¿Qué es y cómo la facturación electronica ayuda a lograrla? </h4>
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
                                         <img src="src/img/conferences24/logos/facturante-logo.png" alt="Facturante Logo">

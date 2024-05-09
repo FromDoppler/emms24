@@ -82,7 +82,7 @@ $db->close();
         <!-- Hero -->
         <section class="emms__hero-conference emms__hero-conference--bio">
             <div class="emms__container--lg">
-                <h1 class="emms__fade-in"><?= $speaker['description'] ?></h1>
+                <h1 class="emms__fade-in"><?= $speaker['title'] ?></h1>
                 <div class="emms__hero-conference__video emms__fade-in">
                     <!--Video -->
                     <div class="emms__cropper-cont-16-9 dp--none" id="speakerVideo">

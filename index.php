@@ -125,7 +125,7 @@ require_once('././src/components/cacheSettings.php');
                 <div class="emms__home__hero__title emms__fade-top">
                     <h1><em>TODAS LAS TENDENCIAS EN MARKETING DIGITAL, EN UN SOLO LUGAR</em> El EMMS 2024 llegó para quedarse</h1>
                     <h2>ONLINE Y GRATUITO</h2>
-                    <p>Revoluciona tu forma de hacer negocios y potencia tus resultados con el mayor evento de Latam y España. Mientras esperas por la edición de tendencias digitales, <a href="./ecommerce-registrado">revive el EMMS E-commerce.</a>
+                    <p>Revoluciona tu forma de hacer negocios y potencia tus resultados con el mayor evento de Latam y España. Mientras esperas por la edición de tendencias digitales, <a href="./ecommerce">revive el EMMS E-commerce.</a>
                     </p>
                 </div>
             <?php endif ?>
@@ -189,7 +189,7 @@ require_once('././src/components/cacheSettings.php');
                             </div>
                         </li>
                         <li class="emms__eventCards__list__item">
-                        <?php if ($ecommerceStates['isPost']) : ?>
+                            <?php if ($ecommerceStates['isPost']) : ?>
                                 <div class="ribbon ribbon--registered ">
                                     <span class="ribbon3 ribbon3--post"><img src="src/img/play.png" alt=""> MUY PRONTO</span>
                                 </div>
@@ -568,27 +568,27 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">📅 ¿Cuándo se realizará el EMMS 2024?</button>
-                        <p class="emms__frequentquestions__list__item__content">El EMMS 2024 constará de 2 ediciones: <strong>E-commerce y Digital Trends</strong>.Registrándote al evento recibirás por Email todos las novedades.</p>
+                        <p class="emms__frequentquestions__list__item__content">El EMMS 2024 constará de 2 ediciones: <strong>E-commerce </strong>(realizada en mayo)<strong>y Digital Trends</strong>. Registrándote para <a href="./ecommerce">revivir el EMMS E-commerce 2024</a>, así como cualquiera de las <a href="./ediciones-anteriores?#ediciones-anteriores"> ediciones anteriores del EMMS</a>, recibirás por Email todas las novedades de la próxima fecha.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">📍 ¿Dónde serán los eventos?</button>
-                        <p class="emms__frequentquestions__list__item__content">El EMMS es un evento online. Es decir, podrás verlo desde cualquier dispositivo, estés donde estés e incluso volver a ver las <strong><a href="./ediciones-anteriores">ediciones anteriores</a></strong>. Ingresa ahora mismo a <a href="./ecommerce">este enlace</a> para registrarte y ver la transmisión en vivo de la edición E-commerce.</p>
+                        <p class="emms__frequentquestions__list__item__content">El EMMS es un evento online. Es decir, podrás verlo desde cualquier dispositivo, estés donde estés e incluso volver a ver las <strong><a href="./ediciones-anteriores">ediciones anteriores</a></strong>. Además, ¿te has perdido la primera edición del año? <a href="./ecommerce">Ingresa aquí</a>para revivir el EMMS E-commerce 2024 mientras esperas por la siguiente fecha.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">💵 ¿Tengo que pagar inscripción?</button>
-                        <p class="emms__frequentquestions__list__item__content">El EMMS tiene un <strong>registro totalmente gratuito</strong>, válido para acceder a las Conferencias y a la Biblioteca de Recursos. Si además quieres capacitarte con Workshops prácticos, a los que puedes acceder de por vida, y sesiones de networking pronto podrás <strong>comprar tu entrada VIP</strong>.</p>
+                        <p class="emms__frequentquestions__list__item__content">El EMMS tiene un <strong>registro totalmente gratuito</strong>, válido para acceder a las Conferencias y a la Biblioteca de Recursos. Si también quieres capacitarte con Workshops prácticos (además de acceder a sus grabaciones de por vida), adquiere <strong>tu entrada VIP</strong>.Regístrate gratuitamente y luego podrás acceder a tu pase para convertirte en Asistente VIP. </p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">✍ ¿Puedo apuntarme a más de una edición?</button>
-                        <p class="emms__frequentquestions__list__item__content">¡Sí! Cuando la fecha del evento esté confirmada, podrás elegir <a href="#eventos">aquí</a> la edición a la que te interese para inscribirte gratis. Completa tus datos y ¡listo! Tu lugar ya quedará reservado.</p>
+                        <p class="emms__frequentquestions__list__item__content">¡Sí! Al confirmarse la fecha de cada edición, podrás seleccionar <a href="#eventos">aquí</a> a cuál deseas sumarte y registrarte de forma 100% gratis completando tus datos. ¿Todavía no viste la edición E-commerce? <a href="./ecommerce">Inscríbete y vívela ahora mismo</a>. Luego, podrás reservar tu cupo para el Digital Trends, en unos pocos clics.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">💻 ¿Cómo accedo a la transmisión del EMMS si ya me registré?</button>
-                        <p class="emms__frequentquestions__list__item__content">Podrás seguir la transmisión del EMMS directamente desde el Sitio Web en la fecha del evento, accediendo según corresponda a Digital Trends o <a href="./ecommerce">E-commerce</a></p>
+                        <p class="emms__frequentquestions__list__item__content">Podrás seguir la transmisión del EMMS directamente desde el Sitio Web en la fecha del evento, por medio del enlace correspondiente a cada edición.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">🎥 ¿Están disponibles las grabaciones después del evento?</button>
-                        <p class="emms__frequentquestions__list__item__content">Las conferencias de las ediciones pasadas están grabadas y puedes acceder a ellas desde esta misma Web. Elige Digital Trends, E-commerce o dirígete en la navigation bar a la sección Qué es el EMMS para ver ediciones anteriores.Si te has registrado, una vez finalizada la edición E-commerce, te avisaremos por correo electrónico apenas se encuentren disponibles los contenidos on-demand.</p>
+                        <p class="emms__frequentquestions__list__item__content">Las conferencias de las ediciones pasadas están grabadas y puedes acceder a ellas desde esta misma Web. Elige Digital Trends, E-commerce o dirígete en la navigation bar a la sección Qué es el EMMS para ver ediciones anteriores. Podrás encontrarlas de la edición E-commerce 2024 en <a href="./ecommerce">este enlace</a> , aunque también te avisaremos por correo electrónico apenas puedas ver los contenidos on-demand, siempre y cuando te hayas registrado al evento.</p>
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">🤔 Me apunté al evento y aún no recibí el Email de confirmación, ¿qué hago?</button>
@@ -604,7 +604,7 @@ require_once('././src/components/cacheSettings.php');
                     </li>
                     <li class="emms__frequentquestions__list__item close">
                         <button class="emms__frequentquestions__list__item__head">📝 ¿Obtengo un certificado de participación por asistir al evento?</button>
-                        <p class="emms__frequentquestions__list__item__content">¡Sí! Podrás descargar tu certificado de asistencia a cada una de las ediciones del EMMS.</p>
+                        <p class="emms__frequentquestions__list__item__content">¡Sí! Podrás descargar tu certificado de asistencia a cada una de las ediciones del EMMS. ¿Tuviste problemas para obtener tu certificado para la edición E-commerce? No te preocupes, contáctanos a <a href="mailto:soporte@fromdoppler.com">soporte@fromdoppler.com</a> y te ayudaremos con ello en breve.</p>
                     </li>
                 </ul>
             </div>
