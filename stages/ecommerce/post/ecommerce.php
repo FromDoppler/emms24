@@ -9,12 +9,6 @@ require_once('././src/components/cacheSettings.php');
 <head>
     <?php include_once('././src/components/head-ecommerce.php'); ?>
     <?php include_once('././src/components/head.php'); ?>
-    <script type="module">
-        import {
-            hiddenOrShowUserUI
-        } from './src/<?= VERSION ?>/js/user.js';
-        hiddenOrShowUserUI('digital-trends');
-    </script>
 </head>
 
 <body class="emms__ecommerce emms__ecommerce--post">
