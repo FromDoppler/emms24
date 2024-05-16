@@ -88,7 +88,7 @@ class StripeCustomersController
     {
         $encode_email = toHex(json_encode([
             'userEmail' => $UserData['customer_email'],
-            'userEvents' => ['ecommerce24']
+            'userEvents' => json_encode(['ecommerce24','ecommerce24-vip'])
         ]));
         return [
             'register' => date("Y-m-d h:i:s A"),
