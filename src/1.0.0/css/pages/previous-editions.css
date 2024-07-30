@@ -322,6 +322,13 @@
     bottom: 50px;
 }
 
+.emms__previous-editions__list .emms__previous-editions__list__item__image img.mobile {
+    display: none;
+}
+
+.emms__previous-editions__list .emms__previous-editions__list__item--xl .emms__previous-editions__list__item__image img.desktop {
+    display: block;
+}
 
 /* ----- Responsive ----- */
 
@@ -367,6 +374,8 @@
         max-width: 600px;
         margin: 0 auto;
     }
+
+
 }
 
 @media(max-width:620px) {
@@ -395,5 +404,17 @@
 
     .emms__previous-editions__list .emms__previous-editions__list__item--lg .emms__previous-editions__list__item__description {
         padding: 25px;
+    }
+
+    .emms__previous-editions__list .emms__previous-editions__list__item--xl .emms__previous-editions__list__item__image img.mobile {
+        display: block;
+    }
+
+    .emms__previous-editions__list .emms__previous-editions__list__item--xl .emms__previous-editions__list__item__image img.desktop {
+        display: none;
+    }
+
+    .emms__previous-editions__list .emms__previous-editions__list__item--xl{
+        max-height: unset;
     }
 }

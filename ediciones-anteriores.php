@@ -110,7 +110,8 @@ require_once('./utils/DB.php');
                     <div class="emms__previous-editions__list__item emms__previous-editions__list__item--xl">
                         <a data-target="modalRegister2" data-toggle="emms__register-modal">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/edicion2023ecommerce-xl.svg" alt="EMMS 2024 E-commerce">
+                                <img src="src/img/editions/edicion2023-ecommerce-xl.png" alt="EMMS 2024 E-commerce" class="desktop">
+                                <img src="src/img/editions/emms2023-ecommerce.png" alt="EMMS 2023 E-commerce" class="mobile">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
                                 <h4>EMMS E-commerce 2023</h4>
