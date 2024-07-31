@@ -106,6 +106,22 @@ require_once('./utils/DB.php');
         <section class="emms__previous-editions__list" id="ediciones-anteriores">
             <div class="emms__container--md">
                 <h2>Revive las ediciones anteriores</h2>
+                <div class="emms__previous-editions__list__container emms__previous-editions__list__container--xl emms__fade-in">
+                    <div class="emms__previous-editions__list__item emms__previous-editions__list__item--xl">
+                        <a data-target="modalRegister2" data-toggle="emms__register-modal">
+                            <div class="emms__previous-editions__list__item__image">
+                                <img src="src/img/editions/edicion2023-ecommerce-xl.png" alt="EMMS 2024 E-commerce" class="desktop">
+                                <img src="src/img/editions/emms2023-ecommerce.png" alt="EMMS 2023 E-commerce" class="mobile">
+                            </div>
+                            <div class="emms__previous-editions__list__item__description">
+                                <h4>EMMS E-commerce 2023</h4>
+                                <p>Más de 13 mil personas se unieron a la primera edición especializada en la industria del Retail e E-commerce del EMMS. Contamos con entrevistas exclusivas con especialistas, casos de éxitos y conferencias, así como también los mejores insights en Inteligencia Artificial aplicada a este mercado.</p>
+                                <span>REVIVE ESTA EDICIÓN</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
                 <ul class="emms__previous-editions__list__container emms__previous-editions__list__container--lg">
                     <li class="emms__previous-editions__list__item emms__previous-editions__list__item--lg emms__fade-in">
                         <a href="https://www.youtube.com/playlist?list=PLHE_SVtQOB8qMW0FxjjOYdNpLyX0x3_4z" target="_blank">
