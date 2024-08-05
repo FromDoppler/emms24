@@ -1,15 +1,16 @@
 <?php
+
 require_once($_SERVER['DOCUMENT_ROOT'] . '/config.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . '/services/functions.php');
 ?>
 <script src='./src/<?= VERSION ?>/js/vendors/socket.io.min.js?version=<?= VERSION ?>'></script>
 <script>
-  const socket = io("wss://<?= URL_REFRESH ?>", {
-    path: "/<?= PATH_REFRESH ?>/socket.io"
-  });
-  socket.on("state", (args) => {
-    location.reload();
-  });
+    const socket = io("wss://<?= URL_REFRESH ?>", {
+        path: "/<?= PATH_REFRESH ?>/socket.io"
+    });
+    socket.on("state", (args) => {
+        location.reload();
+    });
 </script>
 <script type="module">
     import {
@@ -24,10 +25,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/services/functions.php');
     } from './src/<?= VERSION ?>/js/user.js';
     checkEncodeUrl();
     if (userRegisteredInEvent(eventsType.DIGITALTRENDS)) {
-        window.location.href = getUrlWithParams('/registrado');
+        window.location.href = getUrlWithParams('/digital-trends-registrado');
     }
 </script>
 <?php
 $response = processPhaseToShow(DIGITALTRENDS);
-require_once($_SERVER['DOCUMENT_ROOT'] . "/pages/digital-trends/$response[phaseToShow]/home.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/pages/digital-trends/$response[phaseToShow]/digital-trends.php");
 ?>
