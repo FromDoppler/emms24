@@ -6,34 +6,33 @@ import {
     submitFormFetch,
     submitWithoutForm,
 } from './common/index.js';
+import { alreadyAccountListener, swichFormListener } from './common/switchForm.js';
 import { eventsType } from './enums/eventsType.enum.js';
 
+const digitalForm = document.getElementById('digitalForm');
+const digitalTrendsBtns = document.querySelectorAll('.digitalTrendsBtn');
+const submitForm = async (e) => {
 
+  e.preventDefault();
+
+  await submitFormFetch(digitalForm, eventsType.DIGITALTRENDS).then(({ fetchResp: resp }) => {
+      if (!resp.ok) throw new Error('Server error on digital fetch', resp?.status);
+
+      window.location.href = getUrlWithParams('/digital-trends-registrado');
+      if (window.location.pathname === '/sponsors') {
+          window.location.href = getUrlWithParams('/sponsors-registrado');
+      }
+  })
+      .catch((error) => {
+          customError('Digital post error', error);
+      });
+
+
+}
 
 document.addEventListener('DOMContentLoaded', () => {
-    const digitalForm = document.getElementById('digitalForm');
-    const digitalTrendsBtns = document.querySelectorAll('.digitalTrendsBtn');
 
     if (digitalForm) {
-        const submitForm = async (e) => {
-
-            e.preventDefault();
-
-            await submitFormFetch(digitalForm, eventsType.DIGITALTRENDS).then(({ fetchResp: resp }) => {
-                if (!resp.ok) throw new Error('Server error on digital fetch', resp?.status);
-
-                window.location.href = getUrlWithParams('/digital-trends-registrado');
-                if (window.location.pathname === '/sponsors') {
-                    window.location.href = getUrlWithParams('/sponsors-registrado');
-                }
-            })
-                .catch((error) => {
-                    customError('Digital post error', error);
-                });
-
-
-        }
-
         digitalForm.querySelector('button').addEventListener('click', submitForm);
     }
     if (digitalTrendsBtns.length > 0) {
@@ -52,3 +51,26 @@ document.addEventListener('DOMContentLoaded', () => {
         digitalTrendsBtns.forEach(btn => btn.addEventListener('click', () => { submitEvent(btn) }));
     }
 });
+
+const activeFormListeners = () => {
+
+
+  swichFormListener(digitalForm);
+
+  document.addEventListener('DOMContentLoaded', () => {
+
+      if (digitalForm) {
+        digitalForm.querySelector('button').addEventListener('click', submitForm);
+      }
+      if (digitalTrendsBtns.length > 0) {
+        digitalTrendsBtns.forEach(btn => btn.addEventListener('click', () => { submitEvent(btn) }));
+      }
+
+      alreadyAccountListener();
+
+  });
+
+}
+
+
+activeFormListeners();
