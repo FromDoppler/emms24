@@ -19,15 +19,15 @@
 }
 
 .emms__home__hero__title {
-    max-width: 813px;
+    max-width: 978px;
     width: 90%;
     margin: 0 auto 89px auto;
     text-align: center;
 }
 
 
-.emms__home__hero__title a{
-   color: #BD7AFF;
+.emms__home__hero__title a {
+    color: #BD7AFF;
 }
 
 
@@ -45,6 +45,17 @@
     font-style: normal;
     display: block;
     margin: 0 0 20px 0;
+}
+
+.emms__home__hero__title h1 em.xl {
+    font-style: normal;
+    display: block;
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
 }
 
 .emms__home__hero__title h2 {
@@ -72,7 +83,7 @@
     font-weight: bold;
 }
 
-.emms__home__hero__title.emms__home__hero__title__during p strong a:hover{
+.emms__home__hero__title.emms__home__hero__title__during p strong a:hover {
     color: #61DB56;
 }
 

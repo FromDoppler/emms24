@@ -139,6 +139,11 @@ p {
     padding: 12px 30px;
 }
 
+.emms__cta.xl {
+    padding: 14px 88px;
+}
+
+
 @media (max-width: 620px) {
     .emms__cta {
         text-align: center;
@@ -451,6 +456,8 @@ p {
     background-position: bottom;
 }
 
+
+
 .emms__bg-section-4 {
     background: url("../../../img/bg-section-4.png") #0B0627 no-repeat;
     background-size: 100%;
@@ -462,6 +469,13 @@ p {
     background-size: 100%;
     background-position: bottom;
 }
+
+.emms__bg-section-6 {
+    background: linear-gradient(180deg, #13092D 0%, #25096C 109.27%);
+    background-size: 100%;
+    background-position: bottom;
+}
+
 
 /* Collapse list */
 
