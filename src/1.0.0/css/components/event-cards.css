@@ -182,7 +182,7 @@
     display: inline-block;
 }
 
-.ribbon3.ribbon3--post{
+.ribbon3.ribbon3--post {
     width: 200px;
 }
 
@@ -243,6 +243,14 @@
 
 .emms__eventCards__list__item__text h3+p {
     min-height: 90px;
+    margin-bottom: 20px;
+}
+
+.emms__eventCards__list__item__text p+span {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    color: #333333;
 }
 
 .emms__eventCards__list__item__text--feature {
@@ -321,7 +329,8 @@
     }
 
     .emms__eventCards__list--mb .flickity-viewport {
-        height: 500px !important;
+        /* Este importan viene dado para pisar el estilo en linea inyectado por flickity */
+        height: 525px !important;
         background: #fff;
         border-radius: 20px;
     }

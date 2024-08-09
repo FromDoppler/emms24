@@ -1,9 +1,24 @@
         <!-- Doppler Academy Banner -->
-        <section class="emms__doppleracademybanner emms__bg-section-3 emms__sponsors__hero--blue-bg" id="aprende-con-doppler">
+        <section class="emms__doppleracademybanner emms__bg-section-6 emms__sponsors__hero--blue-bg" id="aprende-con-doppler">
             <div class="emms__container--sm">
                 <div class="emms__doppleracademybanner__description">
                     <h2>Lleva tu conocimiento a otro nivel con Doppler Academy</h2>
-                    <p>En Doppler, además de ayudar al crecimiento de tu negocio, formamos profesionales de Marketing a lo largo de todo el mundo de forma online y 100% gratuita. Descubre certificaciones, webinars, podcasts y mucho más para cursar a tu ritmo y desde donde quieras.</p>
+                    <p>Además de ayudar al crecimiento de tu negocio, formamos profesionales de Marketing
+                        a lo largo de todo el mundo <strong>de forma online y 100% gratuita.</strong>  <br> Cursa a tu ritmo, donde quieras y cuando quieras 🙂</p>
+                    <div class="text-with-icon-container">
+                        <div class="text-with-icon">
+                            <img src="src/img/icons/icon-check--purple.svg" alt="Check icon">
+                            <span>Gratuito</span>
+                        </div>
+                        <div class="text-with-icon">
+                            <img src="src/img/icons/icon-check--purple.svg" alt="Check icon">
+                            <span>on demand</span>
+                        </div>
+                        <div class="text-with-icon">
+                            <img src="src/img/icons/icon-check--purple.svg" alt="Check icon">
+                            <span>A TU RITMO</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="emms__container--md">

@@ -17,12 +17,12 @@ require_once('././src/components/cacheSettings.php');
   <?php include('./components/share.php') ?>
   <main>
     <?php include('./components/digital-trends/pre/register-form.php') ?>
-    <?php include('./components/digital-trends/pre/speakers-carousel.php') ?>
     <div class="emms__bg-dark-gradient">
       <?php include('./components/digital-trends/pre/grid-event-types.php') ?>
       <?php include('./components/digital-trends/pre/event-numbers.php') ?>
     </div>
-    <?php include('./components/digital-trends/pre/benefit-icons.php') ?>
+    <?php include('./components/digital-trends/pre/speakers-carousel.php') ?>
+
     <?php include('./components/digital-trends/pre/premium-content.php') ?>
     <?php include('./components/digital-trends/pre/central-video.php') ?>
     <?php include('./components/digital-trends/pre/users-comments.php') ?>
