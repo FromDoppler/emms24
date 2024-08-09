@@ -39,7 +39,7 @@ require_once('././src/components/cacheSettings.php');
             <nav class="emms__header__nav emms__header__nav--hidden" id="nav-mb">
                 <ul class="emms__header__nav__menu">
                     <li><a href="/">home</a></li>
-                    <li><a href="./ecommerce-registrado">e-commerce</a>
+                    <li><a href="/digital-trends-registrado">digital trends</a>
                     </li>
                     <li><a href="#" class="active">biblioteca de recursos</a></li>
                     <li class="emms__header__nav__menu__dropdown"><a href="./ediciones-anteriores">Qué es el EMMS</a>

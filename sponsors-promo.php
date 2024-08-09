@@ -30,7 +30,7 @@ require_once('./utils/DB.php');
             <nav class="emms__header__nav emms__header__nav--hidden" id="nav-mb">
                 <ul class="emms__header__nav__menu">
                     <li><a href="./index">home</a></li>
-                    <li><a href="./ecommerce-registrado">e-commerce</a></li>
+                    <li><a href="/digital-trends-registrado">digital trends</a></li>
                     <li><a href="./sponsors-registrado">biblioteca de recursos</a></li>
                     <li class="emms__header__nav__menu__dropdown"><a href="./ediciones-anteriores-registrado">Qué es el EMMS</a>
                         <ul class="emms__header__nav__submenu">
