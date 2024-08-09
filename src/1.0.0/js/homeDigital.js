@@ -10,24 +10,32 @@ import { alreadyAccountListener, swichFormListener } from './common/switchForm.j
 import { eventsType } from './enums/eventsType.enum.js';
 
 const digitalForm = document.getElementById('digitalForm');
+const digitalWithoutForm = document.getElementById('digitalWithoutForm');
 const digitalTrendsBtns = document.querySelectorAll('.digitalTrendsBtn');
 const submitForm = async (e) => {
 
-  e.preventDefault();
+    e.preventDefault();
 
-  await submitFormFetch(digitalForm, eventsType.DIGITALTRENDS).then(({ fetchResp: resp }) => {
-      if (!resp.ok) throw new Error('Server error on digital fetch', resp?.status);
+    await submitFormFetch(digitalForm, eventsType.DIGITALTRENDS).then(({ fetchResp: resp }) => {
+        if (!resp.ok) throw new Error('Server error on digital fetch', resp?.status);
 
-      window.location.href = getUrlWithParams('/digital-trends-registrado');
-      if (window.location.pathname === '/sponsors') {
-          window.location.href = getUrlWithParams('/sponsors-registrado');
-      }
-  })
-      .catch((error) => {
-          customError('Digital post error', error);
-      });
+        window.location.href = getUrlWithParams('/digital-trends-registrado');
+        if (window.location.pathname === '/sponsors') {
+            window.location.href = getUrlWithParams('/sponsors-registrado');
+        }
+    })
+        .catch((error) => {
+            customError('Digital post error', error);
+        });
 
 
+}
+
+const submitDtWithoutForm = () => {
+    submitWithoutForm(eventsType.DIGITALTRENDS).then(() => {
+        window.location.href = getUrlWithParams('/digital-trends-registrado');
+    }
+    )
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -50,25 +58,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         digitalTrendsBtns.forEach(btn => btn.addEventListener('click', () => { submitEvent(btn) }));
     }
+
 });
 
 const activeFormListeners = () => {
 
 
-  swichFormListener(digitalForm);
+    swichFormListener(digitalForm);
 
-  document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
 
-      if (digitalForm) {
-        digitalForm.querySelector('button').addEventListener('click', submitForm);
-      }
-      if (digitalTrendsBtns.length > 0) {
-        digitalTrendsBtns.forEach(btn => btn.addEventListener('click', () => { submitEvent(btn) }));
-      }
+        if (digitalForm) {
+            digitalForm.querySelector('button').addEventListener('click', submitForm);
+        }
+        if (digitalTrendsBtns.length > 0) {
+            digitalTrendsBtns.forEach(btn => btn.addEventListener('click', () => { submitEvent(btn) }));
+        }
+        if (digitalWithoutForm) {
+            digitalWithoutForm.addEventListener('click', submitDtWithoutForm)
+        }
+        alreadyAccountListener();
 
-      alreadyAccountListener();
-
-  });
+    });
 
 }
 
