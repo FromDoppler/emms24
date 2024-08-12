@@ -114,7 +114,8 @@ require_once('./utils/DB.php');
                                 <img src="src/img/editions/emms2023-ecommerce.png" alt="EMMS 2023 E-commerce" class="mobile">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
-                                <h4>EMMS E-commerce 2023</h4>
+                                <!-- TODO: Cambiar contenido -->
+                                <h4>EMMS E-commerce 2024</h4>
                                 <p>Más de 13 mil personas se unieron a la primera edición especializada en la industria del Retail e E-commerce del EMMS. Contamos con entrevistas exclusivas con especialistas, casos de éxitos y conferencias, así como también los mejores insights en Inteligencia Artificial aplicada a este mercado.</p>
                                 <span>REVIVE ESTA EDICIÓN</span>
                             </div>
