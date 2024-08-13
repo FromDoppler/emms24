@@ -95,7 +95,7 @@
 }
 
 .emms__eventCards__list__item__text p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 20px;
     color: #525845;
 }
@@ -266,7 +266,7 @@
     position: absolute;
     bottom: 34px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: calc(100% - 52px);
 }

@@ -2,26 +2,6 @@
     padding: 80px 0;
 }
 
-.emms__doppleracademybanner .text-with-icon-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.emms__doppleracademybanner .text-with-icon {
-    display: flex;
-    align-items: center;
-    margin: 0 10px;
-}
-
-.emms__doppleracademybanner .text-with-icon span {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
 
 .emms__doppleracademybanner .text-with-icon img {
     width: 20px;
@@ -50,9 +30,11 @@
 
 .emms__doppleracademybanner__description p {
     font-size: 16px;
-    max-width: 618px;
+    max-width: 580px;
     line-height: 24px;
-    margin: 0 0px 30px 0;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    /* margin: 0 0px 30px 0; */
 }
 
 .emms__doppleracademybanner__carousel .flickity-button {
@@ -126,14 +108,17 @@
     object-fit: cover;
 }
 
-.emms__doppleracademybanner__description--button  .emms__cta {
+.emms__doppleracademybanner__description--button .emms__cta {
     background: rgba(51, 173, 115, 0.2);
     border: 1px solid #FFFFFF;
     border-radius: 100px;
 }
-.emms__doppleracademybanner__description--button  .emms__cta:hover {
+
+.emms__doppleracademybanner__description--button .emms__cta:hover {
     opacity: 0.5;
+    color: #bd7aff;
 }
+
 @media(min-width:620px) {
     .emms__doppleracademybanner__carousel__item:hover .emms__doppleracademybanner__carousel__item__image {
         right: 0;

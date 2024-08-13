@@ -84,6 +84,24 @@ p {
     position: relative;
 }
 
+.emms__cta.emms_cta--secondary {
+    border: 1px solid #33AD73;
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #33AD73;
+    background-color: #ffffff;
+}
+
+.emms__cta.emms_cta--secondary:hover {
+    background-color: #ffffff;
+    opacity: 0.5;
+}
+
 .emms__cta.inactive {
     background: #CCCCCC;
     pointer-events: none;
@@ -486,3 +504,27 @@ p {
 .emms__collapse__list.open .emms__collapse__item {
     display: block;
 }
+
+
+
+.text-with-icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-with-icon {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.text-with-icon span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+

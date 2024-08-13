@@ -3,7 +3,7 @@
             <div class="emms__container--sm">
                 <div class="emms__doppleracademybanner__description">
                     <h2>Lleva tu conocimiento a otro nivel con Doppler Academy</h2>
-                    <p>En Doppler, además de ayudar al crecimiento de tu negocio, formamos profesionales de Marketing a lo largo de todo el mundo de forma online y 100% gratuita. Descubre certificaciones, webinars, podcasts y mucho más para cursar a tu ritmo y desde donde quieras.</p>
+                    <p>En Doppler, además de ayudar al crecimiento de tu negocio, <br> formamos profesionales de Marketing a lo largo de todo el mundo de forma online y 100% gratuita. Descubre certificaciones, webinars, podcasts y mucho más para cursar a tu ritmo y desde donde quieras.</p>
                 </div>
             </div>
             <div class="emms__container--md">
