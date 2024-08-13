@@ -10,7 +10,7 @@ import { alreadyAccountListener, swichFormListener } from './common/switchForm.j
 import { eventsType } from './enums/eventsType.enum.js';
 
 const digitalForm = document.getElementById('digitalForm');
-const digitalWithoutForm = document.getElementById('digitalWithoutForm');
+const digitalWithoutForms = document.querySelectorAll('.digitalWithoutForm');
 const digitalTrendsBtns = document.querySelectorAll('.digitalTrendsBtn');
 const submitForm = async (e) => {
 
@@ -31,7 +31,8 @@ const submitForm = async (e) => {
 
 }
 
-const submitDtWithoutForm = () => {
+const submitDtWithoutForm = (digitalWithoutForm) => {
+    digitalWithoutForm.classList.add('button--loading');
     submitWithoutForm(eventsType.DIGITALTRENDS).then(() => {
         window.location.href = getUrlWithParams('/digital-trends-registrado');
     }
@@ -74,8 +75,12 @@ const activeFormListeners = () => {
         if (digitalTrendsBtns.length > 0) {
             digitalTrendsBtns.forEach(btn => btn.addEventListener('click', () => { submitEvent(btn) }));
         }
-        if (digitalWithoutForm) {
-            digitalWithoutForm.addEventListener('click', submitDtWithoutForm)
+        if (digitalWithoutForms) {
+            digitalWithoutForms.forEach((digitalWithoutForm) => {
+                digitalWithoutForm.addEventListener('click', () => {
+                    submitDtWithoutForm(digitalWithoutForm)
+                })
+            })
         }
         alreadyAccountListener();
 

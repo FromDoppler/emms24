@@ -84,8 +84,8 @@ $block = getGridBlock($normalizedUrl);
         </ul>
         <div class="grid__footer">
             <?php if ($block['block'] === 'CtaBlock') : ?>
-                <a href="https://academy.fromdoppler.com/?utm_source=direct" target="_blank" class="emms__cta emms__fade-in-animation">REGÍSTRATE GRATIS</a>
-                <!-- <a href="#registro" class="emms__cta emms__fade-in">REGÍSTRATE GRATIS</a> -->
+                <a href="#registro" class="emms__cta emms__fade-in-animation eventHiddenElements">REGÍSTRATE GRATIS</a>
+                <button class="emms__cta emms__fade-in-animation eventShowElements digitalWithoutForm" ><span class="button__text">Regístrate gratis</span></button>
             <?php elseif ($block['block'] === 'TextBlock') : ?>
                 <p> <strong>Pronto podrás comprar tus entradas VIP para acceder a los Workshops y el Networking, ¡mantente pendiente a tu casilla de Email!</strong></p>
             <?php endif; ?>

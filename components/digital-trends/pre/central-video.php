@@ -3,8 +3,7 @@
 $contents = [
     '/' => [
         'heading' => 'Súmate al EMMS Digital Trends 2024 y entérate las últimas innovaciones en Marketing Digital',
-        'body' => 'Descubre en este video todo lo que pasó en la última edición y por qué miles de profesionales
-y referentes en la industria eligen este evento para capacitarse.',
+        'body' => 'Descubre en este video por qué miles de profesionales y referentes en la industria eligen este evento para capacitarse.',
         'button' => 'RESERVA TU CUPO GRATIS',
         'link' => 'digital-trends#registro',
     ],
@@ -17,8 +16,7 @@ y aprender cómo hacer crecer tu negocio junto a los líderes del sector.',
     ],
     '/*' => [
         'heading' => 'Súmate al EMMS Digital Trends 2024 y entérate las últimas innovaciones en Marketing Digital',
-        'body' => 'Descubre en este video todo lo que pasó en la última edición y por qué miles de profesionales
-y referentes en la industria eligen este evento para capacitarse.',
+        'body' => 'Descubre en este video por qué miles de profesionales y referentes en la industria eligen este evento para capacitarse.',
         'button' => 'RESERVA TU CUPO GRATIS',
         'link' => 'digital-trends#registro',
     ],

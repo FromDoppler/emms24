@@ -243,6 +243,11 @@
     padding: 190px 0 160px 0;
     position: relative;
 }
+.emms__hero-registration--registered .text-with-icon-container {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
 
 .emms__hero-registration--registered .emms__container--md {
     max-width: 540px;
@@ -254,6 +259,8 @@
     font-weight: 700;
     color: #FFFFFF;
     animation-delay: .1s;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .emms__hero-registration--registered h1 em {

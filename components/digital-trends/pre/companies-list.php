@@ -7,18 +7,23 @@ function getCompaniesBlock($url)
     $blocks = [
         '/' => [
             'block' => 'noButtonBlock',
+            'content' => '¿Quieres ser aliado del EMMS 2024? ¡Hablemos! Escríbenos a',
         ],
         '/registrado' => [
             'block' => 'noButtonBlock',
+            'content' => '¿Quieres ser aliado del EMMS 2024? ¡Hablemos! Escríbenos a',
         ],
         '/digital-trends' => [
             'block' => 'buttonBlock',
+            'content' => '¿Quieres ser aliado del EMMS 2024? ¡Hablemos! Escríbenos a',
         ],
         '/digital-trends-registrado' => [
             'block' => 'buttonBlock',
+            'content' => '<strong>¿Quieres ser Media Partner o Sponsor del EMMS 2024?</strong> ¡Hablemos! Escríbenos a',
         ],
         '/*' => [
             'block' => 'noButtonBlock',
+            'content' => '¿Quieres ser aliado del EMMS 2024? ¡Hablemos! Escríbenos a',
         ],
     ];
 
@@ -48,10 +53,15 @@ $block = getCompaniesBlock($normalizedUrl);
             <li class="emms__companies__list__item"><img src="src/img/logos/logo-easycommerce.png" alt="Easycommerce"></li>
         </ul>
         <?php if ($block['block'] === 'noButtonBlock') : ?>
-    <?php elseif ($block['block'] === 'buttonBlock') : ?>
-        <a href="/sponsors-promo" class="emms__cta emms__fade-in emms__cta--nd xl">CONVIÉRTETE EN ALIADO</a>
-    <?php endif; ?>
-        <small class="emms__fade-in"><strong>¿Tienes dudas sobre el EMMS? <a href="/#preguntas-frecuentes">Haz clic aquí</a> y encuentra las preguntas más frecuentes sobre el evento.</strong></small>
+        <?php elseif ($block['block'] === 'buttonBlock') : ?>
+            <a href="/sponsors-promo" class="emms__cta emms__fade-in emms__cta--nd xl">CONVIÉRTETE EN ALIADO</a>
+        <?php endif; ?>
+
+        <small class="emms__fade-in">
+            <?= $block['content'] ?>
+            <a href="mailto:partners@fromdoppler.com">partners@fromdoppler.com</a>
+        </small>
+
     </div>
 
 </section>

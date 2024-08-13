@@ -4,14 +4,17 @@ $contents = [
     '/' => [
         'subHeading' => 'CUENTA REGRESIVA PARA EL',
         'heading' => 'EMMS DIGITAL TRENDS 2024',
+        'DTCardButton' => 'REGÍSTRATE GRATIS',
     ],
     '/registrado' => [
-        'subHeading' => 'Inspírate con el mayor evento hispano de Digital Trends',
+        'subHeading' => '',
         'heading' => 'EMMS Digital Trends 2024, ¡está llegando!',
+        'DTCardButton' => 'INGRESA AHORA',
     ],
     '/*' => [
         'subHeading' => 'CUENTA REGRESIVA PARA EL',
         'heading' => 'EMMS DIGITAL TRENDS 2024',
+        'DTCardButton' => 'REGÍSTRATE GRATIS',
     ],
 ];
 
@@ -52,7 +55,7 @@ $content = $contents[$normalizedUrl] ?? $contents['/*'];
                         <span>ONLINE Y GRATUITO</span>
                         <div class="emms__eventCards__list__item__text--bottom">
                             <?php if ($digitalTrendsStates['isPre']) : ?>
-                                <a class="emms__cta">REGÍSTRATE GRATIS</a>
+                                <a class="emms__cta" href="/digital-trends"><?php echo ($content['DTCardButton']); ?></a>
                             <?php elseif ($digitalTrendsStates['isLive']) : ?>
                                 <a href="/digital-trends" class="emms__cta">ACCEDE AL VIVO</a>
                             <?php elseif ($digitalTrendsStates['isDuring']) : ?>
@@ -70,10 +73,10 @@ $content = $contents[$normalizedUrl] ?? $contents['/*'];
                     </div>
                     <div class="emms__eventCards__list__item__text">
                         <h3>EMMS E-commerce </h3>
-                        <p>Referentes internacionales de la industria te contarán qué tendencias y estrategias emplean en sus Tiendas Online para captar nuevos clientes y aumentar sus ingresos. Mientras esperas por la siguiente edición, nútrete de nuevas ideas para implementar en tu negocio reviviendo la edición 2024.</p>
+                        <p>Referentes internacionales de la industria te contarán qué tendencias y estrategias emplean en sus Tiendas Online para captar nuevos clientes y aumentar sus ingresos. Mientras esperas por el próximo EMMS, revive la última edición.</p>
                         <span>ONLINE Y GRATUITO</span>
                         <div class="emms__eventCards__list__item__text--bottom">
-                            <a href="ecommerce" class="emms__cta">REVÍVELO AHORA</a>
+                            <a href="ecommerce" class="emms__cta emms_cta--secondary">REVÍVELO AHORA</a>
                         </div>
                     </div>
                 </li>
@@ -96,7 +99,7 @@ $content = $contents[$normalizedUrl] ?? $contents['/*'];
                         <span>ONLINE Y GRATUITO</span>
                         <div class="emms__eventCards__list__item__text--bottom">
                             <?php if ($digitalTrendsStates['isPre']) : ?>
-                                <a class="emms__cta">REGÍSTRATE GRATIS</a>
+                                <a class="emms__cta" href="/digital-trends"><?php echo ($content['DTCardButton']); ?></a>
                             <?php elseif ($digitalTrendsStates['isLive']) : ?>
                                 <a href="/digital-trends" class="emms__cta">ACCEDE AL VIVO</a>
                             <?php elseif ($digitalTrendsStates['isDuring']) : ?>
@@ -117,7 +120,7 @@ $content = $contents[$normalizedUrl] ?? $contents['/*'];
                         <p>Referentes internacionales de la industria te contarán qué tendencias y estrategias emplean en sus Tiendas Online para captar nuevos clientes y aumentar sus ingresos. Mientras esperas por la siguiente edición, nútrete de nuevas ideas para implementar en tu negocio reviviendo la edición 2024.</p>
                         <span>ONLINE Y GRATUITO</span>
                         <div class="emms__eventCards__list__item__text--bottom">
-                            <a href="ecommerce" class="emms__cta">REVÍVELO AHORA</a>
+                            <a href="ecommerce" class="emms__cta emms_cta--secondary">REVÍVELO AHORA</a>
                         </div>
                     </div>
                 </li>

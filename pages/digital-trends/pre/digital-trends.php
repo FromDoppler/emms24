@@ -13,7 +13,7 @@ require_once('././src/components/cacheSettings.php');
         import {
             hiddenOrShowUserUI
         } from './src/<?= VERSION ?>/js/user.js';
-        hiddenOrShowUserUI('digital-trends24');
+        hiddenOrShowUserUI('ecommerce24');
     </script>
 </head>
 
@@ -22,10 +22,10 @@ require_once('././src/components/cacheSettings.php');
     <?php include('./components/navbar-unreg.php') ?>
     <?php include('./components/share.php') ?>
     <main>
-        <div class="register-form__container eventShowElements">
+        <div class="register-form__container eventHiddenElements">
             <?php include('./components/digital-trends/pre/register-form.php') ?>
         </div>
-        <div class="register-noform__container  eventHiddenElements">
+        <div class="register-noform__container  eventShowElements">
             <?php include('./components/digital-trends/pre/register-withoutform.php') ?>
         </div>
         <div class="emms__bg-dark-gradient">

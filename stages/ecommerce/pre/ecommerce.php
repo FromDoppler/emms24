@@ -96,8 +96,8 @@ require_once('././src/components/cacheSettings.php');
                         <ul class="emms__form__field-group">
                             <li class="emms__form__field-item">
                                 <div class="holder">
-                                    <label class="required-label" for="email">Email *</label>
-                                    <input type="email" name="email" id="email" placeholder="&iexcl;No olvides usar @!" class="email required" autocomplete="off">
+                                <label class="required-label" for="email">Email Empresarial*</label>
+                                <input type="email" name="email" id="email" placeholder="&iexcl;No olvides usar @!" class="email required" autocomplete="off">
                                 </div>
                             </li>
                             <li class="emms__form__field-item">
@@ -177,8 +177,8 @@ require_once('././src/components/cacheSettings.php');
                         <ul class="emms__form__field-group">
                             <li class="emms__form__field-item">
                                 <div class="holder">
-                                    <label class="required-label" for="email">Email *</label>
-                                    <input type="email" name="email" id="email" placeholder="&iexcl;No olvides usar @!" class="email required" autocomplete="off">
+                                <label class="required-label" for="email">Email Empresarial*</label>
+                                <input type="email" name="email" id="email" placeholder="&iexcl;No olvides usar @!" class="email required" autocomplete="off">
                                 </div>
                             </li>
                         </ul>
