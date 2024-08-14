@@ -114,9 +114,10 @@ require_once('./utils/DB.php');
                                 <img src="src/img/editions/emms2023-ecommerce.png" alt="EMMS 2023 E-commerce" class="mobile">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
-                                <!-- TODO: Cambiar contenido -->
                                 <h4>EMMS E-commerce 2024</h4>
-                                <p>Más de 13 mil personas se unieron a la primera edición especializada en la industria del Retail e E-commerce del EMMS. Contamos con entrevistas exclusivas con especialistas, casos de éxitos y conferencias, así como también los mejores insights en Inteligencia Artificial aplicada a este mercado.</p>
+                                <p>
+                                    Más de 40 mil personas se capacitaron en la última edición del EMMS E-commerce 2024. Aprovecha esta oportunidad y revive de manera gratuita entrevistas exclusivas con especialistas, Casos de Éxito y Conferencias, como así también los mejores insights en Inteligencia Artificial aplicada a este mercado.
+                                </p>
                                 <span>REVIVE ESTA EDICIÓN</span>
                             </div>
                         </a>
@@ -351,8 +352,8 @@ require_once('./utils/DB.php');
                         </li>
                         <li class="emms__form__field-item">
                             <div class="holder">
-                            <label class="required-label" for="email">Email Empresarial*</label>
-                            <input type="email" name="email" id="email" placeholder="&iexcl;No olvides usar @!" class="email required" autocomplete="off">
+                                <label class="required-label" for="email">Email Empresarial*</label>
+                                <input type="email" name="email" id="email" placeholder="&iexcl;No olvides usar @!" class="email required" autocomplete="off">
                             </div>
                         </li>
                         <li class="emms__form__field-item">
@@ -426,8 +427,8 @@ require_once('./utils/DB.php');
                     <ul class="emms__form__field-group">
                         <li class="emms__form__field-item">
                             <div class="holder">
-                            <label class="required-label" for="email">Email Empresarial*</label>
-                            <input type="email" name="email" id="email" placeholder="&iexcl;No olvides usar @!" class="email required" autocomplete="off">
+                                <label class="required-label" for="email">Email Empresarial*</label>
+                                <input type="email" name="email" id="email" placeholder="&iexcl;No olvides usar @!" class="email required" autocomplete="off">
                             </div>
                         </li>
                     </ul>
