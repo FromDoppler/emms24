@@ -7,6 +7,15 @@
     background-position-x: center;
 }
 
+/* FIXME: Change this class with custom digital trends css  */
+.emms__ecommerce .emms__hero-registration.digital--trends {
+    background: #000 url("../../../img/emms-dt-background.png") no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+    background-position-x: center;
+}
+
+
 @media(max-width: 620px) {
     .emms__ecommerce .emms__hero-registration {
         background-size: cover;
@@ -44,6 +53,12 @@
 
 
 /* Logueado */
+
+.emms__ecommerce .emms__hero-registration--registered.digital--trends {
+    background: #000 url("../../../img/emms-dt-background.png") no-repeat;
+    background-size: cover;
+    animation: hero-back-ecommerce 1s;
+}
 
 .emms__ecommerce .emms__hero-registration--registered {
     background: #000 url("../../../img/back-hero-ecommerce-registered.png") no-repeat;

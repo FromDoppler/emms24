@@ -1,4 +1,4 @@
-<section class="emms__hero-registration--registered">
+<section class="emms__hero-registration--registered digital--trends">
     <div class="emms__container--md">
         <h1 class="emms__fade-in"><em>ONLINE Y GRATUITO - DEL 26 AL 28 DE NOVIEMBRE</em>¡Llega el DIGITAL TRENDS 2024!</h1>
         <p class="emms__fade-in">Súmate al evento exclusivo pensado para que conozcas de la mano de expertos y referentes internacionales todas las tendencias del Marketing Digital.</p>

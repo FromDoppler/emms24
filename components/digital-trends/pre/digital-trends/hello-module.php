@@ -1,4 +1,4 @@
-<section class="emms__hero-registration--registered">
+<section class="emms__hero-registration--registered digital--trends">
     <div class="emms__container--md">
         <h1 class="emms__fade-top"><em>ONLINE Y GRATUITO - DEL 26 AL 28 DE NOVIEMBRE</em>¡Felicitaciones! Ya eres parte
             del EMMS DIGITAL TRENDS 2024:)</h1>

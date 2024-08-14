@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         e.preventDefault();
 
-        await submitFormFetch(editionsForm, eventsType.ECOMMERCE).then(({ fetchResp: resp, encodeEmail }) => {
+        await submitFormFetch(editionsForm, eventsType.DIGITALTRENDS).then(({ fetchResp: resp, encodeEmail }) => {
             if (!resp.ok) throw new Error('Server error on Editions fetch', resp?.status);
             localStorage.setItem('dplrid', encodeEmail);
             localStorage.setItem('lastEventsUpdateTime', new Date());

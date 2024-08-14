@@ -1,4 +1,4 @@
-<section class="emms__hero-registration">
+<section class="emms__hero-registration digital--trends">
   <div class="emms__hero-registration__columns">
     <div class="emms__hero-registration__text emms__fade-in">
       <h1><em>EVENTO ONLINE Y GRATUITO - DEL 26 AL 28 DE NOVIEMBRE</em> <span class="top">DIGITAL TRENDS</span><span class="bottom">2024</span></h1>
