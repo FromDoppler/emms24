@@ -18,9 +18,6 @@
         </div>
     </div>
     <button class="emms__cta digitalWithoutForm" type="submit" id="digitalWithoutForm"><span class="button__text">Regístrate gratis</span></button>
-    </div>
-    <!-- TODO: Marquee component -->
-    <!-- Marquee -->
     <div class="emms__hero-registration__bottom images emms__fade-in">
         <p>
             <img src="src/img/marquee/google.png" alt="Google">
@@ -71,4 +68,8 @@
             <img src="src/img/marquee/vtex.png" alt="Vtex">
         </p>
     </div>
+    </div>
+    <!-- TODO: Marquee component -->
+    <!-- Marquee -->
+
 </section>
