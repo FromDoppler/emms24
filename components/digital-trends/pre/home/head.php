@@ -6,8 +6,8 @@
 <meta property="og:url" content="https://goemms.com/">
 <meta property="og:title" content="EMMS 2024: Conferencias online y gratuitas sobre Marketing Digital">
 <meta property="og:description" content="Súmate gratis y en un mismo lugar a 2 ediciones del evento de Marketing más esperado del año: E-commerce y Digital Trends.">
-<meta property="og:image" content="https://goemms.com/share-2023.png">
-<meta name="twitter:image" content="https://goemms.com/share-2023.png">
+<meta property="og:image" content="https://goemms.com/share-2024.png">
+<meta name="twitter:image" content="https://goemms.com/share-2024.png">
 
 <meta property="og:site_name" content="EMMS 2024: Conferencias online y gratuitas sobre Marketing Digital">
 <meta name="twitter:image:alt" content="EMMS 2024: Conferencias online y gratuitas sobre Marketing Digital">
