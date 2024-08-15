@@ -6,8 +6,8 @@
 <meta property="og:url" content="https://goemms.com/digital-trends">
 <meta property="og:title" content="EMMS Digital Trends: Conferencias gratis y online">
 <meta property="og:description" content="Inscríbete gratis al mayor evento online sobre Digital Trends. Aprende e inspírate con los mayores referentes internacionales, accede a beneficios, contenido exclusivo, ¡y más!">
-<meta property="og:image" content="https://goemms.com/share-digital-trends-2023.png">
-<meta name="twitter:image" content="https://goemms.com/share-digital-trends-2023.png">
+<meta property="og:image" content="https://goemms.com/share-2024.png">
+<meta name="twitter:image" content="https://goemms.com/share-2024.png">
 
 <meta property="og:site_name" content="EMMS Digital Trends: Conferencias gratis y online">
 <meta name="twitter:image:alt" content="EMMS Digital Trends: Conferencias gratis y online">

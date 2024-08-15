@@ -330,7 +330,7 @@
 
     .emms__eventCards__list--mb .flickity-viewport {
         /* Este importan viene dado para pisar el estilo en linea inyectado por flickity */
-        height: 525px !important;
+        height: 565px !important;
         background: #fff;
         border-radius: 20px;
     }
