@@ -20,6 +20,7 @@ require_once('././src/components/cacheSettings.php');
     <?php include('./components/share.php') ?>
     <main>
         <?php include('./components/digital-trends/pre/digital-trends/hello-module.php') ?>
+        <?php include('./components/digital-trends/pre/digital-trends/registrado/central-video.php') ?>
         <?php include('./components/digital-trends/pre/premium-content.php') ?>
         <?php include('./components/digital-trends/pre/grid-event-types.php') ?>
         <?php include('./components/digital-trends/pre/companies-list.php') ?>
