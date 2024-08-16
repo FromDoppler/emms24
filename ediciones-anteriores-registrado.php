@@ -108,7 +108,7 @@ require_once('./utils/DB.php');
                 <h2>Revive las ediciones anteriores</h2>
                 <div class="emms__previous-editions__list__container emms__previous-editions__list__container--xl emms__fade-in">
                     <div class="emms__previous-editions__list__item emms__previous-editions__list__item--xl">
-                        <a data-target="modalRegister2" data-toggle="emms__register-modal">
+                        <a href="https://youtube.com/playlist?list=PLHE_SVtQOB8rfVH-su2RHsEZzh06kePw3&feature=shared" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
                                 <img src="src/img/editions/edicion2023-ecommerce-xl.png" alt="EMMS 2024 E-commerce" class="desktop">
                                 <img src="src/img/editions/emms2023-ecommerce.png" alt="EMMS 2023 E-commerce" class="mobile">

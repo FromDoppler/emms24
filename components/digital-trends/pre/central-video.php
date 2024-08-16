@@ -31,8 +31,8 @@ y aprender cómo hacer crecer tu negocio junto a los líderes del sector.',
 // videoName no register https://drive.google.com/file/d/1cxqw-0DrW7W09y-q3K9k3XLGOKeo1W9N/view
 // videoName register  https://drive.google.com/file/d/1jSMbjg3YvUm2lC87ysm8VAReRnK60lac/view
 
-$url = $_SERVER['REQUEST_URI'];
-$normalizedUrl = rtrim($url, '/');
+include_once('./components/helpers/urlHelper.php');
+$normalizedUrl = getNormalizeUrl();
 $content = $contents[$normalizedUrl] ?? $contents['/*'];
 ?>
 

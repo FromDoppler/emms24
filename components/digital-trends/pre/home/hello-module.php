@@ -19,8 +19,8 @@ $contents = [
 ];
 
 
-$url = $_SERVER['REQUEST_URI'];
-$normalizedUrl = rtrim($url, '/');
+include_once('./components/helpers/urlHelper.php');
+$normalizedUrl = getNormalizeUrl();
 $content = $contents[$normalizedUrl] ?? $contents['/*'];
 ?>
 

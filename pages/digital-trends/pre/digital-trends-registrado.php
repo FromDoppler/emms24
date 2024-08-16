@@ -13,9 +13,6 @@ require_once('././src/components/cacheSettings.php');
 
 <body class="emms__ecommerce emms__ecommerce-logueado">
     <?php include('./components/gtm.php'); ?>
-    <?php if ($digitalTrendsStates['isPre']) : ?>
-        <?php include('./components/digital-trends/pre/hellobar-vip.php') ?>
-    <?php endif; ?>
     <?php include('./components/navbar-reg.php') ?>
     <?php include('./components/share.php') ?>
     <main>

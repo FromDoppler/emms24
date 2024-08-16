@@ -1,7 +1,6 @@
 <?php
-$url = $_SERVER['REQUEST_URI'];
-
-$normalizedUrl = rtrim($url, '/');
+include_once('./components/helpers/urlHelper.php');
+$normalizedUrl = getNormalizeUrl();
 function getCompaniesBlock($url)
 {
     $blocks = [
