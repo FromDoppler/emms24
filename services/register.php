@@ -56,8 +56,6 @@ function setSponsorDataRequest($ip, $countryGeo)
 {
     $firstname = getFieldValue('name');
     $email = getFieldValue('email');
-    $company     =  getFieldValue('company');
-    $jobPosition     = getFieldValue('jobPosition');
     $phone     = getFieldValue('phone');
     $privacy = getFieldValue('acceptPolicies', false);
     $promotions = getFieldValue('acceptPromotions', false);
@@ -73,8 +71,6 @@ function setSponsorDataRequest($ip, $countryGeo)
         'register' => date("Y-m-d h:i:s A"),
         'firstname' => $firstname,
         'email' => $email,
-        'company' =>  $company,
-        'jobPosition' =>  $jobPosition,
         'phone' =>  $phone,
         'privacy' => $privacy,
         'promotions' => $promotions,
@@ -116,8 +112,6 @@ function setDataRequest($ip, $countryGeo)
     }
     $email = getFieldValue('email');
     $encode_email = getFieldValue('encodeEmail');
-    $company     =  getFieldValue('company');
-    $jobPosition     = getFieldValue('jobPosition');
     $phone     = getFieldValue('phone');
     $privacy = getFieldValue('acceptPolicies', false);
     if ($requestWithoutForm) {
@@ -138,8 +132,6 @@ function setDataRequest($ip, $countryGeo)
         'register' => date("Y-m-d h:i:s A"),
         'firstname' => $firstname,
         'email' => $email,
-        'company' =>  $company,
-        'jobPosition' =>  $jobPosition,
         'phone' =>  $phone,
         'ecommerce' => $ecommerce,
         'digital_trends' => $digital_trends,

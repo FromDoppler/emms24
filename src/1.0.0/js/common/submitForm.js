@@ -20,8 +20,6 @@ const submitFormFetch = async (form, fetchType) => {
     const userData = {
         'name': formData.get('name'),
         'email': formData.get('email'),
-        'company': formData.get('company'),
-        'jobPosition': formData.get('jobPosition'),
         'phone': (formData.get('phone').trim() != '') ? dialCode + formData.get('phone') : null,
         'encodeEmail': encodeEmail,
         'acceptPolicies': (formData.get('privacy') === 'true') ? true : null,
