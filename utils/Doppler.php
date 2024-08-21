@@ -42,8 +42,6 @@ class Doppler
             'term_utm' => 'utmterm',
             'join_url' => 'academyGTW',
             'origin' => 'DOrigin',
-            'company' => 'Company',
-            'jobPosition' => 'position',
             'phone' => 'tel',
         ];
 

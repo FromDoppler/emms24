@@ -25,8 +25,6 @@ class SpreadSheetGoogle
                 $user['country_ip'] . " ",
                 $user['ecommerce'] . " ",
                 $user['digital_trends'] . " ",
-                $user['company'] . " ",
-                $user['jobPosition'] . " ",
                 $user['phone'] . " ",
             )
         );

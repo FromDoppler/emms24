@@ -141,7 +141,7 @@ class DB
     public function insertSubscriptionDoppler($subscription)
     {
 
-        $fields = "(email, list, form_id, register, firstname, phone, company, jobPosition, ecommerce, `digital-trends`,";
+        $fields = "(email, list, form_id, register, firstname, phone, ecommerce, `digital-trends`,";
         $fields .= "ip, country_ip, privacy, promotions, source_utm, medium_utm, campaign_utm, content_utm, term_utm)";
         date_default_timezone_set('America/Argentina/Buenos_Aires');
         $values = array(
@@ -151,8 +151,6 @@ class DB
             date("Y-m-d h:i:s A"),
             $subscription['firstname'],
             $subscription['phone'],
-            $subscription['company'],
-            $subscription['jobPosition'],
             $subscription['ecommerce'],
             $subscription['digital_trends'],
             $subscription['ip'],
@@ -165,7 +163,7 @@ class DB
             $subscription['content_utm'],
             $subscription['term_utm']
         );
-        $this->query("INSERT INTO subscriptions_doppler $fields VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", $values);
+        $this->query("INSERT INTO subscriptions_doppler $fields VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", $values);
     }
 
     public function insertSubscriptionErrors($email, $list, $reason, $errorCode)
@@ -203,8 +201,6 @@ class DB
                 'register',
                 'firstname',
                 'phone',
-                'company',
-                'jobPosition',
                 'ecommerce',
                 'digital-trends',
                 'source_utm',
@@ -237,7 +233,7 @@ class DB
                 $this->query("UPDATE registered SET $updateFields WHERE email=?", $updateValues);
             }
         } else {
-            $fields = "(`email`, `phase`, `register`, `firstname`, `phone`, `company`, `jobPosition`, `ecommerce`, `digital-trends`, ";
+            $fields = "(`email`, `phase`, `register`, `firstname`, `phone`, `ecommerce`, `digital-trends`, ";
             $fields .= "`source_utm`, `medium_utm`, `campaign_utm`, `content_utm`, `term_utm`)";
 
             $values = [
@@ -246,8 +242,6 @@ class DB
                 $this->connection->real_escape_string($subscription['register']),
                 $this->connection->real_escape_string($subscription['firstname']),
                 $this->connection->real_escape_string($subscription['phone']),
-                $this->connection->real_escape_string($subscription['company']),
-                $this->connection->real_escape_string($subscription['jobPosition']),
                 $this->connection->real_escape_string($subscription['ecommerce']),
                 $this->connection->real_escape_string($subscription['digital_trends']),
                 $this->connection->real_escape_string($subscription['source_utm']),
@@ -257,7 +251,7 @@ class DB
                 $this->connection->real_escape_string($subscription['term_utm'])
             ];
 
-            $this->query("INSERT INTO `registered` $fields VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", $values);
+            $this->query("INSERT INTO `registered` $fields VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", $values);
         }
     }
 
