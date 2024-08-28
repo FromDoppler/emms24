@@ -56,3 +56,6 @@
   })(window, document, 'script', 'dataLayer', 'GTM-M768WZR');
 </script>
 <!-- End Google Tag Manager -->
+
+<!-- Doppler Dhtrack necesario para envio de notif. push -->
+<script type="text/javascript" async="async" src="https://hub.fromdoppler.com/public/dhtrack.js" ></script>
