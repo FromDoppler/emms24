@@ -6,7 +6,7 @@ $contents = [
         'body' => 'Descubre en este video por qué miles de profesionales y referentes en la industria eligen este evento para capacitarse.',
         'button' => 'RESERVA TU CUPO GRATIS',
         'link' => 'digital-trends#registro',
-        'videoName' => 'EMMS-dt-no-registrado.mp4',
+        'youtubeCode' => 'ZGS-lmiXHFE',
     ],
     '/digital-trends' => [
         'heading' => 'Inspírate con el mayor evento hispano de Marketing Digital',
@@ -14,37 +14,53 @@ $contents = [
 y aprender cómo hacer crecer tu negocio junto a los líderes del sector.',
         'button' => 'REGÍSTRATE AHORA',
         'link' => '#registro',
-        'videoName' => 'EMMS-registrado.mp4',
+        'youtubeCode' => 'ZGS-lmiXHFE',
+    ],
+    '/digital-trends-registrado' => [
+        'heading' => '¡Gracias por sumarte al EMMS Digital Trends 2024!',
+        'body' => 'Comenzó la cuenta regresiva para que descubras las últimas innovaciones en Marketing Digital',
+        'youtubeCode' => 'isDPHOi2mAs',
     ],
     '/*' => [
         'heading' => 'Súmate al EMMS Digital Trends 2024 y entérate las últimas innovaciones en Marketing Digital',
         'body' => 'Descubre en este video por qué miles de profesionales y referentes en la industria eligen este evento para capacitarse.',
         'button' => 'RESERVA TU CUPO GRATIS',
         'link' => 'digital-trends#registro',
-        'videoName' => 'EMMS-dt-no-registrado.mp4',
+        'youtubeCode' => 'ZGS-lmiXHFE',
     ],
 ];
-
-// Due to the size of the videos, they cannot be uploaded to GitHub.
-// A reference to them will be left in drive files.
-
-// videoName no register https://drive.google.com/file/d/1cxqw-0DrW7W09y-q3K9k3XLGOKeo1W9N/view
-// videoName register  https://drive.google.com/file/d/1jSMbjg3YvUm2lC87ysm8VAReRnK60lac/view
 
 include_once('./components/helpers/urlHelper.php');
 $normalizedUrl = getNormalizeUrl();
 $content = $contents[$normalizedUrl] ?? $contents['/*'];
+
+$youtubeBaseUrl = "https://www.youtube.com/embed/";
+$youtubeParams = "?controls=0&modestbranding=1&rel=0&fs=0&disablekb=1&autoplay=1&loop=1";
+$videoUrl = $youtubeBaseUrl . $content['youtubeCode'] . $youtubeParams;
+
 ?>
 
 <section class="emms__centralvideo">
-    <div class="emms__container--lg emms__container--lg--column ">
-        <div class="emms__centralvideo__title emms__fade-in">
-            <h2><?php echo ($content['heading']); ?></h2>
-            <p><?php echo ($content['body']); ?></p>
-        </div>
+    <div class="emms__container--lg emms__container--lg--column">
+        <?php if (!empty($content['heading']) || !empty($content['body'])): ?>
+            <div class="emms__centralvideo__title emms__fade-in">
+                <?php if (!empty($content['heading'])): ?>
+                    <h2><?php echo $content['heading']; ?></h2>
+                <?php endif; ?>
+                <?php if (!empty($content['body'])): ?>
+                    <p><?php echo $content['body']; ?></p>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
+
         <div class="emms__centralvideo__video emms__fade-in">
-            <video src="src/videos/<?php echo ($content['videoName']); ?>" controls></video>
+            <iframe width="560" height="315" src="<?php echo $videoUrl ?>" frameborder="0" allowfullscreen></iframe>
         </div>
-        <a href="<?php echo ($content['link']); ?>" class="emms__cta"><?php echo ($content['button']); ?></a>
+
+        <?php if (!empty($content['link']) || !empty($content['button'])): ?>
+            <a href="<?php echo $content['link']; ?>" class="emms__cta">
+                <?php echo !empty($content['button']) ? $content['button'] : ''; ?>
+            </a>
+        <?php endif; ?>
     </div>
 </section>
