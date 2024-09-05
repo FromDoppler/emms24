@@ -1,12 +1,12 @@
 <section class="emms__hero-registration digital--trends">
   <div class="emms__hero-registration__columns">
     <div class="emms__hero-registration__text emms__fade-in">
-      <h1><em>EVENTO ONLINE Y GRATUITO - DEL 26 AL 28 DE NOVIEMBRE</em> <span class="top">DIGITAL TRENDS</span><span class="bottom">2024</span></h1>
-      <p>Inspírate y aprende con un evento exclusivo pensado para tus trends Online.</p>
+      <h1><em>EVENTO ONLINE Y GRATUITO - DEL 26 AL 28 DE NOVIEMBRE</em> <span class="top">EMMS</span>Digital Trends<span class="bottom">2024</span></h1>
+      <p>Inspírate y descubre todas las tendencias del Marketing Digital.</p>
       <ul class="emms__hero-registration__text__checklist">
-        <li>SPEAKERS EXTRATERRENACIONALES</li>
-        <li>WORKSHOPS Y NETWORKING</li>
+        <li>SPEAKERS INTERNACIONALES</li>
         <li>HERRAMIENTAS Y RECURSOS</li>
+        <li>WORKSHOPS Y NETWORKING</li>
       </ul>
     </div>
     <div class="emms__hero-registration__form emms__fade-in" id="registro">
