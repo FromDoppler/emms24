@@ -17,6 +17,9 @@ require_once('././src/components/cacheSettings.php');
     <?php include('./components/share.php') ?>
     <main>
         <?php include('./components/digital-trends/pre/digital-trends/hello-module.php') ?>
+        <div class="emms__bg-dark-gradient">
+            <?php include('./components/digital-trends/schedule/schedule.php') ?>
+        </div>
         <?php include('./components/digital-trends/pre/central-video.php') ?>
         <?php include('./components/digital-trends/pre/premium-content.php') ?>
         <?php include('./components/digital-trends/pre/grid-event-types.php') ?>

@@ -23,6 +23,10 @@
     const tabButtons = tab.querySelectorAll('[role="tab"]');
     const tabPanels = Array.from(tab.querySelectorAll('[role="tabpanel"]'));
 
+    tabPanels.forEach((panel, index) => {
+        panel.hidden = index !== 0;
+    });
+
     function tabClickHandler(e) {
         //Hide All Tabpane
         tabPanels.forEach(panel => {
@@ -53,9 +57,7 @@
         button.addEventListener('click', tabClickHandler);
     })
 
-
     // Show/Hide Biography Speaker
-
     const btnsBio = document.querySelectorAll(".emms__calendar__list__item__card__btn-bio");
     const btnBioHide = document.querySelectorAll(".emms__calendar__list__item__card__btn-bio-hide");
     const classBioShow = "emms__calendar__list__item__card__bio--show";
