@@ -30,7 +30,7 @@ y aprender cómo hacer crecer tu negocio junto a los líderes del sector.',
     ],
 ];
 
-include_once('./components/helpers/urlHelper.php');
+include_once($_SERVER['DOCUMENT_ROOT'] . '/components/helpers/urlHelper.php');
 $normalizedUrl = getNormalizeUrl();
 $content = $contents[$normalizedUrl] ?? $contents['/*'];
 

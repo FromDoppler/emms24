@@ -1,17 +1,17 @@
 <?php
-require_once('././src/components/cacheSettings.php');
-require_once('././config.php');
-require_once('./utils/DB.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/config.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/utils/DB.php');
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <?php include_once('././src/components/head-home.php'); ?>
-    <?php include_once('././src/components/head.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/head-home.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/head.php'); ?>
 
-    <script src='./src/<?= VERSION ?>/js/vendors/socket.io.min.js?version=<?= VERSION ?>'></script>
+    <script src='/src/<?= VERSION ?>/js/vendors/socket.io.min.js?version=<?= VERSION ?>'></script>
     <script>
         const socket = io("wss://<?= URL_REFRESH ?>", {
             path: "/<?= PATH_REFRESH ?>/socket.io"
@@ -24,7 +24,7 @@ require_once('./utils/DB.php');
         import {
             isUserLogged,
             getUrlWithParams
-        } from './src/<?= VERSION ?>/js/common/index.js';
+        } from '/src/<?= VERSION ?>/js/common/index.js';
 
         if (!isUserLogged()) {
             window.location.href = getUrlWithParams('/ediciones-anteriores');
@@ -38,7 +38,7 @@ require_once('./utils/DB.php');
     <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
             <div class="emms__header__logo">
-                <a href="/"><img src="src/img/logos/logo-emms.png" alt="Emms 2024"></a>
+                <a href="/"><img src="/src/img/logos/logo-emms.png" alt="Emms 2024"></a>
             </div>
             <?php if ($digitalTrendsStates['isLive']) : ?>
                 <div class="emms__header__live">
@@ -66,21 +66,21 @@ require_once('./utils/DB.php');
 
     <!-- Share -->
     <div class="emms__share">
-        <a id="btn-share" class="emms__share__open-list"><img src="src/img/icons/icon-share.svg" alt="Share"></a>
+        <a id="btn-share" class="emms__share__open-list"><img src="/src/img/icons/icon-share.svg" alt="Share"></a>
         <ul id="list-share" class="emms__share__list">
             <li>
                 <a href="javascript: void(0);" onclick="window.open ('https://www.facebook.com/sharer/sharer.php?u=https%3A//goemms.com/digital-trends-registrado', 'Facebook', 'toolbar=0, status=0, width=550, height=350');">
-                    <img src="src/img/Facebook-w.svg" alt="Facebook">
+                    <img src="/src/img/Facebook-w.svg" alt="Facebook">
                 </a>
             </li>
             <li>
                 <a href="javascript: void(0);" onclick="window.open ('https://twitter.com/intent/tweet?text=¡Vuelve%20el%20EMMS%20Digital%20Trends!%20El%20evento%20online%20y%20gratuito%20de%20Marketing%20Digital%20más%20importante%20de%20España%20y%20Latinoamérica.%20Es%20gratis%20y%20online%20:%29%20Reserva%20tu%20lugar%20ahora:%20https://goemms.com/digital-trends', 'Twitter', 'toolbar=0, status=0, width=550, height=350');">
-                    <img src="src/img/Twitter-w.svg" alt="Twitter">
+                    <img src="/src/img/Twitter-w.svg" alt="Twitter">
                 </a>
             </li>
             <li>
                 <a href="javascript: void(0);" onclick="window.open ('https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fgoemms.com%2Fdigital-trends-registrado&title=%C2%A1Cuenta%20regresiva%20para%20una%20nueva%20edici%C3%B3n%20de%20EMMS%20Digital%20Trends!&summary=%C2%A1Cuenta%20regresiva%20para%20una%20nueva%20edici%C3%B3n%20de%20EMMS%20Digital%20Trends!%20Llega%20el%20evento%20online%20y%20gratuito%20de%20Marketing%20Digital%20m%C3%A1s%20importante%20de%20Espa%C3%B1a%20y%20Latinoam%C3%A9rica.%20Conferencias%2C%20Entrevistas%2C%20Casos%20de%20%C3%A9xito%2C%20Workshops%2C%20Networking%20%C2%A1y%20mucho%20m%C3%A1s!%20Cada%20a%C3%B1o%2C%20miles%20de%20profesionales%20y%20referentes%20en%20la%20industria%20eligen%20este%20evento%20para%20capacitarse.%20Es%20gratis%20y%20online%20%3A)%20Reserva%20tu%20lugar%20ahora%3A%20goemms.com%2Fdigital-trends&mini=true', 'Linkedin', 'toolbar=0, status=0, width=550, height=550');">
-                    <img src="src/img/LinkedIn-w.svg" alt="LinkedIn">
+                    <img src="/src/img/LinkedIn-w.svg" alt="LinkedIn">
                 </a>
             </li>
         </ul>
@@ -97,7 +97,7 @@ require_once('./utils/DB.php');
                     </p>
                 </div>
                 <div class="emms__previous-editions__hero__column-img">
-                    <img src="src/img/team-doppler.png" alt="Equipo de Doppler" class="emms__fade-in">
+                    <img src="/src/img/team-doppler.png" alt="Equipo de Doppler" class="emms__fade-in">
                 </div>
             </div>
         </section>
@@ -110,8 +110,8 @@ require_once('./utils/DB.php');
                     <div class="emms__previous-editions__list__item emms__previous-editions__list__item--xl">
                         <a href="https://youtube.com/playlist?list=PLHE_SVtQOB8rfVH-su2RHsEZzh06kePw3&feature=shared" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/edicion2023-ecommerce-xl.png" alt="EMMS 2024 E-commerce" class="desktop">
-                                <img src="src/img/editions/emms2023-ecommerce.png" alt="EMMS 2023 E-commerce" class="mobile">
+                                <img src="/src/img/editions/edicion2023-ecommerce-xl.png" alt="EMMS 2024 E-commerce" class="desktop">
+                                <img src="/src/img/editions/emms2023-ecommerce.png" alt="EMMS 2023 E-commerce" class="mobile">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
                                 <h4>EMMS E-commerce 2024</h4>
@@ -128,7 +128,7 @@ require_once('./utils/DB.php');
                     <li class="emms__previous-editions__list__item emms__previous-editions__list__item--lg emms__fade-in">
                         <a href="https://www.youtube.com/playlist?list=PLHE_SVtQOB8qMW0FxjjOYdNpLyX0x3_4z" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2023-ecommerce.png" alt="EMMS 2023 E-commerce">
+                                <img src="/src/img/editions/emms2023-ecommerce.png" alt="EMMS 2023 E-commerce">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
                                 <h3>EMMS E-COMMERCE 2023</h3>
@@ -140,7 +140,7 @@ require_once('./utils/DB.php');
                     <li class="emms__previous-editions__list__item emms__previous-editions__list__item--lg emms__fade-in">
                         <a href="https://www.youtube.com/playlist?list=PLHE_SVtQOB8qPIWeiFxsj1HdRpjHPN71R" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2023-dt.png" alt="EMMS 2023 Digital Trends">
+                                <img src="/src/img/editions/emms2023-dt.png" alt="EMMS 2023 Digital Trends">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
                                 <h3>EMMS DIGITAL TRENDS 2023</h3>
@@ -155,7 +155,7 @@ require_once('./utils/DB.php');
                     <li class="emms__previous-editions__list__item emms__fade-in">
                         <a href="https://youtube.com/playlist?list=PLHE_SVtQOB8rm4R9Dn55TfQSABmWQoaRK" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2022.png" alt="EMMS 2022">
+                                <img src="/src/img/editions/emms2022.png" alt="EMMS 2022">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
                                 <h3>EMMS 2022</h3>
@@ -167,7 +167,7 @@ require_once('./utils/DB.php');
                     <li class="emms__previous-editions__list__item emms__fade-in">
                         <a href="https://www.youtube.com/playlist?list=PLHE_SVtQOB8oeQSWPozYXCwdC9PKRNPiM" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2021.png" alt="EMMS 2021">
+                                <img src="/src/img/editions/emms2021.png" alt="EMMS 2021">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
                                 <h3>EMMS 2021</h3>
@@ -181,7 +181,7 @@ require_once('./utils/DB.php');
                     <li class="emms__previous-editions__list__item emms__fade-in">
                         <a href="https://www.youtube.com/playlist?list=PLHE_SVtQOB8pcO6n-OHDedWgmicdFuj_p" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2020.png" alt="EMMS 2020">
+                                <img src="/src/img/editions/emms2020.png" alt="EMMS 2020">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
                                 <h3>EMMS 2020</h3>
@@ -193,7 +193,7 @@ require_once('./utils/DB.php');
                     <li class="emms__previous-editions__list__item emms__fade-in">
                         <a href="https://www.youtube.com/playlist?list=PLHE_SVtQOB8qoW8HGYDWUF1V6c0taJGJk" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2019.png" alt="EMMS 2019">
+                                <img src="/src/img/editions/emms2019.png" alt="EMMS 2019">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
                                 <h3>EMMS 2019</h3>
@@ -205,7 +205,7 @@ require_once('./utils/DB.php');
                     <li class="emms__previous-editions__list__item emms__fade-in">
                         <a href="https://www.youtube.com/playlist?list=PLHE_SVtQOB8qJGZdZ8UiUZA9N0BqQ_ePf" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2018.png" alt="EMMS 2018">
+                                <img src="/src/img/editions/emms2018.png" alt="EMMS 2018">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
                                 <h3>EMMS 2018</h3>
@@ -217,7 +217,7 @@ require_once('./utils/DB.php');
                     <li class="emms__previous-editions__list__item emms__fade-in">
                         <a href="https://www.youtube.com/playlist?list=PLHE_SVtQOB8rVbcM84J2HdtU9Ko1N2wOW" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2017.png" alt="EMMS 2017">
+                                <img src="/src/img/editions/emms2017.png" alt="EMMS 2017">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
                                 <h3>EMMS 2017</h3>
@@ -229,7 +229,7 @@ require_once('./utils/DB.php');
                     <li class="emms__previous-editions__list__item emms__fade-in">
                         <a href="https://www.youtube.com/playlist?list=PLHE_SVtQOB8olvfTQWIY-K12xmfh-083T" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2016.png" alt="EMMS 2016">
+                                <img src="/src/img/editions/emms2016.png" alt="EMMS 2016">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
                                 <h3>EMMS 2016</h3>
@@ -241,7 +241,7 @@ require_once('./utils/DB.php');
                     <li class="emms__previous-editions__list__item emms__fade-in">
                         <a href="https://www.youtube.com/playlist?list=PLHE_SVtQOB8rSRLFPeeXwpbFwXglMAjw6" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2015.png" alt="EMMS 2015">
+                                <img src="/src/img/editions/emms2015.png" alt="EMMS 2015">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
                                 <h3>EMMS 2015</h3>
@@ -253,7 +253,7 @@ require_once('./utils/DB.php');
                     <li class="emms__previous-editions__list__item emms__fade-in">
                         <a href="https://www.youtube.com/playlist?list=PLHE_SVtQOB8rfXIJu1cFWY8LjPe6wQQ4b" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2014.png" alt="EMMS 2014">
+                                <img src="/src/img/editions/emms2014.png" alt="EMMS 2014">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
                                 <h3>EMMS 2014</h3>
@@ -265,7 +265,7 @@ require_once('./utils/DB.php');
                     <li class="emms__previous-editions__list__item emms__fade-in">
                         <a href="https://www.youtube.com/playlist?list=PLHE_SVtQOB8qr7C4nts3AwCXRP3fPi1y1" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2013.png" alt="EMMS 2013">
+                                <img src="/src/img/editions/emms2013.png" alt="EMMS 2013">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
                                 <h3>EMMS 2013</h3>
@@ -277,7 +277,7 @@ require_once('./utils/DB.php');
                     <li class="emms__previous-editions__list__item emms__fade-in">
                         <a href="https://www.youtube.com/playlist?list=PLHE_SVtQOB8pFFK1-Tg8o1uDOWKUGBaoM" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2012.png" alt="EMMS 2012">
+                                <img src="/src/img/editions/emms2012.png" alt="EMMS 2012">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
                                 <h3>EMMS 2012</h3>
@@ -289,7 +289,7 @@ require_once('./utils/DB.php');
                     <li class="emms__previous-editions__list__item emms__fade-in">
                         <a href="https://www.youtube.com/playlist?list=PLHE_SVtQOB8pCjMuMVOwrataaoQUyaFvo" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2011.png" alt="EMMS 2011">
+                                <img src="/src/img/editions/emms2011.png" alt="EMMS 2011">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
                                 <h3>EMMS 2011</h3>
@@ -301,7 +301,7 @@ require_once('./utils/DB.php');
                     <li class="emms__previous-editions__list__item emms__fade-in">
                         <a href="https://www.youtube.com/playlist?list=PLHE_SVtQOB8oQe0h6OLhb1QOwMHSfoI3P" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2010.png" alt="EMMS 2010">
+                                <img src="/src/img/editions/emms2010.png" alt="EMMS 2010">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
                                 <h3>EMMS 2010</h3>
@@ -313,7 +313,7 @@ require_once('./utils/DB.php');
                     <li class="emms__previous-editions__list__item emms__fade-in">
                         <a href="https://www.youtube.com/playlist?list=PLHE_SVtQOB8qZykZGtv66ITP3zxHPUhfV" target="_blank">
                             <div class="emms__previous-editions__list__item__image">
-                                <img src="src/img/editions/emms2009.png" alt="EMMS 2009">
+                                <img src="/src/img/editions/emms2009.png" alt="EMMS 2009">
                             </div>
                             <div class="emms__previous-editions__list__item__description">
                                 <h3>EMMS 2009</h3>
@@ -329,7 +329,7 @@ require_once('./utils/DB.php');
     </main>
 
     <!-- Footer -->
-    <?php include_once('././src/components/footer.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/footer.php'); ?>
 
 
 

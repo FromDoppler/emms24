@@ -1,6 +1,6 @@
 <?php
-require_once('./config.php');
-require_once('./utils/DB.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/config.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/utils/DB.php');
 
 if (isset($_GET['slug'])) {
     $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
@@ -21,8 +21,8 @@ if (isset($_GET['slug'])) {
 <html lang="en">
 
 <head>
-    <?php include_once('././src/components/head-home.php'); ?>
-    <?php include_once('././src/components/head.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/head-home.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/head.php'); ?>
 </head>
 
 <body class="emms__internal-sponsors">
@@ -31,7 +31,7 @@ if (isset($_GET['slug'])) {
     <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
             <div class="emms__header__logo">
-                <a href="./"><img src="src/img/logos/logo-emms.png" alt="Emms 2024"></a>
+                <a href="./"><img src="/src/img/logos/logo-emms.png" alt="Emms 2024"></a>
             </div>
             <div class="emms__header__logo">
                 <a href="<?= $sponsor['link_site'] ?>"><img src="./adm24/server/modules/sponsors/uploads/<?= $sponsor['image_landing'] ?>" alt="<?= $sponsor['alt_image_landing'] ?>"></a>
@@ -59,7 +59,7 @@ if (isset($_GET['slug'])) {
             <section class="emms__internal-sponsors__resource">
                 <div class="emms__container--md emms__fade-in">
                     <div class="emms__internal-sponsors__resource__picture">
-                        <img src="src/img/sponsor-asset.png" alt="download">
+                        <img src="/src/img/sponsor-asset.png" alt="download">
                     </div>
                     <div class="emms__internal-sponsors__resource__text">
                         <p><?= $sponsor['description_magnet'] ?></p>
@@ -74,7 +74,7 @@ if (isset($_GET['slug'])) {
             <section class="emms__internal-sponsors__resource mt">
                 <div class="emms__container--md emms__fade-in">
                     <div class="emms__internal-sponsors__resource__picture">
-                        <img src="src/img/download--locked-24.png" alt="download">
+                        <img src="/src/img/download--locked-24.png" alt="download">
                     </div>
                     <div class="emms__internal-sponsors__resource__text">
                         <h2><?= $sponsor['title_magnet'] ?></h2>
@@ -98,7 +98,7 @@ if (isset($_GET['slug'])) {
     </main>
 
     <!-- Footer -->
-    <?php include_once('././src/components/footer.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/footer.php'); ?>
 
 </body>
 

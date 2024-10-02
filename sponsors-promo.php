@@ -1,15 +1,15 @@
 <?php
-require_once('././src/components/cacheSettings.php');
-require_once('./config.php');
-require_once('./utils/DB.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/config.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/utils/DB.php');
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <?php include_once('././src/components/head-home.php'); ?>
-    <?php include_once('././src/components/head.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/head-home.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/head.php'); ?>
 </head>
 
 <body class="emms__sponsor-promo">
@@ -18,7 +18,7 @@ require_once('./utils/DB.php');
   <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
             <div class="emms__header__logo">
-                <a href="/"><img src="src/img/logos/logo-emms.png" alt="Emms 2024"></a>
+                <a href="/"><img src="/src/img/logos/logo-emms.png" alt="Emms 2024"></a>
             </div>
             <?php if ($digitalTrendsStates['isLive']) : ?>
                 <div class="emms__header__live">
@@ -159,7 +159,7 @@ require_once('./utils/DB.php');
         <section class="emms__sponsor-promo__resource">
             <div class="emms__container--md emms__fade-in">
                 <div class="emms__sponsor-promo__resource__picture">
-                    <img src="src/img/sponsor-promo.png" alt="Sponsor promo">
+                    <img src="/src/img/sponsor-promo.png" alt="Sponsor promo">
                 </div>
                 <div class="emms__sponsor-promo__resource__text">
                     <h2>¿Por qué ser Sponsor?</h2>
@@ -167,22 +167,22 @@ require_once('./utils/DB.php');
                     <ul>
 
                         <li>
-                            <img src="src/img/tick-success.png" alt="Succes asset">
+                            <img src="/src/img/tick-success.png" alt="Succes asset">
                             Destaca tu marca en el evento líder de Marketing en LATAM y España</span>
                         </li>
 
                         <li>
-                            <img src="src/img/tick-success.png" alt="Succes asset">
+                            <img src="/src/img/tick-success.png" alt="Succes asset">
                             <span> Brinda una conferencia main stage en el evento</span>
                         </li>
 
                         <li>
-                            <img src="src/img/tick-success.png" alt="Succes asset">
+                            <img src="/src/img/tick-success.png" alt="Succes asset">
                             <span> Accede a una landing page personalizada para tu marca y maximiza tu impacto enviando contenido exclusivo a toda la audiencia a través de un Email</span>
                         </li>
 
                         <li>
-                            <img src="src/img/tick-success.png" alt="Succes asset">
+                            <img src="/src/img/tick-success.png" alt="Succes asset">
                             <span> Únete a las marcas más influyentes de la industria y potencia tu networking</span>
                         </li>
                     </ul>
@@ -195,21 +195,21 @@ require_once('./utils/DB.php');
             <div class="emms__container--lg">
                 <h2 class="emms__fade-in">Nos han acompañado en ediciones anteriores</h2>
                 <ul class="emms__companies__list emms__fade-in">
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-metricool.png" alt="Metricool"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-asociacion-marketing-espana.png" alt="Asociación de Marketing de España"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-capece.png" alt="Capece"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-amvo.png" alt="AMVO"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-linkedin.png" alt="LinkedIn"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-bigbox.png" alt="Bigbox"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-semrush.png" alt="Semrush"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-crehana.png" alt="Crehana"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-marketing-4ecommerce.png" alt="Marketing 4 Ecommerce"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-vtex.png" alt="VTEX"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-banco-frances.png" alt="BBVA Francés"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-airbnb.png" alt="Airbnb"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-woocomerce.png" alt="Woocommerce"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-doofinder.png" alt="Doofinder"></li>
-                    <li class="emms__companies__list__item"><img src="src/img/logos/logo-easycommerce.png" alt="Easycommerce"></li>
+                    <li class="emms__companies__list__item"><img src="/src/img/logos/logo-metricool.png" alt="Metricool"></li>
+                    <li class="emms__companies__list__item"><img src="/src/img/logos/logo-asociacion-marketing-espana.png" alt="Asociación de Marketing de España"></li>
+                    <li class="emms__companies__list__item"><img src="/src/img/logos/logo-capece.png" alt="Capece"></li>
+                    <li class="emms__companies__list__item"><img src="/src/img/logos/logo-amvo.png" alt="AMVO"></li>
+                    <li class="emms__companies__list__item"><img src="/src/img/logos/logo-linkedin.png" alt="LinkedIn"></li>
+                    <li class="emms__companies__list__item"><img src="/src/img/logos/logo-bigbox.png" alt="Bigbox"></li>
+                    <li class="emms__companies__list__item"><img src="/src/img/logos/logo-semrush.png" alt="Semrush"></li>
+                    <li class="emms__companies__list__item"><img src="/src/img/logos/logo-crehana.png" alt="Crehana"></li>
+                    <li class="emms__companies__list__item"><img src="/src/img/logos/logo-marketing-4ecommerce.png" alt="Marketing 4 Ecommerce"></li>
+                    <li class="emms__companies__list__item"><img src="/src/img/logos/logo-vtex.png" alt="VTEX"></li>
+                    <li class="emms__companies__list__item"><img src="/src/img/logos/logo-banco-frances.png" alt="BBVA Francés"></li>
+                    <li class="emms__companies__list__item"><img src="/src/img/logos/logo-airbnb.png" alt="Airbnb"></li>
+                    <li class="emms__companies__list__item"><img src="/src/img/logos/logo-woocomerce.png" alt="Woocommerce"></li>
+                    <li class="emms__companies__list__item"><img src="/src/img/logos/logo-doofinder.png" alt="Doofinder"></li>
+                    <li class="emms__companies__list__item"><img src="/src/img/logos/logo-easycommerce.png" alt="Easycommerce"></li>
                 </ul>
             </div>
 
@@ -222,52 +222,52 @@ require_once('./utils/DB.php');
         <section class="emms__sponsor-promo__media-partner emms__bg-section-5 ">
             <div class="emms__hero-registration__bottom images emms__fade-in">
                 <p>
-                    <img src="src/img/marquee/google.png" alt="Google">
-                    <img class="sm" src="src/img/marquee/meta.png" alt="Meta">
-                    <img src="src/img/marquee/youtube.png" alt="Youtube">
-                    <img src="src/img/marquee/amazon.png" alt="Amazon">
-                    <img src="src/img/marquee/metricool.png" alt="Metricool">
-                    <img src="src/img/marquee/microsoft.png" alt="Microsoft">
-                    <img class="sm" src="src/img/marquee/tiktok.png" alt="TikTok">
-                    <img src="src/img/marquee/linkedin.png" alt="LinkedIn">
-                    <img src="src/img/marquee/spotify.png" alt="Spotify">
-                    <img src="src/img/marquee/vtex.png" alt="Vtex">
+                    <img src="/src/img/marquee/google.png" alt="Google">
+                    <img class="sm" src="/src/img/marquee/meta.png" alt="Meta">
+                    <img src="/src/img/marquee/youtube.png" alt="Youtube">
+                    <img src="/src/img/marquee/amazon.png" alt="Amazon">
+                    <img src="/src/img/marquee/metricool.png" alt="Metricool">
+                    <img src="/src/img/marquee/microsoft.png" alt="Microsoft">
+                    <img class="sm" src="/src/img/marquee/tiktok.png" alt="TikTok">
+                    <img src="/src/img/marquee/linkedin.png" alt="LinkedIn">
+                    <img src="/src/img/marquee/spotify.png" alt="Spotify">
+                    <img src="/src/img/marquee/vtex.png" alt="Vtex">
 
                     <!--  Repeated marquee items -->
-                    <img src="src/img/marquee/google.png" alt="Google">
-                    <img class="sm" src="src/img/marquee/meta.png" alt="Meta">
-                    <img src="src/img/marquee/youtube.png" alt="Youtube">
-                    <img src="src/img/marquee/amazon.png" alt="Amazon">
-                    <img src="src/img/marquee/metricool.png" alt="Metricool">
-                    <img src="src/img/marquee/microsoft.png" alt="Microsoft">
-                    <img class="sm" src="src/img/marquee/tiktok.png" alt="TikTok">
-                    <img src="src/img/marquee/linkedin.png" alt="LinkedIn">
-                    <img src="src/img/marquee/spotify.png" alt="Spotify">
-                    <img src="src/img/marquee/vtex.png" alt="Vtex">
+                    <img src="/src/img/marquee/google.png" alt="Google">
+                    <img class="sm" src="/src/img/marquee/meta.png" alt="Meta">
+                    <img src="/src/img/marquee/youtube.png" alt="Youtube">
+                    <img src="/src/img/marquee/amazon.png" alt="Amazon">
+                    <img src="/src/img/marquee/metricool.png" alt="Metricool">
+                    <img src="/src/img/marquee/microsoft.png" alt="Microsoft">
+                    <img class="sm" src="/src/img/marquee/tiktok.png" alt="TikTok">
+                    <img src="/src/img/marquee/linkedin.png" alt="LinkedIn">
+                    <img src="/src/img/marquee/spotify.png" alt="Spotify">
+                    <img src="/src/img/marquee/vtex.png" alt="Vtex">
 
                     <!--  Repeated marquee items -->
-                    <img src="src/img/marquee/google.png" alt="Google">
-                    <img class="sm" src="src/img/marquee/meta.png" alt="Meta">
-                    <img src="src/img/marquee/youtube.png" alt="Youtube">
-                    <img src="src/img/marquee/amazon.png" alt="Amazon">
-                    <img src="src/img/marquee/metricool.png" alt="Metricool">
-                    <img src="src/img/marquee/microsoft.png" alt="Microsoft">
-                    <img class="sm" src="src/img/marquee/tiktok.png" alt="TikTok">
-                    <img src="src/img/marquee/linkedin.png" alt="LinkedIn">
-                    <img src="src/img/marquee/spotify.png" alt="Spotify">
-                    <img src="src/img/marquee/vtex.png" alt="Vtex">
+                    <img src="/src/img/marquee/google.png" alt="Google">
+                    <img class="sm" src="/src/img/marquee/meta.png" alt="Meta">
+                    <img src="/src/img/marquee/youtube.png" alt="Youtube">
+                    <img src="/src/img/marquee/amazon.png" alt="Amazon">
+                    <img src="/src/img/marquee/metricool.png" alt="Metricool">
+                    <img src="/src/img/marquee/microsoft.png" alt="Microsoft">
+                    <img class="sm" src="/src/img/marquee/tiktok.png" alt="TikTok">
+                    <img src="/src/img/marquee/linkedin.png" alt="LinkedIn">
+                    <img src="/src/img/marquee/spotify.png" alt="Spotify">
+                    <img src="/src/img/marquee/vtex.png" alt="Vtex">
 
                     <!--  Repeated marquee items -->
-                    <img src="src/img/marquee/google.png" alt="Google">
-                    <img class="sm" src="src/img/marquee/meta.png" alt="Meta">
-                    <img src="src/img/marquee/youtube.png" alt="Youtube">
-                    <img src="src/img/marquee/amazon.png" alt="Amazon">
-                    <img src="src/img/marquee/metricool.png" alt="Metricool">
-                    <img src="src/img/marquee/microsoft.png" alt="Microsoft">
-                    <img class="sm" src="src/img/marquee/tiktok.png" alt="TikTok">
-                    <img src="src/img/marquee/linkedin.png" alt="LinkedIn">
-                    <img src="src/img/marquee/spotify.png" alt="Spotify">
-                    <img src="src/img/marquee/vtex.png" alt="Vtex">
+                    <img src="/src/img/marquee/google.png" alt="Google">
+                    <img class="sm" src="/src/img/marquee/meta.png" alt="Meta">
+                    <img src="/src/img/marquee/youtube.png" alt="Youtube">
+                    <img src="/src/img/marquee/amazon.png" alt="Amazon">
+                    <img src="/src/img/marquee/metricool.png" alt="Metricool">
+                    <img src="/src/img/marquee/microsoft.png" alt="Microsoft">
+                    <img class="sm" src="/src/img/marquee/tiktok.png" alt="TikTok">
+                    <img src="/src/img/marquee/linkedin.png" alt="LinkedIn">
+                    <img src="/src/img/marquee/spotify.png" alt="Spotify">
+                    <img src="/src/img/marquee/vtex.png" alt="Vtex">
                 </p>
             </div>
             <div class="emms__container--md emms__fade-in">
@@ -281,29 +281,29 @@ require_once('./utils/DB.php');
                     <ul>
 
                         <li>
-                            <img src="src/img/tick-success.png" alt="Succes asset">
+                            <img src="/src/img/tick-success.png" alt="Succes asset">
                             Logo de tu marca en el sitio web y menciones de tu negocio durante el EMMS.</span>
                         </li>
 
                         <li>
-                            <img src="src/img/tick-success.png" alt="Succes asset">
+                            <img src="/src/img/tick-success.png" alt="Succes asset">
                             <span> Participación en un Email que se envía a todos los registrados.</span>
                         </li>
 
                         <li>
-                            <img src="src/img/tick-success.png" alt="Succes asset">
+                            <img src="/src/img/tick-success.png" alt="Succes asset">
                             <span> La llegada a posibles nuevos clientes brindando descuentos y regalos para los registrados.</span>
                         </li>
 
                         <li>
-                            <img src="src/img/tick-success.png" alt="Succes asset">
+                            <img src="/src/img/tick-success.png" alt="Succes asset">
                             <span>Conferencia on-demand de 15 minutos en el sitio.</span>
                         </li>
                     </ul>
                     <button class="emms__cta" data-target="modalRegister" data-toggle="emms__register-modal" data-type="mediaPartner">CONVIERTETE EN MEDIA PARTNER</button>
                 </div>
                 <div class="emms__sponsor-promo__media-partner__picture">
-                    <img src="src/img/rompecabez-asset.png" alt="Rompecabeza emoji">
+                    <img src="/src/img/rompecabez-asset.png" alt="Rompecabeza emoji">
                 </div>
 
             </div>
@@ -311,10 +311,10 @@ require_once('./utils/DB.php');
     </main>
 
     <!-- Footer -->
-    <?php include_once('././src/components/footer.php'); ?>
-    <script src="src/<?= VERSION ?>/js/sponsorsPromo.js" type="module"></script>
-    <script src="src/<?= VERSION ?>/js/vendors/intlTelInput.min.js"></script>
-    <?php include_once('././src/components/intellInput.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/footer.php'); ?>
+    <script src="/src/<?= VERSION ?>/js/sponsorsPromo.js" type="module"></script>
+    <script src="/src/<?= VERSION ?>/js/vendors/intlTelInput.min.js"></script>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/intellInput.php'); ?>
 
 </body>
 

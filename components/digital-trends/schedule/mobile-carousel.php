@@ -37,16 +37,16 @@
                                 <h5><?= $speaker['job'] ?></h5>
                                 <ul>
                                     <?php if (!empty($speaker['sm_twitter'])) : ?>
-                                        <li><a href="<?= $speaker['sm_twitter'] ?>" target="_blank"><img src="src/img/icons/icono-twitter.png" alt="Twitter"></a></li>
+                                        <li><a href="<?= $speaker['sm_twitter'] ?>" target="_blank"><img src="/src/img/icons/icono-twitter.png" alt="Twitter"></a></li>
                                     <?php endif; ?>
                                     <?php if (!empty($speaker['sm_linkedin'])) : ?>
-                                        <li><a href="<?= $speaker['sm_linkedin'] ?>" target="_blank"><img src="src/img/icons/icono-linkedin.png" alt="LinkedIn"></a></li>
+                                        <li><a href="<?= $speaker['sm_linkedin'] ?>" target="_blank"><img src="/src/img/icons/icono-linkedin.png" alt="LinkedIn"></a></li>
                                     <?php endif; ?>
                                     <?php if (!empty($speaker['sm_instagram'])) : ?>
-                                        <li><a href="<?= $speaker['sm_instagram'] ?>" target="_blank"><img src="src/img/icons/icono-instagram.png" alt="Instagram"></a></li>
+                                        <li><a href="<?= $speaker['sm_instagram'] ?>" target="_blank"><img src="/src/img/icons/icono-instagram.png" alt="Instagram"></a></li>
                                     <?php endif; ?>
                                     <?php if (!empty($speaker['sm_facebook'])) : ?>
-                                        <li><a href="<?= $speaker['sm_facebook'] ?>" target="_blank"><img src="src/img/icons/icono-facebook.png" alt="Facebook"></a></li>
+                                        <li><a href="<?= $speaker['sm_facebook'] ?>" target="_blank"><img src="/src/img/icons/icono-facebook.png" alt="Facebook"></a></li>
                                     <?php endif; ?>
                                     <?php if (($speaker['bio']) != '0') : ?>
                                         <li><a class="emms__calendar__list__item__card__btn-bio">Ver Bio →</a>
@@ -106,7 +106,7 @@
                         <p><?= $speaker['description'] ?></p>
                         <?php if (($speaker['time']) != '') : ?>
                             <div class="emms__calendar__list__item__country">
-                                <span><img src="src/img/flags/arg.png" alt="">(ARG) <?= $speaker['time'] ?></span>
+                                <span><img src="/src/img/flags/arg.png" alt="">(ARG) <?= $speaker['time'] ?></span>
                                 <a href="<?= $speaker['link_time'] ?>" target="_blank">Mira el horario de tu país</a>
                             </div>
                         <?php endif; ?>

@@ -19,7 +19,7 @@ $contents = [
 ];
 
 
-include_once('./components/helpers/urlHelper.php');
+include_once($_SERVER['DOCUMENT_ROOT'] . '/components/helpers/urlHelper.php');
 $normalizedUrl = getNormalizeUrl();
 $content = $contents[$normalizedUrl] ?? $contents['/*'];
 ?>
@@ -40,7 +40,7 @@ $content = $contents[$normalizedUrl] ?? $contents['/*'];
             <ul class="emms__eventCards__list emms__eventCards__list--dk emms__fade-in">
                 <li class="emms__eventCards__list__item">
                     <div class="emms__eventCards__list__item__picture">
-                        <img src="src/img/card-image-digitaltrends-pre.png" alt="Image Digital Trends">
+                        <img src="/src/img/card-image-digitaltrends-pre.png" alt="Image Digital Trends">
                         <?php if ($digitalTrendsStates['isPost']) : ?>
                             <p class="top hide">EVENTO FINALIZADO</p>
                         <?php endif ?>
@@ -68,7 +68,7 @@ $content = $contents[$normalizedUrl] ?? $contents['/*'];
                 </li>
                 <li class="emms__eventCards__list__item">
                     <div class="emms__eventCards__list__item__picture">
-                        <img src="src/img/card-image-ecommerce.png" alt="Play icon">
+                        <img src="/src/img/card-image-ecommerce.png" alt="Play icon">
                         <p class="top hide">EVENTO FINALIZADO</p>
                     </div>
                     <div class="emms__eventCards__list__item__text">
@@ -84,7 +84,7 @@ $content = $contents[$normalizedUrl] ?? $contents['/*'];
             <ul class="emms__eventCards__list emms__eventCards__list--mb emms__fade-in main-carousel" data-flickity>
                 <li class="emms__eventCards__list__item">
                     <div class="emms__eventCards__list__item__picture">
-                        <img src="src/img/card-image-digitaltrends-pre.png" alt="Image Digital Trends">
+                        <img src="/src/img/card-image-digitaltrends-pre.png" alt="Image Digital Trends">
                         <?php if ($digitalTrendsStates['isPost']) : ?>
                             <p class="top hide">EVENTO FINALIZADO</p>
                         <?php endif ?>
@@ -112,7 +112,7 @@ $content = $contents[$normalizedUrl] ?? $contents['/*'];
                 </li>
                 <li class="emms__eventCards__list__item">
                     <div class="emms__eventCards__list__item__picture">
-                        <img src="src/img/card-image-ecommerce.png" alt="Play icon">
+                        <img src="/src/img/card-image-ecommerce.png" alt="Play icon">
                         <p class="top hide">EVENTO FINALIZADO</p>
                     </div>
                     <div class="emms__eventCards__list__item__text">

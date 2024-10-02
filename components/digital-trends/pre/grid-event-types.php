@@ -1,5 +1,5 @@
 <?php
-include_once('./components/helpers/urlHelper.php');
+include_once($_SERVER['DOCUMENT_ROOT'] . '/components/helpers/urlHelper.php');
 $normalizedUrl = getNormalizeUrl();
 
 function getGridBlock($url)
@@ -29,7 +29,7 @@ $block = getGridBlock($normalizedUrl);
         <ul class="emms__grid__content emms__fade-in">
             <li class="emms__grid__item">
                 <div class="emms__grid__item__image">
-                    <img src="src/img/conferencias.png" alt="Image">
+                    <img src="/src/img/conferencias.png" alt="Image">
                 </div>
                 <div class="emms__grid__item__text">
                     <h3>Conferencias</h3>
@@ -38,7 +38,7 @@ $block = getGridBlock($normalizedUrl);
             </li>
             <li class="emms__grid__item">
                 <div class="emms__grid__item__image">
-                    <img src="src/img/entrevistas.png" alt="Image">
+                    <img src="/src/img/entrevistas.png" alt="Image">
                 </div>
                 <div class="emms__grid__item__text">
                     <h3>Entrevistas</h3>
@@ -47,7 +47,7 @@ $block = getGridBlock($normalizedUrl);
             </li>
             <li class="emms__grid__item">
                 <div class="emms__grid__item__image">
-                    <img src="src/img/casos-de-exito.png" alt="Image">
+                    <img src="/src/img/casos-de-exito.png" alt="Image">
                 </div>
                 <div class="emms__grid__item__text">
                     <h3>Casos de Éxito</h3>
@@ -56,7 +56,7 @@ $block = getGridBlock($normalizedUrl);
             </li>
             <li class="emms__grid__item">
                 <div class="emms__grid__item__image">
-                    <img src="src/img/networking.png" alt="Image">
+                    <img src="/src/img/networking.png" alt="Image">
                 </div>
                 <div class="emms__grid__item__text">
                     <h3>Networking</h3>
@@ -65,7 +65,7 @@ $block = getGridBlock($normalizedUrl);
             </li>
             <li class="emms__grid__item">
                 <div class="emms__grid__item__image">
-                    <img src="src/img/workshop.png" alt="Image">
+                    <img src="/src/img/workshop.png" alt="Image">
                 </div>
                 <div class="emms__grid__item__text">
                     <h3>Workshops</h3>
@@ -74,7 +74,7 @@ $block = getGridBlock($normalizedUrl);
             </li>
             <li class="emms__grid__item">
                 <div class="emms__grid__item__image">
-                    <img src="src/img/recursos.png" alt="Image">
+                    <img src="/src/img/recursos.png" alt="Image">
                 </div>
                 <div class="emms__grid__item__text">
                     <h3>Biblioteca de Recursos</h3>
