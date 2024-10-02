@@ -28,6 +28,7 @@ require_once('././src/components/cacheSettings.php');
         <div class="register-noform__container  eventShowElements">
             <?php include('./components/digital-trends/pre/register-withoutform.php') ?>
         </div>
+        <?php include('./components/digital-trends/schedule/schedule.php') ?>
         <div class="emms__bg-dark-gradient">
             <?php include('./components/digital-trends/pre/grid-event-types.php') ?>
             <?php include('./components/digital-trends/pre/event-numbers.php') ?>
