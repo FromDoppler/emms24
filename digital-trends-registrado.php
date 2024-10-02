@@ -2,7 +2,7 @@
 require_once($_SERVER['DOCUMENT_ROOT'] . '/config.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . '/services/functions.php');
 ?>
-<script src='./src/<?= VERSION ?>/js/vendors/socket.io.min.js?version=<?= VERSION ?>'></script>
+<script src='/src/<?= VERSION ?>/js/vendors/socket.io.min.js?version=<?= VERSION ?>'></script>
 <script>
     const socket = io("wss://<?= URL_REFRESH ?>", {
         path: "/<?= PATH_REFRESH ?>/socket.io"
@@ -14,14 +14,14 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/services/functions.php');
 <script type="module">
     import {
         getUrlWithParams
-    } from './src/<?= VERSION ?>/js/common/index.js';
+    } from '/src/<?= VERSION ?>/js/common/index.js';
     import {
         eventsType
-    } from './src/<?= VERSION ?>/js/enums/eventsType.enum.js';
+    } from '/src/<?= VERSION ?>/js/enums/eventsType.enum.js';
     import {
         userRegisteredInEvent,
         checkEncodeUrl
-    } from './src/<?= VERSION ?>/js/user.js';
+    } from '/src/<?= VERSION ?>/js/user.js';
     checkEncodeUrl();
     if (!userRegisteredInEvent(eventsType.DIGITALTRENDS)) {
         window.location.href = getUrlWithParams('/digital-trends');

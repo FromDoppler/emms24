@@ -55,4 +55,4 @@
     </ul>
   </div>
 </section>
-<script src="src/<?= VERSION ?>/js/collapsibles.js"></script>
+<script src="/src/<?= VERSION ?>/js/collapsibles.js"></script>

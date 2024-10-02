@@ -1,20 +1,20 @@
 <?php
-require_once('././config.php');
-require_once('./utils/DB.php');
-require_once('././src/components/cacheSettings.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/config.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/utils/DB.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <?php include_once('././src/components/head-home.php'); ?>
-    <?php include_once('././src/components/head.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/head-home.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/head.php'); ?>
     <script type="module">
         import {
             isUserLogged,
             getUrlWithParams
-        } from './src/<?= VERSION ?>/js/common/index.js';
+        } from '/src/<?= VERSION ?>/js/common/index.js';
 
         if (!isUserLogged()) {
             window.location.href = getUrlWithParams('/sponsors');
@@ -23,12 +23,12 @@ require_once('././src/components/cacheSettings.php');
 </head>
 
 <body class="emms__sponsors">
-    <?php include_once('././src/components/gtm.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/gtm.php'); ?>
     <!-- Header -->
     <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
             <div class="emms__header__logo">
-                <a href="./"><img src="src/img/logos/logo-emms.png" alt="Emms 2024"></a>
+                <a href="./"><img src="/src/img/logos/logo-emms.png" alt="Emms 2024"></a>
             </div>
             <?php if ($digitalTrendsStates['isLive']) : ?>
                 <div class="emms__header__live">
@@ -65,7 +65,7 @@ require_once('././src/components/cacheSettings.php');
                 <p>Vive una experiencia completa antes, durante y después del evento capacitándote gratis con todos estos contenidos on-demand.</p>
             </div>
             <div class="emms__sponsors__hero__image__container">
-                <img src="src/img/sponsors-promo.svg" alt="Posibilidades para capacitarte">
+                <img src="/src/img/sponsors-promo.svg" alt="Posibilidades para capacitarte">
             </div>
         </section>
 
@@ -86,7 +86,7 @@ require_once('././src/components/cacheSettings.php');
                     ?>
                         <li class="emms__sponsors__list__item">
                             <div class="emms__sponsors__list__item__ribon">
-                                <img src="src/img/emoji-book.svg" alt="Book emoji">
+                                <img src="/src/img/emoji-book.svg" alt="Book emoji">
                                 <?= $texts[$index] ?>
                             </div>
 
@@ -121,24 +121,24 @@ require_once('././src/components/cacheSettings.php');
                     <div class="emms__conferences__cards__container">
                         <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://www.youtube.com/watch?v=YQCW78eFrWQ" target="_blank">
-                                <img src="src/img/conferences24/portada-capsula-quintino-min.png" alt="Conferencias exclusivas">
+                                <img src="/src/img/conferences24/portada-capsula-quintino-min.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
                                     <h4>Logística de Ecommerce el eslabón clave de la recompra orgánica</h4>
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/conferences24/logos/quintino-logo.png" alt="Quintino Logo">
+                                        <img src="/src/img/conferences24/logos/quintino-logo.png" alt="Quintino Logo">
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://youtu.be/eZrLovcsAtY" target="_blank">
-                                <img src="src/img/conferences24/portada-capsula-creizer-min.png" alt="Conferencias exclusivas">
+                                <img src="/src/img/conferences24/portada-capsula-creizer-min.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
                                     <h4 class="shortTitle">¿Cómo financiar tu Ecommerce para aumentar tus ventas?</h4>
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/conferences24/logos/creizer-logo.png" alt="Creizer Logo">
+                                        <img src="/src/img/conferences24/logos/creizer-logo.png" alt="Creizer Logo">
                                     </div>
                                     &nbsp;
 
@@ -147,24 +147,24 @@ require_once('././src/components/cacheSettings.php');
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://youtu.be/5c8H_Ixqxrc" target="_blank">
-                                <img src="src/img/conferences24/portada-capsula-gobots-min.png" alt="Conferencias exclusivas">
+                                <img src="/src/img/conferences24/portada-capsula-gobots-min.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
                                     <h4>Buenas prácticas de comunicación para vender online</h4>
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/conferences24/logos/gobots-card.png" alt="Gobots Logo">
+                                        <img src="/src/img/conferences24/logos/gobots-card.png" alt="Gobots Logo">
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://youtu.be/5WxC8cOJbm4" target="_blank">
-                                <img src="src/img/conferences24/portada-capsula-facturante-min.png" alt="Conferencias exclusivas">
+                                <img src="/src/img/conferences24/portada-capsula-facturante-min.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
                                     <h4>Omnicanalidad: ¿Qué es y cómo la facturación electronica ayuda a lograrla? </h4>
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/conferences24/logos/facturante-logo.png" alt="Facturante Logo">
+                                        <img src="/src/img/conferences24/logos/facturante-logo.png" alt="Facturante Logo">
                                     </div>
                                 </div>
                             </a>
@@ -172,12 +172,12 @@ require_once('././src/components/cacheSettings.php');
 
                         <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://www.youtube.com/watch?v=xk5qoFXkqLM" target="_blank">
-                                <img src="src/img/conferences24/portada-capsula-vivimarketing-min.png" alt="Conferencias exclusivas">
+                                <img src="/src/img/conferences24/portada-capsula-vivimarketing-min.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
                                     <h4 class="shortTitle">Estrategias de Marketing para rentabilizar tu Ecommerce</h4>
                                     <span>Ver ahora →</span>
                                     <div class="emms__conferences__cards__info__image-container">
-                                        <img src="src/img/conferences24/logos/vivimarketing-logo.png" alt="Vivimarketing Logo">
+                                        <img src="/src/img/conferences24/logos/vivimarketing-logo.png" alt="Vivimarketing Logo">
                                     </div>
                                 </div>
                             </a>
@@ -188,14 +188,14 @@ require_once('././src/components/cacheSettings.php');
         </section>
 
         <!-- Doppler Academy Banner -->
-        <?php include_once('././src/components/doppler-academy-banner.php'); ?>
+        <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/doppler-academy-banner.php'); ?>
 
     </main>
 
     <!-- Footer -->
-    <?php include_once('././src/components/footer.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/footer.php'); ?>
 
-    <script src="src/<?= VERSION ?>/js/collapsibles.js"></script>
+    <script src="/src/<?= VERSION ?>/js/collapsibles.js"></script>
 
 
 </body>

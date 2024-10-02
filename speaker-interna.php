@@ -1,6 +1,6 @@
 <?php
-require_once('./config.php');
-require_once('./utils/DB.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/config.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/utils/DB.php');
 
 
 if (!isset($_GET['slug']) or (trim($_GET['slug']) === '')) {
@@ -17,24 +17,24 @@ $db->close();
 <html lang="en">
 
 <head>
-    <?php include_once('././src/components/head-speaker-interna.php'); ?>
-    <?php include_once('././src/components/head.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/head-speaker-interna.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/head.php'); ?>
     <script type="module">
         import {
             toggleVipEcommerceElements
-        } from './src/<?= VERSION ?>/js/toggleVipElements.js';
+        } from '/src/<?= VERSION ?>/js/toggleVipElements.js';
 
         toggleVipEcommerceElements();
     </script>
 </head>
 
 <body class="emms__ecommerce emms__ecommerce-logueado emms__ecommerce-logueado--during">
-    <?php include_once('././src/components/gtm.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/gtm.php'); ?>
     <!-- Header -->
     <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
             <div class="emms__header__logo emms__header__logo--ecommerce">
-                <a href="/"><img src="src/img/logos/logo-emms-ecommerce.png" alt="Emms Ecommerce 2024"></a>
+                <a href="/"><img src="/src/img/logos/logo-emms-ecommerce.png" alt="Emms Ecommerce 2024"></a>
             </div>
             <a class="emms__header__nav--mb" id="btn-burger"></a>
             <nav class="emms__header__nav emms__header__nav--hidden" id="nav-mb">
@@ -57,21 +57,21 @@ $db->close();
 
     <!-- Share -->
     <div class="emms__share">
-        <a id="btn-share" class="emms__share__open-list"><img src="src/img/icons/icon-share.svg" alt="Share"></a>
+        <a id="btn-share" class="emms__share__open-list"><img src="/src/img/icons/icon-share.svg" alt="Share"></a>
         <ul id="list-share" class="emms__share__list">
             <li>
                 <a href="javascript: void(0);" onclick="window.open ('https://www.facebook.com/sharer/sharer.php?u=https%3A//goemms.com/digital-trends-registrado', 'Facebook', 'toolbar=0, status=0, width=550, height=350');">
-                    <img src="src/img/Facebook-w.svg" alt="Facebook">
+                    <img src="/src/img/Facebook-w.svg" alt="Facebook">
                 </a>
             </li>
             <li>
                 <a href="javascript: void(0);" onclick="window.open ('https://twitter.com/intent/tweet?text=¡Vuelve%20el%20EMMS%20Digital%20Trends!%20El%20evento%20online%20y%20gratuito%20de%20Marketing%20Digital%20más%20importante%20de%20España%20y%20Latinoamérica.%20Es%20gratis%20y%20online%20:%29%20Reserva%20tu%20lugar%20ahora:%20https://goemms.com/digital-trends', 'Twitter', 'toolbar=0, status=0, width=550, height=350');">
-                    <img src="src/img/Twitter-w.svg" alt="Twitter">
+                    <img src="/src/img/Twitter-w.svg" alt="Twitter">
                 </a>
             </li>
             <li>
                 <a href="javascript: void(0);" onclick="window.open ('https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fgoemms.com%2Fdigital-trends-registrado&title=%C2%A1Cuenta%20regresiva%20para%20una%20nueva%20edici%C3%B3n%20de%20EMMS%20Digital%20Trends!&summary=%C2%A1Cuenta%20regresiva%20para%20una%20nueva%20edici%C3%B3n%20de%20EMMS%20Digital%20Trends!%20Llega%20el%20evento%20online%20y%20gratuito%20de%20Marketing%20Digital%20m%C3%A1s%20importante%20de%20Espa%C3%B1a%20y%20Latinoam%C3%A9rica.%20Conferencias%2C%20Entrevistas%2C%20Casos%20de%20%C3%A9xito%2C%20Workshops%2C%20Networking%20%C2%A1y%20mucho%20m%C3%A1s!%20Cada%20a%C3%B1o%2C%20miles%20de%20profesionales%20y%20referentes%20en%20la%20industria%20eligen%20este%20evento%20para%20capacitarse.%20Es%20gratis%20y%20online%20%3A)%20Reserva%20tu%20lugar%20ahora%3A%20goemms.com%2Fdigital-trends&mini=true', 'Linkedin', 'toolbar=0, status=0, width=550, height=550');">
-                    <img src="src/img/LinkedIn-w.svg" alt="LinkedIn">
+                    <img src="/src/img/LinkedIn-w.svg" alt="LinkedIn">
                 </a>
             </li>
         </ul>
@@ -204,10 +204,10 @@ $db->close();
                     <p><?= $speaker['bio'] ?></p>
                     <ul>
                         <?php if ($speaker['sm_linkedin']) : ?>
-                            <li><a href="<?= $speaker['sm_linkedin'] ?>"><img src="src/img/icons/icono-linkedin-b.svg" alt="LinkedIn"></a></li>
+                            <li><a href="<?= $speaker['sm_linkedin'] ?>"><img src="/src/img/icons/icono-linkedin-b.svg" alt="LinkedIn"></a></li>
                         <?php endif; ?>
                         <?php if ($speaker['sm_twitter']) : ?>
-                            <li><a href="<?= $speaker['sm_twitter'] ?>"><img src="src/img/icons/icono-twitter-b.svg" alt="Twitter"></a></li>
+                            <li><a href="<?= $speaker['sm_twitter'] ?>"><img src="/src/img/icons/icono-twitter-b.svg" alt="Twitter"></a></li>
                         <?php endif; ?>
                     </ul>
                 </div>
@@ -226,52 +226,52 @@ $db->close();
             <!-- Marquee -->
             <div class="emms__hero-registration__bottom images emms__fade-in">
                 <p>
-                    <img src="src/img/marquee/google.png" alt="Google">
-                    <img class="sm" src="src/img/marquee/meta.png" alt="Meta">
-                    <img src="src/img/marquee/youtube.png" alt="Youtube">
-                    <img src="src/img/marquee/amazon.png" alt="Amazon">
-                    <img src="src/img/marquee/metricool.png" alt="Metricool">
-                    <img src="src/img/marquee/microsoft.png" alt="Microsoft">
-                    <img class="sm" src="src/img/marquee/tiktok.png" alt="TikTok">
-                    <img src="src/img/marquee/linkedin.png" alt="LinkedIn">
-                    <img src="src/img/marquee/spotify.png" alt="Spotify">
-                    <img src="src/img/marquee/vtex.png" alt="Vtex">
+                    <img src="/src/img/marquee/google.png" alt="Google">
+                    <img class="sm" src="/src/img/marquee/meta.png" alt="Meta">
+                    <img src="/src/img/marquee/youtube.png" alt="Youtube">
+                    <img src="/src/img/marquee/amazon.png" alt="Amazon">
+                    <img src="/src/img/marquee/metricool.png" alt="Metricool">
+                    <img src="/src/img/marquee/microsoft.png" alt="Microsoft">
+                    <img class="sm" src="/src/img/marquee/tiktok.png" alt="TikTok">
+                    <img src="/src/img/marquee/linkedin.png" alt="LinkedIn">
+                    <img src="/src/img/marquee/spotify.png" alt="Spotify">
+                    <img src="/src/img/marquee/vtex.png" alt="Vtex">
 
                     <!--  Repeated marquee items -->
-                    <img src="src/img/marquee/google.png" alt="Google">
-                    <img class="sm" src="src/img/marquee/meta.png" alt="Meta">
-                    <img src="src/img/marquee/youtube.png" alt="Youtube">
-                    <img src="src/img/marquee/amazon.png" alt="Amazon">
-                    <img src="src/img/marquee/metricool.png" alt="Metricool">
-                    <img src="src/img/marquee/microsoft.png" alt="Microsoft">
-                    <img class="sm" src="src/img/marquee/tiktok.png" alt="TikTok">
-                    <img src="src/img/marquee/linkedin.png" alt="LinkedIn">
-                    <img src="src/img/marquee/spotify.png" alt="Spotify">
-                    <img src="src/img/marquee/vtex.png" alt="Vtex">
+                    <img src="/src/img/marquee/google.png" alt="Google">
+                    <img class="sm" src="/src/img/marquee/meta.png" alt="Meta">
+                    <img src="/src/img/marquee/youtube.png" alt="Youtube">
+                    <img src="/src/img/marquee/amazon.png" alt="Amazon">
+                    <img src="/src/img/marquee/metricool.png" alt="Metricool">
+                    <img src="/src/img/marquee/microsoft.png" alt="Microsoft">
+                    <img class="sm" src="/src/img/marquee/tiktok.png" alt="TikTok">
+                    <img src="/src/img/marquee/linkedin.png" alt="LinkedIn">
+                    <img src="/src/img/marquee/spotify.png" alt="Spotify">
+                    <img src="/src/img/marquee/vtex.png" alt="Vtex">
 
                     <!--  Repeated marquee items -->
-                    <img src="src/img/marquee/google.png" alt="Google">
-                    <img class="sm" src="src/img/marquee/meta.png" alt="Meta">
-                    <img src="src/img/marquee/youtube.png" alt="Youtube">
-                    <img src="src/img/marquee/amazon.png" alt="Amazon">
-                    <img src="src/img/marquee/metricool.png" alt="Metricool">
-                    <img src="src/img/marquee/microsoft.png" alt="Microsoft">
-                    <img class="sm" src="src/img/marquee/tiktok.png" alt="TikTok">
-                    <img src="src/img/marquee/linkedin.png" alt="LinkedIn">
-                    <img src="src/img/marquee/spotify.png" alt="Spotify">
-                    <img src="src/img/marquee/vtex.png" alt="Vtex">
+                    <img src="/src/img/marquee/google.png" alt="Google">
+                    <img class="sm" src="/src/img/marquee/meta.png" alt="Meta">
+                    <img src="/src/img/marquee/youtube.png" alt="Youtube">
+                    <img src="/src/img/marquee/amazon.png" alt="Amazon">
+                    <img src="/src/img/marquee/metricool.png" alt="Metricool">
+                    <img src="/src/img/marquee/microsoft.png" alt="Microsoft">
+                    <img class="sm" src="/src/img/marquee/tiktok.png" alt="TikTok">
+                    <img src="/src/img/marquee/linkedin.png" alt="LinkedIn">
+                    <img src="/src/img/marquee/spotify.png" alt="Spotify">
+                    <img src="/src/img/marquee/vtex.png" alt="Vtex">
 
                     <!--  Repeated marquee items -->
-                    <img src="src/img/marquee/google.png" alt="Google">
-                    <img class="sm" src="src/img/marquee/meta.png" alt="Meta">
-                    <img src="src/img/marquee/youtube.png" alt="Youtube">
-                    <img src="src/img/marquee/amazon.png" alt="Amazon">
-                    <img src="src/img/marquee/metricool.png" alt="Metricool">
-                    <img src="src/img/marquee/microsoft.png" alt="Microsoft">
-                    <img class="sm" src="src/img/marquee/tiktok.png" alt="TikTok">
-                    <img src="src/img/marquee/linkedin.png" alt="LinkedIn">
-                    <img src="src/img/marquee/spotify.png" alt="Spotify">
-                    <img src="src/img/marquee/vtex.png" alt="Vtex">
+                    <img src="/src/img/marquee/google.png" alt="Google">
+                    <img class="sm" src="/src/img/marquee/meta.png" alt="Meta">
+                    <img src="/src/img/marquee/youtube.png" alt="Youtube">
+                    <img src="/src/img/marquee/amazon.png" alt="Amazon">
+                    <img src="/src/img/marquee/metricool.png" alt="Metricool">
+                    <img src="/src/img/marquee/microsoft.png" alt="Microsoft">
+                    <img class="sm" src="/src/img/marquee/tiktok.png" alt="TikTok">
+                    <img src="/src/img/marquee/linkedin.png" alt="LinkedIn">
+                    <img src="/src/img/marquee/spotify.png" alt="Spotify">
+                    <img src="/src/img/marquee/vtex.png" alt="Vtex">
                 </p>
             </div>
         </section>
@@ -294,7 +294,7 @@ $db->close();
             <div class="emms__features__item emms__fade-in emms__features__item--reverse">
                 <div class="emms__container--md">
                     <div class="emms__features__item__image">
-                        <img src="src/img/pasevip.png" alt="Image">
+                        <img src="/src/img/pasevip.png" alt="Image">
                     </div>
                     <div class="emms__features__item__text">
                         <h3>¿Todavía no eres VIP? Consigue tu entrada ahora para llevarte también</h3>
@@ -313,7 +313,7 @@ $db->close();
         <section class="emms__premium-content">
             <div class="emms__container--lg">
                 <div class="emms__premium-content__picture emms__fade-in">
-                    <img src="src/img/biblioteca-recursos.png" alt="Biblioteca de recursos">
+                    <img src="/src/img/biblioteca-recursos.png" alt="Biblioteca de recursos">
                 </div>
                 <div class="emms__premium-content__text emms__fade-in">
                     <h2>Accede a la Biblioteca de Recursos ¡gratis!</h2>
@@ -325,20 +325,20 @@ $db->close();
 
 
         <!-- Doppler Banner -->
-        <?php include_once('././src/components/doppler-academy-banner.php'); ?>
+        <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/doppler-academy-banner.php'); ?>
 
     </main>
 
 
     <!-- Footer -->
-    <?php include_once('././src/components/footer.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/footer.php'); ?>
 
-    <script src="src/<?= VERSION ?>/js/calendarBio.js"></script>
-    <script src="src/<?= VERSION ?>/js/certificateModal.js"></script>
-    <script src="src/<?= VERSION ?>/js/speakersInterna.js" type="module"></script>
-    <script src="src/<?= VERSION ?>/js/certificate/certificateSpeaker.js" type="module"></script>
-    <script src="src/<?= VERSION ?>/js/vendors/intlTelInput.min.js"></script>
-    <?php include_once('././src/components/intellInput.php'); ?>
+    <script src="/src/<?= VERSION ?>/js/calendarBio.js"></script>
+    <script src="/src/<?= VERSION ?>/js/certificateModal.js"></script>
+    <script src="/src/<?= VERSION ?>/js/speakersInterna.js" type="module"></script>
+    <script src="/src/<?= VERSION ?>/js/certificate/certificateSpeaker.js" type="module"></script>
+    <script src="/src/<?= VERSION ?>/js/vendors/intlTelInput.min.js"></script>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/intellInput.php'); ?>
 
 </body>
 

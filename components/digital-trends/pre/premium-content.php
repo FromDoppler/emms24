@@ -30,14 +30,14 @@ function getContentForUrl($url)
     return $contentMap[$group];
 }
 
-include_once('./components/helpers/urlHelper.php');
+include_once($_SERVER['DOCUMENT_ROOT'] . '/components/helpers/urlHelper.php');
 $normalizedUrl = getNormalizeUrl();
 $content = getContentForUrl($normalizedUrl);
 ?>
 <section class="emms__premium-content">
     <div class="emms__container--lg">
         <div class="emms__premium-content__picture emms__fade-in">
-            <img src="src/img/biblioteca-recursos.png" alt="Biblioteca de recursos">
+            <img src="/src/img/biblioteca-recursos.png" alt="Biblioteca de recursos">
         </div>
         <div class="emms__premium-content__text emms__fade-in">
             <h2><?php echo ($content['heading']); ?></h2>

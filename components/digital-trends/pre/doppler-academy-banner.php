@@ -7,15 +7,15 @@
                         a lo largo de todo el mundo <strong>de forma online y 100% gratuita.</strong>  <br> Cursa a tu ritmo, donde quieras y cuando quieras 🙂</p>
                     <div class="text-with-icon-container">
                         <div class="text-with-icon">
-                            <img src="src/img/icons/icon-check--purple.svg" alt="Check icon">
+                            <img src="/src/img/icons/icon-check--purple.svg" alt="Check icon">
                             <span>Gratuito</span>
                         </div>
                         <div class="text-with-icon">
-                            <img src="src/img/icons/icon-check--purple.svg" alt="Check icon">
+                            <img src="/src/img/icons/icon-check--purple.svg" alt="Check icon">
                             <span>on demand</span>
                         </div>
                         <div class="text-with-icon">
-                            <img src="src/img/icons/icon-check--purple.svg" alt="Check icon">
+                            <img src="/src/img/icons/icon-check--purple.svg" alt="Check icon">
                             <span>A TU RITMO</span>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                             </ul>
                         </div>
                         <div class="emms__doppleracademybanner__carousel__item__image">
-                            <img src="src/img/academy-certificaciones.png" alt="Certificaciones">
+                            <img src="/src/img/academy-certificaciones.png" alt="Certificaciones">
                         </div>
                     </a>
                     <a class="emms__doppleracademybanner__carousel__item">
@@ -46,7 +46,7 @@
                             </ul>
                         </div>
                         <div class="emms__doppleracademybanner__carousel__item__image">
-                            <img src="src/img/academy-podcasts.png" alt="Podcasts">
+                            <img src="/src/img/academy-podcasts.png" alt="Podcasts">
                         </div>
                     </a>
                     <a class="emms__doppleracademybanner__carousel__item">
@@ -59,7 +59,7 @@
                             </ul>
                         </div>
                         <div class="emms__doppleracademybanner__carousel__item__image">
-                            <img src="src/img/academy-webinars.png" alt="Webinars">
+                            <img src="/src/img/academy-webinars.png" alt="Webinars">
                         </div>
                     </a>
                     <a class="emms__doppleracademybanner__carousel__item">
@@ -72,7 +72,7 @@
                             </ul>
                         </div>
                         <div class="emms__doppleracademybanner__carousel__item__image">
-                            <img src="src/img/academy-doppler-demo.png" alt="Doppler Demo">
+                            <img src="/src/img/academy-doppler-demo.png" alt="Doppler Demo">
                         </div>
                     </a>
                 </div>

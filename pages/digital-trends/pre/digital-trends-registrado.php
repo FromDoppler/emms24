@@ -1,32 +1,32 @@
 <?php
-require_once('././config.php');
-require_once('././src/components/cacheSettings.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/config.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <?php include('./components/digital-trends/pre/digital-trends/head.php'); ?>
-    <?php include('./components/head.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/digital-trends/head.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/head.php'); ?>
 </head>
 
 <body class="emms__ecommerce emms__ecommerce-logueado">
-    <?php include('./components/gtm.php'); ?>
-    <?php include('./components/navbar-reg.php') ?>
-    <?php include('./components/share.php') ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/gtm.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/navbar-reg.php') ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/share.php') ?>
     <main>
-        <?php include('./components/digital-trends/pre/digital-trends/hello-module.php') ?>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/digital-trends/hello-module.php') ?>
         <div class="emms__bg-dark-gradient">
-            <?php include('./components/digital-trends/schedule/schedule.php') ?>
+            <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/schedule/schedule.php') ?>
         </div>
-        <?php include('./components/digital-trends/pre/central-video.php') ?>
-        <?php include('./components/digital-trends/pre/premium-content.php') ?>
-        <?php include('./components/digital-trends/pre/grid-event-types.php') ?>
-        <?php include('./components/digital-trends/pre/companies-list.php') ?>
-        <?php include('./components/digital-trends/pre/doppler-academy-banner.php'); ?>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/central-video.php') ?>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/premium-content.php') ?>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/grid-event-types.php') ?>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/companies-list.php') ?>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/doppler-academy-banner.php'); ?>
     </main>
-    <?php include('./components/footer.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/footer.php'); ?>
 
 </body>
 

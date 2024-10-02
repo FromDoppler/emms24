@@ -1,5 +1,5 @@
 <?php
-include_once('./components/helpers/urlHelper.php');
+include_once($_SERVER['DOCUMENT_ROOT'] . '/components/helpers/urlHelper.php');
 $normalizedUrl = getNormalizeUrl();
 function getLinkByCurrentUrl($url)
 {
@@ -28,21 +28,21 @@ $link = getLinkByCurrentUrl($normalizedUrl);
 ?>
 
 <div class="emms__share">
-    <a id="btn-share" class="emms__share__open-list"><img src="src/img/icons/icon-share.svg" alt="Share"></a>
+    <a id="btn-share" class="emms__share__open-list"><img src="/src/img/icons/icon-share.svg" alt="Share"></a>
     <ul id="list-share" class="emms__share__list">
         <li>
             <a href="javascript: void(0);" onclick="window.open ('<?= $link['facebook']?>', 'Facebook', 'toolbar=0, status=0, width=550, height=350');">
-                <img src="src/img/Facebook-w.svg" alt="Facebook">
+                <img src="/src/img/Facebook-w.svg" alt="Facebook">
             </a>
         </li>
         <li>
             <a href="javascript: void(0);" onclick="window.open ('<?= $link['twitter']?>', 'Twitter', 'toolbar=0, status=0, width=550, height=350');">
-                <img src="src/img/Twitter-w.svg" alt="Twitter">
+                <img src="/src/img/Twitter-w.svg" alt="Twitter">
             </a>
         </li>
         <li>
             <a href="javascript: void(0);" onclick="window.open ('<?= $link['linkedln']?>', 'Linkedin', 'toolbar=0, status=0, width=550, height=550');">
-                <img src="src/img/LinkedIn-w.svg" alt="LinkedIn">
+                <img src="/src/img/LinkedIn-w.svg" alt="LinkedIn">
             </a>
         </li>
     </ul>
