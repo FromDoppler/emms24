@@ -379,6 +379,7 @@
 
 .emms__calendar__list__item__card__speaker__text ul li a {
     display: block;
+    height: 100%;
 }
 
 .emms__calendar__list__item__card__speaker__text ul li a:hover {
