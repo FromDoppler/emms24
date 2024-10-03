@@ -58,7 +58,9 @@ if (isset($_GET['changestatus_id'])) {
         </div>
 
         <div id="container">
-            <br /><a href="/adm24?token=<?= $_GET['token'] ?>"> Menu Principal</a>
+            <br />
+            <a href="/adm24?token=<?= $_GET['token'] ?>"> Menu Principal</a>
+            <a target="_blank" href="schedule-preview?token=<?= $_GET['token'] ?>"> Agenda Preview</a>
             <div id="table-responsive">
 
                 <table class="table table-striped">

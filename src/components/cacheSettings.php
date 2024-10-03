@@ -1,6 +1,6 @@
 <?php
-require_once('././config.php');
-require_once('./utils/DB.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/config.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/utils/DB.php');
 
 $mem_var = new Memcached();
 $mem_var->addServer(MEMCACHED_SERVER, 11211);
