@@ -114,8 +114,6 @@ if (isset($_POST['btn-save'])) {
                                 <select name="exposes" class="form-select" required>
                                     <option value="" disabled selected>Seleccione el tipo de speaker</option>
                                     <option value="conference">Conferencia</option>
-                                    <option value="interview">Entrevista</option>
-                                    <option value="successful-case">Caso de Exito</option>
                                     <option value="workshop">Workshop</option>
                                     <option value="networking">Networking</option>
                                     <option value="debate">Mesa de debate</option>

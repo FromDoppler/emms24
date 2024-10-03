@@ -137,8 +137,6 @@ if (isset($_POST['btn-cancel'])) {
                             <td>
                                 <select name="exposes" class="form-select" required>
                                     <option <?= ($fetched_row['exposes'] === 'conference') ? 'selected' : '' ?> value="conference">Conferencia</option>
-                                    <option <?= ($fetched_row['exposes'] === 'interview') ? 'selected' : '' ?> value="interview">Entrevista</option>
-                                    <option <?= ($fetched_row['exposes'] === 'successful-case') ? 'selected' : '' ?> value="successful-case">Caso de Exito</option>
                                     <option <?= ($fetched_row['exposes'] === 'workshop') ? 'selected' : '' ?> value="workshop">Workshop</option>
                                     <option <?= ($fetched_row['exposes'] === 'networking') ? 'selected' : '' ?> value="networking">Networking</option>
                                     <option <?= ($fetched_row['exposes'] === 'debate') ? 'selected' : '' ?> value="debate">Mesa de Debate</option>
