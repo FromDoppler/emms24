@@ -92,10 +92,8 @@
     position: relative;
     cursor: pointer;
     line-height: 30px;
-}
-
-.emms__calendar__tab:first-child {
-    margin-right: 12px;
+    margin-right: 6px;
+    margin-left: 6px;
 }
 
 .emms__calendar__tab[aria-selected="true"] {
@@ -127,10 +125,8 @@
     .emms__calendar__tab {
         font-size: 18px;
         padding: 8px 0 8px 0;
-    }
-
-    .emms__calendar__tab:first-child {
         margin-right: 6px;
+        margin-left: 6px;
     }
 }
 
@@ -379,7 +375,6 @@
 
 .emms__calendar__list__item__card__speaker__text ul li a {
     display: block;
-    height: 100%;
 }
 
 .emms__calendar__list__item__card__speaker__text ul li a:hover {

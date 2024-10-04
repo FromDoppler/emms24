@@ -35,6 +35,14 @@ function showEventDatetimeByDay($day, $digitalTrendsStates)
                 <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce%3A+d%C3%ADa+2&iso=20240503T1030&p1=51&ah=6" target="_blank">Mira el horario de tu país</a>
             </div>
         </div>
+        <?php
+    } else if ($day === 3) {
+    ?>
+        <div class="emms__calendar__date emms__fade-in">
+            <div class="emms__calendar__date__country">
+                <p>Próximamente</p>
+            </div>
+        </div>
 <?php
     }
 }
@@ -195,4 +203,6 @@ function showSpeakersByDay($day, $digitalTrendsStates)
 }
 showSpeakersByDay(1, $digitalTrendsStates);
 showSpeakersByDay(2, $digitalTrendsStates);
+showSpeakersByDay(3, $digitalTrendsStates);
+
 ?>

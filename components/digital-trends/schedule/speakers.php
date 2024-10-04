@@ -3,6 +3,7 @@
         <?php if ($digitalTrendsStates['isPre']) : ?>
             <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day1">26 de Noviembre</button>
             <button class="emms__calendar__tab" role="tab" aria-selected="false" id="day2">27 de Noviembre</button>
+            <button class="emms__calendar__tab" role="tab" aria-selected="false" id="day3">28 de Noviembre</button>
         <?php endif ?>
         <?php if ($digitalTrendsStates['isLive']) : ?>
             <button class="emms__calendar__tab" role="tab" aria-selected="false" id="day1">26 de Noviembre - finalizado</button>
