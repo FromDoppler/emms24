@@ -377,6 +377,10 @@
     display: block;
 }
 
+.emms__calendar__list__item__card__speaker__text ul li a:not(.emms__calendar__list__item__card__btn-bio-hide){
+    height: 100%;
+  }
+
 .emms__calendar__list__item__card__speaker__text ul li a:hover {
     opacity: .7;
     transition-duration: .2s;
@@ -453,7 +457,7 @@
 }
 
 .emms__calendar__list__item__card__business {
-    height: 28px;
+    height: 60px;
     padding: 25px 0;
     position: absolute;
     bottom: 0;

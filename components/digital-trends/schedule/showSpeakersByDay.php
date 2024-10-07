@@ -123,7 +123,7 @@ function showSpeakersByDay($day, $digitalTrendsStates)
                                                                 <h5><?= $speaker['job'] ?></h5>
                                                                 <p><?= $speaker['bio'] ?></p>
                                                             </div>
-                                                            <a class="emms__calendar__list__item__card__btn-bio-hide"> Volver</a>
+                                                            <a class="emms__calendar__list__item__card__btn-bio-hide"> Volver →</a>
                                                         <?php elseif ($speaker['exposes'] === "workshop") : ?>
                                                             <div class="emms__calendar__list__item__card__label emms__calendar__list__item__card__label--vip">
                                                                 <p>Workshop - exclusivo VIP</p>
@@ -136,7 +136,7 @@ function showSpeakersByDay($day, $digitalTrendsStates)
                                                                 <h5><?= $speaker['job'] ?></h5>
                                                                 <p><?= $speaker['bio'] ?></p>
                                                             </div>
-                                                            <a class="emms__calendar__list__item__card__btn-bio-hide"> Volver</a>
+                                                            <a class="emms__calendar__list__item__card__btn-bio-hide"> Volver →</a>
                                                         <?php endif; ?>
                                                     </div>
                                                 </li>
