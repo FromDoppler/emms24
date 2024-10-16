@@ -140,6 +140,7 @@ if (isset($_POST['btn-cancel'])) {
                                     <option <?= ($fetched_row['exposes'] === 'workshop') ? 'selected' : '' ?> value="workshop">Workshop</option>
                                     <option <?= ($fetched_row['exposes'] === 'networking') ? 'selected' : '' ?> value="networking">Networking</option>
                                     <option <?= ($fetched_row['exposes'] === 'debate') ? 'selected' : '' ?> value="debate">Mesa de Debate</option>
+                                    <option <?= ($fetched_row['exposes'] === 'successStory') ? 'selected' : '' ?> value="successStory">Caso de éxito</option>
                                 </select>
                             </td>
                         </tr>

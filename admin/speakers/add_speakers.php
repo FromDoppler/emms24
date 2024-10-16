@@ -117,6 +117,7 @@ if (isset($_POST['btn-save'])) {
                                     <option value="workshop">Workshop</option>
                                     <option value="networking">Networking</option>
                                     <option value="debate">Mesa de debate</option>
+                                    <option value="successStory">Caso de éxito</option>
                                 </select>
                             </td>
                         </tr>
