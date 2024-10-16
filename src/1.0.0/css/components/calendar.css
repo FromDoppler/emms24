@@ -11,7 +11,8 @@
     margin: 40px 0px;
 }
 
-.emms__ecommerce-logueado--post .emms__calendar.emms__calendar--post,.emms__calendar.emms__calendar--post {
+.emms__ecommerce-logueado--post .emms__calendar.emms__calendar--post,
+.emms__calendar.emms__calendar--post {
     background: linear-gradient(1deg, #0C0E25 0%, #0D102A 54.45%, #1B245B 94.04%);
     text-align: center;
 
@@ -281,6 +282,11 @@
     background: #7D04F6;
 }
 
+.emms__calendar__list__item__card__label--success-story {
+    background: #DF24C1;
+    color: #fff;
+}
+
 .emms__calendar__list__item__card__label--vip {
     background: linear-gradient(90deg, #9b6612, #D29E4A, #9b6612);
 }
@@ -377,9 +383,9 @@
     display: block;
 }
 
-.emms__calendar__list__item__card__speaker__text ul li a:not(.emms__calendar__list__item__card__btn-bio-hide){
+.emms__calendar__list__item__card__speaker__text ul li a:not(.emms__calendar__list__item__card__btn-bio-hide) {
     height: 100%;
-  }
+}
 
 .emms__calendar__list__item__card__speaker__text ul li a:hover {
     opacity: .7;
@@ -595,6 +601,10 @@
     color: #7D04F6;
 }
 
+.emms__calendar__list__item__card__bio .emms__calendar__list__item__card__label--success-story {
+    color: #DF24C1;
+}
+
 .emms__calendar__list__item__card__bio .emms__calendar__list__item__card__label--vip p {
     color: #D29E4A;
 }
@@ -610,6 +620,11 @@
 .emms__calendar__list__item__card__bio__content--free {
     background: #7D04F6;
 }
+
+.emms__calendar__list__item__card__bio__content--success-story {
+    color: #DF24C1;
+}
+
 
 .emms__calendar__list__item__card__bio__content--vip {
     background: #D29E4A;
