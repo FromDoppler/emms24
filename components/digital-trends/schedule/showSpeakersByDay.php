@@ -35,7 +35,7 @@ function showEventDatetimeByDay($day, $digitalTrendsStates)
                 <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce%3A+d%C3%ADa+2&iso=20240503T1030&p1=51&ah=6" target="_blank">Mira el horario de tu país</a>
             </div>
         </div>
-        <?php
+    <?php
     } else if ($day === 3) {
     ?>
         <div class="emms__calendar__date emms__fade-in">
@@ -47,6 +47,7 @@ function showEventDatetimeByDay($day, $digitalTrendsStates)
     }
 }
 ?>
+
 <?php
 function showSpeakersByDay($day, $digitalTrendsStates)
 {
@@ -63,7 +64,7 @@ function showSpeakersByDay($day, $digitalTrendsStates)
             foreach ($speakers as $speaker) :
                 $isSpeakerDT = $speaker['event'] === "digital-trends";
                 $isSpeakerExposeDebate = $speaker['exposes'] === "debate";
-                $isSpeakerExposesType = ($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop") || ($speaker['exposes'] === "networking") || ($isSpeakerExposeDebate);
+                $isSpeakerExposesType = ($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop") || ($speaker['exposes'] === "networking") || ($speaker['exposes'] === "successStory") || ($isSpeakerExposeDebate);
             ?>
                 <?php if (($isSpeakerExposesType) && $isSpeakerDT) : ?>
                     <li class="emms__calendar__list__item">
@@ -77,6 +78,10 @@ function showSpeakersByDay($day, $digitalTrendsStates)
                                 <div class="emms__calendar__list__item__card__label emms__calendar__list__item__card__label--vip">
                                     <p>Workshop - exclusivo VIP</p>
                                 </div>
+                            <?php elseif ($speaker['exposes'] === "successStory") : ?>
+                                <div class="emms__calendar__list__item__card__label emms__calendar__list__item__card__label--success-story">
+                                    <p>CASO DE ÉXITO</p>
+                                </div>
                             <?php elseif ($speaker['exposes'] === "networking") : ?>
                                 <div class="emms__calendar__list__item__card__label emms__calendar__list__item__card__label--vip">
                                     <p>Networking - exclusivo VIP</p>
@@ -87,7 +92,7 @@ function showSpeakersByDay($day, $digitalTrendsStates)
                                 </div>
                             <?php endif; ?>
 
-                            <?php if (($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop")) : ?>
+                            <?php if (($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop") || ($speaker['exposes'] === "successStory")) : ?>
                                 <div class="emms__calendar__list__item__card__speaker">
                                     <div class="emms__calendar__list__item__card__speaker__image">
                                         <img src="/admin/speakers/uploads/<?= $speaker['image'] ?>" alt="<?= $speaker['alt_image'] ?>">
@@ -154,10 +159,13 @@ function showSpeakersByDay($day, $digitalTrendsStates)
                             <?php endif; ?>
 
                             <div class="emms__calendar__list__item__card__description">
+
                                 <?php if ($speaker['exposes'] === "conference") : ?>
                                     <h3 class="title-conference"><?= $speaker['title'] ?></h3>
                                 <?php elseif ($speaker['exposes'] === "workshop") : ?>
                                     <h3 class="title-workshop"><?= $speaker['title'] ?></h3>
+                                <?php elseif ($speaker['exposes'] === "successStory") : ?>
+                                    <h3 class="title-conference"><?= $speaker['title'] ?></h3>
                                 <?php elseif ($isSpeakerExposeDebate) : ?>
                                     <h3 class="title-debate"><?= $speaker['title'] ?></h3>
                                 <?php elseif ($speaker['exposes'] === "networking") : ?>
@@ -175,7 +183,7 @@ function showSpeakersByDay($day, $digitalTrendsStates)
                                 <?php endif; ?>
                             </div>
 
-                            <?php if ($speaker['exposes'] === "conference") : ?>
+                            <?php if ($speaker['exposes'] === "conference" || $speaker['exposes'] === "successStory") : ?>
                                 <div class="emms__calendar__list__item__card__business">
                                     <img src="/admin/speakers/uploads/<?= $speaker['image_company'] ?>" alt="<?= $speaker['alt_image_company'] ?>">
                                 </div>
