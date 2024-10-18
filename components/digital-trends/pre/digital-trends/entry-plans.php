@@ -17,7 +17,7 @@
                                 <h4>US$9,99</h4>
                             </div>
                         </div>
-                        <a href="./checkout.php" class="emms__cta">ACCEDE AHORA</a>
+                        <a href="./checkout" class="emms__cta">ACCEDE AHORA</a>
                     </div>
                     <div class="emms__plans__card__main">
                         <h5>Beneficios</h5>
