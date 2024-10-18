@@ -153,9 +153,13 @@ ul.emms__centralvideo__list.emms__centralvideo__list--live li::before {
     background: #242424;
 }
 
+.emms__centralvideo__tag-play.tag-play--playable {
+    cursor: pointer;
+}
+
+
 .emms__centralvideo__tag-play.emms__centralvideo__tag-play--live::after {
     border-left: 15px solid #242424;
-
 }
 
 .emms__centralvideo__tag-play::after {
