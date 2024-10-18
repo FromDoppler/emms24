@@ -13,7 +13,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
         import {
             hiddenOrShowUserUI
         } from '/src/<?= VERSION ?>/js/user.js';
-        hiddenOrShowUserUI('ecommerce24');
+        hiddenOrShowUserUI('digital-trends24');
     </script>
 </head>
 
