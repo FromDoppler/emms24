@@ -34,15 +34,25 @@
     animation-delay: .2s;
 }
 
-.emms__features__item .emms__container--md {
+.emms__features__item .emms__container--md,
+.emms__features__item .emms__container--lg {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 @media(min-width:992px) {
-    .emms__features__item--reverse .emms__container--md {
+
+    .emms__features__item--reverse .emms__container--md,
+    .emms__features__item .emms__container--lg {
         flex-direction: row-reverse;
+    }
+
+}
+
+@media(max-width:992px) {
+    .emms__features__item .emms__container--lg {
+        flex-direction: column;
     }
 }
 
@@ -75,7 +85,7 @@
     margin: 24px 0 27px 0;
 }
 
-.emms__features__item__text__list li{
+.emms__features__item__text__list li {
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
@@ -86,7 +96,7 @@
     max-width: 407px;
 }
 
-.emms__features__item__text__list li::before{
+.emms__features__item__text__list li::before {
     content: "";
     position: absolute;
     left: 0;
@@ -97,7 +107,7 @@
     background-size: contain;
 }
 
-.emms__features__item .emms__features__item__text .emms__features__item__text__price{
+.emms__features__item .emms__features__item__text .emms__features__item__text__price {
     font-size: 47px;
     line-height: 1;
     font-weight: 900;
@@ -105,7 +115,7 @@
     margin: 40px 0 30px 0;
 }
 
-.emms__features__item .emms__features__item__text .emms__features__item__text__price em{
+.emms__features__item .emms__features__item__text .emms__features__item__text__price em {
     font-size: 20px;
     font-weight: 700;
     font-style: normal;
@@ -114,13 +124,13 @@
     margin: 0 0 10px 0;
 }
 
-.emms__features__item .emms__features__item__text .emms__features__item__text__price.emms__features__item__text__price--live{
+.emms__features__item .emms__features__item__text .emms__features__item__text__price.emms__features__item__text__price--live {
     color: #242424;
     font-weight: 500;
 }
 
 
-.emms__features__item .emms__features__item__text .emms__features__item__text__price span{
+.emms__features__item .emms__features__item__text .emms__features__item__text__price span {
     font-size: 20px;
     line-height: 1;
     font-weight: 400;
@@ -129,7 +139,7 @@
 
 @media(max-width:992px) {
 
-    .emms__features__title{
+    .emms__features__title {
         padding: 36px 0;
     }
 
@@ -157,17 +167,17 @@
         text-align: center;
     }
 
-    .emms__features__item .emms__features__item__text h3{
+    .emms__features__item .emms__features__item__text h3 {
         text-align: center;
     }
 
-    .emms__features__item .emms__features__item__text .emms__features__item__text__price{
+    .emms__features__item .emms__features__item__text .emms__features__item__text__price {
         text-align: center;
     }
 }
 
 
-@media(max-width:620px){
+@media(max-width:620px) {
     .emms__features__item .emms__features__item__text h3 {
         font-size: 28px;
         line-height: 30px;
