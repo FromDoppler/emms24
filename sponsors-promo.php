@@ -220,56 +220,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/utils/DB.php');
         <!-- Description -->
 
         <section class="emms__sponsor-promo__media-partner emms__bg-section-5 ">
-            <div class="emms__hero-registration__bottom images emms__fade-in">
-                <p>
-                    <img src="/src/img/marquee/google.png" alt="Google">
-                    <img class="sm" src="/src/img/marquee/meta.png" alt="Meta">
-                    <img src="/src/img/marquee/youtube.png" alt="Youtube">
-                    <img src="/src/img/marquee/amazon.png" alt="Amazon">
-                    <img src="/src/img/marquee/metricool.png" alt="Metricool">
-                    <img src="/src/img/marquee/microsoft.png" alt="Microsoft">
-                    <img class="sm" src="/src/img/marquee/tiktok.png" alt="TikTok">
-                    <img src="/src/img/marquee/linkedin.png" alt="LinkedIn">
-                    <img src="/src/img/marquee/spotify.png" alt="Spotify">
-                    <img src="/src/img/marquee/vtex.png" alt="Vtex">
-
-                    <!--  Repeated marquee items -->
-                    <img src="/src/img/marquee/google.png" alt="Google">
-                    <img class="sm" src="/src/img/marquee/meta.png" alt="Meta">
-                    <img src="/src/img/marquee/youtube.png" alt="Youtube">
-                    <img src="/src/img/marquee/amazon.png" alt="Amazon">
-                    <img src="/src/img/marquee/metricool.png" alt="Metricool">
-                    <img src="/src/img/marquee/microsoft.png" alt="Microsoft">
-                    <img class="sm" src="/src/img/marquee/tiktok.png" alt="TikTok">
-                    <img src="/src/img/marquee/linkedin.png" alt="LinkedIn">
-                    <img src="/src/img/marquee/spotify.png" alt="Spotify">
-                    <img src="/src/img/marquee/vtex.png" alt="Vtex">
-
-                    <!--  Repeated marquee items -->
-                    <img src="/src/img/marquee/google.png" alt="Google">
-                    <img class="sm" src="/src/img/marquee/meta.png" alt="Meta">
-                    <img src="/src/img/marquee/youtube.png" alt="Youtube">
-                    <img src="/src/img/marquee/amazon.png" alt="Amazon">
-                    <img src="/src/img/marquee/metricool.png" alt="Metricool">
-                    <img src="/src/img/marquee/microsoft.png" alt="Microsoft">
-                    <img class="sm" src="/src/img/marquee/tiktok.png" alt="TikTok">
-                    <img src="/src/img/marquee/linkedin.png" alt="LinkedIn">
-                    <img src="/src/img/marquee/spotify.png" alt="Spotify">
-                    <img src="/src/img/marquee/vtex.png" alt="Vtex">
-
-                    <!--  Repeated marquee items -->
-                    <img src="/src/img/marquee/google.png" alt="Google">
-                    <img class="sm" src="/src/img/marquee/meta.png" alt="Meta">
-                    <img src="/src/img/marquee/youtube.png" alt="Youtube">
-                    <img src="/src/img/marquee/amazon.png" alt="Amazon">
-                    <img src="/src/img/marquee/metricool.png" alt="Metricool">
-                    <img src="/src/img/marquee/microsoft.png" alt="Microsoft">
-                    <img class="sm" src="/src/img/marquee/tiktok.png" alt="TikTok">
-                    <img src="/src/img/marquee/linkedin.png" alt="LinkedIn">
-                    <img src="/src/img/marquee/spotify.png" alt="Spotify">
-                    <img src="/src/img/marquee/vtex.png" alt="Vtex">
-                </p>
-            </div>
+            <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/marquee.php') ?>
             <div class="emms__container--md emms__fade-in">
                 <div class="emms__sponsor-promo__media-partner__text">
                     <h2>¿Sin inversión este año?
@@ -319,3 +270,4 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/utils/DB.php');
 </body>
 
 </html>
+
