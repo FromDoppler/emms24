@@ -15,15 +15,15 @@
         </ul>
         <div class="emms__centralvideo__video lg emms__fade-in">
             <!-- TODO: Replace video -->
-            <video id="video" src="src/img/EmmsEcommerceNew.mp4" controls></video>
+            <video id="videoTicketing" src="src/img/EmmsEcommerceNew.mp4" controls></video>
         </div>
     </div>
 </section>
 <script>
-    const playParagraph = document.getElementById('play-video');
-    const video = document.getElementById('video');
+    const playParagraph = document.getElementById('playVideo');
+    const videoTicketing = document.getElementById('videoTicketing');
 
     playParagraph.addEventListener('click', () => {
-        video.play();
+        videoTicketing.play();
     });
 </script>
