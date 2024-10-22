@@ -22,6 +22,8 @@
                     <div class="emms__plans__card__main">
                         <h5>Beneficios</h5>
                         <ul>
+                            <li>Cuenta gratuita de Doppler durante 6 meses para planes de hasta
+                                5.000 contactos.</li>
                             <li><a href="http://goemms.com/digital-trends-registrado#agenda"> Workshops prácticos </a></li>
                             <li>Sesiones de <a href="http://goemms.com/digital-trends-registrado#agenda">Networking</a></li>
                             <li>Acceso de por vida a los <a href="http://goemms.com/digital-trends-registrado#agenda"> Workshops</a></li>
@@ -55,6 +57,8 @@
                     <div class="emms__plans__card__main">
                         <h5>Beneficios</h5>
                         <ul>
+                            <li class="exclude">Cuenta gratuita de Doppler durante 6 meses para planes de hasta
+                                5.000 contactos.</li>
                             <li class="exclude"><a href="http://goemms.com/digital-trends-registrado#agenda"> Workshops prácticos </a></li>
                             <li class="exclude">Sesiones de <a href="http://goemms.com/digital-trends-registrado#agenda">Networking</a></li>
                             <li class="exclude">Acceso de por vida a los <a href="http://goemms.com/digital-trends-registrado#agenda"> Workshops</a></li>
@@ -99,7 +103,7 @@
         </div>
     </section>
 
-<!--
+    <!--
     <div class="emms__separator emms__separator--white  hidden--vip">
     </div> -->
 
