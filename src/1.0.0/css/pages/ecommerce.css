@@ -77,6 +77,9 @@
     font-weight: 700;
 }
 
+.emms__hero-registration--registered .emms__container--md p.emms__paragraph--short {
+    max-width: 516px;
+}
 
 .emms__ecommerce-logueado .emms__calendar {
     background: none;
