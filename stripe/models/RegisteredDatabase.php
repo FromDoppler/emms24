@@ -1,13 +1,16 @@
 <?php
 
-class RegisteredDatabase {
+class RegisteredDatabase
+{
     private $db;
 
-    public function __construct($db) {
+    public function __construct($db)
+    {
         $this->db = $db;
     }
 
-    public function insertRegistered($registeredData) {
+    public function insertRegistered($registeredData)
+    {
         try {
             $query = "INSERT INTO registered (register, phase, email, firstname, lastname, country, phone, company, jobPosition, ecommerce, `ecommerce-vip`, `digital-trends`, `digital-trends-vip`, source_utm, medium_utm, campaign_utm, content_utm, term_utm)
                 VALUES (
@@ -43,7 +46,8 @@ class RegisteredDatabase {
         }
     }
 
-    public function updateEcommerceVIPByEmail($email) {
+    public function updateEcommerceVIPByEmail($email)
+    {
         try {
             $query = "UPDATE registered SET `ecommerce-vip` = 1 WHERE email = '{$email}'";
             if ($this->db->query($query)) {
@@ -58,7 +62,24 @@ class RegisteredDatabase {
         }
     }
 
-    public function getRegisteredByEmail($email) {
+    public function updateDTVIPByEmail($email)
+    {
+        try {
+            $query = "UPDATE registered SET `digital-trends-vip` = 1 WHERE email = '{$email}'";
+            if ($this->db->query($query)) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (Exception $e) {
+            $errorMessage = json_encode(["updateDTVIPByEmail", $e->getMessage()]);
+            http_response_code(500);
+            throw new Exception($errorMessage);
+        }
+    }
+
+    public function getRegisteredByEmail($email)
+    {
         try {
             $query = "SELECT * FROM registered WHERE email = '{$email}'";
             $result = $this->db->query($query);
@@ -70,7 +91,8 @@ class RegisteredDatabase {
         }
     }
 
-    public function insertAutomatedRegistered($registeredData) {
+    public function insertAutomatedRegistered($registeredData)
+    {
         try {
             $currentDate = date('Y-m-d h:i:s A');
             $ecommerceValue = ($registeredData['event_name'] === 'ecommerce') ? 1 : 0;

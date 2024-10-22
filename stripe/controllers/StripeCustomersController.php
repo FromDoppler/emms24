@@ -49,7 +49,7 @@ class StripeCustomersController
     {
         $RegisteredModel = new RegisteredDatabase($db);
         if ($RegisteredModel->getRegisteredByEmail($UserData['customer_email'])) {
-            $RegisteredModel->updateEcommerceVIPByEmail($UserData['customer_email']);
+            $RegisteredModel->updateDTVIPByEmail($UserData['customer_email']);
         } else {
             return $RegisteredModel->insertAutomatedRegistered($UserData);
         }
@@ -66,7 +66,7 @@ class StripeCustomersController
         // crea o actualiza usuario en tabla registered
         $this->updateRegisteredUser($db, $UserData);
 
-        $user = $this->CreateUserObj($UserData, LIST_LANDING_ECOMMERCE_VIP);
+        $user = $this->CreateUserObj($UserData, LIST_LANDING_DIGITALT_VIP);
 
         // Enviar email de compra exitosa
         $user['final_price'] = $UserData['final_price'];
@@ -74,7 +74,7 @@ class StripeCustomersController
         sendEmail($user, $user['subject']);
 
         // Guardar la suscripcion en SpreadSheet de usuarios VIP
-        saveSubscriptionSpreadSheet(ID_SPREADSHEET_VIP, $user);
+        saveSubscriptionSpreadSheet(ID_SPREADSHEET_DT_VIP, $user);
 
         // carga el usuario en lista de doppler de usuarios vip
         $dopplerHandler = new SubscriberDopplerList();
@@ -84,21 +84,21 @@ class StripeCustomersController
     }
 
 
-    private function CreateUserObj($UserData, $listId = LIST_LANDING_ECOMMERCE_VIP)
+    private function CreateUserObj($UserData, $listId = LIST_LANDING_DIGITALT_VIP)
     {
         $encode_email = toHex(json_encode([
             'userEmail' => $UserData['customer_email'],
-            'userEvents' => json_encode(['ecommerce24','ecommerce24-vip'])
+            'userEvents' => json_encode(['digital-trends24', 'digital-trends24-vip'])
         ]));
         return [
             'register' => date("Y-m-d h:i:s A"),
             'firstname' => $UserData['customer_name'],
             'email' => $UserData['customer_email'],
-            'company' =>  '',
-            'jobPosition' =>  '',
-            'phone' =>  '',
-            'ecommerce' => 1,
-            'digital_trends' => 0,
+            'company' => '',
+            'jobPosition' => '',
+            'phone' => '',
+            'ecommerce' => 0,
+            'digital_trends' => 1,
             'encode_email' => $encode_email,
             'privacy' => true,
             'promotions' => false,
@@ -110,12 +110,11 @@ class StripeCustomersController
             'content_utm' => 'stripe',
             'term_utm' => "stripe",
             'origin' => "stripe",
-            'type' => "ecommerce24",
-            'tiketType' => 'ecommerceVip',
+            'type' => "digital-trends24",
+            'tiketType' => 'digitalTrendsVipPre',
             'form_id' => "pre",
             'list' => $listId,
             'subject' => "#EMMS2024 - Compraste tu entrada vip!"
         ];
     }
-
 }
