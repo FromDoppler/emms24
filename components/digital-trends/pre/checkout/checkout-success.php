@@ -1,3 +1,6 @@
+<div class="loader-page--new" id="spinner">
+    <img src="/src/img/logoemms-nobg.png" class="loader-goemms" alt="Loader goemms">
+</div>
 <div class="emms__checkout">
 
     <!-- Form -->
@@ -61,33 +64,40 @@
 </div>
 
 <script>
-initialize();
+    const toggleSpinner = () => {
+        const spinner = document.getElementById('spinner');
+        spinner.classList.toggle('visible');
+    }
+    toggleSpinner();
+    (async () => {
+        await initialize();
+        toggleSpinner();
+    })();
 
+    const updateEvents = () => {
+        if (localStorage.getItem('events')) {
+            const existingEvents = JSON.parse(localStorage.getItem('events'));
+            existingEvents.push("digital-trends24-vip");
+            localStorage.setItem('events', JSON.stringify(existingEvents));
+        } else {
+            localStorage.clear();
+        }
+    };
 
-const updateEvents = () => {
-  if (localStorage.getItem('events')) {
-    const existingEvents = JSON.parse(localStorage.getItem('events'));
-    existingEvents.push("digital-trends24-vip");
-    localStorage.setItem('events', JSON.stringify(existingEvents));
-  } else {
-    localStorage.clear();
-  }
-};
+    async function initialize() {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const sessionId = urlParams.get('session_id');
+        const response = await fetch(`http://localhost:4242/session-status?session_id=${sessionId}`);
+        const session = await response.json();
 
-async function initialize() {
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-  const sessionId = urlParams.get('session_id');
-  const response = await fetch(`http://localhost:4242/session-status?session_id=${sessionId}`);
-  const session = await response.json();
-
-  if (session.status == 'complete') {
-    document.getElementById('customerName').innerHTML = session.customer_details.customer_name;
-    document.getElementById('date').innerHTML = session.customer_details.date;
-    document.getElementById('amount').innerHTML = `${session.customer_details.currency} ${session.customer_details.final_price}`;
-    document.getElementById('ticketName').innerHTML = session.customer_details.ticket_name;
-    document.getElementById('success').classList.remove('hidden');
-    updateEvents();
-  }
-}
+        if (session.status == 'complete') {
+            document.getElementById('customerName').innerHTML = session.customer_details.customer_name;
+            document.getElementById('date').innerHTML = session.customer_details.date;
+            document.getElementById('amount').innerHTML = `${session.customer_details.currency} ${session.customer_details.final_price}`;
+            document.getElementById('ticketName').innerHTML = session.customer_details.ticket_name;
+            document.getElementById('success').classList.remove('hidden');
+            updateEvents();
+        }
+    }
 </script>
