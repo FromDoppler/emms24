@@ -308,5 +308,6 @@ select {
 @media(max-width:620px) {
     .emms__form {
         padding: 37px 28px;
+        min-height: 418px;
     }
 }
