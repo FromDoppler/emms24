@@ -1,32 +1,41 @@
 import { eventsType } from "./enums/eventsType.enum.js";
 
-const isEcommerceVipUser = () => {
+const getLocalStorageEvents = () => {
     let localStorageEvents = localStorage.getItem('events');
-    localStorageEvents = JSON.parse(localStorageEvents);
-    return localStorageEvents.some(event => event === eventsType.ECOMMERCEVIP);
+    return localStorageEvents ? JSON.parse(localStorageEvents) : [];
 }
 
+const isVipUser = (eventType) => {
+    const events = getLocalStorageEvents();
+    return events.some(event => event === eventType);
+}
 
 const toggleVipElements = () => {
     const vipElements = document.querySelectorAll('.hidden--vip, .show--vip');
     vipElements.forEach(element => {
         element.classList.add('toogle');
-    })
-
+    });
 }
 
 const toggleVipEcommerceElements = () => {
-    console.log('Called');
-    const isEcommerceVip = isEcommerceVipUser();
+    const isEcommerceVip = isVipUser(eventsType.ECOMMERCEVIP);
     const academyBanner = document.getElementById('speacial-flikity');
+
     if (isEcommerceVip) {
-        console.log('TOOGLE');
         toggleVipElements();
-    } else {
-        if (academyBanner) {
-            academyBanner.style.display = 'none';
-        }
+    } else if (academyBanner) {
+        academyBanner.style.display = 'none';
     }
 }
 
-export { toggleVipEcommerceElements }
+const toggleVipDigitalTrendsElements = () => {
+    const isDTVip = isVipUser(eventsType.DIGITALTRENDSVIP);
+    const academyBanner = document.getElementById('aprende-con-doppler');
+    if (isDTVip) {
+        toggleVipElements();
+    }else if (academyBanner) {
+        academyBanner.style.display = 'none';
+    }
+}
+
+export { toggleVipEcommerceElements, toggleVipDigitalTrendsElements };
