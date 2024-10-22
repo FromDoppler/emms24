@@ -1,7 +1,7 @@
 <section class="emms__centralvideo hidden--vip">
     <div class="emms__centralvideo__head">
-        <h2>¡Quedan pocas entradas!</h2>
-        <span>Apúrate a reservar tu entrada VIP si…</span>
+        <h2>¡Obtén tu pase premium antes que se agoten!</h2>
+        <span>Compra tu entrada VIP sólo si…</span>
     </div>
     <div class="emms__container--lg reverse-mb">
         <ul class="emms__centralvideo__list emms__centralvideo__list--live emms__fade-in">
