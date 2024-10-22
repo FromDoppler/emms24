@@ -70,8 +70,8 @@
 }
 
 .emms__features__item .emms__features__item__text h3 {
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 32px;
+    line-height: 40px;
     font-weight: 700;
     color: #212121;
     margin: 0 0 30px 0;
@@ -107,6 +107,17 @@
     background-size: contain;
 }
 
+.emms__features__item .emms__features__item__text .emms__features__item__text__footer {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: #333333;
+    margin-bottom: 0px;
+    max-width: 450px;
+}
+
+
 .emms__features__item .emms__features__item__text .emms__features__item__text__price {
     font-size: 47px;
     line-height: 1;
@@ -116,17 +127,22 @@
 }
 
 .emms__features__item .emms__features__item__text .emms__features__item__text__price em {
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 700;
     font-style: normal;
-    color: #000;
     display: block;
-    margin: 0 0 10px 0;
+    margin: 0px;
+    line-height: 31px;
+    color: #242424;
 }
 
 .emms__features__item .emms__features__item__text .emms__features__item__text__price.emms__features__item__text__price--live {
-    color: #242424;
-    font-weight: 500;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 47px;
+    line-height: 47px;
+    color: #7D04F6;
+    margin-top: 10px;
 }
 
 
