@@ -195,10 +195,16 @@ ul.emms__centralvideo__list.emms__centralvideo__list--live li::before {
     width: 70%;
 }
 
-.emms__centralvideo__video video {
+.emms__centralvideo__video iframe  {
     width: 100%;
     background: #000;
     box-shadow: -20px 15px 0 #310e44;
+}
+
+@media screen and (max-width: 768px) {
+    .emms__centralvideo__video iframe {
+        box-shadow: -11px 9px 0 #310e44;
+    }
 }
 
 .emms__centralvideo__video span {
