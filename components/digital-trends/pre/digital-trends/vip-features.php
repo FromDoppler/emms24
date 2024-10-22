@@ -6,15 +6,16 @@
                   <img src="src/img/pasevip.png" alt="Imagen pase VIP">
               </div>
               <div class="emms__features__item__text">
-                  <h3>Con tu pase VIP te llevarás</h3>
+                  <h3>Qué prefieres: ¿Una compra rápida o invertir en tu futuro? <br> Esto es todo lo que podrías comprarte con 9,99 USD:
+                  </h3>
                   <ul class="emms__features__item__text__list">
-                      <li>6 meses gratis en Doppler para planes de hasta 5.000 contactos.</li>
-                      <li>Nuevos y potenciales aliados de las sesiones de Networking.</li>
-                      <li>Acceso de por vida a talleres súper prácticos con los que más saben de Marketing Digital.</li>
-                      <li>Certificados por los Workshops tomados en vivo.</li>
+                      <li>En México: Unos tacos al pastor con refresco.</li>
+                      <li>En Colombia: Una arepa con queso y café.</li>
+                      <li>En España: Una ración de patatas bravas y una caña.</li>
                       <li>Guías y más herramientas para aplicar y multiplicar tus ventas.</li>
                   </ul>
-                  <p class="emms__features__item__text__price emms__features__item__text__price--live"><em>SOLO POR </em>USD 9.99</p>
+                  <p class="emms__features__item__text__footer">O… ¡Adquirir tu Entrada VIP e invertir en una experiencia  que puede cambiar tu carrera!</p>
+                  <p class="emms__features__item__text__price emms__features__item__text__price--live"><em>¡Por solo</em>USD9,99!</p>
                   <a href="#entradas" class="emms__cta"> COMPRA TU ENTRADA AHORA
                   </a>
               </div>
