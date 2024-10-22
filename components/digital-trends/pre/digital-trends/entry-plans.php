@@ -86,26 +86,5 @@
         <div class="emms__separator emms__separator--white">
         </div>
     </div>
-    <!-- Calendar -->
-    <section class="emms__calendar" id="agenda">
-        <div class="emms__container--lg">
-            <div class="emms__calendar__title emms__fade-in">
-                <h2>Agenda EMMS E-commerce 2024</h2>
-                <p><strong>Descubre aquí los speakers internacionales y las actividades exclusivas que te esperarán en esta edición. <br>
-                        Ya falta poco pero, si no quieres olvidarte del evento, <a href="https://www.addevent.com/event/fz20154258">guarda un recordatorio en tu calendario.</a> </strong></p>
-            </div>
-            <!-- Speakers -->
-            <?php include('./src/components/speakers.php') ?>
-            <!-- End list -->
-            <div class="emms__calendar__bottom emms__fade-in  hidden--vip">
-                <a href="#entradas" class="emms__cta">COMPRA TU ENTRADA VIP</a>
-            </div>
-        </div>
-    </section>
-
-    <!--
-    <div class="emms__separator emms__separator--white  hidden--vip">
-    </div> -->
-
 
 </div>
