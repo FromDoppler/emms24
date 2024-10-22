@@ -41,7 +41,12 @@
     margin: 0 0 20px 0;
     display: block;
 }
-
+@media screen and (max-width: 768px) {
+    .emms__hero-registration .emms__hero-registration__text h1 em{
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
 .emms__hero-registration .emms__hero-registration__text.emms__hero-registration__text--live h1 span {
     margin-bottom: 40px;
 }
@@ -338,7 +343,7 @@
 @media(max-width:992px) {
 
     .emms__hero-registration {
-        padding: 100px 0 88px 0;
+        padding: 82px 0 88px 0;
     }
 
     .emms__hero-registration.emms__hero-registration--video.hellobar-space {
@@ -362,7 +367,7 @@
     }
 
     .emms__hero-registration .emms__hero-registration__text p {
-        margin: 24px auto 0 auto;
+        margin: 16px auto 0 auto;
     }
 
     .emms__hero-registration .emms__hero-registration__text .emms__hero-registration__text__checklist {
@@ -393,7 +398,7 @@
 @media(max-width:620px) {
 
     .emms__hero-registration .emms__hero-registration__text h1 {
-        font-size: 40px;
+        font-size: 34px;
         line-height: 0.9;
     }
 
@@ -407,11 +412,11 @@
     }
 
     .emms__hero-registration .emms__hero-registration__text h1 span.top {
-        font-size: 86px;
+        font-size: 76px;
     }
 
     .emms__hero-registration .emms__hero-registration__text h1 span.bottom {
-        font-size: 109px;
+        font-size: 99px;
     }
 
     .emms__hero-registration--registered .emms__hero-registration__add-event {
