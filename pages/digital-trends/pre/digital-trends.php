@@ -15,6 +15,13 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
         } from '/src/<?= VERSION ?>/js/user.js';
         hiddenOrShowUserUI('digital-trends24');
     </script>
+    <script type="module">
+        import {
+            toggleVipDigitalTrendsElements
+        } from '/src/<?= VERSION ?>/js/toggleVipElements.js';
+        console.log('load')
+        toggleVipDigitalTrendsElements();
+    </script>
 </head>
 
 <body class="emms__ecommerce">
