@@ -110,7 +110,7 @@
                             <h3 class="title-networking"><?= $speaker['title'] ?></h3>
                         <?php endif; ?>
                         <p><?= $speaker['description'] ?></p>
-                        <?php if (($speaker['time']) != '') : ?>
+                        <?php if (($speaker['time']) != '' && ($speaker['exposes'] != "networking")) : ?>
                             <div class="emms__calendar__list__item__country">
                                 <span><img src="/src/img/flags/arg.png" alt="">(ARG) <?= $speaker['time'] ?></span>
                                 <a href="<?= $speaker['link_time'] ?>" target="_blank">Mira el horario de tu país</a>
