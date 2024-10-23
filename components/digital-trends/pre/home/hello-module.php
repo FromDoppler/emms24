@@ -2,17 +2,14 @@
 
 $contents = [
     '/' => [
-        'subHeading' => 'CUENTA REGRESIVA PARA EL',
         'heading' => 'EMMS DIGITAL TRENDS 2024',
         'DTCardButton' => 'REGÍSTRATE GRATIS',
     ],
     '/registrado' => [
-        'subHeading' => '',
         'heading' => 'EMMS Digital Trends 2024, ¡está llegando!',
         'DTCardButton' => 'INGRESA AHORA',
     ],
     '/*' => [
-        'subHeading' => 'CUENTA REGRESIVA PARA EL',
         'heading' => 'EMMS DIGITAL TRENDS 2024',
         'DTCardButton' => 'REGÍSTRATE GRATIS',
     ],
@@ -27,7 +24,7 @@ $content = $contents[$normalizedUrl] ?? $contents['/*'];
 <!-- Hero -->
 <section class="emms__home__hero">
     <div class="emms__home__hero__title emms__fade-top">
-        <h1><em>TODAS LAS TENDENCIAS EN MARKETING DIGITAL, EN UN SOLO LUGAR</em> <em class="xl"><?php echo ($content['subHeading']); ?></em><?php echo ($content['heading']); ?>
+        <h1><em>TODAS LAS TENDENCIAS EN MARKETING DIGITAL, EN UN SOLO LUGAR</em> <?php echo ($content['heading']); ?>
         </h1>
         <h2>ONLINE Y GRATUITO</h2>
         <p>Revoluciona tu forma de hacer negocios y potencia tus resultados con el mayor evento de Latam y España. Disfruta de 2 ediciones exclusivas para capacitarte e inspirarte con los líderes de tu industria.
@@ -68,8 +65,10 @@ $content = $contents[$normalizedUrl] ?? $contents['/*'];
                 </li>
                 <li class="emms__eventCards__list__item">
                     <div class="emms__eventCards__list__item__picture">
-                        <img src="/src/img/card-image-ecommerce.png" alt="Play icon">
-                        <p class="top hide">EVENTO FINALIZADO</p>
+                        <div class="ribbon__end">
+                            EVENTO FINALIZADO
+                        </div>
+                        <img src="/src/img/card-image-ecommerce-new.png" alt="Ecommerce image">
                     </div>
                     <div class="emms__eventCards__list__item__text">
                         <h3>EMMS E-commerce </h3>
@@ -112,8 +111,10 @@ $content = $contents[$normalizedUrl] ?? $contents['/*'];
                 </li>
                 <li class="emms__eventCards__list__item">
                     <div class="emms__eventCards__list__item__picture">
-                        <img src="/src/img/card-image-ecommerce.png" alt="Play icon">
-                        <p class="top hide">EVENTO FINALIZADO</p>
+                        <div class="ribbon__end">
+                            EVENTO FINALIZADO
+                        </div>
+                        <img src="/src/img/card-image-ecommerce-new.png" alt="Ecommerce image">
                     </div>
                     <div class="emms__eventCards__list__item__text">
                         <h3>EMMS E-commerce </h3>
