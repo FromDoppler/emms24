@@ -139,7 +139,7 @@
     top: 186px;
 }
 
-.ribbon.ribbon--registered .ribbon3:after {
+.ribbon.ribbon--registered .ribbon__end:after {
     right: -13.5px;
 }
 
@@ -156,17 +156,17 @@
         top: 128px;
     }
 
-    .ribbon .ribbon3 {
+    .ribbon .ribbon__end {
         top: 23px;
     }
 
-    .ribbon .ribbon3:after {
+    .ribbon .ribbon__end:after {
         height: 0;
         width: 0;
         right: -12.5px;
     }
 
-    .ribbon.ribbon--registered .ribbon3:after {
+    .ribbon.ribbon--registered .ribbon__end:after {
         right: -12.5px;
     }
 
@@ -175,37 +175,38 @@
     }
 }
 
-.ribbon3 img {
+.ribbon__end img {
     width: 21px;
     height: 21px;
     vertical-align: middle;
     display: inline-block;
 }
 
-.ribbon3.ribbon3--post {
+.ribbon__end.ribbon__end--post {
     width: 200px;
 }
 
-.ribbon3 {
-    width: 110px;
-    height: 38px;
-    line-height: 38px;
+.ribbon__end {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
     padding-left: 15px;
     position: absolute;
     left: -16px;
-    top: 11px;
+    bottom: 53px;
     background: #79F66E;
     color: #000000;
     font-weight: 900;
+    z-index: 9;
 }
 
-.ribbon3:before,
-.ribbon3:after {
+.ribbon__end:before,
+.ribbon__end:after {
     content: "";
     position: absolute;
 }
 
-.ribbon3:before {
+.ribbon__end:before {
     height: 0;
     width: 0;
     top: -9.5px;
@@ -214,7 +215,7 @@
     border-left: 9px solid transparent;
 }
 
-.ribbon3:after {
+.ribbon__end:after {
     height: 0;
     width: 0;
     right: -13.5px;
