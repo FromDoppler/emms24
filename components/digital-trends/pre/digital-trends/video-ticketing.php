@@ -1,6 +1,6 @@
 <section class="emms__centralvideo hidden--vip">
     <div class="emms__centralvideo__head">
-        <h2>¡Obtén tu pase premium antes que se agoten!</h2>
+        <h2>¡Obtén tu Pase Premium antes de que se agoten!</h2>
         <span>Compra tu entrada VIP sólo si…</span>
     </div>
     <div class="emms__container--lg reverse-mb">
@@ -11,7 +11,7 @@
             <li>Sientes que el crecimiento de tu negocio se ha estancado</li>
             <li>Necesitas aumentar tu visibilidad de marca</li>
             <li>Buscas una experiencia inmersiva de Marketing</li>
-            <a href="#entradas" class="emms__cta">HAZTE VIP AHORA</a>
+            <a href="./checkout" class="emms__cta">HAZTE VIP AHORA</a>
         </ul>
         <div class="emms__centralvideo__video lg emms__fade-in">
             <!-- TODO: Replace video -->

@@ -24,17 +24,17 @@
                         <ul>
                             <li>Cuenta gratuita de Doppler durante 6 meses para planes de hasta
                                 5.000 contactos.</li>
-                            <li><a href="http://goemms.com/digital-trends-registrado#agenda"> Workshops prácticos </a></li>
-                            <li>Sesiones de <a href="http://goemms.com/digital-trends-registrado#agenda">Networking</a></li>
-                            <li>Acceso de por vida a los <a href="http://goemms.com/digital-trends-registrado#agenda"> Workshops</a></li>
-                            <li>Certificado de asistencia a <a href="http://goemms.com/digital-trends-registrado#agenda"> Workshops</a></li>
+                            <li> Workshops prácticos </li>
+                            <li>Sesiones de Networking</li>
+                            <li>Acceso de por vida a los  Workshops</li>
+                            <li>Certificado de asistencia a  Workshops</li>
                             <li>Más guías con herramientas
                                 y tips exclusivos</li>
                             <li>Sesiones de preguntas y respuestas
                                 con tus referentes del Marketing</li>
-                            <li>Acceso a todas las <a href="http://goemms.com/digital-trends-registrado#agenda">conferencias</a> con speakers internacionales </li>
+                            <li>Acceso a todas las conferencias con speakers internacionales </li>
                             <li>Volver a ver las conferencias todas las veces que quieras </li>
-                            <li>Ingreso a la <a href="http://goemms.com/sponsors-registrado">Biblioteca de Recursos</a>
+                            <li>Ingreso a la Biblioteca de Recursos
                                 con E-books, plantillas, material
                                 audiovisual y más</li>
                             <li>Participación en sorteos</li>
@@ -59,17 +59,17 @@
                         <ul>
                             <li class="exclude">Cuenta gratuita de Doppler durante 6 meses para planes de hasta
                                 5.000 contactos.</li>
-                            <li class="exclude"><a href="http://goemms.com/digital-trends-registrado#agenda"> Workshops prácticos </a></li>
-                            <li class="exclude">Sesiones de <a href="http://goemms.com/digital-trends-registrado#agenda">Networking</a></li>
-                            <li class="exclude">Acceso de por vida a los <a href="http://goemms.com/digital-trends-registrado#agenda"> Workshops</a></li>
-                            <li class="exclude">Certificado de asistencia a <a href="http://goemms.com/digital-trends-registrado#agenda"> Workshops</a></li>
+                            <li class="exclude"> Workshops prácticos </li>
+                            <li class="exclude">Sesiones de Networking</li>
+                            <li class="exclude">Acceso de por vida a los  Workshops</li>
+                            <li class="exclude">Certificado de asistencia a  Workshops</li>
                             <li class="exclude">Más guías con herramientas
                                 y tips exclusivos</li>
                             <li class="exclude">Sesiones de preguntas y respuestas
                                 con tus referentes del Marketing</li>
-                            <li>Acceso a todas las <a href="http://goemms.com/digital-trends-registrado#agenda">conferencias</a> con speakers internacionales </li>
+                            <li>Acceso a todas las conferencias con speakers internacionales </li>
                             <li>Volver a ver las conferencias todas las veces que quieras </li>
-                            <li>Ingreso a la <a href="http://goemms.com/sponsors-registrado">Biblioteca de Recursos</a>
+                            <li>Ingreso a la Biblioteca de Recursos
                                 con E-books, plantillas, material
                                 audiovisual y más</li>
                             <li>Participación en sorteos</li>
