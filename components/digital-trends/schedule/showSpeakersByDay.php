@@ -9,17 +9,17 @@ function showEventDatetimeByDay($day, $digitalTrendsStates)
             <div class="emms__calendar__date__country">
                 <?php if ($digitalTrendsStates['isPre']) : ?>
                     <p> La transmisión comienza a las</p>
-                    <span><img src="/src/img/flag-argentina.png" alt="Argentina">(ARG) 10:30</span>.
-                    <p>Si no eres de allí o estarás en otro lado,</p> <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240502T1030&p1=51&ah=6" target="_blank">mira el horario de tu país</a>
+                    <span><img src="/src/img/flag-argentina.png" alt="Argentina">(ARG) 11:00</span>.
+                    <p>Si no eres de allí o estarás en otro lado,</p> <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+Digital+Trends+2024+%7C+D%C3%ADa+1&iso=20241126T11&p1=51&ah=4" target="_blank">mira el horario de tu país</a>
                 <?php endif ?>
                 <?php if ($digitalTrendsStates['isLive']) : ?>
                     <p> A partir de las</p>
                     <span><img src="/src/img/flag-argentina.png" alt="Argentina">
-                        (ARG) 10:30</p>
+                        (ARG) 11:00</p>
                     </span>
                     <p>. Si no eres de allí o estarás en otro lado
                     </p>
-                    <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240502T1030&p1=51&ah=6" target="_blank">mira el horario de tu país</a> <?php endif ?>
+                    <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+Digital+Trends+2024+%7C+D%C3%ADa+1&iso=20241126T11&p1=51&ah=4" target="_blank">mira el horario de tu país</a> <?php endif ?>
                 <?php if ($digitalTrendsStates['isTransition']) : ?>
                     <p>El primer día ya ha finalizado ¡pero puedes registrarte y acceder a todas las grabaciones pronto! </p>
                 <?php endif ?>
@@ -31,8 +31,8 @@ function showEventDatetimeByDay($day, $digitalTrendsStates)
         <div class="emms__calendar__date emms__fade-in">
             <div class="emms__calendar__date__country">
                 <p> La transmisión comienza a las</p>
-                <span><img src="/src/img/flag-argentina.png" alt="Argentina">(ARG) 10:30</span>.
-                <p>Si no eres de allí o estarás en otro lado,</p> <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce%3A+d%C3%ADa+2&iso=20240503T1030&p1=51&ah=6" target="_blank">mira el horario de tu país</a>
+                <span><img src="/src/img/flag-argentina.png" alt="Argentina">(ARG) 11:00</span>.
+                <p>Si no eres de allí o estarás en otro lado,</p> <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+Digital+Trends+2024+%7C+D%C3%ADa+2&iso=20241127T11&p1=51&ah=4" target="_blank">mira el horario de tu país</a>
             </div>
         </div>
     <?php
@@ -41,6 +41,8 @@ function showEventDatetimeByDay($day, $digitalTrendsStates)
         <div class="emms__calendar__date emms__fade-in">
             <div class="emms__calendar__date__country">
                 <p class="emms__calendar__date__country--comming-son">Próximamente</p>
+                <!-- <span><img src="/src/img/flag-argentina.png" alt="Argentina">(ARG) 11:00</span>. -->
+                <!-- <p>Si no eres de allí o estarás en otro lado,</p> <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+Digital+Trends+2024+%7C+D%C3%ADa+3&iso=20241128T11&p1=51&ah=4" target="_blank">mira el horario de tu país</a> -->
             </div>
         </div>
 <?php
@@ -168,11 +170,11 @@ function showSpeakersByDay($day, $digitalTrendsStates)
                                     <h3 class="title-conference"><?= $speaker['title'] ?></h3>
                                 <?php elseif ($isSpeakerExposeDebate) : ?>
                                     <h3 class="title-debate"><?= $speaker['title'] ?></h3>
-                                <?php elseif ($speaker['exposes'] === "networking") : ?>
+                                <?php elseif ($speaker['exposes'] === "networking" ) : ?>
                                     <h3 class="title-networking"><?= $speaker['title'] ?></h3>
                                 <?php endif; ?>
                                 <p><?= $speaker['description'] ?></p>
-                                <?php if (($speaker['time']) != '') : ?>
+                                <?php if (($speaker['time']) != '' && ($speaker['exposes'] != "networking")) : ?>
                                     <div class="emms__calendar__list__item__country">
                                         <span><img src="/src/img/flags/arg.png" alt="">(ARG) <?= $speaker['time'] ?></span>
                                         <a href="<?= $speaker['link_time'] ?>" target="_blank">Mira el horario de tu país</a>

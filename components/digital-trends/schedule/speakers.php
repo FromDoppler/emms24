@@ -1,13 +1,32 @@
 <div class="emms__calendar__tabs">
     <div class="emms__calendar__tab__list">
         <?php if ($digitalTrendsStates['isPre']) : ?>
-            <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day1">26 de Noviembre</button>
-            <button class="emms__calendar__tab" role="tab" aria-selected="false" id="day2">27 de Noviembre</button>
-            <button class="emms__calendar__tab" role="tab" aria-selected="false" id="day3">28 de Noviembre</button>
+            <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day1">
+                <span class="dk">26 de Noviembre</span>
+                <span class="mb">26/11</span>
+            </button>
+            <button class="emms__calendar__tab" role="tab" aria-selected="false" id="day2">
+                <span class="dk">27 de Noviembre</span>
+                <span class="mb">27/11</span>
+            </button>
+            <button class="emms__calendar__tab" role="tab" aria-selected="false" id="day3">
+                <span class="dk">28 de Noviembre</span>
+                <span class="mb">28/11</span>
+            </button>
         <?php endif ?>
         <?php if ($digitalTrendsStates['isLive']) : ?>
-            <button class="emms__calendar__tab" role="tab" aria-selected="false" id="day1">26 de Noviembre - finalizado</button>
-            <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day2">27 de Noviembre</button>
+            <button class="emms__calendar__tab" role="tab" aria-selected="false" id="day1">
+                <span class="dk"> 26 de Noviembre - finalizado</span>
+                <span class="mb">26/11 - finalizado</span>
+            </button>
+            <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day2">
+                <span class="dk">27 de Noviembre</span>
+                <span class="mb">27/11</span>
+            </button>
+            <button class="emms__calendar__tab" role="tab" aria-selected="false" id="day3">
+                <span class="dk">28 de Noviembre</span>
+                <span class="mb">28/11</span>
+            </button>
         <?php endif ?>
         <?php if ($digitalTrendsStates['isPost'] || $digitalTrendsStates['isTransition']) : ?>
             <button class="emms__calendar__tab" role="tab" aria-selected="true" id="day1">26 de Noviembre - finalizado</button>
