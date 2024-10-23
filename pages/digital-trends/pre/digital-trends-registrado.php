@@ -47,7 +47,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
         <!-- Academy Banner === show--vip, This class is not used to prevent interfering with flickity -->
         <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/doppler-academy-banner.php'); ?>
         <div class="hidden--vip">
-            <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/companies-list.php') ?>
+            <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/sponsorsList.php') ?>
         </div>
     </main>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/footer.php'); ?>
