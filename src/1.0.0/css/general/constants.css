@@ -69,6 +69,20 @@ p {
 
 /* General CTA */
 
+.emms__purple-anchor {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #BD7AFF;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+.emms__purple-anchor:hover {
+    opacity: 0.5;
+}
+
 .emms__cta {
     font-size: 16px;
     line-height: 20px;
@@ -527,4 +541,3 @@ p {
     color: #FFFFFF;
     margin-left: 10px;
 }
-
