@@ -261,10 +261,22 @@
     bottom: -5px;
     width: calc(100% + 10px);
     height: calc(100% + 10px);
-    background: linear-gradient(220deg, #7D04F6, #DF24C1, #79F66E);
+    background: linear-gradient(90deg, #7D04F6, #DF24C1, #79F66E, #7D04F6);
     border-radius: 22px;
     z-index: -1;
+    background-size: 400% 400%;
+    animation: neon-border 6s linear infinite;
 }
+
+@keyframes neon-border {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
 
 .emms__previous-editions__list .emms__previous-editions__list__item--xl .emms__previous-editions__list__item__image {
     background: #421E5E;

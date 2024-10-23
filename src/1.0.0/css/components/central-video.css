@@ -98,7 +98,7 @@
 }
 
 .emms__centralvideo__list {
-    width: 30%;
+    width: 33%;
 }
 
 .emms__centralvideo__list li {
@@ -192,7 +192,7 @@ ul.emms__centralvideo__list.emms__centralvideo__list--live li::before {
 }
 
 .emms__centralvideo__video.lg {
-    width: 70%;
+    width: 67%;
 }
 
 .emms__centralvideo__video iframe,

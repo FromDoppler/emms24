@@ -34,7 +34,7 @@
 /* Title */
 
 .emms__calendar__title {
-    max-width: 542px;
+    max-width: 883px;
     margin: 0 auto 60px;
     text-align: center;
     animation-delay: .1s;
@@ -162,6 +162,7 @@
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -172,9 +173,11 @@
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
+
     100% {
         transform: scale(1);
     }
