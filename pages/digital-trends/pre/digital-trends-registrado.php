@@ -11,6 +11,12 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/head.php'); ?>
     <script type="module">
         import {
+            hiddenOrShowUserUI
+        } from '/src/<?= VERSION ?>/js/user.js';
+        hiddenOrShowUserUI('digital-trends24');
+    </script>
+    <script type="module">
+        import {
             toggleVipDigitalTrendsElements
         } from '/src/<?= VERSION ?>/js/toggleVipElements.js';
 

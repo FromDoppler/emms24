@@ -8,9 +8,9 @@ function showEventDatetimeByDay($day, $digitalTrendsStates)
         <div class="emms__calendar__date emms__fade-in">
             <div class="emms__calendar__date__country">
                 <?php if ($digitalTrendsStates['isPre']) : ?>
-                    <p>La transmisión en vivo dará inicio</p>
-                    <span><img src="/src/img/flag-argentina.png" alt="Argentina">(ARG) 10:30</span>
-                    <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240502T1030&p1=51&ah=6" target="_blank">Mira el horario de tu país</a>
+                    <p> La transmisión comienza a las</p>
+                    <span><img src="/src/img/flag-argentina.png" alt="Argentina">(ARG) 10:30</span>.
+                    <p>Si no eres de allí o estarás en otro lado,</p> <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240502T1030&p1=51&ah=6" target="_blank">mira el horario de tu país</a>
                 <?php endif ?>
                 <?php if ($digitalTrendsStates['isLive']) : ?>
                     <p> A partir de las</p>
@@ -19,7 +19,7 @@ function showEventDatetimeByDay($day, $digitalTrendsStates)
                     </span>
                     <p>. Si no eres de allí o estarás en otro lado
                     </p>
-                    <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240502T1030&p1=51&ah=6" target="_blank">Mira el horario de tu país</a> <?php endif ?>
+                    <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce+2024+%7C+D%C3%ADa+1&iso=20240502T1030&p1=51&ah=6" target="_blank">mira el horario de tu país</a> <?php endif ?>
                 <?php if ($digitalTrendsStates['isTransition']) : ?>
                     <p>El primer día ya ha finalizado ¡pero puedes registrarte y acceder a todas las grabaciones pronto! </p>
                 <?php endif ?>
@@ -30,9 +30,9 @@ function showEventDatetimeByDay($day, $digitalTrendsStates)
     ?>
         <div class="emms__calendar__date emms__fade-in">
             <div class="emms__calendar__date__country">
-                <p>La transmisión en vivo dará inicio</p>
-                <span><img src="/src/img/flag-argentina.png" alt="Argentina">(ARG) 10:30</span>
-                <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce%3A+d%C3%ADa+2&iso=20240503T1030&p1=51&ah=6" target="_blank">Mira el horario de tu país</a>
+                <p> La transmisión comienza a las</p>
+                <span><img src="/src/img/flag-argentina.png" alt="Argentina">(ARG) 10:30</span>.
+                <p>Si no eres de allí o estarás en otro lado,</p> <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+E-commerce%3A+d%C3%ADa+2&iso=20240503T1030&p1=51&ah=6" target="_blank">mira el horario de tu país</a>
             </div>
         </div>
     <?php
@@ -40,7 +40,7 @@ function showEventDatetimeByDay($day, $digitalTrendsStates)
     ?>
         <div class="emms__calendar__date emms__fade-in">
             <div class="emms__calendar__date__country">
-                <p>Próximamente</p>
+                <p class="emms__calendar__date__country--comming-son">Próximamente</p>
             </div>
         </div>
 <?php
