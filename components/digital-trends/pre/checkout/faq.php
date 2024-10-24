@@ -1,4 +1,4 @@
-<section class="emms__frequentquestions" id="preguntas-frecuentes">
+<section class="emms__frequentquestions frequentquestions--checkout" id="preguntas-frecuentes">
     <div class="emms__background-a"></div>
     <div class="emms__container--md">
         <h2 class="emms__fade-in">Preguntas frecuentes</h2>

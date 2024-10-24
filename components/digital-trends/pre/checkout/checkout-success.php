@@ -6,19 +6,22 @@
     <!-- Form -->
     <div class="emms__checkout__container emms__checkout__card__container--form emms__fade-in">
         <div class="emms__checkout__card">
+            <img src="/src/img/logos/logo-emms--gray.png" alt="Emms Digital Trends 2024">
             <section id="success" class="hidden">
                 <div class="emms__checkout__container emms__checkout__card__container--success emms__fade-in">
                     <div class="emms__checkout__card">
                         <div class="emms__checkout__card__main">
-                            <h2>¡Felicitaciones adquiriste con éxito tus entradas VIP!</h2>
-                            <h3>Accedes a todos estos beneficio del evento:</h3>
+                            <h2>¡Felicitaciones! </h2>
+                            <h2>Ya tienes tu Entrada Vip.</h2>
+                            <p>Mantente pendiente a tu Correo Eléctrónico porque en instantes recibirás un Email de Confirmación por la compra de tu entrada.</p>
+                            <h4>Por ser Asistente Vip al EMMS Digital Trends, accedes a todos estos beneficios:</h4>
                             <ul class="emms__checkout__card__main__list">
-                                <li>Cápsulas</li>
-                                <li>Cursos</li>
-                                <li>Promociones</li>
-                                <li>Infografías</li>
-                                <li>Guías</li>
-                                <li>E-books</li>
+                                <li>Cuenta gratuita de Doppler.</li>
+                                <li>Workshops prácticos.</li>
+                                <li>Sesiones de Networking.</li>
+                                <li>Acceso de por vida a los Workshops.</li>
+                                <li>Certificado de asistencia.</li>
+                                <li>E-Herramientas y tips exclusivos.</li>
                             </ul>
                         </div>
                         <div class="emms__checkout__card__aside">
@@ -55,11 +58,11 @@
                             </table>
                         </div>
                     </div>
-                    <a href="./digital-trends24-registrado.php" class="emms__checkout__back">← Volver al sitio</a>
+                    <a href="./digital-trends-registrado.php" class="emms__checkout__back">← Volver al sitio</a>
                 </div>
             </section>
         </div>
-        <a href="./digital-trends24-registrado.php" class="emms__checkout__back">← Volver al sitio</a>
+        <a href="./digital-trends-registrado.php" class="emms__checkout__back">← Volver al sitio</a>
     </div>
 </div>
 

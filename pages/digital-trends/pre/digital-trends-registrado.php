@@ -51,6 +51,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
         </div>
     </main>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/footer.php'); ?>
+    <script src="src/<?= VERSION ?>/js/newDate.js" type="module"></script>
 
 </body>
 
