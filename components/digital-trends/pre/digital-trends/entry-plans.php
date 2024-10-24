@@ -3,9 +3,8 @@
     <div class="emms__plans  hidden--vip" id="entradas">
         <div class="emms__container--lg">
             <div class="emms__plans__title">
-                <h2>Hazte VIP y lleva tu Tienda al siguiente nivel</h2>
-                <p>Compra tu pase y accede a conferencias, Workshops con certificado, sesiones
-                    de Networking, docenas de recursos exclusivos ¡y mucho más!</p>
+                <h2>Hazte VIP y lleva tu Negocio al siguiente nivel</h2>
+                <p>Compra tu pase y accede a 6 meses gratis en Doppler para planes de hasta 5.000 contactos, Conferencias, Workshops con certificado, sesiones de Networking, ¡y mucho más</p>
             </div>
             <div class="emms__plans__cards">
                 <div class="emms__plans__card emms__plans__card--vip">
@@ -26,8 +25,8 @@
                                 5.000 contactos.</li>
                             <li> Workshops prácticos </li>
                             <li>Sesiones de Networking</li>
-                            <li>Acceso de por vida a los  Workshops</li>
-                            <li>Certificado de asistencia a  Workshops</li>
+                            <li>Acceso de por vida a los Workshops</li>
+                            <li>Certificado de asistencia a Workshops</li>
                             <li>Más guías con herramientas
                                 y tips exclusivos</li>
                             <li>Sesiones de preguntas y respuestas
@@ -61,8 +60,8 @@
                                 5.000 contactos.</li>
                             <li class="exclude"> Workshops prácticos </li>
                             <li class="exclude">Sesiones de Networking</li>
-                            <li class="exclude">Acceso de por vida a los  Workshops</li>
-                            <li class="exclude">Certificado de asistencia a  Workshops</li>
+                            <li class="exclude">Acceso de por vida a los Workshops</li>
+                            <li class="exclude">Certificado de asistencia a Workshops</li>
                             <li class="exclude">Más guías con herramientas
                                 y tips exclusivos</li>
                             <li class="exclude">Sesiones de preguntas y respuestas
