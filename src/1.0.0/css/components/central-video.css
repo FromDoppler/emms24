@@ -200,6 +200,7 @@ ul.emms__centralvideo__list.emms__centralvideo__list--live li::before {
     width: 100%;
     background: #000;
     box-shadow: -20px 15px 0 #310e44;
+    min-height: 477px;
 }
 
 @media screen and (max-width: 768px) {
@@ -207,6 +208,7 @@ ul.emms__centralvideo__list.emms__centralvideo__list--live li::before {
     .emms__centralvideo__video iframe,
     .emms__centralvideo__video video {
         box-shadow: -11px 9px 0 #310e44;
+        min-height: unset;
     }
 }
 

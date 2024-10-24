@@ -14,16 +14,32 @@
             <a href="./checkout" class="emms__cta">HAZTE VIP AHORA</a>
         </ul>
         <div class="emms__centralvideo__video lg emms__fade-in">
-            <!-- TODO: Replace video -->
-            <video id="videoTicketing" src="src/img/EmmsEcommerceNew.mp4" controls></video>
+            <div id="player"></div>
         </div>
     </div>
 </section>
-<script>
-    const playParagraph = document.getElementById('playVideo');
-    const videoTicketing = document.getElementById('videoTicketing');
+<script src="https://www.youtube.com/iframe_api"></script>
 
-    playParagraph.addEventListener('click', () => {
-        videoTicketing.play();
-    });
+<script>
+    let player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '315',
+            width: '560',
+            videoId: '8bLYLbd4U6g',
+            playerVars: {
+                'rel': 0
+            },
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        const playParagraph = document.getElementById('playVideo');
+        playParagraph.addEventListener('click', () => {
+            player.playVideo();
+        });
+    }
 </script>

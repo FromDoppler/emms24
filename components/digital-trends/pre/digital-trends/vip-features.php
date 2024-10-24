@@ -16,7 +16,7 @@
                   </ul>
                   <p class="emms__features__item__text__footer">¡Adquiere tu Entrada VIP e invierte en una experiencia que puede cambiar tu carrera!</p>
                   <p class="emms__features__item__text__price emms__features__item__text__price--live"><em>¡Por solo</em>9,99USD!</p>
-                  <a href="#entradas" class="emms__cta"> COMPRA TU ENTRADA AHORA
+                  <a  href="./checkout" class="emms__cta"> COMPRA TU ENTRADA AHORA
                   </a>
               </div>
           </div>
