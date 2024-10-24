@@ -91,7 +91,7 @@
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         const sessionId = urlParams.get('session_id');
-        const response = await fetch(`http://localhost:4242/session-status?session_id=${sessionId}`);
+        const response = await fetch(`<?= STRIPE_URL_SERVER; ?>/session-status?session_id=${sessionId}`);
         const session = await response.json();
 
         if (session.status == 'complete') {
