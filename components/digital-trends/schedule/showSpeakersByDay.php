@@ -180,9 +180,10 @@ function showSpeakersByDay($day, $digitalTrendsStates)
                                         <a href="<?= $speaker['link_time'] ?>" target="_blank">Mira el horario de tu país</a>
                                     </div>
                                 <?php endif; ?>
-                                <?php if (($speaker['exposes'] === "networking") || ($speaker['exposes'] === "workshop")) : ?>
+                                <!-- <?php if (($speaker['exposes'] === "networking") || ($speaker['exposes'] === "workshop")) : ?>
+                                    FIXME:: Agregar logica de cambio de botones
                                     <a href="<?= $speaker['youtube'] ?>" class="emms__cta  show--vip">ACCEDE AHORA</a>
-                                <?php endif; ?>
+                                <?php endif; ?> -->
                             </div>
 
                             <?php if ($speaker['exposes'] === "conference" || $speaker['exposes'] === "successStory") : ?>

@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Se carga Moment.js junto con MomentTimezone y luego se ejecuta el codigo que lo usa
         await loadMomentAndTimezoneScripts();
 
-        const eventDateTime = { eventYear: '2024', eventMonth: '05', eventDay: '03'};
+        const eventDateTime = { eventYear: '2024', eventMonth: '11', eventDay: '26'};
         const moment = window.moment;
 
         const getLocalDate = (newEventHour, newEventMinutes, eventDateTime, zonaHorariaUsuario = Intl.DateTimeFormat().resolvedOptions().timeZone) => {
