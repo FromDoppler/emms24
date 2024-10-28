@@ -13,13 +13,15 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
         import {
             hiddenOrShowUserUI
         } from '/src/<?= VERSION ?>/js/user.js';
-        hiddenOrShowUserUI('digital-trends24');
+        import {
+            eventsType
+        } from '/src/<?= VERSION ?>/js/enums/eventsType.enum.js';
+        hiddenOrShowUserUI(eventsType.ECOMMERCE);
     </script>
     <script type="module">
         import {
             toggleVipDigitalTrendsElements
         } from '/src/<?= VERSION ?>/js/toggleVipElements.js';
-        console.log('load')
         toggleVipDigitalTrendsElements();
     </script>
 </head>
