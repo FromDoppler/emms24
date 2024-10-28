@@ -68,45 +68,47 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
             </div>
         </section>
 
-
         <!-- Sponsors List -->
-        <section class="emms__sponsors__list">
-            <div class="emms__container--lg">
-                <div class="emms__sponsors__list__title">
-                    <h2 class="emms__fade-in">Continúa capacitándote e inspirándote con estos recursos</h2>
+        <?php
+        $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+        $sponsors = $db->getSponsorsCards('SPONSOR');
+        if (!empty($sponsors)) {
+        ?>
+            <section class="emms__sponsors__list">
+                <div class="emms__container--lg">
+                    <div class="emms__sponsors__list__title">
+                        <h2 class="emms__fade-in">Continúa capacitándote e inspirándote con estos recursos</h2>
+                    </div>
+                    <ul class="emms__sponsors__list__content emms__fade-in">
+                        <?php
+                        $index = 0;
+                        $texts = array(0 => "RECURSO EXCLUSIVO", 1 => "¡NO TE LO PIERDAS!", 2 => "SOLO PARA TI", 3 => "¡HAZ CLIC AHORA!");
+                        foreach ($sponsors as $sponsor) :
+                        ?>
+                            <li class="emms__sponsors__list__item">
+                                <div class="emms__sponsors__list__item__ribon">
+                                    <img src="/src/img/emoji-book.svg" alt="Book emoji">
+                                    <?= $texts[$index] ?>
+                                </div>
+
+                                <h3><?= $sponsor['title'] ?></h3>
+                                <p><?= $sponsor['description_card'] ?></p>
+                                <?php if ($sponsor['slug'] === '') : ?>
+                                    <a class="inactive">Accede →</a>
+                                <?php else : ?>
+                                    <a data-target="modalRegister" data-toggle="emms__register-modal" slug=<?= $sponsor['slug'] ?>>Accede ahora</a>
+                                <?php endif ?>
+                                <div class="emms__sponsors__list__item__logo">
+                                    <img src="./adm24/server/modules/sponsors/uploads/<?= $sponsor['logo_company'] ?>" alt="<?= $sponsor['alt_logo_company'] ?>">
+                                </div>
+                            </li>
+                        <?php
+                            $index++;
+                        endforeach; ?>
+                    </ul>
                 </div>
-                <ul class="emms__sponsors__list__content emms__fade-in">
-                    <?php
-                    $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-                    $sponsors = $db->getSponsorsCards('SPONSOR');
-                    $index = 0;
-                    $texts = array(0 => "RECURSO EXCLUSIVO", 1 => "¡NO TE LO PIERDAS!", 2 => "SOLO PARA TI", 3 => "¡HAZ CLIC AHORA!");
-                    foreach ($sponsors as $sponsor) :
-                    ?>
-                        <li class="emms__sponsors__list__item">
-                            <div class="emms__sponsors__list__item__ribon">
-                                <img src="/src/img/emoji-book.svg" alt="Book emoji">
-                                <?= $texts[$index] ?>
-                            </div>
-
-                            <h3><?= $sponsor['title'] ?></h3>
-                            <p><?= $sponsor['description_card'] ?></p>
-                            <?php if ($sponsor['slug'] === '') : ?>
-                                <a class="inactive">Accede →</a>
-                            <?php else : ?>
-                                <a data-target="modalRegister" data-toggle="emms__register-modal" slug=<?= $sponsor['slug'] ?>>Accede ahora</a>
-                            <?php endif ?>
-                            <div class="emms__sponsors__list__item__logo">
-                                <img src="./adm24/server/modules/sponsors/uploads/<?= $sponsor['logo_company'] ?>" alt="<?= $sponsor['alt_logo_company'] ?>">
-                            </div>
-                        </li>
-                    <?php
-                        $index++;
-                    endforeach; ?>
-                </ul>
-            </div>
-        </section>
-
+            </section>
+        <?php } ?>
         <!-- Section conferences -->
         <section class="emms__conferences no-registered">
             <div class="emms__conferences__container">
@@ -197,8 +199,8 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
                     <ul class="emms__form__field-group">
                         <li class="emms__form__field-item">
                             <div class="holder">
-                            <label class="required-label" for="email">Email Empresarial *</label>
-                            <input type="email" name="email" id="email" placeholder="&iexcl;No olvides usar @!" class="email required" autocomplete="off">
+                                <label class="required-label" for="email">Email Empresarial *</label>
+                                <input type="email" name="email" id="email" placeholder="&iexcl;No olvides usar @!" class="email required" autocomplete="off">
                             </div>
                         </li>
                         <li class="emms__form__field-item">
@@ -251,8 +253,8 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
                     <ul class="emms__form__field-group">
                         <li class="emms__form__field-item">
                             <div class="holder">
-                            <label class="required-label" for="email">Email Empresarial*</label>
-                            <input type="email" name="email" id="email" placeholder="&iexcl;No olvides usar @!" class="email required" autocomplete="off">
+                                <label class="required-label" for="email">Email Empresarial*</label>
+                                <input type="email" name="email" id="email" placeholder="&iexcl;No olvides usar @!" class="email required" autocomplete="off">
                             </div>
                         </li>
                     </ul>
