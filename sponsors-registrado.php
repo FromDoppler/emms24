@@ -136,45 +136,6 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
                             </a>
                         </div>
                         <div class="emms__conferences__cards emms__fade-in">
-                            <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://youtu.be/eZrLovcsAtY" target="_blank">
-                                <img src="/src/img/conferences24/portada-capsula-creizer-min.png" alt="Conferencias exclusivas">
-                                <div class="emms__conferences__cards__info">
-                                    <h4 class="shortTitle">¿Cómo financiar tu Ecommerce para aumentar tus ventas?</h4>
-                                    <span>Ver ahora →</span>
-                                    <div class="emms__conferences__cards__info__image-container">
-                                        <img src="/src/img/conferences24/logos/creizer-logo.png" alt="Creizer Logo">
-                                    </div>
-                                    &nbsp;
-
-                                </div>
-                            </a>
-                        </div>
-                        <div class="emms__conferences__cards emms__fade-in">
-                            <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://youtu.be/5c8H_Ixqxrc" target="_blank">
-                                <img src="/src/img/conferences24/portada-capsula-gobots-min.png" alt="Conferencias exclusivas">
-                                <div class="emms__conferences__cards__info">
-                                    <h4>Buenas prácticas de comunicación para vender online</h4>
-                                    <span>Ver ahora →</span>
-                                    <div class="emms__conferences__cards__info__image-container">
-                                        <img src="/src/img/conferences24/logos/gobots-card.png" alt="Gobots Logo">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="emms__conferences__cards emms__fade-in">
-                            <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://youtu.be/5WxC8cOJbm4" target="_blank">
-                                <img src="/src/img/conferences24/portada-capsula-facturante-min.png" alt="Conferencias exclusivas">
-                                <div class="emms__conferences__cards__info">
-                                    <h4>Omnicanalidad: ¿Qué es y cómo la facturación electronica ayuda a lograrla? </h4>
-                                    <span>Ver ahora →</span>
-                                    <div class="emms__conferences__cards__info__image-container">
-                                        <img src="/src/img/conferences24/logos/facturante-logo.png" alt="Facturante Logo">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="emms__conferences__cards emms__fade-in">
                             <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://www.youtube.com/watch?v=xk5qoFXkqLM" target="_blank">
                                 <img src="/src/img/conferences24/portada-capsula-vivimarketing-min.png" alt="Conferencias exclusivas">
                                 <div class="emms__conferences__cards__info">
