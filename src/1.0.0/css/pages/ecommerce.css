@@ -10,7 +10,7 @@
 /* FIXME: Change this class with custom digital trends css  */
 .emms__ecommerce .emms__hero-registration.digital--trends {
     background: #000 url("../../../img/emms-dt-background.png") no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position-y: bottom;
     background-position-x: center;
 }
