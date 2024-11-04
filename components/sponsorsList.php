@@ -10,9 +10,7 @@
                  <h3>SPONSORS</h3>
                  <ul class="emms__companies__list emms__companies__list--lg  emms__fade-in">
                      <?php
-                        $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
                         $sponsors = $db->getSponsorsByType('SPONSOR');
-                        $db->close();
                         foreach ($sponsors as $sponsor) : ?>
                          <li class="emms__companies__list__item">
                              <?php if ($sponsor['link_site']) : ?>
@@ -30,9 +28,7 @@
                  <h3>MEDIA PARTNERS EXCLUSIVE</h3>
                  <ul class="emms__companies__list emms__companies__list  emms__fade-in">
                      <?php
-                        $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
                         $sponsors = $db->getSponsorsByType('PREMIUM');
-                        $db->close();
                         foreach ($sponsors as $sponsor) : ?>
                          <li class="emms__companies__list__item">
                              <?php if ($sponsor['link_site']) : ?>
@@ -55,4 +51,6 @@
              </div>
          </section>
          <script src="/src/<?= VERSION ?>/js/sponsors.js"></script>
-     <?php } ?>
+     <?php }
+     $db->close();
+     ?>

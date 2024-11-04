@@ -44,7 +44,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
             <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/event-numbers.php') ?>
         </div>
         <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/central-video.php') ?>
-        <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/companies-list.php') ?>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/sponsorsList.php') ?>
     </main>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/footer.php'); ?>
 </body>
