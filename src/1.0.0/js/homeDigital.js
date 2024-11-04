@@ -5,6 +5,7 @@ import {
     getUrlWithParams,
     submitFormFetch,
     submitWithoutForm,
+    validateForm,
 } from './common/index.js';
 import { alreadyAccountListener, swichFormListener } from './common/switchForm.js';
 import { eventsType } from './enums/eventsType.enum.js';
@@ -15,28 +16,31 @@ const digitalTrendsBtns = document.querySelectorAll('.digitalTrendsBtn');
 const submitForm = async (e) => {
 
     e.preventDefault();
+    const isValidForm = validateForm(digitalForm);
+    if (isValidForm) {
+        await submitFormFetch(digitalForm, eventsType.DIGITALTRENDS).then(({ fetchResp: resp }) => {
+            if (!resp.ok) throw new Error('Server error on digital fetch', resp?.status);
 
-    await submitFormFetch(digitalForm, eventsType.DIGITALTRENDS).then(({ fetchResp: resp }) => {
-        if (!resp.ok) throw new Error('Server error on digital fetch', resp?.status);
+            window.location.href = getUrlWithParams('/digital-trends-registrado');
+            if (window.location.pathname === '/sponsors') {
+                window.location.href = getUrlWithParams('/sponsors-registrado');
+            }
+        })
+            .catch((error) => {
+                customError('Digital post error', error);
+            });
 
-        window.location.href = getUrlWithParams('/digital-trends-registrado');
-        if (window.location.pathname === '/sponsors') {
-            window.location.href = getUrlWithParams('/sponsors-registrado');
-        }
-    })
-        .catch((error) => {
-            customError('Digital post error', error);
-        });
-
-
+    }
 }
 
 const submitDtWithoutForm = (digitalWithoutForm) => {
     digitalWithoutForm.classList.add('button--loading');
-    submitWithoutForm(eventsType.DIGITALTRENDS).then(() => {
-        window.location.href = getUrlWithParams('/digital-trends-registrado');
+    const isValidForm = validateForm(digitalForm);
+    if (isValidForm) {
+        submitWithoutForm(eventsType.DIGITALTRENDS).then(() => {
+            window.location.href = getUrlWithParams('/digital-trends-registrado');
+        });
     }
-    )
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -83,7 +87,6 @@ const activeFormListeners = () => {
             })
         }
         alreadyAccountListener();
-
     });
 
 }
