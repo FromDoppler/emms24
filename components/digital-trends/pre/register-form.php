@@ -100,3 +100,4 @@
 <script src="/src/<?= VERSION ?>/js/homeDigital.js" type="module"></script>
 <script src="/src/<?= VERSION ?>/js/vendors/intlTelInput.min.js"></script>
 <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/intellInput.php'); ?>
+<script src="/src/<?= VERSION ?>/js/autoCompleteUserForm.js" type="module"></script>
