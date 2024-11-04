@@ -1,8 +1,7 @@
      <!-- Companies list -->
      <?php
         $db = new DB(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-        $sponsors = $db->getSponsorsCards('SPONSOR');
-        if (!empty($sponsors)) {
+        if ($db->hasActiveSponsor()) {
         ?>
          <section class="emms__companies emms__companies--categories" id="aliados">
              <div class="emms__container--lg">
@@ -51,6 +50,59 @@
              </div>
          </section>
          <script src="/src/<?= VERSION ?>/js/sponsors.js"></script>
+         <script>
+             'use strict';
+
+             document.addEventListener('DOMContentLoaded', () => {
+                 const endPoint = '/services/getMediaPartners.php';
+
+                 // Función para obtener los media partners desde el servidor
+                 const getMediaPartners = async (partnerType) => {
+                     const response = await fetch(endPoint, {
+                         method: "POST",
+                         headers: {
+                             "Content-Type": "application/json"
+                         },
+                         body: JSON.stringify({
+                             type: partnerType
+                         })
+                     });
+                     return response.json();
+                 };
+
+                 // Función para renderizar los media partners divididos en grupos
+                 const printMediaPartners = (mediaPartners, container) => {
+                     const groupLength = Math.ceil(mediaPartners.length / (mediaPartners.length % 2 === 0 ? 6 : 5));
+                     let groups = [],
+                         currentGroup = [];
+
+                     mediaPartners.forEach((partner, index) => {
+                         currentGroup.push(partner);
+                         if (currentGroup.length === groupLength || index === mediaPartners.length - 1) {
+                             groups.push(currentGroup);
+                             currentGroup = [];
+                         }
+                     });
+
+                     groups.forEach((group, index) => {
+                         setTimeout(() => {
+                             group.forEach(partner => {
+                                 const li = document.createElement('li');
+                                 li.classList.add('emms__fade-in-animation', 'emms__companies__list__item');
+                                 li.innerHTML = `<img src="./adm24/server/modules/sponsors/uploads/${partner.logo_company}" alt="${partner.alt_logo_company}">`;
+                                 container.appendChild(li);
+                             });
+                         }, 800 * index);
+                     });
+                 };
+
+                 // Inicializar y renderizar media partners
+                 const partnersContainer = document.getElementById('mediaPartenersStarters');
+                 if (partnersContainer) {
+                     getMediaPartners('starters').then(data => printMediaPartners(data, partnersContainer));
+                 }
+             });
+         </script>
      <?php }
-     $db->close();
-     ?>
+        $db->close();
+        ?>
