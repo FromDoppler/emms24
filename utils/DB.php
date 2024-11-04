@@ -296,6 +296,13 @@ class DB
     }
 
     /********DATA ABMS*************/
+    public function hasActiveSponsor()
+    {
+        $sql = $this->query("SELECT COUNT(*) as count FROM sponsors WHERE status = '1'");
+        $result = $sql->fetchAll();
+        return $result[0]['count'] > 0;
+    }
+
 
     public function getSponsorsByType($type)
     {
