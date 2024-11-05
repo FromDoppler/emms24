@@ -26,7 +26,7 @@
         player = new YT.Player('player', {
             height: '315',
             width: '560',
-            videoId: '8bLYLbd4U6g',
+            videoId: 'm25Kkj9M9v8',
             playerVars: {
                 'rel': 0
             },
