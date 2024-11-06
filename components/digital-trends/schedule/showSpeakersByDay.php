@@ -40,9 +40,9 @@ function showEventDatetimeByDay($day, $digitalTrendsStates)
     ?>
         <div class="emms__calendar__date emms__fade-in">
             <div class="emms__calendar__date__country">
-                <p class="emms__calendar__date__country--comming-son">Próximamente</p>
-                <!-- <span><img src="/src/img/flag-argentina.png" alt="Argentina">(ARG) 11:00</span>. -->
-                <!-- <p>Si no eres de allí o estarás en otro lado,</p> <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+Digital+Trends+2024+%7C+D%C3%ADa+3&iso=20241128T11&p1=51&ah=4" target="_blank">mira el horario de tu país</a> -->
+            <p> La transmisión comienza a las</p>
+                <span><img src="/src/img/flag-argentina.png" alt="Argentina">(ARG) 11:00</span>.
+                <p>Si no eres de allí o estarás en otro lado,</p> <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+Digital+Trends+2024+%7C+D%C3%ADa+2&iso=20241127T11&p1=51&ah=4" target="_blank">mira el horario de tu país</a>
             </div>
         </div>
 <?php
