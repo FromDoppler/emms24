@@ -124,9 +124,18 @@
 }
 
 .emms__plans__card__head__price h4 {
-    font-size: 30px;
+    font-size: 47px;
     line-height: 1;
     font-weight: 700;
+    color: #333333;
+}
+
+.emms__plans__card__head__price h4 small {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 47px;
+    color: #333333;
 }
 
 .emms__plans__card__head__price h4 span {
