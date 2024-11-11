@@ -25,38 +25,53 @@
     })();
 
     async function initialize() {
-        const getCustomerEmail = () => {
-            if (localStorage.getItem('dplrid')) {
-                const encodedEmailHex = localStorage.getItem('dplrid');
-                const decodedEmail = hexToString(encodedEmailHex);
-                return decodedEmail;
-            } else {
-                return null;
+        try {
+            const getCustomerEmail = () => {
+                if (localStorage.getItem('dplrid')) {
+                    const encodedEmailHex = localStorage.getItem('dplrid');
+                    const decodedEmail = hexToString(encodedEmailHex);
+                    return decodedEmail;
+                } else {
+                    return null;
+                }
+            };
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const promotionCode = urlParams.get('promotionCode');
+
+            const customerEmail = getCustomerEmail();
+
+            const response = await fetch(`<?= STRIPE_URL_SERVER; ?>/create-checkout-session`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    customerEmail: customerEmail,
+                    ...(promotionCode && {
+                        promotionCode
+                    })
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error(`Error en la respuesta del servidor: ${response.statusText}`);
             }
-        };
 
-        const customerEmail = getCustomerEmail();
-        const response = await fetch(`<?= STRIPE_URL_SERVER; ?>/create-checkout-session`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                customerEmail: customerEmail
-            })
-        });
+            const {
+                clientSecret
+            } = await response.json();
 
-        const {
-            clientSecret
-        } = await response.json();
-
-        const checkout = await stripe.initEmbeddedCheckout({
-            clientSecret,
-        });
-
-        // Mount Checkout
-        checkout.mount('#checkout');
+            const checkout = await stripe.initEmbeddedCheckout({
+                clientSecret,
+            });
+            checkout.mount('#checkout');
+        } catch (error) {
+            console.error("Error al inicializar el checkout:", error);
+            window.location.href = '/';
+        }
     }
+
 
     // Función para convertir hexadecimal a string ASCII
     function hexToString(hex) {
