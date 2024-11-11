@@ -15,7 +15,7 @@
                       <li><strong>Espacio para preguntas</strong> y feedback directo de tus proyectos.</li>
                   </ul>
                   <p class="emms__features__item__text__price emms__features__item__text__price--live">
-                      <em>¡POR SOLO</em><small>USD</small> 9<small>.99!</small>
+                      <em>¡POR SOLO</em><small>USD</small>9<small>.99!</small>
                   </p>
                   <a href="./checkout" class="emms__cta"> COMPRA TU ENTRADA AHORA
                   </a>
