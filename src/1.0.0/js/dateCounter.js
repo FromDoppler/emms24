@@ -1,6 +1,6 @@
 // Date Counter
 
-const utcDate = '2024-11-24T15:00:00.000Z';
+const utcDate = '2024-11-24T14:00:00.000Z';
 const targetDate = new Date(utcDate).getTime();
 
 const containers = {
