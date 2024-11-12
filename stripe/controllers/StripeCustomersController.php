@@ -72,7 +72,7 @@ class StripeCustomersController
         $user['final_price'] = $UserData['final_price'];
         $user['payment_status'] = $UserData['payment_status'];
         sendEmail($user, $user['subject']);
-
+        $user['stripe'] = $UserData;
         // Guardar la suscripcion en SpreadSheet de usuarios VIP
         saveSubscriptionSpreadSheet(ID_SPREADSHEET_DT_VIP, $user);
 

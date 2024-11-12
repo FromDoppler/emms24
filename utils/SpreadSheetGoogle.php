@@ -26,8 +26,37 @@ class SpreadSheetGoogle
                 $user['ecommerce'] . " ",
                 $user['digital_trends'] . " ",
                 $user['phone'] . " ",
+
             )
         );
+
+        $stripeValues = self::getStripeValues($user);
+        if ($stripeValues) {
+            $values[0] = array_merge($values[0], $stripeValues);
+        }
         write_to_sheet($idSpreadSheet, self::RANGE, $values, $db);
+    }
+    private static function getStripeValues($user)
+    {
+        if (!isset($user['stripe']) || !is_array($user['stripe'])) {
+            return null;
+        }
+
+        return array(
+            $user['stripe']['price'] . " ",
+            $user['stripe']['discount'] . " ",
+            $user['stripe']['final_price'] . " ",
+            $user['stripe']['customer_name'] . " ",
+            $user['stripe']['customer_email'] . " ",
+            $user['stripe']['customer_country'] . " ",
+            $user['stripe']['tax_id'] . " ",
+            $user['stripe']['payment_status'] . " ",
+            $user['stripe']['coupon_id'] . " ",
+            $user['stripe']['coupon_name'] . " ",
+            $user['stripe']['event_name'] . " ",
+            $user['stripe']['event_phase']  . " ",
+            $user['stripe']['ticket_name']  . " ",
+            $user['stripe']['ticket_price_id']  . " ",
+        );
     }
 }
