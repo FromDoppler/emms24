@@ -1,46 +1,37 @@
 // Date Counter
 
-const utcDate = '2024-05-02T15:00:00.000Z';
+const utcDate = '2024-11-24T15:00:00.000Z';
 const targetDate = new Date(utcDate).getTime();
 
-let days, hours, minutes, seconds;
+const containers = {
+    d: document.querySelector(".d"),
+    h: document.querySelector(".h"),
+    m: document.querySelector(".m"),
+    s: document.querySelector(".s")
+};
 
-const daysContainers = document.querySelectorAll(".d");
-const hoursContainers = document.querySelectorAll(".h");
-const minutesContainers = document.querySelectorAll(".m");
-const secondsContainers = document.querySelectorAll(".s");
+const updateCounter = () =>  {
+    const now = new Date().getTime();
+    const timeLeft = Math.max((targetDate - now) / 1000, 0);
+    const days = Math.floor(timeLeft / 86400);
+    const hours = Math.floor((timeLeft % 86400) / 3600);
+    const minutes = Math.floor((timeLeft % 3600) / 60);
+    const seconds = Math.floor(timeLeft % 60);
 
-if (daysContainers != null) {
-    function update() {
-        const currentDate = new Date().getTime();
-        let secondsLeft = (targetDate - currentDate) / 1000;
-
-        days = parseInt(secondsLeft / 86400);
-        secondsLeft = secondsLeft % 86400;
-
-        hours = parseInt(secondsLeft / 3600);
-        secondsLeft = secondsLeft % 3600;
-
-        minutes = parseInt(secondsLeft / 60);
-        seconds = parseInt(secondsLeft % 60);
-
-        printTimeInContainers(daysContainers, days);
-        printTimeInContainers(hoursContainers, hours);
-        printTimeInContainers(minutesContainers, minutes);
-        printTimeInContainers(secondsContainers, seconds);
-
-    }
-    update();
+    displayTime('d', days);
+    displayTime('h', hours);
+    displayTime('m', minutes);
+    displayTime('s', seconds);
 }
 
-setInterval(update, 1000);
 
-function pad(num, size) {
-    var s = num + "";
-    while (s.length < size) s = "0" + s;
-    return s;
+const displayTime = (unit, time) =>  {
+    const [digit1, digit2] = String(time).padStart(2, '0').split('');
+    containers[unit].querySelector('.digit-1').textContent = digit1;
+    containers[unit].querySelector('.digit-2').textContent = digit2;
 }
 
-function printTimeInContainers(containers, time) {
-    containers.forEach(container => { container.innerHTML = pad(time, 2) });
+if (Object.values(containers).every(el => el)) {
+    updateCounter();
+    setInterval(updateCounter, 1000);
 }
