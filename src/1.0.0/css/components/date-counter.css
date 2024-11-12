@@ -1,11 +1,28 @@
-.emms__counter h5{
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff;
-    margin: 0 0 12px 0;
+.emms-counter {
+    background-color: #6B44BB;
+    padding: 15px 0px 25px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.emms__counter li{
+.emms-counter__title {
+    color: #fff;
+    margin: 0px 12px 0px 0px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.emms-counter__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.emms-counter__item {
     display: inline-block;
     vertical-align: middle;
     position: relative;
@@ -13,11 +30,11 @@
     margin-right: 30px;
 }
 
-.emms__counter li:last-child{
-    margin: 0;
+.emms-counter__item:last-child {
+    margin-right: 0;
 }
 
-.emms__counter li::after{
+.emms-counter__item::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -29,31 +46,28 @@
     background-size: contain;
 }
 
-.emms__counter li:last-child::after{
+.emms-counter__item:last-child::after {
     display: none;
 }
 
-.emms__counter li div{
-    width: 58px;
-    height: 60px;
-    background: #ffffff;
-    border-radius: 5px;
-    overflow: hidden;
-}
 
-.emms__counter li div span{
-    font-size: 30px;
+.emms-counter__digit {
+    display: inline-block;
+    font-size: 20px;
     font-weight: 700;
     color: #6b44bb;
     text-align: center;
-    display: block;
-    line-height: 60px;
-    z-index: 1;
+    width: 28px;
+    height: 28px;
+    background: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    line-height: 32px;
     position: relative;
 }
 
-.emms__counter li .emms__counter__number--data{
-    font-size: 16px;
+.emms-counter__label {
+    font-size: 10px;
     font-weight: 700;
     text-transform: uppercase;
     position: absolute;
@@ -62,42 +76,29 @@
     transform: translateX(-50%);
 }
 
-
 /* ---------------------------------------------- Responsive ---------------------------------------------- */
 
+@media (max-width: 620px) {
 
-@media(max-width:620px){
-
-    .emms__counter h5 {
-        font-size: 14px;
+    .emms-counter {
+        flex-direction: column;
     }
 
-    .emms__counter li div {
-        width: 48px;
-        height: 50px;
-    }
-
-    .emms__counter li div span{
-        font-size: 20px;
-        line-height: 50px;
-    }
-
-    .emms__counter li:nth-child(1){
+    .emms-counter__title {
+        font-size: 12px;
+        margin-bottom: 12px;
         display: block;
-        text-align: center;
-        margin: 0 0 18px 0;
     }
 
-    .emms__counter li{
-        margin-right: 5px;
+    .emms-counter__list {
+        display: block;
     }
 
-    .emms__counter li::after{
-        display: none;
-    }
-
-    .emms__counter li .emms__counter__number--data{
-        font-size: 10px;
+    .emms-counter__digit {
+        line-height: 22px;
+        width: 20px;
+        height: 20px;
+        font-size: 14px;
     }
 
 }
