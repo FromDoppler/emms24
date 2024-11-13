@@ -4,6 +4,7 @@ $companyImage = true;
 
 switch ($type) {
     case 'conference':
+    case 'interview':
         $footerClass = 'emms__calendar__list__item__card__business';
         break;
     case 'debate':

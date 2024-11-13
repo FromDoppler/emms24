@@ -4,6 +4,7 @@ $labelClasses = [
     'workshop' => 'emms__calendar__list__item__card__label--vip',
     'networking' => 'emms__calendar__list__item__card__label--vip',
     'debate' => 'emms__calendar__list__item__card__label--free',
+    'interview' => 'emms__calendar__list__item__card__label--free',
 ];
 
 $labelClass = $labelClasses[$type] ?? '';
@@ -13,6 +14,7 @@ $labelText = match ($type) {
     'workshop' => 'Workshop - exclusivo VIP',
     'networking' => 'Networking - exclusivo VIP',
     'debate' => 'Mesa de debate',
+    'interview' => 'Entrevista',
     default => '',
 };
 ?>
