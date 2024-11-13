@@ -70,18 +70,16 @@ function showSpeakersByDay($day, $digitalTrendsStates)
             ?>
                 <?php if (($isSpeakerExposesType) && $isSpeakerDT) : ?>
                     <li class="emms__calendar__list__item">
-                        <!--START CARD -->
-                        <?
-                        $type = $speaker['exposes'] ?? 'default';
-                        include($_SERVER['DOCUMENT_ROOT'] . '/components/SpeakerCard.php');
-                        ?>
-                        <!--END CARD -->
+                            <?php
+                              $type = $speaker['exposes'] ?? 'default';
+                              include($_SERVER['DOCUMENT_ROOT'] . '/components/SpeakerCard.php');
+                            ?>
                     </li>
                 <?php endif; ?>
             <?php endforeach; ?>
         </ul>
         <?php
-         include('mobile-carousel.php')
+        include('mobile-carousel.php')
         ?>
     </div>
 <?php

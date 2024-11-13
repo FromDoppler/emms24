@@ -1,9 +1,8 @@
 <div class="emms__calendar__list__item__card">
     <?php
-    include 'SpeakerCardComponent/Label.php';
-    include 'SpeakerCardComponent/SpeakerInfo.php';
-    include 'SpeakerCardComponent/Description.php';
-    include 'SpeakerCardComponent/CompanyLogo.php';
-    include 'SpeakerCardComponent/CompanyFooter.php';
+    include 'components/SpeakerCardComponent/Label.php';
+    include 'components/SpeakerCardComponent/SpeakerInfo.php';
+    include 'components/SpeakerCardComponent/Description.php';
+    include 'components/SpeakerCardComponent/CompanyFooter.php';
     ?>
 </div>
