@@ -5,9 +5,22 @@
         <div class="emms__calendar__list__item__card__bio emms__calendar__list__item__card__bio--hide bio-speaker">
 
             <?php
-            $labelClass = $type === 'conference' ? 'emms__calendar__list__item__card__label--free' : 'emms__calendar__list__item__card__label--vip';
-            $labelText = $type === 'conference' ? 'Conferencia' : 'Workshop - exclusivo VIP';
-            $bioContentClass = $type === 'conference' ? 'emms__calendar__list__item__card__bio__content--free' : 'emms__calendar__list__item__card__bio__content--vip';
+            switch ($type) {
+                case 'conference':
+                    $labelText = 'Conferencia';
+                    break;
+                case 'workshop':
+                    $labelText = 'Workshop - exclusivo VIP';
+                    break;
+                case 'interview':
+                    $labelText = 'Entrevista';
+                    break;
+                default:
+                    $labelText = 'Conferencia';
+                    break;
+            }
+            $labelClass = $type === 'conference'  || 'interview'  ? 'emms__calendar__list__item__card__label--free' : 'emms__calendar__list__item__card__label--vip';
+            $bioContentClass = $type === 'conference' || 'interview' ? 'emms__calendar__list__item__card__bio__content--free' : 'emms__calendar__list__item__card__bio__content--vip';
             ?>
 
             <!-- Etiqueta de tipo de evento -->

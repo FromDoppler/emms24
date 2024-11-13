@@ -492,6 +492,12 @@
     background-size: contain;
 }
 
+.emms__calendar__list__item__card__description h3.title-interview::before {
+    background: url("../../../img/icons/icon-phone.svg") no-repeat;
+    background-size: contain;
+}
+
+
 .emms__calendar__list__item__card__description h3.title-workshop::before {
     background: url("../../../img/icons/icon-pencil.svg") no-repeat;
     background-size: contain;

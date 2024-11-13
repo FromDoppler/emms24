@@ -66,14 +66,15 @@ function showSpeakersByDay($day, $digitalTrendsStates)
             foreach ($speakers as $speaker) :
                 $isSpeakerDT = $speaker['event'] === "digital-trends";
                 $isSpeakerExposeDebate = $speaker['exposes'] === "debate";
-                $isSpeakerExposesType = ($speaker['exposes'] === "conference") || ($speaker['exposes'] === "workshop") || ($speaker['exposes'] === "networking") || ($speaker['exposes'] === "successStory") || ($isSpeakerExposeDebate);
+                $allowedExposesTypes = ["conference", "workshop", "networking", "successStory", "interview"];
+                $isSpeakerExposesType = in_array($speaker['exposes'], $allowedExposesTypes) || $isSpeakerExposeDebate;
             ?>
                 <?php if (($isSpeakerExposesType) && $isSpeakerDT) : ?>
                     <li class="emms__calendar__list__item">
-                            <?php
-                              $type = $speaker['exposes'] ?? 'default';
-                              include($_SERVER['DOCUMENT_ROOT'] . '/components/SpeakerCard.php');
-                            ?>
+                        <?php
+                        $type = $speaker['exposes'] ?? 'default';
+                        include($_SERVER['DOCUMENT_ROOT'] . '/components/SpeakerCard.php');
+                        ?>
                     </li>
                 <?php endif; ?>
             <?php endforeach; ?>
