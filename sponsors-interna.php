@@ -38,6 +38,32 @@ if (isset($_GET['slug'])) {
             </div>
         </div>
     </header>
+    <header class="emms__header">
+        <div class="emms__container--lg emms__fade-in">
+            <div class="emms__header__logo emms__header__logo--digital-trends">
+                <a href="/registrado"><img src="/src/img/logos/logo-emms.png" alt="Emms Digital Trends 2024"></a>
+            </div>
+            <div class="emms__header__logo">
+                <a href="<?= $sponsor['link_site'] ?>"><img src="./adm24/server/modules/sponsors/uploads/<?= $sponsor['image_landing'] ?>" alt="<?= $sponsor['alt_image_landing'] ?>"></a>
+            </div>
+            <a class="emms__header__nav--mb" id="btn-burger"></a>
+            <nav class="emms__header__nav emms__header__nav--hidden" id="nav-mb">
+                <ul class="emms__header__nav__menu" id="navMenu">
+                    <li><a href="/registrado">home</a></li>
+                    <li><a href="/digital-trends-registrado">digital trends</a></li>
+                    <li><a href="/sponsors">biblioteca de recursos</a></li>
+                    <li class="emms__header__nav__menu__dropdown"><a href="/ediciones-anteriores">Qué es el EMMS</a>
+                        <ul class="emms__header__nav__submenu">
+                            <li><a href="/ediciones-anteriores#sobre-emms">Sobre el EMMS</a></li>
+                            <li><a href="/ediciones-anteriores#ediciones-anteriores">Revive ediciones anteriores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/sponsors-promo">sponsors</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
 
     <main>
 
@@ -63,7 +89,7 @@ if (isset($_GET['slug'])) {
                     </div>
                     <div class="emms__internal-sponsors__resource__text">
                         <p><?= $sponsor['description_magnet'] ?></p>
-                        <a href="<?= $sponsor['link_magnet'] ?>" class="emms__cta">ACCEDE</a>
+                        <a href="<?= $sponsor['link_magnet'] ?>" class="emms__cta" target="_blank">ACCEDE</a>
                     </div>
                 </div>
             </section>
@@ -79,7 +105,7 @@ if (isset($_GET['slug'])) {
                     <div class="emms__internal-sponsors__resource__text">
                         <h2><?= $sponsor['title_magnet'] ?></h2>
                         <p><?= $sponsor['description_magnet'] ?></p>
-                        <a href="<?= $sponsor['link_magnet'] ?>" class="emms__cta">ACCEDE</a>
+                        <a href="<?= $sponsor['link_magnet'] ?>" class="emms__cta" target="_blank">ACCEDE</a>
                     </div>
                 </div>
             </section>
@@ -91,7 +117,7 @@ if (isset($_GET['slug'])) {
             <div class="emms__container--md emms__fade-in">
                 <h2>Conoce más sobre <?= $sponsor['title_promo_company'] ?></h2>
                 <p><?= $sponsor['description_promo_company'] ?></p>
-                <a href="<?= $sponsor['link_promo_company'] ?>" class="emms__cta">CONOCE MÁS</a>
+                <a href="<?= $sponsor['link_promo_company'] ?>" class="emms__cta" target="_blank">CONOCE MÁS</a>
             </div>
         </section>
 
