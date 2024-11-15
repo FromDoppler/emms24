@@ -35,12 +35,9 @@ const submitForm = async (e) => {
 
 const submitDtWithoutForm = (digitalWithoutForm) => {
     digitalWithoutForm.classList.add('button--loading');
-    const isValidForm = validateForm(digitalForm);
-    if (isValidForm) {
-        submitWithoutForm(eventsType.DIGITALTRENDS).then(() => {
-            window.location.href = getUrlWithParams('/digital-trends-registrado');
-        });
-    }
+    submitWithoutForm(eventsType.DIGITALTRENDS).then(() => {
+        window.location.href = getUrlWithParams('/digital-trends-registrado');
+    });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
