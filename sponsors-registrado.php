@@ -156,7 +156,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
         <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/doppler-academy-banner.php'); ?>
 
     </main>
-
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/sponsorsList.php') ?>
     <!-- Footer -->
     <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/footer.php'); ?>
 
