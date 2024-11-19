@@ -16,7 +16,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/navbar-reg.php') ?>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/share.php') ?>
     <main>
-        <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/home/hello-module.php') ?>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/during/home/hello-module.php');   ?>
         <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/event-numbers.php') ?>
         <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/speakers-carousel.php') ?>
         <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/premium-content.php') ?>
