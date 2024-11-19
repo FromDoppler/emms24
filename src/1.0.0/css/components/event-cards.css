@@ -81,17 +81,13 @@
     padding: 29px 29px 120px 29px;
 }
 
-.emms__eventCards__list__item__text.emms__eventCards__list__item__text--during .successRegister {
+.emms__eventCards__list__item__text .success-register {
     font-style: normal;
     font-weight: 800;
     font-size: 13px;
     line-height: 20px;
-    color: #000000;
-    margin: 15px 0px;
-}
-
-.emms__eventCards__list__item__text.emms__eventCards__list__item__text--during .successRegister span {
     color: #7D04F6;
+    display: block;
 }
 
 .emms__eventCards__list__item__text p {
@@ -100,10 +96,10 @@
     color: #525845;
 }
 
-.emms__eventCards__list__item__text p a {
+/* .emms__eventCards__list__item__text p a {
     color: #008046;
     text-decoration: underline;
-}
+} */
 
 .emms__eventCards__list__item__text h3 {
     font-size: 30px;
@@ -225,6 +221,75 @@
 }
 
 
+
+.ribbon__live img {
+    width: 21px;
+    height: 21px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.ribbon__live.ribbon__live--post {
+    width: 200px;
+}
+
+.ribbon__live {
+    width: 105px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    position: absolute;
+    right: -16px;
+    top: 56px;
+    background: #79F66E;
+    color: #000000;
+    font-weight: 900;
+    z-index: 9;
+}
+
+.ribbon__live .ribbon__live-text {
+    vertical-align: middle;
+    display: inline-block;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.ribbon__live:before,
+.ribbon__live:after {
+    content: "";
+    position: absolute;
+}
+
+.ribbon__live:before {
+    height: 0;
+    width: 0;
+    top: -9.5px;
+    right: 0.1px;
+    border-bottom: 9px solid black;
+    border-right: 9px solid transparent;
+}
+
+.ribbon__live:after {
+    height: 0;
+    width: 0;
+    left: -14.5px;
+    border-top: 18px solid transparent;
+    border-bottom: 22px solid transparent;
+    border-right: 14px solid #79F66E;
+}
+
+
 .emms__eventCards__list__item__text h3 span {
 
     background: #79F66E;
@@ -247,7 +312,7 @@
     margin-bottom: 20px;
 }
 
-.emms__eventCards__list__item__text p+span {
+.emms__eventCards__list__item__text span {
     font-weight: 700;
     font-size: 13px;
     line-height: 20px;

@@ -69,6 +69,24 @@ p {
 
 /* General CTA */
 
+.emms__purple-common-anchor {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    line-height: 20px;
+    color: #7D04F6;
+    transition: all 0.5s ease-in-out;
+}
+
+.emms__purple-common-anchor:hover {
+    opacity: 0.5;
+}
+
 .emms__purple-anchor {
     font-style: normal;
     font-weight: 900;
@@ -79,6 +97,7 @@ p {
     display: block;
     transition: opacity 0.3s ease;
 }
+
 .emms__purple-anchor:hover {
     opacity: 0.5;
 }
