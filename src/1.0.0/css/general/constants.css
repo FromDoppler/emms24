@@ -140,6 +140,17 @@ p {
     pointer-events: none;
 }
 
+/* La diferancia con inactive se que permite interactuar con los titles */
+.emms__cta.inactive--button-card {
+    background: #CCCCCC;
+    cursor: unset;
+    user-select: none;
+}
+
+.emms__cta.inactive--button-card:hover {
+    background: #CCCCCC;
+}
+
 .emms__cta.emms__cta--during {
     background-color: #79F66E;
 }

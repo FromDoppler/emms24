@@ -7,7 +7,5 @@
             <a href="<?= $speaker['link_time'] ?>" target="_blank">Mira el horario de tu país</a>
         </div>
     <?php endif; ?>
-    <?php if (in_array($type, ['networking', 'workshop'])): ?>
-        <a href="<?= $speaker['youtube'] ?>" class="emms__cta show--vip">ACCEDE AHORA</a>
-    <?php endif; ?>
+    <?php include 'DescriptionButton.php'; ?>
 </div>
