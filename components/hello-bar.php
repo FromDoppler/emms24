@@ -88,7 +88,7 @@ $contentDuring = $contentsDuring[$normalizedUrl] ?? $contentsDuring['/*'];
 <?php elseif ($digitalTrendsStates['isDuring']) : ?>
     <div class="emms__hellobar emms__hellobar--counter emms__hellobar--live">
         <div class="emms__hellobar__container emms__hellobar__container--during emms__fade-in">
-            <p><strong><?= $content['helloBarText'] ?></strong><a href="<?= $content['helloBarCtaLink'] ?>"><?= $content['helloBarCtaTxt'] ?></a></p>
+            <p><strong><?= $contentDuring['helloBarText'] ?></strong><a href="<?= $contentDuring['helloBarCtaLink'] ?>"><?= $contentDuring['helloBarCtaTxt'] ?></a></p>
         </div>
     </div>
     <div class="show--vip">
