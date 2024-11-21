@@ -48,6 +48,11 @@ $contentsDuring = [
         'helloBarCtaTxt' => 'HAZTE VIP',
         'helloBarCtaLink' => '#entradas',
     ],
+    '/sponsors' => [
+        'helloBarText' => '¡Queda más EMMS Digital Trends! ¿Aún no te has registrado? Súmate gratis para unirte a una nueva jornada.',
+        'helloBarCtaTxt' => 'ÚNETE AHORA',
+        'helloBarCtaLink' => '#registro',
+    ],
     '/*' => [
         'helloBarText' => '¡Ya llegó el EMMS Digital Trends 2024! Únete a otra jornada con más Conferencias gratuitas, Workshops y Networking',
         'helloBarCtaTxt' => 'REGÍSTRATE GRATIS',
