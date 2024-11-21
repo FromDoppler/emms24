@@ -81,6 +81,7 @@
         font-size: 25px;
         line-height: 29px;
     }
+
     .emms__calendar__title p {
         font-size: 16px;
         line-height: 20px;
@@ -470,10 +471,18 @@
     padding: 25px 0;
     margin: 0 15px;
     min-height: 220px;
+    max-height: 349px;
+    height: 100%;
+    position: relative;
 }
 
+
 .emms__calendar__list__item__card__description .emms__cta.show--vip {
-    margin-top: 15px
+    margin-top: 15px;
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    max-width: 196px;
 }
 
 .emms__calendar__list__item__card__description h3 {
@@ -537,6 +546,19 @@
     padding: 0px 16px;
     margin: 0;
 }
+
+@media(max-width:620px) {
+
+    .emms__calendar__list__item__card__description {
+        max-height: 658px;
+    }
+
+    .emms__calendar__list__item__card__description .emms__cta.show--vip {
+        width: unset;
+        max-width: unset;
+    }
+}
+
 
 .emms__calendar__list__item__card__business {
     height: 60px;
