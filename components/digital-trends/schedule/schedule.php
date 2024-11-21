@@ -38,9 +38,18 @@ $block = getBlock($normalizedUrl);
         <?php include('speakers.php') ?>
 
         <?php if ($block['block'] === 'dt') : ?>
-            <div class="emms__calendar__bottom emms__fade-in  eventHiddenElements hidden--vip">
-                <a href="#registro" class="emms__cta">REGÍSTRATE GRATIS</a>
-            </div>
+
+            <!-- Cambio de bloque según momento del evento -->
+            <?php if ($digitalTrendsStates['isPre']) : ?>
+                <div class="emms__calendar__bottom emms__fade-in  eventHiddenElements hidden--vip">
+                    <a href="#registro" class="emms__cta">REGÍSTRATE GRATIS</a>
+                </div>
+            <?php elseif ($digitalTrendsStates['isDuring']) : ?>
+                <div class="emms__calendar__bottom emms__fade-in  eventHiddenElements hidden--vip">
+                    <a href="#registro" class="emms__cta">REGÍSTRATE AHORA</a>
+                </div>
+            <?php endif ?>
+
         <?php elseif ($block['block'] === 'dt-registrado') : ?>
             <div class="emms__calendar__bottom emms__fade-in hidden--vip">
                 <a href="#entradas" class="emms__cta">COMPRA TU ENTRADA VIP</a>
