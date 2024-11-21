@@ -41,12 +41,24 @@
     margin: 0 0 20px 0;
     display: block;
 }
+
+.emms__hero-registration .emms__hero-registration__text h1 em small,
+.emms__hero-registration--registered h1 em small {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: #79F66E;
+}
+
 @media screen and (max-width: 768px) {
-    .emms__hero-registration .emms__hero-registration__text h1 em{
+    .emms__hero-registration .emms__hero-registration__text h1 em {
         font-size: 13px;
         line-height: 18px;
     }
 }
+
 .emms__hero-registration .emms__hero-registration__text.emms__hero-registration__text--live h1 span {
     margin-bottom: 40px;
 }
@@ -248,6 +260,7 @@
     padding: 190px 0 160px 0;
     position: relative;
 }
+
 .emms__hero-registration--registered .text-with-icon-container {
     max-width: 900px;
     margin: 0 auto;
@@ -264,7 +277,7 @@
     font-weight: 700;
     color: #FFFFFF;
     animation-delay: .1s;
-    max-width: 800px;
+    max-width: 856px;
     margin: 0 auto;
 }
 
