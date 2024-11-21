@@ -54,23 +54,39 @@
 }
 
 .emms__calendar__title h2 {
-    font-size: 35px;
+    font-size: 40px;
     line-height: 35px;
     font-weight: 700;
     color: #fff;
+    margin-bottom: 24px;
 }
 
 .emms__calendar__title p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
     color: #fff;
     margin: 12px 0 0 0;
 }
 
 .emms__calendar__title p strong {
+    font-style: normal;
     font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #BD7AFF;
 }
 
+@media(max-width:620px) {
+    .emms__calendar__title h2 {
+        font-size: 25px;
+        line-height: 29px;
+    }
+    .emms__calendar__title p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+}
 
 
 /* Tabs */
@@ -124,7 +140,7 @@
 
 @media(max-width:620px) {
     .emms__calendar__tab {
-        font-size: 18px;
+        font-size: 16px;
         padding: 8px 0 8px 0;
         margin-right: 6px;
         margin-left: 6px;
