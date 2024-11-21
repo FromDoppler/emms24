@@ -76,6 +76,17 @@
     color: #BD7AFF;
 }
 
+@media(max-width:620px) {
+    .emms__calendar__title h2 {
+        font-size: 25px;
+        line-height: 29px;
+    }
+    .emms__calendar__title p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+}
 
 
 /* Tabs */
@@ -129,7 +140,7 @@
 
 @media(max-width:620px) {
     .emms__calendar__tab {
-        font-size: 18px;
+        font-size: 16px;
         padding: 8px 0 8px 0;
         margin-right: 6px;
         margin-left: 6px;
