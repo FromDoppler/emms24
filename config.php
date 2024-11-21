@@ -127,22 +127,19 @@ if (!defined('PATH_REFRESH')) define('PATH_REFRESH', 'emms-socket');
 if (!defined('MEMCACHED_SERVER')) define('MEMCACHED_SERVER', "memcached");
 
 #During Days System
-$dayDuring = 3;
+$dayDuring = 1;
 $duringDaysArray = array(
     "1" => array(
-        "youtube" => "0phrH-5u21U",
-        "twitch" => "duckvilleusa"
+        "youtube" => "Ng15Os_ojXg",
+        "twitch" => "fromdoppler"
     ),
     "2" => array(
-        "youtube" => "InSydaLSSlw",
-        "twitch" => "hoothouselivestream"
+        "youtube" => "0rlts4I6pg4",
+        "twitch" => "fromdoppler"
     ),
     "3" => array(
-        "youtube" => "0phrH-5u21U",
-        "twitch" => "duckvilleusa"
-    ),
-    "4" => array(
-        "youtube" => "InSydaLSSlw",
-        "twitch" => "hoothouselivestream"
-    ),
+        "youtube" => "x-hGQmaZpq8",
+        "twitch" => "fromdoppler"
+    )
 );
+
