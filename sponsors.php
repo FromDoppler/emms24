@@ -24,6 +24,8 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
 
 <body class="emms__sponsors">
     <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/gtm.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/hello-bar.php') ?>
+
     <!-- Header -->
     <header class="emms__header">
         <div class="emms__container--lg emms__fade-in">
