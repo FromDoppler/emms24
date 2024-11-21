@@ -34,10 +34,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
 
     <main>
         <div class="register-form__container eventHiddenElements">
-            <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/register-form.php') ?>
+            <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/during/register-form.php') ?>
         </div>
         <div class="register-noform__container  eventShowElements">
-            <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/register-withoutform.php') ?>
+            <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/during/register-withoutform.php') ?>
         </div>
 
         <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/schedule/schedule.php') ?>

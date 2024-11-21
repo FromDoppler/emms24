@@ -67,27 +67,27 @@ $contentDuring = $contentsDuring[$normalizedUrl] ?? $contentsDuring['/*'];
 ?>
 <?php if ($digitalTrendsStates['isLive']) : ?>
     <div class="hidden--vip">
-        <div class="emms__hellobar emms__hellobar--counter">
+        <div class="emms__hellobar emms__hellobar--counter emms__hellobar--live">
             <div class="emms__hellobar__container emms__hellobar__container--during emms__fade-in">
                 <p><strong><?= $contentLive['helloBarText'] ?></strong><a href="<?= $contentLive['helloBarCtaLink'] ?>"><?= $contentLive['helloBarCtaTxt'] ?></a></p>
             </div>
         </div>
     </div>
     <div class="show--vip">
-        <div class="emms__hellobar emms__hellobar--counter">
+        <div class="emms__hellobar emms__hellobar--counter emms__hellobar--live">
             <div class="emms__hellobar__container emms__hellobar__container--during emms__fade-in">
                 <p><strong>⭐ ¡No te pierdas las actividades VIP! Encuentra los links en la agenda para unirte a las salas.</strong><a href="#agenda">MIRA LA AGENDA</a></p>
             </div>
         </div>
     </div>
 <?php elseif ($digitalTrendsStates['isDuring']) : ?>
-    <div class="emms__hellobar emms__hellobar--counter">
+    <div class="emms__hellobar emms__hellobar--counter emms__hellobar--live">
         <div class="emms__hellobar__container emms__hellobar__container--during emms__fade-in">
             <p><strong><?= $content['helloBarText'] ?></strong><a href="<?= $content['helloBarCtaLink'] ?>"><?= $content['helloBarCtaTxt'] ?></a></p>
         </div>
     </div>
     <div class="show--vip">
-        <div class="emms__hellobar emms__hellobar--counter">
+        <div class="emms__hellobar emms__hellobar--counter emms__hellobar--live">
             <div class="emms__hellobar__container emms__hellobar__container--during emms__fade-in">
                 <p><strong>⭐ ¡No te pierdas las actividades VIP! Encuentra los links en la agenda para unirte a los Workshops del EMMS Digital Trends.</strong><a href="#agenda">MIRA LA AGENDA</a></p>
             </div>

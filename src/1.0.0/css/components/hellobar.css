@@ -105,6 +105,11 @@
     }
 }
 
+/* TODO: Create abstract hellobar for counter and live properties */
+
+.emms__hellobar.emms__hellobar--live {
+    background: linear-gradient(180deg, #DF24C1 0%, #8E18D7 57.9%, #7D04F6 100%);
+}
 
 
 /* Hellobar with counter */
