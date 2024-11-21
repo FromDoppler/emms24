@@ -26,15 +26,18 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
 
 <body class="emms__ecommerce emms__ecommerce-logueado">
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/gtm.php'); ?>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/date-counter.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/hello-bar.php'); ?>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/navbar-reg.php') ?>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/share.php') ?>
     <main>
-        <div class="show--vip">
-            <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/digital-trends/hello-module.php') ?>
-        </div>
+        <section class="emms__hero-conference emms__hero-conference--live emms__hero-conference--chat">
+            <div class="emms__container--lg">
+                <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/during/digital-trends/event-live.php') ?>
+                <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/during/digital-trends/certificate/certificate.php') ?>
+                <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/marquee.php') ?>
+            </div>
+        </section>
         <div class="hidden--vip">
-            <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/digital-trends/hello-vip-module.php') ?>
             <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/digital-trends/video-ticketing.php') ?>
             <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/digital-trends/vip-features.php') ?>
             <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/digital-trends/entry-plans.php') ?>
