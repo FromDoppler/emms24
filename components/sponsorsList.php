@@ -5,7 +5,7 @@
         ?>
          <section class="emms__companies emms__companies--categories" id="aliados">
              <div class="emms__container--lg">
-                 <h2 class="emms__fade-in">Nos acompañan en esta edición:</h2>
+                 <h2 class="emms__fade-in">Nuestros aliados en el EMMS Digital Trends</h2>
                  <h3>SPONSORS</h3>
                  <ul class="emms__companies__list emms__companies__list--lg  emms__fade-in">
                      <?php
