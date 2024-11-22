@@ -131,14 +131,6 @@ function renderCalendarTabs($days, $digitalTrendsStates, $dayDuring = null)
             panel.hidden = index !== 0;
         });
 
-        const activeButton = Array.from(tabButtons).find(button => button.getAttribute('aria-selected') === 'true');
-
-        if (activeButton) {
-            tabClickHandler({
-                currentTarget: activeButton
-            });
-        }
-
         function tabClickHandler(e) {
             //Hide All Tabpane
             tabPanels.forEach(panel => {
