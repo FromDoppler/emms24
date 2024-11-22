@@ -37,14 +37,15 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
                 <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/marquee.php') ?>
             </div>
         </section>
+        <div class="emms__bg-dark-gradient">
+            <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/schedule/schedule.php') ?>
+        </div>
         <div class="hidden--vip">
             <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/digital-trends/video-ticketing.php') ?>
             <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/digital-trends/vip-features.php') ?>
             <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/digital-trends/entry-plans.php') ?>
         </div>
-        <div class="emms__bg-dark-gradient">
-            <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/schedule/schedule.php') ?>
-        </div>
+
         <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/benefit-icons.php') ?>
         <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/premium-content.php') ?>
         <!-- Academy Banner === show--vip, This class is not used to prevent interfering with flickity -->

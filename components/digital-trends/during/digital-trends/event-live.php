@@ -1,5 +1,6 @@
 <?php if (($settings_phase_DT['event'] === "digital-trends24") && ($settings_phase_DT['during'] === 1) && ($settings_phase_DT['transition'] === "live-on") && ($settings_phase_DT['transmission'] === "youtube")) : ?>
-    <h1 class="emms__fade-in">¡Estamos en vivo en el #EMMS2024!</h1>
+    <p class="live-advice">EN VIVO </p>
+    <h1 class="emms__fade-in">¡Estamos en vivo en el #EMMSBYDOPPLER!</h1>
     <div class="emms__hero-conference__video emms__fade-in">
         <div class="emms__cropper-cont-16-9">
             <div class="emms__cropper-cont ">
@@ -13,7 +14,7 @@
         <iframe src="https://www.youtube.com/live_chat?v=<?= $duringDaysArray[$dayDuring]['youtube'] ?>&embed_domain=<?= $_SERVER['HTTP_HOST'] ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 <?php elseif (($settings_phase_DT['event'] === "digital-trends24") && ($settings_phase_DT['during'] === 1) && ($settings_phase_DT['transition'] === "live-on") && ($settings_phase_DT['transmission'] === "twitch")) : ?>
-    <h1 class="emms__fade-in">¡Estamos en vivo en el #EMMS2024!</h1>
+    <h1 class="emms__fade-in">¡Estamos en vivo en el #EMMSBYDOPPLER!</h1>
     <div class="emms__hero-conference__video emms__fade-in">
         <div class="emms__cropper-cont-16-9">
             <div class="emms__cropper-cont ">
