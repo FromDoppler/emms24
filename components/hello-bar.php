@@ -98,4 +98,4 @@ $contentDuring = $contentsDuring[$normalizedUrl] ?? $contentsDuring['/*'];
             </div>
         </div>
     </div>
-<? endif ?>
+<?php  endif; ?>
