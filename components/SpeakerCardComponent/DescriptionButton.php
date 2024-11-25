@@ -10,7 +10,7 @@ if (!function_exists('getDescriptionButton')) {
     function getDescriptionButton($type, $speakerUrl)
     {
         // Verificar si el tipo es válido
-        if (!in_array($type, ['networking'])) {
+        if (!in_array($type, ['workshop'])) {
             return '';
         }
 

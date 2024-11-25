@@ -52,7 +52,7 @@ $block = getBlock($normalizedUrl);
 
         <?php elseif ($block['block'] === 'dt-registrado') : ?>
             <div class="emms__calendar__bottom emms__fade-in hidden--vip">
-                <a href="#entradas" class="emms__cta">COMPRA TU ENTRADA VIP</a>
+                <a href="./checkout" class="emms__cta">COMPRA TU ENTRADA VIP</a>
             </div>
         <?php endif; ?>
     </div>

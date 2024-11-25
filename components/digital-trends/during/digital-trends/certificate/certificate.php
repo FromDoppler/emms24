@@ -2,12 +2,12 @@
 
 <div class="live--certificate--container" id="certificate-container">
     <div class="certificate--modal-info certificate--modal-info--live-off">
-        <img src="src/img/certificate-ribbon.png" alt="Emoji liston">
+        <img src="src/img/certificate-ribbon.png" alt="Emoji liston" class="dk">
         <div>
             <p>DESCARGA<a data-target="certificateModal" data-toggle="emms__certificate-modal"> AQUÍ </a>TU CERTIFICADO DE ASISTENCIA</p><br>
             <span> Compártelo en Redes Sociales utilizando el Hashtag </span>
             <br>
-            <p><b>#EMMSDIGITALTRENDS</b> :)</p>
+            <p><b>#EMMSBYDOPPLER</b> :)</p>
         </div>
     </div>
 </div>
