@@ -1,5 +1,6 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
+require_once($_SERVER['DOCUMENT_ROOT'] . '/services/functions.php');
 require_once $_SERVER['DOCUMENT_ROOT'] . '/utils/DB.php';
 require_once 'models/StripeCustomersDatabase.php';
 require_once 'models/RegisteredDatabase.php';
@@ -83,6 +84,36 @@ class StripeCustomersController
         return true;
     }
 
+    private function resolveTiketType(string $event): string {
+        $eventTicketMaps = [
+            DIGITALTRENDS => [
+                'pre' => 'digitalTrendsVipPre',
+                'during' => 'digitalTrendsVipDuring',
+                'post' => 'digitalTrendsVipPost',
+            ],
+            ECOMMERCE => [
+                'pre' => 'ecommerceVipPre',
+                'during' => 'ecommerceVipDuring',
+                'post' => 'ecommerceVipPost',
+            ],
+        ];
+
+        if (!isset($eventTicketMaps[$event])) {
+            throw new LogicException("Evento no válido: {$event}");
+        }
+
+        $tiketTypeMap = $eventTicketMaps[$event];
+
+        $phaseData = processPhaseToShow($event);
+        $phaseToShow = $phaseData['phaseToShow'] ?? null;
+
+        if (!isset($tiketTypeMap[$phaseToShow])) {
+            throw new LogicException("Fase no válida para el evento: {$phaseToShow}");
+        }
+
+        return $tiketTypeMap[$phaseToShow];
+    }
+
 
     private function CreateUserObj($UserData, $listId = LIST_LANDING_DIGITALT_VIP)
     {
@@ -111,7 +142,7 @@ class StripeCustomersController
             'term_utm' => "stripe",
             'origin' => "stripe",
             'type' => "digital-trends24",
-            'tiketType' => 'digitalTrendsVipPre',
+            'tiketType' => $this->resolveTiketType(DIGITALTRENDS),
             'form_id' => "pre",
             'list' => $listId,
             'subject' => "#EMMS2024 - Compraste tu entrada vip!"
