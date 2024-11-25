@@ -1,7 +1,7 @@
 <?php
 include_once($_SERVER['DOCUMENT_ROOT'] . '/components/helpers/urlHelper.php');
 $normalizedUrl = getNormalizeUrl();
-function getLinkByCurrentUrl($url)
+function getLinkPreByCurrentUrl($url)
 {
     $urls = [
         '/' => [
@@ -24,24 +24,76 @@ function getLinkByCurrentUrl($url)
     return $urls[$url] ??  $urls['/*'];
 }
 
-$link = getLinkByCurrentUrl($normalizedUrl);
+function getLinkDuringByCurrentUrl($url)
+{
+    $urls = [
+        '/' => [
+            'twitter' => 'https://twitter.com/intent/tweet?url=goemms.com/digital-trends&text=Ya%20comenz%C3%B3%20el%20EMMS%20Digital%20Trends%202024.%20S%C3%BAmate%20gratis%20y%20disfruta%20de%20Conferencias%20sobre%20Marketing%20Digital,%20Workshops,%20Networking%20y%20mucho%20m%C3%A1s.%20%0AReg%C3%ADstrate%20ahora%20:)',
+            'linkedln' => 'https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fgoemms.com%2Fdigital-trends-registrado&title=¡Empezó%20el%20EMMS%20Digital%20Trends!&summary=Únete%20a%20la%20transmisión%20del%20evento%20que%20te%20acerca%20a%20los%20mayores%20expertos%20internacionales%20en%20Marketing%20Digital.%20Es%20gratis%20y%20online&source=EMMS',
+            'facebook' => 'https://www.facebook.com/sharer/sharer.php?u=goemms.com/digital-trends',
+        ],
+        '/digital-trends-registrado' => [
+            'twitter' => 'https://twitter.com/intent/tweet?url=goemms.com/digital-trends&text=Ya%20comenz%C3%B3%20el%20EMMS%20Digital%20Trends%202024.%20S%C3%BAmate%20gratis%20y%20disfruta%20de%20Conferencias%20sobre%20Marketing%20Digital,%20Workshops,%20Networking%20y%20mucho%20m%C3%A1s.%20%0AReg%C3%ADstrate%20ahora%20:)',
+            'linkedln' => 'https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fgoemms.com%2Fdigital-trends-registrado&title=¡Empezó%20el%20EMMS%20Digital%20Trends!&summary=Únete%20a%20la%20transmisión%20del%20evento%20que%20te%20acerca%20a%20los%20mayores%20expertos%20internacionales%20en%20Marketing%20Digital.%20Es%20gratis%20y%20online&source=EMMS',
+            'facebook' => 'https://www.facebook.com/sharer/sharer.php?u=goemms.com/digital-trends',
+        ],
+        '/*' => [
+            'twitter' => 'https://twitter.com/intent/tweet?url=goemms.com/digital-trends&text=Ya%20comenz%C3%B3%20el%20EMMS%20Digital%20Trends%202024.%20S%C3%BAmate%20gratis%20y%20disfruta%20de%20Conferencias%20sobre%20Marketing%20Digital,%20Workshops,%20Networking%20y%20mucho%20m%C3%A1s.%20%0AReg%C3%ADstrate%20ahora%20:)',
+            'linkedln' => 'https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fgoemms.com%2Fdigital-trends-registrado&title=¡Empezó%20el%20EMMS%20Digital%20Trends!&summary=Únete%20a%20la%20transmisión%20del%20evento%20que%20te%20acerca%20a%20los%20mayores%20expertos%20internacionales%20en%20Marketing%20Digital.%20Es%20gratis%20y%20online&source=EMMS',
+            'facebook' => 'https://www.facebook.com/sharer/sharer.php?u=goemms.com/digital-trends',
+        ],
+    ];
+
+    return $urls[$url] ??  $urls['/*'];
+}
+
+function getLinkPostByCurrentUrl($url)
+{
+    $urls = [
+        '/' => [
+            'twitter' => 'https://twitter.com/intent/tweet?url=goemms.com/digital-trends&text=Reg%C3%ADstrate%20gratis%20y%20revive%20el%20EMMS%20Digital%20Trends%202024.%20Disfruta%20de%20Conferencias%20gratuitas%20de%20la%20mano%20de%20las%20marcas%20m%C3%A1s%20destacadas%20de%20la%20industria',
+            'linkedln' => 'https://www.linkedin.com/shareArticle?mini=true&url=goemms.com/digital-trends',
+            'facebook' => 'https://www.facebook.com/sharer/sharer.php?u=goemms.com/digital-trends',
+        ],
+        '/digital-trends-registrado' => [
+            'twitter' => 'https://twitter.com/intent/tweet?url=goemms.com/digital-trends&text=Reg%C3%ADstrate%20gratis%20y%20revive%20el%20EMMS%20Digital%20Trends%202024.%20Disfruta%20de%20Conferencias%20gratuitas%20de%20la%20mano%20de%20las%20marcas%20m%C3%A1s%20destacadas%20de%20la%20industria',
+            'linkedln' => 'https://www.linkedin.com/shareArticle?mini=true&url=goemms.com/digital-trends',
+            'facebook' => 'https://www.facebook.com/sharer/sharer.php?u=goemms.com/digital-trends',
+        ],
+        '/*' => [
+            'twitter' => 'https://twitter.com/intent/tweet?url=goemms.com/digital-trends&text=Reg%C3%ADstrate%20gratis%20y%20revive%20el%20EMMS%20Digital%20Trends%202024.%20Disfruta%20de%20Conferencias%20gratuitas%20de%20la%20mano%20de%20las%20marcas%20m%C3%A1s%20destacadas%20de%20la%20industria',
+            'linkedln' => 'https://www.linkedin.com/shareArticle?mini=true&url=goemms.com/digital-trends',
+            'facebook' => 'https://www.facebook.com/sharer/sharer.php?u=goemms.com/digital-trends',
+        ],
+    ];
+
+    return $urls[$url] ??  $urls['/*'];
+}
+
+if ($digitalTrendsStates['isPre']) {
+    $link = getLinkPreByCurrentUrl($normalizedUrl);
+} else if ($digitalTrendsStates['isDuring']) {
+    $link = getLinkDuringByCurrentUrl($normalizedUrl);
+} else if ($digitalTrendsStates['isPost']) {
+    $link = getLinkPostByCurrentUrl($normalizedUrl);
+}
 ?>
 
 <div class="emms__share">
     <a id="btn-share" class="emms__share__open-list"><img src="/src/img/icons/icon-share.svg" alt="Share"></a>
     <ul id="list-share" class="emms__share__list">
         <li>
-            <a href="javascript: void(0);" onclick="window.open ('<?= $link['facebook']?>', 'Facebook', 'toolbar=0, status=0, width=550, height=350');">
+            <a href="javascript: void(0);" onclick="window.open ('<?= $link['facebook'] ?>', 'Facebook', 'toolbar=0, status=0, width=550, height=350');">
                 <img src="/src/img/Facebook-w.svg" alt="Facebook">
             </a>
         </li>
         <li>
-            <a href="javascript: void(0);" onclick="window.open ('<?= $link['twitter']?>', 'Twitter', 'toolbar=0, status=0, width=550, height=350');">
+            <a href="javascript: void(0);" onclick="window.open ('<?= $link['twitter'] ?>', 'Twitter', 'toolbar=0, status=0, width=550, height=350');">
                 <img src="/src/img/Twitter-w.svg" alt="Twitter">
             </a>
         </li>
         <li>
-            <a href="javascript: void(0);" onclick="window.open ('<?= $link['linkedln']?>', 'Linkedin', 'toolbar=0, status=0, width=550, height=550');">
+            <a href="javascript: void(0);" onclick="window.open ('<?= $link['linkedln'] ?>', 'Linkedin', 'toolbar=0, status=0, width=550, height=550');">
                 <img src="/src/img/LinkedIn-w.svg" alt="LinkedIn">
             </a>
         </li>
