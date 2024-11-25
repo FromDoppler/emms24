@@ -19,9 +19,7 @@
                                 <li>Cuenta gratuita de Doppler.</li>
                                 <li>Workshops prácticos.</li>
                                 <li>Sesiones de Networking.</li>
-                                <li>Acceso de por vida a los Workshops.</li>
                                 <li>Certificado de asistencia.</li>
-                                <li>E-Herramientas y tips exclusivos.</li>
                             </ul>
                         </div>
                         <div class="emms__checkout__card__aside">
