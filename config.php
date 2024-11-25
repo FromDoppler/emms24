@@ -131,6 +131,23 @@ $dayDuring = 1;
 if (!defined('DAY_DURING')) define('DAY_DURING', $dayDuring);
 $duringDaysArray = array(
     "1" => array(
+        "youtube" => "rhrLoHn3qmI",
+        "twitch" => "fromdoppler"
+    ),
+    "2" => array(
+        "youtube" => "3znU96iSNO4",
+        "twitch" => "fromdoppler"
+    ),
+    "3" => array(
+        "youtube" => "LjjXLpU_Kmg",
+        "twitch" => "fromdoppler"
+    )
+);
+
+//plan B
+/*
+$duringDaysArray = array(
+    "1" => array(
         "youtube" => "Ng15Os_ojXg",
         "twitch" => "fromdoppler"
     ),
@@ -143,4 +160,5 @@ $duringDaysArray = array(
         "twitch" => "fromdoppler"
     )
 );
+*/
 
