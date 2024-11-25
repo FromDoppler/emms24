@@ -94,17 +94,20 @@ $content = $contents[$normalizedUrl] ?? $contents['/*'];
                 <li class="emms__eventCards__list__item">
                     <div class="emms__eventCards__list__item__picture">
                         <img src="/src/img/card-image-digitaltrends-pre.png" alt="Image Digital Trends">
+                        <?php if ($digitalTrendsStates['isLive']) : ?>
+                            <div class="ribbon__live">
+                                <img src="/src/img/icons/play-icon.png" alt="Play" class="ribbon__live-text ">
+                                <span class="ribbon__live-text"> EN VIVO</span>
+                            </div>
+                        <?php endif ?>
                         <?php if ($digitalTrendsStates['isPost']) : ?>
                             <p class="top hide">EVENTO FINALIZADO</p>
                         <?php endif ?>
                     </div>
                     <div class="emms__eventCards__list__item__text">
-                        <?php if ($digitalTrendsStates['isLive']) : ?>
-                            <h3>EMMS Digital Trends <span>EN VIVO</span></h3>
-                        <?php else : ?>
-                            <h3>EMMS Digital Trends </h3>
-                        <?php endif ?>
-                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. Conferencias, Entrevistas, Casos de éxito, Workshops, Networking ¡y mucho más! Reserva tu lugar ahora.</p>
+                        <h3>EMMS Digital Trends </h3>
+                        <p>Descubre las últimas innovaciones en Marketing Digital aplicadas por las empresas que marcan tendencia en la industria. ¡No te lo pierdas! <br> Es gratis y online.</p>
+                        <?php echo ($content['registerAdvise']); ?>
                         <span>ONLINE Y GRATUITO</span>
                         <div class="emms__eventCards__list__item__text--bottom">
                             <?php if ($digitalTrendsStates['isPre']) : ?>
@@ -112,7 +115,7 @@ $content = $contents[$normalizedUrl] ?? $contents['/*'];
                             <?php elseif ($digitalTrendsStates['isLive']) : ?>
                                 <a href="/digital-trends" class="emms__cta">ACCEDE AL VIVO</a>
                             <?php elseif ($digitalTrendsStates['isDuring']) : ?>
-                                <a href="/digital-trends" class="emms__cta">SÚMATE AHORA</a>
+                                <a href="/digital-trends" class="emms__cta">REGISTRATE GRATIS</a>
                             <?php elseif ($digitalTrendsStates['isPost']) : ?>
                                 <a href="/digital-trends" class="emms__cta">REVIVE EL EVENTO</a>
                             <?php endif ?>
@@ -122,16 +125,16 @@ $content = $contents[$normalizedUrl] ?? $contents['/*'];
                 <li class="emms__eventCards__list__item">
                     <div class="emms__eventCards__list__item__picture">
                         <div class="ribbon__end">
-                            EVENTO FINALIZADO
+                            PRÓXIMAMENTE
                         </div>
                         <img src="/src/img/card-image-ecommerce-new.png" alt="Ecommerce image">
                     </div>
                     <div class="emms__eventCards__list__item__text">
                         <h3>EMMS E-commerce </h3>
-                        <p>Referentes internacionales de la industria te contarán qué tendencias y estrategias emplean en sus Tiendas Online para captar nuevos clientes y aumentar sus ingresos. Mientras esperas por la siguiente edición, nútrete de nuevas ideas para implementar en tu negocio reviviendo la edición 2024.</p>
+                        <p>Referentes internacionales de la industria te cuentan las <b>tendencias y estrategias que emplean en sus Tiendas Online </b> para captar nuevos clientes y aumentar sus ingresos. <a href="/ediciones-anteriores" class="emms__purple-common-anchor">Revive la última edición </a> para nutrirte de ideas para tu negocio.</p>
                         <span>ONLINE Y GRATUITO</span>
                         <div class="emms__eventCards__list__item__text--bottom">
-                            <a href="ecommerce" class="emms__cta emms_cta--secondary">REVÍVELO AHORA</a>
+                            <a href="ecommerce" class="emms__cta inactive">PRÓXIMAMENTE</a>
                         </div>
                     </div>
                 </li>

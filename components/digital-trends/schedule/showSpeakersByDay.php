@@ -16,8 +16,7 @@ function showEventDatetimeByDay($day, $digitalTrendsStates)
                     <p> A partir de las</p>
                     <span><img src="/src/img/flag-argentina.png" alt="Argentina">
                         (ARG) 11:00</p>
-                    </span>
-                    <p>. Si no eres de allí o estarás en otro lado
+                    </span><p>. Si no eres de allí o estarás en otro lado
                     </p>
                     <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=EMMS+Digital+Trends+2024+%7C+D%C3%ADa+1&iso=20241126T11&p1=51&ah=4" target="_blank">mira el horario de tu país</a> <?php endif ?>
                 <?php if ($digitalTrendsStates['isTransition']) : ?>

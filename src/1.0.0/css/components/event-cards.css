@@ -283,7 +283,7 @@
 .ribbon__live:after {
     height: 0;
     width: 0;
-    left: -14.5px;
+    left: -13.5px;
     border-top: 18px solid transparent;
     border-bottom: 22px solid transparent;
     border-right: 14px solid #79F66E;
@@ -379,9 +379,21 @@
     .emms__eventCards__list__item__text--bottom .emms__cta {
         padding: 20px 30px;
     }
+
+    .ribbon__live {
+        width: 105px;
+        top: 56px;
+    }
+
 }
 
 @media(max-width:992px) {
+
+
+    .ribbon__live {
+        width: 124px;
+        top: 24px;
+    }
 
     .emms__eventCards__list--mb {
         display: block;
