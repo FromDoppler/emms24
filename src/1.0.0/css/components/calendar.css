@@ -556,6 +556,7 @@
     .emms__calendar__list__item__card__description .emms__cta.show--vip {
         width: unset;
         max-width: unset;
+        bottom: unset;
     }
 }
 
