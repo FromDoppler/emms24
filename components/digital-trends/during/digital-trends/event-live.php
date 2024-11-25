@@ -25,14 +25,14 @@
         </div>
     </div>
 <?php elseif (($settings_phase_DT['event'] === "digital-trends24") && ($settings_phase_DT['during'] === 1) && ($settings_phase_DT['transition'] === "live-on") && ($settings_phase_DT['transmission'] === "twitch-migrate")) : ?>
-    <img src="src/img/banner-migrate-twitch.png" alt="Se migró a Twitch" class="banner">
+    <img src="src/img/placas/migrate-twitch.png" alt="Se migró a Twitch" class="banner">
 <?php elseif (($settings_phase_DT['event'] === "digital-trends24") && ($settings_phase_DT['during'] === 1) && ($settings_phase_DT['transition'] === "live-on") && ($settings_phase_DT['transmission'] === "technical-problems")) : ?>
-    <img src="src/img/banner-technical-error.png" alt="Errores técnicos" class="banner">
+    <img src="src/img/placas/technical-error.png" alt="Errores técnicos" class="banner">
 <?php elseif (($settings_phase_DT['event'] === "digital-trends24") && ($settings_phase_DT['during'] === 1) && ($settings_phase_DT['transition'] === "live-off")) : ?>
-    <h2>PREPÁRATE PARA EL DÍA 2</h2>
+    <h2>PREPÁRATE PARA EL DÍA <?= $dayDuring + 1 ?></h2>
     <h1 class="emms__fade-in">¡Pronto seguimos con más EMMS Digital Trends!</h1>
     <div class="emms__hero-conference__video emms__hero-conference__video--transition emms__fade-in">
-        <img src="src/img/placa.png" alt="Preparata para el día 2!">
+    <img src="src/img/placas/transition-<?= $dayDuring ?>.png" alt="Preparate para el día <?= $dayDuring +1 ?>!">
     </div>
     <div class="emms__hero-conference__aside emms__hero-conference__aside--transition emms__fade-in hidden--vip">
         <p>Recuerda <a href="#entradas">reservar tu Entrada VIP</a> para acceder a todos los Workshops y
