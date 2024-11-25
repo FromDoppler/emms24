@@ -34,7 +34,8 @@ class Relay
             'ecommerceVip' => 'getEcommerceVipEmailTemplatePost',
             'ecommerceVipDuring' => 'getEcommerceVipEmailTemplateDuring',
             'ecommerceVipPost' => 'getEcommerceVipEmailTemplatePost',
-            'digitalTrendsVipPre' => 'getDTVipEmailTemplatePre'
+            'digitalTrendsVipPre' => 'getDTVipEmailTemplatePre',
+            'digitalTrendsVipDuring' => 'getDigitalTrendsVipEmailTemplateDuring',
         ];
 
         if (isset($user['tiketType']) && isset($templateMappings[$user['tiketType']])) {
@@ -224,6 +225,7 @@ class Relay
         ];
         return self::getTemplate('ecommerce', $templateName, $encodeEmail, $userData);
     }
+
     public static function getEcommerceVipEmailTemplatePost($encodeEmail, $user)
     {
         $templateName = 'ecommerce-during-vip-template.html';
@@ -245,6 +247,19 @@ class Relay
             'name' => $user['firstname'],
             'type' => $user['tiketType'],
             'paymentMethod' => 'Tarjeta de Crédito',
+            'date' => $user['register'],
+            'amount' => $user['final_price'],
+        ];
+        return self::getTemplate('dt', $templateName, $encodeEmail, $userData);
+    }
+
+    public static function getDigitalTrendsVipEmailTemplateDuring($encodeEmail, $user)
+    {
+        $templateName = 'dt-during-vip-template.html';
+        $userData = [
+            '$encodeEmail' => $encodeEmail,
+            'type' => $user['tiketType'],
+            'paymentMethod' =>  $user['payment_status'],
             'date' => $user['register'],
             'amount' => $user['final_price'],
         ];
