@@ -1,7 +1,13 @@
 <section class="emms__hero-registration digital--trends">
     <div class="emms__hero-registration__columns">
+
         <div class="emms__hero-registration__text emms__fade-in">
-            <h1><em><small>EN VIVO</small> - EVENTO ONLINE Y GRATUITO</em>¡Ya empezó el<span class="top">EMMS</span>Digital Trends<span class="bottom">2024</span></h1>
+            <h1><em> <?php if ($digitalTrendsStates['isLive']) : ?>
+                        <small>EN VIVO</small>
+                    <?php elseif ($digitalTrendsStates['isTransition']) : ?>
+                        <small>PREPÁRATE PARA OTRA JORNADA</small>
+                    <?php endif ?>
+                    - EVENTO ONLINE Y GRATUITO</em>¡Ya empezó el<span class="top">EMMS</span>Digital Trends<span class="bottom">2024</span></h1>
             <p>Inspírate y descubre todas las tendencias del Marketing Digital.</p>
             <ul class="emms__hero-registration__text__checklist dk">
                 <li>SPEAKERS INTERNACIONALES</li>
