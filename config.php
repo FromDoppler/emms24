@@ -128,6 +128,7 @@ if (!defined('MEMCACHED_SERVER')) define('MEMCACHED_SERVER', "memcached");
 
 #During Days System
 $dayDuring = 1;
+if (!defined('DAY_DURING')) define('DAY_DURING', $dayDuring);
 $duringDaysArray = array(
     "1" => array(
         "youtube" => "Ng15Os_ojXg",

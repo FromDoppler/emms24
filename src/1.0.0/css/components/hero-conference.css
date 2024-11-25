@@ -291,6 +291,10 @@
     animation-delay: .3s;
 }
 
+.emms__hero-conference__aside .emms__cta{
+    max-width: 185px;
+    width: 100%;
+}
 
 /* ---------------------------------------------- Responsive ---------------------------------------------- */
 
@@ -548,6 +552,11 @@
     line-height: 24px;
     margin-bottom: 15px;
     color: #fff;
+}
+
+.emms__hero-conference__aside.emms__hero-conference__aside--transition p .small-number {
+    font-size: 0.6em;
+    vertical-align: super;
 }
 
 .emms__hero-conference__aside.emms__hero-conference__aside--transition p a {

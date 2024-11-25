@@ -32,15 +32,15 @@
     <h2>PREPÁRATE PARA EL DÍA <?= $dayDuring + 1 ?></h2>
     <h1 class="emms__fade-in">¡Pronto seguimos con más EMMS Digital Trends!</h1>
     <div class="emms__hero-conference__video emms__hero-conference__video--transition emms__fade-in">
-    <img src="src/img/placas/transition-<?= $dayDuring ?>.png" alt="Preparate para el día <?= $dayDuring +1 ?>!">
+        <img src="src/img/placas/transition-<?= $dayDuring ?>.png" alt="Preparate para el día <?= $dayDuring + 1 ?>!">
     </div>
     <div class="emms__hero-conference__aside emms__hero-conference__aside--transition emms__fade-in hidden--vip">
-        <p>Recuerda <a href="#entradas">reservar tu Entrada VIP</a> para acceder a todos los Workshops y
-            a sus grabaciones una vez finalizado
+        <p>Recuerda que puedes adquirir <a href="#entradas">por
+                sólo 9<small class="small-number">99</small> USD tu Entrada VIP</a> para acceder a todos los Workshops y a
+            sus grabaciones, una vez finalizado
             el evento.
         </p>
-        <p> Además, mientras te alistas para otro emocionante día, en la <a href="/sponsors-registrado"> Biblioteca de Recursos</a> podrás disfrutar de E-books, material audiovisual, guías, beneficios en tus herramientas preferidas y mucho más contenido preparado por nuestros aliados especialmente para tí.</p>
-        <a class="emms__cta" href="/sponsors-registrado"> DESCÚBRELA AHORA</a>
+        <a class="emms__cta" href="#entradas">HAZTE VIP</a>
     </div>
     <div class="emms__hero-conference__aside emms__hero-conference__aside--transition emms__fade-in show--vip">
         <p>Mientras te alistas para otro emocionante día, en la<a href="/sponsors-registrado"> Biblioteca de Recursos</a> podrás disfrutar de E-books, material audiovisual, guías, beneficios en tus herramientas preferidas y mucho más contenido preparado por nuestros aliados especialmente para tí.</p>
