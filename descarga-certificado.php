@@ -98,7 +98,6 @@ if ((!isset($_GET['email']))) {
     <!-- Footer -->
     <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/footer.php'); ?>
 
-    <script src="/src/<?= VERSION ?>/js/certificateModal.js"></script>
     <script src="/src/<?= VERSION ?>/js/certificate/certificateWorkshop.js" type="module"></script>
 
 

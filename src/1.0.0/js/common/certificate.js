@@ -5,28 +5,23 @@ const isQADomain = () => {
     return window.location.host === 'qa.goemms.com' || window.location.host === 'localhost';
 }
 
-const getUrlWorkshop = () => {
+const WORKSHOPS = [
+    "luisperez-56WWP",
+    "anadiazdelrio-10FAS",
+    "arturoyepez-38TBU",
+    "norbertocerasale-60IYW",
+    "joserobles-38BUU",
+    "andreabozzo-17LQW",
+    "luismaram-28IMB",
+    "jmgareli-56DVQ",
+];
 
-    const workshops = [
-        "marccruells-67NIX",
-        "monicafranco-82QWJ",
-        "miguelrodriguez-14PKY",
-        "doppler-36QTB",
-        "martingelpi-59DPA",
-        "juanvaz-23LKF"
-    ];
-    const url = window.location.href;
+const getUrlWorkshop = () => WORKSHOPS.find(workshop => window.location.href.includes(workshop)) || false;
 
-    for (const workshop of workshops) {
-        if (url.includes(workshop)) {
-            return workshop;
-        }
-    }
-
-    return false;
-}
 
 const forceDownload = async (fullname, type) => {
+    console.log('heere3')
+
     const workshopType = getUrlWorkshop();
     if(type==='workshop' && !workshopType)return;
     const encodeFullname = encodeURI(fullname);
@@ -91,11 +86,14 @@ const submitCertificate = async (e, type, submitButton) => {
     const fullname = formData.get('fullname');
     const isDisabled = submitButton.getAttribute('data-disabled') === 'true';
     if (isDisabled) {
+        console.log('heere')
         return false;
     }
     handleButtonState(submitButton, true, false);
 
     if (fullname.length < 2) {
+        console.log('heere2')
+
         handleButtonState(submitButton, false, true);
         return false;
     }
