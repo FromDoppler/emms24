@@ -15,12 +15,14 @@ $imgName =  'certificadoemms2024-' . $type . '.png';
 if ($type === 'workshop') {
     $workshopType = $_GET['workshoptype'];
     $workshopMap = [
-        'marccruells-67NIX' => 'marccruells',
-        'monicafranco-82QWJ' => 'monicafranco',
-        'miguelrodriguez-14PKY' => 'miguelrodriguez',
-        'doppler-36QTB' => 'doppler',
-        'martingelpi-59DPA' => 'martingelpi',
-        'juanvaz-23LKF' => 'juanvaz',
+        'luisperez-56WWP' => 'luisperez',
+        'anadiazdelrio-10FAS' => 'anadiazdelrio',
+        'arturoyepez-38TBU' => 'arturoyepez',
+        'norbertocerasale-60IYW' => 'norbertocerasale',
+        'joserobles-38BUU' => 'joserobles',
+        'andreabozzo-17LQW' => 'andreabozzo',
+        'luismaram-28IMB' => 'luismaram',
+        'jmgareli-56DVQ' => 'jmgareli',
     ];
     $imgName = 'certificadoemms2024-' . $workshopMap[$workshopType] . '.png';
 }
