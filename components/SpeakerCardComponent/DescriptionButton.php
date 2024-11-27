@@ -30,6 +30,7 @@ if (!function_exists('getDescriptionButton')) {
         // Retorna el botón generado
         return <<<HTML
         <a {$href} class="emms__cta {$class} show--vip" {$attributes}>ACCEDE AQUI</a>
+        <a href="#entradas" class="emms__cta hidden--vip" >HAZTE VIP</a>
         HTML;
     }
 }
