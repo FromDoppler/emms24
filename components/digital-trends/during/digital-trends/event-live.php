@@ -44,6 +44,17 @@
     </div>
     <div class="emms__hero-conference__aside emms__hero-conference__aside--transition emms__fade-in show--vip">
         <p>Mientras te alistas para otro emocionante día, en la<a href="/sponsors-registrado"> Biblioteca de Recursos</a> podrás disfrutar de E-books, material audiovisual, guías, beneficios en tus herramientas preferidas y mucho más contenido preparado por nuestros aliados especialmente para tí.</p>
-        <a class="emms__cta" href="/sponsors-registrado"> DESCÚBRELA AHORA</a>
+        <p>Si ya tienes tu Entrada VIP, aquí tienes los enlaces para acceder a los Workshops de hoy, a partir de las 15hs Arg. <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=Workshops+EMMS+Digital+Trends+2024&iso=20241127T15&p1=51&ah=1&am=30" target="_blank">Mira la hora en tu país</a></p>
+        <ul>
+            <li>
+                Optimización de canales de venta B2B2C con AI.<a href="https://us06web.zoom.us/j/81770747300#success" target="_blank"> Accede aquí.</a>
+            </li>
+            <li>
+                Caso práctico: Optimizamos una Web en vivo. <a href="https://us06web.zoom.us/j/89430295152?pwd=2rVPbdexTVxvJHUqgPuGUq56LT6yt1.1#success" target="_blank"> Accede aquí.</a>
+            </li>
+            <li>
+                Estrategias de Contenido para TV Conectada. <a href="https://us06web.zoom.us/s/84475303006?pwd=atIBMlEacH3XMo3Mbafbr1Qqtyx6bl.1#success" target="_blank"> Accede aquí.</a>
+            </li>
+        </ul>
     </div>
 <?php endif; ?>
