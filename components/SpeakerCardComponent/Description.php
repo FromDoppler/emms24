@@ -7,5 +7,10 @@
             <a href="<?= $speaker['link_time'] ?>" target="_blank">Mira el horario de tu país</a>
         </div>
     <?php endif; ?>
-    <?php include 'DescriptionButton.php'; ?>
+
+    <?php
+    if (!$digitalTrendsStates['isPre']) {
+        include 'DescriptionButton.php';
+    }
+    ?>
 </div>

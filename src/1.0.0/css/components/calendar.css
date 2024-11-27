@@ -470,19 +470,19 @@
 .emms__calendar__list__item__card__description {
     padding: 25px 0;
     margin: 0 15px;
-    min-height: 344px;
-    max-height: 344px;
+    min-height: 480px;
+    max-height: 480px;
     height: 100%;
     position: relative;
 }
 
 
-.emms__calendar__list__item__card__description .emms__cta.show--vip {
+.emms__calendar__list__item__card__description .emms__cta.show--vip, .emms__calendar__list__item__card__description .emms__cta.hidden--vip{
     margin-top: 15px;
     position: absolute;
     bottom: 60px;
     width: 100%;
-    max-width: 196px;
+    max-width: 160px;
 }
 
 .emms__calendar__list__item__card__description h3 {
