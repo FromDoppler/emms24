@@ -1,4 +1,22 @@
 <?php
+
+$contents = [
+    '/digital-trends' => [
+        'buttonNoVip' => '',
+    ],
+    '/digital-trends-registrado' => [
+        'buttonNoVip' => ' <a href="#entradas" class="emms__cta hidden--vip" >HAZTE VIP</a>',
+    ],
+    '/*' => [
+        'buttonNoVip' => '',
+    ],
+];
+
+include_once($_SERVER['DOCUMENT_ROOT'] . '/components/helpers/urlHelper.php');
+$normalizedUrl = getNormalizeUrl();
+$content = $contents[$normalizedUrl] ?? $contents['/*'];
+
+
 if (!function_exists('getDescriptionButton')) {
     /**
      * Genera un botón de redirección para la card de speaker.
@@ -7,7 +25,7 @@ if (!function_exists('getDescriptionButton')) {
      * @param array $speakerUrl URL a donde va a dirigir el botón.
      * @return string HTML del botón generado o un string vació si no cumple los requisitos.
      */
-    function getDescriptionButton($type, $speakerUrl)
+    function getDescriptionButton($type, $speakerUrl, $content)
     {
         // Verificar si el tipo es válido
         if (!in_array($type, ['workshop'])) {
@@ -30,10 +48,10 @@ if (!function_exists('getDescriptionButton')) {
         // Retorna el botón generado
         return <<<HTML
         <a {$href} class="emms__cta {$class} show--vip" {$attributes}>ACCEDE AQUI</a>
-        <a href="#entradas" class="emms__cta hidden--vip" >HAZTE VIP</a>
+        {$content['buttonNoVip']}
         HTML;
     }
 }
 ?>
 
-<?= getDescriptionButton($type, $speaker['youtube']); ?>
+<?= getDescriptionButton($type, $speaker['youtube'], $content); ?>
