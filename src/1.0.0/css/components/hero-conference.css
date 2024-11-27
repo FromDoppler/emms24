@@ -589,9 +589,6 @@
     transition: transform 0.3s ease;
 }
 
-.emms__hero-conference__aside.emms__hero-conference__aside--transition li a:hover::before {
-}
-
 .emms__hero-conference__aside.emms__hero-conference__aside--transition li a:hover {
     color: #FFFFFF;
     text-shadow: 0 0 10px #79F66E, 0 0 20px #79F66E, 0 0 30px #79F66E;
