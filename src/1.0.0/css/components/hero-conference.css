@@ -590,8 +590,6 @@
 }
 
 .emms__hero-conference__aside.emms__hero-conference__aside--transition li a:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
 }
 
 .emms__hero-conference__aside.emms__hero-conference__aside--transition li a:hover {
@@ -599,7 +597,6 @@
     text-shadow: 0 0 10px #79F66E, 0 0 20px #79F66E, 0 0 30px #79F66E;
 }
 
-/* Agregar animación de brillo */
 @keyframes vip-glow {
     0% {
         text-shadow: 0 0 5px #79F66E, 0 0 10px #79F66E, 0 0 15px #79F66E;

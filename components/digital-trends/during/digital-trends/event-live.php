@@ -43,7 +43,6 @@
         <a class="emms__cta" href="#entradas">HAZTE VIP</a>
     </div>
     <div class="emms__hero-conference__aside emms__hero-conference__aside--transition emms__fade-in show--vip">
-        <p>Mientras te alistas para otro emocionante día, en la<a href="/sponsors-registrado"> Biblioteca de Recursos</a> podrás disfrutar de E-books, material audiovisual, guías, beneficios en tus herramientas preferidas y mucho más contenido preparado por nuestros aliados especialmente para tí.</p>
         <p>Si ya tienes tu Entrada VIP, aquí tienes los enlaces para acceder a los Workshops de hoy, a partir de las 15hs Arg. <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=Workshops+EMMS+Digital+Trends+2024&iso=20241127T15&p1=51&ah=1&am=30" target="_blank">Mira la hora en tu país</a></p>
         <ul>
             <li>
