@@ -8,7 +8,7 @@
                fetch("https://ipapi.co/json")
                    .then(res => res.json())
                    .then(data => callback(data.country_code))
-                   .catch(() => callback("us"));
+                   .catch(() => callback("AR"));
            }
        });
        const input2 = document.querySelector("#phone2");
@@ -21,7 +21,7 @@
                    fetch("https://ipapi.co/json")
                        .then(res => res.json())
                        .then(data => callback(data.country_code))
-                       .catch(() => callback("us"));
+                       .catch(() => callback("AR"));
                }
            });
        }
