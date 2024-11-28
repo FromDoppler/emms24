@@ -28,7 +28,7 @@ if (!function_exists('getDescriptionButton')) {
     function getDescriptionButton($type, $speakerUrl, $content)
     {
         // Verificar si el tipo es válido
-        if (!in_array($type, ['workshop'])) {
+        if (!in_array($type, ['workshop', 'conference'])) {
             return '';
         }
 
@@ -45,10 +45,20 @@ if (!function_exists('getDescriptionButton')) {
         // atributo href, is no tiene link se elimina el href para que no se genere vació
         $href = $isActive ? "href=\"{$speakerUrl}\"" : '';
 
+
+        // lógica para agregar botones de compra para workshop vip
+        $additionalContent = '';
+        $vipClass = '';
+        if ($type === 'workshop') {
+            $additionalContent = $content['buttonNoVip'] ?? '';
+            $vipClass = 'show--vip';
+        }
+
+
         // Retorna el botón generado
         return <<<HTML
-        <a {$href} class="emms__cta {$class} show--vip" {$attributes}>ACCEDE AQUI</a>
-        {$content['buttonNoVip']}
+        <a {$href} class="emms__cta {$class} {$vipClass} speaker-button" {$attributes}>ACCEDE AHORA</a>
+        {$additionalContent}
         HTML;
     }
 }
