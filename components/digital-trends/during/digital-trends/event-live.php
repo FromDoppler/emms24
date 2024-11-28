@@ -46,13 +46,10 @@
         <p>Si ya tienes tu Entrada VIP, aquí tienes los enlaces para acceder a los Workshops de hoy, a partir de las 15hs Arg. <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=Workshops+EMMS+Digital+Trends+2024&iso=20241127T15&p1=51&ah=1&am=30" target="_blank">Mira la hora en tu país</a></p>
         <ul>
             <li>
-                Optimización de canales de venta B2B2C con AI.<a href="https://us06web.zoom.us/j/81770747300#success" target="_blank"> Accede aquí.</a>
+                Cómo aprovechar herramientas de IA en tu Estrategia de Contenido.<a href="https://us06web.zoom.us/j/88244335008?pwd=4jr0iVgX7L3SL0Hs9RbtTzs2b7w9z3.1#success" target="_blank"> Accede aquí.</a>
             </li>
             <li>
-                Caso práctico: Optimizamos una Web en vivo. <a href="https://us06web.zoom.us/j/89430295152?pwd=2rVPbdexTVxvJHUqgPuGUq56LT6yt1.1#success" target="_blank"> Accede aquí.</a>
-            </li>
-            <li>
-                Estrategias de Contenido para TV Conectada. <a href="https://us06web.zoom.us/s/84475303006?pwd=atIBMlEacH3XMo3Mbafbr1Qqtyx6bl.1#success" target="_blank"> Accede aquí.</a>
+                El método definitivo para escalar anuncios después de 1,3 millones invertidos. <a href="https://us06web.zoom.us/j/88989681901#success" target="_blank"> Accede aquí.</a>
             </li>
         </ul>
     </div>
