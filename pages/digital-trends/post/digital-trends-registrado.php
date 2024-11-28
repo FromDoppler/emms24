@@ -30,10 +30,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/navbar-reg.php') ?>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/share.php') ?>
     <main>
-        <div class="show--vip">
+        <div class="hidden--vip ">
             <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/post/digital-trends/hello-module.php') ?>
         </div>
-        <div class="hidden--vip">
+        <div class="show--vip">
             <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/post/digital-trends/hello-vip-module.php') ?>
         </div>
         <div class="emms__bg-dark-gradient">
