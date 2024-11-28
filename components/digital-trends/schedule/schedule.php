@@ -33,23 +33,19 @@ $block = getBlock($normalizedUrl);
                 <h2>Agenda EMMS Digital Trends 2024</h2>
                 <p>Del 26 al 28 de noviembre podrás disfrutar de Conferencias, Workshops y Networking</p>
                 <p><strong>Importante:</strong> todos los Workshops quedarán grabados. Elige cada día el espacio de trabajo que más te guste para presenciar en vivo ¡y podrás revivir luego los otros!</p>
+            <?php elseif ($digitalTrendsStates['isPost']) : ?>
+                <h2>Descubre la agenda del evento</h2>
+                <p>Speakers internacionales de las marcas más reconocidas y las principales entidades de la industria
+                    del Comercio Electrónico en Latinoamérica compartieron sus casos de éxito, proyecciones
+                    para el mercado, experiencias y las mejores estrategias prácticas. ¡Descúbrelos aquí!</p>
             <?php endif ?>
         </div>
         <?php include('speakers.php') ?>
 
         <?php if ($block['block'] === 'dt') : ?>
-
-            <!-- Cambio de bloque según momento del evento -->
-            <?php if ($digitalTrendsStates['isPre']) : ?>
-                <div class="emms__calendar__bottom emms__fade-in  eventHiddenElements hidden--vip">
-                    <a href="#registro" class="emms__cta">REGÍSTRATE GRATIS</a>
-                </div>
-            <?php elseif ($digitalTrendsStates['isDuring']) : ?>
-                <div class="emms__calendar__bottom emms__fade-in  eventHiddenElements hidden--vip">
-                    <a href="#registro" class="emms__cta">REGÍSTRATE AHORA</a>
-                </div>
-            <?php endif ?>
-
+            <div class="emms__calendar__bottom emms__fade-in  eventHiddenElements hidden--vip">
+                <a href="#registro" class="emms__cta">REGÍSTRATE GRATIS</a>
+            </div>
         <?php elseif ($block['block'] === 'dt-registrado') : ?>
             <div class="emms__calendar__bottom emms__fade-in hidden--vip">
                 <a href="./checkout" class="emms__cta">COMPRA TU ENTRADA VIP</a>
