@@ -11,7 +11,9 @@
                     <li>Acceso de por vida a talleres súper prácticos con los que más saben de Marketing Digital aplicado a E-commerce y Retail</li>
                     <li>Guías y más herramientas para aplicar y multiplicar tus ventas</li>
                 </ul>
-                <p class="emms__features__item__text__price emms__features__item__text__price--live"><em>SOLO POR </em>USD 10</p>
+                <p class="emms__features__item__text__price emms__features__item__text__price--live">
+                    <em>¡POR SOLO</em><small>USD</small>9<small>.99!</small>
+                </p>
                 <a href="./ecommerce-registrado.php#entradas" class="emms__cta"> COMPRA TU ENTRADA
                 </a>
             </div>
