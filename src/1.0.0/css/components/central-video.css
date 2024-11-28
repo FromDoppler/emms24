@@ -3,6 +3,15 @@
     position: relative;
 }
 
+.emms__centralvideo .emms__centralvideo-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 46px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
 .emms__centralvideo.emms__centralvideo--live {
     margin-bottom: 60px;
 }
@@ -284,7 +293,7 @@ ul.emms__centralvideo__list.emms__centralvideo__list--live li::before {
         flex-direction: column-reverse;
     }
 
-    .emms__container--lg--column  .emms__centralvideo__title {
+    .emms__container--lg--column .emms__centralvideo__title {
         text-align: center;
         width: 100%;
         max-width: 600px;
