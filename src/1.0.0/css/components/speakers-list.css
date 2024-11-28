@@ -26,12 +26,22 @@
     color: #fff;
 }
 
+.emms__speakers p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
 .emms__speakers small {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 22px;
     color: #fff;
     display: block;
-    max-width: 600px;
+    max-width: 885px;
     margin: 0 auto;
     font-weight: 700;
 }
