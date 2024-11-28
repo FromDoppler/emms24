@@ -477,12 +477,13 @@
 }
 
 
-.emms__calendar__list__item__card__description .emms__cta.show--vip, .emms__calendar__list__item__card__description .emms__cta.hidden--vip{
+.emms__calendar__list__item__card__description .emms__cta.speaker-button, .emms__calendar__list__item__card__description .emms__cta.hidden--vip{
     margin-top: 15px;
     position: absolute;
     bottom: 60px;
     width: 100%;
     max-width: 160px;
+    left: 19px;
 }
 
 .emms__calendar__list__item__card__description h3 {
