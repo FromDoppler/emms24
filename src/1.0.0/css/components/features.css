@@ -78,6 +78,16 @@
     max-width: 477px;
 }
 
+.emms__features__item .emms__features__item__text h3 .price-large {
+    font-size: 47px;
+    line-height: 1;
+}
+
+.emms__features__item .emms__features__item__text h3 .price-small {
+    font-size: 24px;
+    line-height: 1;
+}
+
 .emms__features__item .emms__features__item__text p {
     font-size: 16px;
     line-height: 24px;
