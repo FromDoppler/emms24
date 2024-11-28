@@ -147,6 +147,18 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
                                 </div>
                             </a>
                         </div>
+                        <div class="emms__conferences__cards emms__fade-in">
+                            <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://youtu.be/7Itqv61mGQA" target="_blank">
+                                <img src="/src/img/conferences24/portada-capsula-juanmanuel-card-min.png" alt="Conferencias exclusivas">
+                                <div class="emms__conferences__cards__info">
+                                    <h4 class="shortTitle">Las nuevas tendencias en META para incrementar tu ROAS</h4>
+                                    <span>Ver ahora →</span>
+                                    <div class="emms__conferences__cards__info__image-container">
+                                        <img src="/src/img/conferences24/logos/juan-manuel-emprende-logo.png" alt="Juan Manuel Emprende Logo">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
