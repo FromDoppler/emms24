@@ -66,6 +66,10 @@
 }
 
 .emms__features__item .emms__features__item__text {
+    width: 50%;
+}
+
+.emms__features__item .emms__features__item__text.emms__features__item__text--speaker-interna {
     width: 60%;
 }
 
@@ -75,6 +79,10 @@
     font-weight: 700;
     color: #212121;
     margin: 0 0 30px 0;
+    max-width: 477px;
+}
+
+.emms__features__item .emms__features__item__text.emms__features__item__text--speaker-interna h3 {
     max-width: 530px;
 }
 
@@ -94,6 +102,10 @@
     font-weight: 400;
     color: #212121;
     margin: 24px 0 27px 0;
+    max-width: 435px;
+}
+
+.emms__features__item .emms__features__item__text.emms__features__item__text--speaker-interna p {
     max-width: 440px;
 }
 

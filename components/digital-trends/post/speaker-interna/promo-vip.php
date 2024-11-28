@@ -5,7 +5,7 @@
             <div class="emms__features__item__image">
                 <img src="/src/img/pasevip.png" alt="Image">
             </div>
-            <div class="emms__features__item__text">
+            <div class="emms__features__item__text emms__features__item__text--speaker-interna">
                 <h3>¿Todavía no eres VIP? Consigue tu entrada ahora para llevarte también</h3>
                 <ul class="emms__features__item__text__list">
                     <li>Acceso de por vida a talleres súper prácticos con los que más saben de Marketing Digital aplicado a E-commerce y Retail</li>
