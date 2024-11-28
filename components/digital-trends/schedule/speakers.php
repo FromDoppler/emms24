@@ -11,13 +11,15 @@
  * @param array $info Un arreglo que contiene la fecha completa y la abreviada solo para mobile.
  * @param bool $isSelected Indica si el botón está seleccionado, lo cual activa la tab de la agenda correspondiente a ese día.
  * @param bool $isFinalized Indica si el día está finalizado, lo cual le agrega el label de finalizado al día correspondiente.
+ * @param string $state El estado actual del evento. Puede ser 'pre', 'live' o 'post'.
  *
  * @return string El HTML generado para un botón del calendario.
  */
-function renderButton($day, $info, $isSelected, $isFinalized = false)
+function renderButton($day, $info, $isSelected, $isFinalized, $state)
 {
+    $isPost = $state === 'post';
     $selected = $isSelected ? 'true' : 'false';
-    $finalized = $isFinalized ? ' - finalizado' : '';
+    $finalized = ($isFinalized && !$isPost) ? ' - finalizado' : '';
     $id = "day{$day}";
 
     return <<<HTML
@@ -63,7 +65,7 @@ function renderCalendarButtons($days, $state, $currentDay = null)
                 break;
         }
 
-        $output .= renderButton($day, $info, $isSelected, $isFinalized);
+        $output .= renderButton($day, $info, $isSelected, $isFinalized, $state);
     }
 
     return $output;
