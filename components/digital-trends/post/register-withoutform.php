@@ -1,7 +1,6 @@
-<!-- FIXME: A la espera de contenido final -->
 <section class="emms__hero-registration--registered digital--trends">
     <div class="emms__container--md">
-        <h1 class="emms__fade-in">¡Ya empezó el DIGITAL TRENDS 2024!</h1>
+        <h1 class="emms__fade-in"><em>ONLINE Y GRATUITO</em>EMMS DIGITAL TRENDS 2024</h1>
         <p class="emms__fade-in">Súmate al evento exclusivo pensado para que conozcas de la mano de expertos y referentes internacionales todas las tendencias del Marketing Digital.</p>
         <div class="text-with-icon-container">
             <div class="text-with-icon">
