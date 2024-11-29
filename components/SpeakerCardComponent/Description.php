@@ -1,3 +1,8 @@
+<?php
+include_once($_SERVER['DOCUMENT_ROOT'] . '/components/helpers/urlHelper.php');
+$normalizedUrl = getNormalizeUrl();
+?>
+
 <div class="emms__calendar__list__item__card__description">
     <h3 class="title-<?= $type ?>"><?= $speaker['title'] ?></h3>
     <p><?= $speaker['description'] ?></p>
@@ -10,7 +15,7 @@
     <?php endif; ?>
 
     <?php
-    if (!$digitalTrendsStates['isPre']) {
+    if (!$digitalTrendsStates['isPre'] && $normalizedUrl === '/digital-trends-registrado') {
         include 'DescriptionButton.php';
     }
     ?>
