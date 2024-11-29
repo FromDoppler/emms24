@@ -26,3 +26,4 @@
     </ul>
   </div>
 </section>
+<script src="src/<?= VERSION ?>/js/counterAnimation.js" type="module"></script>

@@ -1,7 +1,8 @@
 <div class="emms__calendar__list__item__card__description">
     <h3 class="title-<?= $type ?>"><?= $speaker['title'] ?></h3>
     <p><?= $speaker['description'] ?></p>
-    <?php if (!empty($speaker['time'])): ?>
+
+    <?php if (!empty($speaker['time']) & !$digitalTrendsStates['isPost']): ?>
         <div class="emms__calendar__list__item__country">
             <span><img src="src/img/flags/arg.png" alt="">(ARG) <?= $speaker['time'] ?></span>
             <a href="<?= $speaker['link_time'] ?>" target="_blank">Mira el horario de tu país</a>

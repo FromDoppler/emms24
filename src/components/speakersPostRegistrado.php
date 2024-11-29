@@ -10,7 +10,7 @@ $url_ptr = explode("/", isset($_SERVER['REQUEST_URI']));
             <div class="emms__calendar__date__country emms__calendar__date__country--post">
                 <h2>Descubre la agenda del evento</h2>
                 <p>Speakers internacionales de las marcas más reconocidas y las principales entidades de la industria <br>
-                    del Comercio Electrónico en Latinoamérica compartieron en esta edición sus casos de éxito, proyecciones <br>
+                    del Marketing Digital en Latinoamérica compartieron en esta edición sus casos de éxito, proyecciones <br>
                     para el mercado, experiencias y las mejores estrategias prácticas. ¡Descúbrelos aquí!</p>
             </div>
         </div>
