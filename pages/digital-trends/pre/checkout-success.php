@@ -16,8 +16,8 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/navbar-reg.php') ?>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/share.php') ?>
     <main>
-        <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/checkout/checkout-success.php') ?>
-        <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/checkout/faq.php') ?>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/checkout/checkout-success.php') ?>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/checkout/faq.php') ?>
     </main>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/footer.php'); ?>
 </body>
