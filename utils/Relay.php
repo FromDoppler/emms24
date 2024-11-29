@@ -36,6 +36,8 @@ class Relay
             'ecommerceVipPost' => 'getEcommerceVipEmailTemplatePost',
             'digitalTrendsVipPre' => 'getDTVipEmailTemplatePre',
             'digitalTrendsVipDuring' => 'getDigitalTrendsVipEmailTemplateDuring',
+            'digitalTrendsVipPost' => 'getDigitalTrendsVipEmailTemplatePost',
+
         ];
 
         if (isset($user['tiketType']) && isset($templateMappings[$user['tiketType']])) {
@@ -256,6 +258,19 @@ class Relay
     public static function getDigitalTrendsVipEmailTemplateDuring($encodeEmail, $user)
     {
         $templateName = 'dt-during-vip-template.html';
+        $userData = [
+            '$encodeEmail' => $encodeEmail,
+            'type' => $user['tiketType'],
+            'paymentMethod' =>  $user['payment_status'],
+            'date' => $user['register'],
+            'amount' => $user['final_price'],
+        ];
+        return self::getTemplate('dt', $templateName, $encodeEmail, $userData);
+    }
+
+    public static function getDigitalTrendsVipEmailTemplatePost($encodeEmail, $user)
+    {
+        $templateName = 'dt-post-vip-template.html';
         $userData = [
             '$encodeEmail' => $encodeEmail,
             'type' => $user['tiketType'],
