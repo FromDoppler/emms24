@@ -7,7 +7,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
 <html lang="en">
 
 <head>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/during/digital-trends/head.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/post/digital-trends/head.php'); ?>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/head.php'); ?>
     <script type="module">
         import {
@@ -43,7 +43,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
         <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/schedule/schedule.php') ?>
         <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/benefit-icons.php') ?>
         <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/pre/premium-content.php') ?>
-        <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/during/central-video.php') ?>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/post/central-video.php') ?>
         <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/sponsorsList.php') ?>
     </main>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/footer.php'); ?>

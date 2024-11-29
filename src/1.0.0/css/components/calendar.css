@@ -477,13 +477,23 @@
 }
 
 
-.emms__calendar__list__item__card__description .emms__cta.speaker-button, .emms__calendar__list__item__card__description .emms__cta.hidden--vip{
+.emms__calendar__list__item__card__description .emms__cta.speaker-button,
+.emms__calendar__list__item__card__description .emms__cta.hidden--vip {
     margin-top: 15px;
     position: absolute;
     bottom: 60px;
     width: 100%;
     max-width: 160px;
     left: 19px;
+}
+
+@media(max-width:620px) {
+
+    .emms__calendar__list__item__card__description .emms__cta.speaker-button,
+    .emms__calendar__list__item__card__description .emms__cta.hidden--vip {
+        max-width: unset;
+        left: unset;
+    }
 }
 
 .emms__calendar__list__item__card__description h3 {
@@ -551,7 +561,7 @@
 @media(max-width:620px) {
 
     .emms__calendar__list__item__card__description {
-        max-height: 658px;
+        max-height: 700px;
     }
 
     .emms__calendar__list__item__card__description .emms__cta.show--vip {
@@ -899,7 +909,7 @@
 
     .emms__calendar__list--mb .emms__calendar__list__item {
         width: 100%;
-        height: 850px;
+        height: 1000px;
     }
 
     .emms__calendar__list__item__card__speaker {

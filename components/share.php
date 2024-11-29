@@ -51,17 +51,17 @@ function getLinkPostByCurrentUrl($url)
 {
     $urls = [
         '/' => [
-            'twitter' => 'https://twitter.com/intent/tweet?url=goemms.com/digital-trends&text=Reg%C3%ADstrate%20gratis%20y%20revive%20el%20EMMS%20Digital%20Trends%202024.%20Disfruta%20de%20Conferencias%20gratuitas%20de%20la%20mano%20de%20las%20marcas%20m%C3%A1s%20destacadas%20de%20la%20industria',
+            'twitter' => 'https://twitter.com/intent/tweet?url=goemms.com/digital-trends&text=Finaliz%C3%B3%20el%20EMMS%20Digital%20Trends%202024,%20%C2%A1todav%C3%ADa%20est%C3%A1s%20a%20tiempo%20de%20sumarte!%20Reg%C3%ADstrate%20a%20la%20edici%C3%B3n%202024%20del%20evento%20y%20accede%20a%20las%20Conferencias%20de%20los%20mayores%20expertos%20internacionales%20en%20la%20industria.%20Inscr%C3%ADbete%20en%20goemms.com/digital-trends',
             'linkedln' => 'https://www.linkedin.com/shareArticle?mini=true&url=goemms.com/digital-trends',
             'facebook' => 'https://www.facebook.com/sharer/sharer.php?u=goemms.com/digital-trends',
         ],
         '/digital-trends-registrado' => [
-            'twitter' => 'https://twitter.com/intent/tweet?url=goemms.com/digital-trends&text=Reg%C3%ADstrate%20gratis%20y%20revive%20el%20EMMS%20Digital%20Trends%202024.%20Disfruta%20de%20Conferencias%20gratuitas%20de%20la%20mano%20de%20las%20marcas%20m%C3%A1s%20destacadas%20de%20la%20industria',
+            'twitter' => 'https://twitter.com/intent/tweet?url=goemms.com/digital-trends&text=Finaliz%C3%B3%20el%20EMMS%20Digital%20Trends%202024,%20%C2%A1todav%C3%ADa%20est%C3%A1s%20a%20tiempo%20de%20sumarte!%20Reg%C3%ADstrate%20a%20la%20edici%C3%B3n%202024%20del%20evento%20y%20accede%20a%20las%20Conferencias%20de%20los%20mayores%20expertos%20internacionales%20en%20la%20industria.%20Inscr%C3%ADbete%20en%20goemms.com/digital-trends',
             'linkedln' => 'https://www.linkedin.com/shareArticle?mini=true&url=goemms.com/digital-trends',
             'facebook' => 'https://www.facebook.com/sharer/sharer.php?u=goemms.com/digital-trends',
         ],
         '/*' => [
-            'twitter' => 'https://twitter.com/intent/tweet?url=goemms.com/digital-trends&text=Reg%C3%ADstrate%20gratis%20y%20revive%20el%20EMMS%20Digital%20Trends%202024.%20Disfruta%20de%20Conferencias%20gratuitas%20de%20la%20mano%20de%20las%20marcas%20m%C3%A1s%20destacadas%20de%20la%20industria',
+            'twitter' => 'https://twitter.com/intent/tweet?url=goemms.com/digital-trends&text=Finaliz%C3%B3%20el%20EMMS%20Digital%20Trends%202024,%20%C2%A1todav%C3%ADa%20est%C3%A1s%20a%20tiempo%20de%20sumarte!%20Reg%C3%ADstrate%20a%20la%20edici%C3%B3n%202024%20del%20evento%20y%20accede%20a%20las%20Conferencias%20de%20los%20mayores%20expertos%20internacionales%20en%20la%20industria.%20Inscr%C3%ADbete%20en%20goemms.com/digital-trends',
             'linkedln' => 'https://www.linkedin.com/shareArticle?mini=true&url=goemms.com/digital-trends',
             'facebook' => 'https://www.facebook.com/sharer/sharer.php?u=goemms.com/digital-trends',
         ],
@@ -69,6 +69,7 @@ function getLinkPostByCurrentUrl($url)
 
     return $urls[$url] ??  $urls['/*'];
 }
+
 
 if ($digitalTrendsStates['isPre']) {
     $link = getLinkPreByCurrentUrl($normalizedUrl);

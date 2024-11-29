@@ -29,7 +29,9 @@ const observerBoxNumber = new IntersectionObserver((entries) => {
         }
     });
 });
-observerBoxNumber.observe(boxNumber);
+if (boxNumber) {
+    observerBoxNumber.observe(boxNumber);
+}
 
 
 // Number counter animation LARGE
@@ -63,5 +65,7 @@ const observerBoxNumberLarge = new IntersectionObserver((entries) => {
         }
     });
 });
-observerBoxNumberLarge.observe(boxNumberLarge);
+if(boxNumberLarge){
+    observerBoxNumberLarge.observe(boxNumberLarge);
+}
 

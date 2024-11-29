@@ -28,7 +28,7 @@ if (!function_exists('getDescriptionButton')) {
     function getDescriptionButton($type, $speakerUrl, $content)
     {
         // Verificar si el tipo es válido
-        if (!in_array($type, ['workshop', 'conference'])) {
+        if (!in_array($type, ['workshop', 'conference', 'interview'])) {
             return '';
         }
 

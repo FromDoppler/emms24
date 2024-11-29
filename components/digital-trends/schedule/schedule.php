@@ -36,7 +36,7 @@ $block = getBlock($normalizedUrl);
             <?php elseif ($digitalTrendsStates['isPost']) : ?>
                 <h2>Descubre la agenda del evento</h2>
                 <p>Speakers internacionales de las marcas más reconocidas y las principales entidades de la industria
-                    del Comercio Electrónico en Latinoamérica compartieron sus casos de éxito, proyecciones
+                    del Marketing Digital en Latinoamérica compartieron sus casos de éxito, proyecciones
                     para el mercado, experiencias y las mejores estrategias prácticas. ¡Descúbrelos aquí!</p>
             <?php endif ?>
         </div>

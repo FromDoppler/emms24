@@ -6,7 +6,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
 <html lang="en">
 
 <head>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/during/home/head.php'); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/digital-trends/post/home/head.php'); ?>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/head.php'); ?>
 </head>
 
