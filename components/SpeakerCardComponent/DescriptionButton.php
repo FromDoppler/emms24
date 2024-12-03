@@ -48,10 +48,11 @@ if (!function_exists('generateHref')) {
                 break;
             case 'conference':
             case 'interview':
-                $url = '/sponsors-interna?slug=' . $speaker['slug'];
+            case 'debate':
+                $url = '/speaker-interna?slug=' . $speaker['slug'];
                 break;
             default:
-                $url = '/sponsors-interna?slug=' . $speaker['slug'];
+                $url = '/speaker-interna?slug=' . $speaker['slug'];
                 break;
         }
 
@@ -100,7 +101,7 @@ if (!function_exists('getDescriptionButton')) {
      */
     function getDescriptionButton($type, $speaker, $content)
     {
-        if (!in_array($type, ['workshop', 'conference', 'interview'])) {
+        if (!in_array($type, ['workshop', 'conference', 'interview', 'debate'])) {
             return '';
         }
 
