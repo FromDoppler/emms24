@@ -49,10 +49,10 @@ if (!function_exists('generateHref')) {
             case 'conference':
             case 'interview':
             case 'debate':
-                $url = '/sponsors-interna?slug=' . $speaker['slug'];
+                $url = '/speaker-interna?slug=' . $speaker['slug'];
                 break;
             default:
-                $url = '/sponsors-interna?slug=' . $speaker['slug'];
+                $url = '/speaker-interna?slug=' . $speaker['slug'];
                 break;
         }
 
