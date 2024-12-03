@@ -48,6 +48,7 @@ if (!function_exists('generateHref')) {
                 break;
             case 'conference':
             case 'interview':
+            case 'debate':
                 $url = '/sponsors-interna?slug=' . $speaker['slug'];
                 break;
             default:
@@ -100,7 +101,7 @@ if (!function_exists('getDescriptionButton')) {
      */
     function getDescriptionButton($type, $speaker, $content)
     {
-        if (!in_array($type, ['workshop', 'conference', 'interview'])) {
+        if (!in_array($type, ['workshop', 'conference', 'interview', 'debate'])) {
             return '';
         }
 
