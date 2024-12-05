@@ -159,6 +159,18 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/components/cacheSettings.php');
                                 </div>
                             </a>
                         </div>
+                        <div class="emms__conferences__cards emms__fade-in">
+                            <a data-target="modalRegister" data-toggle="emms__register-modal" href="https://youtu.be/Im5n03CtUpc" target="_blank">
+                                <img src="/src/img/conferences24/portada-wextion-min.png" alt="Conferencias exclusivas">
+                                <div class="emms__conferences__cards__info">
+                                    <h4 class="shortTitle">Potenciando la Programática con Creatividades Dinámicas Efectivas</h4>
+                                    <span>Ver ahora →</span>
+                                    <div class="emms__conferences__cards__info__image-container">
+                                        <img src="/src/img/conferences24/logos/wextion-exclusive-logo.png" alt="Wextion Exclusive Logo">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
