@@ -55,7 +55,7 @@
                     </li>
                 </ul>
                 <div class="emms__form__btn">
-                    <button class="emms__cta emms__cta--during" id="register-button" type="button"><span class="button__text">ACCEDE AL VIVO</span></button>
+                    <button class="emms__cta emms__cta--during" id="register-button" type="button"><span class="button__text">Reg&iacute;strate ahora</span></button>
                 </div>
                 <div class="emms__form__legal close">
                     <a class="emms__form__legal__btn" id="legalBtn">Información básica sobre privacidad </a>
