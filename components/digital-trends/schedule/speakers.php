@@ -61,6 +61,8 @@ function renderCalendarButtons($days, $state, $currentDay = null)
                 $isFinalized = $day < $currentDay;
                 break;
             case 'post':
+                // Si el evento termino dejamos el primer dia seleccionado por default
+                $isSelected = $day === 1;
                 $isFinalized = true;
                 break;
         }
