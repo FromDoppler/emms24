@@ -61,6 +61,8 @@ function renderCalendarButtons($days, $state, $currentDay = null)
                 $isFinalized = $day < $currentDay;
                 break;
             case 'post':
+                // Si el evento termino dejamos el primer dia seleccionado por default
+                $isSelected = $day === 1;
                 $isFinalized = true;
                 break;
         }
@@ -109,9 +111,9 @@ function renderCalendarTabs($days, $digitalTrendsStates, $dayDuring = null)
 
     <?php
     $days = [
-        1 => ['date' => '26 de Noviembre', 'short' => '26/11'],
-        2 => ['date' => '27 de Noviembre', 'short' => '27/11'],
-        3 => ['date' => '28 de Noviembre', 'short' => '28/11']
+        1 => ['date' => 'DÍA 1', 'short' => 'DÍA 1'],
+        2 => ['date' => 'DÍA 2', 'short' => 'DÍA 2'],
+        3 => ['date' => 'DÍA 3', 'short' => 'DÍA 3']
     ];
 
     // Renderizamos las pestañas del calendario
