@@ -3,6 +3,16 @@
     background: linear-gradient(#0b0c23, #1B245B);
 }
 
+.emms__calendar .emms__calendar-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
 .emms__ecommerce-logueado--during .emms__calendar.emms__calendar--live {
     background: linear-gradient(1deg, #0C0E25 0%, #0D102A 54.45%, #1B245B 94.04%);
 }
