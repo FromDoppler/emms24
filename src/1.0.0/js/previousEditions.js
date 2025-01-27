@@ -1,12 +1,5 @@
 'use strict';
 
-import {
-    customError,
-    submitFormFetch,
-} from './common/index.js';
-import { swichFormListener } from './common/switchForm.js';
-import { eventsType } from './enums/eventsType.enum.js';
-
 document.addEventListener('click', (e) => {
     e = e || window.event;
     const target = e.target || e.srcElement;
@@ -31,28 +24,5 @@ document.addEventListener('click', (e) => {
 });
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const editionsForm = document.getElementById('editionsForm');
-    swichFormListener(editionsForm);
-
-    const submitForm = async (e) => {
-
-        e.preventDefault();
-
-        await submitFormFetch(editionsForm, eventsType.DIGITALTRENDS).then(({ fetchResp: resp, encodeEmail }) => {
-            if (!resp.ok) throw new Error('Server error on Editions fetch', resp?.status);
-            localStorage.setItem('dplrid', encodeEmail);
-            localStorage.setItem('lastEventsUpdateTime', new Date());
-            window.location.href = (`/ediciones-anteriores-registrado`);
-        })
-            .catch((error) => {
-                customError('Editions post error', error);
-            });
-
-    }
-
-    editionsForm.querySelector('button').addEventListener('click', submitForm);
-
-});
 
 
