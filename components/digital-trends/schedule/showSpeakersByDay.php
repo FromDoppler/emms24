@@ -64,6 +64,7 @@ function showSpeakersByDay($day, $digitalTrendsStates)
         <?php
         showEventDatetimeByDay($day, $digitalTrendsStates);
         ?>
+        <p class="emms__calendar-title">ESTE EVENTO YA HA FINALIZADO</p>
         <!-- List -->
         <ul class="emms__calendar__list emms__calendar__list--dk emms__fade-in">
             <?php
