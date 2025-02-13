@@ -17,7 +17,7 @@
             </div>
         </div>
     </div>
-    <button class="emms__cta digitalWithoutForm" type="submit" id="digitalWithoutForm"><span class="button__text">Regístrate gratis</span></button>
+    <button class="emms__cta alreadyRegisterForm" type="submit" id="alreadyRegisterForm"><span class="button__text">Regístrate gratis</span></button>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/components/marquee.php') ?>
     </div>
 

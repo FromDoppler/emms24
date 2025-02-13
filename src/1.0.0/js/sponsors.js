@@ -1,12 +1,5 @@
 'use strict';
 
-import {
-    customError,
-    submitFormFetch,
-} from './common/index.js';
-import { alreadyAccountListener, swichFormListener } from './common/switchForm.js';
-import { eventsType } from './enums/eventsType.enum.js';
-
 document.addEventListener('click', (e) => {
     e = e || window.event;
     const target = e.target || e.srcElement;
@@ -29,28 +22,4 @@ document.addEventListener('click', (e) => {
         e.preventDefault();
     }
 
-});
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    const sponsorsForm = document.getElementById('sponsorsForm');
-    swichFormListener(sponsorsForm);
-    alreadyAccountListener();
-    const submitForm = async (e) => {
-        const slug = sessionStorage.getItem('currentSlug')
-
-        await submitFormFetch(sponsorsForm, eventsType.DIGITALTRENDS).then(({ fetchResp: resp, encodeEmail }) => {
-            if (!resp.ok) throw new Error('Server error on Sponsor fetch', resp?.status);
-            localStorage.setItem('dplrid', encodeEmail);
-            localStorage.setItem('lastEventsUpdateTime', new Date());
-            window.location.href = (`/sponsors-interna?slug=${slug}`);
-        })
-            .catch((error) => {
-                customError('Sponsor post error', error);
-            });
-
-
-    }
-
-    sponsorsForm.querySelector('button').addEventListener('click', submitForm);
 });
