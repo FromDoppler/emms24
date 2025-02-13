@@ -30,5 +30,5 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/services/functions.php');
 </script>
 <?php
 $response = processPhaseToShow(ECOMMERCE);
-require_once($_SERVER['DOCUMENT_ROOT'] . "/stages/ecommerce/$response[phaseToShow]/ecommerce.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/pages/ecommerce/$response[phaseToShow]/ecommerce.php");
 ?>
